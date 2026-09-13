@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var type_sound : AudioStreamPlayer = $Audio/typing
-@onready var sfx_player : AudioStreamPlayer = $Audio/sfx
+@onready var sfx_player : AudioStreamPlayer = $Audio/sfx #
 @onready var amb_player : AudioStreamPlayer = $Audio/amb #looping
 @onready var characters_container : Node = $Characters
 @onready var bgs_container : Node = $Bgs
