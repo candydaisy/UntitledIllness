@@ -1,0 +1,318 @@
+[gd_scene format=3 uid="uid://dlh2p46qx4oas"]
+
+[ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/Story/story_1.gd" id="1_7yklv"]
+[ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/dialog.tscn" id="2_jk8no"]
+[ext_resource type="Texture2D" uid="uid://cgfkel8k50p0w" path="res://Assets/Photos/sideart.png" id="3_42qhq"]
+[ext_resource type="AudioStream" uid="uid://vudt60emqi3g" path="res://Assets/audio/typingtypeshi1.wav" id="3_hvbsa"]
+[ext_resource type="Texture2D" uid="uid://xy40dwn6ygwg" path="res://Assets/Photos/Background/BedroomDay_blury.png" id="4_42qhq"]
+[ext_resource type="Texture2D" uid="uid://c4571abywemgs" path="res://Assets/Photos/Background/bedroomnight_blur.png" id="5_4fkki"]
+[ext_resource type="Texture2D" uid="uid://b5tysi5vijdrk" path="res://Assets/Photos/Background/FrontLawn_blury.png" id="6_8nrf5"]
+[ext_resource type="Texture2D" uid="uid://cd6wxyc30mlvo" path="res://Assets/Photos/Background/Bathroom_blur.png" id="7_dg8di"]
+[ext_resource type="Texture2D" uid="uid://v87lyhgapjmf" path="res://Assets/Photos/Background/Hallway_blury.png" id="8_7a8g2"]
+[ext_resource type="Texture2D" uid="uid://bg4usttvdomhd" path="res://Assets/Photos/Background/SchoolGate_blury.png" id="9_tsm7r"]
+[ext_resource type="Texture2D" uid="uid://x5i276wmrc5n" path="res://Assets/Photos/Background/Classroom_blury.png" id="10_vaay5"]
+[ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
+[ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
+[ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrl2c"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="KMain" type="Node2D" unique_id=1770389354]
+script = ExtResource("1_7yklv")
+
+[node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
+
+[node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_jk8no")]
+
+[node name="Sideart" type="Control" parent="." unique_id=2005122816]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
+z_index = 100
+layout_mode = 0
+offset_left = 1357.0
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("3_42qhq")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
+z_index = 100
+layout_mode = 0
+offset_right = 243.0
+offset_bottom = 900.0
+texture = ExtResource("3_42qhq")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Bgs" type="Node" parent="." unique_id=962250625]
+
+[node name="Kay\'s room1" type="TextureRect" parent="Bgs" unique_id=2116987603]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_42qhq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Kay\'s room2" type="TextureRect" parent="Bgs" unique_id=989708509]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 10.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_4fkki")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Kay\'s frontyard" type="TextureRect" parent="Bgs" unique_id=1722219040]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_8nrf5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bathroom1" type="TextureRect" parent="Bgs" unique_id=1529151878]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_dg8di")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bathroom2" type="TextureRect" parent="Bgs" unique_id=1970286343]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_dg8di")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="School hallway" type="TextureRect" parent="Bgs" unique_id=1626969606]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_7a8g2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Gate" type="TextureRect" parent="Bgs" unique_id=1049642569]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_tsm7r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Class" type="TextureRect" parent="Bgs" unique_id=1910944347]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_vaay5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Cafeteria" type="TextureRect" parent="Bgs" unique_id=1049169310]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_endbs")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Krapaostore" type="TextureRect" parent="Bgs" unique_id=2036896219]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_endbs")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Noodlesstore" type="TextureRect" parent="Bgs" unique_id=537070422]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_endbs")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Kaopadstore" type="TextureRect" parent="Bgs" unique_id=1317843986]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_endbs")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Road" type="TextureRect" parent="Bgs" unique_id=2027798066]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_e6el8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PhoneCheck" type="TextureRect" parent="Bgs" unique_id=656241005]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_wbpxj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Phone" type="TextureRect" parent="Bgs" unique_id=748534356]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_42qhq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Scrolls" type="TextureRect" parent="Bgs" unique_id=952774727]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_42qhq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BlackScreen" type="ColorRect" parent="Bgs" unique_id=1283146499]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Characters" type="Node" parent="." unique_id=1298666950]
+
+[node name="Kay" type="AnimatedSprite2D" parent="Characters" unique_id=83434114]
+visible = false
+position = Vector2(235, 582)
+scale = Vector2(0.8181153, 0.7678506)
+sprite_frames = SubResource("SpriteFrames_78m1k")
+flip_h = true
+
+[node name="Ulyn" type="AnimatedSprite2D" parent="Characters" unique_id=1993542231]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="Elysia" type="AnimatedSprite2D" parent="Characters" unique_id=1827681189]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="mom" type="AnimatedSprite2D" parent="Characters" unique_id=487807491]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="useless1" type="AnimatedSprite2D" parent="Characters" unique_id=625788519]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="useless2" type="AnimatedSprite2D" parent="Characters" unique_id=1720998487]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="Audio" type="Node" parent="." unique_id=1886730261]
+
+[node name="amb" type="AudioStreamPlayer" parent="Audio" unique_id=1170231718]
+
+[node name="sfx" type="AudioStreamPlayer" parent="Audio" unique_id=436182128]
+bus = &"sfx"
+
+[node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
+stream = ExtResource("3_hvbsa")
+volume_db = -21.16
+pitch_scale = 0.4
+max_polyphony = 15

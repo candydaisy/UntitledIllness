@@ -1,0 +1,689 @@
+[gd_scene format=3 uid="uid://3k77s2q6qgox"]
+
+[ext_resource type="Script" uid="uid://bb36x8rop8f64" path="res://Scripts/Scenes/menuUI.gd" id="1_y6n0q"]
+[ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="2_b1p23"]
+[ext_resource type="Script" uid="uid://yefw6hyhe7ww" path="res://Scripts/Scenes/selections.gd" id="3_fjcmt"]
+[ext_resource type="Script" uid="uid://d01fxd863inow" path="res://Scripts/Scenes/blink.gd" id="3_ox7fa"]
+[ext_resource type="Texture2D" uid="uid://b3sdplwwkjlef" path="res://Assets/placeholder.jpg" id="4_8rxpg"]
+
+[node name="TitleMenu" type="Node2D" unique_id=1087269847]
+
+[node name="UI" type="Control" parent="." unique_id=1624761162]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y6n0q")
+
+[node name="Main" type="Control" parent="UI" unique_id=2132508968]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="Play" type="Button" parent="UI/Main" unique_id=609039452]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -266.0
+offset_top = 37.0
+offset_right = 266.0
+offset_bottom = 113.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Play
+"
+
+[node name="Credits" type="Button" parent="UI/Main" unique_id=294883311]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -266.0
+offset_top = 127.0
+offset_right = 266.0
+offset_bottom = 203.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Credits"
+
+[node name="Gallery" type="Button" parent="UI/Main" unique_id=375677275]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -266.0
+offset_top = 216.0
+offset_right = 266.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Gallery"
+
+[node name="Settings" type="Button" parent="UI/Main" unique_id=550508582]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -86.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 86.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "◌"
+
+[node name="Selections" type="Control" parent="UI" unique_id=1307879910]
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+script = ExtResource("3_fjcmt")
+
+[node name="Panel" type="Panel" parent="UI/Selections" unique_id=2017130916]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -735.0
+offset_top = -314.0
+offset_right = 735.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Selectors" type="Panel" parent="UI/Selections/Panel" unique_id=1236319587]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 975.0
+offset_top = 22.0
+offset_right = -22.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Character1" type="Button" parent="UI/Selections/Panel/Selectors" unique_id=291213844]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.5
+offset_top = 18.0
+offset_right = 218.5
+offset_bottom = 78.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 24
+text = "K."
+
+[node name="Character2" type="Button" parent="UI/Selections/Panel/Selectors" unique_id=1289672799]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.5
+offset_top = 96.0
+offset_right = 218.5
+offset_bottom = 156.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 24
+text = "E."
+
+[node name="Character3" type="Button" parent="UI/Selections/Panel/Selectors" unique_id=36013181]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.5
+offset_top = 174.0
+offset_right = 218.5
+offset_bottom = 234.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 24
+text = "N."
+
+[node name="Character4" type="Button" parent="UI/Selections/Panel/Selectors" unique_id=25190025]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -218.5
+offset_top = 252.0
+offset_right = 218.5
+offset_bottom = 312.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 24
+text = "R."
+
+[node name="Start" type="Button" parent="UI/Selections/Panel/Selectors" unique_id=1201666328]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -218.5
+offset_top = -78.0
+offset_right = 218.5
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 24
+text = "Start"
+
+[node name="View" type="Panel" parent="UI/Selections/Panel" unique_id=744105419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = -517.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Char1" type="Control" parent="UI/Selections/Panel/View" unique_id=1217042137]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Selections/Panel/View/Char1" unique_id=593882035]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 826.0
+offset_bottom = 1094.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_8rxpg")
+
+[node name="Inner" type="Panel" parent="UI/Selections/Panel/View/Char1" unique_id=2004068154]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 570.0
+offset_right = 908.0
+offset_bottom = 636.0
+
+[node name="Label" type="Label" parent="UI/Selections/Panel/View/Char1/Inner" unique_id=1612638349]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "His thoughts feel like carrying everyone else’s books while pretending his own bag is empty."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="faint" type="Label" parent="UI/Selections/Panel/View/Char1" unique_id=2000037005]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 508.0
+offset_right = 904.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.0627451)
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "You don’t have to carry everything."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nameplate" type="Panel" parent="UI/Selections/Panel/View/Char1" unique_id=907727886]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 22.0
+offset_right = 909.0
+offset_bottom = 72.0
+
+[node name="Name" type="Label" parent="UI/Selections/Panel/View/Char1/Nameplate" unique_id=1200881509]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 30
+text = "K."
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="Surface" type="Panel" parent="UI/Selections/Panel/View/Char1" unique_id=1010422786]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 93.0
+offset_right = 908.0
+offset_bottom = 557.0
+
+[node name="Surface" type="Label" parent="UI/Selections/Panel/View/Char1/Surface" unique_id=1274479336]
+layout_mode = 0
+offset_right = 443.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "Quiet and dependable.
+
+Always seems to know what to do.
+
+The kind of person people rely on."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Char2" type="Control" parent="UI/Selections/Panel/View" unique_id=2133118302]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Selections/Panel/View/Char2" unique_id=2032208773]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 826.0
+offset_bottom = 1094.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_8rxpg")
+
+[node name="Inner" type="Panel" parent="UI/Selections/Panel/View/Char2" unique_id=1714232159]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 570.0
+offset_right = 908.0
+offset_bottom = 636.0
+
+[node name="Label" type="Label" parent="UI/Selections/Panel/View/Char2/Inner" unique_id=1014336724]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "mind feels like a bird in a cage, quietly waiting for the day it can finally stretch its wings."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="faint" type="Label" parent="UI/Selections/Panel/View/Char2" unique_id=263665983]
+visible = false
+layout_mode = 0
+offset_left = 461.0
+offset_top = 508.0
+offset_right = 904.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.0627451)
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "You don’t have to carry everything."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nameplate" type="Panel" parent="UI/Selections/Panel/View/Char2" unique_id=1487268179]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 22.0
+offset_right = 909.0
+offset_bottom = 72.0
+
+[node name="Name" type="Label" parent="UI/Selections/Panel/View/Char2/Nameplate" unique_id=848795257]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 30
+text = "E."
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="Surface" type="Panel" parent="UI/Selections/Panel/View/Char2" unique_id=1806296888]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 93.0
+offset_right = 908.0
+offset_bottom = 557.0
+
+[node name="Surface" type="Label" parent="UI/Selections/Panel/View/Char2/Surface" unique_id=1256333488]
+layout_mode = 0
+offset_right = 443.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "Bright, friendly, and easy to talk to.
+
+Always ready to listen.
+
+Brings warmth into any group."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Char3" type="Control" parent="UI/Selections/Panel/View" unique_id=1052231732]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Selections/Panel/View/Char3" unique_id=1985868761]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 826.0
+offset_bottom = 1094.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_8rxpg")
+
+[node name="Inner" type="Panel" parent="UI/Selections/Panel/View/Char3" unique_id=1995957419]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 570.0
+offset_right = 908.0
+offset_bottom = 636.0
+
+[node name="Label" type="Label" parent="UI/Selections/Panel/View/Char3/Inner" unique_id=4090788]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "His mind feels like a quiet room where emotional storms happen silently, hidden so that no one else has to feel them."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="faint" type="Label" parent="UI/Selections/Panel/View/Char3" unique_id=1234454120]
+visible = false
+layout_mode = 0
+offset_left = 461.0
+offset_top = 508.0
+offset_right = 904.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.0627451)
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "You don’t have to carry everything."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nameplate" type="Panel" parent="UI/Selections/Panel/View/Char3" unique_id=1972572408]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 22.0
+offset_right = 909.0
+offset_bottom = 72.0
+
+[node name="Name" type="Label" parent="UI/Selections/Panel/View/Char3/Nameplate" unique_id=1413123645]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 30
+text = "N."
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="Surface" type="Panel" parent="UI/Selections/Panel/View/Char3" unique_id=329615782]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 93.0
+offset_right = 908.0
+offset_bottom = 557.0
+
+[node name="Surface" type="Label" parent="UI/Selections/Panel/View/Char3/Surface" unique_id=2002218154]
+layout_mode = 0
+offset_right = 443.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "Honest.
+
+Unfiltered.
+
+Not afraid to say what he thinks."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Char4" type="Control" parent="UI/Selections/Panel/View" unique_id=458688466]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/Selections/Panel/View/Char4" unique_id=961637830]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 826.0
+offset_bottom = 1094.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_8rxpg")
+
+[node name="Inner" type="Panel" parent="UI/Selections/Panel/View/Char4" unique_id=317027417]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 570.0
+offset_right = 908.0
+offset_bottom = 636.0
+
+[node name="Label" type="Label" parent="UI/Selections/Panel/View/Char4/Inner" unique_id=1157638100]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "Her mind feels like a mirror with a thin layer of fog. They can see their reflection, but never clearly enough to confront it."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="faint" type="Label" parent="UI/Selections/Panel/View/Char4" unique_id=1574752479]
+visible = false
+layout_mode = 0
+offset_left = 461.0
+offset_top = 508.0
+offset_right = 904.0
+offset_bottom = 558.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.0627451)
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "You don’t have to carry everything."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nameplate" type="Panel" parent="UI/Selections/Panel/View/Char4" unique_id=1323397533]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 22.0
+offset_right = 909.0
+offset_bottom = 72.0
+
+[node name="Name" type="Label" parent="UI/Selections/Panel/View/Char4/Nameplate" unique_id=169192023]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 30
+text = "R."
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="Surface" type="Panel" parent="UI/Selections/Panel/View/Char4" unique_id=929865971]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 93.0
+offset_right = 908.0
+offset_bottom = 557.0
+
+[node name="Surface" type="Label" parent="UI/Selections/Panel/View/Char4/Surface" unique_id=733667100]
+layout_mode = 0
+offset_right = 443.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 16
+text = "Calm and self-sufficient.
+
+Rarely overreacts.
+
+Handles problems without a fuss."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Fade" type="ColorRect" parent="UI/Selections/Panel" unique_id=1531992717]
+visible = false
+z_index = 3
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -136.0
+offset_right = 70.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Back" type="Button" parent="UI/Selections" unique_id=639753405]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 264.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
+[node name="Credits" type="Control" parent="UI" unique_id=610464874]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="Back" type="Button" parent="UI/Credits" unique_id=1315489264]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 264.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
+[node name="Gallery" type="Control" parent="UI" unique_id=1709243834]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="Back" type="Button" parent="UI/Gallery" unique_id=1856713528]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 264.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
+[node name="Settings" type="Control" parent="UI" unique_id=1799322130]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="Back" type="Button" parent="UI/Settings" unique_id=61416169]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 264.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("2_b1p23")
+theme_override_font_sizes/font_size = 28
+text = "Back"
+
+[node name="Blink" type="Control" parent="UI" unique_id=541475166]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_ox7fa")
+
+[node name="ColorRect" type="ColorRect" parent="UI/Blink" unique_id=1383707708]
+z_index = 999
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 40.001003
+anchor_bottom = 22.502
+offset_right = -0.040161133
+offset_bottom = -0.08001709
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.78431374)
+
+[connection signal="pressed" from="UI/Main/Play" to="UI" method="_on_play_pressed"]
+[connection signal="pressed" from="UI/Main/Credits" to="UI" method="_on_credits_pressed"]
+[connection signal="pressed" from="UI/Main/Gallery" to="UI" method="_on_gallery_pressed"]
+[connection signal="pressed" from="UI/Main/Settings" to="UI" method="_on_settings_pressed"]
+[connection signal="pressed" from="UI/Selections/Panel/Selectors/Character1" to="UI/Selections" method="_on_character_1_pressed"]
+[connection signal="pressed" from="UI/Selections/Panel/Selectors/Character2" to="UI/Selections" method="_on_character_2_pressed"]
+[connection signal="pressed" from="UI/Selections/Panel/Selectors/Character3" to="UI/Selections" method="_on_character_3_pressed"]
+[connection signal="pressed" from="UI/Selections/Panel/Selectors/Character4" to="UI/Selections" method="_on_character_4_pressed"]
+[connection signal="pressed" from="UI/Selections/Panel/Selectors/Start" to="UI/Selections" method="_on_start_pressed"]
+[connection signal="pressed" from="UI/Selections/Back" to="UI" method="_on_back_pressed"]
+[connection signal="pressed" from="UI/Credits/Back" to="UI" method="_on_back_pressed"]
+[connection signal="pressed" from="UI/Gallery/Back" to="UI" method="_on_back_pressed"]
+[connection signal="pressed" from="UI/Settings/Back" to="UI" method="_on_back_pressed"]

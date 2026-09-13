@@ -1,0 +1,34 @@
+[gd_resource type="Theme" format=3 uid="uid://becm04wq40y7n"]
+
+[ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="1_ky6mq"]
+[ext_resource type="StyleBox" uid="uid://1wglqfiuen7n" path="res://DialogSBF.tres" id="1_tp3fm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tp3fm"]
+bg_color = Color(0.21422398, 1.3235956e-07, 0.07823076, 0.32156864)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.26277408, 0.0055075837, 0.104346536, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkl0g"]
+bg_color = Color(0.85882354, 0.08627451, 0.4862745, 0.3372549)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.26277408, 0.0055075837, 0.104346536, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[resource]
+default_font = ExtResource("1_ky6mq")
+default_font_size = 26
+Button/styles/hover = SubResource("StyleBoxFlat_tp3fm")
+Button/styles/normal = ExtResource("1_tp3fm")
+Button/styles/pressed = SubResource("StyleBoxFlat_mkl0g")
+Panel/styles/panel = ExtResource("1_tp3fm")

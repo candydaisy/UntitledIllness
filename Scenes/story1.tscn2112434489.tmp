@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dlh2p46qx4oas"]
+
+[ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/Story/story_1.gd" id="1_si2x5"]
+[ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/dialog.tscn" id="2_cant6"]
+[ext_resource type="AudioStream" uid="uid://vudt60emqi3g" path="res://Assets/audio/typingtypeshi2.wav" id="3_cant6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3oanl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrl2c"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="KMain" type="Node2D" unique_id=1770389354]
+script = ExtResource("1_si2x5")
+
+[node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
+
+[node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_cant6")]
+
+[node name="Bgs" type="Node" parent="." unique_id=962250625]
+
+[node name="bg1" type="TextureRect" parent="Bgs" unique_id=2116987603]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Characters" type="Node" parent="." unique_id=1298666950]
+
+[node name="K" type="AnimatedSprite2D" parent="Characters" unique_id=83434114]
+position = Vector2(225.24998, 419.25003)
+scale = Vector2(0.44921872, 0.42161888)
+sprite_frames = SubResource("SpriteFrames_3oanl")
+
+[node name="U" type="AnimatedSprite2D" parent="Characters" unique_id=1993542231]
+position = Vector2(1224, 454)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="Audio" type="Node" parent="." unique_id=1886730261]
+
+[node name="amb" type="AudioStreamPlayer" parent="Audio" unique_id=1170231718]
+
+[node name="sfx" type="AudioStreamPlayer" parent="Audio" unique_id=436182128]
+bus = &"sfx"
+
+[node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
+stream = ExtResource("3_cant6")
+volume_db = -21.16
+pitch_scale = 0.4
+max_polyphony = 15

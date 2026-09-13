@@ -1,0 +1,1413 @@
+{
+	"1": {
+		"speaker": "",
+		"text": "*Alarm clock noises*",
+		"next": "2",
+		"background": "BlackScreen",
+		"show_characters": ["Kay"],
+		"sfx": "Alarm"
+	},
+
+	"2": {
+		"speaker": "",
+		"text": "*Alarm clock shutted off*",
+		"next": "3",
+		"background": "Kay's room1",
+		"sfx": "stop"
+	},
+
+	"3": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "It's Monday... I feel like not going to school today.",
+		"next": "4",
+		"background": "Kay's room1"
+	},
+
+	"4": {
+		"speaker": "",
+		"text": "*He inhales deeply before grabbing his phone beside the pillow to check his work due*",
+		"next": "5",
+		"background": "PhoneCheck",
+		"hide_characters": ["Kay"]
+	},
+
+	"5": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "A presentation... I've already prepared for it, it shouldn't be that bad.",
+		"next": "6",
+		"background": "PhoneCheck"
+	},
+
+	"6": {
+		"speaker": "Kay",
+		"emotion": "nervous",
+		"text": "It still makes me nervous.",
+		"next": "7",
+		"background": "PhoneCheck"
+	},
+
+	"7": {
+		"speaker": "",
+		"text": "*He steps out of the bed with soft tud*",
+		"next": "8",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"sfx": "Bednoises"
+	},
+
+	"8": {
+		"speaker": "Kay",
+		"emotion": "nervous",
+		"text": "I should get ready for school.",
+		"next": "9",
+		"background": "Kay's room1",
+		"sfx": "stop"
+	},
+
+	"9": {
+		"speaker": "Kay",
+		"text": "What should I do first?",
+		"background": "Kay's room1",
+		"choices": [
+			{
+				"text": "Take a shower",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "10"
+				},
+			{
+				"text": "Take a 5-minute nap",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "11"
+				},
+			{
+				"text": "Eat breakfast",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "12"
+				}
+		]
+	},
+
+	"10": {
+		"speaker": "Kay",
+		"text": "The water heater broke..",
+		"next": "13",
+		"background": "Bathroom1",
+		"hide_characters": ["Kay"],
+		"sfx": "Shower"
+	},
+
+	"11": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "ZZZZzzz.",
+		"next": "14",
+		"background": "BlackScreen",
+		"hide_characters": ["Kay"]
+	},
+
+	"12": {
+		"speaker": "Kay",
+		"text": "I don't know how to cook.",
+		"next": "9",
+		"background": "Kay's room1"
+	},
+
+	"13": {
+		"speaker": "",
+		"text": "*After he finished his shower, he returned to his room and put on his school uniform*",
+		"next": "18",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"expression": {"Kay": "School"},
+		"sfx": "stop"
+	},
+
+	"14": {
+		"speaker": "",
+		"text": "*6-7 minutes passed*",
+		"next": "15",
+		"background": "BlackScreen",
+		"sfx": "Alarm"
+	},
+
+	"15": {
+		"speaker": "Kay",
+		"text": "I slept in... I should be hurry",
+		"next": "10",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"sfx": "stop"
+	},
+
+	"18": {
+		"speaker": "",
+		"text": "*At the school gate*",
+		"next": "19",
+		"background": "Gate",
+		"sfx": "Walkingstep",
+	},
+
+	"19": {
+		"speaker": "Kay",
+		"text": "That's Elysia and her friends... I hope she notices me.",
+		"next": "20",
+		"background": "Gate",
+		"show_characters": ["Elysia"],
+		"expression": {"Elysia": "friends"}
+	},
+
+	"20": {
+		"speaker": "",
+		"text": "*Elysia felt a familiar presence behind her, she turns around and notices Kay, so she waves at him while shes smiling softly*",
+		"next": "21",
+		"background": "Gate",
+		"expression": {"Elysia": "default"}
+	},
+
+	"21": {
+		"speaker": "",
+		"text": "*Kay waves back, smiling nervously, he seemed a bit shy facing her*",
+		"next": "22",
+		"background": "Gate"
+	},
+
+	"22": {
+		"speaker": "",
+		"text": "*Elysia, being the popular girl she is get dragged back into her friends' group, so she smiles at him before leaving him alone*",
+		"next": "24",
+		"background": "Gate"
+	},
+
+	"24": {
+		"speaker": "",
+		"text": "*Ulyn pats on his back from behind*",
+		"next": "25",
+		"background": "Gate",
+		"show_characters": ["Ulyn", "Kay"],
+		"hide_characters": ["Elysia"],
+		"sfx": "Softpat"
+	},
+
+	"25": {
+		"speaker": "Ulyn",
+		"text": "\"You look tired, man, have you got enough sleep?\"",
+		"next": "26",
+		"background": "Gate"
+	},
+
+	"26": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "\"Yeah... I guess.\"",
+		"next": "27",
+		"background": "Gate"
+	},
+
+	"27": {
+		"speaker": "Ulyn",
+		"text": "\"Did you prepare for the history presentation?\"",
+		"next": "28",
+		"background": "School hallway",
+	},
+
+	"28": {
+		"speaker": "Kay",
+		"text": "\"Of course I did, the first class is history afterall.\"",
+		"next": "29",
+		"background": "School hallway"
+	},
+
+	"29": {
+		"speaker": "",
+		"text": "The two friends walk into their class together",
+		"next": "30",
+		"background": "School hallway",
+		"hide_characters": ["Kay", "Ulyn"]
+	},
+
+	"30": {
+		"speaker": "",
+		"text": "As the first class starts. Kay group was the first group for the presentation",
+		"next": "31",
+		"background": "Class",
+	},
+
+	"31": {
+		"speaker": "",
+		"text": "His group consists of 4. Kay, Ulyn, classmate1, and classmate2... the 4 stand in front of the class, leaving some distance between each other.",
+		"next": "32",
+		"background": "Class"
+	},
+
+	"32": {
+		"speaker": "Kay",
+		"text": "\"This is group 3, we're here to present the history of Barack Obama.\"",
+		"next": "33",
+		"background": "Class",
+		"show_characters": ["Kay"]
+	},
+
+	"33": {
+		"speaker": "",
+		"text": "*He said with a natural-like seller smile on his face. his eyes darting around the room*",
+		"next": "34",
+		"background": "Class"
+	},
+
+	"34": {
+		"speaker": "Kay",
+		"text": "\"And my name is Kay, the leader of the group.\"",
+		"next": "35",
+		"background": "Class"
+	},
+
+	"35": {
+		"speaker": "Ulyn",
+		"text": "\"I'm Ulyn, the slideshow maker.\"",
+		"next": "36",
+		"background": "Class",
+		"show_characters": ["Ulyn"],
+		"hide_characters": ["Kay"]
+	},
+
+	"36": {
+		"speaker": "",
+		"text": "*Ulyn smiles politely, focusing on the slides*",
+		"next": "37",
+		"background": "Class",
+		"show_characters": ["Ulyn"]
+	},
+
+	"37": {
+		"speaker": "Classmate1",
+		"text": "\"My name is classmate1, my role is to find information for the slideshow.\"",
+		"next": "38",
+		"background": "Class",
+		"show_characters": ["Useless1"],
+		"hide_characters": ["Ulyn"]
+	},
+
+	"38": {
+		"speaker": "Classmate2",
+		"text": "\"My name is classmate2, and my role is to decorate the slides.\"",
+		"next": "39",
+		"background": "Class",
+		"show_characters": ["Useless2"],
+		"hide_characters": ["Useless1"]
+	},
+
+	"39": {
+		"speaker": "",
+		"text": "*Kay then continue the presentation. The presentation goes smoothly and is usually focused on Kay and Ulyn, whom gives a good presentation to the class*",
+		"next": "40",
+		"background": "Class",
+		"show_characters": ["Kay", "Ulyn"],
+		"hide_characters": ["Useless2"]
+	},
+
+	"40": {
+		"speaker": "",
+		"text": "*After finishing presentation...*",
+		"next": "41",
+		"background": "Class",
+		"hide_characters": ["Kay", "Ulyn"]
+	},
+
+	"41": {
+		"speaker": "Ulyn",
+		"emotion": "angry",
+		"text": "\"Why didn't you tell the teacher that those 2 doesn't help you with the presentation?\"",
+		"next": "42",
+		"background": "Class",
+		"show_characters": ["Kay", "Ulyn"]
+	},
+
+	"42": {
+		"speaker": "",
+		"text": "*Ulyn said while sitting on the seat next to Kay. His tone was slightly annoyed*",
+		"next": "43",
+		"background": "Class"
+	},
+
+	"43": {
+		"speaker": "Kay",
+		"text": "\"I just don't want to get in trouble. They also asked me not to tell the teacher.\"",
+		"next": "44",
+		"background": "Class"
+	},
+
+	"44": {
+		"speaker": "Ulyn",
+		"text": "\"You're always like this...\"",
+		"next": "45",
+		"background": "Class"
+	},
+
+	"45": {
+		"speaker": "",
+		"text": "*It sounds like he has nothing to say*",
+		"next": "46",
+		"background": "Class"
+	},
+
+	"46": {
+		"speaker": "Kay",
+		"emotion": "nervous",
+		"text": "I hope he isn't mad at me..",
+		"next": "47",
+		"background": "Class"
+	},
+
+	"47": {
+		"speaker": "",
+		"text": "During lunch time...",
+		"next": "48",
+		"background": "Cafeteria",
+		"hide_characters": ["Kay", "Ulyn"]
+	},
+
+	"48": {
+		"speaker": "Ulyn",
+		"text": "\"K I think I can't eat with you today, I got a project I need to work on.\"",
+		"next": "49",
+		"background": "Cafeteria",
+		"show_characters": ["Kay", "Ulyn"],
+	},
+
+	"49": {
+		"speaker": "Kay",
+		"text": "\"Ah, it's alright, I could eat alone.\"",
+		"next": "50",
+		"background": "Cafeteria"
+	},
+
+	"50": {
+		"speaker": "Ulyn",
+		"text": "\"Are you sure? I can put it off to tomorrow\"",
+		"background": "Cafeteria",
+		"choices": [
+			{
+				"text": "\"Yeah, I'm pretty sure\"",
+				"type": "helpful",
+				"weight_change": 10,
+				"next": "52"
+				},
+			{
+				"text": "\"No.. Not really\"",
+				"type": "honest",
+				"weight_change": 0,
+				"next": "53"
+				}
+		]
+	},
+
+	"52": {
+		"speaker": "Kay",
+		"text": "\"Yeah, I'm pretty sure don't worry about it.\"",
+		"next": "54",
+		"background": "Cafeteria"
+	},
+
+	"53": {
+		"speaker": "Kay",
+		"emotion": "nervous",
+		"text": "No... it'll be a burden to him, I should let him do his project",
+		"next": "52",
+		"background": "Cafeteria"
+	},
+
+	"54": {
+		"speaker": "Ulyn",
+		"text": "\"See you in class then!",
+		"next": "55",
+		"background": "Cafeteria"
+	},
+
+	"55": {
+		"speaker": "",
+		"text": "*Ulyn said urgently, then walked away from the cafeteria back to the building*",
+		"next": "56",
+		"background": "Cafeteria",
+		"hide_characters": ["Ulyn"],
+		"sfx": "Walkingstep"
+	},
+
+	"56": {
+		"speaker": "Kay",
+		"text": "Now what should I eat for lunch?",
+		"background": "Cafeteria",
+		"choices": [
+			{
+				"text": "Pad kra pao",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "57",
+				"set_flag": "Girlfriend"
+				},
+			{
+				"text": "Noodles",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "58",
+				"set_flag": "Worse"
+				},
+			{
+				"text": "Fried rice",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "59"
+				}
+		]
+	},
+
+	"57": {
+		"speaker": "Kay",
+		"text": "Pad kra pao... hope the crispy pork ain't out yet",
+		"next": "60",
+		"background": "Cafeteria"
+	},
+
+	"58": {
+		"speaker": "Kay",
+		"text": "Noodles queue line, it's so long...",
+		"next": "83",
+		"background": "Cafeteria"
+	},
+
+	"59": {
+		"speaker": "Kay",
+		"text": "Simple food, the queue isn't long",
+		"next": "86",
+		"background": "Cafeteria"
+	},
+
+	"60": {
+		"speaker": "",
+		"text": "*Kay goes infront of the store and gets in the queue line*",
+		"next": "61",
+		"background": "BlackScreen",
+		"sfx": "Walkingstep"
+	},
+
+	"61": {
+		"speaker": "?",
+		"text": "\"Hey, behind you~\"",
+		"next": "62",
+		"background": "Krapaostore"
+	},
+
+	"62": {
+		"speaker": "",
+		"text": "*As he turns back to face her, he is met with Elysia his girlfriend smiling with her hands behind her back*",
+		"next": "63",
+		"background": "Krapaostore",
+		"show_characters": ["Elysia"]
+	},
+
+	"63": {
+		"speaker": "Elysia",
+		"text": "\"Eating the same thing, huh?~\"",
+		"next": "64",
+		"background": "Krapaostore"
+	},
+
+	"64": {
+		"speaker": "",
+		"text": "*Caught by surprise Kay stutters*",
+		"next": "65",
+		"background": "Krapaostore"
+	},
+
+	"65": {
+		"speaker": "Kay",
+		"text": "\"Y-yeah I don't have an appetite for different foods.\"",
+		"next": "66",
+		"background": "Krapaostore"
+	},
+
+	"66": {
+		"speaker": "Elysia",
+		"text": "\"Of course you don't.\"",
+		"next": "68",
+		"background": "Krapaostore"
+	},
+
+	"68": {
+		"speaker": "Kay",
+		"text": "\"Are you eating Pad Kra Pao too?\"",
+		"next": "69",
+		"background": "Krapaostore"
+	},
+
+	"69": {
+		"speaker": "Elysia",
+		"text": "\"Of course, silly, why do you think I'm here?\"",
+		"background": "Krapaostore",
+		"choices": [
+			{
+				"text": "\"For me?\"",
+				"type": "honest",
+				"weight_change": -25,
+				"next": "71"
+				},
+			{
+				"text": "\"Yeah, my bad\"",
+				"type": "honest",
+				"weight_change": -10,
+				"next": "72"
+				}
+		]
+	},
+
+	"71": {
+		"speaker": "Elysia",
+		"text": "\"Don't be so high of yourself K~\"",
+		"next": "73",
+		"background": "Krapaostore"
+	},
+
+	"72": {
+		"speaker": "Elysia",
+		"text": "\"It's alright, look it's your queue now.\"",
+		"next": "82",
+		"background": "Krapaostore"
+	},
+
+	"73": {
+		"speaker": "Lunch Lady",
+		"text": "\"Stop flirting and order already.\"",
+		"next": "74",
+		"background": "Krapaostore"
+	},
+
+	"74": {
+		"speaker": "",
+		"text": "*Caught off guard by the sudden grunt, K answers hastily*",
+		"next": "76",
+		"background": "Krapaostore"
+	},
+
+	"76": {
+		"speaker": "Kay",
+		"text": "\"S-Sorry, I'll take the crispy pork.\"",
+		"next": "77",
+		"background": "Krapaostore"
+	},
+
+	"77": {
+		"speaker": "Lunch Lady",
+		"text": "\"Kid these days...\"",
+		"next": "78",
+		"background": "Krapaostore"
+	},
+
+	"78": {
+		"speaker": "",
+		"text": "*She murmurs under his breath and cooks Kay's dish*",
+		"next": "79",
+		"background": "Krapaostore"
+	},
+
+	"79": {
+		"speaker": "Elysia",
+		"text": "\"Dummy~\"",
+		"next": "80",
+		"background": "Krapaostore"
+	},
+
+	"80": {
+		"speaker": "",
+		"text": "*Elysia teased Kay playfully behind him*",
+		"next": "84",
+		"background": "Krapaostore"
+	},
+
+	"81": {
+		"speaker": "",
+		"text": "*Kay holding his tray of food stands still looking for a seat*",
+		"next": "99",
+		"background": "Cafeteria",
+		"show_characters": ["Kay"]
+	},
+
+	"82": {
+		"speaker": "Kay",
+		"text": "\"I'll get the crispy pork please.\"",
+		"next": "84",
+		"background": "Krapaostore"
+	},
+
+	"83": {
+		"speaker": "",
+		"text": "*Kay goes into the queue line in front of the store*",
+		"next": "85",
+		"background": "BlackScreen",
+		"sfx": "Walkingstep"
+	},
+
+	"84": {
+		"speaker": "",
+		"text": "*Kay feels better talking to Elysia*",
+		"next": "81",
+		"background": "BlackScreen",
+		"hide_characters": ["Elysia", "Kay"]
+	},
+
+	"85": {
+		"speaker": "",
+		"text": "*He heard classmate1 and classmate 2 voice in the queue*",
+		"next": "88",
+		"background": "Noodlesstore"
+	},
+
+	"86": {
+		"speaker": "",
+		"text": "*Kay goes into the queue line in front of the store*",
+		"next": "87",
+		"background": "BlackScreen",
+		"sfx": "Walkingstep"
+	},
+
+	"87": {
+		"speaker": "Kay",
+		"text": "I'm pretty bored... good thing the queue isn't that long",
+		"next": "95",
+		"background": "Kaopadstore"
+	},
+
+	"88": {
+		"speaker": "Kay",
+		"text": "Looks like they haven't noticed me yet",
+		"next": "89",
+		"background": "Noodlesstore"
+	},
+
+	"89": {
+		"speaker": "Classmate1",
+		"text": "\"Kay is so useful, he did half the work for us, didn't he?\"",
+		"next": "90",
+		"background": "Noodlesstore",
+		"show_characters": ["Useless1"],
+		"hide_characters": ["Kay"]
+	},
+
+	"90": {
+		"speaker": "Classmate2",
+		"text": "\"Yeah, and he doesn't complain about anything, we should just stay with him so he'll do the project for us.\"",
+		"next": "91",
+		"background": "Noodlesstore",
+		"show_characters": ["Useless2"]
+	},
+
+	"91": {
+		"speaker": "Kay",
+		"text": "Do they see me as a tool? Will they be sad if I refuse?",
+		"next": "92",
+		"background": "Noodlesstore"
+	},
+
+	"92": {
+		"speaker": "Kay",
+		"text": "No, that mustn't be, they see me as a useful person, that's all, they're kind to me...",
+		"next": "93",
+		"background": "Noodlesstore"
+	},
+
+	"93": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "Right?",
+		"next": "a",
+		"background": "Noodlesstore"
+	},
+
+	"94": {
+		"speaker": "",
+		"text": "*Kay feels worse*",
+		"next": "96",
+		"background": "Noodlesstore",
+		"hide_characters": ["Kay"]
+	},
+
+	"95": {
+		"speaker": "",
+		"text": "It's Kay turn to order",
+		"next": "98",
+		"background": "Kaopadstore"
+	},
+
+	"96": {
+		"speaker": "",
+		"text": "*It's Kay turn to order*",
+		"next": "97",
+		"background": "Noodlesstore",
+		"show_characters": ["Kay"]
+	},
+
+	"97": {
+		"speaker": "Kay",
+		"text": "\"I'll get the beef noodles please.\"",
+		"next": "81",
+		"background": "Noodlesstore"
+	},
+
+	"98": {
+		"speaker": "Kay",
+		"text": "\"I'll get pork fried rice, please.\"",
+		"next": "81",
+		"background": "Kaopadstore"
+	},
+
+	"99": {
+		"speaker": "Kay",
+		"text": "Where should I sit?",
+		"background": "Cafeteria",
+		"choices": [
+			{
+				"text": "Sit next to Elysia",
+				"type": "neutral",
+				"weight_change": -10,
+				"next": "104"
+				},
+			{
+				"text": "Sit alone",
+				"type": "neutral",
+				"weight_change": 5,
+				"next": "105"
+				}
+		]
+	},
+
+	"104": {
+		"speaker": "Kay",
+		"text": "But she's sitting with her friends",
+		"next": "107",
+		"background": "Cafeteria",
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Girlfriend",
+			"next": "108"
+		}
+	},
+
+	"105": {
+		"speaker": "",
+		"text": "*Kay finds a seat and sits down to eat alone*",
+		"next": "111",
+		"background": "Cafeteria",
+		"sfx": "Walkingstep"
+	},
+
+	"107": {
+		"speaker": "Kay",
+		"text": "I shouldn't join, it'll be a hassle to her",
+		"next": "105",
+		"background": "Cafeteria"
+	},
+
+	"108": {
+		"speaker": "Kay",
+		"text": "Uhh yeah sure, she won't mind",
+		"next": "110",
+		"background": "Cafeteria",
+		"sfx": "Walkingstep"
+	},
+
+	"110": {
+		"speaker": "Kay",
+		"text": "\"Hey, can I sit with you?\"",
+		"next": "112",
+		"background": "Cafeteria",
+		"show_characters": ["Elysia"]
+	},
+
+	"111": {
+		"speaker": "Kay",
+		"text": "The food was decent...",
+		"next": "118",
+		"background": "Cafeteria"
+	},
+
+	"112": {
+		"speaker": "Elysia",
+		"text": "\"Ah- sure!\"",
+		"next": "113",
+		"background": "Cafeteria"
+	},
+
+	"113": {
+		"speaker": "Kay",
+		"text": "She seems a bit different around her friends",
+		"next": "114",
+		"background": "Cafeteria"
+	},
+
+	"114": {
+		"speaker": "",
+		"text": "*Kay sit next to her, Elysia friends look at him, look like they already know who he is*",
+		"next": "115",
+		"background": "Cafeteria"
+	},
+
+	"115": {
+		"speaker": "Elysia",
+		"text": "\"Hey, don't look at him too much, okay? just eat!\"",
+		"next": "116",
+		"background": "Cafeteria"
+	},
+
+	"116": {
+		"speaker": "",
+		"text": "*A noticeable pout appears on her face, she isn't mad, more like she's embarrassed*",
+		"next": "119",
+		"background": "Cafeteria"
+	},
+
+	"118": {
+		"speaker": "",
+		"text": "After lunch...",
+		"next": "120",
+		"background": "Class",
+		"hide_characters": ["Kay", "Elysia"]
+	},
+
+	"119": {
+		"speaker": "",
+		"text": "*Kay feels better near her*",
+		"next": "118",
+		"background": "Cafeteria"
+	},
+
+	"120": {
+		"speaker": "",
+		"text": "*In class, Kay and Ulyn sit next to each other as usual*",
+		"next": "121",
+		"background": "Class",
+		"show_characters": ["Kay", "Ulyn"],
+	},
+
+	"121": {
+		"speaker": "Ulyn",
+		"text": "\"How's the lunch?",
+		"next": "123",
+		"background": "Class",
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Girlfriend",
+			"next": "124"
+		}
+	},
+
+	"123": {
+		"speaker": "Kay",
+		"text": "\"It was decent.\"",
+		"next": "128",
+		"background": "Class"
+	},
+
+	"124": {
+		"speaker": "Kay",
+		"text": "\"It was great.\"",
+		"next": "125",
+		"background": "Class"
+	},
+
+	"125": {
+		"speaker": "Ulyn",
+		"text": "\"You probably got to eat with your girlfriend, huh?\"",
+		"next": "126",
+		"background": "Class"
+	},
+
+	"126": {
+		"speaker": "",
+		"text": "*Ulyn teases him, like friends do*",
+		"next": "127",
+		"background": "Class"
+	},
+
+	"127": {
+		"speaker": "Kay",
+		"text": "\"Whatever you say man..\"",
+		"next": "128",
+		"background": "Class"
+	},
+
+	"128": {
+		"speaker": "",
+		"text": "The next class starts",
+		"next": "129",
+		"background": "BlackScreen"
+	},
+
+	"129": {
+		"speaker": "Teacher",
+		"text": "\"This is Home economics class so let's start..\"",
+		"next": "130",
+		"background": "Class"
+	},
+
+	"130": {
+		"speaker": "",
+		"text": "*The teacher teaches about how to plant flowers and fruits... it's pretty boring for Kay*",
+		"next": "131",
+		"background": "Class"
+	},
+
+	"131": {
+		"speaker": "",
+		"text": "Evening...",
+		"next": "132",
+		"background": "BlackScreen",
+		"hide_characters": ["Kay", "Ulyn"]
+	},
+
+	"132": {
+		"speaker": "",
+		"text": "*Kay met Elysia while he's walking back to his home*",
+		"next": "134",
+		"background": "Gate",
+		"show_characters": ["Kay"],
+	},
+
+	"134": {
+		"speaker": "Elysia",
+		"text": "\"Hey~ Kayy, wanna walk home together?\"",
+		"next": "135",
+		"background": "Gate",
+		"show_characters": ["Elysia"],
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Worse",
+			"next": "136"
+		}
+	},
+
+	"135": {
+		"speaker": "Kay",
+		"text": "\"Sure.\"",
+		"next": "138",
+		"background": "Gate"
+	},
+
+	"136": {
+		"speaker": "Kay",
+		"text": "\"No.. I don't think so, I don't think you want people looking at us.\"",
+		"next": "137",
+		"background": "Gate",
+	},
+
+	"137": {
+		"speaker": "Elysia",
+		"text": "\"oh? it's okay then...\"",
+		"next": "141",
+		"background": "Gate"
+	},
+
+	"138": {
+		"speaker": "Elysia",
+		"text": "\"Let's go then!\"",
+		"next": "139",
+		"background": "Gate"
+	},
+
+	"139": {
+		"speaker": "",
+		"text": "*Elysia hold his hand and drags Kay with her*",
+		"next": "140",
+		"background": "Road"
+	},
+
+	"140": {
+		"speaker": "Elysia",
+		"text": "\"My house is close, so no worries about walking too far.\"",
+		"next": "143",
+		"background": "Road",
+	},
+
+	"141": {
+		"speaker": "",
+		"text": "*Elysia sounds gloomy, but she smiles and walks alone*",
+		"next": "183",
+		"background": "Gate",
+		"hide_characters": ["Elysia"],
+		"sfx": "Walkingstep"
+	},
+
+	"143": {
+		"speaker": "",
+		"text": "*After walking Elysia to her house, both of them wave goodbye*",
+		"next": "144",
+		"background": "Road"
+	},
+
+	"144": {
+		"speaker": "Elysia",
+		"text": "\"See you tomorrow!\"",
+		"next": "145",
+		"background": "Road"
+	},
+
+	"145": {
+		"speaker": "Kay",
+		"text": "\"Yeah, see you later\"",
+		"next": "183",
+		"background": "Road",
+		"hide_characters": ["Elysia"]
+	},
+
+	"146": {
+		"speaker": "",
+		"text": "*In Kay's room, he falls on his bed still in his school uniform*",
+		"next": "147",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"sfx": "Bodyfallonbed",
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Worse",
+			"next": "148"
+		}
+	},
+
+	"147": {
+		"speaker": "Kay",
+		"text": "I should find something to do.",
+		"next": "150",
+		"background": "Kay's room1"
+	},
+
+	"148": {
+		"speaker": "Kay",
+		"text": "Will she hate me? Did I make her sad? Am I a bad boyfriend?",
+		"next": "149",
+		"background": "Kay's room1"
+	},
+
+	"149": {
+		"speaker": "Kay",
+		"text": "Am I bad for her...?",
+		"next": "150",
+		"background": "Kay's room1"
+	},
+
+	"150": {
+		"speaker": "",
+		"text": "What should Kay do?",
+		"background": "Kay's room1",
+		"choices": [
+			{
+				"text": "Water his plants",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "151"
+				},
+			{
+				"text": "Play something on his phone",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "152"
+				},
+			{
+				"text": "Do his homework",
+				"type": "neutral",
+				"weight_change": 0,
+				"next": "153"
+				}
+		]
+	},
+
+	"151": {
+		"speaker": "",
+		"text": "*Kay come out of his house to water the flowers in the front yard*",
+		"next": "156",
+		"background": "Kay's frontyard",
+		"sfx": "Waterspraying"
+	},
+
+	"152": {
+		"speaker": "",
+		"text": "*Kay grabs his phone in his pocket*",
+		"next": "154",
+		"background": "Kay's room1",
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Worse",
+			"next": "155"
+		}
+	},
+
+	"153": {
+		"speaker": "",
+		"text": "*Kay grab the chemistry book inside his backpack*",
+		"next": "172",
+		"background": "Kay's room1"
+	},
+
+	"154": {
+		"speaker": "",
+		"text": "*Kay scrolls on TikTok watching funny and cute cat videos, it improved his mood*",
+		"next": "174",
+		"background": "Phone",
+		"hide_characters": ["Kay"]
+	},
+
+	"155": {
+		"speaker": "",
+		"text": "*A text popped up, it was from Ulyn*",
+		"next": "157",
+		"background": "Phone",
+		"hide_characters": ["Kay"]
+	},
+
+	"156": {
+		"speaker": "",
+		"text": "*Looks like his mom just came back from her work*",
+		"next": "164",
+		"background": "Kay's frontyard",
+		"show_characters": ["mom"],
+		"sfx": "stop"
+	},
+
+	"157": {
+		"speaker": "Ulyn",
+		"text": "\"Yo, are you okay? You seem down today.\"",
+		"next": "158",
+		"background": "Phone",
+		"sfx": "Notification"
+	},
+
+	"158": {
+		"speaker": "Kay",
+		"text": "\"It's alright, there's nothing wrong, don't worry about me.\"",
+		"next": "159",
+		"background": "Phone"
+	},
+
+	"159": {
+		"speaker": "Kay",
+		"text": "I shouldn't make him worry about me, it would trouble him",
+		"next": "160",
+		"background": "Phone"
+	},
+
+	"160": {
+		"speaker": "Ulyn",
+		"text": "\"I'm always here to talk, you know?\"",
+		"next": "161",
+		"background": "Phone"
+	},
+
+	"161": {
+		"speaker": "Kay",
+		"text": "\"Yeah, thanks, I'm good.\"",
+		"next": "162",
+		"background": "Phone"
+	},
+
+	"162": {
+		"speaker": "",
+		"text": "*Kay closes his phone and checks the time*",
+		"next": "177",
+		"background": "Kay's room2"
+	},
+
+	"164": {
+		"speaker": "Mom",
+		"text": "\"You're productive today, huh?\"",
+		"next": "165",
+		"background": "Kay's frontyard"
+	},
+
+	"165": {
+		"speaker": "",
+		"text": "*She smiles, clearly happy that her son is helping with chores*",
+		"next": "166",
+		"background": "Kay's frontyard"
+	},
+
+	"166": {
+		"speaker": "Kay",
+		"text": "\"Yeah, I got nothing to do.\"",
+		"next": "167",
+		"background": "Kay's frontyard"
+	},
+
+	"167": {
+		"speaker": "Mom",
+		"text": "\"How's school today, hm?\"",
+		"next": "168",
+		"background": "Kay's frontyard",
+		"secret": {
+			"condition": "flag_true",
+			"flag": "Girlfriend",
+			"next": "169"
+		}
+	},
+
+	"168": {
+		"speaker": "Kay",
+		"text": "\"It was fine, nothing special.\"",
+		"next": "170",
+		"background": "Kay's frontyard"
+	},
+
+	"169": {
+		"speaker": "Kay",
+		"text": "\"It was great\"",
+		"next": "170",
+		"background": "Kay's frontyard"
+	},
+
+	"170": {
+		"speaker": "",
+		"text": "*His mom smiles and goes into the house. Seeing his mom smile improved his mood a bit*",
+		"next": "171",
+		"background": "Kay's frontyard",
+		"hide_characters": ["mom"],
+		"sfx": "Waterspraying"
+	},
+
+	"171": {
+		"speaker": "",
+		"text": "*After a while, he finishes watering the plants, then returns to his room and checks the time*",
+		"next": "177",
+		"background": "Kay's room2",
+		"sfx": "Walkingstep"
+	},
+
+	"172": {
+		"speaker": "Kay",
+		"text": "\"Chemistry sucks....\"",
+		"next": "173",
+		"background": "Kay's room1",
+		"sfx": "Pageturning"
+	},
+
+	"173": {
+		"speaker": "",
+		"text": "*He does his homework while listening to music for some time*",
+		"next": "176",
+		"background": "Kay's room1",
+		"sfx": "Writing"
+	},
+
+	"174": {
+		"speaker": "",
+		"text": "*He scroll Tiktok for a long time and forgot about the time*",
+		"next": "177",
+		"background": "Scrolls",
+		"sfx": "Scrolls"
+	},
+
+	"176": {
+		"speaker": "",
+		"text": "*Finally finishing his homework, he checked the time*",
+		"next": "177",
+		"background": "Kay's room2",
+		"sfx": "stop"
+	},
+
+	"177": {
+		"speaker": "",
+		"text": "*It's 21:00*",
+		"next": "178",
+		"background": "Kay's room2",
+		"show_characters": ["Kay"]
+	},
+
+	"178": {
+		"speaker": "Kay",
+		"text": "*Yawns* I should go to bed...",
+		"next": "179",
+		"background": "Kay's room2",
+	},
+
+	"179": {
+		"speaker": "",
+		"text": "*Kay grabs his pj's and gets into the shower *",
+		"next": "181",
+		"background": "Bathroom2",
+		"hide_characters": ["Kay"]
+	},
+
+	"180": {
+		"speaker": "",
+		"text": "*After a while, he came out of the shower already wearing his pj's*",
+		"next": "182",
+		"background": "Kay's room2",
+		"show_characters": ["Kay"],
+	},
+
+	"181": {
+		"speaker": "Kay",
+		"text": "The water heater is still broken... fuck me",
+		"next": "180",
+		"background": "Bathroom2",
+		"sfx": "Shower"
+	},
+
+	"182": {
+		"speaker": "",
+		"text": "*He gets to the bed right away and dozes off after some minutes*",
+		"next": "184",
+		"background": "BlackScreen",
+		"sfx": "Bodyfallonbed"
+	},
+
+	"183": {
+		"speaker": "",
+		"text": "*After couple minutes of walking*",
+		"next": "146",
+		"background": "BlackScreen",
+		"hide_characters": ["Kay"],
+		"sfx": "Walkingstep"
+	},
+
+	"184": {
+		"speaker": "Kay",
+		"text": "\"ZZZzzzz...\"",
+		"hide_characters": ["K"]
+	},
+
+	"a": {
+		"speaker": "Kay",
+		"text": "I should do something, Right?",
+		"background": "Noodlesstore",
+		"show_characters": ["Kay"],
+		"hide_characters": ["Useless1", "Useless2"],
+		"choices": [
+			{
+				"text": "Confront them",
+				"type": "honest",
+				"weight_change": 15,
+				"next": "b"
+				},
+			{
+				"text": "...",
+				"type": "neutral",
+				"weight_change": 25,
+				"next": "94"
+				}
+		]
+	},
+
+	"b": {
+		"speaker": "Kay",
+		"text": "Does it even matter? Not worth my time",
+		"next": "c",
+		"background": "Noodlesstore"
+	},
+
+	"c": {
+		"speaker": "",
+		"text": "Kay lied, it does matter",
+		"next": "94",
+		"background": "Noodlesstore"
+	}
+}

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dlh2p46qx4oas"]
+
+[ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/Story/story_1.gd" id="1_si2x5"]
+[ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/dialog.tscn" id="2_cant6"]
+
+[node name="Story1" type="Node2D" unique_id=1770389354]
+script = ExtResource("1_si2x5")
+
+[node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
+
+[node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_cant6")]

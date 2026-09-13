@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://cy5rt1lx5iqp0"]
+
+[ext_resource type="Script" uid="uid://bn685feysjf6w" path="res://Scripts/ui/dialog.gd" id="1_edf0l"]
+[ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="1_irs7l"]
+[ext_resource type="Theme" uid="uid://becm04wq40y7n" path="res://Assets/Themes/theme1.tres" id="2_87kay"]
+
+[node name="Dialog" type="Control" unique_id=137013451]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_edf0l")
+
+[node name="DialogBox" type="Panel" parent="." unique_id=533752345]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -514.0
+offset_top = -270.0
+offset_right = 514.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_87kay")
+
+[node name="Dialog_line" type="RichTextLabel" parent="DialogBox" unique_id=1019653111]
+custom_minimum_size = Vector2(950, 180)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 37.0
+offset_top = 27.0
+offset_right = -41.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+text = "..."
+
+[node name="NamePlate" type="Panel" parent="." unique_id=322258150]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -511.0
+offset_top = -368.0
+offset_right = -8.678589
+offset_bottom = -271.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_87kay")
+
+[node name="Speaker" type="Label" parent="NamePlate" unique_id=1648341211]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 0
+offset_left = 22.321411
+offset_top = 26.0
+offset_right = 480.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("1_irs7l")
+theme_override_font_sizes/font_size = 30
+text = "..."
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Choices" type="Control" parent="." unique_id=1738521739]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="choice3" type="Button" parent="Choices" unique_id=9271355]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -466.0
+offset_top = -40.0
+offset_right = 466.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+text = "1"
+
+[node name="choice2" type="Button" parent="Choices" unique_id=959835235]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -466.0
+offset_top = -170.0
+offset_right = 466.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+text = "2"
+
+[node name="choice1" type="Button" parent="Choices" unique_id=2010027129]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -466.0
+offset_top = -289.0
+offset_right = 466.0
+offset_bottom = -209.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+text = "3"

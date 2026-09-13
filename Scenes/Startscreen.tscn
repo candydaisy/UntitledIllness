@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dav46fsv78prk"]
+
+[ext_resource type="Script" uid="uid://w7eac8od3fwh" path="res://Scripts/Scenes/startscreen.gd" id="1_pcnqu"]
+[ext_resource type="Texture2D" uid="uid://b38jifvjmvwgh" path="res://icon.png" id="2_fxkc2"]
+
+[node name="Control" type="Control" unique_id=271337871]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pcnqu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1023988534]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=415975648]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = -128.0
+offset_right = 382.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=1642565894]
+layout_mode = 2
+texture = ExtResource("2_fxkc2")
