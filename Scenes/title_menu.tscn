@@ -18,7 +18,6 @@ grow_vertical = 2
 script = ExtResource("1_y6n0q")
 
 [node name="Main" type="Control" parent="UI" unique_id=2132508968]
-visible = false
 anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
@@ -36,6 +35,8 @@ offset_right = 266.0
 offset_bottom = 113.0
 grow_horizontal = 2
 grow_vertical = 2
+accessibility_name = "Play"
+accessibility_description = "Select a charcter"
 theme_override_fonts/font = ExtResource("2_b1p23")
 theme_override_font_sizes/font_size = 28
 text = "Play
@@ -90,6 +91,7 @@ theme_override_font_sizes/font_size = 28
 text = "◌"
 
 [node name="Selections" type="Control" parent="UI" unique_id=1307879910]
+visible = false
 anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
