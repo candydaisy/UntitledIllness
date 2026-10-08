@@ -21,25 +21,11 @@ boot_splash/show_image=false
 
 buses/default_bus_layout="uid://d88k3dvch0k2"
 
-[autoload]
-
-Dialogic="*uid://ds2q0uclmolvu"
-
-[dialogic]
-
-directories/dch_directory={}
-directories/dtl_directory={}
-layout/style_directory={}
-
 [display]
 
 window/size/viewport_width=1600
 window/size/viewport_height=900
 window/stretch/mode="viewport"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 

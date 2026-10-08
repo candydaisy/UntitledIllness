@@ -61,7 +61,6 @@ Mainly high school and university-age players, especially those who enjoy visual
 ## Built with
 
 - [Godot Engine 4.7](https://godotengine.org/) (GL Compatibility renderer)
-- [Dialogic 2](https://github.com/dialogic-godot/dialogic) (2.0-alpha-20, included in `addons/`) for dialogue
 - Export targets: **Web** (itch.io) and **Android**
 
 ## Running the project
@@ -78,7 +77,6 @@ Mainly high school and university-age players, especially those who enjoy visual
 
 ```
 UntitledIllness/
-├── addons/          # Third-party plugins (Dialogic)
 ├── Assets/          # Audio, fonts, images, themes, and story flow data
 ├── Scenes/          # Godot scenes (title menu, start screen, dialogue, story)
 ├── Scripts/         # GDScript for scenes, story logic, and UI
