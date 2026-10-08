@@ -61,7 +61,7 @@ Mainly high school and university-age players, especially those who enjoy visual
 ## Built with
 
 - [Godot Engine 4.7](https://godotengine.org/) (GL Compatibility renderer)
-- [Dialogic](https://github.com/dialogic-godot/dialogic) for dialogue
+- [Dialogic 2](https://github.com/dialogic-godot/dialogic) (2.0-alpha-20, included in `addons/`) for dialogue
 - Export targets: **Web** (itch.io) and **Android**
 
 ## Running the project
@@ -71,14 +71,14 @@ Mainly high school and university-age players, especially those who enjoy visual
    ```bash
    git clone https://github.com/candydaisy/UntitledIllness.git
    ```
-3. Install the **Dialogic** addon into `addons/` if it isn't already there (it's registered as an autoload).
-4. Open Godot, choose **Import**, and select `project.godot`.
-5. Press **F5** to run.
+3. Open Godot, choose **Import**, and select `project.godot`.
+4. Press **F5** to run.
 
 ## Project structure
 
 ```
 UntitledIllness/
+├── addons/          # Third-party plugins (Dialogic)
 ├── Assets/          # Audio, fonts, images, themes, and story flow data
 ├── Scenes/          # Godot scenes (title menu, start screen, dialogue, story)
 ├── Scripts/         # GDScript for scenes, story logic, and UI
