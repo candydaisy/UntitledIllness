@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dlh2p46qx4oas"]
 
-[ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/Story/story_1.gd" id="1_7yklv"]
-[ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/dialog.tscn" id="2_jk8no"]
-[ext_resource type="Texture2D" uid="uid://cgfkel8k50p0w" path="res://Assets/Photos/sideart.png" id="3_42qhq"]
-[ext_resource type="AudioStream" uid="uid://vudt60emqi3g" path="res://Assets/audio/typingtypeshi1.wav" id="3_hvbsa"]
+[ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/StoryEngine/story_player.gd" id="1_7yklv"]
+[ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/Dialog/dialog.tscn" id="2_jk8no"]
+[ext_resource type="Texture2D" uid="uid://cgfkel8k50p0w" path="res://Assets/Photos/UI/sideart.png" id="3_42qhq"]
+[ext_resource type="AudioStream" uid="uid://vudt60emqi3g" path="res://Assets/audio/ui/typingtypeshi1.wav" id="3_hvbsa"]
 [ext_resource type="Texture2D" uid="uid://xy40dwn6ygwg" path="res://Assets/Photos/Background/BedroomDay_blury.png" id="4_42qhq"]
 [ext_resource type="Texture2D" uid="uid://c4571abywemgs" path="res://Assets/Photos/Background/bedroomnight_blur.png" id="5_4fkki"]
 [ext_resource type="Texture2D" uid="uid://b5tysi5vijdrk" path="res://Assets/Photos/Background/FrontLawn_blury.png" id="6_8nrf5"]

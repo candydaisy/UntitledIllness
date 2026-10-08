@@ -77,12 +77,14 @@ Mainly high school and university-age players, especially those who enjoy visual
 
 ```
 UntitledIllness/
-├── Assets/          # Audio, fonts, images, themes, and story flow data
-├── Scenes/          # Godot scenes (title menu, start screen, dialogue, story)
-├── Scripts/         # GDScript for scenes, story logic, and UI
-├── PAPERS/          # Project write-up / documentation
-└── project.godot
+├── Story/              # Dialogue and branching, one folder per character
+├── Scenes/             # Menus, dialogue box, and each character's story scene
+├── Scripts/StoryEngine # Shared code that plays a story
+├── Assets/             # Art, audio, fonts, themes
+└── Docs/               # Project write-ups
 ```
+
+Want to help? See [CONTRIBUTING.md](CONTRIBUTING.md). Writing dialogue? See [Story/README.md](Story/README.md).
 
 ## A note on the subject matter
 

@@ -288,7 +288,7 @@
 		"text": "\"My name is classmate1, my role is to find information for the slideshow.\"",
 		"next": "38",
 		"background": "Class",
-		"show_characters": ["Useless1"],
+		"show_characters": ["useless1"],
 		"hide_characters": ["Ulyn"]
 	},
 
@@ -297,8 +297,8 @@
 		"text": "\"My name is classmate2, and my role is to decorate the slides.\"",
 		"next": "39",
 		"background": "Class",
-		"show_characters": ["Useless2"],
-		"hide_characters": ["Useless1"]
+		"show_characters": ["useless2"],
+		"hide_characters": ["useless1"]
 	},
 
 	"39": {
@@ -307,7 +307,7 @@
 		"next": "40",
 		"background": "Class",
 		"show_characters": ["Kay", "Ulyn"],
-		"hide_characters": ["Useless2"]
+		"hide_characters": ["useless2"]
 	},
 
 	"40": {
@@ -692,7 +692,7 @@
 		"text": "\"Kay is so useful, he did half the work for us, didn't he?\"",
 		"next": "90",
 		"background": "Noodlesstore",
-		"show_characters": ["Useless1"],
+		"show_characters": ["useless1"],
 		"hide_characters": ["Kay"]
 	},
 
@@ -701,7 +701,7 @@
 		"text": "\"Yeah, and he doesn't complain about anything, we should just stay with him so he'll do the project for us.\"",
 		"next": "91",
 		"background": "Noodlesstore",
-		"show_characters": ["Useless2"]
+		"show_characters": ["useless2"]
 	},
 
 	"91": {
@@ -1372,7 +1372,7 @@
 	"184": {
 		"speaker": "Kay",
 		"text": "\"ZZZzzzz...\"",
-		"hide_characters": ["K"]
+		"hide_characters": ["Kay"]
 	},
 
 	"a": {
@@ -1380,7 +1380,7 @@
 		"text": "I should do something, Right?",
 		"background": "Noodlesstore",
 		"show_characters": ["Kay"],
-		"hide_characters": ["Useless1", "Useless2"],
+		"hide_characters": ["useless1", "useless2"],
 		"choices": [
 			{
 				"text": "Confront them",

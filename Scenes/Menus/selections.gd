@@ -52,7 +52,7 @@ func _on_start_pressed() -> void:
 	if charactersel == 0:
 		return
 	elif charactersel == 1:
-		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/storykay1.tscn"))
+		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/Characters/storykay1.tscn"))
 	else:
 		return
-#		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/Startscreen.tscn"))
+#		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/Menus/Startscreen.tscn"))

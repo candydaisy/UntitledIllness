@@ -17,4 +17,4 @@ func _ready() -> void:
 	tween.tween_interval(0.5)
 	
 	await tween.finished
-	get_tree().change_scene_to_file("res://Scenes/title_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Menus/title_menu.tscn")
