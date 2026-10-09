@@ -27,6 +27,7 @@ animations = [{
 
 [node name="KMain" type="Node2D" unique_id=1770389354]
 script = ExtResource("1_7yklv")
+start_node = "start"
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 
