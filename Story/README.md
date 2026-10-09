@@ -11,14 +11,16 @@ You don't need to touch any code to write or change dialogue. Edit the JSON, sav
 
 ## How a story works
 
-A story is a list of **nodes**. Each node is one line of dialogue, and has an id (`"1"`, `"2"`, …). The game starts at `"1"` and follows `next` from node to node.
+A story is a list of **nodes**. Each node is one line of dialogue and has an id. The game starts at the node set as **Start Node** on the story scene (Kay's is `"start"`) and follows `next` from node to node.
+
+Ids can be any text. Name them after the scene they're in, like `gate_3` or `lunch_stay_2`, so you can tell where you are in the file. To add a line between `gate_3` and `gate_4`, give it a new id like `gate_3b` and update `gate_3`'s `next`. You don't need to renumber anything.
 
 ```json
-"3": {
+"wake_3": {
 	"speaker": "Kay",
 	"emotion": "tired",
-	"text": "It's Monday... I feel like not going to school today.",
-	"next": "4",
+	"text": "Monday...",
+	"next": "wake_4",
 	"background": "Kay's room1"
 },
 ```
@@ -89,6 +91,6 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 Run the game from the Godot editor. On start it checks the whole story file and prints a **warning in the Output panel** for anything that doesn't line up: a `next` pointing to a missing node, a background or character name that isn't in the scene, an unknown sound, etc.
 
 Common mistakes:
-- Node ids are text: `"next": "4"`, not `"next": 4`.
+- Ids are always in quotes: `"next": "gate_4"`.
 - Names are case-sensitive: `"useless1"` is not `"Useless1"`.
 - Every node except the last needs a comma after its closing `}`.

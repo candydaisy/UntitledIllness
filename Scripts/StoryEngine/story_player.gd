@@ -3,7 +3,7 @@ extends Node2D
 ## Plays a character's story from a flow graph JSON.
 ## Reuse this script for every character's story scene: set flow_graph_path
 ## (and the other exports) in the Inspector. The scene needs the same node
-## layout as storykay1.tscn: Bgs, Characters, Audio and Cenfix/Dialog.
+## layout as Story.tscn: Bgs, Characters, Audio and Cenfix/Dialog.
 
 @export_file("*.json") var flow_graph_path := "res://Story/Kay/flow_graph.json"
 @export_file("*.tscn") var end_scene_path := "res://Scenes/Menus/title_menu.tscn" # when story ends
