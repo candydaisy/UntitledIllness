@@ -39,7 +39,7 @@
 	},
 
 	"wake_6": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "kay did u finish the slides?? 😭",
 		"next": "wake_7"
 	},
@@ -331,7 +331,7 @@
 	},
 
 	"pres_8": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Uh... hi. I did the, um, the research part.\"",
 		"next": "pres_9",
 		"show_characters": ["useless1"],
@@ -345,7 +345,7 @@
 	},
 
 	"pres_10": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"emotion": "nervous",
 		"text": "\"So Obama was... he was born in...\"",
 		"next": "pres_11"
@@ -375,7 +375,7 @@
 
 	"pres_wait_2": {
 		"speaker": "",
-		"text": "*The teacher looks over. Not at Classmate1. At Kay.*",
+		"text": "*The teacher looks over. Not at Bank. At Kay.*",
 		"next": "pres_wait_3"
 	},
 
@@ -402,12 +402,12 @@
 
 	"pres_14": {
 		"speaker": "",
-		"text": "*Classmate1 nods along like they planned it.*",
+		"text": "*Bank nods along like they planned it.*",
 		"next": "pres_15"
 	},
 
 	"pres_15": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"And I did the design! So, um, this slide is about...\"",
 		"next": "pres_16",
 		"show_characters": ["useless2"],
@@ -435,14 +435,14 @@
 	},
 
 	"pres_19": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Nice one, Kay! You saved us.\"",
 		"next": "pres_20",
 		"show_characters": ["useless1", "useless2"]
 	},
 
 	"pres_20": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"Seriously, you're the best.\"",
 		"next": "pres_21"
 	},
@@ -854,39 +854,39 @@
 	},
 
 	"food_nd_4": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Dude, I totally blanked up there. Good thing Kay knew everything.\"",
 		"next": "food_nd_5",
 		"show_characters": ["useless1"]
 	},
 
 	"food_nd_5": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"Kay always knows everything. That's why I always want him in my group.\"",
 		"next": "food_nd_6",
 		"show_characters": ["useless2"]
 	},
 
 	"food_nd_6": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Literally. I didn't even open the slides until this morning.\"",
 		"next": "food_nd_7"
 	},
 
 	"food_nd_7": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"Same, haha. He doesn't mind, though. He offered.\"",
 		"next": "food_nd_8"
 	},
 
 	"food_nd_8": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Next project's with him too, right?\"",
 		"next": "food_nd_9"
 	},
 
 	"food_nd_9": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"Obviously.\"",
 		"next": "food_nd_10"
 	},
@@ -933,7 +933,7 @@
 	},
 
 	"food_nd_say_3": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "\"Kay! We were just talking about you. Next project, we're with you again, cool?\"",
 		"next": "food_nd_say_4"
 	},
@@ -951,7 +951,7 @@
 	},
 
 	"food_nd_say_6": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"You're the best!\"",
 		"next": "food_nd_end"
 	},
@@ -1014,7 +1014,7 @@
 	},
 
 	"food_fr_5": {
-		"speaker": "Classmate1",
+		"speaker": "Bank",
 		"text": "thx for today kay ur a lifesaver 🙏",
 		"next": "food_fr_6"
 	},
@@ -1826,7 +1826,7 @@
 	},
 
 	"night_overheard": {
-		"speaker": "Classmate2",
+		"speaker": "Fern",
 		"text": "\"He doesn't mind, though. He offered.\"",
 		"next": "night_8"
 	},
@@ -1879,7 +1879,8 @@
 	"night_13": {
 		"speaker": "Kay",
 		"emotion": "sad",
-		"text": "...Right?"
+		"text": "...Right?",
+		"next": "tue_wake_1"
 	},
 
 	"night_open_1": {
@@ -1890,6 +1891,3845 @@
 
 	"night_open_2": {
 		"speaker": "Kay",
-		"text": "...Maybe tomorrow will be a little better."
+		"text": "...Maybe tomorrow will be a little better.",
+		"next": "tue_wake_1"
+	},
+
+	"tue_wake_1": {
+		"speaker": "",
+		"text": "*Tuesday.*",
+		"next": "tue_wake_2"
+	},
+
+	"tue_wake_2": {
+		"speaker": "",
+		"text": "*Kay wakes up at 6:10, before the alarm. He lies still and lets the ceiling get lighter.*",
+		"next": "tue_wake_3",
+		"secret": {"condition": "flag_true", "flag": "OpenedUp", "next": "tue_open_1"}
+	},
+
+	"tue_wake_3": {
+		"speaker": "",
+		"text": "*He checks the group chat out of habit. Nothing new. A sticker from Bank at midnight. A meme Fern forwarded from somewhere.*",
+		"next": "tue_el_1"
+	},
+
+	"tue_open_1": {
+		"speaker": "",
+		"text": "*The first thing he sees when he unlocks his phone is last night's chat.*",
+		"next": "tue_open_2"
+	},
+
+	"tue_open_2": {
+		"speaker": "Ulyn",
+		"text": "lunch tmr? just us. my treat",
+		"next": "tue_open_3"
+	},
+
+	"tue_open_3": {
+		"speaker": "Kay",
+		"text": "ok",
+		"next": "tue_open_4"
+	},
+
+	"tue_open_4": {
+		"speaker": "",
+		"text": "*He reads it three times.*",
+		"next": "tue_open_5"
+	},
+
+	"tue_open_5": {
+		"speaker": "Kay",
+		"text": "I said it. I actually said it.",
+		"next": "tue_open_6"
+	},
+
+	"tue_open_6": {
+		"speaker": "",
+		"text": "*He waits for the embarrassment to arrive. It does, a little. Something else comes with it, something quieter, and he doesn't have a name for it yet.*",
+		"next": "tue_el_1"
+	},
+
+	"tue_el_1": {
+		"speaker": "",
+		"text": "*6:32. His phone buzzes. Elysia.*",
+		"next": "tue_el_2",
+		"secret": {"condition": "flag_true", "flag": "RefusedElysia", "next": "tue_elr_1"}
+	},
+
+	"tue_el_2": {
+		"speaker": "Elysia",
+		"text": "morning K!! walking home together again today?? 👀",
+		"next": "tue_el_3"
+	},
+
+	"tue_el_3": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"yeah. i'd like that.\"", "type": "honest", "weight_change": -5, "next": "tue_elw_yes_1"},
+			{"text": "\"might have to stay late today\"", "type": "neutral", "weight_change": 5, "next": "tue_elw_no_1"}
+		]
+	},
+
+	"tue_elw_yes_1": {
+		"speaker": "",
+		"text": "*She sends six hearts in a row, then unsends five of them.*",
+		"next": "tue_elw_yes_2"
+	},
+
+	"tue_elw_yes_2": {
+		"speaker": "",
+		"text": "*Kay laughs out loud, alone in his room. It surprises him.*",
+		"next": "tue_shower_1"
+	},
+
+	"tue_elw_no_1": {
+		"speaker": "Elysia",
+		"text": "boooo. ok!! tomorrow then 😤",
+		"next": "tue_elw_no_2"
+	},
+
+	"tue_elw_no_2": {
+		"speaker": "",
+		"text": "*He doesn't have to stay late. He just remembers her friends watching yesterday. The one who whispered.*",
+		"next": "tue_shower_1"
+	},
+
+	"tue_elr_1": {
+		"speaker": "Elysia",
+		"text": "goooood morning!! ☀️ did u eat breakfast",
+		"next": "tue_elr_2"
+	},
+
+	"tue_elr_2": {
+		"speaker": "",
+		"text": "*Like yesterday never happened. Kay knows that trick. He does it too.*",
+		"next": "tue_elr_3"
+	},
+
+	"tue_elr_3": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"sorry about yesterday. i didn't mean it like that.\"", "type": "honest", "weight_change": -5, "next": "tue_elr_sorry_1", "set_flag": "ApologizedElysia"},
+			{"text": "\"morning! not yet lol\"", "type": "neutral", "weight_change": 5, "next": "tue_elr_fine_1"}
+		]
+	},
+
+	"tue_elr_sorry_1": {
+		"speaker": "",
+		"text": "*The typing dots appear. Disappear. Appear again.*",
+		"next": "tue_elr_sorry_2"
+	},
+
+	"tue_elr_sorry_2": {
+		"speaker": "Elysia",
+		"text": "it's ok!!",
+		"next": "tue_elr_sorry_3"
+	},
+
+	"tue_elr_sorry_3": {
+		"speaker": "",
+		"text": "*A minute later:*",
+		"next": "tue_elr_sorry_4"
+	},
+
+	"tue_elr_sorry_4": {
+		"speaker": "Elysia",
+		"text": "it kind of stung tbh",
+		"next": "tue_elr_sorry_5"
+	},
+
+	"tue_elr_sorry_5": {
+		"speaker": "Elysia",
+		"text": "but thank u for saying sorry 🫶",
+		"next": "tue_elr_sorry_6"
+	},
+
+	"tue_elr_sorry_6": {
+		"speaker": "Kay",
+		"text": "It stung. She said it stung.",
+		"next": "tue_elr_sorry_7"
+	},
+
+	"tue_elr_sorry_7": {
+		"speaker": "",
+		"text": "*Elysia never says things like that. She trusted him with it. He holds the phone a little longer than he needs to.*",
+		"next": "tue_shower_1"
+	},
+
+	"tue_elr_fine_1": {
+		"speaker": "Elysia",
+		"text": "EAT SOMETHING 😤",
+		"next": "tue_elr_fine_2"
+	},
+
+	"tue_elr_fine_2": {
+		"speaker": "",
+		"text": "*She sends a sticker of a furious cat. Everything looks normal.*",
+		"next": "tue_elr_fine_3"
+	},
+
+	"tue_elr_fine_3": {
+		"speaker": "",
+		"text": "*That's the part that bothers him.*",
+		"next": "tue_shower_1"
+	},
+
+	"tue_shower_1": {
+		"speaker": "",
+		"text": "*The shower is still cold. He washes fast.*",
+		"next": "tue_shower_2"
+	},
+
+	"tue_shower_2": {
+		"speaker": "Kay",
+		"text": "It wakes me up better anyway.",
+		"next": "tue_shower_3"
+	},
+
+	"tue_shower_3": {
+		"speaker": "",
+		"text": "*On the fridge there's a new sticky note under the old one: \"Sorry about the fridge!! Weekend, promise. - Mom\"*",
+		"next": "proj_1"
+	},
+
+	"proj_1": {
+		"speaker": "",
+		"text": "*Homeroom. The teacher writes COMMUNITY PROJECT on the board and underlines it twice.*",
+		"next": "proj_2"
+	},
+
+	"proj_2": {
+		"speaker": "Teacher",
+		"text": "\"Groups of four. Find something in our school community that isn't working, and fix it.\"",
+		"next": "proj_3"
+	},
+
+	"proj_3": {
+		"speaker": "Teacher",
+		"text": "\"Not a poster. Not slides. Fix it. In the last week of the semester, you present what you did.\"",
+		"next": "proj_4"
+	},
+
+	"proj_4": {
+		"speaker": "",
+		"text": "*The class groans as one.*",
+		"next": "proj_5"
+	},
+
+	"proj_5": {
+		"speaker": "",
+		"text": "*Before Kay can turn around, Bank is already dragging his chair across the floor. Fern is right behind him.*",
+		"next": "proj_6"
+	},
+
+	"proj_6": {
+		"speaker": "Bank",
+		"text": "\"Kay! Group?\"",
+		"next": "proj_7"
+	},
+
+	"proj_7": {
+		"speaker": "Ulyn",
+		"text": "\"He's with me. You two can come, I guess.\"",
+		"next": "proj_8"
+	},
+
+	"proj_8": {
+		"speaker": "",
+		"text": "*So it's group 3 again. Same four. Same careful gaps.*",
+		"next": "proj_9"
+	},
+
+	"proj_9": {
+		"speaker": "Bank",
+		"text": "\"Can we do the vending machine? It eats coins. That's a community problem.\"",
+		"next": "proj_10"
+	},
+
+	"proj_10": {
+		"speaker": "Fern",
+		"text": "\"Kay, you pick. You always pick good stuff.\"",
+		"next": "proj_11"
+	},
+
+	"proj_11": {
+		"speaker": "",
+		"text": "*Kay opens his mouth, but Ulyn is already pointing out the window, past the science building, at four raised wooden beds gone wild with weeds.*",
+		"next": "proj_12"
+	},
+
+	"proj_12": {
+		"speaker": "Ulyn",
+		"text": "\"The garden. The agriculture club died two years ago. Nobody's touched it since.\"",
+		"next": "proj_13"
+	},
+
+	"proj_13": {
+		"speaker": "Teacher",
+		"text": "\"...Approved. That's actually a good one, group 3.\"",
+		"next": "proj_14"
+	},
+
+	"proj_14": {
+		"speaker": "Fern",
+		"text": "\"Ooh. Aesthetic. I can do before-and-after photos.\"",
+		"next": "proj_15"
+	},
+
+	"proj_15": {
+		"speaker": "Bank",
+		"text": "\"Is gardening, like, physical?\"",
+		"next": "proj_16"
+	},
+
+	"proj_16": {
+		"speaker": "Ulyn",
+		"text": "\"Yes, Bank. It's physical.\"",
+		"next": "proj_17"
+	},
+
+	"proj_17": {
+		"speaker": "",
+		"text": "*Fern turns to Kay with her pen already uncapped.*",
+		"next": "proj_18"
+	},
+
+	"proj_18": {
+		"speaker": "Fern",
+		"text": "\"So you'll do the report and the plan, right? You're so good at that.\"",
+		"next": "proj_19"
+	},
+
+	"proj_19": {
+		"speaker": "",
+		"text": "*Bank nods like it's already decided.*",
+		"next": "proj_choice",
+		"secret": {"condition": "flag_true", "flag": "Overheard", "next": "proj_echo"}
+	},
+
+	"proj_echo": {
+		"speaker": "Fern",
+		"text": "\"He doesn't mind, though. He offered.\"",
+		"next": "proj_choice"
+	},
+
+	"proj_choice": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"Sure. I'll handle the report.\"", "type": "neutral", "weight_change": 8, "next": "proj_sure_1"},
+			{"text": "\"Let's split it. Everyone writes up the part they work on.\"", "type": "honest", "weight_change": -5, "next": "proj_split_1", "set_flag": "SplitWork"}
+		]
+	},
+
+	"proj_sure_1": {
+		"speaker": "Fern",
+		"text": "\"Yay. Best leader.\"",
+		"next": "proj_sure_2"
+	},
+
+	"proj_sure_2": {
+		"speaker": "",
+		"text": "*Beside him, Ulyn's pen stops moving. He doesn't say anything.*",
+		"next": "proj_sure_3"
+	},
+
+	"proj_sure_3": {
+		"speaker": "",
+		"text": "*Somehow that's worse.*",
+		"next": "tlunch_1"
+	},
+
+	"proj_split_1": {
+		"speaker": "",
+		"text": "*A small pause. Kay braces for it.*",
+		"next": "proj_split_2"
+	},
+
+	"proj_split_2": {
+		"speaker": "Bank",
+		"text": "\"Oh. Yeah, sure. That's fair.\"",
+		"next": "proj_split_3"
+	},
+
+	"proj_split_3": {
+		"speaker": "Fern",
+		"text": "\"Okay! Then I'll do the photos and the design part.\"",
+		"next": "proj_split_4"
+	},
+
+	"proj_split_4": {
+		"speaker": "Kay",
+		"text": "...That's it?",
+		"next": "proj_split_5"
+	},
+
+	"proj_split_5": {
+		"speaker": "",
+		"text": "*He had three arguments ready. He didn't need any of them.*",
+		"next": "proj_split_6"
+	},
+
+	"proj_split_6": {
+		"speaker": "",
+		"text": "*Under the desk, Ulyn taps Kay's shoe with his own. Just once.*",
+		"next": "tlunch_1"
+	},
+
+	"tlunch_1": {
+		"speaker": "",
+		"text": "*Lunch.*",
+		"next": "tlunch_2",
+		"secret": {"condition": "flag_true", "flag": "OpenedUp", "next": "tlunch_open_1"}
+	},
+
+	"tlunch_2": {
+		"speaker": "",
+		"text": "*Ulyn drops into the seat across from him.*",
+		"next": "tlunch_3",
+		"secret": {"condition": "flag_true", "flag": "UlynStayed", "next": "tlunch_stay_1"}
+	},
+
+	"tlunch_3": {
+		"speaker": "",
+		"text": "*Then he puts his forehead on the table.*",
+		"next": "tlunch_4"
+	},
+
+	"tlunch_4": {
+		"speaker": "Ulyn",
+		"text": "\"Finished the chemistry report at three. Don't look at me.\"",
+		"next": "tlunch_5"
+	},
+
+	"tlunch_5": {
+		"speaker": "",
+		"text": "*Kay knows exactly what three in the morning feels like. Neither of them says so.*",
+		"next": "kettle_1"
+	},
+
+	"tlunch_open_1": {
+		"speaker": "",
+		"text": "*Ulyn buys two plates of pad kra pao, crispy pork, a fried egg on each, and slides one across the table without a word.*",
+		"next": "tlunch_open_2"
+	},
+
+	"tlunch_open_2": {
+		"speaker": "Kay",
+		"text": "He's going to ask. What \"a lot\" meant. What happened.",
+		"next": "tlunch_open_3"
+	},
+
+	"tlunch_open_3": {
+		"speaker": "",
+		"text": "*The questions don't come. Ulyn eats and complains about the sports day budget.*",
+		"next": "tlunch_open_4"
+	},
+
+	"tlunch_open_4": {
+		"speaker": "Kay",
+		"text": "\"...You're not going to ask?\"",
+		"next": "tlunch_open_5"
+	},
+
+	"tlunch_open_5": {
+		"speaker": "Ulyn",
+		"text": "\"You said yesterday was a lot. I believe you. You don't have to give me a report on it.\"",
+		"next": "tlunch_open_6"
+	},
+
+	"tlunch_open_6": {
+		"speaker": "Kay",
+		"text": "\"Thanks.\"",
+		"next": "tlunch_open_7"
+	},
+
+	"tlunch_open_7": {
+		"speaker": "Ulyn",
+		"text": "\"I mean, you can. Whenever. I'm just not going to make you present it.\"",
+		"next": "tlunch_open_8"
+	},
+
+	"tlunch_open_8": {
+		"speaker": "Kay",
+		"text": "\"Was that a joke about the presentation?\"",
+		"next": "tlunch_open_9"
+	},
+
+	"tlunch_open_9": {
+		"speaker": "Ulyn",
+		"text": "\"A little bit.\"",
+		"next": "tlunch_open_10"
+	},
+
+	"tlunch_open_10": {
+		"speaker": "",
+		"text": "*It's the first lunch in a long time where Kay doesn't have to be anything.*",
+		"next": "kettle_1"
+	},
+
+	"tlunch_stay_1": {
+		"speaker": "",
+		"text": "*He slaps his chemistry report on the table. A big red C- at the top.*",
+		"next": "tlunch_stay_2"
+	},
+
+	"tlunch_stay_2": {
+		"speaker": "Ulyn",
+		"text": "\"Worth it.\"",
+		"next": "tlunch_stay_3"
+	},
+
+	"tlunch_stay_3": {
+		"speaker": "Kay",
+		"text": "\"I'm sorry—\"",
+		"next": "tlunch_stay_4"
+	},
+
+	"tlunch_stay_4": {
+		"speaker": "Ulyn",
+		"text": "\"Say sorry one more time and I'm telling everyone you asked me to stay because you missed me.\"",
+		"next": "tlunch_stay_5"
+	},
+
+	"tlunch_stay_5": {
+		"speaker": "Kay",
+		"text": "\"...I kind of did.\"",
+		"next": "tlunch_stay_6"
+	},
+
+	"tlunch_stay_6": {
+		"speaker": "",
+		"text": "*Ulyn goes completely quiet. Then he grins, way too wide, and doesn't stop for the rest of lunch.*",
+		"next": "kettle_1"
+	},
+
+	"kettle_1": {
+		"speaker": "",
+		"text": "*That night, Kay boils the kettle and carries it to the bathroom, mixing it with cold water in a bucket so he can wash his hair without his scalp going numb.*",
+		"next": "kettle_2"
+	},
+
+	"kettle_2": {
+		"speaker": "",
+		"text": "*Mom gets home in the middle of it. She stops in the bathroom doorway, still in her hospital shoes.*",
+		"next": "kettle_3"
+	},
+
+	"kettle_3": {
+		"speaker": "Mom",
+		"text": "\"What are you doing with the kettle?\"",
+		"choices": [
+			{"text": "\"The water heater's broken. It's been broken for a week.\"", "type": "honest", "weight_change": -5, "next": "kettle_told_1", "set_flag": "ToldMomHeater"},
+			{"text": "\"...Making tea.\"", "type": "neutral", "weight_change": 5, "next": "kettle_tea_1"}
+		]
+	},
+
+	"kettle_told_1": {
+		"speaker": "Mom",
+		"text": "\"A week? Kay. Why didn't you say anything?\"",
+		"next": "kettle_told_2"
+	},
+
+	"kettle_told_2": {
+		"speaker": "Kay",
+		"text": "\"You were busy.\"",
+		"next": "kettle_told_3"
+	},
+
+	"kettle_told_3": {
+		"speaker": "",
+		"text": "*Mom puts her bag down right there on the hallway floor.*",
+		"next": "kettle_told_4"
+	},
+
+	"kettle_told_4": {
+		"speaker": "Mom",
+		"text": "\"I'm not too busy for you to have hot water.\"",
+		"next": "kettle_told_5"
+	},
+
+	"kettle_told_5": {
+		"speaker": "",
+		"text": "*She calls the repair shop that second and waits on hold for twenty minutes, tapping her foot. They can come Thursday.*",
+		"next": "kettle_told_6"
+	},
+
+	"kettle_told_6": {
+		"speaker": "",
+		"text": "*It's a small thing. Somehow, it doesn't feel small.*",
+		"next": "tnight_1"
+	},
+
+	"kettle_tea_1": {
+		"speaker": "Mom",
+		"text": "\"Since when do you drink tea?\"",
+		"next": "kettle_tea_2"
+	},
+
+	"kettle_tea_2": {
+		"speaker": "Kay",
+		"text": "\"Since now.\"",
+		"next": "kettle_tea_3"
+	},
+
+	"kettle_tea_3": {
+		"speaker": "",
+		"text": "*She laughs, too tired to ask anything else. He drinks a cup of tea he doesn't want, and later he washes his hair in cold water.*",
+		"next": "tnight_1"
+	},
+
+	"tnight_1": {
+		"speaker": "",
+		"text": "*In bed, Kay stares at the ceiling.*",
+		"next": "tnight_2",
+		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "tnight_split_1"}
+	},
+
+	"tnight_2": {
+		"speaker": "Kay",
+		"text": "Report. Plan. Budget. Timeline.",
+		"next": "tnight_3"
+	},
+
+	"tnight_3": {
+		"speaker": "Kay",
+		"text": "At least I know how to do this. It's the one thing I always know how to do.",
+		"next": "garden_1"
+	},
+
+	"tnight_split_1": {
+		"speaker": "Kay",
+		"text": "They said yes. Just like that.",
+		"next": "tnight_split_2"
+	},
+
+	"tnight_split_2": {
+		"speaker": "",
+		"text": "*He keeps turning it over, looking for the catch.*",
+		"next": "garden_1"
+	},
+
+	"garden_1": {
+		"speaker": "",
+		"text": "*Saturday. The garden behind the science building: four raised beds, weeds up to the knee, a hose with three holes in it, and a tap that screams when you turn it.*",
+		"next": "garden_2"
+	},
+
+	"garden_2": {
+		"speaker": "",
+		"text": "*The group agreed on 8 a.m. Kay gets there at 7:40.*",
+		"next": "garden_3"
+	},
+
+	"garden_3": {
+		"speaker": "",
+		"text": "*Ulyn shows up at 8:20 with a bag of bread and no apology. Fern arrives at nine and takes before-photos for twenty minutes.*",
+		"next": "garden_4"
+	},
+
+	"garden_4": {
+		"speaker": "Bank",
+		"text": "my mom needs me today 😭🙏",
+		"next": "garden_5",
+		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "garden_split_1"}
+	},
+
+	"garden_5": {
+		"speaker": "",
+		"text": "*Then Fern leaves for tutoring.*",
+		"next": "garden_noi_1"
+	},
+
+	"garden_split_1": {
+		"speaker": "",
+		"text": "*But Fern actually stays an extra hour. She pulls weeds and complains about her nails the whole time. She pulls them, though.*",
+		"next": "garden_split_2"
+	},
+
+	"garden_split_2": {
+		"speaker": "",
+		"text": "*And Bank turns up at ten anyway, red-faced, holding four cold drinks like an apology.*",
+		"next": "garden_split_3"
+	},
+
+	"garden_split_3": {
+		"speaker": "Kay",
+		"text": "...Huh.",
+		"next": "garden_noi_1"
+	},
+
+	"garden_noi_1": {
+		"speaker": "",
+		"text": "*At noon, Ms. Noi, the home economics teacher, comes by. She agreed to be their advisor. She brings a paper bag of seeds and a trowel she says is older than all of them.*",
+		"next": "garden_noi_2"
+	},
+
+	"garden_noi_2": {
+		"speaker": "Ms. Noi",
+		"text": "\"Water spinach. Basil. Chili. Marigolds around the edges, to keep the bugs off.\"",
+		"next": "garden_noi_3"
+	},
+
+	"garden_noi_3": {
+		"speaker": "Ms. Noi",
+		"text": "\"Water spinach is forgiving. Basil isn't. Chili sulks if you love it too much.\"",
+		"next": "garden_noi_4"
+	},
+
+	"garden_noi_4": {
+		"speaker": "Ulyn",
+		"text": "\"Like Kay.\"",
+		"next": "garden_noi_5"
+	},
+
+	"garden_noi_5": {
+		"speaker": "Kay",
+		"text": "\"I don't sulk.\"",
+		"next": "garden_noi_6"
+	},
+
+	"garden_noi_6": {
+		"speaker": "Ms. Noi",
+		"text": "\"Once a day. In the morning. Only if the soil is dry.\"",
+		"next": "garden_noi_7"
+	},
+
+	"garden_noi_7": {
+		"speaker": "Ms. Noi",
+		"text": "\"Push your finger in, like this. If it's damp, leave it alone.\"",
+		"next": "garden_noi_8"
+	},
+
+	"garden_noi_8": {
+		"speaker": "",
+		"text": "*Kay writes it down in his notebook, word for word.*",
+		"next": "weeks_1"
+	},
+
+	"weeks_1": {
+		"speaker": "",
+		"text": "*For two weeks, Kay comes to the garden every morning before homeroom and every afternoon after the last bell.*",
+		"next": "weeks_2"
+	},
+
+	"weeks_2": {
+		"speaker": "",
+		"text": "*He pushes his finger into the soil the way she showed him. It's always a little damp.*",
+		"next": "weeks_3"
+	},
+
+	"weeks_3": {
+		"speaker": "",
+		"text": "*He waters anyway.*",
+		"next": "weeks_4"
+	},
+
+	"weeks_4": {
+		"speaker": "Kay",
+		"text": "Doing nothing feels wrong. Doing nothing feels like not caring.",
+		"next": "weeks_5"
+	},
+
+	"weeks_5": {
+		"speaker": "",
+		"text": "*Ulyn comes when he can, which isn't often. Sports day is coming, and the student council put him in charge of half of it.*",
+		"next": "weeks_6"
+	},
+
+	"weeks_6": {
+		"speaker": "",
+		"text": "*He's also tutoring on Saturdays, and sleeping at his cousin's place again. Kay knows that last part the way he knows most things about Ulyn now: from the edges, without asking.*",
+		"next": "bug_1"
+	},
+
+	"bug_1": {
+		"speaker": "",
+		"text": "*One afternoon, Elysia comes to the garden alone. Her friends went to the mall.*",
+		"next": "bug_2"
+	},
+
+	"bug_2": {
+		"speaker": "",
+		"text": "*She crouches by the chili bed to look at the seedlings, and then goes very still.*",
+		"next": "bug_3"
+	},
+
+	"bug_3": {
+		"speaker": "Elysia",
+		"text": "\"Oh. Oh! Kay. Come here. Don't move fast.\"",
+		"next": "bug_4"
+	},
+
+	"bug_4": {
+		"speaker": "",
+		"text": "*On a leaf, catching the light, there's a beetle. Green so bright it looks fake, like metal.*",
+		"next": "bug_5"
+	},
+
+	"bug_5": {
+		"speaker": "Elysia",
+		"text": "\"That's a jewel beetle. Sternocera, I think. People used their wing covers in old palace art, on ceilings, because the color never fades—\"",
+		"next": "bug_6"
+	},
+
+	"bug_6": {
+		"speaker": "Elysia",
+		"text": "\"It's not pigment, it's the structure of the shell, the light bounces off—\"",
+		"next": "bug_7"
+	},
+
+	"bug_7": {
+		"speaker": "",
+		"text": "*She stops in the middle of the sentence and glances over her shoulder at the path. Then she laughs, too bright.*",
+		"next": "bug_8"
+	},
+
+	"bug_8": {
+		"speaker": "Elysia",
+		"text": "\"Sorry. That's weird. Nobody cares about bugs.\"",
+		"choices": [
+			{"text": "\"I care. Keep going.\"", "type": "honest", "weight_change": -5, "next": "bug_care_1", "set_flag": "ElysiaBugs"},
+			{"text": "\"We should probably head back before it gets dark.\"", "type": "neutral", "weight_change": 5, "next": "bug_leave_1"}
+		]
+	},
+
+	"bug_care_1": {
+		"speaker": "",
+		"text": "*She stares at him.*",
+		"next": "bug_care_2"
+	},
+
+	"bug_care_2": {
+		"speaker": "",
+		"text": "*Then she keeps going. Slowly at first, then fast again. Jewel beetles, rhinoceros beetles, a click beetle she caught in third grade that could flip itself over.*",
+		"next": "bug_care_3"
+	},
+
+	"bug_care_3": {
+		"speaker": "",
+		"text": "*She sounds different. Not the loud cafeteria Elysia. Not the polite-smile Elysia.*",
+		"next": "bug_care_4"
+	},
+
+	"bug_care_4": {
+		"speaker": "Kay",
+		"text": "This is what she sounds like when she isn't checking.",
+		"next": "bug_care_5"
+	},
+
+	"bug_care_5": {
+		"speaker": "Kay",
+		"text": "I want to be someone she never has to check around.",
+		"next": "bug_gate_1"
+	},
+
+	"bug_leave_1": {
+		"speaker": "Elysia",
+		"text": "\"Yeah! Totally.\"",
+		"next": "bug_leave_2"
+	},
+
+	"bug_leave_2": {
+		"speaker": "",
+		"text": "*She tips the beetle gently off her finger onto a leaf. On the walk out, she talks about the mall trip, a café, a lot of things.*",
+		"next": "bug_leave_3"
+	},
+
+	"bug_leave_3": {
+		"speaker": "",
+		"text": "*She doesn't mention the beetle again.*",
+		"next": "bug_leave_4"
+	},
+
+	"bug_leave_4": {
+		"speaker": "Kay",
+		"text": "I missed something. I don't know what.",
+		"next": "bug_gate_1"
+	},
+
+	"bug_gate_1": {
+		"speaker": "",
+		"text": "*They reach the gate.*",
+		"next": "mint_1",
+		"secret": {"condition": "weight_above", "value": 60, "next": "bug_tired_1"}
+	},
+
+	"bug_tired_1": {
+		"speaker": "",
+		"text": "*Elysia looks at him sideways.*",
+		"next": "bug_tired_2"
+	},
+
+	"bug_tired_2": {
+		"speaker": "Elysia",
+		"text": "\"You look tired, K.\"",
+		"next": "bug_tired_3"
+	},
+
+	"bug_tired_3": {
+		"speaker": "Kay",
+		"text": "\"I'm always tired.\"",
+		"next": "bug_tired_4"
+	},
+
+	"bug_tired_4": {
+		"speaker": "Elysia",
+		"text": "\"That's what worries me.\"",
+		"next": "bug_tired_5"
+	},
+
+	"bug_tired_5": {
+		"speaker": "",
+		"text": "*He laughs it off. She doesn't laugh.*",
+		"next": "mint_1"
+	},
+
+	"mint_1": {
+		"speaker": "",
+		"text": "*The next day, a girl stops Kay outside the library. Short. Blunt bob. Doesn't smile.*",
+		"next": "mint_2"
+	},
+
+	"mint_2": {
+		"speaker": "Mint",
+		"text": "\"You're Kay.\"",
+		"next": "mint_3"
+	},
+
+	"mint_3": {
+		"speaker": "Kay",
+		"text": "\"...Yes?\"",
+		"next": "mint_4"
+	},
+
+	"mint_4": {
+		"speaker": "Mint",
+		"text": "\"Mint. Elysia's.\"",
+		"next": "mint_5"
+	},
+
+	"mint_5": {
+		"speaker": "",
+		"text": "*She doesn't explain. She doesn't need to. Kay knows the name. Eleven years. Since kindergarten.*",
+		"next": "mint_6"
+	},
+
+	"mint_6": {
+		"speaker": "Mint",
+		"text": "\"She talks about you a lot. Don't make that face, it's a good thing.\"",
+		"next": "mint_7"
+	},
+
+	"mint_7": {
+		"speaker": "Kay",
+		"text": "\"Okay.\"",
+		"next": "mint_8"
+	},
+
+	"mint_8": {
+		"speaker": "Mint",
+		"text": "\"She's been tired lately. She won't say it. She'd rather explode than be a bother to anyone.\"",
+		"next": "mint_9"
+	},
+
+	"mint_9": {
+		"speaker": "",
+		"text": "*Kay hears it like a sentence about himself.*",
+		"next": "mint_10"
+	},
+
+	"mint_10": {
+		"speaker": "Mint",
+		"text": "\"Just look out for her. You two are the same kind of idiot.\"",
+		"next": "mint_11"
+	},
+
+	"mint_11": {
+		"speaker": "",
+		"text": "*She walks away before he can answer.*",
+		"next": "wrecked_1"
+	},
+
+	"wrecked_1": {
+		"speaker": "",
+		"text": "*End of the third week. Ulyn falls asleep in history with his forehead on the student council folder.*",
+		"next": "wrecked_2"
+	},
+
+	"wrecked_2": {
+		"speaker": "",
+		"text": "*The teacher calls his name twice.*",
+		"next": "wrecked_3"
+	},
+
+	"wrecked_3": {
+		"speaker": "Ulyn",
+		"text": "\"Present. And also correct.\"",
+		"next": "wrecked_4"
+	},
+
+	"wrecked_4": {
+		"speaker": "",
+		"text": "*The class laughs.*",
+		"next": "wrecked_5"
+	},
+
+	"wrecked_5": {
+		"speaker": "",
+		"text": "*After the bell, Kay notices Ulyn's eyes are red at the edges. His phone buzzes on the desk: Mom.*",
+		"next": "wrecked_6"
+	},
+
+	"wrecked_6": {
+		"speaker": "",
+		"text": "*Ulyn declines it without looking and shoves it in his pocket.*",
+		"next": "wrecked_7"
+	},
+
+	"wrecked_7": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"You okay? You look wrecked.\"", "type": "honest", "weight_change": -5, "next": "wrecked_ask_1", "set_flag": "AskedUlyn"},
+			{"text": "Say nothing", "type": "neutral", "weight_change": 5, "next": "wrecked_quiet_1"}
+		]
+	},
+
+	"wrecked_ask_1": {
+		"speaker": "",
+		"text": "*Ulyn blinks, like nobody's asked him that in a while.*",
+		"next": "wrecked_ask_2"
+	},
+
+	"wrecked_ask_2": {
+		"speaker": "Ulyn",
+		"text": "\"...Yeah. Just sports day stuff.\"",
+		"next": "wrecked_ask_3"
+	},
+
+	"wrecked_ask_3": {
+		"speaker": "Ulyn",
+		"text": "\"Thanks for asking, though.\"",
+		"next": "wrecked_ask_4"
+	},
+
+	"wrecked_ask_4": {
+		"speaker": "Kay",
+		"text": "That's what I'd say.",
+		"next": "wrecked_ask_5"
+	},
+
+	"wrecked_ask_5": {
+		"speaker": "Kay",
+		"text": "That's exactly what I'd say.",
+		"next": "sprout_1"
+	},
+
+	"wrecked_quiet_1": {
+		"speaker": "Ulyn",
+		"text": "\"What?\"",
+		"next": "wrecked_quiet_2"
+	},
+
+	"wrecked_quiet_2": {
+		"speaker": "Kay",
+		"text": "\"Nothing.\"",
+		"next": "wrecked_quiet_3"
+	},
+
+	"wrecked_quiet_3": {
+		"speaker": "Ulyn",
+		"text": "\"You're staring.\"",
+		"next": "wrecked_quiet_4"
+	},
+
+	"wrecked_quiet_4": {
+		"speaker": "Kay",
+		"text": "\"You have chalk on your face.\"",
+		"next": "wrecked_quiet_5"
+	},
+
+	"wrecked_quiet_5": {
+		"speaker": "",
+		"text": "*He doesn't. Ulyn wipes his cheek anyway.*",
+		"next": "sprout_1"
+	},
+
+	"sprout_1": {
+		"speaker": "",
+		"text": "*On the last Friday of the third week, the first seedlings come up. Water spinach first, little green hooks pushing out of the soil.*",
+		"next": "sprout_2"
+	},
+
+	"sprout_2": {
+		"speaker": "",
+		"text": "*Kay takes a picture and sends it to the group chat before he can talk himself out of it.*",
+		"next": "sprout_3"
+	},
+
+	"sprout_3": {
+		"speaker": "Fern",
+		"text": "❤️",
+		"next": "sprout_4"
+	},
+
+	"sprout_4": {
+		"speaker": "Bank",
+		"text": "🔥🔥🔥",
+		"next": "sprout_5"
+	},
+
+	"sprout_5": {
+		"speaker": "Ulyn",
+		"text": "proud dad",
+		"next": "midterm_1",
+		"secret": {"condition": "flag_true", "flag": "ElysiaBugs", "next": "sprout_bug_1"}
+	},
+
+	"sprout_bug_1": {
+		"speaker": "",
+		"text": "*He sends it to Elysia too. She replies in four seconds.*",
+		"next": "sprout_bug_2"
+	},
+
+	"sprout_bug_2": {
+		"speaker": "Elysia",
+		"text": "ANY BUGS???",
+		"next": "midterm_1"
+	},
+
+	"midterm_1": {
+		"speaker": "",
+		"text": "*Week five. Midterms.*",
+		"next": "midterm_2"
+	},
+
+	"midterm_2": {
+		"speaker": "",
+		"text": "*Study until one. Garden at 6:30. Exam. Garden after school. Study until one.*",
+		"next": "midterm_3"
+	},
+
+	"midterm_3": {
+		"speaker": "",
+		"text": "*Tuesday night, his phone buzzes. Bank.*",
+		"next": "midterm_4",
+		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "midterm_draft_1"}
+	},
+
+	"midterm_4": {
+		"speaker": "Bank",
+		"text": "kay can u do the research part 😭 i'm dying w midterms",
+		"next": "midterm_choice"
+	},
+
+	"midterm_draft_1": {
+		"speaker": "Bank",
+		"text": "kay can u look at my part 🙏 i wrote some but its bad",
+		"next": "midterm_draft_2"
+	},
+
+	"midterm_draft_2": {
+		"speaker": "",
+		"text": "*He opens the file. Half a page. Most of it is the title.*",
+		"next": "midterm_choice"
+	},
+
+	"midterm_choice": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"just send me what you have. i'll do it.\"", "type": "neutral", "weight_change": 10, "next": "midterm_do_1"},
+			{"text": "\"i'll help after exams. but you write it.\"", "type": "honest", "weight_change": -5, "next": "midterm_teach_1", "set_flag": "TaughtBank"}
+		]
+	},
+
+	"midterm_do_1": {
+		"speaker": "Bank",
+		"text": "UR A LEGEND",
+		"next": "midterm_do_2"
+	},
+
+	"midterm_do_2": {
+		"speaker": "",
+		"text": "*Kay writes three pages between 11 p.m. and 1:40 a.m., and studies for chemistry in the gaps.*",
+		"next": "score_1"
+	},
+
+	"midterm_teach_1": {
+		"speaker": "",
+		"text": "*A long pause.*",
+		"next": "midterm_teach_2"
+	},
+
+	"midterm_teach_2": {
+		"speaker": "Bank",
+		"text": "...ok fair",
+		"next": "midterm_teach_3"
+	},
+
+	"midterm_teach_3": {
+		"speaker": "Bank",
+		"text": "can u at least tell me where to start",
+		"next": "midterm_teach_4"
+	},
+
+	"midterm_teach_4": {
+		"speaker": "Kay",
+		"text": "yeah. that i can do.",
+		"next": "midterm_teach_5"
+	},
+
+	"midterm_teach_5": {
+		"speaker": "",
+		"text": "*He sends three bullet points instead of three pages.*",
+		"next": "midterm_teach_6"
+	},
+
+	"midterm_teach_6": {
+		"speaker": "",
+		"text": "*It feels like dropping something he was supposed to be holding. He waits for it to break.*",
+		"next": "midterm_teach_7"
+	},
+
+	"midterm_teach_7": {
+		"speaker": "",
+		"text": "*Nothing breaks.*",
+		"next": "score_1"
+	},
+
+	"score_1": {
+		"speaker": "",
+		"text": "*Thursday. The history teacher hands back the midterms. Kay is top of the class again.*",
+		"next": "score_2"
+	},
+
+	"score_2": {
+		"speaker": "Teacher",
+		"text": "\"As always.\"",
+		"next": "score_3"
+	},
+
+	"score_3": {
+		"speaker": "Mom",
+		"text": "!!!!! proud of you",
+		"next": "score_4"
+	},
+
+	"score_4": {
+		"speaker": "",
+		"text": "*Kay looks at the number for a long time. It's like reading somebody else's score.*",
+		"next": "score_5"
+	},
+
+	"score_5": {
+		"speaker": "Kay",
+		"text": "It should feel like something.",
+		"next": "yellow_1"
+	},
+
+	"yellow_1": {
+		"speaker": "",
+		"text": "*That afternoon, the chili seedlings are yellow.*",
+		"next": "yellow_2"
+	},
+
+	"yellow_2": {
+		"speaker": "",
+		"text": "*The basil leaves hang soft and dark at the edges. The soil smells sour, like a wet towel left in a bag.*",
+		"next": "yellow_3"
+	},
+
+	"yellow_3": {
+		"speaker": "Kay",
+		"text": "They must be thirsty.",
+		"next": "yellow_4"
+	},
+
+	"yellow_4": {
+		"speaker": "",
+		"text": "*He reaches for the hose.*",
+		"next": "yellow_5"
+	},
+
+	"yellow_5": {
+		"speaker": "Ms. Noi",
+		"text": "\"Kay.\"",
+		"next": "yellow_6"
+	},
+
+	"yellow_6": {
+		"speaker": "",
+		"text": "*Ms. Noi is standing at the end of the bed. She crouches, pushes her finger into the soil, and pulls it out muddy to the knuckle.*",
+		"next": "yellow_7"
+	},
+
+	"yellow_7": {
+		"speaker": "Ms. Noi",
+		"text": "\"This is soaked. How often are you watering?\"",
+		"next": "yellow_8"
+	},
+
+	"yellow_8": {
+		"speaker": "Kay",
+		"text": "\"...Twice a day. Sometimes three.\"",
+		"next": "yellow_9"
+	},
+
+	"yellow_9": {
+		"speaker": "",
+		"text": "*She sighs. It isn't an angry sigh.*",
+		"next": "yellow_10"
+	},
+
+	"yellow_10": {
+		"speaker": "Ms. Noi",
+		"text": "\"They're not dying of thirst, Kay. They're drowning. The roots can't breathe.\"",
+		"next": "yellow_11"
+	},
+
+	"yellow_11": {
+		"speaker": "Kay",
+		"text": "\"I was trying to help.\"",
+		"next": "yellow_12"
+	},
+
+	"yellow_12": {
+		"speaker": "Ms. Noi",
+		"text": "\"I know. That's usually how it happens.\"",
+		"next": "yellow_13"
+	},
+
+	"yellow_13": {
+		"speaker": "",
+		"text": "*She shows him how to loosen the top of the soil and let it dry. The water spinach will be fine. It forgives almost anything. Two of the basil plants are already gone.*",
+		"next": "yellow_14"
+	},
+
+	"yellow_14": {
+		"speaker": "",
+		"text": "*Kay stands there, holding the hose.*",
+		"next": "yellow_15"
+	},
+
+	"yellow_15": {
+		"speaker": "Kay",
+		"text": "I did everything right. I did more than right.",
+		"next": "mnight_1"
+	},
+
+	"mnight_1": {
+		"speaker": "",
+		"text": "*That night, he can't sleep.*",
+		"next": "mnight_2",
+		"secret": {"condition": "weight_above", "value": 70, "next": "mnight_heavy_1"}
+	},
+
+	"mnight_2": {
+		"speaker": "Kay",
+		"text": "Two dead basil plants. It's just basil.",
+		"next": "mnight_3"
+	},
+
+	"mnight_3": {
+		"speaker": "",
+		"text": "*He thinks about it anyway, for a long time.*",
+		"next": "mnight_phone"
+	},
+
+	"mnight_heavy_1": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "If I stayed home tomorrow, would anyone notice?",
+		"next": "mnight_heavy_2"
+	},
+
+	"mnight_heavy_2": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "The garden would be fine. Better, probably. Without me drowning it.",
+		"next": "mnight_heavy_3"
+	},
+
+	"mnight_heavy_3": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "Everyone would be fine without me.",
+		"next": "mnight_heavy_4"
+	},
+
+	"mnight_heavy_4": {
+		"speaker": "",
+		"text": "*The thought just sits there. It doesn't feel dramatic. It feels like the answer to a math problem he worked out a while ago and is only now checking.*",
+		"next": "mnight_heavy_5"
+	},
+
+	"mnight_heavy_5": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "I'm just tired. It's just exams.",
+		"next": "mnight_phone"
+	},
+
+	"mnight_phone": {
+		"speaker": "",
+		"text": "*His phone is on the pillow. Ulyn's name is right there at the top of his chats.*",
+		"choices": [
+			{"text": "Text Ulyn: \"you up?\"", "type": "helpful", "weight_change": -10, "next": "mnight_text_1", "set_flag": "TextedNight"},
+			{"text": "Put the phone down", "type": "neutral", "weight_change": 10, "next": "mnight_down_1"}
+		]
+	},
+
+	"mnight_text_1": {
+		"speaker": "",
+		"text": "*He sends it before he can delete it.*",
+		"next": "mnight_text_2"
+	},
+
+	"mnight_text_2": {
+		"speaker": "",
+		"text": "*Delivered.*",
+		"next": "mnight_text_3"
+	},
+
+	"mnight_text_3": {
+		"speaker": "",
+		"text": "*1:12 a.m. Not read. 1:20. Not read.*",
+		"next": "mnight_text_4"
+	},
+
+	"mnight_text_4": {
+		"speaker": "Kay",
+		"text": "He's asleep. Normal people sleep.",
+		"next": "mnight_text_5"
+	},
+
+	"mnight_text_5": {
+		"speaker": "",
+		"text": "*Last year it said Delivered too.*",
+		"next": "mnight_text_6"
+	},
+
+	"mnight_text_6": {
+		"speaker": "",
+		"text": "*He turns the phone face down.*",
+		"next": "mnight_text_7"
+	},
+
+	"mnight_text_7": {
+		"speaker": "Kay",
+		"text": "At least I sent it.",
+		"next": "absent_1"
+	},
+
+	"mnight_down_1": {
+		"speaker": "",
+		"text": "*He puts the phone face down on the floor, out of reach.*",
+		"next": "mnight_down_2"
+	},
+
+	"mnight_down_2": {
+		"speaker": "Kay",
+		"text": "Don't make him worry.",
+		"next": "absent_1"
+	},
+
+	"absent_1": {
+		"speaker": "",
+		"text": "*Beep. Beep. Beep.*",
+		"next": "absent_2"
+	},
+
+	"absent_2": {
+		"speaker": "",
+		"text": "*Kay doesn't slap the alarm off. He lets it ring until it gives up on its own.*",
+		"next": "absent_3"
+	},
+
+	"absent_3": {
+		"speaker": "",
+		"text": "*He knows he has to get up. His body doesn't move.*",
+		"next": "absent_4"
+	},
+
+	"absent_4": {
+		"speaker": "",
+		"text": "*It isn't like being tired. It's more like the distance between him and the floor got bigger overnight.*",
+		"next": "absent_5"
+	},
+
+	"absent_5": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "...",
+		"choices": [
+			{"text": "Get up", "type": "neutral", "weight_change": 5, "next": "absent_try_1"},
+			{"text": "Stay in bed", "type": "neutral", "weight_change": 0, "next": "absent_stay_1"}
+		]
+	},
+
+	"absent_try_1": {
+		"speaker": "",
+		"text": "*He sits up. Feet on the floor.*",
+		"next": "absent_try_2"
+	},
+
+	"absent_try_2": {
+		"speaker": "",
+		"text": "*His uniform is on the chair, two meters away. It might as well be across the ocean.*",
+		"next": "absent_try_3"
+	},
+
+	"absent_try_3": {
+		"speaker": "",
+		"text": "*He sits on the edge of the bed for forty minutes. Then he lies back down.*",
+		"next": "absent_mom_1"
+	},
+
+	"absent_stay_1": {
+		"speaker": "",
+		"text": "*He doesn't fight it.*",
+		"next": "absent_stay_2"
+	},
+
+	"absent_stay_2": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "Just today.",
+		"next": "absent_mom_1"
+	},
+
+	"absent_mom_1": {
+		"speaker": "Mom",
+		"text": "\"Bye, Kay! There's bread!\"",
+		"next": "absent_mom_2"
+	},
+
+	"absent_mom_2": {
+		"speaker": "Kay",
+		"text": "\"Bye.\"",
+		"next": "absent_mom_3"
+	},
+
+	"absent_mom_3": {
+		"speaker": "",
+		"text": "*It sounds completely normal. He's very good at that.*",
+		"next": "absent_mom_4"
+	},
+
+	"absent_mom_4": {
+		"speaker": "",
+		"text": "*The front door closes.*",
+		"next": "absent_mom_5"
+	},
+
+	"absent_mom_5": {
+		"speaker": "",
+		"text": "*8:05. Homeroom starts without him.*",
+		"next": "absent_mom_6",
+		"secret": {"condition": "flag_true", "flag": "TextedNight", "next": "absent_late_1"}
+	},
+
+	"absent_mom_6": {
+		"speaker": "Ulyn",
+		"text": "where are u. ur never late",
+		"next": "absent_msgs_1"
+	},
+
+	"absent_late_1": {
+		"speaker": "Ulyn",
+		"text": "sorry fell asleep at like 11!! u ok??",
+		"next": "absent_late_2"
+	},
+
+	"absent_late_2": {
+		"speaker": "Ulyn",
+		"text": "kay?",
+		"next": "absent_late_3"
+	},
+
+	"absent_late_3": {
+		"speaker": "Ulyn",
+		"text": "where are u",
+		"next": "absent_msgs_1"
+	},
+
+	"absent_msgs_1": {
+		"speaker": "Elysia",
+		"text": "K? didn't see u at the gate 👀",
+		"next": "absent_msgs_2"
+	},
+
+	"absent_msgs_2": {
+		"speaker": "Elysia",
+		"text": "are you sick??",
+		"next": "absent_msgs_3"
+	},
+
+	"absent_msgs_3": {
+		"speaker": "Bank",
+		"text": "kay where's the garden key?? ms noi says we have to check on it today lol",
+		"next": "absent_msgs_4"
+	},
+
+	"absent_msgs_4": {
+		"speaker": "",
+		"text": "*Kay makes a sound that's almost a laugh.*",
+		"next": "absent_msgs_5"
+	},
+
+	"absent_msgs_5": {
+		"speaker": "Kay",
+		"text": "So that's what it takes.",
+		"next": "absent_msgs_6"
+	},
+
+	"absent_msgs_6": {
+		"speaker": "Fern",
+		"text": "feel better!! 🌷",
+		"next": "absent_msgs_7"
+	},
+
+	"absent_msgs_7": {
+		"speaker": "Kay",
+		"text": "If I stayed home, would anyone notice?",
+		"next": "absent_msgs_8"
+	},
+
+	"absent_msgs_8": {
+		"speaker": "Kay",
+		"text": "...Four people. Five, if you count the basil.",
+		"next": "absent_msgs_9"
+	},
+
+	"absent_msgs_9": {
+		"speaker": "",
+		"text": "*He answers Bank first, because it's the easiest.*",
+		"next": "absent_msgs_10"
+	},
+
+	"absent_msgs_10": {
+		"speaker": "Kay",
+		"text": "spare key's under the blue pot. don't water if the soil's wet.",
+		"next": "absent_msgs_11"
+	},
+
+	"absent_msgs_11": {
+		"speaker": "",
+		"text": "*He can say that about the plants without any trouble.*",
+		"choices": [
+			{"text": "Turn the phone face down", "type": "neutral", "weight_change": 5, "next": "absent_down_1"},
+			{"text": "Reply to Elysia: \"i couldn't get up today\"", "type": "honest", "weight_change": -10, "next": "absent_text_1", "set_flag": "ToldElysiaEarly"},
+			{"text": "Call Ulyn", "type": "helpful", "weight_change": -10, "next": "absent_call_1", "set_flag": "CalledUlyn"}
+		]
+	},
+
+	"absent_down_1": {
+		"speaker": "",
+		"text": "*He turns it over. It keeps buzzing for a while. Then it stops.*",
+		"next": "knock_1"
+	},
+
+	"absent_text_1": {
+		"speaker": "",
+		"text": "*Her reply comes before he can regret it.*",
+		"next": "absent_text_2"
+	},
+
+	"absent_text_2": {
+		"speaker": "Elysia",
+		"text": "ok. thank u for telling me.",
+		"next": "absent_text_3"
+	},
+
+	"absent_text_3": {
+		"speaker": "Elysia",
+		"text": "do u want me to call or do u want me to leave u alone",
+		"next": "absent_text_4"
+	},
+
+	"absent_text_4": {
+		"speaker": "Kay",
+		"text": "leave me alone for now. sorry",
+		"next": "absent_text_5"
+	},
+
+	"absent_text_5": {
+		"speaker": "Elysia",
+		"text": "don't be sorry. i'm here.",
+		"next": "absent_text_6"
+	},
+
+	"absent_text_6": {
+		"speaker": "",
+		"text": "*He reads it four times.*",
+		"next": "knock_1"
+	},
+
+	"absent_call_1": {
+		"speaker": "",
+		"text": "*Ulyn picks up on the first ring. He's whispering. He's in class.*",
+		"next": "absent_call_2"
+	},
+
+	"absent_call_2": {
+		"speaker": "Ulyn",
+		"text": "\"Hey. Hey. You okay?\"",
+		"next": "absent_call_3"
+	},
+
+	"absent_call_3": {
+		"speaker": "Kay",
+		"text": "\"...No.\"",
+		"next": "absent_call_4"
+	},
+
+	"absent_call_4": {
+		"speaker": "",
+		"text": "*Silence on the line.*",
+		"next": "absent_call_5"
+	},
+
+	"absent_call_5": {
+		"speaker": "Ulyn",
+		"text": "\"Okay. I'm coming after school. Don't argue.\"",
+		"next": "absent_call_6"
+	},
+
+	"absent_call_6": {
+		"speaker": "Kay",
+		"text": "\"You have student council—\"",
+		"next": "absent_call_7"
+	},
+
+	"absent_call_7": {
+		"speaker": "Ulyn",
+		"text": "\"Kay. Don't argue.\"",
+		"next": "absent_call_8"
+	},
+
+	"absent_call_8": {
+		"speaker": "",
+		"text": "*He hangs up.*",
+		"next": "knock_1"
+	},
+
+	"knock_1": {
+		"speaker": "",
+		"text": "*Kay sleeps through the afternoon without meaning to.*",
+		"next": "knock_2"
+	},
+
+	"knock_2": {
+		"speaker": "",
+		"text": "*4:10. Someone knocks on the front door.*",
+		"next": "step_1"
+	},
+
+	"step_1": {
+		"speaker": "",
+		"text": "*Ulyn is still in his uniform, holding a plastic bag: two cartons of pink milk, crispy pork from the stall by school, and the cheap coconut cookies Kay used to eat every day in tenth grade.*",
+		"next": "step_2"
+	},
+
+	"step_2": {
+		"speaker": "Ulyn",
+		"text": "\"You look terrible.\"",
+		"next": "step_3"
+	},
+
+	"step_3": {
+		"speaker": "Kay",
+		"text": "\"Thanks. Love you too.\"",
+		"next": "step_4"
+	},
+
+	"step_4": {
+		"speaker": "",
+		"text": "*They sit on the front step, because Kay doesn't want Ulyn to see his room.*",
+		"next": "step_5"
+	},
+
+	"step_5": {
+		"speaker": "",
+		"text": "*The plants in the front yard, the ones Kay waters every single day, have yellow leaves too.*",
+		"next": "step_6"
+	},
+
+	"step_6": {
+		"speaker": "Ulyn",
+		"text": "\"Your plants look worse than our garden.\"",
+		"next": "step_7"
+	},
+
+	"step_7": {
+		"speaker": "Kay",
+		"text": "\"I water them every day.\"",
+		"next": "step_8"
+	},
+
+	"step_8": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. Probably that.\"",
+		"next": "step_9",
+		"secret": {"condition": "flag_true", "flag": "CalledUlyn", "next": "step_called_1"}
+	},
+
+	"step_9": {
+		"speaker": "",
+		"text": "*Ulyn picks at the corner of the cookie packet.*",
+		"next": "step_10",
+		"secret": {"condition": "flag_true", "flag": "TextedNight", "next": "step_texted_1"}
+	},
+
+	"step_10": {
+		"speaker": "Ulyn",
+		"text": "\"You weren't at school. You're never not at school.\"",
+		"next": "step_11"
+	},
+
+	"step_11": {
+		"speaker": "Ulyn",
+		"text": "\"You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
+		"next": "step_conf_1"
+	},
+
+	"step_called_1": {
+		"speaker": "Ulyn",
+		"text": "\"You called me.\"",
+		"next": "step_called_2"
+	},
+
+	"step_called_2": {
+		"speaker": "Kay",
+		"text": "\"...Yeah.\"",
+		"next": "step_called_3"
+	},
+
+	"step_called_3": {
+		"speaker": "Ulyn",
+		"text": "\"You've never called me. Not once. Not since—\"",
+		"next": "step_called_4"
+	},
+
+	"step_called_4": {
+		"speaker": "",
+		"text": "*He stops.*",
+		"next": "step_called_5"
+	},
+
+	"step_called_5": {
+		"speaker": "Ulyn",
+		"text": "\"It was the best phone call I ever got, and you said one word.\"",
+		"next": "step_conf_1"
+	},
+
+	"step_texted_1": {
+		"speaker": "Ulyn",
+		"text": "\"You texted me last night. 'You up.' And I was asleep. And then you weren't at school, and I thought—\"",
+		"next": "step_texted_2"
+	},
+
+	"step_texted_2": {
+		"speaker": "",
+		"text": "*He stops.*",
+		"next": "step_texted_3"
+	},
+
+	"step_texted_3": {
+		"speaker": "Ulyn",
+		"text": "\"I thought, not again.\"",
+		"next": "step_conf_1"
+	},
+
+	"step_conf_1": {
+		"speaker": "Ulyn",
+		"text": "\"Can I say something? You don't have to say anything back.\"",
+		"next": "step_conf_2"
+	},
+
+	"step_conf_2": {
+		"speaker": "",
+		"text": "*Kay nods.*",
+		"next": "step_conf_3"
+	},
+
+	"step_conf_3": {
+		"speaker": "Ulyn",
+		"text": "\"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
+		"next": "step_conf_4"
+	},
+
+	"step_conf_4": {
+		"speaker": "Ulyn",
+		"text": "\"I saw it. And I didn't answer for four days. And then I said, 'sorry, was busy.'\"",
+		"next": "step_conf_5"
+	},
+
+	"step_conf_5": {
+		"speaker": "",
+		"text": "*Kay remembers the exact words. He's never stopped remembering them.*",
+		"next": "step_conf_6"
+	},
+
+	"step_conf_6": {
+		"speaker": "Ulyn",
+		"text": "\"My parents were splitting up. That week was the worst one.\"",
+		"next": "step_conf_7"
+	},
+
+	"step_conf_7": {
+		"speaker": "Ulyn",
+		"text": "\"My dad moved out. My mom cried in the bathroom every night with the shower running so I wouldn't hear. I was sleeping at my cousin's because I couldn't be in that house.\"",
+		"next": "step_conf_8"
+	},
+
+	"step_conf_8": {
+		"speaker": "",
+		"text": "*His voice is flat, the way people sound when they've practiced saying something in their heads.*",
+		"next": "step_conf_9"
+	},
+
+	"step_conf_9": {
+		"speaker": "Ulyn",
+		"text": "\"I saw your message and I thought, I don't have anything. If he needs something, I don't have anything to give.\"",
+		"next": "step_conf_10"
+	},
+
+	"step_conf_10": {
+		"speaker": "Ulyn",
+		"text": "\"So I didn't answer. And then it was too late to answer properly, so I sent the worst possible thing.\"",
+		"next": "step_conf_11"
+	},
+
+	"step_conf_11": {
+		"speaker": "",
+		"text": "*He finally looks at Kay.*",
+		"next": "step_conf_12"
+	},
+
+	"step_conf_12": {
+		"speaker": "Ulyn",
+		"text": "\"And you never asked me for anything again. Not even 'can I call you.'\"",
+		"next": "step_conf_13"
+	},
+
+	"step_conf_13": {
+		"speaker": "Ulyn",
+		"text": "\"I've been waiting a whole year for you to try again so I could do it right. And you just got really, really good at being fine.\"",
+		"choices": [
+			{"text": "\"It's fine. It was a long time ago.\"", "type": "neutral", "weight_change": 10, "next": "step_fine_1"},
+			{"text": "\"I thought I was too much. That's why I stopped.\"", "type": "honest", "weight_change": -15, "next": "step_honest_1", "set_flag": "TalkedUlyn"},
+			{"text": "\"Why didn't you tell me about your parents?\"", "type": "honest", "weight_change": -10, "next": "step_why_1", "set_flag": "AskedUlynWhy"}
+		]
+	},
+
+	"step_fine_1": {
+		"speaker": "Ulyn",
+		"text": "\"Kay.\"",
+		"next": "step_fine_2"
+	},
+
+	"step_fine_2": {
+		"speaker": "Kay",
+		"text": "\"Really. You had your own stuff going on.\"",
+		"next": "step_fine_3"
+	},
+
+	"step_fine_3": {
+		"speaker": "Ulyn",
+		"text": "\"Don't do that. Not kay-sure. Please.\"",
+		"choices": [
+			{"text": "\"...I thought I was too much.\"", "type": "honest", "weight_change": -10, "next": "step_honest_1", "set_flag": "TalkedUlyn"},
+			{"text": "\"It's fine. Really.\"", "type": "neutral", "weight_change": 10, "next": "step_fine2_1"}
+		]
+	},
+
+	"step_fine2_1": {
+		"speaker": "",
+		"text": "*Ulyn looks at him for a long time. Then he nods, slowly.*",
+		"next": "step_fine2_2"
+	},
+
+	"step_fine2_2": {
+		"speaker": "Ulyn",
+		"text": "\"Okay.\"",
+		"next": "step_fine2_3"
+	},
+
+	"step_fine2_3": {
+		"speaker": "",
+		"text": "*He doesn't believe it. He stays anyway. They eat the crispy pork in silence until the streetlights come on.*",
+		"next": "step_fine2_4"
+	},
+
+	"step_fine2_4": {
+		"speaker": "",
+		"text": "*At the gate, he stops.*",
+		"next": "step_fine2_5"
+	},
+
+	"step_fine2_5": {
+		"speaker": "Ulyn",
+		"text": "\"Offer stands. Forever, probably. Annoyingly.\"",
+		"next": "mom_1"
+	},
+
+	"step_why_1": {
+		"speaker": "",
+		"text": "*Ulyn laughs. It comes out wet.*",
+		"next": "step_why_2"
+	},
+
+	"step_why_2": {
+		"speaker": "Ulyn",
+		"text": "\"Because you'd have done the thing. You'd have taken it on.\"",
+		"next": "step_why_3"
+	},
+
+	"step_why_3": {
+		"speaker": "Ulyn",
+		"text": "\"You'd have fixed my whole life at 2:30 in the morning like those slides, and I didn't want to be one more thing you carry.\"",
+		"next": "step_why_4"
+	},
+
+	"step_why_4": {
+		"speaker": "Kay",
+		"text": "\"...That's so stupid.\"",
+		"next": "step_why_5"
+	},
+
+	"step_why_5": {
+		"speaker": "",
+		"text": "*Ulyn wipes his face with the back of his wrist.*",
+		"next": "step_why_6"
+	},
+
+	"step_why_6": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. I know. We're both stupid.\"",
+		"choices": [
+			{"text": "\"...I thought I was too much. That's why I stopped asking.\"", "type": "honest", "weight_change": -10, "next": "step_honest_1", "set_flag": "TalkedUlyn"},
+			{"text": "Stay quiet", "type": "neutral", "weight_change": 0, "next": "step_quiet_1"}
+		]
+	},
+
+	"step_quiet_1": {
+		"speaker": "",
+		"text": "*They sit. After a while, Ulyn bumps Kay's shoulder with his own.*",
+		"next": "step_quiet_2"
+	},
+
+	"step_quiet_2": {
+		"speaker": "Ulyn",
+		"text": "\"Okay. Next time it's your turn.\"",
+		"next": "mom_1"
+	},
+
+	"step_honest_1": {
+		"speaker": "Kay",
+		"text": "\"Not just for you.\"",
+		"next": "step_honest_2"
+	},
+
+	"step_honest_2": {
+		"speaker": "",
+		"text": "*It's harder out loud than it was in his head. It comes out in pieces.*",
+		"next": "step_honest_3"
+	},
+
+	"step_honest_3": {
+		"speaker": "Kay",
+		"text": "\"When my dad left, I was twelve. Mom cried at the kitchen table for like a month.\"",
+		"next": "step_honest_4"
+	},
+
+	"step_honest_4": {
+		"speaker": "Kay",
+		"text": "\"And I decided I'd just be easy. The kid who doesn't need anything.\"",
+		"next": "step_honest_5"
+	},
+
+	"step_honest_5": {
+		"speaker": "Kay",
+		"text": "\"And when you didn't answer, I thought, yeah. That's right. That's what happens when I ask.\"",
+		"next": "step_honest_6"
+	},
+
+	"step_honest_6": {
+		"speaker": "Ulyn",
+		"text": "\"Kay—\"",
+		"next": "step_honest_7"
+	},
+
+	"step_honest_7": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "\"And this year it's been... It's like everything's far away. I wake up and I already want the day to be over.\"",
+		"next": "step_honest_8"
+	},
+
+	"step_honest_8": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "\"Some nights I think everyone would be fine without me. Not like— I'm not going to do anything. I just think it. Like it's a fact.\"",
+		"next": "step_honest_9"
+	},
+
+	"step_honest_9": {
+		"speaker": "",
+		"text": "*Ulyn is quiet for a moment. He doesn't look scared. He looks like he's choosing his words very carefully, and Kay is more grateful for that than anything.*",
+		"next": "step_honest_10"
+	},
+
+	"step_honest_10": {
+		"speaker": "Ulyn",
+		"text": "\"It's not a fact. And thank you for telling me. I mean it.\"",
+		"next": "step_honest_11"
+	},
+
+	"step_honest_11": {
+		"speaker": "Ulyn",
+		"text": "\"But I'm not okay with you thinking that alone. Will you talk to someone? Someone who actually knows what to do. Not just me throwing pork at you.\"",
+		"next": "step_honest_12"
+	},
+
+	"step_honest_12": {
+		"speaker": "Ulyn",
+		"text": "\"Ms. Noi runs the guidance room on Thursdays. My cousin went to something like that last year. It helped him.\"",
+		"next": "step_honest_13"
+	},
+
+	"step_honest_13": {
+		"speaker": "",
+		"text": "*Kay doesn't answer yet. Ulyn doesn't make him.*",
+		"next": "step_honest_14"
+	},
+
+	"step_honest_14": {
+		"speaker": "Ulyn",
+		"text": "\"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
+		"next": "step_honest_15"
+	},
+
+	"step_honest_15": {
+		"speaker": "",
+		"text": "*Kay's eyes sting. He cries quietly, the way he learned how to when he was twelve.*",
+		"next": "step_honest_16"
+	},
+
+	"step_honest_16": {
+		"speaker": "",
+		"text": "*Ulyn pretends not to look and pushes the second carton of pink milk into his hand.*",
+		"next": "step_honest_17"
+	},
+
+	"step_honest_17": {
+		"speaker": "Ulyn",
+		"text": "\"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
+		"next": "step_honest_18"
+	},
+
+	"step_honest_18": {
+		"speaker": "Kay",
+		"text": "\"I know.\"",
+		"next": "step_honest_19"
+	},
+
+	"step_honest_19": {
+		"speaker": "Ulyn",
+		"text": "\"You know?\"",
+		"next": "step_honest_20"
+	},
+
+	"step_honest_20": {
+		"speaker": "Kay",
+		"text": "\"You decline your mom's calls in class.\"",
+		"next": "step_honest_21"
+	},
+
+	"step_honest_21": {
+		"speaker": "Ulyn",
+		"text": "\"...Okay, detective.\"",
+		"next": "step_honest_22"
+	},
+
+	"step_honest_22": {
+		"speaker": "",
+		"text": "*They both laugh. It's small and tired, but it's real.*",
+		"next": "mom_1"
+	},
+
+	"mom_1": {
+		"speaker": "",
+		"text": "*Mom gets home at eight. She doesn't take her shoes off.*",
+		"next": "mom_2"
+	},
+
+	"mom_2": {
+		"speaker": "Mom",
+		"text": "\"The school called. They said you were absent.\"",
+		"next": "mom_3"
+	},
+
+	"mom_3": {
+		"speaker": "Mom",
+		"text": "\"You said bye this morning like everything was normal.\"",
+		"next": "mom_wait_1",
+		"secret": {"condition": "flag_true", "flag": "ToldMomHeater", "next": "mom_heater_1"}
+	},
+
+	"mom_heater_1": {
+		"speaker": "Mom",
+		"text": "\"You told me about the heater. It got fixed. See? You can tell me things.\"",
+		"next": "mom_wait_1"
+	},
+
+	"mom_wait_1": {
+		"speaker": "",
+		"text": "*She looks at him, and waits.*",
+		"next": "mom_ask",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "mom_easier_1"}
+	},
+
+	"mom_easier_1": {
+		"speaker": "Kay",
+		"text": "I already said it once today.",
+		"next": "mom_easier_2"
+	},
+
+	"mom_easier_2": {
+		"speaker": "Kay",
+		"text": "It's easier the second time. Not easy. Easier.",
+		"next": "mom_ask"
+	},
+
+	"mom_ask": {
+		"speaker": "Mom",
+		"text": "\"Were you sick?\"",
+		"choices": [
+			{"text": "\"Just a headache. I'm fine now.\"", "type": "neutral", "weight_change": 10, "next": "mom_fine_1"},
+			{"text": "\"I couldn't get up. I haven't been okay for a while.\"", "type": "honest", "weight_change": -15, "next": "mom_told_1", "set_flag": "ToldMom"}
+		]
+	},
+
+	"mom_fine_1": {
+		"speaker": "",
+		"text": "*Mom puts her palm on his forehead.*",
+		"next": "mom_fine_2"
+	},
+
+	"mom_fine_2": {
+		"speaker": "Mom",
+		"text": "\"No fever.\"",
+		"next": "mom_fine_3"
+	},
+
+	"mom_fine_3": {
+		"speaker": "Kay",
+		"text": "\"Told you.\"",
+		"next": "mom_fine_4"
+	},
+
+	"mom_fine_4": {
+		"speaker": "",
+		"text": "*She looks at him a moment too long.*",
+		"next": "mom_fine_5"
+	},
+
+	"mom_fine_5": {
+		"speaker": "Mom",
+		"text": "\"Okay. Go to bed early.\"",
+		"next": "mom_fine_6"
+	},
+
+	"mom_fine_6": {
+		"speaker": "",
+		"text": "*He goes. Later, through the wall, he hears her on the phone with his aunt.*",
+		"next": "mom_fine_7"
+	},
+
+	"mom_fine_7": {
+		"speaker": "Mom",
+		"text": "\"...No, he said he's fine.\"",
+		"next": "mom_fine_8"
+	},
+
+	"mom_fine_8": {
+		"speaker": "",
+		"text": "*His own words, in somebody else's mouth.*",
+		"next": "sat_1"
+	},
+
+	"mom_told_1": {
+		"speaker": "",
+		"text": "*Mom sits down slowly at the kitchen table. The same table.*",
+		"next": "mom_told_2"
+	},
+
+	"mom_told_2": {
+		"speaker": "",
+		"text": "*Kay braces for her to cry. She doesn't. Not yet.*",
+		"next": "mom_told_3"
+	},
+
+	"mom_told_3": {
+		"speaker": "Mom",
+		"text": "\"How long is 'a while'?\"",
+		"next": "mom_told_4"
+	},
+
+	"mom_told_4": {
+		"speaker": "Kay",
+		"text": "\"...Since the start of the year. Maybe before.\"",
+		"next": "mom_told_5"
+	},
+
+	"mom_told_5": {
+		"speaker": "",
+		"text": "*She reaches across the table and takes his hand.*",
+		"next": "mom_told_6"
+	},
+
+	"mom_told_6": {
+		"speaker": "Mom",
+		"text": "\"Kay. When your dad left, you got so easy. You stopped asking for anything. And I was so tired that I let you.\"",
+		"next": "mom_told_7"
+	},
+
+	"mom_told_7": {
+		"speaker": "Mom",
+		"text": "\"I thought, he's okay. Thank god one of us is okay.\"",
+		"next": "mom_told_8"
+	},
+
+	"mom_told_8": {
+		"speaker": "Kay",
+		"text": "\"I didn't want to make it worse.\"",
+		"next": "mom_told_9"
+	},
+
+	"mom_told_9": {
+		"speaker": "Mom",
+		"text": "\"You don't make it worse. You're my kid. You're not a chore I'm managing.\"",
+		"next": "mom_told_10"
+	},
+
+	"mom_told_10": {
+		"speaker": "",
+		"text": "*Then she does cry, a little, and laughs at herself for crying.*",
+		"next": "mom_told_11"
+	},
+
+	"mom_told_11": {
+		"speaker": "Mom",
+		"text": "\"Look at us.\"",
+		"next": "mom_told_12"
+	},
+
+	"mom_told_12": {
+		"speaker": "",
+		"text": "*She says she'll ask the hospital for a weekend off. She asks if there's someone at school he could talk to, or if she should find someone.*",
+		"next": "mom_heatcheck_1",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "mom_thursday_1"}
+	},
+
+	"mom_thursday_1": {
+		"speaker": "Kay",
+		"text": "\"Ulyn said there's a teacher. On Thursdays.\"",
+		"next": "mom_thursday_2"
+	},
+
+	"mom_thursday_2": {
+		"speaker": "Mom",
+		"text": "\"Then Thursday.\"",
+		"next": "mom_heatcheck_1"
+	},
+
+	"mom_heatcheck_1": {
+		"speaker": "",
+		"text": "*Mom wipes her eyes with the heel of her hand.*",
+		"next": "mom_heatcheck_2",
+		"secret": {"condition": "flag_true", "flag": "ToldMomHeater", "next": "sat_1"}
+	},
+
+	"mom_heatcheck_2": {
+		"speaker": "Mom",
+		"text": "\"Also. Why is there a kettle in the bathroom?\"",
+		"next": "mom_heatcheck_3"
+	},
+
+	"mom_heatcheck_3": {
+		"speaker": "Kay",
+		"text": "\"...The water heater's broken.\"",
+		"next": "mom_heatcheck_4"
+	},
+
+	"mom_heatcheck_4": {
+		"speaker": "Mom",
+		"text": "\"Since when?\"",
+		"next": "mom_heatcheck_5"
+	},
+
+	"mom_heatcheck_5": {
+		"speaker": "Kay",
+		"text": "\"A month?\"",
+		"next": "mom_heatcheck_6"
+	},
+
+	"mom_heatcheck_6": {
+		"speaker": "Mom",
+		"text": "\"Kay.\"",
+		"next": "mom_heatcheck_7"
+	},
+
+	"mom_heatcheck_7": {
+		"speaker": "",
+		"text": "*She laughs and cries at the same time. So does he.*",
+		"next": "sat_1"
+	},
+
+	"sat_1": {
+		"speaker": "Elysia",
+		"text": "tomorrow. 10am. i'm picking u up. no is not an option 😤",
+		"next": "sat_2"
+	},
+
+	"sat_2": {
+		"speaker": "",
+		"text": "*Saturday.*",
+		"next": "sat_3",
+		"secret": {"condition": "flag_true", "flag": "ElysiaBugs", "next": "sat_museum_1"}
+	},
+
+	"sat_3": {
+		"speaker": "",
+		"text": "*She takes him to the park by the canal and hands him a can of milk tea.*",
+		"next": "sat_4"
+	},
+
+	"sat_4": {
+		"speaker": "",
+		"text": "*They sit on a bench facing the water. A monitor lizard swims past very slowly, like it has somewhere to be.*",
+		"next": "sat_talk_1"
+	},
+
+	"sat_museum_1": {
+		"speaker": "",
+		"text": "*She takes him to the natural history museum across the river. It's free on Saturdays.*",
+		"next": "sat_museum_2"
+	},
+
+	"sat_museum_2": {
+		"speaker": "",
+		"text": "*She walks straight past the dinosaurs to a dim room of glass cases, beetles pinned in rows, labeled in tiny handwriting.*",
+		"next": "sat_museum_3"
+	},
+
+	"sat_museum_3": {
+		"speaker": "Elysia",
+		"text": "\"I've never brought anyone here. Not even Mint. Mint knows. But I've never brought anyone.\"",
+		"next": "sat_talk_1"
+	},
+
+	"sat_talk_1": {
+		"speaker": "",
+		"text": "*Elysia turns her drink around in her hands.*",
+		"next": "sat_talk_2",
+		"secret": {"condition": "flag_true", "flag": "ToldElysiaEarly", "next": "sat_early_1"}
+	},
+
+	"sat_talk_2": {
+		"speaker": "Elysia",
+		"text": "\"Were you sick on Thursday? Bank said you were sick.\"",
+		"choices": [
+			{"text": "\"No. I wasn't sick.\"", "type": "honest", "weight_change": -10, "next": "sat_tell_1", "set_flag": "ToldElysia"},
+			{"text": "\"Just a cold.\"", "type": "neutral", "weight_change": 10, "next": "sat_hold_1"}
+		]
+	},
+
+	"sat_early_1": {
+		"speaker": "Elysia",
+		"text": "\"You told me you couldn't get up. Thank you for telling me. You don't have to explain it.\"",
+		"choices": [
+			{"text": "\"I want to explain it. Some of it.\"", "type": "honest", "weight_change": -10, "next": "sat_tell_1", "set_flag": "ToldElysia"},
+			{"text": "\"Thanks. That's all, really.\"", "type": "neutral", "weight_change": 5, "next": "sat_hold_1"}
+		]
+	},
+
+	"sat_tell_1": {
+		"speaker": "",
+		"text": "*So he tells her. Not everything, but enough. The mornings. The weight. How everything feels far away. The front step.*",
+		"next": "sat_tell_2"
+	},
+
+	"sat_tell_2": {
+		"speaker": "",
+		"text": "*Then the part he's never said out loud.*",
+		"next": "sat_tell_3"
+	},
+
+	"sat_tell_3": {
+		"speaker": "Kay",
+		"text": "\"At school I keep away from you because I think being seen with me makes people talk about you. Makes you look weird.\"",
+		"next": "sat_tell_4"
+	},
+
+	"sat_tell_4": {
+		"speaker": "",
+		"text": "*Elysia goes very quiet.*",
+		"next": "sat_tell_5"
+	},
+
+	"sat_tell_5": {
+		"speaker": "Elysia",
+		"text": "\"You think you make me look weird?\"",
+		"next": "sat_tell_6"
+	},
+
+	"sat_tell_6": {
+		"speaker": "",
+		"text": "*She laughs. Then she stops laughing.*",
+		"next": "sat_bug_1"
+	},
+
+	"sat_hold_1": {
+		"speaker": "Elysia",
+		"text": "\"Okay.\"",
+		"next": "sat_hold_2"
+	},
+
+	"sat_hold_2": {
+		"speaker": "",
+		"text": "*She pulls her knees up onto the bench.*",
+		"next": "sat_hold_3"
+	},
+
+	"sat_hold_3": {
+		"speaker": "Elysia",
+		"text": "\"Can I tell you something, then? Since you're not going to.\"",
+		"next": "sat_bug_1"
+	},
+
+	"sat_bug_1": {
+		"speaker": "Elysia",
+		"text": "\"K. I used to be the weird kid.\"",
+		"next": "sat_bug_2"
+	},
+
+	"sat_bug_2": {
+		"speaker": "Elysia",
+		"text": "\"Bug girl. In third grade a boy put a cockroach in my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
+		"next": "sat_bug_3"
+	},
+
+	"sat_bug_3": {
+		"speaker": "Elysia",
+		"text": "\"I watch everything I say. Every single thing. With my friends I'm doing a version. The fun one. The one who's always fine.\"",
+		"next": "sat_bug_4"
+	},
+
+	"sat_bug_4": {
+		"speaker": "Elysia",
+		"emotion": "tired",
+		"text": "\"It's so tiring.\"",
+		"next": "sat_bug_5"
+	},
+
+	"sat_bug_5": {
+		"speaker": "Elysia",
+		"text": "\"You and Mint are the only people I don't do the version with.\"",
+		"next": "sat_choice",
+		"secret": {"condition": "flag_true", "flag": "ToldElysia", "next": "sat_why_1"}
+	},
+
+	"sat_why_1": {
+		"speaker": "Elysia",
+		"text": "\"So when you won't walk with me because people will talk, it feels like you're agreeing with them. Like even you think I should be careful.\"",
+		"next": "sat_why_2"
+	},
+
+	"sat_why_2": {
+		"speaker": "Kay",
+		"text": "\"I didn't— I thought I was protecting you.\"",
+		"next": "sat_why_3"
+	},
+
+	"sat_why_3": {
+		"speaker": "Elysia",
+		"text": "\"I know.\"",
+		"next": "sat_why_4"
+	},
+
+	"sat_why_4": {
+		"speaker": "",
+		"text": "*She leans her head on his shoulder.*",
+		"next": "sat_why_5"
+	},
+
+	"sat_why_5": {
+		"speaker": "Elysia",
+		"text": "\"I said I don't care what they think. I lied too. I care so much it makes me tired. But I care about you more.\"",
+		"next": "sat_choice"
+	},
+
+	"sat_choice": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"You don't have to do the version with me. Ever.\"", "type": "helpful", "weight_change": -10, "next": "sat_safe_1", "set_flag": "ElysiaSafe"},
+			{"text": "\"I'm sorry.\"", "type": "neutral", "weight_change": 5, "next": "sat_sorry_1"}
+		]
+	},
+
+	"sat_safe_1": {
+		"speaker": "",
+		"text": "*She cries a little and laughs at the same time.*",
+		"next": "sat_safe_2"
+	},
+
+	"sat_safe_2": {
+		"speaker": "Elysia",
+		"text": "\"Okay. Then you don't have to be fine with me. Deal?\"",
+		"next": "sat_safe_3"
+	},
+
+	"sat_safe_3": {
+		"speaker": "",
+		"text": "*She holds up her pinky.*",
+		"next": "sat_safe_4"
+	},
+
+	"sat_safe_4": {
+		"speaker": "Kay",
+		"text": "\"Deal.\"",
+		"next": "mon_1"
+	},
+
+	"sat_sorry_1": {
+		"speaker": "Elysia",
+		"text": "\"Don't be sorry.\"",
+		"next": "sat_sorry_2"
+	},
+
+	"sat_sorry_2": {
+		"speaker": "",
+		"text": "*She squeezes his hand.*",
+		"next": "sat_sorry_3"
+	},
+
+	"sat_sorry_3": {
+		"speaker": "Elysia",
+		"text": "\"Just be here. That's all.\"",
+		"next": "mon_1"
+	},
+
+	"mon_1": {
+		"speaker": "",
+		"text": "*Monday. Elysia is at the gate with her friends, same as always. She turns around like she felt him there, and waves.*",
+		"next": "mon_2",
+		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "mon_walk_1"}
+	},
+
+	"mon_2": {
+		"speaker": "",
+		"text": "*Kay looks at her friends. Then at her.*",
+		"next": "mon_3",
+		"secret": {"condition": "flag_true", "flag": "ToldElysia", "next": "mon_walk_1"}
+	},
+
+	"mon_3": {
+		"speaker": "",
+		"text": "*He waves back. Faster than last time. Not as stiff.*",
+		"next": "guide_1"
+	},
+
+	"mon_walk_1": {
+		"speaker": "",
+		"text": "*This time, Kay walks over.*",
+		"next": "mon_walk_2"
+	},
+
+	"mon_walk_2": {
+		"speaker": "",
+		"text": "*Her friends go quiet and look at him. Then at her. Then at him again.*",
+		"next": "mon_walk_3"
+	},
+
+	"mon_walk_3": {
+		"speaker": "Elysia",
+		"text": "\"Yes, he's my boyfriend, we all know, moving on.\"",
+		"next": "mon_walk_4"
+	},
+
+	"mon_walk_4": {
+		"speaker": "",
+		"text": "*She takes his hand in front of all of them and doesn't let go.*",
+		"next": "mon_walk_5"
+	},
+
+	"mon_walk_5": {
+		"speaker": "",
+		"text": "*Behind her, Mint gives Kay a very small thumbs up.*",
+		"next": "guide_1"
+	},
+
+	"guide_1": {
+		"speaker": "",
+		"text": "*Thursday. The guidance room is next to the home ec room. Someone has stuck paper flowers on the door, slightly crooked.*",
+		"next": "guide_2"
+	},
+
+	"guide_2": {
+		"speaker": "",
+		"text": "*Kay stands in front of it at lunch.*",
+		"next": "guide_door_1",
+		"secret": {"condition": "flag_true", "flag": "ToldMom", "next": "guide_mom_1"}
+	},
+
+	"guide_mom_1": {
+		"speaker": "",
+		"text": "*Mom texted this morning.*",
+		"next": "guide_mom_2"
+	},
+
+	"guide_mom_2": {
+		"speaker": "Mom",
+		"text": "thursday 🌱 proud of you whatever you decide",
+		"next": "guide_door_1"
+	},
+
+	"guide_door_1": {
+		"speaker": "",
+		"text": "*He looks at the paper flowers.*",
+		"next": "guide_choice",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "guide_ulyn_1"}
+	},
+
+	"guide_ulyn_1": {
+		"speaker": "",
+		"text": "*Ulyn walked him here, and is still standing at the end of the hallway.*",
+		"next": "guide_ulyn_2"
+	},
+
+	"guide_ulyn_2": {
+		"speaker": "Ulyn",
+		"text": "\"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
+		"next": "guide_choice"
+	},
+
+	"guide_choice": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "Knock", "type": "helpful", "weight_change": -15, "next": "guide_in_1", "set_flag": "Counselor"},
+			{"text": "Walk away. Not today.", "type": "neutral", "weight_change": 5, "next": "guide_away_1"}
+		]
+	},
+
+	"guide_in_1": {
+		"speaker": "Ms. Noi",
+		"text": "\"Kay. Come in. Tea?\"",
+		"next": "guide_in_2"
+	},
+
+	"guide_in_2": {
+		"speaker": "Kay",
+		"text": "\"...Do I have to explain why I'm here?\"",
+		"next": "guide_in_3"
+	},
+
+	"guide_in_3": {
+		"speaker": "Ms. Noi",
+		"text": "\"No. You can just sit.\"",
+		"next": "guide_in_4"
+	},
+
+	"guide_in_4": {
+		"speaker": "",
+		"text": "*So he sits. She makes tea. He doesn't say anything for ten minutes, and she doesn't fill the silence.*",
+		"next": "guide_in_5"
+	},
+
+	"guide_in_5": {
+		"speaker": "",
+		"text": "*It's the strangest ten minutes he's ever spent. Also the easiest.*",
+		"next": "guide_in_6"
+	},
+
+	"guide_in_6": {
+		"speaker": "Kay",
+		"text": "\"I think I've been overwatering.\"",
+		"next": "guide_in_7"
+	},
+
+	"guide_in_7": {
+		"speaker": "",
+		"text": "*She waits.*",
+		"next": "guide_in_8"
+	},
+
+	"guide_in_8": {
+		"speaker": "Kay",
+		"text": "\"Not plants. Well— also plants.\"",
+		"next": "guide_in_9"
+	},
+
+	"guide_in_9": {
+		"speaker": "",
+		"text": "*She smiles, and he tells her.*",
+		"next": "guide_in_10"
+	},
+
+	"guide_in_10": {
+		"speaker": "",
+		"text": "*About Mom and the kitchen table. The slides. Being useful. The morning he couldn't get up. She doesn't try to fix any of it.*",
+		"next": "guide_in_11"
+	},
+
+	"guide_in_11": {
+		"speaker": "Ms. Noi",
+		"text": "\"And what do you need, Kay?\"",
+		"next": "guide_in_12"
+	},
+
+	"guide_in_12": {
+		"speaker": "",
+		"text": "*He opens his mouth, and realizes nobody has ever asked him that. He doesn't know.*",
+		"next": "guide_in_13"
+	},
+
+	"guide_in_13": {
+		"speaker": "Ms. Noi",
+		"text": "\"That's okay. That's what Thursdays are for.\"",
+		"next": "guide_in_14"
+	},
+
+	"guide_in_14": {
+		"speaker": "",
+		"text": "*Before he leaves, she says one more thing, very plainly.*",
+		"next": "guide_in_15"
+	},
+
+	"guide_in_15": {
+		"speaker": "Ms. Noi",
+		"text": "\"If those heavy thoughts ever feel closer, not just tired but like you might hurt yourself, you tell me, or your mom, or you call the number on the poster by the door. Any day. You don't have to wait for Thursday.\"",
+		"next": "guide_in_16"
+	},
+
+	"guide_in_16": {
+		"speaker": "Kay",
+		"text": "\"Okay.\"",
+		"next": "guide_in_17"
+	},
+
+	"guide_in_17": {
+		"speaker": "Ms. Noi",
+		"text": "\"Same time next week?\"",
+		"next": "guide_in_18"
+	},
+
+	"guide_in_18": {
+		"speaker": "Kay",
+		"text": "\"...Yeah.\"",
+		"next": "group_1"
+	},
+
+	"guide_away_1": {
+		"speaker": "",
+		"text": "*He walks back to the cafeteria.*",
+		"next": "guide_away_2",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "guide_away_ulyn_1"}
+	},
+
+	"guide_away_2": {
+		"speaker": "",
+		"text": "*He eats alone. The paper flowers stay in his head all afternoon.*",
+		"next": "group_1"
+	},
+
+	"guide_away_ulyn_1": {
+		"speaker": "Ulyn",
+		"text": "\"That was fast.\"",
+		"next": "guide_away_ulyn_2"
+	},
+
+	"guide_away_ulyn_2": {
+		"speaker": "Kay",
+		"text": "\"Not today.\"",
+		"next": "guide_away_ulyn_3"
+	},
+
+	"guide_away_ulyn_3": {
+		"speaker": "Ulyn",
+		"text": "\"Okay.\"",
+		"next": "guide_away_ulyn_4"
+	},
+
+	"guide_away_ulyn_4": {
+		"speaker": "",
+		"text": "*Ulyn slides half his fried rice over.*",
+		"next": "guide_away_ulyn_5"
+	},
+
+	"guide_away_ulyn_5": {
+		"speaker": "Ulyn",
+		"text": "\"Thursday's every week.\"",
+		"next": "group_1"
+	},
+
+	"group_1": {
+		"speaker": "",
+		"text": "*Two weeks before the presentation, the group meets in the garden after school.*",
+		"next": "group_2"
+	},
+
+	"group_2": {
+		"speaker": "",
+		"text": "*It looks like a garden now. The water spinach has gone wild. The marigolds are orange and loud around the edges.*",
+		"next": "group_3"
+	},
+
+	"group_3": {
+		"speaker": "",
+		"text": "*Two chili plants survived and sulked their way into three small chilies. The new basil is coming up where the old basil died.*",
+		"next": "group_4"
+	},
+
+	"group_4": {
+		"speaker": "",
+		"text": "*Fern sits on the edge of a bed with her laptop open.*",
+		"next": "group_5"
+	},
+
+	"group_5": {
+		"speaker": "Fern",
+		"text": "\"Okay, so Kay, you'll put the presentation together like last time? You're the fastest.\"",
+		"next": "group_6"
+	},
+
+	"group_6": {
+		"speaker": "Bank",
+		"text": "\"And the report.\"",
+		"next": "group_wait_1",
+		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "group_split_1"}
+	},
+
+	"group_split_1": {
+		"speaker": "Fern",
+		"text": "\"I mean, I know we said we'd split it. But you're just faster...\"",
+		"next": "group_wait_1"
+	},
+
+	"group_wait_1": {
+		"speaker": "",
+		"text": "*Kay looks down at the soil.*",
+		"next": "group_choice",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "group_ulyn_1"}
+	},
+
+	"group_ulyn_1": {
+		"speaker": "",
+		"text": "*Ulyn looks at Kay and doesn't say anything. He just waits.*",
+		"next": "group_ulyn_2"
+	},
+
+	"group_ulyn_2": {
+		"speaker": "",
+		"text": "*It's his way of saying: your turn.*",
+		"next": "group_choice"
+	},
+
+	"group_choice": {
+		"speaker": "Kay",
+		"text": "...",
+		"choices": [
+			{"text": "\"Sure. I'll handle it.\"", "type": "neutral", "weight_change": 15, "next": "group_handle_1"},
+			{"text": "\"I can't do all of it this time. I need everyone to do their own part.\"", "type": "honest", "weight_change": -15, "next": "group_speak_1", "set_flag": "SpokeUp"}
+		]
+	},
+
+	"group_handle_1": {
+		"speaker": "Fern",
+		"text": "\"Best leader.\"",
+		"next": "group_handle_2"
+	},
+
+	"group_handle_2": {
+		"speaker": "",
+		"text": "*Kay does it again. All weekend, both days, until three in the morning.*",
+		"next": "group_handle_3"
+	},
+
+	"group_handle_3": {
+		"speaker": "",
+		"text": "*On Sunday, Ulyn comes over and sits on the floor doing the budget without being asked.*",
+		"next": "group_handle_4"
+	},
+
+	"group_handle_4": {
+		"speaker": "",
+		"text": "*He doesn't say anything about it. That's how Kay knows he noticed.*",
+		"next": "water_1"
+	},
+
+	"group_speak_1": {
+		"speaker": "",
+		"text": "*Silence. The tap drips.*",
+		"next": "group_speak_2"
+	},
+
+	"group_speak_2": {
+		"speaker": "Bank",
+		"text": "\"Oh. Wait. Did you... not want to? Before?\"",
+		"next": "group_speak_3"
+	},
+
+	"group_speak_3": {
+		"speaker": "Kay",
+		"text": "\"I offered because I didn't know how not to.\"",
+		"next": "group_speak_4"
+	},
+
+	"group_speak_4": {
+		"speaker": "Fern",
+		"text": "\"...Oh my god. We're the worst.\"",
+		"next": "group_speak_5"
+	},
+
+	"group_speak_5": {
+		"speaker": "Kay",
+		"text": "\"You're not the worst. I just never said anything.\"",
+		"next": "group_speak_6"
+	},
+
+	"group_speak_6": {
+		"speaker": "Bank",
+		"text": "\"Okay. Okay! I'll do the history part. I actually found stuff. The agriculture club had a photo album in the library, from like 2009.\"",
+		"next": "group_split2_1",
+		"secret": {"condition": "flag_true", "flag": "TaughtBank", "next": "group_bank_1"}
+	},
+
+	"group_bank_1": {
+		"speaker": "Bank",
+		"text": "\"And I know how to start now. You showed me. The three bullet points thing.\"",
+		"next": "group_split2_1"
+	},
+
+	"group_split2_1": {
+		"speaker": "Fern",
+		"text": "\"I'll do the slides. For real this time. I'm actually good at design. I just let you do it because you were faster, and it was easier.\"",
+		"next": "group_split2_2"
+	},
+
+	"group_split2_2": {
+		"speaker": "Ulyn",
+		"text": "\"And I'll do the budget. And stop sleeping in class. Maybe.\"",
+		"next": "group_split2_3"
+	},
+
+	"group_split2_3": {
+		"speaker": "",
+		"text": "*That night, for the first time all semester, there are four different cursors in the shared document at once.*",
+		"next": "water_1"
+	},
+
+	"water_1": {
+		"speaker": "",
+		"text": "*Before he leaves, Kay pushes his finger into the soil of the basil bed. Still damp from yesterday.*",
+		"next": "water_2"
+	},
+
+	"water_2": {
+		"speaker": "",
+		"text": "*His hand goes to the tap on its own.*",
+		"next": "water_3"
+	},
+
+	"water_3": {
+		"speaker": "",
+		"text": "*He stops it.*",
+		"next": "water_4"
+	},
+
+	"water_4": {
+		"speaker": "Kay",
+		"text": "Leave it alone.",
+		"next": "water_5"
+	},
+
+	"water_5": {
+		"speaker": "",
+		"text": "*It's harder than it should be, walking away from a damp bed without doing anything to it.*",
+		"next": "water_6"
+	},
+
+	"water_6": {
+		"speaker": "",
+		"text": "*The next morning, the basil is fine.*",
+		"next": "pres2_1"
+	},
+
+	"pres2_1": {
+		"speaker": "",
+		"text": "*Presentation day. First period. History.*",
+		"next": "pres2_2"
+	},
+
+	"pres2_2": {
+		"speaker": "",
+		"text": "*Group 3 is up first again. Kay, Ulyn, Bank, and Fern at the front of the room. The gaps between them are smaller this time.*",
+		"next": "pres2_3"
+	},
+
+	"pres2_3": {
+		"speaker": "Kay",
+		"text": "\"Good morning. We're group 3. This semester, we brought the school garden back to life.\"",
+		"next": "pres2_4"
+	},
+
+	"pres2_4": {
+		"speaker": "Ulyn",
+		"text": "\"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
+		"next": "pres2_5"
+	},
+
+	"pres2_5": {
+		"speaker": "",
+		"text": "*People laugh. Fern clicks to the next slide: an old photo of students in rain boots, standing in the same four beds.*",
+		"next": "pres2_6"
+	},
+
+	"pres2_6": {
+		"speaker": "Bank",
+		"text": "\"So, the garden was first built in... in, uh...\"",
+		"next": "pres2_7"
+	},
+
+	"pres2_7": {
+		"speaker": "",
+		"text": "*Silence. Somebody's chair squeaks. The teacher's pen stops moving.*",
+		"next": "pres2_8"
+	},
+
+	"pres2_8": {
+		"speaker": "Kay",
+		"text": "It's the same. It's exactly the same.",
+		"choices": [
+			{"text": "Step in and cover for him", "type": "neutral", "weight_change": 5, "next": "pres2_cover_1"},
+			{"text": "Give him a moment", "type": "honest", "weight_change": -5, "next": "pres2_wait_1", "set_flag": "TrustedBank"}
+		]
+	},
+
+	"pres2_cover_1": {
+		"speaker": "Kay",
+		"text": "\"—2009, by the agriculture club.\"",
+		"next": "pres2_cover_2"
+	},
+
+	"pres2_cover_2": {
+		"speaker": "Bank",
+		"text": "\"Right, right.\"",
+		"next": "pres2_cover_3"
+	},
+
+	"pres2_cover_3": {
+		"speaker": "",
+		"text": "*Bank keeps going. It goes fine. Everything goes fine.*",
+		"next": "pres2_end_1",
+		"secret": {"condition": "flag_true", "flag": "SpokeUp", "next": "pres2_knew_1"}
+	},
+
+	"pres2_knew_1": {
+		"speaker": "",
+		"text": "*As Fern clicks to the next slide, Bank whispers out of the corner of his mouth.*",
+		"next": "pres2_knew_2"
+	},
+
+	"pres2_knew_2": {
+		"speaker": "Bank",
+		"text": "\"I knew it, I swear. I just panicked.\"",
+		"next": "pres2_knew_3"
+	},
+
+	"pres2_knew_3": {
+		"speaker": "",
+		"text": "*Kay realizes he didn't need to step in. Bank would have found it.*",
+		"next": "pres2_end_1"
+	},
+
+	"pres2_wait_1": {
+		"speaker": "",
+		"text": "*Kay waits. Two seconds. Five.*",
+		"next": "pres2_wait_2"
+	},
+
+	"pres2_wait_2": {
+		"speaker": "",
+		"text": "*Bank looks at him, panicking. Kay nods. Very small.*",
+		"next": "pres2_wait_3"
+	},
+
+	"pres2_wait_3": {
+		"speaker": "Kay",
+		"text": "You've got this.",
+		"next": "pres2_wait_4",
+		"secret": {"condition": "flag_true", "flag": "SpokeUp", "next": "pres2_found_1"}
+	},
+
+	"pres2_wait_4": {
+		"speaker": "",
+		"text": "*Bank doesn't find it. He never read the report. Kay wrote it.*",
+		"next": "pres2_wait_5"
+	},
+
+	"pres2_wait_5": {
+		"speaker": "Fern",
+		"text": "\"It's— um. It's on the next slide, actually.\"",
+		"next": "pres2_wait_6"
+	},
+
+	"pres2_wait_6": {
+		"speaker": "",
+		"text": "*She clicks. Built 2009.*",
+		"next": "pres2_wait_7"
+	},
+
+	"pres2_wait_7": {
+		"speaker": "Fern",
+		"text": "\"There!\"",
+		"next": "pres2_wait_8"
+	},
+
+	"pres2_wait_8": {
+		"speaker": "",
+		"text": "*It's messy, and Kay finishes the section himself. But for five seconds, he wasn't the only one holding it.*",
+		"next": "pres2_end_1"
+	},
+
+	"pres2_found_1": {
+		"speaker": "",
+		"text": "*Bank looks back at the slide. At the old photo.*",
+		"next": "pres2_found_2"
+	},
+
+	"pres2_found_2": {
+		"speaker": "Bank",
+		"text": "\"Two thousand nine! The agriculture club. My uncle was actually in it. That's him, in the yellow boots. That's how I found the album.\"",
+		"next": "pres2_found_3"
+	},
+
+	"pres2_found_3": {
+		"speaker": "",
+		"text": "*Somebody in the back says \"whoa.\" Bank grins and keeps going, and gets better with every sentence.*",
+		"next": "pres2_end_1"
+	},
+
+	"pres2_end_1": {
+		"speaker": "Teacher",
+		"text": "\"Very well done, group 3. Good teamwork, everyone.\"",
+		"next": "pres2_end_2"
+	},
+
+	"pres2_end_2": {
+		"speaker": "",
+		"text": "*The same words as last time. Word for word.*",
+		"next": "noi_end_1",
+		"secret": {"condition": "flag_true", "flag": "SpokeUp", "next": "pres2_true_1"}
+	},
+
+	"pres2_true_1": {
+		"speaker": "",
+		"text": "*This time, they're true.*",
+		"next": "noi_end_1"
+	},
+
+	"noi_end_1": {
+		"speaker": "",
+		"text": "*That afternoon, Ms. Noi comes out to the garden with their grades and a piece of news.*",
+		"next": "noi_end_2"
+	},
+
+	"noi_end_2": {
+		"speaker": "Ms. Noi",
+		"text": "\"The school wants to keep the garden. The agriculture club is coming back next semester.\"",
+		"next": "noi_end_3"
+	},
+
+	"noi_end_3": {
+		"speaker": "Ms. Noi",
+		"text": "\"Two people have already signed up.\"",
+		"next": "noi_end_4"
+	},
+
+	"noi_end_4": {
+		"speaker": "",
+		"text": "*She looks pointedly at Bank and Fern.*",
+		"next": "noi_end_5"
+	},
+
+	"noi_end_5": {
+		"speaker": "Fern",
+		"text": "\"It's aesthetic.\"",
+		"next": "noi_end_6"
+	},
+
+	"noi_end_6": {
+		"speaker": "Bank",
+		"text": "\"My uncle cried when I showed him the photos.\"",
+		"next": "last_1"
+	},
+
+	"last_1": {
+		"speaker": "",
+		"text": "*Beep. Beep. Beep.*",
+		"next": "last_2",
+		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
+	},
+
+	"last_2": {
+		"speaker": "",
+		"text": "*The last day of the semester.*",
+		"next": "endC_1",
+		"secret": {"condition": "weight_below", "value": 65, "next": "endB_1"}
+	},
+
+	"endA_1": {
+		"speaker": "",
+		"text": "*The last day of the semester.*",
+		"next": "endA_2"
+	},
+
+	"endA_2": {
+		"speaker": "",
+		"text": "*Kay turns off the alarm. This time, he opens his eyes.*",
+		"next": "endA_3"
+	},
+
+	"endA_3": {
+		"speaker": "",
+		"text": "*He turns on the shower.*",
+		"next": "endA_4",
+		"secret": {"condition": "flag_true", "flag": "ToldMomHeater", "next": "endA_hot_1"}
+	},
+
+	"endA_4": {
+		"speaker": "",
+		"text": "*The pipes knock twice.*",
+		"next": "endA_5",
+		"secret": {"condition": "flag_true", "flag": "ToldMom", "next": "endA_hot_1"}
+	},
+
+	"endA_5": {
+		"speaker": "",
+		"text": "*Still cold. He laughs at it, which is new.*",
+		"next": "endA_fridge_1"
+	},
+
+	"endA_hot_1": {
+		"speaker": "",
+		"text": "*Hot water. He stands under it an extra minute, just because he can.*",
+		"next": "endA_fridge_1"
+	},
+
+	"endA_fridge_1": {
+		"speaker": "",
+		"text": "*The fridge is full. Eggs, milk, green things in a bag.*",
+		"next": "endA_fridge_2"
+	},
+
+	"endA_fridge_2": {
+		"speaker": "",
+		"text": "*On the door, a sticky note: \"Eat something real today! (There's real stuff now.) - Mom\"*",
+		"next": "endA_gate_1",
+		"secret": {"condition": "flag_true", "flag": "ToldMom", "next": "endA_note_1"}
+	},
+
+	"endA_note_1": {
+		"speaker": "",
+		"text": "*Under it, a second note: \"Day off Saturday. Let's go somewhere. Your pick.\"*",
+		"next": "endA_gate_1"
+	},
+
+	"endA_gate_1": {
+		"speaker": "",
+		"text": "*At the gate, Elysia is with her friends. She turns around like she felt him there.*",
+		"next": "endA_gate_2"
+	},
+
+	"endA_gate_2": {
+		"speaker": "",
+		"text": "*He walks over.*",
+		"next": "endA_ulyn_1",
+		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "endA_beetle_1"}
+	},
+
+	"endA_beetle_1": {
+		"speaker": "",
+		"text": "*She holds up her phone in front of everyone: a rhinoceros beetle, huge, horn and all.*",
+		"next": "endA_beetle_2"
+	},
+
+	"endA_beetle_2": {
+		"speaker": "Elysia",
+		"text": "\"Look at him. Isn't he perfect?\"",
+		"next": "endA_beetle_3"
+	},
+
+	"endA_beetle_3": {
+		"speaker": "",
+		"text": "*One of her friends makes a face. Elysia doesn't look over her shoulder. She doesn't even check.*",
+		"next": "endA_beetle_4"
+	},
+
+	"endA_beetle_4": {
+		"speaker": "Kay",
+		"text": "\"He's perfect.\"",
+		"next": "endA_ulyn_1"
+	},
+
+	"endA_ulyn_1": {
+		"speaker": "",
+		"text": "*A hand lands on his back.*",
+		"next": "endA_ulyn_2"
+	},
+
+	"endA_ulyn_2": {
+		"speaker": "Ulyn",
+		"text": "\"Morning. You look—\"",
+		"next": "endA_ulyn_3"
+	},
+
+	"endA_ulyn_3": {
+		"speaker": "",
+		"text": "*He squints.*",
+		"next": "endA_ulyn_4"
+	},
+
+	"endA_ulyn_4": {
+		"speaker": "Ulyn",
+		"text": "\"Actually, you look okay.\"",
+		"next": "endA_class_1",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "endA_ask_1"}
+	},
+
+	"endA_ask_1": {
+		"speaker": "Kay",
+		"text": "\"How are you? Actually.\"",
+		"next": "endA_ask_2"
+	},
+
+	"endA_ask_2": {
+		"speaker": "",
+		"text": "*Ulyn stops walking.*",
+		"next": "endA_ask_3"
+	},
+
+	"endA_ask_3": {
+		"speaker": "Ulyn",
+		"text": "\"...My mom wants me to come home more. I'm trying.\"",
+		"next": "endA_ask_4"
+	},
+
+	"endA_ask_4": {
+		"speaker": "Ulyn",
+		"text": "\"It's weird there. Quiet.\"",
+		"next": "endA_ask_5"
+	},
+
+	"endA_ask_5": {
+		"speaker": "Kay",
+		"text": "\"Want company? I can come over and be boring at your house.\"",
+		"next": "endA_ask_6"
+	},
+
+	"endA_ask_6": {
+		"speaker": "",
+		"text": "*Ulyn looks at him for a long second.*",
+		"next": "endA_ask_7"
+	},
+
+	"endA_ask_7": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. I'd like that.\"",
+		"next": "endA_class_1"
+	},
+
+	"endA_class_1": {
+		"speaker": "",
+		"text": "*They walk to class together.*",
+		"next": "endA_garden_1",
+		"secret": {"condition": "flag_true", "flag": "Counselor", "next": "endA_thursdays_1"}
+	},
+
+	"endA_thursdays_1": {
+		"speaker": "",
+		"text": "*On Thursdays he still goes to the room with the paper flowers. Some weeks he talks a lot. Some weeks he just drinks the tea. Ms. Noi says both count.*",
+		"next": "endA_garden_1"
+	},
+
+	"endA_garden_1": {
+		"speaker": "",
+		"text": "*After the last bell, Kay goes to the garden one more time before the break. He pushes his finger into the soil.*",
+		"next": "endA_garden_2"
+	},
+
+	"endA_garden_2": {
+		"speaker": "",
+		"text": "*Dry.*",
+		"next": "endA_garden_3"
+	},
+
+	"endA_garden_3": {
+		"speaker": "",
+		"text": "*He waters it. Not twice. Not three times. Just enough.*",
+		"next": "endA_garden_4"
+	},
+
+	"endA_garden_4": {
+		"speaker": "",
+		"text": "*Then he turns off the screaming tap, and leaves it alone.*",
+		"next": "endA_garden_5"
+	},
+
+	"endA_garden_5": {
+		"speaker": "",
+		"text": "*That night, he lies in bed and looks at the ceiling.*",
+		"next": "endA_garden_6"
+	},
+
+	"endA_garden_6": {
+		"speaker": "Kay",
+		"text": "Today was...",
+		"next": "endA_garden_7"
+	},
+
+	"endA_garden_7": {
+		"speaker": "",
+		"text": "*He thinks about it honestly, the way he's been practicing.*",
+		"next": "endA_garden_8"
+	},
+
+	"endA_garden_8": {
+		"speaker": "Kay",
+		"text": "Not fine. Good. Today was good.",
+		"next": "endA_garden_9"
+	},
+
+	"endA_garden_9": {
+		"speaker": "Kay",
+		"text": "It won't always be good. Some mornings will still be heavy. Some mornings the floor will still be far away.",
+		"next": "endA_garden_10"
+	},
+
+	"endA_garden_10": {
+		"speaker": "Kay",
+		"text": "If I stayed home, would anyone notice?",
+		"next": "endA_garden_11"
+	},
+
+	"endA_garden_11": {
+		"speaker": "Kay",
+		"text": "...Yeah. They would. They'd come over and bring pork.",
+		"next": "endA_garden_12"
+	},
+
+	"endA_garden_12": {
+		"speaker": "",
+		"text": "*He falls asleep before the ceiling gets dark.*",
+		"next": "endA_garden_13"
+	},
+
+	"endA_garden_13": {
+		"speaker": "",
+		"text": "— Ending A: Enough —"
+	},
+
+	"endB_1": {
+		"speaker": "",
+		"text": "*Kay turns off the alarm and lies there a minute. Then he gets up.*",
+		"next": "endB_2"
+	},
+
+	"endB_2": {
+		"speaker": "",
+		"text": "*It's easier than some mornings. Harder than others.*",
+		"next": "endB_3"
+	},
+
+	"endB_3": {
+		"speaker": "",
+		"text": "*At the gate, Elysia waves. He waves back and smiles. Not the practiced smile. Not entirely.*",
+		"next": "endB_4"
+	},
+
+	"endB_4": {
+		"speaker": "",
+		"text": "*Ulyn catches up with him at the stairs.*",
+		"next": "endB_5"
+	},
+
+	"endB_5": {
+		"speaker": "Ulyn",
+		"text": "\"Lunch?\"",
+		"next": "endB_6"
+	},
+
+	"endB_6": {
+		"speaker": "Kay",
+		"text": "\"Yeah.\"",
+		"next": "endB_7"
+	},
+
+	"endB_7": {
+		"speaker": "Ulyn",
+		"text": "\"Just us?\"",
+		"next": "endB_8"
+	},
+
+	"endB_8": {
+		"speaker": "Kay",
+		"text": "\"Yeah. Your treat.\"",
+		"next": "endB_9"
+	},
+
+	"endB_9": {
+		"speaker": "Ulyn",
+		"text": "\"My treat? Since when is it my treat?\"",
+		"next": "endB_10"
+	},
+
+	"endB_10": {
+		"speaker": "Kay",
+		"text": "\"Since I said so.\"",
+		"next": "endB_11"
+	},
+
+	"endB_11": {
+		"speaker": "",
+		"text": "*Ulyn laughs, surprised. Kay realizes that was him asking for something. A small something. It still counts.*",
+		"next": "endB_12"
+	},
+
+	"endB_12": {
+		"speaker": "",
+		"text": "*After school, Kay waters the garden one last time before the break. He's halfway through a second pass before he catches himself, and turns off the tap.*",
+		"next": "endB_13"
+	},
+
+	"endB_13": {
+		"speaker": "Kay",
+		"text": "Better than before.",
+		"next": "endB_14"
+	},
+
+	"endB_14": {
+		"speaker": "",
+		"text": "*That night, he lies in bed.*",
+		"next": "endB_15"
+	},
+
+	"endB_15": {
+		"speaker": "Kay",
+		"text": "Today was fine.",
+		"next": "endB_16"
+	},
+
+	"endB_16": {
+		"speaker": "",
+		"text": "*He waits to see if that's true.*",
+		"next": "endB_17"
+	},
+
+	"endB_17": {
+		"speaker": "Kay",
+		"text": "...Maybe a little more than fine.",
+		"next": "endB_18"
+	},
+
+	"endB_18": {
+		"speaker": "",
+		"text": "*His phone buzzes. Ulyn.*",
+		"next": "endB_19"
+	},
+
+	"endB_19": {
+		"speaker": "Ulyn",
+		"text": "u good?",
+		"next": "endB_20"
+	},
+
+	"endB_20": {
+		"speaker": "",
+		"text": "*Kay types \"yeah.\" Looks at it. Deletes it.*",
+		"next": "endB_21"
+	},
+
+	"endB_21": {
+		"speaker": "Kay",
+		"text": "mostly. tell u tmr",
+		"next": "endB_22"
+	},
+
+	"endB_22": {
+		"speaker": "",
+		"text": "*He sends it before he can change his mind.*",
+		"next": "endB_23"
+	},
+
+	"endB_23": {
+		"speaker": "Ulyn",
+		"text": "ok. i'll bring pork",
+		"next": "endB_24"
+	},
+
+	"endB_24": {
+		"speaker": "",
+		"text": "— Ending B: Fine, Probably —"
+	},
+
+	"endC_1": {
+		"speaker": "",
+		"text": "*Kay turns off the alarm without opening his eyes.*",
+		"next": "endC_2"
+	},
+
+	"endC_2": {
+		"speaker": "",
+		"text": "*He gets up. He always gets up. The one morning he didn't feels like it happened to somebody else.*",
+		"next": "endC_3"
+	},
+
+	"endC_3": {
+		"speaker": "",
+		"text": "*At school, everything goes well. Group 3 gets the top grade. The teacher says \"as always.\" Bank and Fern hug him at the same time.*",
+		"next": "endC_4"
+	},
+
+	"endC_4": {
+		"speaker": "Fern",
+		"text": "\"Next semester's with you, obviously.\"",
+		"next": "endC_5"
+	},
+
+	"endC_5": {
+		"speaker": "Bank",
+		"text": "\"Obviously.\"",
+		"next": "endC_6"
+	},
+
+	"endC_6": {
+		"speaker": "Kay",
+		"text": "\"Sure.\"",
+		"next": "endC_7"
+	},
+
+	"endC_7": {
+		"speaker": "Mom",
+		"text": "!!!!! proud of you",
+		"next": "endC_8"
+	},
+
+	"endC_8": {
+		"speaker": "",
+		"text": "*He reads it. It's like reading somebody else's message.*",
+		"next": "endC_9"
+	},
+
+	"endC_9": {
+		"speaker": "",
+		"text": "*After the last bell, he goes to the garden alone and waters every bed. Then again.*",
+		"next": "endC_10"
+	},
+
+	"endC_10": {
+		"speaker": "",
+		"text": "*The soil goes dark and shiny. Water pools around the stems of the basil. He keeps the hose on anyway.*",
+		"next": "endC_11"
+	},
+
+	"endC_11": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "It's easier than standing here with nothing to do.",
+		"next": "endC_12"
+	},
+
+	"endC_12": {
+		"speaker": "",
+		"text": "*That night, Kay lies in bed and looks at the ceiling.*",
+		"next": "endC_13"
+	},
+
+	"endC_13": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "Today was fine.",
+		"next": "endC_14"
+	},
+
+	"endC_14": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "Everything is fine.",
+		"next": "endC_15"
+	},
+
+	"endC_15": {
+		"speaker": "",
+		"text": "*His phone buzzes.*",
+		"next": "endC_msg_1",
+		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "endC_told_1"}
+	},
+
+	"endC_told_1": {
+		"speaker": "Ulyn",
+		"text": "you told me once. you can tell me again.",
+		"next": "endC_msg_1"
+	},
+
+	"endC_msg_1": {
+		"speaker": "Ulyn",
+		"text": "u good? actually good?",
+		"next": "endC_msg_2"
+	},
+
+	"endC_msg_2": {
+		"speaker": "",
+		"text": "*Kay types \"yeah all good!\" His thumb hovers over send.*",
+		"next": "endC_msg_3"
+	},
+
+	"endC_msg_3": {
+		"speaker": "",
+		"text": "*He deletes it.*",
+		"next": "endC_msg_4"
+	},
+
+	"endC_msg_4": {
+		"speaker": "",
+		"text": "*He types \"no.\"*",
+		"next": "endC_msg_5"
+	},
+
+	"endC_msg_5": {
+		"speaker": "",
+		"text": "*His thumb hovers over send.*",
+		"next": "endC_msg_6"
+	},
+
+	"endC_msg_6": {
+		"speaker": "",
+		"text": "*The message sits there. The cursor blinks. It's still his to send.*",
+		"next": "endC_msg_7"
+	},
+
+	"endC_msg_7": {
+		"speaker": "",
+		"text": "— Ending C: Fine. —"
 	}
 }
