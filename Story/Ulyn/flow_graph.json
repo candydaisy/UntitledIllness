@@ -1,0 +1,3350 @@
+{
+	"start": {
+		"speaker": "",
+		"text": "*Tan's alarm goes off at six. It's a song Tan hates, so that he has to get up to turn it off.*",
+		"next": "wake_2"
+	},
+
+	"wake_2": {
+		"speaker": "",
+		"text": "*Ulyn is on the couch, under a blanket that smells like Tan's laundry soap and not like home. His phone is under his cheek.*",
+		"next": "wake_3"
+	},
+
+	"wake_3": {
+		"speaker": "",
+		"text": "*There's a message from last night that he didn't answer.*",
+		"next": "wake_4"
+	},
+
+	"wake_4": {
+		"speaker": "Mom",
+		"text": "coming home tomorrow? i'm making khao man gai 🍗",
+		"next": "wake_5"
+	},
+
+	"wake_5": {
+		"speaker": "Ulyn",
+		"text": "It's my favorite. She knows it's my favorite. That's why she says it.",
+		"choices": [
+			{"text": "\"can't tmr. council stuff\"", "type": "neutral", "weight_change": 5, "next": "wake_cant_1"},
+			{"text": "\"ok. i'll come.\"", "type": "honest", "weight_change": -10, "next": "wake_come_1", "set_flag": "HomeMonday"}
+		]
+	},
+
+	"wake_cant_1": {
+		"speaker": "Mom",
+		"text": "ok! next time 😊",
+		"next": "wake_cant_2"
+	},
+
+	"wake_cant_2": {
+		"speaker": "",
+		"text": "*The smiley face is worse than if she'd been angry.*",
+		"next": "wake_tan_1"
+	},
+
+	"wake_come_1": {
+		"speaker": "Mom",
+		"text": "!!!! ok!! 😊😊",
+		"next": "wake_come_2"
+	},
+
+	"wake_come_2": {
+		"speaker": "",
+		"text": "*Two smiley faces. He puts the phone face down on the cushion and looks at the ceiling for a while.*",
+		"next": "wake_tan_1"
+	},
+
+	"wake_tan_1": {
+		"speaker": "",
+		"text": "*Tan shuffles past in his boxers, making coffee.*",
+		"next": "wake_tan_2"
+	},
+
+	"wake_tan_2": {
+		"speaker": "Tan",
+		"text": "\"You going home this week?\"",
+		"next": "wake_tan_3"
+	},
+
+	"wake_tan_3": {
+		"speaker": "Ulyn",
+		"text": "\"Council stuff.\"",
+		"next": "wake_tan_4"
+	},
+
+	"wake_tan_4": {
+		"speaker": "Tan",
+		"text": "\"Uh-huh.\"",
+		"next": "wake_tan_5"
+	},
+
+	"wake_tan_5": {
+		"speaker": "",
+		"text": "*Tan says it in exactly the same voice Ulyn uses on Kay. Ulyn throws a pillow at him.*",
+		"next": "gate_1"
+	},
+
+	"gate_1": {
+		"speaker": "",
+		"text": "*At the gate, Kay is standing very still, staring at Elysia and her friends like they're a TV he forgot to turn off.*",
+		"next": "gate_2"
+	},
+
+	"gate_2": {
+		"speaker": "Ulyn",
+		"text": "He looks terrible. Grey under the eyes. Hair still wet.",
+		"next": "gate_3"
+	},
+
+	"gate_3": {
+		"speaker": "Ulyn",
+		"text": "Cold shower again? Did his heater break? He'd never say.",
+		"next": "gate_4"
+	},
+
+	"gate_4": {
+		"speaker": "",
+		"text": "*Elysia turns around like she felt him there and waves. Kay waves back a full second too late, his arm stiff as a railway crossing.*",
+		"next": "gate_5"
+	},
+
+	"gate_5": {
+		"speaker": "Ulyn",
+		"text": "He waved like a robot. Good job, Kay.",
+		"next": "gate_6"
+	},
+
+	"gate_6": {
+		"speaker": "",
+		"text": "*Ulyn puts a hand on his back.*",
+		"next": "gate_7"
+	},
+
+	"gate_7": {
+		"speaker": "Ulyn",
+		"text": "\"Morning. You look like a zombie.\"",
+		"next": "gate_8"
+	},
+
+	"gate_8": {
+		"speaker": "Kay",
+		"text": "\"Thanks. Love you too.\"",
+		"next": "gate_9"
+	},
+
+	"gate_9": {
+		"speaker": "Ulyn",
+		"text": "\"What time did you sleep?\"",
+		"next": "gate_10"
+	},
+
+	"gate_10": {
+		"speaker": "Kay",
+		"text": "\"...Late-ish.\"",
+		"next": "gate_11"
+	},
+
+	"gate_11": {
+		"speaker": "Ulyn",
+		"text": "Late-ish. That means two at the earliest.",
+		"next": "gate_12"
+	},
+
+	"gate_12": {
+		"speaker": "",
+		"text": "*The slides were due at eight. Bank sent a crying emoji to the group chat at 1:48. Ulyn saw it. He didn't answer, because he was doing his own part like a normal person.*",
+		"next": "gate_13"
+	},
+
+	"gate_13": {
+		"speaker": "Ulyn",
+		"text": "\"You did their slides again, didn't you.\"",
+		"next": "gate_14"
+	},
+
+	"gate_14": {
+		"speaker": "Kay",
+		"text": "\"They were busy. It was faster if I just did it.\"",
+		"next": "gate_15"
+	},
+
+	"gate_15": {
+		"speaker": "Ulyn",
+		"text": "The science poster. The English skit. Now Obama. They were busy every time.",
+		"next": "gate_16"
+	},
+
+	"gate_16": {
+		"speaker": "Ulyn",
+		"text": "\"Uh-huh. They're always busy.\"",
+		"next": "gate_17"
+	},
+
+	"gate_17": {
+		"speaker": "",
+		"text": "*He wants to say more. You're allowed to say no. You look like you haven't slept in a month. I'm worried.*",
+		"next": "gate_18"
+	},
+
+	"gate_18": {
+		"speaker": "",
+		"text": "*But Kay's face has already closed, the way it does. Like a shop pulling the shutter down.*",
+		"next": "gate_19"
+	},
+
+	"gate_19": {
+		"speaker": "Ulyn",
+		"text": "If I push, he'll just smile harder.",
+		"next": "gate_20"
+	},
+
+	"gate_20": {
+		"speaker": "Ulyn",
+		"text": "\"Come on, leader. Don't be late to your own presentation.\"",
+		"next": "pres_1"
+	},
+
+	"pres_1": {
+		"speaker": "",
+		"text": "*History. Group 3 at the front of the room. A gap between each of them, about one person wide.*",
+		"next": "pres_2"
+	},
+
+	"pres_2": {
+		"speaker": "",
+		"text": "*Kay does the introduction in his presentation voice. Steady. Friendly. Exactly the right amount of teeth.*",
+		"next": "pres_3"
+	},
+
+	"pres_3": {
+		"speaker": "Ulyn",
+		"text": "To everyone else he looks perfectly fine.",
+		"next": "pres_4"
+	},
+
+	"pres_4": {
+		"speaker": "",
+		"text": "*Ulyn watches his eyes instead. They keep sliding across the room, landing on nothing.*",
+		"next": "pres_5"
+	},
+
+	"pres_5": {
+		"speaker": "Ulyn",
+		"text": "\"Ulyn. I made the slides, so if they look good, you're welcome.\"",
+		"next": "pres_6"
+	},
+
+	"pres_6": {
+		"speaker": "",
+		"text": "*People laugh. Being funny is the easiest thing Ulyn knows how to do.*",
+		"next": "pres_7"
+	},
+
+	"pres_7": {
+		"speaker": "Bank",
+		"text": "\"So Obama was... he was born in...\"",
+		"next": "pres_8"
+	},
+
+	"pres_8": {
+		"speaker": "",
+		"text": "*Bank looks at his phone. Scrolls. Scrolls again. The silence gets long enough to hear the air conditioner.*",
+		"next": "pres_9"
+	},
+
+	"pres_9": {
+		"speaker": "Ulyn",
+		"text": "He never read it. He never even opened it.",
+		"next": "pres_10"
+	},
+
+	"pres_10": {
+		"speaker": "",
+		"text": "*Ulyn looks at Kay. Kay's face doesn't move, but one thumb presses into the other palm, hard.*",
+		"next": "pres_11"
+	},
+
+	"pres_11": {
+		"speaker": "Ulyn",
+		"text": "Let him blank, Kay. Just once. Let it be someone else's problem.",
+		"next": "pres_12"
+	},
+
+	"pres_12": {
+		"speaker": "Kay",
+		"text": "\"—Hawaii, 1961. Sorry, I'll jump in, we split this part.\"",
+		"next": "pres_13"
+	},
+
+	"pres_13": {
+		"speaker": "Ulyn",
+		"text": "Of course.",
+		"next": "pres_14"
+	},
+
+	"pres_14": {
+		"speaker": "",
+		"text": "*Kay knows every date. He wrote every line. Fern points at a slide she has clearly never seen before, and Kay steps in again, so smoothly it looks planned.*",
+		"next": "pres_15"
+	},
+
+	"pres_15": {
+		"speaker": "Teacher",
+		"text": "\"Very well organized, group 3. Good teamwork, everyone.\"",
+		"next": "pres_16"
+	},
+
+	"pres_16": {
+		"speaker": "Bank",
+		"text": "\"Nice one, Kay! You saved us.\"",
+		"next": "pres_17"
+	},
+
+	"pres_17": {
+		"speaker": "Fern",
+		"text": "\"Seriously, you're the best.\"",
+		"next": "pres_18"
+	},
+
+	"pres_18": {
+		"speaker": "Kay",
+		"text": "\"Ha... it's nothing.\"",
+		"next": "pres_19"
+	},
+
+	"pres_19": {
+		"speaker": "",
+		"text": "*Ulyn doesn't look at Bank or Fern. He looks at Kay, who is smiling at them with his whole face except his eyes.*",
+		"next": "pres_20"
+	},
+
+	"pres_20": {
+		"speaker": "",
+		"text": "*Back at their seats, Ulyn drops into the chair next to him.*",
+		"next": "pres_21"
+	},
+
+	"pres_21": {
+		"speaker": "Ulyn",
+		"text": "\"Why didn't you just let him blank?\"",
+		"next": "pres_22"
+	},
+
+	"pres_22": {
+		"speaker": "Kay",
+		"text": "\"In front of everyone? That would've been mean.\"",
+		"next": "pres_23"
+	},
+
+	"pres_23": {
+		"speaker": "Ulyn",
+		"text": "\"It would've been fair. You wrote his part. You wrote her part. And they get the same grade as you.\"",
+		"next": "pres_24"
+	},
+
+	"pres_24": {
+		"speaker": "Ulyn",
+		"text": "\"Last semester it was the science poster. Before that, the English skit.\"",
+		"next": "pres_25"
+	},
+
+	"pres_25": {
+		"speaker": "",
+		"text": "*Some of the frustration in his chest is about Bank and Fern. More of it is about Kay. Most of it, if he were being honest, which he isn't, is about something else.*",
+		"choices": [
+			{"text": "\"You're always like this, Kay.\"", "type": "neutral", "weight_change": 5, "next": "pres_always_1"},
+			{"text": "\"...I'm worried about you, man.\"", "type": "honest", "weight_change": -5, "next": "pres_worried_1", "set_flag": "SaidWorried"}
+		]
+	},
+
+	"pres_always_1": {
+		"speaker": "Kay",
+		"text": "\"They just forgot. It's not a big deal.\"",
+		"next": "pres_always_2"
+	},
+
+	"pres_always_2": {
+		"speaker": "Ulyn",
+		"text": "\"Right. They forgot. For the third time.\"",
+		"next": "pres_after_1"
+	},
+
+	"pres_worried_1": {
+		"speaker": "",
+		"text": "*It comes out quieter than he meant it to.*",
+		"next": "pres_worried_2"
+	},
+
+	"pres_worried_2": {
+		"speaker": "",
+		"text": "*Kay blinks. For a second something moves behind his face. Then the shutter comes down again.*",
+		"next": "pres_worried_3"
+	},
+
+	"pres_worried_3": {
+		"speaker": "Kay",
+		"text": "\"Don't be. I'm fine. They just forgot.\"",
+		"next": "pres_worried_4"
+	},
+
+	"pres_worried_4": {
+		"speaker": "Ulyn",
+		"text": "\"...Right. They forgot.\"",
+		"next": "pres_after_1"
+	},
+
+	"pres_after_1": {
+		"speaker": "",
+		"text": "*Ulyn turns to face the front. He doesn't sound angry anymore. He can hear that in his own voice. Just tired.*",
+		"next": "pres_after_2"
+	},
+
+	"pres_after_2": {
+		"speaker": "Ulyn",
+		"text": "He's looking at me like he thinks I'm mad at him.",
+		"next": "pres_after_3"
+	},
+
+	"pres_after_3": {
+		"speaker": "Ulyn",
+		"text": "I'm not mad at you, idiot. I'm mad at—",
+		"next": "pres_after_4"
+	},
+
+	"pres_after_4": {
+		"speaker": "",
+		"text": "*He doesn't finish the thought. He's gotten good at not finishing that thought.*",
+		"next": "lunch_1"
+	},
+
+	"lunch_1": {
+		"speaker": "",
+		"text": "*Lunch.*",
+		"next": "lunch_2"
+	},
+
+	"lunch_2": {
+		"speaker": "Ulyn",
+		"text": "\"Hey, so... I can't eat with you today. My chemistry report's due tomorrow and I haven't started.\"",
+		"next": "lunch_3"
+	},
+
+	"lunch_3": {
+		"speaker": "Kay",
+		"text": "\"Oh. That's fine! Go.\"",
+		"next": "lunch_4"
+	},
+
+	"lunch_4": {
+		"speaker": "Ulyn",
+		"text": "That's fine. Exclamation mark.",
+		"next": "lunch_5"
+	},
+
+	"lunch_5": {
+		"speaker": "Ulyn",
+		"text": "\"You sure? I can put it off and just do it tonight.\"",
+		"next": "lunch_6"
+	},
+
+	"lunch_6": {
+		"speaker": "",
+		"text": "*He means it. He'd be up until four, and he'd do it gladly, if Kay asked.*",
+		"next": "lunch_7"
+	},
+
+	"lunch_7": {
+		"speaker": "",
+		"text": "*Kay looks at him for a long moment. A whole conversation seems to be happening behind his eyes, one Ulyn isn't invited to.*",
+		"next": "lunch_8"
+	},
+
+	"lunch_8": {
+		"speaker": "Kay",
+		"text": "\"I'm good. Really. Don't worry about me.\"",
+		"next": "lunch_9"
+	},
+
+	"lunch_9": {
+		"speaker": "Ulyn",
+		"text": "Don't worry about me. I could make a list of every time he's said that, starting last April.",
+		"next": "lunch_10"
+	},
+
+	"lunch_10": {
+		"speaker": "Ulyn",
+		"text": "\"...Okay. Save me a seat in class, then.\"",
+		"choices": [
+			{"text": "Go to the library", "type": "neutral", "weight_change": 5, "next": "lunch_go_1"},
+			{"text": "Sit down anyway", "type": "helpful", "weight_change": -5, "next": "lunch_sit_1", "set_flag": "StayedAnyway"}
+		]
+	},
+
+	"lunch_go_1": {
+		"speaker": "",
+		"text": "*He jogs toward the building. At the door he glances back. Kay is still standing there, watching him go.*",
+		"next": "lunch_go_2"
+	},
+
+	"lunch_go_2": {
+		"speaker": "Ulyn",
+		"text": "He looks like a kid at a bus stop.",
+		"next": "lunch_window_1"
+	},
+
+	"lunch_sit_1": {
+		"speaker": "",
+		"text": "*He makes it three steps. Then he turns around and drops his bag on the seat.*",
+		"next": "lunch_sit_2"
+	},
+
+	"lunch_sit_2": {
+		"speaker": "Ulyn",
+		"text": "\"Changed my mind.\"",
+		"next": "lunch_sit_3"
+	},
+
+	"lunch_sit_3": {
+		"speaker": "Kay",
+		"text": "\"Ulyn, your report—\"",
+		"next": "lunch_sit_4"
+	},
+
+	"lunch_sit_4": {
+		"speaker": "Ulyn",
+		"text": "\"Too late, I'm sitting. What are we eating?\"",
+		"next": "lunch_sit_5"
+	},
+
+	"lunch_sit_5": {
+		"speaker": "",
+		"text": "*Kay's face does something complicated. Ulyn thinks some of it might be relief.*",
+		"next": "lunch_sit_6"
+	},
+
+	"lunch_sit_6": {
+		"speaker": "",
+		"text": "*After twenty minutes, Kay says to go, seriously, he'll survive. This time he almost sounds like he means it. So Ulyn goes.*",
+		"next": "lunch_window_1"
+	},
+
+	"lunch_window_1": {
+		"speaker": "",
+		"text": "*From the library's second floor, you can see the cafeteria. Ulyn isn't looking. He's doing his chemistry report.*",
+		"next": "lunch_window_2"
+	},
+
+	"lunch_window_2": {
+		"speaker": "",
+		"text": "*He looks anyway.*",
+		"next": "lunch_window_3"
+	},
+
+	"lunch_window_3": {
+		"speaker": "",
+		"text": "*Kay is in the pad kra pao line. Right behind him, hands behind her back, is Elysia. She says something. Kay goes red to his ears.*",
+		"next": "lunch_window_4"
+	},
+
+	"lunch_window_4": {
+		"speaker": "Ulyn",
+		"text": "Good. Someone's dragging him out of himself.",
+		"next": "lunch_window_5"
+	},
+
+	"lunch_window_5": {
+		"speaker": "",
+		"text": "*Ten minutes later he looks again. Kay is sitting at Elysia's table by the window. With her friends.*",
+		"next": "lunch_window_6"
+	},
+
+	"lunch_window_6": {
+		"speaker": "Ulyn",
+		"text": "Kay voluntarily sat at a table of other humans? I'm teasing him about this until the end of time.",
+		"next": "lunch_window_7"
+	},
+
+	"lunch_window_7": {
+		"speaker": "Ulyn",
+		"text": "\"How was lunch?\"",
+		"next": "lunch_window_8"
+	},
+
+	"lunch_window_8": {
+		"speaker": "Kay",
+		"text": "\"It was... good, actually.\"",
+		"next": "lunch_window_9"
+	},
+
+	"lunch_window_9": {
+		"speaker": "Ulyn",
+		"text": "\"Ohh? You saw Elysia, didn't you. Look at your face.\"",
+		"next": "lunch_window_10"
+	},
+
+	"lunch_window_10": {
+		"speaker": "Kay",
+		"text": "\"Shut up.\"",
+		"next": "lunch_window_11"
+	},
+
+	"lunch_window_11": {
+		"speaker": "",
+		"text": "*For about five minutes, everything is fine.*",
+		"next": "lunch_window_12"
+	},
+
+	"lunch_window_12": {
+		"speaker": "Teacher",
+		"text": "\"The most common way people kill a plant isn't forgetting about it. It's overwatering it. Giving it more than it can take.\"",
+		"next": "lunch_window_13"
+	},
+
+	"lunch_window_13": {
+		"speaker": "",
+		"text": "*Ulyn glances over. Kay is staring at nothing.*",
+		"next": "lunch_window_14"
+	},
+
+	"lunch_window_14": {
+		"speaker": "Ulyn",
+		"text": "He waters the plants in his front yard every day. He told me once, back when he still told me things.",
+		"next": "lunch_window_15"
+	},
+
+	"lunch_window_15": {
+		"speaker": "Ulyn",
+		"text": "I bet he's drowning them.",
+		"next": "lunch_window_16"
+	},
+
+	"lunch_window_16": {
+		"speaker": "",
+		"text": "*Ulyn doesn't know why that thought makes his chest go tight. He writes \"overwatering\" in the margin of his notebook and draws a box around it.*",
+		"next": "council_1"
+	},
+
+	"council_1": {
+		"speaker": "",
+		"text": "*After school, the student council room smells like whiteboard markers and somebody's fish ball noodles.*",
+		"next": "council_2"
+	},
+
+	"council_2": {
+		"speaker": "Pim",
+		"text": "\"Sports day. I need someone to run equipment, schedules, and the volunteer roster. It's basically half of the whole thing.\"",
+		"next": "council_3"
+	},
+
+	"council_3": {
+		"speaker": "",
+		"text": "*Nobody raises a hand. Everyone looks at the table.*",
+		"next": "council_4"
+	},
+
+	"council_4": {
+		"speaker": "",
+		"text": "*Ulyn thinks about Tan's couch. Mom's khao man gai. The quiet in that house, so quiet you can hear the fridge from upstairs.*",
+		"next": "council_5"
+	},
+
+	"council_5": {
+		"speaker": "Ulyn",
+		"text": "Busy is good. Busy means you don't have to think.",
+		"choices": [
+			{"text": "\"I'll take it.\"", "type": "neutral", "weight_change": 10, "next": "council_take_1"},
+			{"text": "\"Someone else should take this one. I've got a lot on.\"", "type": "honest", "weight_change": -5, "next": "council_no_1"}
+		]
+	},
+
+	"council_take_1": {
+		"speaker": "Pim",
+		"text": "\"Oh thank god.\"",
+		"next": "council_take_2"
+	},
+
+	"council_take_2": {
+		"speaker": "",
+		"text": "*Pim writes ULYN across half the board in red. Everyone claps. Ulyn bows.*",
+		"next": "council_take_3"
+	},
+
+	"council_take_3": {
+		"speaker": "",
+		"text": "*Being useful feels like a warm room.*",
+		"next": "evening_1"
+	},
+
+	"council_no_1": {
+		"speaker": "",
+		"text": "*The room goes quiet. Pim looks surprised.*",
+		"next": "council_no_2"
+	},
+
+	"council_no_2": {
+		"speaker": "Pim",
+		"text": "\"...Okay. Fair. You've done a lot this year.\"",
+		"next": "council_no_3"
+	},
+
+	"council_no_3": {
+		"speaker": "",
+		"text": "*She splits it three ways instead. It's the first time he's said no to anything in months. His hands are a little shaky. He doesn't know why.*",
+		"next": "evening_1"
+	},
+
+	"evening_1": {
+		"speaker": "",
+		"text": "*Evening.*",
+		"next": "evening_2",
+		"secret": {"condition": "flag_true", "flag": "HomeMonday", "next": "evening_home_1"}
+	},
+
+	"evening_2": {
+		"speaker": "",
+		"text": "*At Tan's, they eat instant noodles over the sink.*",
+		"next": "evening_3"
+	},
+
+	"evening_3": {
+		"speaker": "Tan",
+		"text": "\"Your mom texted me, by the way. She asked if you're eating.\"",
+		"next": "evening_4"
+	},
+
+	"evening_4": {
+		"speaker": "Ulyn",
+		"text": "\"I'm eating.\"",
+		"next": "evening_5"
+	},
+
+	"evening_5": {
+		"speaker": "Tan",
+		"text": "\"You're eating noodles over a sink.\"",
+		"next": "evening_6"
+	},
+
+	"evening_6": {
+		"speaker": "Ulyn",
+		"text": "\"That counts.\"",
+		"next": "text_1"
+	},
+
+	"evening_home_1": {
+		"speaker": "",
+		"text": "*He goes home. Same shoes by the door, minus one pair.*",
+		"next": "evening_home_2"
+	},
+
+	"evening_home_2": {
+		"speaker": "",
+		"text": "*Mom has set three places at the table, then noticed, and moved one plate back to the cupboard. He can see the clean circle where it was.*",
+		"next": "evening_home_3"
+	},
+
+	"evening_home_3": {
+		"speaker": "Mom",
+		"text": "\"How was school?\"",
+		"next": "evening_home_4"
+	},
+
+	"evening_home_4": {
+		"speaker": "Ulyn",
+		"text": "\"Fine.\"",
+		"next": "evening_home_5"
+	},
+
+	"evening_home_5": {
+		"speaker": "",
+		"text": "*The khao man gai is perfect. They talk about the chicken for a long time, because the chicken is safe.*",
+		"next": "evening_home_6"
+	},
+
+	"evening_home_6": {
+		"speaker": "",
+		"text": "*On the balcony, her plants are brown. All of them.*",
+		"next": "text_1"
+	},
+
+	"text_1": {
+		"speaker": "",
+		"text": "*10:47 p.m. Ulyn opens his chat with Kay.*",
+		"next": "text_2"
+	},
+
+	"text_2": {
+		"speaker": "",
+		"text": "*He thinks about the morning. Late-ish. The thumb pressing into the palm. Don't worry about me.*",
+		"next": "text_3"
+	},
+
+	"text_3": {
+		"speaker": "Ulyn",
+		"text": "yo. you good? you seemed off today",
+		"next": "text_4"
+	},
+
+	"text_4": {
+		"speaker": "",
+		"text": "*The reply comes fast. Too fast, like it was ready.*",
+		"next": "text_5"
+	},
+
+	"text_5": {
+		"speaker": "Kay",
+		"text": "yeah all good! just tired lol",
+		"next": "text_6"
+	},
+
+	"text_6": {
+		"speaker": "Ulyn",
+		"text": "Exclamation mark. \"lol.\" That's his customer service voice.",
+		"next": "text_7"
+	},
+
+	"text_7": {
+		"speaker": "Ulyn",
+		"text": "you sure?",
+		"next": "text_8"
+	},
+
+	"text_8": {
+		"speaker": "Ulyn",
+		"text": "like actually sure. not kay-sure",
+		"next": "text_9"
+	},
+
+	"text_9": {
+		"speaker": "",
+		"text": "*The typing dots appear and disappear three times. Ulyn sits up.*",
+		"next": "text_10"
+	},
+
+	"text_10": {
+		"speaker": "Ulyn",
+		"text": "Come on. Come on, say it.",
+		"next": "text_11"
+	},
+
+	"text_11": {
+		"speaker": "Kay",
+		"text": "yeah, i'm sure. don't worry",
+		"choices": [
+			{"text": "\"ok. i'm here if you wanna talk. like whenever\"", "type": "neutral", "weight_change": 0, "next": "text_here_1"},
+			{"text": "\"kay. i'm serious.\"", "type": "honest", "weight_change": -5, "next": "text_serious_1"}
+		]
+	},
+
+	"text_here_1": {
+		"speaker": "Kay",
+		"text": "thanks. i'm good",
+		"next": "march_1"
+	},
+
+	"text_serious_1": {
+		"speaker": "",
+		"text": "*A long pause.*",
+		"next": "text_serious_2"
+	},
+
+	"text_serious_2": {
+		"speaker": "Kay",
+		"text": "i know. i'm good. night",
+		"next": "march_1"
+	},
+
+	"march_1": {
+		"speaker": "",
+		"text": "*Ulyn lies back on the couch.*",
+		"next": "march_2"
+	},
+
+	"march_2": {
+		"speaker": "Ulyn",
+		"text": "I'm here if you wanna talk. As if he would. As if I've earned that.",
+		"next": "march_3"
+	},
+
+	"march_3": {
+		"speaker": "",
+		"text": "*He scrolls up. Not far. He knows exactly where it is.*",
+		"next": "march_4"
+	},
+
+	"march_4": {
+		"speaker": "",
+		"text": "*Last March. 3:04 a.m.*",
+		"next": "march_5"
+	},
+
+	"march_5": {
+		"speaker": "Kay",
+		"text": "can I call you",
+		"next": "march_6"
+	},
+
+	"march_6": {
+		"speaker": "",
+		"text": "*And underneath it, four days later:*",
+		"next": "march_7"
+	},
+
+	"march_7": {
+		"speaker": "Ulyn",
+		"text": "sorry, was busy",
+		"next": "march_8"
+	},
+
+	"march_8": {
+		"speaker": "",
+		"text": "*That week his dad carried boxes to a car. His mom ran the shower every night so he wouldn't hear her cry. He heard her anyway.*",
+		"next": "march_9"
+	},
+
+	"march_9": {
+		"speaker": "",
+		"text": "*He sat on Tan's floor with the phone in his hand and thought: I can't. If he needs something, I don't have anything to give.*",
+		"next": "march_10"
+	},
+
+	"march_10": {
+		"speaker": "",
+		"text": "*So he gave nothing. And four days later it felt too late to give anything real.*",
+		"next": "march_11"
+	},
+
+	"march_11": {
+		"speaker": "",
+		"text": "*Kay never asked again. Not for a pen. Not for a ride. Not for a phone call.*",
+		"next": "march_12"
+	},
+
+	"march_12": {
+		"speaker": "Ulyn",
+		"text": "I broke something. I just don't know if he knows I know.",
+		"next": "march_13"
+	},
+
+	"march_13": {
+		"speaker": "",
+		"text": "*Ulyn turns the phone face down.*",
+		"next": "tue_1"
+	},
+
+	"tue_1": {
+		"speaker": "",
+		"text": "*Tuesday. Lunch. He finished the chemistry report at three. He lies with his forehead flat against the table.*",
+		"next": "tue_2"
+	},
+
+	"tue_2": {
+		"speaker": "Ulyn",
+		"text": "\"Finished the chemistry report at three. Don't look at me.\"",
+		"next": "tue_3"
+	},
+
+	"tue_3": {
+		"speaker": "",
+		"text": "*He feels Kay looking anyway. Neither of them says anything about three in the morning.*",
+		"next": "tue_4"
+	},
+
+	"tue_4": {
+		"speaker": "",
+		"text": "*Homeroom. The teacher writes COMMUNITY PROJECT on the board.*",
+		"next": "tue_5"
+	},
+
+	"tue_5": {
+		"speaker": "Bank",
+		"text": "\"Kay! Group?\"",
+		"next": "tue_6"
+	},
+
+	"tue_6": {
+		"speaker": "Ulyn",
+		"text": "\"He's with me. You two can come, I guess.\"",
+		"next": "tue_7"
+	},
+
+	"tue_7": {
+		"speaker": "",
+		"text": "*While they argue about topics, Ulyn looks out the window. Four raised beds behind the science building, weeds as tall as a kid. He walks past them every morning from Tan's.*",
+		"next": "tue_8"
+	},
+
+	"tue_8": {
+		"speaker": "",
+		"text": "*He remembers Mom's balcony before March. Herbs. A lime tree in a big blue pot. Now it's brown sticks.*",
+		"next": "tue_9"
+	},
+
+	"tue_9": {
+		"speaker": "Ulyn",
+		"text": "Nobody was home to water them.",
+		"next": "tue_10"
+	},
+
+	"tue_10": {
+		"speaker": "Ulyn",
+		"text": "\"The garden. The agriculture club died two years ago. Nobody's touched it since.\"",
+		"next": "tue_11"
+	},
+
+	"tue_11": {
+		"speaker": "",
+		"text": "*The teacher approves it. Fern says \"aesthetic.\" Bank asks if gardening is physical. Yes, Bank. It's physical.*",
+		"next": "tue_12"
+	},
+
+	"tue_12": {
+		"speaker": "Fern",
+		"text": "\"So you'll do the report and the plan, right? You're so good at that.\"",
+		"next": "tue_13"
+	},
+
+	"tue_13": {
+		"speaker": "",
+		"text": "*Bank nods like it's already decided. Ulyn's pen stops.*",
+		"next": "tue_14"
+	},
+
+	"tue_14": {
+		"speaker": "Ulyn",
+		"text": "Say no. Say no, say no, say—",
+		"next": "tue_15"
+	},
+
+	"tue_15": {
+		"speaker": "Kay",
+		"text": "\"Sure. I'll handle the report.\"",
+		"choices": [
+			{"text": "Say nothing", "type": "neutral", "weight_change": 5, "next": "tue_quiet_1"},
+			{"text": "\"We should split it. Everyone writes their own part.\"", "type": "honest", "weight_change": -5, "next": "tue_split_1", "set_flag": "TriedSplit"}
+		]
+	},
+
+	"tue_quiet_1": {
+		"speaker": "",
+		"text": "*He grips the pen and says nothing. Saying it in front of them would only embarrass Kay. That's what he tells himself.*",
+		"next": "sat_1"
+	},
+
+	"tue_split_1": {
+		"speaker": "",
+		"text": "*Everyone looks at him.*",
+		"next": "tue_split_2"
+	},
+
+	"tue_split_2": {
+		"speaker": "Ulyn",
+		"text": "\"I mean— it's a lot for one person.\"",
+		"next": "tue_split_3"
+	},
+
+	"tue_split_3": {
+		"speaker": "Kay",
+		"text": "\"It's fine. I'm faster at it anyway.\"",
+		"next": "tue_split_4"
+	},
+
+	"tue_split_4": {
+		"speaker": "Fern",
+		"text": "\"See? He's faster.\"",
+		"next": "tue_split_5"
+	},
+
+	"tue_split_5": {
+		"speaker": "",
+		"text": "*So it doesn't change anything. But under the desk, Kay's thumb stops pressing into his palm. Just for a second.*",
+		"next": "sat_1"
+	},
+
+	"sat_1": {
+		"speaker": "",
+		"text": "*The first Saturday, Ulyn snoozes his alarm twice and gets to the garden at 8:20 with a bag of bread from 7-Eleven.*",
+		"next": "sat_2"
+	},
+
+	"sat_2": {
+		"speaker": "",
+		"text": "*Kay is already there. He has pulled out an entire bed of weeds by himself. Mud to the elbows.*",
+		"next": "sat_3"
+	},
+
+	"sat_3": {
+		"speaker": "Ulyn",
+		"text": "\"What time did you get here?\"",
+		"next": "sat_4"
+	},
+
+	"sat_4": {
+		"speaker": "Kay",
+		"text": "\"Seven-forty.\"",
+		"next": "sat_5"
+	},
+
+	"sat_5": {
+		"speaker": "Ulyn",
+		"text": "\"The plan said eight.\"",
+		"next": "sat_6"
+	},
+
+	"sat_6": {
+		"speaker": "Kay",
+		"text": "\"I know.\"",
+		"next": "sat_7"
+	},
+
+	"sat_7": {
+		"speaker": "",
+		"text": "*Ulyn hands him a bread roll and doesn't say anything else.*",
+		"next": "sat_8"
+	},
+
+	"sat_8": {
+		"speaker": "Ms. Noi",
+		"text": "\"Water spinach is forgiving. Basil isn't. Chili sulks if you love it too much.\"",
+		"next": "sat_9"
+	},
+
+	"sat_9": {
+		"speaker": "Ulyn",
+		"text": "\"Like Kay.\"",
+		"next": "sat_10"
+	},
+
+	"sat_10": {
+		"speaker": "Kay",
+		"text": "\"I don't sulk.\"",
+		"next": "sat_11"
+	},
+
+	"sat_11": {
+		"speaker": "Ms. Noi",
+		"text": "\"Once a day. Only if the soil is dry.\"",
+		"next": "sat_12"
+	},
+
+	"sat_12": {
+		"speaker": "",
+		"text": "*Kay writes it down, word for word. Ulyn watches him underline \"only.\"*",
+		"next": "sat_13"
+	},
+
+	"sat_13": {
+		"speaker": "Ulyn",
+		"text": "He's going to water them twice a day. I'd bet my lunch.",
+		"next": "busy_1"
+	},
+
+	"busy_1": {
+		"speaker": "",
+		"text": "*Sports day takes over his life. Spreadsheets. Rosters. A group chat with ninety people in it who all have questions.*",
+		"next": "busy_2"
+	},
+
+	"busy_2": {
+		"speaker": "",
+		"text": "*He sleeps at Tan's five nights a week, then six. When he makes it to the garden, the soil is always wet and the hose is always out.*",
+		"next": "busy_3"
+	},
+
+	"busy_3": {
+		"speaker": "Ulyn",
+		"text": "Told you.",
+		"next": "busy_4"
+	},
+
+	"busy_4": {
+		"speaker": "",
+		"text": "*Mom calls every evening at seven. He watches it ring.*",
+		"next": "busy_5"
+	},
+
+	"busy_5": {
+		"speaker": "",
+		"text": "*The third Friday, he wakes up in history to the teacher saying his name. There's a crease on his forehead from the council folder.*",
+		"next": "busy_6"
+	},
+
+	"busy_6": {
+		"speaker": "Ulyn",
+		"text": "\"Present. And also correct.\"",
+		"next": "busy_7"
+	},
+
+	"busy_7": {
+		"speaker": "",
+		"text": "*The class laughs. He did that. Good.*",
+		"next": "busy_8"
+	},
+
+	"busy_8": {
+		"speaker": "",
+		"text": "*After the bell, his phone buzzes on the desk. Mom. He declines it without looking and shoves it in his pocket, the way he always does.*",
+		"next": "busy_9"
+	},
+
+	"busy_9": {
+		"speaker": "",
+		"text": "*When he looks up, Kay is watching him.*",
+		"next": "busy_10"
+	},
+
+	"busy_10": {
+		"speaker": "Kay",
+		"text": "\"You okay? You look wrecked.\"",
+		"next": "busy_11"
+	},
+
+	"busy_11": {
+		"speaker": "",
+		"text": "*Ulyn blinks.*",
+		"next": "busy_12"
+	},
+
+	"busy_12": {
+		"speaker": "",
+		"text": "*Tan asks if he's going home. Pim asks if the roster is done. Mom asks if he's eating. Nobody has asked are you okay.*",
+		"next": "busy_13"
+	},
+
+	"busy_13": {
+		"speaker": "Ulyn",
+		"text": "And it's Kay asking. Kay, who hasn't asked me for anything since March.",
+		"next": "busy_14"
+	},
+
+	"busy_14": {
+		"speaker": "Ulyn",
+		"text": "Did he see the call? Did he see who it was?",
+		"choices": [
+			{"text": "\"...Yeah. Just sports day stuff.\"", "type": "neutral", "weight_change": 5, "next": "busy_fine_1"},
+			{"text": "\"...Not really.\"", "type": "honest", "weight_change": -10, "next": "busy_honest_1", "set_flag": "ToldKayNotReally"}
+		]
+	},
+
+	"busy_fine_1": {
+		"speaker": "Ulyn",
+		"text": "\"...Yeah. Just sports day stuff.\"",
+		"next": "busy_fine_2"
+	},
+
+	"busy_fine_2": {
+		"speaker": "Ulyn",
+		"text": "\"Thanks for asking, though.\"",
+		"next": "busy_fine_3"
+	},
+
+	"busy_fine_3": {
+		"speaker": "",
+		"text": "*Kay looks at him a beat too long, then nods.*",
+		"next": "busy_fine_4"
+	},
+
+	"busy_fine_4": {
+		"speaker": "",
+		"text": "*Ulyn has the uncomfortable feeling he just did something very familiar. He can't place it.*",
+		"next": "seven_1"
+	},
+
+	"busy_honest_1": {
+		"speaker": "",
+		"text": "*He immediately wants to take it back. Kay goes very still.*",
+		"next": "busy_honest_2"
+	},
+
+	"busy_honest_2": {
+		"speaker": "Kay",
+		"text": "\"What's wrong?\"",
+		"next": "busy_honest_3"
+	},
+
+	"busy_honest_3": {
+		"speaker": "Ulyn",
+		"text": "\"My mom keeps calling. I keep not answering. Long story.\"",
+		"next": "busy_honest_4"
+	},
+
+	"busy_honest_4": {
+		"speaker": "Kay",
+		"text": "\"...You can tell me. If you want.\"",
+		"next": "busy_honest_5"
+	},
+
+	"busy_honest_5": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. Later. It's a long one.\"",
+		"next": "busy_honest_6"
+	},
+
+	"busy_honest_6": {
+		"speaker": "",
+		"text": "*The bell rings. Saved by it. He doesn't tell him later. But Kay's face, saying \"you can tell me,\" stays with him all day.*",
+		"next": "seven_1"
+	},
+
+	"seven_1": {
+		"speaker": "",
+		"text": "*At 7 p.m. the phone rings again. Mom.*",
+		"choices": [
+			{"text": "Decline", "type": "neutral", "weight_change": 5, "next": "seven_decline_1"},
+			{"text": "Answer", "type": "helpful", "weight_change": -10, "next": "seven_answer_1", "set_flag": "AnsweredMom"}
+		]
+	},
+
+	"seven_decline_1": {
+		"speaker": "",
+		"text": "*He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.*",
+		"next": "sports_1"
+	},
+
+	"seven_answer_1": {
+		"speaker": "Ulyn",
+		"text": "\"Hello?\"",
+		"next": "seven_answer_2"
+	},
+
+	"seven_answer_2": {
+		"speaker": "Mom",
+		"text": "\"Oh! Hi. Hi, Ulyn. I just— are you eating?\"",
+		"next": "seven_answer_3"
+	},
+
+	"seven_answer_3": {
+		"speaker": "Ulyn",
+		"text": "\"I'm eating.\"",
+		"next": "seven_answer_4"
+	},
+
+	"seven_answer_4": {
+		"speaker": "Mom",
+		"text": "\"Good. Good. I just wanted to hear your voice.\"",
+		"next": "seven_answer_5"
+	},
+
+	"seven_answer_5": {
+		"speaker": "",
+		"text": "*He doesn't know what to say to that, so he talks about sports day for fifteen minutes. She listens to every word.*",
+		"next": "sports_1"
+	},
+
+	"sports_1": {
+		"speaker": "",
+		"text": "*The fourth Friday. Sports day.*",
+		"next": "sports_2"
+	},
+
+	"sports_2": {
+		"speaker": "",
+		"text": "*Ulyn runs it with a clipboard and a megaphone he doesn't really need. The relay starts on time. The rope arrives. Nobody faints. Pim hugs him.*",
+		"next": "sports_3"
+	},
+
+	"sports_3": {
+		"speaker": "",
+		"text": "*It feels like a warm room again. He tries to stay in it.*",
+		"next": "sports_4"
+	},
+
+	"sports_4": {
+		"speaker": "",
+		"text": "*At the water station, Kay is filling paper cups. Ulyn didn't ask him to volunteer. Of course he volunteered. He looks grey, the way old newspaper is grey.*",
+		"next": "sports_5"
+	},
+
+	"sports_5": {
+		"speaker": "Ulyn",
+		"text": "He looks like he hasn't slept since the Obama presentation.",
+		"next": "sports_6"
+	},
+
+	"sports_6": {
+		"speaker": "",
+		"text": "*Elysia runs up to the station, pushes a cold drink into Kay's hands, and sprints away before her friends can catch her. Kay holds it like it's made of glass.*",
+		"next": "sports_7"
+	},
+
+	"sports_7": {
+		"speaker": "",
+		"text": "*At 2 p.m., Ulyn sees his mom in the stands. Work clothes. She must have taken the afternoon off. She waves. Small. Unsure.*",
+		"next": "sports_8"
+	},
+
+	"sports_8": {
+		"speaker": "Ulyn",
+		"text": "Why is she here.",
+		"next": "sports_9"
+	},
+
+	"sports_9": {
+		"speaker": "",
+		"text": "*Pim is shouting about the closing ceremony. Ninety people need things.*",
+		"choices": [
+			{"text": "Hold up the clipboard. \"Too busy. Later.\"", "type": "neutral", "weight_change": 10, "next": "sports_busy_1"},
+			{"text": "Hand the megaphone to Pim and go up to her", "type": "honest", "weight_change": -10, "next": "sports_mom_1", "set_flag": "MomSportsDay"}
+		]
+	},
+
+	"sports_busy_1": {
+		"speaker": "",
+		"text": "*He points at the clipboard and mouths: busy, sorry, later. She nods and smiles, like she expected it.*",
+		"next": "sports_busy_2"
+	},
+
+	"sports_busy_2": {
+		"speaker": "",
+		"text": "*At five, there's a container of khao man gai on the council table with a sticky note: \"Proud of you. Eat something. - Mom\"*",
+		"next": "sports_busy_3"
+	},
+
+	"sports_busy_3": {
+		"speaker": "",
+		"text": "*He eats it alone behind the gym, on an upside-down crate. It's perfect. It tastes like the kitchen before March.*",
+		"next": "sports_busy_4"
+	},
+
+	"sports_busy_4": {
+		"speaker": "",
+		"text": "*He doesn't cry. He's very busy not crying.*",
+		"next": "mid_1"
+	},
+
+	"sports_mom_1": {
+		"speaker": "Ulyn",
+		"text": "\"Pim. Five minutes.\"",
+		"next": "sports_mom_2"
+	},
+
+	"sports_mom_2": {
+		"speaker": "Pim",
+		"text": "\"Ulyn, the closing—\"",
+		"next": "sports_mom_3"
+	},
+
+	"sports_mom_3": {
+		"speaker": "Ulyn",
+		"text": "\"Five minutes.\"",
+		"next": "sports_mom_4"
+	},
+
+	"sports_mom_4": {
+		"speaker": "",
+		"text": "*He climbs the stands. Mom looks startled, then happy, then like she's trying not to look too happy in case it scares him off.*",
+		"next": "sports_mom_5"
+	},
+
+	"sports_mom_5": {
+		"speaker": "Mom",
+		"text": "\"I brought khao man gai. It's in the car. I didn't know if you'd—\"",
+		"next": "sports_mom_6"
+	},
+
+	"sports_mom_6": {
+		"speaker": "Ulyn",
+		"text": "\"I'll eat it. Thanks for coming.\"",
+		"next": "sports_mom_7"
+	},
+
+	"sports_mom_7": {
+		"speaker": "",
+		"text": "*They watch the relay for five minutes. She doesn't ask when he's coming home. He's grateful for that, and a little disappointed.*",
+		"next": "mid_1"
+	},
+
+	"mid_1": {
+		"speaker": "",
+		"text": "*Week five. Midterms. 1 a.m. at Tan's kitchen counter. Tan comes out for water.*",
+		"next": "mid_2"
+	},
+
+	"mid_2": {
+		"speaker": "Tan",
+		"text": "\"When are you going home?\"",
+		"choices": [
+			{"text": "\"After exams.\"", "type": "neutral", "weight_change": 5, "next": "mid_after_1"},
+			{"text": "\"...I don't know how to.\"", "type": "honest", "weight_change": -10, "next": "mid_honest_1", "set_flag": "ToldTan"}
+		]
+	},
+
+	"mid_after_1": {
+		"speaker": "Tan",
+		"text": "\"You said that before the last exams.\"",
+		"next": "mid_after_2"
+	},
+
+	"mid_after_2": {
+		"speaker": "Ulyn",
+		"text": "\"Then I'll say it again before the next ones.\"",
+		"next": "mid_after_3"
+	},
+
+	"mid_after_3": {
+		"speaker": "",
+		"text": "*Tan doesn't laugh. He fills his glass and goes back to bed.*",
+		"next": "mid_text_1"
+	},
+
+	"mid_honest_1": {
+		"speaker": "",
+		"text": "*Tan stops with the glass halfway to his mouth.*",
+		"next": "mid_honest_2"
+	},
+
+	"mid_honest_2": {
+		"speaker": "Ulyn",
+		"text": "\"It's so quiet there. She tries so hard. She sets three plates and then moves one. I don't know how to be in that kitchen.\"",
+		"next": "mid_honest_3"
+	},
+
+	"mid_honest_3": {
+		"speaker": "",
+		"text": "*Tan sits down on the other stool.*",
+		"next": "mid_honest_4"
+	},
+
+	"mid_honest_4": {
+		"speaker": "Tan",
+		"text": "\"When my parents split, I lived at the 24-hour McDonald's for a month.\"",
+		"next": "mid_honest_5"
+	},
+
+	"mid_honest_5": {
+		"speaker": "Ulyn",
+		"text": "\"...Seriously?\"",
+		"next": "mid_honest_6"
+	},
+
+	"mid_honest_6": {
+		"speaker": "Tan",
+		"text": "\"Didn't fix anything. Just made me fat. You can stay here as long as you want. But you know you can't stay here forever.\"",
+		"next": "mid_text_1"
+	},
+
+	"mid_text_1": {
+		"speaker": "",
+		"text": "*Wednesday night, he texts Kay.*",
+		"next": "mid_text_2"
+	},
+
+	"mid_text_2": {
+		"speaker": "Ulyn",
+		"text": "u alive? midterms are killing me",
+		"next": "mid_text_3"
+	},
+
+	"mid_text_3": {
+		"speaker": "Kay",
+		"text": "alive! good luck 💪",
+		"next": "mid_text_4"
+	},
+
+	"mid_text_4": {
+		"speaker": "Ulyn",
+		"text": "Exclamation mark. Flexing emoji. Kay does not use emojis. Kay uses periods.",
+		"next": "mid_text_5"
+	},
+
+	"mid_text_5": {
+		"speaker": "",
+		"text": "*He types \"can I call you.\" He looks at it.*",
+		"next": "mid_text_6"
+	},
+
+	"mid_text_6": {
+		"speaker": "",
+		"text": "*He deletes it.*",
+		"next": "mid_text_7"
+	},
+
+	"mid_text_7": {
+		"speaker": "Ulyn",
+		"text": "What would I even say?",
+		"next": "mid_text_8"
+	},
+
+	"mid_text_8": {
+		"speaker": "",
+		"text": "*Thursday night, he falls asleep at 11 with the light on.*",
+		"next": "where_1"
+	},
+
+	"where_1": {
+		"speaker": "",
+		"text": "*The sixth Thursday. Kay isn't at the gate. Kay isn't in homeroom.*",
+		"next": "where_2"
+	},
+
+	"where_2": {
+		"speaker": "Ulyn",
+		"text": "Kay is never late. He came in with a fever in tenth grade and threw up in the bin by the stairs and then sat through math.",
+		"next": "where_3"
+	},
+
+	"where_3": {
+		"speaker": "Ulyn",
+		"text": "where are u. ur never late",
+		"next": "where_4"
+	},
+
+	"where_4": {
+		"speaker": "",
+		"text": "*Delivered. Not read. 8:30. 9:00. 9:30. Not read.*",
+		"next": "where_5"
+	},
+
+	"where_5": {
+		"speaker": "",
+		"text": "*He checks his phone under the desk eleven times in chemistry.*",
+		"next": "where_6"
+	},
+
+	"where_6": {
+		"speaker": "Ulyn",
+		"text": "He'd answer if he was just sick. He'd say \"just a cold! don't worry!\" with an exclamation mark.",
+		"next": "where_7"
+	},
+
+	"where_7": {
+		"speaker": "",
+		"text": "*At lunch, before he can sit down, Elysia is standing at the end of his table. No friends. Not smiling. It's like seeing a teacher in a supermarket.*",
+		"next": "where_8"
+	},
+
+	"where_8": {
+		"speaker": "Elysia",
+		"text": "\"Can I talk to you? Just for a second.\"",
+		"next": "where_9"
+	},
+
+	"where_9": {
+		"speaker": "",
+		"text": "*They stand by the drinks fridge.*",
+		"next": "where_10"
+	},
+
+	"where_10": {
+		"speaker": "Elysia",
+		"text": "\"Kay texted me this morning. He said he couldn't get up.\"",
+		"next": "where_11"
+	},
+
+	"where_11": {
+		"speaker": "",
+		"text": "*She chooses the next words carefully, like putting a cup on a table that might wobble.*",
+		"next": "where_12"
+	},
+
+	"where_12": {
+		"speaker": "Elysia",
+		"text": "\"Not didn't. Couldn't.\"",
+		"next": "where_13"
+	},
+
+	"where_13": {
+		"speaker": "",
+		"text": "*Ulyn's stomach drops through the floor.*",
+		"next": "where_14"
+	},
+
+	"where_14": {
+		"speaker": "Elysia",
+		"text": "\"He asked me to leave him alone for now. So I am. I want to respect that.\"",
+		"next": "where_15"
+	},
+
+	"where_15": {
+		"speaker": "Elysia",
+		"text": "\"But you're... different. You're Ulyn. He talks about you like...\"",
+		"next": "where_16"
+	},
+
+	"where_16": {
+		"speaker": "",
+		"text": "*She doesn't finish.*",
+		"next": "where_17"
+	},
+
+	"where_17": {
+		"speaker": "Elysia",
+		"text": "\"Could you go see him? After school?\"",
+		"next": "where_18"
+	},
+
+	"where_18": {
+		"speaker": "Ulyn",
+		"text": "He talks about me like what?",
+		"next": "where_19"
+	},
+
+	"where_19": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. Yeah. I'll go.\"",
+		"next": "where_20"
+	},
+
+	"where_20": {
+		"speaker": "Elysia",
+		"text": "\"Don't tell him I asked you. He'll think he's a bother.\"",
+		"next": "where_21"
+	},
+
+	"where_21": {
+		"speaker": "",
+		"text": "*The council has the sports day wrap-up at 3:30. Ulyn is supposed to present the volunteer report. He finds Pim in the hallway.*",
+		"choices": [
+			{"text": "\"I've got a stomachache. Can you present it?\"", "type": "neutral", "weight_change": 5, "next": "where_lie_1"},
+			{"text": "\"I can't today. My best friend needs me.\"", "type": "honest", "weight_change": -10, "next": "where_true_1", "set_flag": "ToldPim"}
+		]
+	},
+
+	"where_lie_1": {
+		"speaker": "Pim",
+		"text": "\"Ew. Okay. Feel better.\"",
+		"next": "where_lie_2"
+	},
+
+	"where_lie_2": {
+		"speaker": "Ulyn",
+		"text": "Liar.",
+		"next": "where_lie_3"
+	},
+
+	"where_lie_3": {
+		"speaker": "",
+		"text": "*The voice in his head sounds a lot like his own.*",
+		"next": "shop_1"
+	},
+
+	"where_true_1": {
+		"speaker": "",
+		"text": "*Pim looks at him. Something in his face makes it serious. She just takes the folder.*",
+		"next": "where_true_2"
+	},
+
+	"where_true_2": {
+		"speaker": "Pim",
+		"text": "\"Go. I've got it.\"",
+		"next": "where_true_3"
+	},
+
+	"where_true_3": {
+		"speaker": "",
+		"text": "*It's that easy. He doesn't know why he thought it wouldn't be.*",
+		"next": "shop_1"
+	},
+
+	"shop_1": {
+		"speaker": "",
+		"text": "*Crispy pork from the stall by school. Two cartons of pink milk.*",
+		"next": "shop_2"
+	},
+
+	"shop_2": {
+		"speaker": "",
+		"text": "*Then, without deciding to, he grabs the cheap coconut cookies from the bottom shelf.*",
+		"next": "shop_3"
+	},
+
+	"shop_3": {
+		"speaker": "Ulyn",
+		"text": "He ate these every single day in tenth grade. One at a time, slowly, like they were expensive. I haven't seen him eat one since March.",
+		"next": "step_1"
+	},
+
+	"step_1": {
+		"speaker": "",
+		"text": "*4:10. He knocks. It takes a long time. Then the door opens.*",
+		"next": "step_2"
+	},
+
+	"step_2": {
+		"speaker": "",
+		"text": "*Kay is in a T-shirt with sleep lines on his face. Smaller than at school, like the uniform was holding him up.*",
+		"next": "step_3"
+	},
+
+	"step_3": {
+		"speaker": "Ulyn",
+		"text": "Oh. Oh, Kay.",
+		"next": "step_4"
+	},
+
+	"step_4": {
+		"speaker": "Ulyn",
+		"text": "\"You look terrible.\"",
+		"next": "step_5"
+	},
+
+	"step_5": {
+		"speaker": "Kay",
+		"text": "\"Thanks. Love you too.\"",
+		"next": "step_6"
+	},
+
+	"step_6": {
+		"speaker": "",
+		"text": "*They sit on the front step. Kay doesn't invite him in. Ulyn doesn't ask. The plants in the yard have yellow leaves and soil so wet it shines.*",
+		"next": "step_7"
+	},
+
+	"step_7": {
+		"speaker": "Ulyn",
+		"text": "\"Your plants look worse than our garden.\"",
+		"next": "step_8"
+	},
+
+	"step_8": {
+		"speaker": "Kay",
+		"text": "\"I water them every day.\"",
+		"next": "step_9"
+	},
+
+	"step_9": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. Probably that.\"",
+		"next": "step_10"
+	},
+
+	"step_10": {
+		"speaker": "",
+		"text": "*Kay sees the coconut cookies. His face does something very small. Ulyn isn't sure what it is.*",
+		"next": "step_11"
+	},
+
+	"step_11": {
+		"speaker": "Ulyn",
+		"text": "\"You weren't at school. You're never not at school. You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
+		"next": "step_12"
+	},
+
+	"step_12": {
+		"speaker": "",
+		"text": "*Kay almost laughs.*",
+		"next": "step_13"
+	},
+
+	"step_13": {
+		"speaker": "",
+		"text": "*Ulyn has rehearsed this for a year. In his head it always comes out clean. It doesn't come out clean.*",
+		"next": "step_14"
+	},
+
+	"step_14": {
+		"speaker": "Ulyn",
+		"text": "\"Can I say something? You don't have to say anything back.\"",
+		"next": "step_15"
+	},
+
+	"step_15": {
+		"speaker": "",
+		"text": "*Kay nods.*",
+		"next": "step_16"
+	},
+
+	"step_16": {
+		"speaker": "Ulyn",
+		"text": "\"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
+		"next": "step_17"
+	},
+
+	"step_17": {
+		"speaker": "Ulyn",
+		"text": "\"I saw it. And I didn't answer for four days. And then I said, 'sorry, was busy.'\"",
+		"next": "step_18"
+	},
+
+	"step_18": {
+		"speaker": "",
+		"text": "*He tells him the rest. His dad's boxes. The shower running. Tan's floor. I don't have anything to give. The worst possible thing, four days late.*",
+		"next": "step_19"
+	},
+
+	"step_19": {
+		"speaker": "Ulyn",
+		"text": "\"And you never asked me for anything again. Not even 'can I call you.'\"",
+		"next": "step_20"
+	},
+
+	"step_20": {
+		"speaker": "Ulyn",
+		"text": "\"I've been waiting a whole year for you to try again so I could do it right. And you just got really, really good at being fine.\"",
+		"next": "step_21"
+	},
+
+	"step_21": {
+		"speaker": "",
+		"text": "*Kay is quiet for a long time.*",
+		"next": "step_22"
+	},
+
+	"step_22": {
+		"speaker": "Kay",
+		"text": "\"It's fine. It was a long time ago.\"",
+		"next": "step_23"
+	},
+
+	"step_23": {
+		"speaker": "Ulyn",
+		"text": "There it is.",
+		"next": "step_24"
+	},
+
+	"step_24": {
+		"speaker": "Ulyn",
+		"text": "\"Kay.\"",
+		"next": "step_25"
+	},
+
+	"step_25": {
+		"speaker": "Kay",
+		"text": "\"Really. You had your own stuff going on.\"",
+		"next": "step_26"
+	},
+
+	"step_26": {
+		"speaker": "",
+		"text": "*He could let it go. Eat the pork. Watch the streetlights come on. Kay would be relieved. Ulyn knows how to give people what they want.*",
+		"choices": [
+			{"text": "\"Don't do that. Not kay-sure. Please.\"", "type": "honest", "weight_change": -10, "next": "step_push_1", "set_flag": "PushedKay"},
+			{"text": "\"...Okay.\"", "type": "neutral", "weight_change": 10, "next": "step_okay_1"}
+		]
+	},
+
+	"step_okay_1": {
+		"speaker": "Ulyn",
+		"text": "\"Okay.\"",
+		"next": "step_okay_2"
+	},
+
+	"step_okay_2": {
+		"speaker": "",
+		"text": "*Kay's shoulders drop, just slightly.*",
+		"next": "step_okay_3"
+	},
+
+	"step_okay_3": {
+		"speaker": "Ulyn",
+		"text": "Relief. Or giving up. I can't tell. I never could.",
+		"next": "step_okay_4"
+	},
+
+	"step_okay_4": {
+		"speaker": "",
+		"text": "*They eat the crispy pork in silence. The streetlights come on. At the gate, Ulyn stops.*",
+		"next": "step_okay_5"
+	},
+
+	"step_okay_5": {
+		"speaker": "Ulyn",
+		"text": "\"Offer stands. Forever, probably. Annoyingly.\"",
+		"next": "step_okay_6"
+	},
+
+	"step_okay_6": {
+		"speaker": "Kay",
+		"text": "\"Thanks.\"",
+		"next": "step_okay_7"
+	},
+
+	"step_okay_7": {
+		"speaker": "",
+		"text": "*It sounds exactly like \"I'm fine.\"*",
+		"next": "step_okay_8"
+	},
+
+	"step_okay_8": {
+		"speaker": "",
+		"text": "*He stops outside a closed bakery on the way and stands there for ten minutes, not crying.*",
+		"next": "bus_1"
+	},
+
+	"step_push_1": {
+		"speaker": "",
+		"text": "*It comes out wrecked.*",
+		"next": "step_push_2"
+	},
+
+	"step_push_2": {
+		"speaker": "",
+		"text": "*Kay looks at him for a long time. Ulyn holds still, like you would near a bird.*",
+		"next": "step_push_3"
+	},
+
+	"step_push_3": {
+		"speaker": "Kay",
+		"text": "\"...I thought I was too much.\"",
+		"next": "step_push_4"
+	},
+
+	"step_push_4": {
+		"speaker": "",
+		"text": "*Ulyn stops breathing.*",
+		"next": "step_push_5"
+	},
+
+	"step_push_5": {
+		"speaker": "Kay",
+		"text": "\"Not just for you. When my dad left, I was twelve. Mom cried at the kitchen table for like a month.\"",
+		"next": "step_push_6"
+	},
+
+	"step_push_6": {
+		"speaker": "Ulyn",
+		"text": "His dad.",
+		"next": "step_push_7"
+	},
+
+	"step_push_7": {
+		"speaker": "Ulyn",
+		"text": "Two years. I've eaten his mom's food. Slept on his floor after horror movies. I knew his dad wasn't around. I never asked. He never said.",
+		"next": "step_push_8"
+	},
+
+	"step_push_8": {
+		"speaker": "Ulyn",
+		"text": "I thought I knew him.",
+		"next": "step_push_9"
+	},
+
+	"step_push_9": {
+		"speaker": "Kay",
+		"text": "\"And I decided I'd just be easy. The kid who doesn't need anything. And when you didn't answer, I thought, yeah. That's right. That's what happens when I ask.\"",
+		"next": "step_push_10"
+	},
+
+	"step_push_10": {
+		"speaker": "Ulyn",
+		"text": "\"Kay—\"",
+		"next": "step_push_11"
+	},
+
+	"step_push_11": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "\"And this year it's been... It's like everything's far away. I wake up and I already want the day to be over.\"",
+		"next": "step_push_12"
+	},
+
+	"step_push_12": {
+		"speaker": "Kay",
+		"emotion": "sad",
+		"text": "\"Some nights I think everyone would be fine without me. Not like— I'm not going to do anything. I just think it. Like it's a fact.\"",
+		"next": "step_push_13"
+	},
+
+	"step_push_13": {
+		"speaker": "",
+		"text": "*Something cold goes all the way through him, like swallowing ice. Every part of him wants to grab Kay by the shoulders.*",
+		"choices": [
+			{"text": "Breathe first. \"It's not a fact. And thank you for telling me.\"", "type": "honest", "weight_change": -10, "next": "step_calm_1", "set_flag": "StayedCalm"},
+			{"text": "\"Kay, what the hell—\"", "type": "neutral", "weight_change": 10, "next": "step_panic_1"}
+		]
+	},
+
+	"step_panic_1": {
+		"speaker": "Ulyn",
+		"text": "\"Kay, what the hell—\"",
+		"next": "step_panic_2"
+	},
+
+	"step_panic_2": {
+		"speaker": "",
+		"text": "*Kay flinches. The shutter starts to come down. Ulyn can see it happening.*",
+		"next": "step_panic_3"
+	},
+
+	"step_panic_3": {
+		"speaker": "Kay",
+		"text": "\"Forget it. I didn't mean it like— forget it.\"",
+		"next": "step_panic_4"
+	},
+
+	"step_panic_4": {
+		"speaker": "Ulyn",
+		"text": "No. No no no.",
+		"next": "step_panic_5"
+	},
+
+	"step_panic_5": {
+		"speaker": "Ulyn",
+		"text": "\"No— sorry. Sorry. I panicked. I'm listening. I'm here. Please don't forget it.\"",
+		"next": "step_panic_6"
+	},
+
+	"step_panic_6": {
+		"speaker": "",
+		"text": "*A long silence.*",
+		"next": "step_panic_7"
+	},
+
+	"step_panic_7": {
+		"speaker": "Kay",
+		"text": "\"...Okay.\"",
+		"next": "step_panic_8"
+	},
+
+	"step_panic_8": {
+		"speaker": "",
+		"text": "*The shutter stays halfway up. Ulyn decides that's enough to work with.*",
+		"next": "step_panic_9"
+	},
+
+	"step_panic_9": {
+		"speaker": "Ulyn",
+		"text": "\"It's not a fact. And I'm glad you told me.\"",
+		"next": "step_ask_1"
+	},
+
+	"step_calm_1": {
+		"speaker": "",
+		"text": "*He breathes in. Out. He picks the words one at a time, like stepping stones.*",
+		"next": "step_calm_2"
+	},
+
+	"step_calm_2": {
+		"speaker": "Ulyn",
+		"text": "\"It's not a fact. And thank you for telling me. I mean it.\"",
+		"next": "step_calm_3"
+	},
+
+	"step_calm_3": {
+		"speaker": "",
+		"text": "*Kay looks at him, surprised.*",
+		"next": "step_calm_4"
+	},
+
+	"step_calm_4": {
+		"speaker": "Ulyn",
+		"text": "He expected me to freak out. I am freaking out. Just very quietly.",
+		"next": "step_ask_1"
+	},
+
+	"step_ask_1": {
+		"speaker": "Ulyn",
+		"text": "\"But I'm not okay with you thinking that alone. Will you talk to someone? Someone who actually knows what to do. Not just me throwing pork at you.\"",
+		"next": "step_ask_2"
+	},
+
+	"step_ask_2": {
+		"speaker": "Ulyn",
+		"text": "\"Ms. Noi runs the guidance room on Thursdays. My cousin went to something like that last year. It helped him.\"",
+		"next": "step_ask_3"
+	},
+
+	"step_ask_3": {
+		"speaker": "Ulyn",
+		"text": "Tan never talks about it. He told me once, at two in the morning.",
+		"next": "step_ask_4"
+	},
+
+	"step_ask_4": {
+		"speaker": "",
+		"text": "*Kay doesn't answer yet. Ulyn doesn't make him.*",
+		"next": "step_ask_5"
+	},
+
+	"step_ask_5": {
+		"speaker": "Ulyn",
+		"text": "\"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
+		"next": "step_ask_6"
+	},
+
+	"step_ask_6": {
+		"speaker": "",
+		"text": "*Kay's eyes go wet. He cries quietly, like he's had practice. That's the worst part.*",
+		"next": "step_ask_7"
+	},
+
+	"step_ask_7": {
+		"speaker": "",
+		"text": "*Ulyn looks at the road and pushes the second carton of pink milk into his hand.*",
+		"next": "step_ask_8"
+	},
+
+	"step_ask_8": {
+		"speaker": "",
+		"text": "*The silence is different now. Not the silence of not saying things. The silence after saying them.*",
+		"next": "step_ask_9"
+	},
+
+	"step_ask_9": {
+		"speaker": "",
+		"text": "*Ulyn thinks about the phone in his pocket. Mom. Seven o'clock, every night.*",
+		"next": "step_ask_10"
+	},
+
+	"step_ask_10": {
+		"speaker": "Ulyn",
+		"text": "Fair's fair.",
+		"choices": [
+			{"text": "\"I'm not okay either, by the way.\"", "type": "honest", "weight_change": -10, "next": "step_admit_1", "set_flag": "AdmittedNotOkay"},
+			{"text": "Keep it to yourself. Tonight is about Kay.", "type": "neutral", "weight_change": 5, "next": "step_keep_1"}
+		]
+	},
+
+	"step_admit_1": {
+		"speaker": "Ulyn",
+		"text": "\"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
+		"next": "step_admit_2"
+	},
+
+	"step_admit_2": {
+		"speaker": "Kay",
+		"text": "\"I know.\"",
+		"next": "step_admit_3"
+	},
+
+	"step_admit_3": {
+		"speaker": "Ulyn",
+		"text": "\"You know?\"",
+		"next": "step_admit_4"
+	},
+
+	"step_admit_4": {
+		"speaker": "Kay",
+		"text": "\"You decline your mom's calls in class.\"",
+		"next": "step_admit_5"
+	},
+
+	"step_admit_5": {
+		"speaker": "",
+		"text": "*Ulyn stares at him.*",
+		"next": "step_admit_6"
+	},
+
+	"step_admit_6": {
+		"speaker": "Ulyn",
+		"text": "He saw. All this time I was watching him so carefully, and he was watching me back.",
+		"next": "step_admit_7"
+	},
+
+	"step_admit_7": {
+		"speaker": "Ulyn",
+		"text": "\"...Okay, detective.\"",
+		"next": "step_admit_8"
+	},
+
+	"step_admit_8": {
+		"speaker": "",
+		"text": "*They both laugh. Small and tired, but real.*",
+		"next": "bus_1"
+	},
+
+	"step_keep_1": {
+		"speaker": "",
+		"text": "*He doesn't say it. Tonight is Kay's.*",
+		"next": "step_keep_2"
+	},
+
+	"step_keep_2": {
+		"speaker": "",
+		"text": "*But Kay looks over at him, just once, the way he did that Friday in history. Like he's checking.*",
+		"next": "step_keep_3"
+	},
+
+	"step_keep_3": {
+		"speaker": "Kay",
+		"text": "\"Are you going home tonight?\"",
+		"next": "step_keep_4"
+	},
+
+	"step_keep_4": {
+		"speaker": "",
+		"text": "*Ulyn doesn't know how Kay knows to ask that.*",
+		"next": "step_keep_5"
+	},
+
+	"step_keep_5": {
+		"speaker": "Ulyn",
+		"text": "\"...Maybe.\"",
+		"next": "bus_1"
+	},
+
+	"bus_1": {
+		"speaker": "",
+		"text": "*7 p.m. The bus stop.*",
+		"next": "bus_2",
+		"secret": {"condition": "flag_true", "flag": "PushedKay", "next": "bus_ok_1"}
+	},
+
+	"bus_2": {
+		"speaker": "Ulyn",
+		"text": "i went. he says he's fine.",
+		"next": "bus_3"
+	},
+
+	"bus_3": {
+		"speaker": "Elysia",
+		"text": "ok",
+		"next": "bus_4"
+	},
+
+	"bus_4": {
+		"speaker": "Elysia",
+		"text": "do u believe him?",
+		"next": "bus_5"
+	},
+
+	"bus_5": {
+		"speaker": "",
+		"text": "*He doesn't answer for a long time.*",
+		"next": "bus_6"
+	},
+
+	"bus_6": {
+		"speaker": "Ulyn",
+		"text": "no",
+		"next": "bus_wait_1"
+	},
+
+	"bus_ok_1": {
+		"speaker": "Ulyn",
+		"text": "he's ok. ish. thanks for telling me.",
+		"next": "bus_ok_2"
+	},
+
+	"bus_ok_2": {
+		"speaker": "",
+		"text": "*She replies with one heart. Nothing else.*",
+		"next": "bus_ok_3"
+	},
+
+	"bus_ok_3": {
+		"speaker": "Ulyn",
+		"text": "She's crying. Or she's in class. No, it's seven. She's crying.",
+		"next": "bus_wait_1"
+	},
+
+	"bus_wait_1": {
+		"speaker": "",
+		"text": "*The bus to Tan's is number 8. The bus home is number 21.*",
+		"next": "bus_wait_2"
+	},
+
+	"bus_wait_2": {
+		"speaker": "",
+		"text": "*Both are coming. 21 is first.*",
+		"choices": [
+			{"text": "Get on 21", "type": "honest", "weight_change": -15, "next": "bus_home_1", "set_flag": "WentHome"},
+			{"text": "Wait for 8", "type": "neutral", "weight_change": 10, "next": "bus_tan_1"}
+		]
+	},
+
+	"bus_home_1": {
+		"speaker": "",
+		"text": "*The house is dark except for the kitchen.*",
+		"next": "bus_home_2"
+	},
+
+	"bus_home_2": {
+		"speaker": "",
+		"text": "*Mom is sitting at the table in her work clothes, doing nothing. When the door opens she turns around fast, like a deer.*",
+		"next": "bus_home_3"
+	},
+
+	"bus_home_3": {
+		"speaker": "Mom",
+		"text": "\"Ulyn?\"",
+		"next": "bus_home_4"
+	},
+
+	"bus_home_4": {
+		"speaker": "Ulyn",
+		"text": "\"Hi.\"",
+		"next": "bus_home_5"
+	},
+
+	"bus_home_5": {
+		"speaker": "Mom",
+		"text": "\"You didn't say you were— I don't have anything. There's leftover khao man gai, from Sunday, I can heat it—\"",
+		"next": "bus_home_6"
+	},
+
+	"bus_home_6": {
+		"speaker": "Ulyn",
+		"text": "\"I'll just have it cold.\"",
+		"next": "bus_home_7"
+	},
+
+	"bus_home_7": {
+		"speaker": "",
+		"text": "*They eat it standing at the counter, out of the container, with two forks.*",
+		"next": "bus_home_8"
+	},
+
+	"bus_home_8": {
+		"speaker": "Ulyn",
+		"text": "\"Kay wasn't at school today. He's not doing good.\"",
+		"next": "bus_home_9"
+	},
+
+	"bus_home_9": {
+		"speaker": "Mom",
+		"text": "\"Oh, no. Is he okay?\"",
+		"next": "bus_home_10"
+	},
+
+	"bus_home_10": {
+		"speaker": "Ulyn",
+		"text": "\"He will be.\"",
+		"next": "bus_home_11"
+	},
+
+	"bus_home_11": {
+		"speaker": "",
+		"text": "*He hears himself, and stops.*",
+		"next": "bus_home_12"
+	},
+
+	"bus_home_12": {
+		"speaker": "Ulyn",
+		"text": "\"I don't know. I hope so.\"",
+		"next": "bus_home_13"
+	},
+
+	"bus_home_13": {
+		"speaker": "",
+		"text": "*Mom puts her fork down.*",
+		"next": "bus_home_14"
+	},
+
+	"bus_home_14": {
+		"speaker": "Mom",
+		"text": "\"Are you okay?\"",
+		"next": "bus_home_15"
+	},
+
+	"bus_home_15": {
+		"speaker": "",
+		"text": "*He looks at the third chair. The one nobody sits in.*",
+		"next": "bus_home_16"
+	},
+
+	"bus_home_16": {
+		"speaker": "Ulyn",
+		"text": "\"Not really.\"",
+		"next": "bus_home_17"
+	},
+
+	"bus_home_17": {
+		"speaker": "",
+		"text": "*It's the second time today. It's easier the second time.*",
+		"next": "bus_home_18"
+	},
+
+	"bus_home_18": {
+		"speaker": "",
+		"text": "*She doesn't cry. She just squeezes his wrist across the counter, and they finish the container together.*",
+		"next": "bus_home_19"
+	},
+
+	"bus_home_19": {
+		"speaker": "",
+		"text": "*He sleeps in his own bed. The house is very quiet. He can hear the fridge from upstairs.*",
+		"next": "bus_home_20"
+	},
+
+	"bus_home_20": {
+		"speaker": "Ulyn",
+		"text": "It's okay. It's just a fridge.",
+		"next": "gate2_1"
+	},
+
+	"bus_tan_1": {
+		"speaker": "",
+		"text": "*21 pulls up. The doors open. The driver looks at him.*",
+		"next": "bus_tan_2"
+	},
+
+	"bus_tan_2": {
+		"speaker": "",
+		"text": "*He doesn't get on.*",
+		"next": "bus_tan_3"
+	},
+
+	"bus_tan_3": {
+		"speaker": "",
+		"text": "*At Tan's, he lies on the couch and looks at the ceiling. His phone buzzes at nine. Mom.*",
+		"next": "bus_tan_4"
+	},
+
+	"bus_tan_4": {
+		"speaker": "",
+		"text": "*He watches it until it stops.*",
+		"next": "gate2_1"
+	},
+
+	"gate2_1": {
+		"speaker": "",
+		"text": "*The next Monday, from the top of the stairs, Ulyn watches Kay walk straight across the front of the school to Elysia and her friends. In front of everybody.*",
+		"next": "gate2_2"
+	},
+
+	"gate2_2": {
+		"speaker": "Elysia",
+		"text": "\"Yes, he's my boyfriend, we all know, moving on.\"",
+		"next": "gate2_3"
+	},
+
+	"gate2_3": {
+		"speaker": "",
+		"text": "*She grabs Kay's hand. Kay turns the color of a chili.*",
+		"next": "gate2_4"
+	},
+
+	"gate2_4": {
+		"speaker": "Ulyn",
+		"text": "Whatever happened on Saturday, I'm taking partial credit.",
+		"next": "gate2_5"
+	},
+
+	"gate2_5": {
+		"speaker": "",
+		"text": "*Thursday.*",
+		"next": "gate2_6",
+		"secret": {"condition": "flag_true", "flag": "PushedKay", "next": "thu_walk_1"}
+	},
+
+	"gate2_6": {
+		"speaker": "",
+		"text": "*At lunch, Kay is standing in front of the guidance room door. Just standing there.*",
+		"next": "gate2_7"
+	},
+
+	"gate2_7": {
+		"speaker": "Ulyn",
+		"text": "Let him decide.",
+		"next": "gate2_8"
+	},
+
+	"gate2_8": {
+		"speaker": "",
+		"text": "*Kay knocks. The door opens. He goes in. Ulyn lets out a breath he didn't know he was holding.*",
+		"next": "noi_1"
+	},
+
+	"thu_walk_1": {
+		"speaker": "",
+		"text": "*Ulyn walks Kay to the guidance room. Kay holds the strap of his bag with both hands the whole way.*",
+		"next": "thu_walk_2"
+	},
+
+	"thu_walk_2": {
+		"speaker": "Ulyn",
+		"text": "\"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
+		"next": "thu_walk_3"
+	},
+
+	"thu_walk_3": {
+		"speaker": "",
+		"text": "*Kay looks at him. Then he knocks.*",
+		"next": "thu_walk_4"
+	},
+
+	"thu_walk_4": {
+		"speaker": "",
+		"text": "*Ulyn waits in the cafeteria for forty minutes, watching the hallway. Kay doesn't come out.*",
+		"next": "thu_walk_5"
+	},
+
+	"thu_walk_5": {
+		"speaker": "Ulyn",
+		"text": "Good. That's good. Stay in there.",
+		"next": "noi_1"
+	},
+
+	"noi_1": {
+		"speaker": "",
+		"text": "*When the bell rings, Ms. Noi is standing in the hallway by the home ec room. Looking at him.*",
+		"next": "noi_2"
+	},
+
+	"noi_2": {
+		"speaker": "Ms. Noi",
+		"text": "\"You're the one who walked him.\"",
+		"next": "noi_3"
+	},
+
+	"noi_3": {
+		"speaker": "Ulyn",
+		"text": "\"I don't know what you're talking about.\"",
+		"next": "noi_4"
+	},
+
+	"noi_4": {
+		"speaker": "Ms. Noi",
+		"text": "\"How are you, Ulyn?\"",
+		"next": "noi_5"
+	},
+
+	"noi_5": {
+		"speaker": "",
+		"text": "*It's the second time this semester someone has asked him that and waited for the answer.*",
+		"choices": [
+			{"text": "\"Fine!\"", "type": "neutral", "weight_change": 5, "next": "noi_fine_1"},
+			{"text": "\"...Can I come next Thursday too?\"", "type": "helpful", "weight_change": -15, "next": "noi_ask_1", "set_flag": "AskedNoi"}
+		]
+	},
+
+	"noi_fine_1": {
+		"speaker": "Ulyn",
+		"text": "\"Fine! Great. Busy. You know. Sports day.\"",
+		"next": "noi_fine_2"
+	},
+
+	"noi_fine_2": {
+		"speaker": "",
+		"text": "*Sports day was three weeks ago. Ms. Noi nods like she believes him. She doesn't.*",
+		"next": "noi_fine_3"
+	},
+
+	"noi_fine_3": {
+		"speaker": "Ms. Noi",
+		"text": "\"Thursday's every week.\"",
+		"next": "group_1"
+	},
+
+	"noi_ask_1": {
+		"speaker": "",
+		"text": "*His mouth says it before his brain approves it. Ms. Noi doesn't look surprised.*",
+		"next": "noi_ask_2"
+	},
+
+	"noi_ask_2": {
+		"speaker": "Ms. Noi",
+		"text": "\"The slot after Kay's is free. Come with an empty stomach. I make too much tea.\"",
+		"next": "group_1"
+	},
+
+	"group_1": {
+		"speaker": "",
+		"text": "*Two weeks before the presentation, the group meets at the garden. Water spinach gone feral. Marigolds. Three small chilies, which Ulyn has named.*",
+		"next": "group_2"
+	},
+
+	"group_2": {
+		"speaker": "Fern",
+		"text": "\"Okay, so Kay. You'll put the presentation together like last time? You're the fastest.\"",
+		"next": "group_3"
+	},
+
+	"group_3": {
+		"speaker": "Bank",
+		"text": "\"And the report.\"",
+		"next": "group_4"
+	},
+
+	"group_4": {
+		"speaker": "",
+		"text": "*Ulyn looks at Kay. Kay is looking at the soil.*",
+		"next": "group_5"
+	},
+
+	"group_5": {
+		"speaker": "Ulyn",
+		"text": "He's not doing it all again. Not this time. I could just say it.",
+		"choices": [
+			{"text": "Wait. Let him say it.", "type": "honest", "weight_change": -5, "next": "group_wait_1", "set_flag": "LetKaySpeak"},
+			{"text": "\"He's not doing it all again.\"", "type": "neutral", "weight_change": 5, "next": "group_say_1"}
+		]
+	},
+
+	"group_wait_1": {
+		"speaker": "",
+		"text": "*Ulyn closes his mouth. He looks at Kay and waits.*",
+		"next": "group_wait_2"
+	},
+
+	"group_wait_2": {
+		"speaker": "Ulyn",
+		"text": "Your turn.",
+		"next": "group_wait_3"
+	},
+
+	"group_wait_3": {
+		"speaker": "",
+		"text": "*Kay looks up and sees him waiting. Something in his face changes.*",
+		"next": "group_wait_4"
+	},
+
+	"group_wait_4": {
+		"speaker": "Kay",
+		"text": "\"I can't do all of it this time. I need everyone to do their own part.\"",
+		"next": "group_wait_5"
+	},
+
+	"group_wait_5": {
+		"speaker": "",
+		"text": "*Silence. The tap drips.*",
+		"next": "group_wait_6"
+	},
+
+	"group_wait_6": {
+		"speaker": "Bank",
+		"text": "\"Oh. Wait. Did you... not want to? Before?\"",
+		"next": "group_wait_7"
+	},
+
+	"group_wait_7": {
+		"speaker": "Kay",
+		"text": "\"I offered because I didn't know how not to.\"",
+		"next": "group_wait_8"
+	},
+
+	"group_wait_8": {
+		"speaker": "",
+		"text": "*Ulyn has to look away so nobody sees his face.*",
+		"next": "group_end_1"
+	},
+
+	"group_say_1": {
+		"speaker": "Ulyn",
+		"text": "\"He did the slides at 2:30 in the morning. And the poster. And the skit. So no.\"",
+		"next": "group_say_2"
+	},
+
+	"group_say_2": {
+		"speaker": "",
+		"text": "*Bank and Fern agree, embarrassed, and start dividing things up. It works.*",
+		"next": "group_say_3"
+	},
+
+	"group_say_3": {
+		"speaker": "",
+		"text": "*But Kay is quiet for the rest of the meeting. When Ulyn glances at him, he looks almost disappointed. Like Ulyn said his line before he could.*",
+		"next": "group_say_4"
+	},
+
+	"group_say_4": {
+		"speaker": "Ulyn",
+		"text": "Oh. That was his to say.",
+		"next": "group_end_1"
+	},
+
+	"group_end_1": {
+		"speaker": "",
+		"text": "*Bank finds the old club photo album. Fern takes the slides.*",
+		"next": "group_end_2"
+	},
+
+	"group_end_2": {
+		"speaker": "Ulyn",
+		"text": "\"And I'll do the budget. And stop sleeping in class. Maybe.\"",
+		"next": "group_end_3"
+	},
+
+	"group_end_3": {
+		"speaker": "",
+		"text": "*That night there are four cursors in the shared document. Kay's cursor sits in the corner, not moving. He's just reading what the others wrote.*",
+		"next": "sun_1"
+	},
+
+	"sun_1": {
+		"speaker": "",
+		"text": "*Sunday.*",
+		"next": "sun_2",
+		"secret": {"condition": "flag_true", "flag": "WentHome", "next": "sun_home_1"}
+	},
+
+	"sun_2": {
+		"speaker": "",
+		"text": "*He's still mostly at Tan's. Mom still calls at seven. Sometimes he answers. Sometimes he watches it ring.*",
+		"next": "dad_1"
+	},
+
+	"sun_home_1": {
+		"speaker": "",
+		"text": "*He goes home for dinner every Friday now. Some Fridays he stays until Sunday.*",
+		"next": "sun_home_2"
+	},
+
+	"sun_home_2": {
+		"speaker": "",
+		"text": "*Mom has bought a new lime tree for the balcony. It's small. She's very nervous about it.*",
+		"next": "dad_1"
+	},
+
+	"dad_1": {
+		"speaker": "",
+		"text": "*His phone rings. Dad.*",
+		"next": "dad_2"
+	},
+
+	"dad_2": {
+		"speaker": "",
+		"text": "*He hasn't picked up a call from his dad since April. They text on birthdays. Happy birthday son. Thanks.*",
+		"choices": [
+			{"text": "Answer", "type": "honest", "weight_change": -10, "next": "dad_answer_1", "set_flag": "AnsweredDad"},
+			{"text": "Let it ring", "type": "neutral", "weight_change": 5, "next": "dad_ring_1"}
+		]
+	},
+
+	"dad_answer_1": {
+		"speaker": "Ulyn",
+		"text": "\"...Hi, Dad.\"",
+		"next": "dad_answer_2"
+	},
+
+	"dad_answer_2": {
+		"speaker": "Dad",
+		"text": "\"Ulyn! Hi. Hi. I didn't think you'd— How's school?\"",
+		"next": "dad_answer_3"
+	},
+
+	"dad_answer_3": {
+		"speaker": "Ulyn",
+		"text": "\"Fine. We're doing a garden.\"",
+		"next": "dad_answer_4"
+	},
+
+	"dad_answer_4": {
+		"speaker": "Dad",
+		"text": "\"A garden! Your mom always had the green thumb.\"",
+		"next": "dad_answer_5"
+	},
+
+	"dad_answer_5": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. She did.\"",
+		"next": "dad_answer_6"
+	},
+
+	"dad_answer_6": {
+		"speaker": "",
+		"text": "*It lasts four minutes. It's terribly awkward. It's four minutes more than last month.*",
+		"next": "pres2_1"
+	},
+
+	"dad_ring_1": {
+		"speaker": "",
+		"text": "*It rings out. A text comes after.*",
+		"next": "dad_ring_2"
+	},
+
+	"dad_ring_2": {
+		"speaker": "Dad",
+		"text": "just wanted to say hi. proud of u.",
+		"next": "dad_ring_3"
+	},
+
+	"dad_ring_3": {
+		"speaker": "",
+		"text": "*He doesn't reply. He doesn't delete it either.*",
+		"next": "pres2_1"
+	},
+
+	"pres2_1": {
+		"speaker": "",
+		"text": "*First period. History. Group 3, again.*",
+		"next": "pres2_2"
+	},
+
+	"pres2_2": {
+		"speaker": "Ulyn",
+		"text": "\"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
+		"next": "pres2_3"
+	},
+
+	"pres2_3": {
+		"speaker": "",
+		"text": "*They laugh. Always works.*",
+		"next": "pres2_4"
+	},
+
+	"pres2_4": {
+		"speaker": "Bank",
+		"text": "\"So, the garden was first built in... in, uh...\"",
+		"next": "pres2_5"
+	},
+
+	"pres2_5": {
+		"speaker": "",
+		"text": "*Silence. Somebody's chair squeaks.*",
+		"next": "pres2_6"
+	},
+
+	"pres2_6": {
+		"speaker": "",
+		"text": "*Ulyn glances at Kay. Every muscle in Kay's body is ready to jump in.*",
+		"next": "pres2_7"
+	},
+
+	"pres2_7": {
+		"speaker": "",
+		"text": "*Kay doesn't. He waits. He gives Bank a tiny nod.*",
+		"next": "pres2_8"
+	},
+
+	"pres2_8": {
+		"speaker": "Bank",
+		"text": "\"Two thousand nine! The agriculture club. My uncle was actually in it. That's him, in the yellow boots.\"",
+		"next": "pres2_9"
+	},
+
+	"pres2_9": {
+		"speaker": "Teacher",
+		"text": "\"Very well done, group 3. Good teamwork, everyone.\"",
+		"next": "pres2_10"
+	},
+
+	"pres2_10": {
+		"speaker": "",
+		"text": "*Ulyn looks at Bank. At Fern. At Kay. Kay is smiling, and his eyes are in it too.*",
+		"next": "last_1"
+	},
+
+	"last_1": {
+		"speaker": "",
+		"text": "*Friday. The last day of the semester.*",
+		"next": "last_2"
+	},
+
+	"last_2": {
+		"speaker": "",
+		"text": "*At the gate, Elysia is showing her friends a picture of a huge beetle. Ulyn has no idea why. She's beaming.*",
+		"next": "last_3"
+	},
+
+	"last_3": {
+		"speaker": "",
+		"text": "*Kay is next to her. He looks...*",
+		"next": "last_4"
+	},
+
+	"last_4": {
+		"speaker": "Ulyn",
+		"text": "\"Morning. You look—\"",
+		"next": "last_5"
+	},
+
+	"last_5": {
+		"speaker": "Ulyn",
+		"text": "Not like a zombie. Not grey. Not like old newspaper.",
+		"next": "last_6"
+	},
+
+	"last_6": {
+		"speaker": "Ulyn",
+		"text": "\"Actually, you look okay.\"",
+		"next": "last_7"
+	},
+
+	"last_7": {
+		"speaker": "Kay",
+		"text": "\"How are you? Actually.\"",
+		"next": "last_8"
+	},
+
+	"last_8": {
+		"speaker": "",
+		"text": "*Ulyn stops walking.*",
+		"next": "last_9"
+	},
+
+	"last_9": {
+		"speaker": "",
+		"text": "*The ninety-person group chat. Tan's couch. The third chair. Bus number 21.*",
+		"choices": [
+			{"text": "\"...My mom wants me to come home more. I'm trying.\"", "type": "honest", "weight_change": -15, "next": "last_true_1", "set_flag": "ToldKayTruth"},
+			{"text": "\"Good! Great! Busy!\"", "type": "neutral", "weight_change": 10, "next": "last_busy_1"}
+		]
+	},
+
+	"last_true_1": {
+		"speaker": "Ulyn",
+		"text": "\"...My mom wants me to come home more. I'm trying.\"",
+		"next": "last_true_2"
+	},
+
+	"last_true_2": {
+		"speaker": "",
+		"text": "*He scratches the back of his neck.*",
+		"next": "last_true_3"
+	},
+
+	"last_true_3": {
+		"speaker": "Ulyn",
+		"text": "\"It's weird there. Quiet.\"",
+		"next": "last_true_4"
+	},
+
+	"last_true_4": {
+		"speaker": "Kay",
+		"text": "\"Want company? I can come over and be boring at your house.\"",
+		"next": "last_true_5"
+	},
+
+	"last_true_5": {
+		"speaker": "",
+		"text": "*Kay is offering. Kay, who hasn't asked anyone for anything in a year, is offering to come sit in the quietest house in the city.*",
+		"next": "last_true_6"
+	},
+
+	"last_true_6": {
+		"speaker": "Ulyn",
+		"text": "\"Yeah. I'd like that.\"",
+		"next": "ending_1"
+	},
+
+	"last_busy_1": {
+		"speaker": "Ulyn",
+		"text": "\"Good! Great! Busy! Next semester Pim wants me on the—\"",
+		"next": "last_busy_2"
+	},
+
+	"last_busy_2": {
+		"speaker": "",
+		"text": "*Kay is looking at him with an expression Ulyn recognizes. He's worn it himself, watching Kay say \"it's fine.\"*",
+		"next": "last_busy_3"
+	},
+
+	"last_busy_3": {
+		"speaker": "Kay",
+		"text": "\"Ulyn.\"",
+		"next": "last_busy_4"
+	},
+
+	"last_busy_4": {
+		"speaker": "Ulyn",
+		"text": "\"...What.\"",
+		"next": "last_busy_5"
+	},
+
+	"last_busy_5": {
+		"speaker": "Kay",
+		"text": "\"Not ulyn-sure.\"",
+		"next": "last_busy_6"
+	},
+
+	"last_busy_6": {
+		"speaker": "",
+		"text": "*Ulyn laughs, caught. He doesn't answer. But he doesn't change the subject either.*",
+		"next": "ending_1"
+	},
+
+	"ending_1": {
+		"speaker": "",
+		"text": "*The bell rings.*",
+		"next": "ending_2",
+		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
+	},
+
+	"ending_2": {
+		"speaker": "",
+		"text": "*The last day goes by.*",
+		"next": "endC_1",
+		"secret": {"condition": "weight_below", "value": 65, "next": "endB_1"}
+	},
+
+	"endA_1": {
+		"speaker": "",
+		"text": "*Saturday.*",
+		"next": "endA_2",
+		"secret": {"condition": "flag_true", "flag": "ToldKayTruth", "next": "endA_lunch_1"}
+	},
+
+	"endA_2": {
+		"speaker": "",
+		"text": "*In the morning, Ulyn texts Kay.*",
+		"next": "endA_3"
+	},
+
+	"endA_3": {
+		"speaker": "Ulyn",
+		"text": "come over? my mom's making khao man gai. she'd like it. i'd like it.",
+		"next": "endA_4"
+	},
+
+	"endA_4": {
+		"speaker": "",
+		"text": "*He sends it before he can delete it. It's the first thing he's asked Kay for in a year.*",
+		"next": "endA_5"
+	},
+
+	"endA_5": {
+		"speaker": "Kay",
+		"text": "omw",
+		"next": "endA_lunch_1"
+	},
+
+	"endA_lunch_1": {
+		"speaker": "",
+		"text": "*Kay comes over. Mom makes khao man gai for three. She sets three plates. Nobody has to move one back.*",
+		"next": "endA_lunch_2"
+	},
+
+	"endA_lunch_2": {
+		"speaker": "",
+		"text": "*Kay eats slowly, the way he used to eat the coconut cookies. Mom watches him and looks happier than Ulyn has seen her since before March.*",
+		"next": "endA_lunch_3"
+	},
+
+	"endA_lunch_3": {
+		"speaker": "",
+		"text": "*After lunch, Kay walks out onto the balcony and looks at the brown sticks in their pots, and at the little new lime tree.*",
+		"next": "endA_lunch_4"
+	},
+
+	"endA_lunch_4": {
+		"speaker": "Kay",
+		"text": "\"Too much water or too little?\"",
+		"next": "endA_lunch_5"
+	},
+
+	"endA_lunch_5": {
+		"speaker": "Mom",
+		"text": "\"Too little. Nobody was home.\"",
+		"next": "endA_lunch_6"
+	},
+
+	"endA_lunch_6": {
+		"speaker": "",
+		"text": "*Kay nods like that makes sense to him. They spend the afternoon pulling out the dead plants and repotting basil cuttings from the school garden.*",
+		"next": "endA_lunch_7"
+	},
+
+	"endA_lunch_7": {
+		"speaker": "",
+		"text": "*Kay pushes his finger into each pot.*",
+		"next": "endA_lunch_8"
+	},
+
+	"endA_lunch_8": {
+		"speaker": "Kay",
+		"text": "\"Once a day. Only if it's dry.\"",
+		"next": "endA_lunch_9"
+	},
+
+	"endA_lunch_9": {
+		"speaker": "Ulyn",
+		"text": "\"Yes, Ms. Noi.\"",
+		"next": "endA_dad_1",
+		"secret": {"condition": "flag_true", "flag": "AskedNoi", "next": "endA_noi_1"}
+	},
+
+	"endA_noi_1": {
+		"speaker": "",
+		"text": "*On Thursdays, Ulyn has the slot after Kay's. They pass each other in the doorway. Neither of them makes it weird. Ms. Noi makes too much tea.*",
+		"next": "endA_dad_1"
+	},
+
+	"endA_dad_1": {
+		"speaker": "",
+		"text": "*That night, the house is quiet.*",
+		"next": "endA_night_1",
+		"secret": {"condition": "flag_true", "flag": "AnsweredDad", "next": "endA_call_1"}
+	},
+
+	"endA_call_1": {
+		"speaker": "",
+		"text": "*On Sunday his dad calls. Ulyn picks up. Six minutes, this time.*",
+		"next": "endA_night_1"
+	},
+
+	"endA_night_1": {
+		"speaker": "",
+		"text": "*Ulyn sleeps in his own bed. He can hear the fridge from upstairs, and Mom humming in the kitchen.*",
+		"next": "endA_night_2"
+	},
+
+	"endA_night_2": {
+		"speaker": "",
+		"text": "*It isn't the house before March. It's a different house. It's still home.*",
+		"next": "endA_night_3"
+	},
+
+	"endA_night_3": {
+		"speaker": "",
+		"text": "— Ending A: Home —"
+	},
+
+	"endB_1": {
+		"speaker": "",
+		"text": "*He doesn't go home every night. Most nights, though.*",
+		"next": "endB_2",
+		"secret": {"condition": "flag_true", "flag": "WentHome", "next": "endB_porch_1"}
+	},
+
+	"endB_2": {
+		"speaker": "Tan",
+		"text": "\"Most nights is a lot better than no nights.\"",
+		"next": "endB_3"
+	},
+
+	"endB_3": {
+		"speaker": "",
+		"text": "*Tan says it while helping him carry half his things back on a Sunday.*",
+		"next": "endB_garden_1"
+	},
+
+	"endB_porch_1": {
+		"speaker": "",
+		"text": "*Mom stops asking if he's coming. She just leaves the porch light on.*",
+		"next": "endB_garden_1"
+	},
+
+	"endB_garden_1": {
+		"speaker": "",
+		"text": "*After school, he and Kay sit by the garden while Kay waters it. Almost exactly the right amount.*",
+		"next": "endB_garden_2"
+	},
+
+	"endB_garden_2": {
+		"speaker": "Kay",
+		"text": "\"You going home tonight?\"",
+		"next": "endB_garden_3"
+	},
+
+	"endB_garden_3": {
+		"speaker": "Ulyn",
+		"text": "\"...Yeah. I think so.\"",
+		"next": "endB_garden_4"
+	},
+
+	"endB_garden_4": {
+		"speaker": "Kay",
+		"text": "\"Text me when you're there.\"",
+		"next": "endB_garden_5"
+	},
+
+	"endB_garden_5": {
+		"speaker": "Ulyn",
+		"text": "\"Why?\"",
+		"next": "endB_garden_6"
+	},
+
+	"endB_garden_6": {
+		"speaker": "Kay",
+		"text": "\"So I know.\"",
+		"next": "endB_garden_7"
+	},
+
+	"endB_garden_7": {
+		"speaker": "",
+		"text": "*7:40 p.m.*",
+		"next": "endB_garden_8"
+	},
+
+	"endB_garden_8": {
+		"speaker": "Ulyn",
+		"text": "home",
+		"next": "endB_garden_9"
+	},
+
+	"endB_garden_9": {
+		"speaker": "Kay",
+		"text": "👍",
+		"next": "endB_garden_10"
+	},
+
+	"endB_garden_10": {
+		"speaker": "",
+		"text": "*A thumbs up. From Kay, who doesn't use emojis.*",
+		"next": "endB_garden_11"
+	},
+
+	"endB_garden_11": {
+		"speaker": "",
+		"text": "*Ulyn laughs alone in his room, in his own house, and doesn't feel like he has to explain it to anyone.*",
+		"next": "endB_garden_12"
+	},
+
+	"endB_garden_12": {
+		"speaker": "",
+		"text": "— Ending B: Most Nights —"
+	},
+
+	"endC_1": {
+		"speaker": "",
+		"text": "*Next semester, Pim wants him on student council, sports day, the welcome committee, and the yearbook. He says yes to all of it.*",
+		"next": "endC_2"
+	},
+
+	"endC_2": {
+		"speaker": "Pim",
+		"text": "\"You're amazing. Seriously, what would we do without you?\"",
+		"next": "endC_3"
+	},
+
+	"endC_3": {
+		"speaker": "",
+		"text": "*He sleeps at Tan's. Mom calls at seven. He watches it ring.*",
+		"next": "endC_4",
+		"secret": {"condition": "flag_true", "flag": "PushedKay", "next": "endC_kay_1"}
+	},
+
+	"endC_4": {
+		"speaker": "",
+		"text": "*Kay is still Kay. Steady. Smiling. A pause before every \"fine.\" Ulyn still watches him from the next seat. Neither of them says anything.*",
+		"next": "endC_msg_1"
+	},
+
+	"endC_kay_1": {
+		"speaker": "",
+		"text": "*Kay is doing better. Thursdays, the garden, Elysia holding his hand at the gate. Ulyn helped do that. He's sure he did.*",
+		"next": "endC_kay_2"
+	},
+
+	"endC_kay_2": {
+		"speaker": "",
+		"text": "*He's glad. He's so glad it hurts a little. Somewhere along the way he got so busy watching Kay get better that he forgot to.*",
+		"next": "endC_msg_1"
+	},
+
+	"endC_msg_1": {
+		"speaker": "",
+		"text": "*11:40 p.m. Tan's couch. His phone buzzes. Kay.*",
+		"next": "endC_msg_2"
+	},
+
+	"endC_msg_2": {
+		"speaker": "Kay",
+		"text": "hey. how are you? actually.",
+		"next": "endC_msg_3"
+	},
+
+	"endC_msg_3": {
+		"speaker": "",
+		"text": "*Ulyn types \"busy!\"*",
+		"next": "endC_msg_4"
+	},
+
+	"endC_msg_4": {
+		"speaker": "",
+		"text": "*He looks at it. The exclamation mark. He knows exactly whose exclamation mark that is.*",
+		"next": "endC_msg_5"
+	},
+
+	"endC_msg_5": {
+		"speaker": "",
+		"text": "*He deletes it.*",
+		"next": "endC_msg_6"
+	},
+
+	"endC_msg_6": {
+		"speaker": "",
+		"text": "*He types \"not great.\"*",
+		"next": "endC_msg_7"
+	},
+
+	"endC_msg_7": {
+		"speaker": "",
+		"text": "*His thumb hovers over send.*",
+		"next": "endC_msg_8"
+	},
+
+	"endC_msg_8": {
+		"speaker": "",
+		"text": "*The message sits there. The cursor blinks. It's still his to send.*",
+		"next": "endC_msg_9"
+	},
+
+	"endC_msg_9": {
+		"speaker": "",
+		"text": "— Ending C: Busy —"
+	}
+}

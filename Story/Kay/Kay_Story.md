@@ -11,6 +11,7 @@ Chapter 1 (Monday) is already playable in `flow_graph.json`. This file picks up 
 - **▸ A / ▸ B** are what happens after each option. **◇** marks where the branches meet again.
 - **[If `Flag`]** marks a passage that only plays if that flag was set earlier. **[Otherwise]** is what plays if it wasn't.
 - **[If weight above 60]** works the same way, using Emotional Weight.
+- **★** marks the **canon** choice. See `Story/Canon_Timeline.md`. Day 1's canon choices are listed there.
 
 ### Flags carried over from Chapter 1
 
@@ -66,7 +67,7 @@ Like yesterday never happened. Kay knows that trick. He does it too.
 
 **◆ Choice**
 - **A.** `sorry about yesterday. i didn't mean it like that.` (honest, −5, sets `ApologizedElysia`)
-- **B.** `morning! not yet lol` (neutral, +5)
+- **B. ★** `morning! not yet lol` (neutral, +5)
 
 **▸ A.**
 The typing dots appear. Disappear. Appear again.
@@ -150,7 +151,7 @@ Bank nods like it's already decided.
 *"He doesn't mind, though. He offered."* Yesterday plays back in his head, word for word.
 
 **◆ Choice**
-- **A.** "Sure. I'll handle the report." (neutral, +8)
+- **A. ★** "Sure. I'll handle the report." (neutral, +8)
 - **B.** "Let's split it. Everyone writes up the part they work on." (honest, −5, sets `SplitWork`)
 
 **▸ A.**
@@ -226,7 +227,7 @@ Mom gets home in the middle of it. She stops in the bathroom doorway, still in h
 
 **◆ Choice**
 - **A.** "The water heater's broken. It's been broken for a week." (honest, −5, sets `ToldMomHeater`)
-- **B.** "...Making tea." (neutral, +5)
+- **B. ★** "...Making tea." (neutral, +5)
 
 **▸ A.**
 "A *week*? Kay. Why didn't you say anything?"
@@ -310,7 +311,7 @@ She stops in the middle of the sentence and glances over her shoulder at the pat
 "Sorry. That's weird. Nobody cares about bugs."
 
 **◆ Choice**
-- **A.** "I care. Keep going." (honest, −5, sets `ElysiaBugs`)
+- **A. ★** "I care. Keep going." (honest, −5, sets `ElysiaBugs`)
 - **B.** "We should probably head back before it gets dark." (neutral, +5)
 
 **▸ A.**
@@ -369,7 +370,7 @@ At the end of the third week, Ulyn falls asleep in history with his forehead on 
 After the bell, Kay sees that Ulyn's eyes are red at the edges. His phone buzzes on the desk. **Mom.** Ulyn declines it without looking and shoves it into his pocket.
 
 **◆ Choice**
-- **A.** "You okay? You look wrecked." (honest, −5, sets `AskedUlyn`)
+- **A. ★** "You okay? You look wrecked." (honest, −5, sets `AskedUlyn`)
 - **B.** Say nothing. (neutral, +5)
 
 **▸ A.**
@@ -426,7 +427,7 @@ He opens the file. Half a page, and most of it is the title.
 `kay can u do the research part 😭 i'm dying w midterms`
 
 **◆ Choice**
-- **A.** `just send me what you have. i'll do it.` (neutral, +10)
+- **A. ★** `just send me what you have. i'll do it.` (neutral, +10)
 - **B.** `i'll help after exams. but you write it.` (honest, −5, sets `TaughtBank`)
 
 **▸ A.**
@@ -512,7 +513,7 @@ His phone is on the pillow next to him. Ulyn's name is right there at the top of
 
 **◆ Choice**
 - **A.** Text Ulyn: `you up?` (helpful, −10, sets `TextedNight`)
-- **B.** Put the phone down. (neutral, +10)
+- **B. ★** Put the phone down. (neutral, +10)
 
 **▸ A.**
 He sends it before he can delete it.
@@ -545,7 +546,7 @@ Kay doesn't slap the alarm off. He lets it ring until it gives up on its own.
 He knows he has to get up. His body doesn't move. It isn't like being tired. It's more like the distance between him and the floor got bigger overnight.
 
 **◆ Choice**
-- **A.** "Get up." (neutral, +5)
+- **A. ★** "Get up." (neutral, +5)
 - **B.** "Stay in bed." (neutral, 0)
 
 **▸ A.**
@@ -601,7 +602,7 @@ He can say that about the plants without any trouble.
 
 **◆ Choice**
 - **A.** Turn the phone face down. (neutral, +5)
-- **B.** Reply to Elysia: `i couldn't get up today` (honest, −10, sets `ToldElysiaEarly`)
+- **B. ★** Reply to Elysia: `i couldn't get up today` (honest, −10, sets `ToldElysiaEarly`)
 - **C.** Call Ulyn. (helpful, −10, sets `CalledUlyn`)
 
 **▸ A.**
@@ -696,7 +697,7 @@ He finally looks at Kay.
 "And you never asked me for anything again. Not even *can I call you*. I've been waiting a whole year for you to try again so I could do it right. And you just got really, really good at being fine."
 
 **◆ Choice**
-- **A.** "It's fine. It was a long time ago." (neutral, +10)
+- **A. ★** "It's fine. It was a long time ago." (neutral, +10)
 - **B.** "I thought I was too much. That's why I stopped." (honest, −15, sets `TalkedUlyn`)
 - **C.** "Why didn't you tell me about your parents?" (honest, −10, sets `AskedUlynWhy`)
 
@@ -708,7 +709,7 @@ He finally looks at Kay.
 "Don't do that." Ulyn's voice cracks a little on the last word. "Not kay-sure. Please."
 
 **◆ Choice**
-- **A1.** "...I thought I was too much." (honest, −10, sets `TalkedUlyn`) → *go to the honest conversation below*
+- **A1. ★** "...I thought I was too much." (honest, −10, sets `TalkedUlyn`) → *go to the honest conversation below*
 - **A2.** "It's fine. Really." (neutral, +10)
 
 **▸ A2.**
@@ -802,7 +803,7 @@ Mom gets home at eight. She doesn't take her shoes off.
 
 **◆ Choice**
 - **A.** "Just a headache. I'm fine now." (neutral, +10)
-- **B.** "I couldn't get up. I haven't been okay for a while." (honest, −15, sets `ToldMom`)
+- **B. ★** "I couldn't get up. I haven't been okay for a while." (honest, −15, sets `ToldMom`)
 
 **▸ A.**
 Mom puts her palm on his forehead.
@@ -880,7 +881,7 @@ She takes him to the park by the canal and hands him a can of milk tea. They sit
 "You told me you couldn't get up," she says. "Thank you for telling me. You don't have to explain it."
 
 **◆ Choice**
-- **A.** "I want to explain it. Some of it." (honest, −10, sets `ToldElysia`)
+- **A. ★** "I want to explain it. Some of it." (honest, −10, sets `ToldElysia`)
 - **B.** "Thanks. That's all, really." (neutral, +5)
 
 **[Otherwise]**
@@ -928,7 +929,7 @@ She pulls her knees up onto the bench.
 **◇**
 
 **◆ Choice**
-- **A.** "You don't have to do the version with me. Ever." (helpful, −10, sets `ElysiaSafe`)
+- **A. ★** "You don't have to do the version with me. Ever." (helpful, −10, sets `ElysiaSafe`)
 - **B.** "I'm sorry." (neutral, +5)
 
 **▸ A.**
@@ -978,7 +979,7 @@ Ulyn walked him here. "I'll be in the cafeteria. If you come out in thirty secon
 **◇**
 
 **◆ Choice**
-- **A.** Knock. (helpful, −15, sets `Counselor`)
+- **A. ★** Knock. (helpful, −15, sets `Counselor`)
 - **B.** Walk away. *Not today.* (neutral, +5)
 
 **▸ A.**
@@ -1053,7 +1054,7 @@ Ulyn looks at Kay and doesn't say anything. He just waits. It's his way of sayin
 
 **◆ Choice**
 - **A.** "Sure. I'll handle it." (neutral, +15)
-- **B.** "I can't do all of it this time. I need everyone to do their own part." (honest, −15, sets `SpokeUp`)
+- **B. ★** "I can't do all of it this time. I need everyone to do their own part." (honest, −15, sets `SpokeUp`)
 
 **▸ A.**
 "Best leader," Fern says.
@@ -1120,7 +1121,7 @@ Silence. Somebody's chair squeaks. The teacher's pen stops moving.
 
 **◆ Choice**
 - **A.** Step in and cover for him. (neutral, +5)
-- **B.** Give him a moment. (honest, −5, sets `TrustedBank`)
+- **B. ★** Give him a moment. (honest, −5, sets `TrustedBank`)
 
 **▸ A.**
 "—2009, by the agriculture club," Kay says smoothly.

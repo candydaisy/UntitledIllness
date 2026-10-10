@@ -1,11 +1,17 @@
 # Writing the story
 
-Each character's story is one JSON file in this folder:
+Each character's story is one JSON file in this folder. Next to it is the same story written as prose (`*_Story.md`), which is easier to read and review:
 
 ```
 Story/
-└── Kay/flow_graph.json
+├── Canon_Timeline.md      what actually happens, across every route
+├── Characters/            who each character is
+├── Kay/flow_graph.json    + Kay_Story.md
+├── Ulyn/flow_graph.json   + Ulyn_Story.md     (starting weight 50)
+└── Elysia/flow_graph.json + Elysia_Story.md   (starting weight 50)
 ```
+
+Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet. Set **Starting Weight** to 50 on their story scenes; the endings are tuned for it.
 
 You don't need to touch any code to write or change dialogue. Edit the JSON, save, and run the game in Godot.
 
