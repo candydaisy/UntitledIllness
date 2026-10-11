@@ -12,16 +12,16 @@ Thanks for helping! This page tells you where things are and how not to break th
 
 ```
 UntitledIllness/
-├── Story/                    ✍️  Dialogue and branching, one folder per character
+├── Story/                      Dialogue and branching, one folder per character
 │   ├── README.md             How to write story nodes (start here if you're writing)
 │   └── Kay/flow_graph.json
 │
-├── Scenes/                   🎬  Godot scenes, each next to its script
+├── Scenes/                     Godot scenes, each next to its script
 │   ├── Menus/                Splash screen, title menu, character select
 │   ├── Dialog/               The dialogue box and choice buttons
 │   └── Characters/           One story scene per character (backgrounds, sprites, sounds)
 │
-├── Scripts/StoryEngine/      ⚙️  The code that plays a story (shared by all characters)
+├── Scripts/StoryEngine/        The code that plays a story (shared by all characters)
 │   ├── story_player.gd       Main script, attached to each character's story scene
 │   ├── flow_graph.gd         Loads and checks the story JSON
 │   ├── emotional_weight.gd   Emotional Weight value and LOW/MEDIUM/HIGH/CRITICAL
@@ -29,7 +29,7 @@ UntitledIllness/
 │   ├── story_stage.gd        Backgrounds, characters, fades
 │   └── story_audio.gd        Sound effect / ambience list
 │
-├── Assets/                   🎨  Art, audio, fonts, themes
+├── Assets/                     Art, audio, fonts, themes
 │   ├── Photos/Background/    Backgrounds
 │   ├── Photos/Sprites/       Character sprites
 │   ├── Photos/UI/            Menu and side art
