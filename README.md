@@ -1,5 +1,8 @@
 # Untitled Illness
 
+[![Itch Pages](https://img.shields.io/badge/Live%20Demo-Itch%20Pages-red?style=for-the-badge&logo=itch)](https://candyest.itch.io/untitled-illness)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
 > *People can look fine on the outside and still be carrying something heavy.*
 
 **Untitled Illness** is a narrative-driven visual novel about the emotional lives of high school students. It explores how someone can seem cheerful, calm, or completely in control while dealing with struggles that nobody else can see.
