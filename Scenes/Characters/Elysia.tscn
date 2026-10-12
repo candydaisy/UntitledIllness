@@ -17,6 +17,14 @@
 
 [ext_resource type="Script" path="res://Scripts/StoryEngine/modes/elysia_mode.gd" id="20_mode"]
 
+[ext_resource type="Theme" path="res://Assets/Themes/elysia_theme.tres" id="30_theme"]
+[ext_resource type="Shader" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
+shader = ExtResource("31_sideart")
+shader_parameter/tint = Color(0.95, 0.18, 0.24, 1)
+shader_parameter/highlight = 0.25
+
 [sub_resource type="Resource" id="Resource_elysia"]
 script = ExtResource("20_mode")
 
@@ -34,6 +42,7 @@ animations = [{
 script = ExtResource("1_7yklv")
 flow_graph_path = "res://Story/Elysia/flow_graph.json"
 start_node = "start"
+ui_theme = ExtResource("30_theme")
 mode = SubResource("Resource_elysia")
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
@@ -41,10 +50,12 @@ mode = SubResource("Resource_elysia")
 [node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_jk8no")]
 
 [node name="Sideart" type="Control" parent="." unique_id=2005122816]
+material = SubResource("ShaderMaterial_sideart")
 layout_mode = 3
 anchors_preset = 0
 
 [node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
+use_parent_material = true
 z_index = 100
 layout_mode = 0
 offset_left = 1357.0
@@ -55,6 +66,7 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
+use_parent_material = true
 z_index = 100
 layout_mode = 0
 offset_right = 243.0

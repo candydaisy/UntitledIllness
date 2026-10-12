@@ -15,6 +15,7 @@ UntitledIllness/
 ├── Story/                      Dialogue and branching, one folder per character
 │   ├── README.md             How to write story nodes (start here if you're writing)
 │   ├── Canon_Timeline.md     What actually happens, across every route
+│   ├── relationships.json    Characters and links for the relationship web (Gallery)
 │   ├── Characters/           Who each character is and how they see the world
 │   └── Kay/, Elysia/, Ulyn/  flow_graph.json (what the game plays) + *_Story.md (the same story as prose)
 │
@@ -46,7 +47,8 @@ UntitledIllness/
 │   ├── audio/voice/          Voice lines (create it when the first one arrives)
 │   ├── audio/ui/             Typing sound
 │   ├── Fonts/
-│   └── Themes/               UI theme and dialogue box style
+│   ├── Shaders/              sideart_tint: recolors the butterfly side art per character
+│   └── Themes/               theme1 (title screen), kay_theme, elysia_theme
 │
 └── Docs/                     Project write-ups
 ```
@@ -74,8 +76,11 @@ UntitledIllness/
 3. Duplicate `Scenes/Characters/Story.tscn` in Godot's FileSystem panel and rename it.
 4. Select the root node. In the Inspector, set **Flow Graph Path**, **Start Node** (usually `start`), and **Mode** (click it → New *YourMode*). The mode's numbers show up underneath, ready to tune.
 5. Swap in that character's backgrounds and sprites.
-6. Put the scene's path in `STORY_SCENES` in `Scenes/Menus/selections.gd`, at the same position as the character's button.
-7. Press F5. Godot's Output panel warns about anything in the story the scene or mode doesn't know.
+6. Give them their own look:
+   - **UI Theme** (on the root node): duplicate `Assets/Themes/kay_theme.tres`, change its colors, and set it here. It styles the dialog box, buttons, log and in-game menu.
+   - **Side art color**: select the **Sideart** node, open its **Material**, and set **Tint**. Each scene has its own copy of the material, so this only changes this character.
+7. Put the scene's path in `STORY_SCENES` in `Scenes/Menus/selections.gd`, at the same position as the character's button.
+8. Press F5. Godot's Output panel warns about anything in the story the scene or mode doesn't know.
 
 ## Story file structure
 
@@ -152,6 +157,36 @@ Each mode adds its own keys. These are listed in its `INFO` (see below) and in [
 |---|---|---|---|
 | KayMode | `weight_change` | | `neutral`, `honest`, `helpful` |
 | ElysiaMode | `mask_change`, `energy_change` | `real_text`, `timed` | `neutral`, `honest`, `helpful`, `perform` |
+
+## Relationship web
+
+The **Gallery** screen shows every character as a graph, like Obsidian's graph view. All of it comes from `Story/relationships.json`; the scene (`Scenes/Menus/RelationshipWeb.tscn`) has no names in it.
+
+```json
+{
+	"ignore_speakers": ["", "???", "Teacher", "Lunch Lady"],
+	"characters": [
+		{"id": "Kay", "name": "Kay", "playable": true, "color": "#5980ff", "picture": "", "about": "Grade 11. Carries everything."},
+		{"id": "KayMom", "name": "Kay's Mom", "speaker": "Mom", "route": "Kay", "picture": "", "about": "Hospital shifts, always tired."}
+	],
+	"links": [
+		{"from": "Kay", "to": "KayMom", "to_is": "mom", "from_is": "son"}
+	]
+}
+```
+
+| Key | Meaning |
+|---|---|
+| `id` | Unique id used by links. |
+| `name` | Shown in the web. |
+| `playable` / `color` | Playable characters are drawn in their color (match it to their side art and theme). Everyone else is grey. |
+| `picture` | `res://` path to their picture. Empty = a big colored initial until the art exists. |
+| `about` | One or two sentences for the side panel. |
+| `speaker` | Their name in the story files, if it isn't `name` (e.g. `"Mom"`). |
+| `route` | Only match `speaker` in this character's story. Needed when the same speaker name is a different person in each story. |
+| `to_is` / `from_is` | What `to` is to `from`, and what `from` is to `to`. Clicking a character shows these on the connected dots. |
+
+When the Gallery opens in the editor, it checks every `Story/*/flow_graph.json`. Anyone who speaks in a story but isn't in this file (and isn't in `ignore_speakers`) gets a warning in the Output panel, so the web can't silently fall behind the story.
 
 ## Character modes
 

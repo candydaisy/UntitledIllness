@@ -5,6 +5,7 @@ Each character's story is one JSON file in this folder. Next to it is the same s
 ```
 Story/
 ├── Canon_Timeline.md      what actually happens, across every route
+├── relationships.json     everyone in the relationship web (see CONTRIBUTING.md)
 ├── Characters/            who each character is
 ├── Kay/flow_graph.json    + Kay_Story.md
 ├── Ulyn/flow_graph.json   + Ulyn_Story.md

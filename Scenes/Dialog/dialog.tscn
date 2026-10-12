@@ -12,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_87kay")
 script = ExtResource("1_edf0l")
 
 [node name="DialogBox" type="Panel" parent="." unique_id=533752345]
@@ -27,7 +28,6 @@ offset_right = 514.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("2_87kay")
 
 [node name="Dialog_line" type="RichTextLabel" parent="DialogBox" unique_id=1019653111]
 custom_minimum_size = Vector2(950, 180)
@@ -41,7 +41,6 @@ offset_right = -41.0
 offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 text = "..."
 
 [node name="NamePlate" type="Panel" parent="." unique_id=322258150]
@@ -57,7 +56,6 @@ offset_right = -8.678589
 offset_bottom = -271.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("2_87kay")
 
 [node name="Speaker" type="Label" parent="NamePlate" unique_id=1648341211]
 custom_minimum_size = Vector2(200, 30)
@@ -102,7 +100,6 @@ offset_right = 466.0
 offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 text = "1"
 
 [node name="choice2" type="Button" parent="Buttons/Choices" unique_id=959835235]
@@ -118,7 +115,6 @@ offset_right = 466.0
 offset_bottom = -90.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 text = "2"
 
 [node name="choice1" type="Button" parent="Buttons/Choices" unique_id=2010027129]
@@ -134,7 +130,6 @@ offset_right = 466.0
 offset_bottom = -209.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 text = "3"
 
 [node name="Others" type="Control" parent="Buttons" unique_id=1564511563]
@@ -155,7 +150,6 @@ offset_right = 1294.0
 offset_bottom = 605.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 
 [node name="Auto" type="Button" parent="Buttons/Others" unique_id=1480524365]
 layout_mode = 1
@@ -170,7 +164,6 @@ offset_right = 1201.0
 offset_bottom = 605.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 
 [node name="Log" type="Button" parent="Buttons/Others" unique_id=928245122]
 layout_mode = 1
@@ -185,7 +178,6 @@ offset_right = 1108.0
 offset_bottom = 605.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
 
 [node name="Setting" parent="." unique_id=1800424444 instance=ExtResource("4_qa8q1")]
 visible = false

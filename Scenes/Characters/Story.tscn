@@ -15,6 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
 [ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
 
+[ext_resource type="Theme" path="res://Assets/Themes/kay_theme.tres" id="30_theme"]
+[ext_resource type="Shader" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
+shader = ExtResource("31_sideart")
+shader_parameter/tint = Color(0.35, 0.5, 1, 1)
+shader_parameter/highlight = 0.35
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nrl2c"]
@@ -28,6 +36,7 @@ animations = [{
 [node name="KMain" type="Node2D" unique_id=1770389354]
 script = ExtResource("1_7yklv")
 start_node = "start"
+ui_theme = ExtResource("30_theme")
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 
@@ -35,10 +44,12 @@ start_node = "start"
 rotation = -0.0002826375
 
 [node name="Sideart" type="Control" parent="." unique_id=2005122816]
+material = SubResource("ShaderMaterial_sideart")
 layout_mode = 3
 anchors_preset = 0
 
 [node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
+use_parent_material = true
 z_index = 100
 layout_mode = 0
 offset_left = 1357.0
@@ -49,6 +60,7 @@ expand_mode = 1
 stretch_mode = 1
 
 [node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
+use_parent_material = true
 z_index = 100
 layout_mode = 0
 offset_right = 243.0

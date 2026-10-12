@@ -1,0 +1,63 @@
+{
+	"about": "Characters and relationships for the relationship web. Every speaker in Story/*/flow_graph.json must match a character here (by 'speaker', or by 'name' if there's no 'speaker'), except the ones in ignore_speakers. 'route' limits the match to one story, for people with the same speaker name in different stories (Mom). In a link, 'to_is' is what 'to' is to 'from', and 'from_is' is what 'from' is to 'to'.",
+
+	"ignore_speakers": ["", "???", "Teacher", "Lunch Lady"],
+
+	"characters": [
+		{"id": "Kay", "name": "Kay", "playable": true, "color": "#5980ff", "picture": "", "about": "Grade 11. Group leader by default. Carries everything and says \"it's fine.\""},
+		{"id": "Elysia", "name": "Elysia", "playable": true, "color": "#f22e3d", "picture": "", "about": "Cheerful, the friend everyone calls. Was \"bug girl\" once, and decided never to be weird again."},
+		{"id": "Ulyn", "name": "Ulyn", "playable": true, "color": "#f2b33d", "picture": "", "about": "Student council. Always busy. Sleeps on his cousin's couch so he doesn't have to go home."},
+
+		{"id": "Mint", "name": "Mint", "picture": "", "about": "Blunt. In a different class. Has known Elysia since kindergarten."},
+		{"id": "Bank", "name": "Bank", "picture": "", "about": "Group 3. Not a bad person, just used to Kay doing it."},
+		{"id": "Fern", "name": "Fern", "picture": "", "about": "Group 3. Good at slides, better at photos."},
+		{"id": "MsNoi", "name": "Ms. Noi", "picture": "", "about": "Home economics teacher. Garden project advisor. Runs the guidance room on Thursdays."},
+		{"id": "Ploy", "name": "Ploy", "picture": "", "about": "Loud, generous, dramatic. Leads Elysia's friend group and leans on Elysia the hardest."},
+		{"id": "Jane", "name": "Jane", "picture": "", "about": "Part of Elysia's friend group. Follows Ploy's lead."},
+		{"id": "Bow", "name": "Bow", "picture": "", "about": "Part of Elysia's friend group. Usually on her phone."},
+		{"id": "Nam", "name": "Nam", "picture": "", "about": "A quiet girl in Elysia's class who draws in the margins of everything."},
+		{"id": "Pun", "name": "Pun", "picture": "", "about": "Eight years old. Loves bugs the way Elysia used to."},
+		{"id": "Tan", "name": "Tan", "picture": "", "about": "21, a university student. Lets Ulyn sleep on his couch, and keeps asking when he's going home."},
+		{"id": "Pim", "name": "Pim", "picture": "", "about": "Student council president. Organized to the point of being frightening."},
+
+		{"id": "KayMom", "name": "Kay's Mom", "speaker": "Mom", "route": "Kay", "picture": "", "about": "Hospital shifts, always tired. Raised Kay alone."},
+		{"id": "KayDad", "name": "Kay's Dad", "picture": "", "about": "Left about five years ago."},
+		{"id": "ElysiaMom", "name": "Elysia's Mom", "speaker": "Mom", "route": "Elysia", "picture": "", "about": "Thinks Elysia is her easy one."},
+		{"id": "UlynMom", "name": "Ulyn's Mom", "speaker": "Mom", "route": "Ulyn", "picture": "", "about": "Works at a bank. Alone in a house that's too quiet since the separation."},
+		{"id": "UlynDad", "name": "Ulyn's Dad", "speaker": "Dad", "route": "Ulyn", "picture": "", "about": "Moved out last spring."}
+	],
+
+	"links": [
+		{"from": "Kay", "to": "Ulyn", "to_is": "best friend", "from_is": "best friend"},
+		{"from": "Kay", "to": "Elysia", "to_is": "girlfriend", "from_is": "boyfriend"},
+		{"from": "Kay", "to": "KayMom", "to_is": "mom", "from_is": "son"},
+		{"from": "Kay", "to": "KayDad", "to_is": "dad (left)", "from_is": "son"},
+		{"from": "Kay", "to": "Bank", "to_is": "groupmate", "from_is": "group leader"},
+		{"from": "Kay", "to": "Fern", "to_is": "groupmate", "from_is": "group leader"},
+		{"from": "Kay", "to": "MsNoi", "to_is": "garden advisor", "from_is": "student"},
+		{"from": "Kay", "to": "Mint", "to_is": "girlfriend's best friend", "from_is": "best friend's boyfriend"},
+
+		{"from": "Ulyn", "to": "Elysia", "to_is": "best friend's girlfriend", "from_is": "boyfriend's best friend"},
+		{"from": "Ulyn", "to": "Tan", "to_is": "cousin", "from_is": "cousin"},
+		{"from": "Ulyn", "to": "UlynMom", "to_is": "mom", "from_is": "son"},
+		{"from": "Ulyn", "to": "UlynDad", "to_is": "dad", "from_is": "son"},
+		{"from": "Ulyn", "to": "Pim", "to_is": "council president", "from_is": "council member"},
+		{"from": "Ulyn", "to": "Bank", "to_is": "groupmate", "from_is": "groupmate"},
+		{"from": "Ulyn", "to": "Fern", "to_is": "groupmate", "from_is": "groupmate"},
+		{"from": "Ulyn", "to": "MsNoi", "to_is": "teacher", "from_is": "student"},
+
+		{"from": "Elysia", "to": "Mint", "to_is": "best friend", "from_is": "best friend"},
+		{"from": "Elysia", "to": "Ploy", "to_is": "friend", "from_is": "friend she always calls"},
+		{"from": "Elysia", "to": "Jane", "to_is": "friend", "from_is": "friend"},
+		{"from": "Elysia", "to": "Bow", "to_is": "friend", "from_is": "friend"},
+		{"from": "Elysia", "to": "Nam", "to_is": "classmate", "from_is": "classmate"},
+		{"from": "Elysia", "to": "Pun", "to_is": "little brother", "from_is": "big sister"},
+		{"from": "Elysia", "to": "ElysiaMom", "to_is": "mom", "from_is": "daughter"},
+
+		{"from": "Bank", "to": "Fern", "to_is": "groupmate", "from_is": "groupmate"},
+		{"from": "Ploy", "to": "Jane", "to_is": "friend", "from_is": "friend"},
+		{"from": "Ploy", "to": "Bow", "to_is": "friend", "from_is": "friend"},
+		{"from": "KayMom", "to": "KayDad", "to_is": "ex-husband", "from_is": "ex-wife"},
+		{"from": "UlynMom", "to": "UlynDad", "to_is": "separated", "from_is": "separated"}
+	]
+}

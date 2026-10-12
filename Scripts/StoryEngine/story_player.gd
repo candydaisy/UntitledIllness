@@ -11,6 +11,7 @@ extends Node2D
 @export_file("*.tscn") var end_scene_path := "res://Scenes/Menus/title_menu.tscn" # when story ends
 @export var start_node := "1"
 @export var mode : StoryMode # empty = KayMode with default settings
+@export var ui_theme : Theme # this character's look for the dialog box, buttons, log and in-game menu
 @export var choice_delay := 1.5
 @export var auto_delay := 1.2 # seconds Auto waits after a line finishes...
 @export var auto_delay_per_char := 0.03 # ...plus this per character, so long lines stay up longer
@@ -95,6 +96,8 @@ func _ready() -> void:
 	for i in choice_buttons.size():
 		choice_buttons[i].pressed.connect(_on_choice_pressed.bind(i))
 
+	if ui_theme:
+		_apply_theme(dialog) # before the log copies the dialog box's theme
 	dialog_log = DialogLog.new(dialog.get_node("DialogBox"))
 	dialog.add_child(dialog_log)
 	_setup_button(auto_button, "Auto", _toggle_auto)
@@ -248,6 +251,15 @@ func process_node(node_name: String) -> void:
 	if debug_log:
 		print("node ", node_name, " | ", mode.describe())
 
+
+
+## Gives every themed Control in the dialog (and the in-game menu inside it)
+## this character's theme. Controls without their own theme inherit it.
+func _apply_theme(node: Node) -> void:
+	if node is Control and (node == dialog or node.theme != null):
+		node.theme = ui_theme
+	for child in node.get_children():
+		_apply_theme(child)
 
 
 func _setup_button(button: Button, label: String, action: Callable) -> void:
