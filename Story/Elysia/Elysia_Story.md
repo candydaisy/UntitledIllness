@@ -8,11 +8,22 @@ Elysia can't see inside Kay's head, or Ulyn's, or anyone's. She reads faces for 
 
 The format is the same as `Story/Kay/Kay_Story.md`:
 - Narration is present tense. Elysia's thoughts are in *italics*. Text messages are `in code`.
-- **◆ Choice** marks a decision, with type, weight change, and any flag it sets. **★** marks the **canon** choice (see `Story/Canon_Timeline.md`).
-- **▸** marks what happens after each option. **◇** marks where the branches meet again. **[If …]** marks a passage that depends on a flag or on weight.
-- **Check:** lines are Elysia scanning faces before she lets herself react. They're part of the "version." As her weight drops, they appear less often. Visually this could become a small UI element later.
+- **◆ Choice** marks a decision, with its type, how it changes her Mask and Energy, and any flag it sets. **⏱** means the choice is timed. **★** marks the **canon** choice (see `Story/Canon_Timeline.md`).
+- **▸** marks what happens after each option. **◇** marks where the branches meet again. **[If …]** marks a passage that depends on a flag or on her meters.
+- **Check:** lines are Elysia scanning faces before she lets herself react. They're part of the "version." As her Mask drops, they appear less often. Visually this could become a small UI element later.
 
-**Starting weight:** 50. **Endings:** below 35 → *Bug Girl* · below 65 → *Half a Version* · otherwise → *The Version*.
+### How Elysia's route plays
+
+Elysia has two hidden meters instead of Kay's Emotional Weight. The player never sees the numbers.
+
+- **Mask** is how much she's performing "the version". Performing raises it, and being real lowers it.
+- **Energy** is what it's costing her. Performing drains it. Being real usually restores it, but not always.
+- **Choice types:** `perform` (the version), `honest`, `helpful`, `neutral`.
+- **⏱ Timed choices** happen when people are waiting on her. She gets 8 seconds at Mask 0 and 4 seconds at Mask 100. When time runs out, she says the `perform` answer.
+- **Locks:** honest choices lock when Energy is below 20 or Mask is above 85.
+- **✎ Self-edit:** at Mask 60 or higher, a marked line is typed out, deleted, and replaced with the version. Below 60 she just says the real line. The log shows the deleted line crossed out.
+
+**Start:** Mask 60, Energy 60. **Endings:** Mask above 69 → *The Version* · Mask below 50 and Energy above 54 → *Bug Girl* · anything else → *Half a Version*.
 
 ### People only Elysia's route introduces
 
@@ -37,9 +48,9 @@ Elysia is lying in the dark with the phone on the pillow next to her ear. Her ey
 
 "Right?? Okay, so here's what he said, I'll read you the whole thing—"
 
-**◆ Choice**
-- **A. ★** Stay on the call. (neutral, +5)
-- **B.** "Ploy, I'm so sorry, I have to sleep. Tomorrow at lunch?" (honest, −5)
+**◆ Choice ⏱**
+- **A. ★** Stay on the call. (perform, Mask +5, Energy −10)
+- **B.** "Ploy, I'm so sorry, I have to sleep. Tomorrow at lunch?" (honest, Mask −5, Energy +5)
 
 **▸ A.**
 She stays on until 3:07 a.m. Ploy feels better by the end. Elysia can hear it in her voice.
@@ -52,6 +63,8 @@ A pause on the line.
 "...Oh. Yeah. Sure. Sorry for bothering you."
 
 "You're not bothering—"
+
+> ✎ *Self-edit.* With her Mask low, she says "You're not bothering me, I'm just so tired—" instead. With it high, she types that, deletes it, and says the line above.
 
 "No, it's fine! Sleep! Night!"
 
@@ -72,8 +85,8 @@ Elysia knows exactly what it is. She knows the Latin name. She knows it's a male
 *Check: Mom, making coffee, not looking.*
 
 **◆ Choice**
-- **A. ★** "It's just a beetle. Eat your eggs." (neutral, +5)
-- **B.** "That's a rhinoceros beetle! He's a boy, look at the horn—" (honest, −5, sets `TaughtPun`)
+- **A. ★** "It's just a beetle. Eat your eggs." (perform, Mask +5, Energy −5)
+- **B.** "That's a rhinoceros beetle! He's a boy, look at the horn—" (honest, Mask −5, Energy +10, sets `TaughtPun`)
 
 **▸ A.**
 Pun's face falls just a little. He puts the jar down next to his plate and eats his eggs.
@@ -173,6 +186,8 @@ She's in the middle of a story about Pun's beetle (not the beetle part, the funn
 
 "Ah— yeah! Of course!"
 
+> ✎ *Self-edit.* With her Mask low, she says "...Yeah. I'd like that." instead. With it high, she types that, deletes it, and says the line above.
+
 The table goes silent. Ploy looks at Kay. Then at Elysia. Then at Kay again. They all know exactly who he is. Elysia has talked about him for two months.
 
 *Check: everyone, everyone is looking.*
@@ -199,9 +214,9 @@ When Kay leaves to return his tray, Ploy leans in.
 
 *Check: Ploy, smiling, not mean. Jane, nodding. Bow, waiting for my answer.*
 
-**◆ Choice**
-- **A. ★** "Haha, he's just shy." (neutral, +5)
-- **B.** "He's not weird." (honest, −5, sets `DefendedKay`)
+**◆ Choice ⏱**
+- **A. ★** "Haha, he's just shy." (perform, Mask +10, Energy −10)
+- **B.** "He's not weird." (honest, Mask −10, Energy −5, sets `DefendedKay`)
 
 **▸ A.**
 "Haha, he's just shy."
@@ -218,6 +233,8 @@ It comes out sharper than she meant it to. Ploy's eyebrows go up.
 "Okay, defensive. I didn't mean it *bad*."
 
 "I know! I know. Sorry." *Check: Ploy, a little hurt.* "He's just quiet. That's all."
+
+> ✎ *Self-edit.* With her Mask low, she says "No, I meant it. He's not weird." instead. With it high, she types that, deletes it, and says the line above.
 
 Ploy shrugs and changes the subject. Elysia's heart is still beating too fast ten minutes later.
 
@@ -286,8 +303,8 @@ A long silence from Mint.
 "How do you feel about that?"
 
 **◆ Choice**
-- **A. ★** "...It kind of hurt." (honest, −10, sets `ToldMint`)
-- **B.** "It's fine! He's just busy." (neutral, +10)
+- **A. ★** "...It kind of hurt." (honest, Mask −10, Energy +10, sets `ToldMint`)
+- **B.** "It's fine! He's just busy." (perform, Mask +5, Energy −10)
 
 **▸ A.**
 It comes out small.
@@ -338,8 +355,8 @@ Delete.
 Delete. Delete. Delete.
 
 **◆ Choice**
-- **A. ★** Send something cheerful instead. (neutral, +5)
-- **B.** `can i ask why you didn't want to walk yesterday?` (honest, −10, sets `AskedKayWhy`)
+- **A. ★** Send something cheerful instead. (perform, Mask +5, Energy −5)
+- **B.** `can i ask why you didn't want to walk yesterday?` (honest, Mask −5, Energy +5, sets `AskedKayWhy`)
 
 **▸ A.**
 `goooood morning!! ☀️ did u eat breakfast`
@@ -429,6 +446,8 @@ She stops in the middle of the sentence and glances over her shoulder at the pat
 
 She laughs, too bright. "Sorry. That's weird. Nobody cares about bugs."
 
+> ✎ *Self-edit.* With her Mask low, she says "I really, really like bugs." instead. With it high, she types that, deletes it, and says the line above.
+
 Kay is looking at her. Not at the beetle. At her.
 
 "I care," he says. "Keep going."
@@ -440,8 +459,8 @@ She stares at him.
 She doesn't have a word for it. Nobody except Mint has ever looked at her like that while she was being bug girl.
 
 **◆ Choice**
-- **A. ★** Keep going. (honest, −10, sets `KeptGoing`)
-- **B.** "Haha, anyway—" (neutral, +5)
+- **A. ★** Keep going. (honest, Mask −10, Energy +15, sets `KeptGoing`)
+- **B.** "Haha, anyway—" (perform, Mask +5, Energy −5)
 
 **▸ A.**
 She keeps going. Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. *How does it fly with those heavy wings? Do they bite?*
@@ -497,9 +516,9 @@ Nam's face goes very still. Elysia knows that face. She wore it for a whole week
 
 *If I laugh, it's over in a second. If I don't...*
 
-**◆ Choice**
-- **A. ★** Laugh along. (neutral, +10)
-- **B.** "I think it's cute, actually." (honest, −10, sets `StoodUpForNam`)
+**◆ Choice ⏱**
+- **A. ★** Laugh along. (perform, Mask +10, Energy −15)
+- **B.** "I think it's cute, actually." (honest, Mask −10, Energy −5, sets `StoodUpForNam`)
 
 **▸ A.**
 She laughs. It's easy. Her body knows how.
@@ -550,8 +569,8 @@ Elysia's whole body goes cold.
 She knows exactly what she learned. She can teach it to him in one sentence.
 
 **◆ Choice**
-- **A. ★** "Maybe... keep the bugs at home? Just at school. Just for a while." (neutral, +10, sets `ToldPunHide`)
-- **B.** "Then be bug boy. Bug boy is the best kind of boy." (honest, −10, sets `ToldPunBugBoy`)
+- **A. ★** "Maybe... keep the bugs at home? Just at school. Just for a while." (perform, Mask +10, Energy −15, sets `ToldPunHide`)
+- **B.** "Then be bug boy. Bug boy is the best kind of boy." (honest, Mask −10, Energy +10, sets `ToldPunBugBoy`)
 
 **▸ A.**
 Pun looks at her for a long time.
@@ -587,14 +606,16 @@ Somewhere in the middle of the field, Ulyn is shouting into a megaphone. Elysia 
 
 She doesn't know what happened between them. Kay has never said.
 
-**◆ Choice**
-- **A. ★** Get him a cold drink, in front of everyone. (helpful, −5, sets `SportsDayDrink`)
-- **B.** Stay with the cheer squad. (neutral, +5)
+**◆ Choice ⏱**
+- **A. ★** Get him a cold drink, in front of everyone. (helpful, Mask −10, Energy +5, sets `SportsDayDrink`)
+- **B.** Stay with the cheer squad. (perform, Mask +5, Energy −5)
 
 **▸ A.**
 She buys a cold drink from the canteen, runs over, and pushes it into his hands.
 
 "Hydrate, water boy!"
+
+> ✎ *Self-edit.* With her Mask low, she says "You looked thirsty. And kind of alone." instead. With it high, she types that, deletes it, and says the line above.
 
 She sprints away before her friends can catch up, before he can say anything, and before she can check anyone's face. Behind her she can hear Ploy yelling "ELYSIAAAA" in the voice that means teasing.
 
@@ -621,11 +642,13 @@ Mom sees the paper on the table. "Elysia. What happened? You're always so good a
 
 "I know. Sorry."
 
+> ✎ *Self-edit.* With her Mask low, she says "I'm just tired, Mom." instead. With it high, she types that, deletes it, and says the line above.
+
 "You're on your phone too much. I see your light on at three in the morning."
 
 **◆ Choice**
-- **A. ★** "Sorry. I'll fix it." (neutral, +5)
-- **B.** "Ploy's going through a breakup. She calls me every night. I don't know how to say no." (honest, −5, sets `ToldMomPloy`)
+- **A. ★** "Sorry. I'll fix it." (perform, Mask +5, Energy −5)
+- **B.** "Ploy's going through a breakup. She calls me every night. I don't know how to say no." (honest, Mask −10, Energy +10, sets `ToldMomPloy`)
 
 **▸ A.**
 "Okay." Mom nods. "I know you will. You're my easy one."
@@ -710,9 +733,9 @@ At lunch she doesn't go to the table by the window. She doesn't tell Ploy where 
 *But someone should go.*
 
 **◆ Choice**
-- **A. ★** Find Ulyn. (helpful, −10, sets `AskedUlyn`)
-- **B.** Go yourself, after school. (helpful, −5, sets `WentHerself`)
-- **C.** Wait. He asked for space. (neutral, +10)
+- **A. ★** Find Ulyn. (helpful, Mask 0, Energy +5, sets `AskedUlyn`)
+- **B.** Go yourself, after school. (helpful, Mask −5, Energy −5, sets `WentHerself`)
+- **C.** Wait. He asked for space. (neutral, Mask +5, Energy −10)
 
 **▸ A.**
 Ulyn is at the end of a cafeteria table, about to sit down. She's never really talked to him without Kay there.
@@ -839,9 +862,9 @@ She laughs, because it's absurd. Then she stops laughing, because it isn't.
 
 *Now it's my turn.*
 
-**◆ Choice**
-- **A. ★** Tell him the truth. All of it. (honest, −15, sets `DroppedVersion`)
-- **B.** "Kay, that's silly! You don't make me look weird at all!" (neutral, +10)
+**◆ Choice ⏱**
+- **A. ★** Tell him the truth. All of it. (honest, Mask −20, Energy +15, sets `DroppedVersion`)
+- **B.** "Kay, that's silly! You don't make me look weird at all!" (perform, Mask +10, Energy −10)
 
 **▸ A.**
 "K. I used to be the weird kid."
@@ -920,9 +943,9 @@ Straight across the front of the school, in front of everyone, to her and her fr
 
 *...Stop checking.*
 
-**◆ Choice**
-- **A. ★** "Yes, he's my boyfriend, we all know, moving on." (honest, −10, sets `SaidItOutLoud`)
-- **B.** "Haha—hi, Kay!" (neutral, +10)
+**◆ Choice ⏱**
+- **A. ★** "Yes, he's my boyfriend, we all know, moving on." (honest, Mask −15, Energy +10, sets `SaidItOutLoud`)
+- **B.** "Haha—hi, Kay!" (perform, Mask +10, Energy −10)
 
 **▸ A.**
 "Yes," she announces, "he's my boyfriend, we all know, moving on."
@@ -960,9 +983,9 @@ Later, in the hallway, Ploy grabs her arm.
 
 *Check: Ploy. Not mad. Surprised. Maybe a little impressed.*
 
-**◆ Choice**
-- **A. ★** "Yeah. I like him a lot." (honest, −5)
-- **B.** "Sorry, was that too much?" (neutral, +5)
+**◆ Choice ⏱**
+- **A. ★** "Yeah. I like him a lot." (honest, Mask −5, Energy +5)
+- **B.** "Sorry, was that too much?" (perform, Mask +5, Energy −5)
 
 **▸ A.**
 "Yeah," Elysia says. "I like him a lot."
@@ -987,6 +1010,8 @@ Elysia smiles, relieved. *Too much. I was too much.* She puts the feeling back i
 
 "He is," Elysia says. She doesn't say anything else.
 
+> ✎ *Self-edit.* With her Mask low, she says "He is. I really like him." instead. With it high, she types that, deletes it, and says the line above.
+
 **◇**
 
 ---
@@ -999,9 +1024,9 @@ The eighth week. Ploy has been better, sort of. She has a new crush, and the new
 
 Elysia lies there and watches it ring. She thinks about Mom: *it doesn't always have to be you.* She thinks about the pinky promise, or about the canal. She thinks about how Kay said *couldn't*.
 
-**◆ Choice**
-- **A. ★** Answer, and say it. "Ploy, I love you. But I can't do 1 a.m. calls anymore. Lunch tomorrow?" (honest, −10, sets `SetBoundary`)
-- **B.** Answer, and listen until three. (neutral, +10)
+**◆ Choice ⏱**
+- **A. ★** Answer, and say it. "Ploy, I love you. But I can't do 1 a.m. calls anymore. Lunch tomorrow?" (honest, Mask −10, Energy +10, sets `SetBoundary`)
+- **B.** Answer, and listen until three. (perform, Mask +5, Energy −15)
 
 **▸ A.**
 She says it fast, before the version can edit it.
@@ -1093,8 +1118,8 @@ Pun opens the notebook. He turns the pages slowly, then faster.
 The next morning there's a beetle in the jar on the windowsill again.
 
 **◆ Choice**
-- **A. ★** Tell him one more thing. "And if anyone says it's weird, tell them your sister said so too." (honest, −10, sets `GaveNotebook`)
-- **B.** Just leave the notebook and go. (neutral, +5)
+- **A. ★** Tell him one more thing. "And if anyone says it's weird, tell them your sister said so too." (honest, Mask −10, Energy +10, sets `GaveNotebook`)
+- **B.** Just leave the notebook and go. (neutral, Mask 0, Energy 0)
 
 **▸ A.**
 Pun grins so wide she can see the gap where his tooth fell out.
@@ -1116,8 +1141,8 @@ He takes it like it's treasure.
 "I was bug girl."
 
 **◆ Choice**
-- **A. ★** "...I still am, kind of." (honest, −10, sets `GaveNotebook`)
-- **B.** "A long time ago." (neutral, +5)
+- **A. ★** "...I still am, kind of." (honest, Mask −10, Energy +10, sets `GaveNotebook`)
+- **B.** "A long time ago." (perform, Mask +5, Energy −5)
 
 **▸ A.**
 Pun looks at her like she's just admitted to being a superhero.
@@ -1141,9 +1166,9 @@ At the gate, Ploy, Jane, Bow, and Mint are all there. Elysia has the picture on 
 
 She feels Kay behind her.
 
-**◆ Choice**
-- **A. ★** Hold it up for everyone. Don't check. (honest, −5, sets `ShowedEveryone`)
-- **B.** Show it just to Kay, quietly. (neutral, +5)
+**◆ Choice ⏱**
+- **A. ★** Hold it up for everyone. Don't check. (honest, Mask −10, Energy +10, sets `ShowedEveryone`)
+- **B.** Show it just to Kay, quietly. (neutral, Mask 0, Energy +5)
 
 **▸ A.**
 She holds up her phone in front of everyone.
@@ -1205,11 +1230,11 @@ Elysia opens her mouth, then closes it. She thinks about the canal, or the beetl
 
 ---
 
-What happens next depends on how much Elysia is carrying.
+What happens next depends on how much of the version is left, and what it has cost her.
 
-- **Weight below 35** → Ending A, *Bug Girl*
-- **Weight below 65** → Ending B, *Half a Version*
-- **Otherwise** → Ending C, *The Version*
+- **Mask above 69** → Ending C, *The Version*
+- **Mask below 50 and Energy above 54** → Ending A, *Bug Girl*
+- **Anything else** → Ending B, *Half a Version*
 
 ---
 

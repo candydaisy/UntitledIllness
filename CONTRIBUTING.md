@@ -14,20 +14,28 @@ Thanks for helping! This page tells you where things are and how not to break th
 UntitledIllness/
 ├── Story/                      Dialogue and branching, one folder per character
 │   ├── README.md             How to write story nodes (start here if you're writing)
-│   └── Kay/flow_graph.json
+│   ├── Canon_Timeline.md     What actually happens, across every route
+│   ├── Characters/           Who each character is and how they see the world
+│   └── Kay/, Elysia/, Ulyn/  flow_graph.json (what the game plays) + *_Story.md (the same story as prose)
 │
 ├── Scenes/                     Godot scenes, each next to its script
-│   ├── Menus/                Splash screen, title menu, character select
-│   ├── Dialog/               The dialogue box and choice buttons
-│   └── Characters/           One story scene per character (backgrounds, sprites, sounds)
+│   ├── Menus/                Splash screen, title menu, character select, settings/save menu
+│   ├── Dialog/               The dialogue box, choice buttons, Auto / Log / Menu buttons
+│   └── Characters/           One story scene per character (Story.tscn = Kay, Elysia.tscn)
 │
 ├── Scripts/StoryEngine/        The code that plays a story (shared by all characters)
 │   ├── story_player.gd       Main script, attached to each character's story scene
-│   ├── flow_graph.gd         Loads and checks the story JSON
-│   ├── emotional_weight.gd   Emotional Weight value and LOW/MEDIUM/HIGH/CRITICAL
-│   ├── typewriter.gd         Typing effect and sounds
+│   ├── modes/                How each character plays (meters, effects, choice rules)
+│   │   ├── story_mode.gd     The base every mode builds on
+│   │   ├── kay_mode.gd
+│   │   └── elysia_mode.gd
+│   ├── flow_graph.gd         Loads the story JSON, checks links, evaluates secrets
+│   ├── emotional_weight.gd   Kay's Emotional Weight value and LOW/MEDIUM/HIGH/CRITICAL
+│   ├── typewriter.gd         Typing effect, sounds, and self-editing (type, delete, retype)
+│   ├── dialog_log.gd         The Log window
+│   ├── save_game.gd          Save slots in user://saves/
 │   ├── story_stage.gd        Backgrounds, characters, fades
-│   └── story_audio.gd        Sound effect / ambience list
+│   └── story_audio.gd        Sound effect / ambience / voice list
 │
 ├── Assets/                     Art, audio, fonts, themes
 │   ├── Photos/Background/    Backgrounds
@@ -35,6 +43,7 @@ UntitledIllness/
 │   ├── Photos/UI/            Menu and side art
 │   ├── audio/sfx/            Sound effects
 │   ├── audio/amb/            Looping ambience
+│   ├── audio/voice/          Voice lines (create it when the first one arrives)
 │   ├── audio/ui/             Typing sound
 │   ├── Fonts/
 │   └── Themes/               UI theme and dialogue box style
@@ -56,20 +65,134 @@ UntitledIllness/
 2. In the character's scene, select the sprite under **Characters** and add animations to its SpriteFrames. The animation name is what you write in `"expression"`.
 
 **Add a sound**
-1. Put the file in `Assets/audio/sfx/` (or `amb/` for loops).
-2. Add a line for it in `SFX` (or `AMB`) in `Scripts/StoryEngine/story_audio.gd`.
+1. Put the file in `Assets/audio/sfx/` (or `amb/` for loops, `voice/` for voice lines).
+2. Add a line for it in `SFX` (or `AMB`, `VOICE`) in `Scripts/StoryEngine/story_audio.gd`.
 
 **Add a new character's story**
-1. Make `Story/<Name>/flow_graph.json`.
-2. Duplicate `Scenes/Characters/storykay1.tscn` and rename it.
-3. Select the root node, and in the Inspector set **Flow Graph Path** to the new JSON. You can also set **Starting Weight** there.
-4. Swap in that character's backgrounds and sprites.
-5. Hook it up to the character select in `Scenes/Menus/selections.gd`.
+1. Write `Story/<Name>/<Name>_Story.md` first, then turn it into `Story/<Name>/flow_graph.json` (see [Story file structure](#story-file-structure)).
+2. Pick a mode. Reuse one (`KayMode`, `ElysiaMode`), or write a new one (see [Character modes](#character-modes)).
+3. Duplicate `Scenes/Characters/Story.tscn` in Godot's FileSystem panel and rename it.
+4. Select the root node. In the Inspector, set **Flow Graph Path**, **Start Node** (usually `start`), and **Mode** (click it → New *YourMode*). The mode's numbers show up underneath, ready to tune.
+5. Swap in that character's backgrounds and sprites.
+6. Put the scene's path in `STORY_SCENES` in `Scenes/Menus/selections.gd`, at the same position as the character's button.
+7. Press F5. Godot's Output panel warns about anything in the story the scene or mode doesn't know.
+
+## Story file structure
+
+A story is one JSON object. Each key is a node id, and each value is one line of the story. The game starts at the scene's **Start Node** and follows `next`. A node with no `next` and no `choices` ends the story.
+
+```json
+{
+	"start": {
+		"speaker": "Kay",
+		"emotion": "tired",
+		"text": "Monday...",
+		"next": "wake_2",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"sfx": "Alarm"
+	},
+
+	"wake_2": {
+		"speaker": "Kay",
+		"text": "What should I do first?",
+		"choices": [
+			{"text": "Take a nap", "type": "neutral", "weight_change": 5, "next": "nap_1"},
+			{"text": "Get up", "type": "honest", "weight_change": -5, "next": "up_1", "set_flag": "GotUp"}
+		]
+	},
+
+	"nap_1": {
+		"speaker": "",
+		"text": "*He sleeps through first period.*",
+		"next": "school_1",
+		"secret": {"condition": "flag_true", "flag": "GotUp", "next": "other_1"}
+	}
+}
+```
+
+### Node keys (every character)
+
+| Key | Type | Meaning |
+|---|---|---|
+| `speaker` | string | Name on the name plate. `""` for narration. |
+| `text` | string | The line. Conventions: narration in `*asterisks*`, speech in `"quotes"`, thoughts and text messages bare. |
+| `next` | string | Id of the next node. Leave out on a choice node or the last node. |
+| `emotion` | string | Typing speed: `angry`, `nervous`, `tired`, `sad`. |
+| `choices` | array | Up to 3 choices (see below). Use instead of `next`. |
+| `secret` | object | Jump somewhere else after this node if a condition is true (see below). One per node. |
+| `background` | string | Name of a node under **Bgs** in the scene. |
+| `show_characters` / `hide_characters` | array of strings | Names of nodes under **Characters**. |
+| `expression` | object | `{"Kay": "School"}` plays that sprite animation. |
+| `sfx` / `amb` / `voice` | string | A name from `story_audio.gd`. `sfx` and `amb` also take `"stop"`. |
+
+### Choice keys (every character)
+
+| Key | Type | Meaning |
+|---|---|---|
+| `text` | string | Button label. |
+| `type` | string | What kind of answer it is. Which types exist depends on the mode. |
+| `next` | string | Node to go to. |
+| `set_flag` | string | Remembers this choice for a later `secret`. Flags are true/false and only set by choices. |
+
+### Secrets
+
+```json
+"secret": {"condition": "flag_true", "flag": "GotUp", "next": "other_1"}
+"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
+```
+
+`flag_true` / `flag_false` test a flag. `<meter>_above` / `<meter>_below` test one of the mode's meters (Kay: `weight`; Elysia: `mask`, `energy`). A secret only has one condition. For two conditions, chain two nodes, each with its own secret.
+
+### Mode keys
+
+Each mode adds its own keys. These are listed in its `INFO` (see below) and in [`Story/README.md`](Story/README.md).
+
+| Mode | Choice keys | Node keys | Choice types |
+|---|---|---|---|
+| KayMode | `weight_change` | | `neutral`, `honest`, `helpful` |
+| ElysiaMode | `mask_change`, `energy_change` | `real_text`, `timed` | `neutral`, `honest`, `helpful`, `perform` |
+
+## Character modes
+
+Every story scene runs the same `story_player.gd`. What makes each character feel different lives in a **mode** in `Scripts/StoryEngine/modes/`. A mode is a small script that extends `StoryMode` and fills in only what it needs:
+
+| Function | What it decides |
+|---|---|
+| `info()` | Returns the mode's `INFO`: its meters, features, and the JSON keys and choice types it reads. |
+| `setup()` / `get_meters()` / `set_meters()` | The character's meters. Rewinding and saving use these, so they work automatically. |
+| `apply_choice(choice)` | What a choice does to the meters. |
+| `is_locked(choice)` | Which choices are greyed out. |
+| `choice_time(entry)` / `timeout_choice(choices)` | Timed choices, and what happens when time runs out. |
+| `line_for(entry)` | What gets typed; return `"unsaid"` too for a self-edit. |
+| `speed_multiplier()` / `apply_effects()` | Typing speed, screen tint, sounds. |
+
+Every mode starts with an `INFO` that sums it up at a glance:
+
+```gdscript
+const INFO := {
+	"meters": {
+		"weight": "Emotional Weight, 0-100. LOW < 30, MEDIUM < 50, HIGH < 80, CRITICAL 80+.",
+	},
+	"features": [
+		"Dimmed: the world fades to grey as weight rises.",
+		"Slow text: typing slows down and the typing sound gets louder.",
+		"Locked help: helpful choices lock at CRITICAL.",
+	],
+	"node_keys": [],
+	"choice_keys": ["weight_change"],
+	"choice_types": ["neutral", "honest", "helpful"],
+}
+```
+
+When the game starts in the editor, it checks the story against this list. If a story uses a key, a choice type, or a meter that its mode doesn't know, the Output panel says so. This catches things like a `weight_change` left in Elysia's story, where it would silently do nothing.
+
+**To make a new mode:** copy `elysia_mode.gd` (or `kay_mode.gd`), change `class_name`, rewrite `INFO` and the functions you need, and delete the rest; the base versions do nothing harmful. Put tunable numbers in `@export` variables so they can be changed in the Inspector.
 
 ## Rules that keep things from breaking
 
 - **Move or rename files inside Godot's FileSystem panel**, not in your file manager. Godot updates every reference for you; your file manager doesn't.
 - **Commit the `.import` and `.uid` files** that sit next to assets and scripts. Godot needs them.
 - **Close Godot before pulling** changes from GitHub, then reopen it. An open editor can save old settings over new ones.
-- Turn on **Debug Log** on a story scene's root node to print the current node and weight while you play.
+- Turn on **Debug Log** on a story scene's root node to print the current node and the mode's meters while you play.
 - Don't commit the `.godot/` folder (it's already ignored).

@@ -7,11 +7,11 @@ Story/
 ├── Canon_Timeline.md      what actually happens, across every route
 ├── Characters/            who each character is
 ├── Kay/flow_graph.json    + Kay_Story.md
-├── Ulyn/flow_graph.json   + Ulyn_Story.md     (starting weight 50)
-└── Elysia/flow_graph.json + Elysia_Story.md   (starting weight 50)
+├── Ulyn/flow_graph.json   + Ulyn_Story.md
+└── Elysia/flow_graph.json + Elysia_Story.md
 ```
 
-Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet. Set **Starting Weight** to 50 on their story scenes; the endings are tuned for it.
+Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet. Ulyn doesn't have a story scene or a mode yet. His endings are currently tuned for Kay's weight system starting at 50.
 
 You don't need to touch any code to write or change dialogue. Edit the JSON, save, and run the game in Godot.
 
@@ -90,8 +90,34 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 |---|---|---|
 | `flag_true` | `flag` | that flag was set by a choice |
 | `flag_false` | `flag` | that flag was never set |
-| `weight_above` | `value` | weight is above the value |
-| `weight_below` | `value` | weight is below the value |
+| `weight_above` | `value` | weight is above the value (Kay) |
+| `weight_below` | `value` | weight is below the value (Kay) |
+| `mask_above`, `mask_below`, `energy_above`, `energy_below` | `value` | the same, for Elysia's meters |
+
+## Each character plays differently
+
+Every story scene uses the same StoryPlayer, plus a **Mode** (set on the scene's root node in the Inspector). The mode decides the character's meters, what choices do to them, and how the game reacts. You can tune a mode's numbers in the Inspector too.
+
+| Scene | Mode | Meters |
+|---|---|---|
+| `Scenes/Characters/Story.tscn` | KayMode (the default when Mode is empty) | `weight` |
+| `Scenes/Characters/Elysia.tscn` | ElysiaMode | `mask`, `energy` (both hidden) |
+
+**Kay** uses everything above: `weight_change` on choices, the screen greys out as weight rises, and `helpful` choices lock at CRITICAL.
+
+**Elysia** performs a "version" of herself, so her route works differently:
+
+| Key | Where | What it does | Example |
+|---|---|---|---|
+| `mask_change` | choice | How much the choice adds to her performing. Use instead of `weight_change`. | `10` |
+| `energy_change` | choice | What it costs (−) or gives back (+). | `-15` |
+| `type: "perform"` | choice | The "version" answer. Picked automatically if a timed choice runs out. | |
+| `timed` | node with choices | Gives the player a few seconds (8 at Mask 0, 4 at Mask 100). | `true` |
+| `real_text` | node | What she really wants to say. While Mask is 60+, it's typed, deleted, and replaced by `text`. Below 60 she just says it. | `"\"I'm just tired, Mom.\""` |
+
+Her `honest` choices lock when Energy is below 20 or Mask is above 85.
+
+Secrets can test any meter the mode has: `weight_above`, `mask_below`, `energy_above`, and so on.
 
 ## Checking your work
 

@@ -33,18 +33,26 @@ func get_entry(id: String) -> Dictionary:
 
 
 ## Returns the node a "secret" redirects to, or "" when its condition isn't met.
-func secret_target(entry: Dictionary, weight: float, flags: Dictionary) -> String:
+## Meter conditions are "<meter>_above" / "<meter>_below", for whatever meters
+## the character's mode has (Kay: weight; Elysia: mask, energy).
+func secret_target(entry: Dictionary, meters: Dictionary, flags: Dictionary) -> String:
 	if not entry.has("secret"):
 		return ""
 
 	var secret : Dictionary = entry["secret"]
-	var met : bool
-	match secret.get("condition", ""):
-		"weight_above": met = weight > secret.get("value", 0)
-		"weight_below": met = weight < secret.get("value", 0)
-		"flag_true":    met = flags.get(secret.get("flag", ""), false)
-		"flag_false":   met = not flags.get(secret.get("flag", ""), false)
-		_:              met = false
+	var condition : String = secret.get("condition", "")
+	var met := false
+	match condition:
+		"flag_true":  met = flags.get(secret.get("flag", ""), false)
+		"flag_false": met = not flags.get(secret.get("flag", ""), false)
+		_:
+			var meter := condition.trim_suffix("_above").trim_suffix("_below")
+			if not meters.has(meter):
+				push_warning("Secret uses unknown condition '%s'" % condition)
+			elif condition.ends_with("_above"):
+				met = meters[meter] > secret.get("value", 0)
+			else:
+				met = meters[meter] < secret.get("value", 0)
 
 	return secret.get("next", "") if met else ""
 

@@ -2,11 +2,16 @@ class_name Typewriter
 extends RefCounted
 ## Reveals a RichTextLabel one character at a time, with typing sounds and
 ## short pauses after punctuation. Call tick() every frame.
+## start_edit() types one line, deletes it, then types another (self-editing).
 
 signal finished
 
 const PAUSE_DURATIONS := { ",": 0.15, ".": 0.35, "!": 0.35, "?": 0.35 }
 const SILENT_CHARS    := [" ", ",", ".", "!", "?"]
+const EDIT_HOLD   := 0.6 # pause on the unsaid line before deleting it
+const DELETE_MULT := 2.5 # deleting is faster than typing
+
+enum Phase { IDLE, TYPING, HOLD, DELETING }
 
 var label : RichTextLabel
 var sound : AudioStreamPlayer
@@ -15,6 +20,8 @@ var sound_volume_db := -21.0
 var is_typing := false
 
 var _text := "" # text without BBCode, matches visible_characters
+var _final_text := "" # what's typed after the unsaid line is deleted
+var _phase := Phase.IDLE
 var _progress := 0.0
 var _pause := 0.0
 
@@ -25,20 +32,27 @@ func _init(target: RichTextLabel, type_sound: AudioStreamPlayer) -> void:
 
 
 func start(text: String) -> void:
-	label.text = text.strip_edges()
-	_text = label.get_parsed_text()
-	label.visible_characters = 0
-	_progress = 0.0
-	_pause = 0.0
-	is_typing = true
+	_final_text = ""
+	_begin(text)
+
+## Types `unsaid`, holds, deletes it, then types `text`.
+func start_edit(unsaid: String, text: String) -> void:
+	_final_text = text
+	_begin(unsaid)
 
 func skip() -> void:
-	if is_typing:
-		_finish()
+	if not is_typing:
+		return
+	if _final_text != "":
+		label.text = _final_text.strip_edges()
+		_text = label.get_parsed_text()
+		_final_text = ""
+	_finish()
 
 ## Stops without emitting finished (used when leaving the line early).
 func stop() -> void:
 	is_typing = false
+	_phase = Phase.IDLE
 	_pause = 0.0
 
 
@@ -50,6 +64,26 @@ func tick(delta: float) -> void:
 		_pause -= delta
 		return
 
+	match _phase:
+		Phase.HOLD:
+			_phase = Phase.DELETING
+			_progress = label.visible_characters
+		Phase.DELETING:
+			_tick_delete(delta)
+		Phase.TYPING:
+			_tick_type(delta)
+
+
+func _begin(text: String) -> void:
+	label.text = text.strip_edges()
+	_text = label.get_parsed_text()
+	label.visible_characters = 0
+	_progress = 0.0
+	_pause = 0.0
+	_phase = Phase.TYPING
+	is_typing = true
+
+func _tick_type(delta: float) -> void:
 	_progress += speed * delta
 	var target := mini(int(_progress), _text.length())
 	var play_sound := false
@@ -69,12 +103,28 @@ func tick(delta: float) -> void:
 		_play_sound()
 
 	if label.visible_characters >= _text.length():
-		_finish()
+		if _final_text != "":
+			_phase = Phase.HOLD
+			_pause = EDIT_HOLD
+		else:
+			_finish()
+
+func _tick_delete(delta: float) -> void:
+	var before := label.visible_characters
+	_progress -= speed * DELETE_MULT * delta
+	label.visible_characters = maxi(int(_progress), 0)
+	if label.visible_characters < before:
+		_play_sound()
+	if label.visible_characters == 0:
+		var next := _final_text
+		_final_text = ""
+		_begin(next)
 
 
 func _finish() -> void:
 	label.visible_characters = _text.length()
 	is_typing = false
+	_phase = Phase.IDLE
 	_pause = 0.0
 	finished.emit()
 

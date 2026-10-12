@@ -38,9 +38,10 @@
 	"call_7": {
 		"speaker": "Ploy",
 		"text": "\"Right?? Okay, so here's what he said, I'll read you the whole thing—\"",
+		"timed": true,
 		"choices": [
-			{"text": "Stay on the call", "type": "neutral", "weight_change": 5, "next": "call_stay_1"},
-			{"text": "\"Ploy, I'm so sorry, I have to sleep. Tomorrow at lunch?\"", "type": "honest", "weight_change": -5, "next": "call_sleep_1"}
+			{"text": "Stay on the call", "type": "perform", "mask_change": 5, "energy_change": -10, "next": "call_stay_1"},
+			{"text": "\"Ploy, I'm so sorry, I have to sleep. Tomorrow at lunch?\"", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "call_sleep_1"}
 		]
 	},
 
@@ -71,6 +72,7 @@
 	"call_sleep_3": {
 		"speaker": "Elysia",
 		"text": "\"You're not bothering—\"",
+		"real_text": "\"You're not bothering me, I'm just so tired—\"",
 		"next": "call_sleep_4"
 	},
 
@@ -120,8 +122,8 @@
 		"speaker": "",
 		"text": "*Check: Mom, making coffee, not looking.*",
 		"choices": [
-			{"text": "\"It's just a beetle. Eat your eggs.\"", "type": "neutral", "weight_change": 5, "next": "bfast_just_1"},
-			{"text": "\"That's a rhinoceros beetle! He's a boy, look at the horn—\"", "type": "honest", "weight_change": -5, "next": "bfast_rhino_1", "set_flag": "TaughtPun"}
+			{"text": "\"It's just a beetle. Eat your eggs.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "bfast_just_1"},
+			{"text": "\"That's a rhinoceros beetle! He's a boy, look at the horn—\"", "type": "honest", "mask_change": -5, "energy_change": 10, "next": "bfast_rhino_1", "set_flag": "TaughtPun"}
 		]
 	},
 
@@ -362,6 +364,7 @@
 	"line_24": {
 		"speaker": "Elysia",
 		"text": "\"Ah— yeah! Of course!\"",
+		"real_text": "\"...Yeah. I'd like that.\"",
 		"next": "line_25"
 	},
 
@@ -422,9 +425,10 @@
 	"line_34": {
 		"speaker": "",
 		"text": "*Check: Ploy, smiling, not mean. Jane, nodding. Bow, waiting for my answer.*",
+		"timed": true,
 		"choices": [
-			{"text": "\"Haha, he's just shy.\"", "type": "neutral", "weight_change": 5, "next": "shy_1"},
-			{"text": "\"He's not weird.\"", "type": "honest", "weight_change": -5, "next": "notweird_1", "set_flag": "DefendedKay"}
+			{"text": "\"Haha, he's just shy.\"", "type": "perform", "mask_change": 10, "energy_change": -10, "next": "shy_1"},
+			{"text": "\"He's not weird.\"", "type": "honest", "mask_change": -10, "energy_change": -5, "next": "notweird_1", "set_flag": "DefendedKay"}
 		]
 	},
 
@@ -467,6 +471,7 @@
 	"notweird_3": {
 		"speaker": "Elysia",
 		"text": "\"I know! I know. Sorry. He's just quiet. That's all.\"",
+		"real_text": "\"No, I meant it. He's not weird.\"",
 		"next": "notweird_4"
 	},
 
@@ -618,8 +623,8 @@
 		"speaker": "Mint",
 		"text": "\"How do you feel about that?\"",
 		"choices": [
-			{"text": "\"...It kind of hurt.\"", "type": "honest", "weight_change": -10, "next": "mint_hurt_1", "set_flag": "ToldMint"},
-			{"text": "\"It's fine! He's just busy.\"", "type": "neutral", "weight_change": 10, "next": "mint_fine_1"}
+			{"text": "\"...It kind of hurt.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "mint_hurt_1", "set_flag": "ToldMint"},
+			{"text": "\"It's fine! He's just busy.\"", "type": "perform", "mask_change": 5, "energy_change": -10, "next": "mint_fine_1"}
 		]
 	},
 
@@ -717,8 +722,8 @@
 		"speaker": "",
 		"text": "*\"are you embarrassed of me.\" Delete. Delete. Delete.*",
 		"choices": [
-			{"text": "Send something cheerful instead", "type": "neutral", "weight_change": 5, "next": "tue_cheer_1"},
-			{"text": "\"can i ask why you didn't want to walk yesterday?\"", "type": "honest", "weight_change": -10, "next": "tue_ask_1", "set_flag": "AskedKayWhy"}
+			{"text": "Send something cheerful instead", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "tue_cheer_1"},
+			{"text": "\"can i ask why you didn't want to walk yesterday?\"", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "tue_ask_1", "set_flag": "AskedKayWhy"}
 		]
 	},
 
@@ -947,6 +952,7 @@
 	"garden_20": {
 		"speaker": "Elysia",
 		"text": "\"Sorry. That's weird. Nobody cares about bugs.\"",
+		"real_text": "\"I really, really like bugs.\"",
 		"next": "garden_21"
 	},
 
@@ -978,8 +984,8 @@
 		"speaker": "",
 		"text": "*She doesn't have a word for it. Nobody but Mint has ever looked at her like that while she was being bug girl.*",
 		"choices": [
-			{"text": "Keep going", "type": "honest", "weight_change": -10, "next": "garden_go_1", "set_flag": "KeptGoing"},
-			{"text": "\"Haha, anyway—\"", "type": "neutral", "weight_change": 5, "next": "garden_stop_1"}
+			{"text": "Keep going", "type": "honest", "mask_change": -10, "energy_change": 15, "next": "garden_go_1", "set_flag": "KeptGoing"},
+			{"text": "\"Haha, anyway—\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "garden_stop_1"}
 		]
 	},
 
@@ -1130,9 +1136,10 @@
 	"nam_6": {
 		"speaker": "Elysia",
 		"text": "If I laugh, it's over in a second. If I don't...",
+		"timed": true,
 		"choices": [
-			{"text": "Laugh along", "type": "neutral", "weight_change": 10, "next": "nam_laugh_1"},
-			{"text": "\"I think it's cute, actually.\"", "type": "honest", "weight_change": -10, "next": "nam_cute_1", "set_flag": "StoodUpForNam"}
+			{"text": "Laugh along", "type": "perform", "mask_change": 10, "energy_change": -15, "next": "nam_laugh_1"},
+			{"text": "\"I think it's cute, actually.\"", "type": "honest", "mask_change": -10, "energy_change": -5, "next": "nam_cute_1", "set_flag": "StoodUpForNam"}
 		]
 	},
 
@@ -1243,8 +1250,8 @@
 		"speaker": "",
 		"text": "*She knows exactly what she learned. She could teach it to him in one sentence.*",
 		"choices": [
-			{"text": "\"Maybe... keep the bugs at home? Just at school. Just for a while.\"", "type": "neutral", "weight_change": 10, "next": "pun_hide_1", "set_flag": "ToldPunHide"},
-			{"text": "\"Then be bug boy. Bug boy is the best kind of boy.\"", "type": "honest", "weight_change": -10, "next": "pun_bug_1", "set_flag": "ToldPunBugBoy"}
+			{"text": "\"Maybe... keep the bugs at home? Just at school. Just for a while.\"", "type": "perform", "mask_change": 10, "energy_change": -15, "next": "pun_hide_1", "set_flag": "ToldPunHide"},
+			{"text": "\"Then be bug boy. Bug boy is the best kind of boy.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "pun_bug_1", "set_flag": "ToldPunBugBoy"}
 		]
 	},
 
@@ -1335,9 +1342,10 @@
 	"sports_6": {
 		"speaker": "Elysia",
 		"text": "I don't know what happened between them. Kay has never said.",
+		"timed": true,
 		"choices": [
-			{"text": "Get him a cold drink, in front of everyone", "type": "helpful", "weight_change": -5, "next": "sports_drink_1", "set_flag": "SportsDayDrink"},
-			{"text": "Stay with the cheer squad", "type": "neutral", "weight_change": 5, "next": "sports_stay_1"}
+			{"text": "Get him a cold drink, in front of everyone", "type": "helpful", "mask_change": -10, "energy_change": 5, "next": "sports_drink_1", "set_flag": "SportsDayDrink"},
+			{"text": "Stay with the cheer squad", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "sports_stay_1"}
 		]
 	},
 
@@ -1350,6 +1358,7 @@
 	"sports_drink_2": {
 		"speaker": "Elysia",
 		"text": "\"Hydrate, water boy!\"",
+		"real_text": "\"You looked thirsty. And kind of alone.\"",
 		"next": "sports_drink_3"
 	},
 
@@ -1404,6 +1413,7 @@
 	"mid_5": {
 		"speaker": "Elysia",
 		"text": "\"I know. Sorry.\"",
+		"real_text": "\"I'm just tired, Mom.\"",
 		"next": "mid_6"
 	},
 
@@ -1411,8 +1421,8 @@
 		"speaker": "Mom",
 		"text": "\"You're on your phone too much. I see your light on at three in the morning.\"",
 		"choices": [
-			{"text": "\"Sorry. I'll fix it.\"", "type": "neutral", "weight_change": 5, "next": "mid_sorry_1"},
-			{"text": "\"Ploy's going through a breakup. She calls me every night. I don't know how to say no.\"", "type": "honest", "weight_change": -5, "next": "mid_honest_1", "set_flag": "ToldMomPloy"}
+			{"text": "\"Sorry. I'll fix it.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "mid_sorry_1"},
+			{"text": "\"Ploy's going through a breakup. She calls me every night. I don't know how to say no.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "mid_honest_1", "set_flag": "ToldMomPloy"}
 		]
 	},
 
@@ -1600,9 +1610,9 @@
 		"speaker": "Elysia",
 		"text": "He asked me to leave him alone. I want to respect that. But someone should go.",
 		"choices": [
-			{"text": "Find Ulyn", "type": "helpful", "weight_change": -10, "next": "thu_ulyn_1", "set_flag": "AskedUlyn"},
-			{"text": "Go yourself, after school", "type": "helpful", "weight_change": -5, "next": "thu_go_1", "set_flag": "WentHerself"},
-			{"text": "Wait. He asked for space.", "type": "neutral", "weight_change": 10, "next": "thu_wait_1"}
+			{"text": "Find Ulyn", "type": "helpful", "mask_change": 0, "energy_change": 5, "next": "thu_ulyn_1", "set_flag": "AskedUlyn"},
+			{"text": "Go yourself, after school", "type": "helpful", "mask_change": -5, "energy_change": -5, "next": "thu_go_1", "set_flag": "WentHerself"},
+			{"text": "Wait. He asked for space.", "type": "neutral", "mask_change": 5, "energy_change": -10, "next": "thu_wait_1"}
 		]
 	},
 
@@ -1935,9 +1945,10 @@
 	"sat_talk_15": {
 		"speaker": "Elysia",
 		"text": "Now it's my turn.",
+		"timed": true,
 		"choices": [
-			{"text": "Tell him the truth. All of it.", "type": "honest", "weight_change": -15, "next": "sat_truth_1", "set_flag": "DroppedVersion"},
-			{"text": "\"Kay, that's silly! You don't make me look weird at all!\"", "type": "neutral", "weight_change": 10, "next": "sat_version_1"}
+			{"text": "Tell him the truth. All of it.", "type": "honest", "mask_change": -20, "energy_change": 15, "next": "sat_truth_1", "set_flag": "DroppedVersion"},
+			{"text": "\"Kay, that's silly! You don't make me look weird at all!\"", "type": "perform", "mask_change": 10, "energy_change": -10, "next": "sat_version_1"}
 		]
 	},
 
@@ -2126,6 +2137,7 @@
 	"mon_5": {
 		"speaker": "Elysia",
 		"text": "\"He is.\"",
+		"real_text": "\"He is. I really like him.\"",
 		"next": "mon_6"
 	},
 
@@ -2156,9 +2168,10 @@
 	"mon_walk_4": {
 		"speaker": "Elysia",
 		"text": "...Stop checking.",
+		"timed": true,
 		"choices": [
-			{"text": "\"Yes, he's my boyfriend, we all know, moving on.\"", "type": "honest", "weight_change": -10, "next": "mon_say_1", "set_flag": "SaidItOutLoud"},
-			{"text": "\"Haha— hi, Kay!\"", "type": "neutral", "weight_change": 10, "next": "mon_hi_1"}
+			{"text": "\"Yes, he's my boyfriend, we all know, moving on.\"", "type": "honest", "mask_change": -15, "energy_change": 10, "next": "mon_say_1", "set_flag": "SaidItOutLoud"},
+			{"text": "\"Haha— hi, Kay!\"", "type": "perform", "mask_change": 10, "energy_change": -10, "next": "mon_hi_1"}
 		]
 	},
 
@@ -2207,9 +2220,10 @@
 	"mon_say_8": {
 		"speaker": "",
 		"text": "*Check: Ploy. Not mad. Surprised. Maybe a little impressed.*",
+		"timed": true,
 		"choices": [
-			{"text": "\"Yeah. I like him a lot.\"", "type": "honest", "weight_change": -5, "next": "mon_like_1"},
-			{"text": "\"Sorry, was that too much?\"", "type": "neutral", "weight_change": 5, "next": "mon_much_1"}
+			{"text": "\"Yeah. I like him a lot.\"", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "mon_like_1"},
+			{"text": "\"Sorry, was that too much?\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "mon_much_1"}
 		]
 	},
 
@@ -2300,9 +2314,10 @@
 	"late_3": {
 		"speaker": "",
 		"text": "*She watches it ring. She thinks about Mom. It doesn't always have to be you. She thinks about Kay saying \"couldn't.\"*",
+		"timed": true,
 		"choices": [
-			{"text": "Answer, and say it. \"I can't do 1 a.m. calls anymore.\"", "type": "honest", "weight_change": -10, "next": "late_no_1", "set_flag": "SetBoundary"},
-			{"text": "Answer, and listen until three", "type": "neutral", "weight_change": 10, "next": "late_yes_1"}
+			{"text": "Answer, and say it. \"I can't do 1 a.m. calls anymore.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "late_no_1", "set_flag": "SetBoundary"},
+			{"text": "Answer, and listen until three", "type": "perform", "mask_change": 5, "energy_change": -15, "next": "late_yes_1"}
 		]
 	},
 
@@ -2546,8 +2561,8 @@
 		"speaker": "Elysia",
 		"text": "\"It's yours.\"",
 		"choices": [
-			{"text": "\"And if anyone says it's weird, tell them your sister said so too.\"", "type": "honest", "weight_change": -10, "next": "note_hide_yes_1", "set_flag": "GaveNotebook"},
-			{"text": "Just leave the notebook and go", "type": "neutral", "weight_change": 5, "next": "note_hide_no_1"}
+			{"text": "\"And if anyone says it's weird, tell them your sister said so too.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "note_hide_yes_1", "set_flag": "GaveNotebook"},
+			{"text": "Just leave the notebook and go", "type": "neutral", "mask_change": 0, "energy_change": 0, "next": "note_hide_no_1"}
 		]
 	},
 
@@ -2597,8 +2612,8 @@
 		"speaker": "Pun",
 		"text": "\"You were bug girl?\"",
 		"choices": [
-			{"text": "\"...I still am, kind of.\"", "type": "honest", "weight_change": -10, "next": "note_bug_yes_1", "set_flag": "GaveNotebook"},
-			{"text": "\"A long time ago.\"", "type": "neutral", "weight_change": 5, "next": "note_bug_no_1"}
+			{"text": "\"...I still am, kind of.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "note_bug_yes_1", "set_flag": "GaveNotebook"},
+			{"text": "\"A long time ago.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "note_bug_no_1"}
 		]
 	},
 
@@ -2641,9 +2656,10 @@
 	"last_4": {
 		"speaker": "",
 		"text": "*She feels Kay behind her.*",
+		"timed": true,
 		"choices": [
-			{"text": "Hold it up for everyone. Don't check.", "type": "honest", "weight_change": -5, "next": "last_all_1", "set_flag": "ShowedEveryone"},
-			{"text": "Show it just to Kay, quietly", "type": "neutral", "weight_change": 5, "next": "last_kay_1"}
+			{"text": "Hold it up for everyone. Don't check.", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "last_all_1", "set_flag": "ShowedEveryone"},
+			{"text": "Show it just to Kay, quietly", "type": "neutral", "mask_change": 0, "energy_change": 5, "next": "last_kay_1"}
 		]
 	},
 
@@ -2796,14 +2812,21 @@
 		"speaker": "",
 		"text": "*The last bell rings.*",
 		"next": "ending_2",
-		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
+		"secret": {"condition": "mask_above", "value": 69, "next": "endC_1"}
 	},
 
 	"ending_2": {
 		"speaker": "",
 		"text": "*The semester ends.*",
-		"next": "endC_1",
-		"secret": {"condition": "weight_below", "value": 65, "next": "endB_1"}
+		"next": "ending_3",
+		"secret": {"condition": "mask_above", "value": 49, "next": "endB_1"}
+	},
+
+	"ending_3": {
+		"speaker": "",
+		"text": "*Elysia walks out through the gate.*",
+		"next": "endB_1",
+		"secret": {"condition": "energy_above", "value": 54, "next": "endA_1"}
 	},
 
 	"endA_1": {

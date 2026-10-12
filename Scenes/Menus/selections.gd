@@ -1,5 +1,14 @@
 extends Control
 
+## Story scene for each character button, in order (Character1 = first).
+## "" = not playable yet; its Start button stays disabled.
+const STORY_SCENES := [
+	"res://Scenes/Characters/Story.tscn",  # K. Kay
+	"res://Scenes/Characters/Elysia.tscn", # E. Elysia
+	"",                                    # N.
+	"",                                    # R.
+]
+
 var charactersel: int = 0
 
 @onready var chars: Array[Control] = [
@@ -32,27 +41,24 @@ func _show_character(index: int) -> void:
 		chars[i].visible = (i + 1 == index)
 		
 
+func _select(index: int) -> void:
+	_show_character(index)
+	start.disabled = STORY_SCENES[index - 1] == ""
+
 func _on_character_1_pressed() -> void:
-	_show_character(1)
-	start.disabled = false
+	_select(1)
 
 func _on_character_2_pressed() -> void:
-	_show_character(2)
-	start.disabled = true
+	_select(2)
 
 func _on_character_3_pressed() -> void:
-	_show_character(3)
-	start.disabled = true
+	_select(3)
 
 func _on_character_4_pressed() -> void:
-	_show_character(4)
-	start.disabled = true
+	_select(4)
 
 func _on_start_pressed() -> void:
-	if charactersel == 0:
+	if charactersel == 0 or STORY_SCENES[charactersel - 1] == "":
 		return
-	elif charactersel == 1:
-		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/Characters/Story.tscn"))
-	else:
-		return
-#		_fade_then(func(): get_tree().change_scene_to_file("res://Scenes/Menus/Startscreen.tscn"))
+	var scene : String = STORY_SCENES[charactersel - 1]
+	_fade_then(func(): get_tree().change_scene_to_file(scene))

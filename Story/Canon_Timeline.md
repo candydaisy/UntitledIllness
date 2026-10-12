@@ -219,4 +219,4 @@ The canon choices are marked ★ in the story file. Ulyn's weight climbs to Crit
 
 ### Elysia (`Story/Elysia/Elysia_Story.md`)
 
-The canon choices are marked ★ in the story file. Elysia's weight rises as she performs the "version." It turns at the museum, when she tells Kay she lied too, and keeps falling as she sets boundaries. **Ending A: Bug Girl.**
+The canon choices are marked ★ in the story file. Elysia's Mask rises and her Energy drains as she performs the "version." It turns at the museum, when she tells Kay she lied too. After that her Mask keeps falling and her Energy comes back as she sets boundaries. **Ending A: Bug Girl.**
