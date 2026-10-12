@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
 [ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
 
 [ext_resource type="Theme" path="res://Assets/Themes/kay_theme.tres" id="30_theme"]
 [ext_resource type="Shader" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
@@ -266,6 +267,90 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Kay\'s kitchen" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_42qhq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Kay\'s kitchen night" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_4fkki")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Garden" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_8nrf5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Guidance room" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_vaay5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Canal park" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_e6el8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Museum" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_7a8g2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Phone at night" type="TextureRect" parent="Bgs"]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_phone")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="BlackScreen" type="ColorRect" parent="Bgs" unique_id=1283146499]
 visible = false
 anchors_preset = 15
@@ -305,14 +390,28 @@ scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="useless1" type="AnimatedSprite2D" parent="Characters" unique_id=625788519]
+[node name="Bank" type="AnimatedSprite2D" parent="Characters" unique_id=625788519]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="useless2" type="AnimatedSprite2D" parent="Characters" unique_id=1720998487]
+[node name="Fern" type="AnimatedSprite2D" parent="Characters" unique_id=1720998487]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="MsNoi" type="AnimatedSprite2D" parent="Characters"]
+visible = false
+position = Vector2(1325, 450)
+scale = Vector2(1, 0.23770492)
+sprite_frames = SubResource("SpriteFrames_nrl2c")
+animation = &"new_animation"
+
+[node name="Mint" type="AnimatedSprite2D" parent="Characters"]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)

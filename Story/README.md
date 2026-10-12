@@ -14,6 +14,15 @@ Story/
 
 All three routes have backgrounds, characters and sounds. Some of Elysia's and Ulyn's places don't have their own pictures yet, so in their scenes they borrow the closest existing one. To add the real art, select the node under **Bgs** and change its **Texture**; the story file doesn't need to change.
 
+| Background in Kay's story (`Story.tscn`) | Borrowing for now |
+|---|---|
+| `Kay's kitchen` | the daytime bedroom |
+| `Kay's kitchen night` | the night bedroom |
+| `Garden` | Kay's front lawn |
+| `Guidance room` | the classroom |
+| `Canal park` | the sidewalk |
+| `Museum` | the hallway |
+
 | Background in Elysia's story (`Elysia.tscn`) | Borrowing for now |
 |---|---|
 | `Elysia's room`, `Elysia's kitchen`, `Pun's room` | the daytime bedroom |
@@ -189,5 +198,5 @@ Run the game from the Godot editor. On start it checks the whole story file and 
 
 Common mistakes:
 - Ids are always in quotes: `"next": "gate_4"`.
-- Names are case-sensitive: `"useless1"` is not `"Useless1"`.
+- Names are case-sensitive: `"Bank"` is not `"bank"`.
 - Every node except the last needs a comma after its closing `}`.

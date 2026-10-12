@@ -334,7 +334,7 @@
 		"speaker": "Bank",
 		"text": "\"Uh... hi. I did the, um, the research part.\"",
 		"next": "pres_9",
-		"show_characters": ["useless1"],
+		"show_characters": ["Bank"],
 		"hide_characters": ["Ulyn"]
 	},
 
@@ -391,7 +391,7 @@
 		"text": "\"—Hawaii, 1961. Sorry, I'll jump in, we split this part.\"",
 		"next": "pres_13",
 		"show_characters": ["Kay"],
-		"hide_characters": ["useless1"]
+		"hide_characters": ["Bank"]
 	},
 
 	"pres_13": {
@@ -410,7 +410,7 @@
 		"speaker": "Fern",
 		"text": "\"And I did the design! So, um, this slide is about...\"",
 		"next": "pres_16",
-		"show_characters": ["useless2"],
+		"show_characters": ["Fern"],
 		"hide_characters": ["Kay"]
 	},
 
@@ -425,7 +425,7 @@
 		"text": "*Kay steps forward again and explains it smoothly, like it was always meant to be his.*",
 		"next": "pres_18",
 		"show_characters": ["Kay"],
-		"hide_characters": ["useless2"]
+		"hide_characters": ["Fern"]
 	},
 
 	"pres_18": {
@@ -438,7 +438,7 @@
 		"speaker": "Bank",
 		"text": "\"Nice one, Kay! You saved us.\"",
 		"next": "pres_20",
-		"show_characters": ["useless1", "useless2"]
+		"show_characters": ["Bank", "Fern"]
 	},
 
 	"pres_20": {
@@ -458,7 +458,7 @@
 		"text": "*Ulyn doesn't say anything. He's looking at Kay, not at them.*",
 		"next": "after_1",
 		"show_characters": ["Ulyn"],
-		"hide_characters": ["useless1", "useless2"]
+		"hide_characters": ["Bank", "Fern"]
 	},
 
 	"after_1": {
@@ -857,14 +857,14 @@
 		"speaker": "Bank",
 		"text": "\"Dude, I totally blanked up there. Good thing Kay knew everything.\"",
 		"next": "food_nd_5",
-		"show_characters": ["useless1"]
+		"show_characters": ["Bank"]
 	},
 
 	"food_nd_5": {
 		"speaker": "Fern",
 		"text": "\"Kay always knows everything. That's why I always want him in my group.\"",
 		"next": "food_nd_6",
-		"show_characters": ["useless2"]
+		"show_characters": ["Fern"]
 	},
 
 	"food_nd_6": {
@@ -980,7 +980,7 @@
 		"text": "*When it's his turn, he orders beef noodles. He doesn't really taste them.*",
 		"next": "seat_1",
 		"show_characters": ["Kay"],
-		"hide_characters": ["useless1", "useless2"]
+		"hide_characters": ["Bank", "Fern"]
 	},
 
 	"food_fr_1": {
@@ -1898,7 +1898,9 @@
 	"tue_wake_1": {
 		"speaker": "",
 		"text": "*Tuesday.*",
-		"next": "tue_wake_2"
+		"next": "tue_wake_2",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"]
 	},
 
 	"tue_wake_2": {
@@ -1954,6 +1956,7 @@
 		"speaker": "",
 		"text": "*6:32. His phone buzzes. Elysia.*",
 		"next": "tue_el_2",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "RefusedElysia", "next": "tue_elr_1"}
 	},
 
@@ -1999,7 +2002,8 @@
 	"tue_elr_1": {
 		"speaker": "Elysia",
 		"text": "goooood morning!! ☀️ did u eat breakfast",
-		"next": "tue_elr_2"
+		"next": "tue_elr_2",
+		"sfx": "Notification"
 	},
 
 	"tue_elr_2": {
@@ -2026,7 +2030,8 @@
 	"tue_elr_sorry_2": {
 		"speaker": "Elysia",
 		"text": "it's ok!!",
-		"next": "tue_elr_sorry_3"
+		"next": "tue_elr_sorry_3",
+		"sfx": "Notification"
 	},
 
 	"tue_elr_sorry_3": {
@@ -2062,7 +2067,8 @@
 	"tue_elr_fine_1": {
 		"speaker": "Elysia",
 		"text": "EAT SOMETHING 😤",
-		"next": "tue_elr_fine_2"
+		"next": "tue_elr_fine_2",
+		"sfx": "Notification"
 	},
 
 	"tue_elr_fine_2": {
@@ -2080,25 +2086,34 @@
 	"tue_shower_1": {
 		"speaker": "",
 		"text": "*The shower is still cold. He washes fast.*",
-		"next": "tue_shower_2"
+		"next": "tue_shower_2",
+		"background": "Bathroom1",
+		"hide_characters": ["Kay"],
+		"sfx": "Shower"
 	},
 
 	"tue_shower_2": {
 		"speaker": "Kay",
 		"text": "It wakes me up better anyway.",
-		"next": "tue_shower_3"
+		"next": "tue_shower_3",
+		"sfx": "stop"
 	},
 
 	"tue_shower_3": {
 		"speaker": "",
 		"text": "*On the fridge there's a new sticky note under the old one: \"Sorry about the fridge!! Weekend, promise. - Mom\"*",
-		"next": "proj_1"
+		"next": "proj_1",
+		"background": "Kay's kitchen",
+		"show_characters": ["Kay"]
 	},
 
 	"proj_1": {
 		"speaker": "",
 		"text": "*Homeroom. The teacher writes COMMUNITY PROJECT on the board and underlines it twice.*",
-		"next": "proj_2"
+		"next": "proj_2",
+		"background": "Class",
+		"show_characters": ["Ulyn", "Bank", "Fern"],
+		"sfx": "Writing"
 	},
 
 	"proj_2": {
@@ -2283,6 +2298,8 @@
 		"speaker": "",
 		"text": "*Lunch.*",
 		"next": "tlunch_2",
+		"background": "Cafeteria",
+		"hide_characters": ["Bank", "Fern", "Ulyn"],
 		"secret": {"condition": "flag_true", "flag": "OpenedUp", "next": "tlunch_open_1"}
 	},
 
@@ -2290,6 +2307,7 @@
 		"speaker": "",
 		"text": "*Ulyn drops into the seat across from him.*",
 		"next": "tlunch_3",
+		"show_characters": ["Ulyn"],
 		"secret": {"condition": "flag_true", "flag": "UlynStayed", "next": "tlunch_stay_1"}
 	},
 
@@ -2410,13 +2428,18 @@
 	"kettle_1": {
 		"speaker": "",
 		"text": "*That night, Kay boils the kettle and carries it to the bathroom, mixing it with cold water in a bucket so he can wash his hair without his scalp going numb.*",
-		"next": "kettle_2"
+		"next": "kettle_2",
+		"background": "Bathroom2",
+		"hide_characters": ["Ulyn"],
+		"sfx": "Shower"
 	},
 
 	"kettle_2": {
 		"speaker": "",
 		"text": "*Mom gets home in the middle of it. She stops in the bathroom doorway, still in her hospital shoes.*",
-		"next": "kettle_3"
+		"next": "kettle_3",
+		"show_characters": ["mom"],
+		"sfx": "stop"
 	},
 
 	"kettle_3": {
@@ -2486,6 +2509,9 @@
 		"speaker": "",
 		"text": "*In bed, Kay stares at the ceiling.*",
 		"next": "tnight_2",
+		"background": "Kay's room2",
+		"hide_characters": ["mom"],
+		"amb": "Bedroom",
 		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "tnight_split_1"}
 	},
 
@@ -2516,32 +2542,39 @@
 	"garden_1": {
 		"speaker": "",
 		"text": "*Saturday. The garden behind the science building: four raised beds, weeds up to the knee, a hose with three holes in it, and a tap that screams when you turn it.*",
-		"next": "garden_2"
+		"next": "garden_2",
+		"background": "Garden",
+		"sfx": "Walkingstep",
+		"amb": "stop"
 	},
 
 	"garden_2": {
 		"speaker": "",
 		"text": "*The group agreed on 8 a.m. Kay gets there at 7:40.*",
-		"next": "garden_3"
+		"next": "garden_3",
+		"sfx": "stop"
 	},
 
 	"garden_3": {
 		"speaker": "",
 		"text": "*Ulyn shows up at 8:20 with a bag of bread and no apology. Fern arrives at nine and takes before-photos for twenty minutes.*",
-		"next": "garden_4"
+		"next": "garden_4",
+		"show_characters": ["Ulyn", "Fern"]
 	},
 
 	"garden_4": {
 		"speaker": "Bank",
 		"text": "my mom needs me today 😭🙏",
 		"next": "garden_5",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "garden_split_1"}
 	},
 
 	"garden_5": {
 		"speaker": "",
 		"text": "*Then Fern leaves for tutoring.*",
-		"next": "garden_noi_1"
+		"next": "garden_noi_1",
+		"hide_characters": ["Fern"]
 	},
 
 	"garden_split_1": {
@@ -2553,7 +2586,8 @@
 	"garden_split_2": {
 		"speaker": "",
 		"text": "*And Bank turns up at ten anyway, red-faced, holding four cold drinks like an apology.*",
-		"next": "garden_split_3"
+		"next": "garden_split_3",
+		"show_characters": ["Bank"]
 	},
 
 	"garden_split_3": {
@@ -2565,7 +2599,8 @@
 	"garden_noi_1": {
 		"speaker": "",
 		"text": "*At noon, Ms. Noi, the home economics teacher, comes by. She agreed to be their advisor. She brings a paper bag of seeds and a trowel she says is older than all of them.*",
-		"next": "garden_noi_2"
+		"next": "garden_noi_2",
+		"show_characters": ["MsNoi"]
 	},
 
 	"garden_noi_2": {
@@ -2607,19 +2642,24 @@
 	"garden_noi_8": {
 		"speaker": "",
 		"text": "*Kay writes it down in his notebook, word for word.*",
-		"next": "weeks_1"
+		"next": "weeks_1",
+		"sfx": "Writing"
 	},
 
 	"weeks_1": {
 		"speaker": "",
 		"text": "*For two weeks, Kay comes to the garden every morning before homeroom and every afternoon after the last bell.*",
-		"next": "weeks_2"
+		"next": "weeks_2",
+		"background": "Garden",
+		"hide_characters": ["Bank", "Fern", "MsNoi", "Ulyn"],
+		"sfx": "Waterspraying"
 	},
 
 	"weeks_2": {
 		"speaker": "",
 		"text": "*He pushes his finger into the soil the way she showed him. It's always a little damp.*",
-		"next": "weeks_3"
+		"next": "weeks_3",
+		"sfx": "stop"
 	},
 
 	"weeks_3": {
@@ -2649,7 +2689,9 @@
 	"bug_1": {
 		"speaker": "",
 		"text": "*One afternoon, Elysia comes to the garden alone. Her friends went to the mall.*",
-		"next": "bug_2"
+		"next": "bug_2",
+		"background": "Garden",
+		"show_characters": ["Elysia"]
 	},
 
 	"bug_2": {
@@ -2685,7 +2727,8 @@
 	"bug_7": {
 		"speaker": "",
 		"text": "*She stops in the middle of the sentence and glances over her shoulder at the path. Then she laughs, too bright.*",
-		"next": "bug_8"
+		"next": "bug_8",
+		"sfx": "Inhale"
 	},
 
 	"bug_8": {
@@ -2755,6 +2798,7 @@
 		"speaker": "",
 		"text": "*They reach the gate.*",
 		"next": "mint_1",
+		"background": "Gate",
 		"secret": {"condition": "weight_above", "value": 60, "next": "bug_tired_1"}
 	},
 
@@ -2791,7 +2835,10 @@
 	"mint_1": {
 		"speaker": "",
 		"text": "*The next day, a girl stops Kay outside the library. Short. Blunt bob. Doesn't smile.*",
-		"next": "mint_2"
+		"next": "mint_2",
+		"background": "School hallway",
+		"show_characters": ["Mint"],
+		"hide_characters": ["Elysia"]
 	},
 
 	"mint_2": {
@@ -2857,7 +2904,10 @@
 	"wrecked_1": {
 		"speaker": "",
 		"text": "*End of the third week. Ulyn falls asleep in history with his forehead on the student council folder.*",
-		"next": "wrecked_2"
+		"next": "wrecked_2",
+		"background": "Class",
+		"show_characters": ["Ulyn"],
+		"hide_characters": ["Mint"]
 	},
 
 	"wrecked_2": {
@@ -2881,7 +2931,8 @@
 	"wrecked_5": {
 		"speaker": "",
 		"text": "*After the bell, Kay notices Ulyn's eyes are red at the edges. His phone buzzes on the desk: Mom.*",
-		"next": "wrecked_6"
+		"next": "wrecked_6",
+		"sfx": "Notification"
 	},
 
 	"wrecked_6": {
@@ -2962,7 +3013,9 @@
 	"sprout_1": {
 		"speaker": "",
 		"text": "*On the last Friday of the third week, the first seedlings come up. Water spinach first, little green hooks pushing out of the soil.*",
-		"next": "sprout_2"
+		"next": "sprout_2",
+		"background": "Garden",
+		"hide_characters": ["Ulyn"]
 	},
 
 	"sprout_2": {
@@ -2974,7 +3027,8 @@
 	"sprout_3": {
 		"speaker": "Fern",
 		"text": "❤️",
-		"next": "sprout_4"
+		"next": "sprout_4",
+		"sfx": "Notification"
 	},
 
 	"sprout_4": {
@@ -2999,13 +3053,17 @@
 	"sprout_bug_2": {
 		"speaker": "Elysia",
 		"text": "ANY BUGS???",
-		"next": "midterm_1"
+		"next": "midterm_1",
+		"sfx": "Notification"
 	},
 
 	"midterm_1": {
 		"speaker": "",
 		"text": "*Week five. Midterms.*",
-		"next": "midterm_2"
+		"next": "midterm_2",
+		"background": "Kay's room2",
+		"sfx": "Pageturning",
+		"amb": "Bedroom"
 	},
 
 	"midterm_2": {
@@ -3018,6 +3076,7 @@
 		"speaker": "",
 		"text": "*Tuesday night, his phone buzzes. Bank.*",
 		"next": "midterm_4",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "SplitWork", "next": "midterm_draft_1"}
 	},
 
@@ -3057,7 +3116,8 @@
 	"midterm_do_2": {
 		"speaker": "",
 		"text": "*Kay writes three pages between 11 p.m. and 1:40 a.m., and studies for chemistry in the gaps.*",
-		"next": "score_1"
+		"next": "score_1",
+		"sfx": "Writing"
 	},
 
 	"midterm_teach_1": {
@@ -3105,7 +3165,10 @@
 	"score_1": {
 		"speaker": "",
 		"text": "*Thursday. The history teacher hands back the midterms. Kay is top of the class again.*",
-		"next": "score_2"
+		"next": "score_2",
+		"background": "Class",
+		"sfx": "Pageturning",
+		"amb": "stop"
 	},
 
 	"score_2": {
@@ -3117,7 +3180,8 @@
 	"score_3": {
 		"speaker": "Mom",
 		"text": "!!!!! proud of you",
-		"next": "score_4"
+		"next": "score_4",
+		"sfx": "Notification"
 	},
 
 	"score_4": {
@@ -3135,7 +3199,8 @@
 	"yellow_1": {
 		"speaker": "",
 		"text": "*That afternoon, the chili seedlings are yellow.*",
-		"next": "yellow_2"
+		"next": "yellow_2",
+		"background": "Garden"
 	},
 
 	"yellow_2": {
@@ -3153,13 +3218,16 @@
 	"yellow_4": {
 		"speaker": "",
 		"text": "*He reaches for the hose.*",
-		"next": "yellow_5"
+		"next": "yellow_5",
+		"sfx": "Waterspraying"
 	},
 
 	"yellow_5": {
 		"speaker": "Ms. Noi",
 		"text": "\"Kay.\"",
-		"next": "yellow_6"
+		"next": "yellow_6",
+		"show_characters": ["MsNoi"],
+		"sfx": "stop"
 	},
 
 	"yellow_6": {
@@ -3183,7 +3251,8 @@
 	"yellow_9": {
 		"speaker": "",
 		"text": "*She sighs. It isn't an angry sigh.*",
-		"next": "yellow_10"
+		"next": "yellow_10",
+		"sfx": "Sigh"
 	},
 
 	"yellow_10": {
@@ -3226,6 +3295,10 @@
 		"speaker": "",
 		"text": "*That night, he can't sleep.*",
 		"next": "mnight_2",
+		"background": "Kay's room2",
+		"hide_characters": ["MsNoi"],
+		"sfx": "Bednoises",
+		"amb": "Bedroom",
 		"secret": {"condition": "weight_above", "value": 70, "next": "mnight_heavy_1"}
 	},
 
@@ -3278,6 +3351,9 @@
 	"mnight_phone": {
 		"speaker": "",
 		"text": "*His phone is on the pillow. Ulyn's name is right there at the top of his chats.*",
+		"background": "Phone at night",
+		"hide_characters": ["Kay"],
+		"amb": "stop",
 		"choices": [
 			{"text": "Text Ulyn: \"you up?\"", "type": "helpful", "weight_change": -10, "next": "mnight_text_1", "set_flag": "TextedNight"},
 			{"text": "Put the phone down", "type": "neutral", "weight_change": 10, "next": "mnight_down_1"}
@@ -3287,7 +3363,8 @@
 	"mnight_text_1": {
 		"speaker": "",
 		"text": "*He sends it before he can delete it.*",
-		"next": "mnight_text_2"
+		"next": "mnight_text_2",
+		"sfx": "Notification"
 	},
 
 	"mnight_text_2": {
@@ -3329,7 +3406,9 @@
 	"mnight_down_1": {
 		"speaker": "",
 		"text": "*He puts the phone face down on the floor, out of reach.*",
-		"next": "mnight_down_2"
+		"next": "mnight_down_2",
+		"background": "Kay's room2",
+		"show_characters": ["Kay"]
 	},
 
 	"mnight_down_2": {
@@ -3341,13 +3420,17 @@
 	"absent_1": {
 		"speaker": "",
 		"text": "*Beep. Beep. Beep.*",
-		"next": "absent_2"
+		"next": "absent_2",
+		"background": "Kay's room1",
+		"show_characters": ["Kay"],
+		"sfx": "Alarm"
 	},
 
 	"absent_2": {
 		"speaker": "",
 		"text": "*Kay doesn't slap the alarm off. He lets it ring until it gives up on its own.*",
-		"next": "absent_3"
+		"next": "absent_3",
+		"sfx": "stop"
 	},
 
 	"absent_3": {
@@ -3437,13 +3520,15 @@
 	"absent_mom_6": {
 		"speaker": "Ulyn",
 		"text": "where are u. ur never late",
-		"next": "absent_msgs_1"
+		"next": "absent_msgs_1",
+		"sfx": "Notification"
 	},
 
 	"absent_late_1": {
 		"speaker": "Ulyn",
 		"text": "sorry fell asleep at like 11!! u ok??",
-		"next": "absent_late_2"
+		"next": "absent_late_2",
+		"sfx": "Notification"
 	},
 
 	"absent_late_2": {
@@ -3461,7 +3546,8 @@
 	"absent_msgs_1": {
 		"speaker": "Elysia",
 		"text": "K? didn't see u at the gate 👀",
-		"next": "absent_msgs_2"
+		"next": "absent_msgs_2",
+		"sfx": "Notification"
 	},
 
 	"absent_msgs_2": {
@@ -3473,7 +3559,8 @@
 	"absent_msgs_3": {
 		"speaker": "Bank",
 		"text": "kay where's the garden key?? ms noi says we have to check on it today lol",
-		"next": "absent_msgs_4"
+		"next": "absent_msgs_4",
+		"sfx": "Notification"
 	},
 
 	"absent_msgs_4": {
@@ -3491,7 +3578,8 @@
 	"absent_msgs_6": {
 		"speaker": "Fern",
 		"text": "feel better!! 🌷",
-		"next": "absent_msgs_7"
+		"next": "absent_msgs_7",
+		"sfx": "Notification"
 	},
 
 	"absent_msgs_7": {
@@ -3543,7 +3631,8 @@
 	"absent_text_2": {
 		"speaker": "Elysia",
 		"text": "ok. thank u for telling me.",
-		"next": "absent_text_3"
+		"next": "absent_text_3",
+		"sfx": "Notification"
 	},
 
 	"absent_text_3": {
@@ -3621,7 +3710,8 @@
 	"knock_1": {
 		"speaker": "",
 		"text": "*Kay sleeps through the afternoon without meaning to.*",
-		"next": "knock_2"
+		"next": "knock_2",
+		"background": "Kay's room1"
 	},
 
 	"knock_2": {
@@ -3633,13 +3723,17 @@
 	"step_1": {
 		"speaker": "",
 		"text": "*Ulyn is still in his uniform, holding a plastic bag: two cartons of pink milk, crispy pork from the stall by school, and the cheap coconut cookies Kay used to eat every day in tenth grade.*",
-		"next": "step_2"
+		"next": "step_2",
+		"background": "Kay's frontyard",
+		"show_characters": ["Ulyn"],
+		"sfx": "Walkingstep"
 	},
 
 	"step_2": {
 		"speaker": "Ulyn",
 		"text": "\"You look terrible.\"",
-		"next": "step_3"
+		"next": "step_3",
+		"sfx": "stop"
 	},
 
 	"step_3": {
@@ -4025,7 +4119,8 @@
 	"step_honest_16": {
 		"speaker": "",
 		"text": "*Ulyn pretends not to look and pushes the second carton of pink milk into his hand.*",
-		"next": "step_honest_17"
+		"next": "step_honest_17",
+		"sfx": "Softpat"
 	},
 
 	"step_honest_17": {
@@ -4067,7 +4162,10 @@
 	"mom_1": {
 		"speaker": "",
 		"text": "*Mom gets home at eight. She doesn't take her shoes off.*",
-		"next": "mom_2"
+		"next": "mom_2",
+		"background": "Kay's kitchen night",
+		"show_characters": ["mom"],
+		"hide_characters": ["Ulyn"]
 	},
 
 	"mom_2": {
@@ -4192,7 +4290,8 @@
 	"mom_told_5": {
 		"speaker": "",
 		"text": "*She reaches across the table and takes his hand.*",
-		"next": "mom_told_6"
+		"next": "mom_told_6",
+		"sfx": "Softpat"
 	},
 
 	"mom_told_6": {
@@ -4296,20 +4395,26 @@
 	"sat_1": {
 		"speaker": "Elysia",
 		"text": "tomorrow. 10am. i'm picking u up. no is not an option 😤",
-		"next": "sat_2"
+		"next": "sat_2",
+		"background": "Phone at night",
+		"hide_characters": ["Kay", "mom"],
+		"sfx": "Notification"
 	},
 
 	"sat_2": {
 		"speaker": "",
 		"text": "*Saturday.*",
 		"next": "sat_3",
+		"background": "BlackScreen",
 		"secret": {"condition": "flag_true", "flag": "ElysiaBugs", "next": "sat_museum_1"}
 	},
 
 	"sat_3": {
 		"speaker": "",
 		"text": "*She takes him to the park by the canal and hands him a can of milk tea.*",
-		"next": "sat_4"
+		"next": "sat_4",
+		"background": "Canal park",
+		"show_characters": ["Kay", "Elysia"]
 	},
 
 	"sat_4": {
@@ -4321,7 +4426,9 @@
 	"sat_museum_1": {
 		"speaker": "",
 		"text": "*She takes him to the natural history museum across the river. It's free on Saturdays.*",
-		"next": "sat_museum_2"
+		"next": "sat_museum_2",
+		"background": "Museum",
+		"show_characters": ["Kay", "Elysia"]
 	},
 
 	"sat_museum_2": {
@@ -4468,7 +4575,8 @@
 	"sat_why_4": {
 		"speaker": "",
 		"text": "*She leans her head on his shoulder.*",
-		"next": "sat_why_5"
+		"next": "sat_why_5",
+		"sfx": "Softpat"
 	},
 
 	"sat_why_5": {
@@ -4532,6 +4640,8 @@
 		"speaker": "",
 		"text": "*Monday. Elysia is at the gate with her friends, same as always. She turns around like she felt him there, and waves.*",
 		"next": "mon_2",
+		"background": "Gate",
+		"show_characters": ["Mint"],
 		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "mon_walk_1"}
 	},
 
@@ -4551,13 +4661,15 @@
 	"mon_walk_1": {
 		"speaker": "",
 		"text": "*This time, Kay walks over.*",
-		"next": "mon_walk_2"
+		"next": "mon_walk_2",
+		"sfx": "Walkingstep"
 	},
 
 	"mon_walk_2": {
 		"speaker": "",
 		"text": "*Her friends go quiet and look at him. Then at her. Then at him again.*",
-		"next": "mon_walk_3"
+		"next": "mon_walk_3",
+		"sfx": "stop"
 	},
 
 	"mon_walk_3": {
@@ -4581,7 +4693,9 @@
 	"guide_1": {
 		"speaker": "",
 		"text": "*Thursday. The guidance room is next to the home ec room. Someone has stuck paper flowers on the door, slightly crooked.*",
-		"next": "guide_2"
+		"next": "guide_2",
+		"background": "School hallway",
+		"hide_characters": ["Elysia", "Mint"]
 	},
 
 	"guide_2": {
@@ -4600,7 +4714,8 @@
 	"guide_mom_2": {
 		"speaker": "Mom",
 		"text": "thursday 🌱 proud of you whatever you decide",
-		"next": "guide_door_1"
+		"next": "guide_door_1",
+		"sfx": "Notification"
 	},
 
 	"guide_door_1": {
@@ -4613,7 +4728,8 @@
 	"guide_ulyn_1": {
 		"speaker": "",
 		"text": "*Ulyn walked him here, and is still standing at the end of the hallway.*",
-		"next": "guide_ulyn_2"
+		"next": "guide_ulyn_2",
+		"show_characters": ["Ulyn"]
 	},
 
 	"guide_ulyn_2": {
@@ -4634,13 +4750,18 @@
 	"guide_in_1": {
 		"speaker": "Ms. Noi",
 		"text": "\"Kay. Come in. Tea?\"",
-		"next": "guide_in_2"
+		"next": "guide_in_2",
+		"background": "Guidance room",
+		"show_characters": ["MsNoi"],
+		"hide_characters": ["Ulyn"],
+		"sfx": "Walkingstep"
 	},
 
 	"guide_in_2": {
 		"speaker": "Kay",
 		"text": "\"...Do I have to explain why I'm here?\"",
-		"next": "guide_in_3"
+		"next": "guide_in_3",
+		"sfx": "stop"
 	},
 
 	"guide_in_3": {
@@ -4743,6 +4864,8 @@
 		"speaker": "",
 		"text": "*He walks back to the cafeteria.*",
 		"next": "guide_away_2",
+		"background": "Cafeteria",
+		"hide_characters": ["Ulyn"],
 		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "guide_away_ulyn_1"}
 	},
 
@@ -4755,7 +4878,8 @@
 	"guide_away_ulyn_1": {
 		"speaker": "Ulyn",
 		"text": "\"That was fast.\"",
-		"next": "guide_away_ulyn_2"
+		"next": "guide_away_ulyn_2",
+		"show_characters": ["Ulyn"]
 	},
 
 	"guide_away_ulyn_2": {
@@ -4785,13 +4909,18 @@
 	"group_1": {
 		"speaker": "",
 		"text": "*Two weeks before the presentation, the group meets in the garden after school.*",
-		"next": "group_2"
+		"next": "group_2",
+		"background": "Garden",
+		"show_characters": ["Ulyn", "Bank", "Fern"],
+		"hide_characters": ["MsNoi"],
+		"sfx": "Waterspraying"
 	},
 
 	"group_2": {
 		"speaker": "",
 		"text": "*It looks like a garden now. The water spinach has gone wild. The marigolds are orange and loud around the edges.*",
-		"next": "group_3"
+		"next": "group_3",
+		"sfx": "stop"
 	},
 
 	"group_3": {
@@ -4868,7 +4997,9 @@
 	"group_handle_3": {
 		"speaker": "",
 		"text": "*On Sunday, Ulyn comes over and sits on the floor doing the budget without being asked.*",
-		"next": "group_handle_4"
+		"next": "group_handle_4",
+		"background": "Kay's room1",
+		"hide_characters": ["Bank", "Fern"]
 	},
 
 	"group_handle_4": {
@@ -4935,25 +5066,32 @@
 	"group_split2_3": {
 		"speaker": "",
 		"text": "*That night, for the first time all semester, there are four different cursors in the shared document at once.*",
-		"next": "water_1"
+		"next": "water_1",
+		"background": "Kay's room2",
+		"hide_characters": ["Bank", "Fern", "Ulyn"],
+		"sfx": "Writing"
 	},
 
 	"water_1": {
 		"speaker": "",
 		"text": "*Before he leaves, Kay pushes his finger into the soil of the basil bed. Still damp from yesterday.*",
-		"next": "water_2"
+		"next": "water_2",
+		"background": "Garden",
+		"hide_characters": ["Ulyn"]
 	},
 
 	"water_2": {
 		"speaker": "",
 		"text": "*His hand goes to the tap on its own.*",
-		"next": "water_3"
+		"next": "water_3",
+		"sfx": "Waterspraying"
 	},
 
 	"water_3": {
 		"speaker": "",
 		"text": "*He stops it.*",
-		"next": "water_4"
+		"next": "water_4",
+		"sfx": "stop"
 	},
 
 	"water_4": {
@@ -4977,7 +5115,9 @@
 	"pres2_1": {
 		"speaker": "",
 		"text": "*Presentation day. First period. History.*",
-		"next": "pres2_2"
+		"next": "pres2_2",
+		"background": "Class",
+		"show_characters": ["Ulyn", "Bank", "Fern"]
 	},
 
 	"pres2_2": {
@@ -5001,7 +5141,8 @@
 	"pres2_5": {
 		"speaker": "",
 		"text": "*People laugh. Fern clicks to the next slide: an old photo of students in rain boots, standing in the same four beds.*",
-		"next": "pres2_6"
+		"next": "pres2_6",
+		"sfx": "Pageturning"
 	},
 
 	"pres2_6": {
@@ -5151,7 +5292,9 @@
 	"noi_end_1": {
 		"speaker": "",
 		"text": "*That afternoon, Ms. Noi comes out to the garden with their grades and a piece of news.*",
-		"next": "noi_end_2"
+		"next": "noi_end_2",
+		"background": "Garden",
+		"show_characters": ["MsNoi"]
 	},
 
 	"noi_end_2": {
@@ -5188,6 +5331,9 @@
 		"speaker": "",
 		"text": "*Beep. Beep. Beep.*",
 		"next": "last_2",
+		"background": "Kay's room1",
+		"hide_characters": ["Bank", "Fern", "MsNoi", "Ulyn"],
+		"sfx": "Alarm",
 		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
 	},
 
@@ -5195,13 +5341,15 @@
 		"speaker": "",
 		"text": "*The last day of the semester.*",
 		"next": "endC_1",
+		"sfx": "stop",
 		"secret": {"condition": "weight_below", "value": 65, "next": "endB_1"}
 	},
 
 	"endA_1": {
 		"speaker": "",
 		"text": "*The last day of the semester.*",
-		"next": "endA_2"
+		"next": "endA_2",
+		"sfx": "stop"
 	},
 
 	"endA_2": {
@@ -5214,6 +5362,9 @@
 		"speaker": "",
 		"text": "*He turns on the shower.*",
 		"next": "endA_4",
+		"background": "Bathroom1",
+		"hide_characters": ["Kay"],
+		"sfx": "Shower",
 		"secret": {"condition": "flag_true", "flag": "ToldMomHeater", "next": "endA_hot_1"}
 	},
 
@@ -5221,6 +5372,7 @@
 		"speaker": "",
 		"text": "*The pipes knock twice.*",
 		"next": "endA_5",
+		"sfx": "stop",
 		"secret": {"condition": "flag_true", "flag": "ToldMom", "next": "endA_hot_1"}
 	},
 
@@ -5233,13 +5385,16 @@
 	"endA_hot_1": {
 		"speaker": "",
 		"text": "*Hot water. He stands under it an extra minute, just because he can.*",
-		"next": "endA_fridge_1"
+		"next": "endA_fridge_1",
+		"sfx": "stop"
 	},
 
 	"endA_fridge_1": {
 		"speaker": "",
 		"text": "*The fridge is full. Eggs, milk, green things in a bag.*",
-		"next": "endA_fridge_2"
+		"next": "endA_fridge_2",
+		"background": "Kay's kitchen",
+		"show_characters": ["Kay"]
 	},
 
 	"endA_fridge_2": {
@@ -5258,7 +5413,9 @@
 	"endA_gate_1": {
 		"speaker": "",
 		"text": "*At the gate, Elysia is with her friends. She turns around like she felt him there.*",
-		"next": "endA_gate_2"
+		"next": "endA_gate_2",
+		"background": "Gate",
+		"show_characters": ["Elysia"]
 	},
 
 	"endA_gate_2": {
@@ -5295,7 +5452,9 @@
 	"endA_ulyn_1": {
 		"speaker": "",
 		"text": "*A hand lands on his back.*",
-		"next": "endA_ulyn_2"
+		"next": "endA_ulyn_2",
+		"show_characters": ["Ulyn"],
+		"sfx": "Softpat"
 	},
 
 	"endA_ulyn_2": {
@@ -5363,19 +5522,26 @@
 		"speaker": "",
 		"text": "*They walk to class together.*",
 		"next": "endA_garden_1",
+		"background": "Class",
+		"hide_characters": ["Elysia"],
 		"secret": {"condition": "flag_true", "flag": "Counselor", "next": "endA_thursdays_1"}
 	},
 
 	"endA_thursdays_1": {
 		"speaker": "",
 		"text": "*On Thursdays he still goes to the room with the paper flowers. Some weeks he talks a lot. Some weeks he just drinks the tea. Ms. Noi says both count.*",
-		"next": "endA_garden_1"
+		"next": "endA_garden_1",
+		"background": "Guidance room",
+		"show_characters": ["MsNoi"],
+		"hide_characters": ["Ulyn"]
 	},
 
 	"endA_garden_1": {
 		"speaker": "",
 		"text": "*After the last bell, Kay goes to the garden one more time before the break. He pushes his finger into the soil.*",
-		"next": "endA_garden_2"
+		"next": "endA_garden_2",
+		"background": "Garden",
+		"hide_characters": ["MsNoi", "Ulyn"]
 	},
 
 	"endA_garden_2": {
@@ -5387,19 +5553,23 @@
 	"endA_garden_3": {
 		"speaker": "",
 		"text": "*He waters it. Not twice. Not three times. Just enough.*",
-		"next": "endA_garden_4"
+		"next": "endA_garden_4",
+		"sfx": "Waterspraying"
 	},
 
 	"endA_garden_4": {
 		"speaker": "",
 		"text": "*Then he turns off the screaming tap, and leaves it alone.*",
-		"next": "endA_garden_5"
+		"next": "endA_garden_5",
+		"sfx": "stop"
 	},
 
 	"endA_garden_5": {
 		"speaker": "",
 		"text": "*That night, he lies in bed and looks at the ceiling.*",
-		"next": "endA_garden_6"
+		"next": "endA_garden_6",
+		"background": "Kay's room2",
+		"amb": "Bedroom"
 	},
 
 	"endA_garden_6": {
@@ -5464,13 +5634,17 @@
 	"endB_3": {
 		"speaker": "",
 		"text": "*At the gate, Elysia waves. He waves back and smiles. Not the practiced smile. Not entirely.*",
-		"next": "endB_4"
+		"next": "endB_4",
+		"background": "Gate",
+		"show_characters": ["Elysia"]
 	},
 
 	"endB_4": {
 		"speaker": "",
 		"text": "*Ulyn catches up with him at the stairs.*",
-		"next": "endB_5"
+		"next": "endB_5",
+		"show_characters": ["Ulyn"],
+		"hide_characters": ["Elysia"]
 	},
 
 	"endB_5": {
@@ -5518,19 +5692,25 @@
 	"endB_12": {
 		"speaker": "",
 		"text": "*After school, Kay waters the garden one last time before the break. He's halfway through a second pass before he catches himself, and turns off the tap.*",
-		"next": "endB_13"
+		"next": "endB_13",
+		"background": "Garden",
+		"hide_characters": ["Ulyn"],
+		"sfx": "Waterspraying"
 	},
 
 	"endB_13": {
 		"speaker": "Kay",
 		"text": "Better than before.",
-		"next": "endB_14"
+		"next": "endB_14",
+		"sfx": "stop"
 	},
 
 	"endB_14": {
 		"speaker": "",
 		"text": "*That night, he lies in bed.*",
-		"next": "endB_15"
+		"next": "endB_15",
+		"background": "Kay's room2",
+		"amb": "Bedroom"
 	},
 
 	"endB_15": {
@@ -5554,7 +5734,8 @@
 	"endB_18": {
 		"speaker": "",
 		"text": "*His phone buzzes. Ulyn.*",
-		"next": "endB_19"
+		"next": "endB_19",
+		"sfx": "Notification"
 	},
 
 	"endB_19": {
@@ -5584,7 +5765,8 @@
 	"endB_23": {
 		"speaker": "Ulyn",
 		"text": "ok. i'll bring pork",
-		"next": "endB_24"
+		"next": "endB_24",
+		"sfx": "Notification"
 	},
 
 	"endB_24": {
@@ -5607,7 +5789,9 @@
 	"endC_3": {
 		"speaker": "",
 		"text": "*At school, everything goes well. Group 3 gets the top grade. The teacher says \"as always.\" Bank and Fern hug him at the same time.*",
-		"next": "endC_4"
+		"next": "endC_4",
+		"background": "Class",
+		"show_characters": ["Bank", "Fern"]
 	},
 
 	"endC_4": {
@@ -5631,7 +5815,8 @@
 	"endC_7": {
 		"speaker": "Mom",
 		"text": "!!!!! proud of you",
-		"next": "endC_8"
+		"next": "endC_8",
+		"sfx": "Notification"
 	},
 
 	"endC_8": {
@@ -5643,13 +5828,17 @@
 	"endC_9": {
 		"speaker": "",
 		"text": "*After the last bell, he goes to the garden alone and waters every bed. Then again.*",
-		"next": "endC_10"
+		"next": "endC_10",
+		"background": "Garden",
+		"hide_characters": ["Bank", "Fern"],
+		"sfx": "Waterspraying"
 	},
 
 	"endC_10": {
 		"speaker": "",
 		"text": "*The soil goes dark and shiny. Water pools around the stems of the basil. He keeps the hose on anyway.*",
-		"next": "endC_11"
+		"next": "endC_11",
+		"sfx": "stop"
 	},
 
 	"endC_11": {
@@ -5662,7 +5851,9 @@
 	"endC_12": {
 		"speaker": "",
 		"text": "*That night, Kay lies in bed and looks at the ceiling.*",
-		"next": "endC_13"
+		"next": "endC_13",
+		"background": "Kay's room2",
+		"amb": "Bedroom"
 	},
 
 	"endC_13": {
@@ -5683,6 +5874,7 @@
 		"speaker": "",
 		"text": "*His phone buzzes.*",
 		"next": "endC_msg_1",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "TalkedUlyn", "next": "endC_told_1"}
 	},
 
@@ -5701,7 +5893,10 @@
 	"endC_msg_2": {
 		"speaker": "",
 		"text": "*Kay types \"yeah all good!\" His thumb hovers over send.*",
-		"next": "endC_msg_3"
+		"next": "endC_msg_3",
+		"background": "Phone at night",
+		"hide_characters": ["Kay"],
+		"amb": "stop"
 	},
 
 	"endC_msg_3": {
