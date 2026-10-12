@@ -2,3 +2,6 @@
 .godot/
 /android/
 *.tmp
+
+# TTFUI editor (its own repo: github.com/candydaisy/TTFUI)
+.TTFUI/
