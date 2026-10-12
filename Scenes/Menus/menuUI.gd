@@ -6,6 +6,7 @@ extends Control
 @onready var gallery: Control = $Gallery
 @onready var settings: Control = $Settings
 @onready var blink: Control = $Blink
+@onready var setting_menu: SettingMenu = $Settings/Setting
 
 var _all_panels: Array[Control]
 
@@ -13,6 +14,7 @@ func _ready() -> void:
 	_all_panels = [main, selections, credits, gallery, settings]
 	_show_panel(main)
 	blink.modulate.a = 1.0
+	setting_menu.closed.connect(_on_back_pressed) # Return brings the title menu back
 
 func _navigate_to(panel: Control) -> void:
 	blink.blink()
@@ -38,6 +40,7 @@ func _on_gallery_pressed() -> void:
 	_navigate_to(gallery)
 
 func _on_settings_pressed() -> void:
+	setting_menu.open()
 	_navigate_to(settings)
 
 func _on_back_pressed() -> void:

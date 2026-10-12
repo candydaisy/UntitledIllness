@@ -47,10 +47,11 @@ A node with no `next` and no `choices` ends the story.
 | `expression` | Plays a sprite animation on a character. | `{"Kay": "School"}` |
 | `sfx` | Plays a sound effect, or `"stop"` to fade it out. | `"Alarm"` |
 | `amb` | Starts a looping background sound, or `"stop"`. | `"Bedroom"` |
+| `voice` | Plays a voice line. It stops when the dialog moves to the next line. | `"kay_wake_3"` |
 | `choices` | Shows up to 3 choice buttons (see below). Use instead of `next`. | |
 | `secret` | Jumps to a different node if a condition is true (see below). | |
 
-Available sound names are listed in `Scripts/StoryEngine/story_audio.gd`. If you need a new one, ask whoever's handling code, or add it there yourself.
+Available sound and voice names are listed in `Scripts/StoryEngine/story_audio.gd`. If you need a new one, ask whoever's handling code, or add it there yourself.
 
 ## Choices
 

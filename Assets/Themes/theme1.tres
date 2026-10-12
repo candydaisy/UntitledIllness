@@ -31,4 +31,5 @@ default_font_size = 26
 Button/styles/hover = SubResource("StyleBoxFlat_tp3fm")
 Button/styles/normal = ExtResource("1_tp3fm")
 Button/styles/pressed = SubResource("StyleBoxFlat_mkl0g")
+ItemList/styles/panel = ExtResource("1_tp3fm")
 Panel/styles/panel = ExtResource("1_tp3fm")

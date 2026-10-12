@@ -1,9 +1,10 @@
 class_name StoryAudio
 extends RefCounted
 ## Sound effects and ambience shared by every character's story.
-## Add new sounds to SFX / AMB and use their names in a flow graph.
+## Add new sounds to SFX / AMB / VOICE and use their names in a flow graph.
 
 const SFX_VOLUME_DB := -10.0
+const VOICE_VOLUME_DB := 0.0
 const AMB_VOLUME_DB := -18.0
 const SILENT_DB     := -80.0
 const FADE_TIME     := 0.6
@@ -33,17 +34,24 @@ const AMB := {
 	#"school":  preload("")
 }
 
+## Voice lines. Put the files in Assets/audio/voice/ and give each a name here,
+## e.g. "kay_wake_3": preload("res://Assets/audio/voice/kay_wake_3.ogg"),
+const VOICE := {
+}
+
 var host : Node # creates the tweens
 var sfx_player : AudioStreamPlayer
 var amb_player : AudioStreamPlayer
+var voice_player : AudioStreamPlayer
 
 var _fades := {} # AudioStreamPlayer -> Tween
 
 
-func _init(host_node: Node, sfx: AudioStreamPlayer, amb: AudioStreamPlayer) -> void:
+func _init(host_node: Node, sfx: AudioStreamPlayer, amb: AudioStreamPlayer, voice: AudioStreamPlayer) -> void:
 	host = host_node
 	sfx_player = sfx
 	amb_player = amb
+	voice_player = voice
 
 
 func has_sfx(sfx_name: String) -> bool:
@@ -51,6 +59,9 @@ func has_sfx(sfx_name: String) -> bool:
 
 func has_amb(amb_name: String) -> bool:
 	return amb_name == "stop" or AMB.has(amb_name)
+
+func has_voice(voice_name: String) -> bool:
+	return VOICE.has(voice_name)
 
 
 ## Applies a node's "sfx" key: a sound name, or "stop" to fade it out.
@@ -68,6 +79,21 @@ func apply_sfx(entry: Dictionary) -> void:
 	sfx_player.stream    = SFX[sfx_name]
 	sfx_player.volume_db = SFX_VOLUME_DB
 	sfx_player.play()
+
+
+## Applies a node's "voice" key. A voice line belongs to its node, so the
+## previous one is cut off whenever the dialog moves to another line.
+func apply_voice(entry: Dictionary) -> void:
+	voice_player.stop()
+	if not entry.has("voice"):
+		return
+	var voice_name : String = entry["voice"]
+	if not VOICE.has(voice_name):
+		push_warning("Unknown voice: " + voice_name)
+		return
+	voice_player.stream    = VOICE[voice_name]
+	voice_player.volume_db = VOICE_VOLUME_DB
+	voice_player.play()
 
 
 ## Applies a node's "amb" key: crossfades to a new loop, or "stop".
@@ -90,6 +116,14 @@ func apply_amb(entry: Dictionary) -> void:
 		t.tween_property(amb_player, "volume_db", SILENT_DB, FADE_TIME)
 	t.tween_callback(_start_amb.bind(stream))
 	t.tween_property(amb_player, "volume_db", AMB_VOLUME_DB, FADE_TIME)
+
+
+## Name of the looping sound that's playing, or "" (for saving).
+func current_amb() -> String:
+	if not amb_player.playing:
+		return ""
+	var amb_name = AMB.find_key(amb_player.stream)
+	return amb_name if amb_name != null else ""
 
 
 func _start_amb(stream: AudioStream) -> void:

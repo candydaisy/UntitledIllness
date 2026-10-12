@@ -17,6 +17,7 @@ extends Node2D
 
 @onready var type_sound : AudioStreamPlayer = $Audio/typing
 @onready var sfx_player : AudioStreamPlayer = $Audio/sfx
+@onready var voice_player : AudioStreamPlayer = $Audio/voice
 @onready var amb_player : AudioStreamPlayer = $Audio/amb #looping
 @onready var characters_container : Node = $Characters
 @onready var bgs_container : Node = $Bgs
@@ -31,6 +32,8 @@ extends Node2D
 ]
 @onready var auto_button : Button = $Cenfix/Dialog/Buttons/Others/Auto
 @onready var log_button : Button = $Cenfix/Dialog/Buttons/Others/Log
+@onready var menu_button : Button = $Cenfix/Dialog/Buttons/Others/Setting
+@onready var setting_menu : SettingMenu = $Cenfix/Dialog/Setting
 
 
 const BASE_TYPING_SPEED := 30.0
@@ -86,7 +89,7 @@ func _ready() -> void:
 	weight     = EmotionalWeight.new(starting_weight, max_weight)
 	typewriter = Typewriter.new(text_label, type_sound)
 	stage      = StoryStage.new(self, bgs_container, characters_container)
-	audio      = StoryAudio.new(self, sfx_player, amb_player)
+	audio      = StoryAudio.new(self, sfx_player, amb_player, voice_player)
 	world_tint = CanvasModulate.new()
 	add_child(world_tint)
 
@@ -100,9 +103,17 @@ func _ready() -> void:
 	dialog.add_child(dialog_log)
 	_setup_button(auto_button, "Auto", _toggle_auto)
 	_setup_button(log_button, "Log", dialog_log.toggle)
+	_setup_button(menu_button, "Menu", setting_menu.open)
+	setting_menu.visible = false
 
 	if OS.is_debug_build():
 		_validate()
+
+	if not SaveGame.pending.is_empty():
+		var data := SaveGame.pending
+		SaveGame.pending = {}
+		_restore_save(data)
+		return
 
 	_apply_weight_effects(true)
 	current_node = start_node
@@ -116,6 +127,16 @@ func _process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if graph == null or event.is_echo():
+		return
+
+	if setting_menu.visible:
+		if event.is_action_pressed("ui_cancel"):
+			setting_menu.close()
+			get_viewport().set_input_as_handled()
+		return # the menu handles its own clicks
+	if event.is_action_pressed("ui_cancel") and not dialog_log.visible:
+		setting_menu.open()
+		get_viewport().set_input_as_handled()
 		return
 
 	if dialog_log.visible:
@@ -208,6 +229,7 @@ func process_node(node_name: String) -> void:
 	is_transitioning = false
 
 	audio.apply_sfx(entry)
+	audio.apply_voice(entry)
 	speaker_label.text = entry.get("speaker", "")
 	apply_emotion(entry.get("emotion", ""))
 	typewriter.start(entry.get("text", ""))
@@ -238,11 +260,42 @@ func _auto_advance() -> void:
 	var serial := _node_serial
 	var wait := auto_delay + text_label.get_parsed_text().length() * auto_delay_per_char
 	await get_tree().create_timer(wait).timeout
-	# Bail if the player moved on, turned Auto off, or is reading the log.
-	while dialog_log.visible and auto_mode and serial == _node_serial:
+	# Bail if the player moved on or turned Auto off; wait while the log or menu is open.
+	while (dialog_log.visible or setting_menu.visible) and auto_mode and serial == _node_serial:
 		await get_tree().process_frame
 	if auto_mode and serial == _node_serial and not is_transitioning:
 		_handle_advance()
+
+
+## Everything needed to come back to this exact line later (see SaveGame).
+func get_save_data() -> Dictionary:
+	return {
+		"scene": get_tree().current_scene.scene_file_path,
+		"character": flow_graph_path.get_base_dir().get_file(),
+		"node": current_node,
+		"weight": weight.value,
+		"flags": flags,
+		"stage": stage.snapshot(),
+		"amb": audio.current_amb(),
+		"log": dialog_log.get_lines(),
+	}
+
+func _restore_save(data: Dictionary) -> void:
+	weight.set_value(data.get("weight", starting_weight))
+	flags = data.get("flags", {})
+	_apply_weight_effects(true)
+	var lines : Array = data.get("log", [])
+	dialog_log.set_lines(lines.slice(0, -1)) # process_node adds the current line back
+	if data.get("amb", "") != "":
+		audio.apply_amb({"amb": data["amb"]})
+
+	current_node = data.get("node", start_node)
+	if not graph.has_entry(current_node): # story was edited since this save
+		push_warning("Save points to missing node '%s', starting over" % current_node)
+		current_node = start_node
+	is_transitioning = true
+	await stage.restore(data.get("stage", {"backgrounds": [], "characters": {}}))
+	process_node(current_node)
 
 
 func _show_choices() -> void:
@@ -340,6 +393,8 @@ func _validate() -> void:
 				push_warning("Node %s: %s has no animation '%s'" % [id, char_name, expressions[char_name]])
 		if entry.has("sfx") and not audio.has_sfx(entry["sfx"]):
 			push_warning("Node %s: unknown sfx '%s'" % [id, entry["sfx"]])
+		if entry.has("voice") and not audio.has_voice(entry["voice"]):
+			push_warning("Node %s: unknown voice '%s'" % [id, entry["voice"]])
 		if entry.has("amb") and not audio.has_amb(entry["amb"]):
 			push_warning("Node %s: unknown amb '%s'" % [id, entry["amb"]])
 		if entry.get("choices", []).size() > choice_buttons.size():

@@ -32,6 +32,7 @@ start_node = "start"
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 
 [node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_jk8no")]
+rotation = -0.0002826375
 
 [node name="Sideart" type="Control" parent="." unique_id=2005122816]
 layout_mode = 3
@@ -308,11 +309,16 @@ animation = &"new_animation"
 [node name="Audio" type="Node" parent="." unique_id=1886730261]
 
 [node name="amb" type="AudioStreamPlayer" parent="Audio" unique_id=1170231718]
+bus = &"Ambience"
 
 [node name="sfx" type="AudioStreamPlayer" parent="Audio" unique_id=436182128]
-bus = &"sfx"
+bus = &"Sfx"
+
+[node name="voice" type="AudioStreamPlayer" parent="Audio" unique_id=1588203117]
+bus = &"Voice"
 
 [node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
+bus = &"Sfx"
 stream = ExtResource("3_hvbsa")
 volume_db = -21.16
 pitch_scale = 0.4

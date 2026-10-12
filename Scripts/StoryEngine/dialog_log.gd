@@ -56,6 +56,14 @@ func remove_last(n := 1) -> void:
 	_refresh()
 
 
+func get_lines() -> Array:
+	return _lines.duplicate()
+
+func set_lines(lines: Array) -> void:
+	_lines = lines.duplicate()
+	_refresh()
+
+
 func toggle() -> void:
 	visible = not visible
 	if visible:

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://yefw6hyhe7ww" path="res://Scenes/Menus/selections.gd" id="3_fjcmt"]
 [ext_resource type="Script" uid="uid://d01fxd863inow" path="res://Scenes/Menus/blink.gd" id="3_ox7fa"]
 [ext_resource type="Texture2D" uid="uid://b3sdplwwkjlef" path="res://Assets/Photos/UI/placeholder.jpg" id="4_8rxpg"]
+[ext_resource type="PackedScene" uid="uid://xfvufrw0ho83" path="res://Scenes/Menus/Setting.tscn" id="5_v7bwh"]
 
 [node name="TitleMenu" type="Node2D" unique_id=1087269847]
 
@@ -50,9 +51,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -266.0
-offset_top = 127.0
+offset_top = 213.0
 offset_right = 266.0
-offset_bottom = 203.0
+offset_bottom = 289.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_b1p23")
@@ -67,9 +68,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -266.0
-offset_top = 216.0
+offset_top = 302.0
 offset_right = 266.0
-offset_bottom = 292.0
+offset_bottom = 378.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_b1p23")
@@ -78,19 +79,23 @@ text = "Gallery"
 
 [node name="Settings" type="Button" parent="UI/Main" unique_id=550508582]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -86.0
-offset_top = 10.0
-offset_right = -10.0
-offset_bottom = 86.0
-grow_horizontal = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -266.0
+offset_top = 126.0
+offset_right = 266.0
+offset_bottom = 201.71643
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_b1p23")
 theme_override_font_sizes/font_size = 28
-text = "◌"
+text = "Extra"
 
 [node name="Selections" type="Control" parent="UI" unique_id=1307879910]
+visible = false
 anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
@@ -525,7 +530,6 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="faint" type="Label" parent="UI/Selections/Panel/View/Char4" unique_id=1574752479]
-visible = false
 layout_mode = 0
 offset_left = 461.0
 offset_top = 508.0
@@ -645,15 +649,8 @@ anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
 
-[node name="Back" type="Button" parent="UI/Settings" unique_id=61416169]
-layout_mode = 0
-offset_left = 22.0
-offset_top = 22.0
-offset_right = 264.0
-offset_bottom = 98.0
-theme_override_fonts/font = ExtResource("2_b1p23")
-theme_override_font_sizes/font_size = 28
-text = "Back"
+[node name="Setting" parent="UI/Settings" unique_id=1800424444 instance=ExtResource("5_v7bwh")]
+layout_mode = 1
 
 [node name="Blink" type="Control" parent="UI" unique_id=541475166]
 visible = false
@@ -687,4 +684,3 @@ color = Color(0, 0, 0, 0.78431374)
 [connection signal="pressed" from="UI/Selections/Back" to="UI" method="_on_back_pressed"]
 [connection signal="pressed" from="UI/Credits/Back" to="UI" method="_on_back_pressed"]
 [connection signal="pressed" from="UI/Gallery/Back" to="UI" method="_on_back_pressed"]
-[connection signal="pressed" from="UI/Settings/Back" to="UI" method="_on_back_pressed"]
