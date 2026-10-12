@@ -215,7 +215,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 
 ### Ulyn (`Story/Ulyn/Ulyn_Story.md`)
 
-The canon choices are marked ★ in the story file. Ulyn's weight climbs to Critical by sports day. It turns at the front step, when he pushes past Kay's "it's fine" and then admits he's not okay either, and it keeps falling as he goes home. **Ending A: Home.**
+The canon choices are marked ★ in the story file. Ulyn's Busy maxes out by sports day, and his Unsaid keeps piling up. It turns when he walks out on the council to go to Kay, and at the front step, when he pushes past Kay's "it's fine" and then admits he's not okay either. After that his Unsaid keeps falling as he goes home. **Ending A: Home.**
 
 ### Elysia (`Story/Elysia/Elysia_Story.md`)
 

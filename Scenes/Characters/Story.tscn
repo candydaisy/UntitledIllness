@@ -37,6 +37,7 @@ animations = [{
 script = ExtResource("1_7yklv")
 start_node = "start"
 ui_theme = ExtResource("30_theme")
+notice_color = Color(0.35, 0.5, 1, 1)
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 

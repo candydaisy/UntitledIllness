@@ -12,7 +12,7 @@ Story/
 └── Elysia/flow_graph.json + Elysia_Story.md
 ```
 
-Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet. Ulyn doesn't have a story scene or a mode yet. His endings are currently tuned for Kay's weight system starting at 50.
+Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet.
 
 You don't need to touch any code to write or change dialogue. Edit the JSON, save, and run the game in Godot.
 
@@ -94,6 +94,34 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 | `weight_above` | `value` | weight is above the value (Kay) |
 | `weight_below` | `value` | weight is below the value (Kay) |
 | `mask_above`, `mask_below`, `energy_above`, `energy_below` | `value` | the same, for Elysia's meters |
+| `busy_above`, `busy_below`, `unsaid_above`, `unsaid_below` | `value` | the same, for Ulyn's meters |
+
+## Calls and noticing (any character)
+
+**Phone calls.** Add `"call": "Mom"` to a node with choices, and the choices show up as buttons on a ringing phone instead (e.g. Decline / Answer). A call with one choice makes the player press it themselves.
+
+```json
+"seven_1": {
+	"speaker": "",
+	"text": "*At 7 p.m. the phone rings again. Mom.*",
+	"call": "Mom",
+	"choices": [
+		{"text": "Decline", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "seven_decline_1"},
+		{"text": "Answer", "type": "open", "busy_change": -10, "unsaid_change": -10, "next": "seven_answer_1", "set_flag": "AnsweredMom"}
+	]
+}
+```
+
+**Noticing.** Write `{shown text|FlagName}` inside a line. The text shows up as a link in the character's color; clicking it sets `FlagName`. Give a choice `"requires": "FlagName"` and it only appears if the player noticed it.
+
+```json
+"text": "*Kay's face doesn't move, but {one thumb presses into the other palm, hard|NoticedKayThumb}.*"
+```
+```json
+{"text": "\"You were digging your thumb into your hand up there.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "pres_thumb_1", "requires": "NoticedKayThumb"}
+```
+
+`requires` works with any flag, including ones set by choices.
 
 ## Each character plays differently
 
@@ -103,6 +131,7 @@ Every story scene uses the same StoryPlayer, plus a **Mode** (set on the scene's
 |---|---|---|
 | `Scenes/Characters/Story.tscn` | KayMode (the default when Mode is empty) | `weight` |
 | `Scenes/Characters/Elysia.tscn` | ElysiaMode | `mask`, `energy` (both hidden) |
+| `Scenes/Characters/Ulyn.tscn` | UlynMode | `busy`, `unsaid` (both hidden) |
 
 **Kay** uses everything above: `weight_change` on choices, the screen greys out as weight rises, and `helpful` choices lock at CRITICAL.
 
@@ -117,6 +146,18 @@ Every story scene uses the same StoryPlayer, plus a **Mode** (set on the scene's
 | `real_text` | node | What she really wants to say. While Mask is 60+, it's typed, deleted, and replaced by `text`. Below 60 she just says it. | `"\"I'm just tired, Mom.\""` |
 
 Her `honest` choices lock when Energy is below 20 or Mask is above 85.
+
+**Ulyn** stays busy so he never has to sit still:
+
+| Key | Where | What it does | Example |
+|---|---|---|---|
+| `busy_change` | choice | How much the choice fills (+) or clears (−) his life. | `15` |
+| `unsaid_change` | choice | What he leaves unsaid (+) or finally says (−). Unsaid decides his ending. | `-10` |
+| `type: "open"` | choice | Honest *about himself*. Locks while Busy is above 80. (`honest` about others and `helpful` never lock.) | |
+| `cut` + `cut_after` | node | At Busy 60+, the line is typed up to `cut_after`, breaks off with "—", and becomes `cut`. | `"cut_after": "She knows it's my favorite.", "cut": "Anyway. Council at eight."` |
+| `quiet` | node | Types slowly and can't be skipped or auto-advanced. While he's busy, other lines type faster. | `true` |
+
+His calls ring for 6 seconds; letting one ring out picks the `neutral` choice (decline).
 
 Secrets can test any meter the mode has: `weight_above`, `mask_below`, `energy_above`, and so on.
 

@@ -8,8 +8,8 @@ extends Resource
 
 ## Keys every story can use, whatever the mode.
 const BASE_NODE_KEYS := ["speaker", "text", "emotion", "next", "choices", "secret",
-	"background", "show_characters", "hide_characters", "expression", "sfx", "amb", "voice"]
-const BASE_CHOICE_KEYS := ["text", "type", "next", "set_flag"]
+	"background", "show_characters", "hide_characters", "expression", "sfx", "amb", "voice", "call"]
+const BASE_CHOICE_KEYS := ["text", "type", "next", "set_flag", "requires"]
 
 var player : StoryPlayer
 
@@ -60,9 +60,29 @@ func timeout_choice(choices: Array) -> Dictionary:
 
 
 ## What gets typed for this node: {"text": ...}, plus "unsaid" for a line
-## that's typed, deleted, and replaced by "text".
+## that's typed, deleted, and replaced by "text". Add "cut": true to have
+## "unsaid" broken off and replaced at once instead of deleted.
 func line_for(entry: Dictionary) -> Dictionary:
 	return {"text": entry.get("text", "")}
+
+
+## false = clicking can't skip this line's typing; it plays out in full.
+func can_skip(_entry: Dictionary) -> bool:
+	return true
+
+## false = Auto waits for the player on this line.
+func auto_allowed(_entry: Dictionary) -> bool:
+	return true
+
+## Typing speed for this one line (on top of speed_multiplier and emotions).
+func line_speed(_entry: Dictionary) -> float:
+	return 1.0
+
+
+## Extra warnings about this mode's keys in a story, shown when the game
+## starts in the editor.
+func validate(_graph: FlowGraph) -> Array[String]:
+	return []
 
 
 ## Multiplies typing speed (emotion multipliers are applied on top).

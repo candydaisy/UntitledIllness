@@ -26,9 +26,11 @@
 	"wake_5": {
 		"speaker": "Ulyn",
 		"text": "It's my favorite. She knows it's my favorite. That's why she says it.",
+		"cut_after": "She knows it's my favorite.",
+		"cut": "Anyway. Council at eight. Coffee first.",
 		"choices": [
-			{"text": "\"can't tmr. council stuff\"", "type": "neutral", "weight_change": 5, "next": "wake_cant_1"},
-			{"text": "\"ok. i'll come.\"", "type": "honest", "weight_change": -10, "next": "wake_come_1", "set_flag": "HomeMonday"}
+			{"text": "\"can't tmr. council stuff\"", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "wake_cant_1"},
+			{"text": "\"ok. i'll come.\"", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "wake_come_1", "set_flag": "HomeMonday"}
 		]
 	},
 
@@ -262,7 +264,7 @@
 
 	"pres_10": {
 		"speaker": "",
-		"text": "*Ulyn looks at Kay. Kay's face doesn't move, but one thumb presses into the other palm, hard.*",
+		"text": "*Ulyn looks at Kay. Kay's face doesn't move, but {one thumb presses into the other palm, hard|NoticedKayThumb}.*",
 		"next": "pres_11"
 	},
 
@@ -354,8 +356,9 @@
 		"speaker": "",
 		"text": "*Some of the frustration in his chest is about Bank and Fern. More of it is about Kay. Most of it, if he were being honest, which he isn't, is about something else.*",
 		"choices": [
-			{"text": "\"You're always like this, Kay.\"", "type": "neutral", "weight_change": 5, "next": "pres_always_1"},
-			{"text": "\"...I'm worried about you, man.\"", "type": "honest", "weight_change": -5, "next": "pres_worried_1", "set_flag": "SaidWorried"}
+			{"text": "\"You're always like this, Kay.\"", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "pres_always_1"},
+			{"text": "\"...I'm worried about you, man.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "pres_worried_1", "set_flag": "SaidWorried"},
+			{"text": "\"You were digging your thumb into your hand up there.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "pres_thumb_1", "set_flag": "SaidWorried", "requires": "NoticedKayThumb"}
 		]
 	},
 
@@ -392,6 +395,36 @@
 	"pres_worried_4": {
 		"speaker": "Ulyn",
 		"text": "\"...Right. They forgot.\"",
+		"next": "pres_after_1"
+	},
+
+	"pres_thumb_1": {
+		"speaker": "",
+		"text": "*Kay looks down at his hand like it belongs to someone else.*",
+		"next": "pres_thumb_2"
+	},
+
+	"pres_thumb_2": {
+		"speaker": "Kay",
+		"text": "\"...Habit.\"",
+		"next": "pres_thumb_3"
+	},
+
+	"pres_thumb_3": {
+		"speaker": "Ulyn",
+		"text": "\"Since when?\"",
+		"next": "pres_thumb_4"
+	},
+
+	"pres_thumb_4": {
+		"speaker": "Kay",
+		"text": "\"I don't know. A while.\"",
+		"next": "pres_thumb_5"
+	},
+
+	"pres_thumb_5": {
+		"speaker": "",
+		"text": "*It's the most honest thing he's said all day. Ulyn puts it away with everything else he's noticed since March.*",
 		"next": "pres_after_1"
 	},
 
@@ -434,6 +467,12 @@
 	"lunch_3": {
 		"speaker": "Kay",
 		"text": "\"Oh. That's fine! Go.\"",
+		"next": "lunch_3b"
+	},
+
+	"lunch_3b": {
+		"speaker": "",
+		"text": "*Kay says it to his tray. {He hasn't touched his fried rice|NoticedKayTray}.*",
 		"next": "lunch_4"
 	},
 
@@ -477,8 +516,9 @@
 		"speaker": "Ulyn",
 		"text": "\"...Okay. Save me a seat in class, then.\"",
 		"choices": [
-			{"text": "Go to the library", "type": "neutral", "weight_change": 5, "next": "lunch_go_1"},
-			{"text": "Sit down anyway", "type": "helpful", "weight_change": -5, "next": "lunch_sit_1", "set_flag": "StayedAnyway"}
+			{"text": "Go to the library", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "lunch_go_1"},
+			{"text": "Sit down anyway", "type": "helpful", "busy_change": -5, "unsaid_change": -5, "next": "lunch_sit_1", "set_flag": "StayedAnyway"},
+			{"text": "Sit down. \"You haven't eaten anything.\"", "type": "helpful", "busy_change": -5, "unsaid_change": -5, "next": "lunch_tray_1", "set_flag": "StayedAnyway", "requires": "NoticedKayTray"}
 		]
 	},
 
@@ -527,6 +567,42 @@
 	"lunch_sit_6": {
 		"speaker": "",
 		"text": "*After twenty minutes, Kay says to go, seriously, he'll survive. This time he almost sounds like he means it. So Ulyn goes.*",
+		"next": "lunch_window_1"
+	},
+
+	"lunch_tray_1": {
+		"speaker": "",
+		"text": "*Ulyn drops his bag on the seat.*",
+		"next": "lunch_tray_2"
+	},
+
+	"lunch_tray_2": {
+		"speaker": "Ulyn",
+		"text": "\"You haven't eaten anything. I'm not leaving till you eat half.\"",
+		"next": "lunch_tray_3"
+	},
+
+	"lunch_tray_3": {
+		"speaker": "Kay",
+		"text": "\"Ulyn—\"",
+		"next": "lunch_tray_4"
+	},
+
+	"lunch_tray_4": {
+		"speaker": "Ulyn",
+		"text": "\"Half. I'll wait. I'm very patient.\"",
+		"next": "lunch_tray_5"
+	},
+
+	"lunch_tray_5": {
+		"speaker": "",
+		"text": "*He isn't. He writes the chemistry report in his head the whole time. Kay eats half, slowly, like it's homework.*",
+		"next": "lunch_tray_6"
+	},
+
+	"lunch_tray_6": {
+		"speaker": "",
+		"text": "*It isn't a conversation. But it's twenty minutes of Kay not eating alone.*",
 		"next": "lunch_window_1"
 	},
 
@@ -654,8 +730,8 @@
 		"speaker": "Ulyn",
 		"text": "Busy is good. Busy means you don't have to think.",
 		"choices": [
-			{"text": "\"I'll take it.\"", "type": "neutral", "weight_change": 10, "next": "council_take_1"},
-			{"text": "\"Someone else should take this one. I've got a lot on.\"", "type": "honest", "weight_change": -5, "next": "council_no_1"}
+			{"text": "\"I'll take it.\"", "type": "neutral", "busy_change": 15, "unsaid_change": 10, "next": "council_take_1"},
+			{"text": "\"Someone else should take this one. I've got a lot on.\"", "type": "open", "busy_change": -10, "unsaid_change": -5, "next": "council_no_1"}
 		]
 	},
 
@@ -765,6 +841,7 @@
 	"evening_home_6": {
 		"speaker": "",
 		"text": "*On the balcony, her plants are brown. All of them.*",
+		"quiet": true,
 		"next": "text_1"
 	},
 
@@ -818,7 +895,7 @@
 
 	"text_9": {
 		"speaker": "",
-		"text": "*The typing dots appear and disappear three times. Ulyn sits up.*",
+		"text": "*The {typing dots appear and disappear three times|NoticedTyping}. Ulyn sits up.*",
 		"next": "text_10"
 	},
 
@@ -832,8 +909,9 @@
 		"speaker": "Kay",
 		"text": "yeah, i'm sure. don't worry",
 		"choices": [
-			{"text": "\"ok. i'm here if you wanna talk. like whenever\"", "type": "neutral", "weight_change": 0, "next": "text_here_1"},
-			{"text": "\"kay. i'm serious.\"", "type": "honest", "weight_change": -5, "next": "text_serious_1"}
+			{"text": "\"ok. i'm here if you wanna talk. like whenever\"", "type": "neutral", "busy_change": 0, "unsaid_change": 0, "next": "text_here_1"},
+			{"text": "\"kay. i'm serious.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "text_serious_1"},
+			{"text": "\"you typed something three times. what was it?\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "text_dots_1", "requires": "NoticedTyping"}
 		]
 	},
 
@@ -852,6 +930,42 @@
 	"text_serious_2": {
 		"speaker": "Kay",
 		"text": "i know. i'm good. night",
+		"next": "march_1"
+	},
+
+	"text_dots_1": {
+		"speaker": "",
+		"text": "*Nothing for a full minute.*",
+		"next": "text_dots_2"
+	},
+
+	"text_dots_2": {
+		"speaker": "Kay",
+		"text": "it was dumb",
+		"next": "text_dots_3"
+	},
+
+	"text_dots_3": {
+		"speaker": "Ulyn",
+		"text": "dumb is fine. i like dumb",
+		"next": "text_dots_4"
+	},
+
+	"text_dots_4": {
+		"speaker": "",
+		"text": "*The dots again. Once.*",
+		"next": "text_dots_5"
+	},
+
+	"text_dots_5": {
+		"speaker": "Kay",
+		"text": "maybe tomorrow",
+		"next": "text_dots_6"
+	},
+
+	"text_dots_6": {
+		"speaker": "Ulyn",
+		"text": "Maybe tomorrow. It's the most he's given me since March.",
 		"next": "march_1"
 	},
 
@@ -984,6 +1098,8 @@
 	"tue_9": {
 		"speaker": "Ulyn",
 		"text": "Nobody was home to water them.",
+		"cut_after": "Nobody was",
+		"cut": "Anyway. Look at those weeds.",
 		"next": "tue_10"
 	},
 
@@ -1021,8 +1137,8 @@
 		"speaker": "Kay",
 		"text": "\"Sure. I'll handle the report.\"",
 		"choices": [
-			{"text": "Say nothing", "type": "neutral", "weight_change": 5, "next": "tue_quiet_1"},
-			{"text": "\"We should split it. Everyone writes their own part.\"", "type": "honest", "weight_change": -5, "next": "tue_split_1", "set_flag": "TriedSplit"}
+			{"text": "Say nothing", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "tue_quiet_1"},
+			{"text": "\"We should split it. Everyone writes their own part.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "tue_split_1", "set_flag": "TriedSplit"}
 		]
 	},
 
@@ -1161,6 +1277,17 @@
 	"busy_4": {
 		"speaker": "",
 		"text": "*Mom calls every evening at seven. He watches it ring.*",
+		"call": "Mom",
+		"choices": [
+			{"text": "Let it ring", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "busy_4b"}
+		]
+	},
+
+	"busy_4b": {
+		"speaker": "Ulyn",
+		"text": "She's probably sitting at the table right now. Same chair. Same quiet kitchen.",
+		"cut_after": "She's probably sitting at the table",
+		"cut": "Ninety unread in the group chat. Answer the chat.",
 		"next": "busy_5"
 	},
 
@@ -1184,7 +1311,16 @@
 
 	"busy_8": {
 		"speaker": "",
-		"text": "*After the bell, his phone buzzes on the desk. Mom. He declines it without looking and shoves it in his pocket, the way he always does.*",
+		"text": "*After the bell, his phone buzzes on the desk. Mom.*",
+		"call": "Mom",
+		"choices": [
+			{"text": "Decline", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "busy_8b"}
+		]
+	},
+
+	"busy_8b": {
+		"speaker": "",
+		"text": "*He shoves it in his pocket, the way he always does.*",
 		"next": "busy_9"
 	},
 
@@ -1215,6 +1351,8 @@
 	"busy_13": {
 		"speaker": "Ulyn",
 		"text": "And it's Kay asking. Kay, who hasn't asked me for anything since March.",
+		"cut_after": "Kay, who hasn't asked me",
+		"cut": "Doesn't matter. Roster's due at five.",
 		"next": "busy_14"
 	},
 
@@ -1222,8 +1360,8 @@
 		"speaker": "Ulyn",
 		"text": "Did he see the call? Did he see who it was?",
 		"choices": [
-			{"text": "\"...Yeah. Just sports day stuff.\"", "type": "neutral", "weight_change": 5, "next": "busy_fine_1"},
-			{"text": "\"...Not really.\"", "type": "honest", "weight_change": -10, "next": "busy_honest_1", "set_flag": "ToldKayNotReally"}
+			{"text": "\"...Yeah. Just sports day stuff.\"", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "busy_fine_1"},
+			{"text": "\"...Not really.\"", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "busy_honest_1", "set_flag": "ToldKayNotReally"}
 		]
 	},
 
@@ -1290,15 +1428,17 @@
 	"seven_1": {
 		"speaker": "",
 		"text": "*At 7 p.m. the phone rings again. Mom.*",
+		"call": "Mom",
 		"choices": [
-			{"text": "Decline", "type": "neutral", "weight_change": 5, "next": "seven_decline_1"},
-			{"text": "Answer", "type": "helpful", "weight_change": -10, "next": "seven_answer_1", "set_flag": "AnsweredMom"}
+			{"text": "Decline", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "seven_decline_1"},
+			{"text": "Answer", "type": "open", "busy_change": -10, "unsaid_change": -10, "next": "seven_answer_1", "set_flag": "AnsweredMom"}
 		]
 	},
 
 	"seven_decline_1": {
 		"speaker": "",
 		"text": "*He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.*",
+		"quiet": true,
 		"next": "sports_1"
 	},
 
@@ -1384,8 +1524,8 @@
 		"speaker": "",
 		"text": "*Pim is shouting about the closing ceremony. Ninety people need things.*",
 		"choices": [
-			{"text": "Hold up the clipboard. \"Too busy. Later.\"", "type": "neutral", "weight_change": 10, "next": "sports_busy_1"},
-			{"text": "Hand the megaphone to Pim and go up to her", "type": "honest", "weight_change": -10, "next": "sports_mom_1", "set_flag": "MomSportsDay"}
+			{"text": "Hold up the clipboard. \"Too busy. Later.\"", "type": "neutral", "busy_change": 10, "unsaid_change": 10, "next": "sports_busy_1"},
+			{"text": "Hand the megaphone to Pim and go up to her", "type": "open", "busy_change": -10, "unsaid_change": -10, "next": "sports_mom_1", "set_flag": "MomSportsDay"}
 		]
 	},
 
@@ -1458,6 +1598,7 @@
 	"mid_1": {
 		"speaker": "",
 		"text": "*Week five. Midterms. 1 a.m. at Tan's kitchen counter. Tan comes out for water.*",
+		"quiet": true,
 		"next": "mid_2"
 	},
 
@@ -1465,8 +1606,8 @@
 		"speaker": "Tan",
 		"text": "\"When are you going home?\"",
 		"choices": [
-			{"text": "\"After exams.\"", "type": "neutral", "weight_change": 5, "next": "mid_after_1"},
-			{"text": "\"...I don't know how to.\"", "type": "honest", "weight_change": -10, "next": "mid_honest_1", "set_flag": "ToldTan"}
+			{"text": "\"After exams.\"", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "mid_after_1"},
+			{"text": "\"...I don't know how to.\"", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "mid_honest_1", "set_flag": "ToldTan"}
 		]
 	},
 
@@ -1485,6 +1626,7 @@
 	"mid_after_3": {
 		"speaker": "",
 		"text": "*Tan doesn't laugh. He fills his glass and goes back to bed.*",
+		"quiet": true,
 		"next": "mid_text_1"
 	},
 
@@ -1696,8 +1838,8 @@
 		"speaker": "",
 		"text": "*The council has the sports day wrap-up at 3:30. Ulyn is supposed to present the volunteer report. He finds Pim in the hallway.*",
 		"choices": [
-			{"text": "\"I've got a stomachache. Can you present it?\"", "type": "neutral", "weight_change": 5, "next": "where_lie_1"},
-			{"text": "\"I can't today. My best friend needs me.\"", "type": "honest", "weight_change": -10, "next": "where_true_1", "set_flag": "ToldPim"}
+			{"text": "\"I've got a stomachache. Can you present it?\"", "type": "neutral", "busy_change": -25, "unsaid_change": 5, "next": "where_lie_1"},
+			{"text": "\"I can't today. My best friend needs me.\"", "type": "honest", "busy_change": -30, "unsaid_change": -10, "next": "where_true_1", "set_flag": "ToldPim"}
 		]
 	},
 
@@ -1909,8 +2051,8 @@
 		"speaker": "",
 		"text": "*He could let it go. Eat the pork. Watch the streetlights come on. Kay would be relieved. Ulyn knows how to give people what they want.*",
 		"choices": [
-			{"text": "\"Don't do that. Not kay-sure. Please.\"", "type": "honest", "weight_change": -10, "next": "step_push_1", "set_flag": "PushedKay"},
-			{"text": "\"...Okay.\"", "type": "neutral", "weight_change": 10, "next": "step_okay_1"}
+			{"text": "\"Don't do that. Not kay-sure. Please.\"", "type": "honest", "busy_change": -5, "unsaid_change": -10, "next": "step_push_1", "set_flag": "PushedKay"},
+			{"text": "\"...Okay.\"", "type": "neutral", "busy_change": 5, "unsaid_change": 10, "next": "step_okay_1"}
 		]
 	},
 
@@ -2040,8 +2182,8 @@
 		"speaker": "",
 		"text": "*Something cold goes all the way through him, like swallowing ice. Every part of him wants to grab Kay by the shoulders.*",
 		"choices": [
-			{"text": "Breathe first. \"It's not a fact. And thank you for telling me.\"", "type": "honest", "weight_change": -10, "next": "step_calm_1", "set_flag": "StayedCalm"},
-			{"text": "\"Kay, what the hell—\"", "type": "neutral", "weight_change": 10, "next": "step_panic_1"}
+			{"text": "Breathe first. \"It's not a fact. And thank you for telling me.\"", "type": "honest", "busy_change": 0, "unsaid_change": -10, "next": "step_calm_1", "set_flag": "StayedCalm"},
+			{"text": "\"Kay, what the hell—\"", "type": "neutral", "busy_change": 0, "unsaid_change": 10, "next": "step_panic_1"}
 		]
 	},
 
@@ -2168,6 +2310,7 @@
 	"step_ask_8": {
 		"speaker": "",
 		"text": "*The silence is different now. Not the silence of not saying things. The silence after saying them.*",
+		"quiet": true,
 		"next": "step_ask_9"
 	},
 
@@ -2181,8 +2324,8 @@
 		"speaker": "Ulyn",
 		"text": "Fair's fair.",
 		"choices": [
-			{"text": "\"I'm not okay either, by the way.\"", "type": "honest", "weight_change": -10, "next": "step_admit_1", "set_flag": "AdmittedNotOkay"},
-			{"text": "Keep it to yourself. Tonight is about Kay.", "type": "neutral", "weight_change": 5, "next": "step_keep_1"}
+			{"text": "\"I'm not okay either, by the way.\"", "type": "open", "busy_change": -10, "unsaid_change": -10, "next": "step_admit_1", "set_flag": "AdmittedNotOkay"},
+			{"text": "Keep it to yourself. Tonight is about Kay.", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "step_keep_1"}
 		]
 	},
 
@@ -2329,14 +2472,15 @@
 		"speaker": "",
 		"text": "*Both are coming. 21 is first.*",
 		"choices": [
-			{"text": "Get on 21", "type": "honest", "weight_change": -15, "next": "bus_home_1", "set_flag": "WentHome"},
-			{"text": "Wait for 8", "type": "neutral", "weight_change": 10, "next": "bus_tan_1"}
+			{"text": "Get on 21", "type": "open", "busy_change": -10, "unsaid_change": -15, "next": "bus_home_1", "set_flag": "WentHome"},
+			{"text": "Wait for 8", "type": "neutral", "busy_change": 5, "unsaid_change": 10, "next": "bus_tan_1"}
 		]
 	},
 
 	"bus_home_1": {
 		"speaker": "",
 		"text": "*The house is dark except for the kitchen.*",
+		"quiet": true,
 		"next": "bus_home_2"
 	},
 
@@ -2421,6 +2565,7 @@
 	"bus_home_15": {
 		"speaker": "",
 		"text": "*He looks at the third chair. The one nobody sits in.*",
+		"quiet": true,
 		"next": "bus_home_16"
 	},
 
@@ -2445,36 +2590,44 @@
 	"bus_home_19": {
 		"speaker": "",
 		"text": "*He sleeps in his own bed. The house is very quiet. He can hear the fridge from upstairs.*",
+		"quiet": true,
 		"next": "bus_home_20"
 	},
 
 	"bus_home_20": {
 		"speaker": "Ulyn",
 		"text": "It's okay. It's just a fridge.",
+		"quiet": true,
 		"next": "gate2_1"
 	},
 
 	"bus_tan_1": {
 		"speaker": "",
 		"text": "*21 pulls up. The doors open. The driver looks at him.*",
+		"quiet": true,
 		"next": "bus_tan_2"
 	},
 
 	"bus_tan_2": {
 		"speaker": "",
 		"text": "*He doesn't get on.*",
+		"quiet": true,
 		"next": "bus_tan_3"
 	},
 
 	"bus_tan_3": {
 		"speaker": "",
 		"text": "*At Tan's, he lies on the couch and looks at the ceiling. His phone buzzes at nine. Mom.*",
-		"next": "bus_tan_4"
+		"call": "Mom",
+		"choices": [
+			{"text": "Let it ring", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "bus_tan_4"}
+		]
 	},
 
 	"bus_tan_4": {
 		"speaker": "",
 		"text": "*He watches it until it stops.*",
+		"quiet": true,
 		"next": "gate2_1"
 	},
 
@@ -2585,8 +2738,8 @@
 		"speaker": "",
 		"text": "*It's the second time this semester someone has asked him that and waited for the answer.*",
 		"choices": [
-			{"text": "\"Fine!\"", "type": "neutral", "weight_change": 5, "next": "noi_fine_1"},
-			{"text": "\"...Can I come next Thursday too?\"", "type": "helpful", "weight_change": -15, "next": "noi_ask_1", "set_flag": "AskedNoi"}
+			{"text": "\"Fine!\"", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "noi_fine_1"},
+			{"text": "\"...Can I come next Thursday too?\"", "type": "open", "busy_change": -10, "unsaid_change": -15, "next": "noi_ask_1", "set_flag": "AskedNoi"}
 		]
 	},
 
@@ -2648,8 +2801,8 @@
 		"speaker": "Ulyn",
 		"text": "He's not doing it all again. Not this time. I could just say it.",
 		"choices": [
-			{"text": "Wait. Let him say it.", "type": "honest", "weight_change": -5, "next": "group_wait_1", "set_flag": "LetKaySpeak"},
-			{"text": "\"He's not doing it all again.\"", "type": "neutral", "weight_change": 5, "next": "group_say_1"}
+			{"text": "Wait. Let him say it.", "type": "honest", "busy_change": -5, "unsaid_change": -5, "next": "group_wait_1", "set_flag": "LetKaySpeak"},
+			{"text": "\"He's not doing it all again.\"", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "group_say_1"}
 		]
 	},
 
@@ -2777,9 +2930,10 @@
 	"dad_2": {
 		"speaker": "",
 		"text": "*He hasn't picked up a call from his dad since April. They text on birthdays. Happy birthday son. Thanks.*",
+		"call": "Dad",
 		"choices": [
-			{"text": "Answer", "type": "honest", "weight_change": -10, "next": "dad_answer_1", "set_flag": "AnsweredDad"},
-			{"text": "Let it ring", "type": "neutral", "weight_change": 5, "next": "dad_ring_1"}
+			{"text": "Answer", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "dad_answer_1", "set_flag": "AnsweredDad"},
+			{"text": "Let it ring", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "dad_ring_1"}
 		]
 	},
 
@@ -2834,6 +2988,7 @@
 	"dad_ring_3": {
 		"speaker": "",
 		"text": "*He doesn't reply. He doesn't delete it either.*",
+		"quiet": true,
 		"next": "pres2_1"
 	},
 
@@ -2949,8 +3104,8 @@
 		"speaker": "",
 		"text": "*The ninety-person group chat. Tan's couch. The third chair. Bus number 21.*",
 		"choices": [
-			{"text": "\"...My mom wants me to come home more. I'm trying.\"", "type": "honest", "weight_change": -15, "next": "last_true_1", "set_flag": "ToldKayTruth"},
-			{"text": "\"Good! Great! Busy!\"", "type": "neutral", "weight_change": 10, "next": "last_busy_1"}
+			{"text": "\"...My mom wants me to come home more. I'm trying.\"", "type": "open", "busy_change": -5, "unsaid_change": -15, "next": "last_true_1", "set_flag": "ToldKayTruth"},
+			{"text": "\"Good! Great! Busy!\"", "type": "neutral", "busy_change": 10, "unsaid_change": 10, "next": "last_busy_1"}
 		]
 	},
 
@@ -3030,14 +3185,14 @@
 		"speaker": "",
 		"text": "*The bell rings.*",
 		"next": "ending_2",
-		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
+		"secret": {"condition": "unsaid_below", "value": 35, "next": "endA_1"}
 	},
 
 	"ending_2": {
 		"speaker": "",
 		"text": "*The last day goes by.*",
 		"next": "endC_1",
-		"secret": {"condition": "weight_below", "value": 65, "next": "endB_1"}
+		"secret": {"condition": "unsaid_below", "value": 65, "next": "endB_1"}
 	},
 
 	"endA_1": {

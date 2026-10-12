@@ -22,18 +22,20 @@ UntitledIllness/
 ├── Scenes/                     Godot scenes, each next to its script
 │   ├── Menus/                Splash screen, title menu, character select, settings/save menu
 │   ├── Dialog/               The dialogue box, choice buttons, Auto / Log / Menu buttons
-│   └── Characters/           One story scene per character (Story.tscn = Kay, Elysia.tscn)
+│   └── Characters/           One story scene per character (Story.tscn = Kay, Elysia.tscn, Ulyn.tscn)
 │
 ├── Scripts/StoryEngine/        The code that plays a story (shared by all characters)
 │   ├── story_player.gd       Main script, attached to each character's story scene
 │   ├── modes/                How each character plays (meters, effects, choice rules)
 │   │   ├── story_mode.gd     The base every mode builds on
 │   │   ├── kay_mode.gd
-│   │   └── elysia_mode.gd
+│   │   ├── elysia_mode.gd
+│   │   └── ulyn_mode.gd
 │   ├── flow_graph.gd         Loads the story JSON, checks links, evaluates secrets
 │   ├── emotional_weight.gd   Kay's Emotional Weight value and LOW/MEDIUM/HIGH/CRITICAL
 │   ├── typewriter.gd         Typing effect, sounds, and self-editing (type, delete, retype)
 │   ├── dialog_log.gd         The Log window
+│   ├── phone_popup.gd        Incoming calls ("call" nodes)
 │   ├── save_game.gd          Save slots in user://saves/
 │   ├── story_stage.gd        Backgrounds, characters, fades
 │   └── story_audio.gd        Sound effect / ambience / voice list
@@ -134,6 +136,9 @@ A story is one JSON object. Each key is a node id, and each value is one line of
 | `show_characters` / `hide_characters` | array of strings | Names of nodes under **Characters**. |
 | `expression` | object | `{"Kay": "School"}` plays that sprite animation. |
 | `sfx` / `amb` / `voice` | string | A name from `story_audio.gd`. `sfx` and `amb` also take `"stop"`. |
+| `call` | string | Shows the node's choices on a ringing phone from this caller, e.g. `"Mom"`. |
+
+Inside `text`, `{shown text|FlagName}` is a detail the player can click to notice; it sets `FlagName`.
 
 ### Choice keys (every character)
 
@@ -142,7 +147,8 @@ A story is one JSON object. Each key is a node id, and each value is one line of
 | `text` | string | Button label. |
 | `type` | string | What kind of answer it is. Which types exist depends on the mode. |
 | `next` | string | Node to go to. |
-| `set_flag` | string | Remembers this choice for a later `secret`. Flags are true/false and only set by choices. |
+| `set_flag` | string | Remembers this choice for a later `secret` or `requires`. Flags are true/false, set by choices or by noticing a detail. |
+| `requires` | string | Only show this choice if this flag is set (e.g. the player noticed something). |
 
 ### Secrets
 
@@ -151,7 +157,7 @@ A story is one JSON object. Each key is a node id, and each value is one line of
 "secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
 ```
 
-`flag_true` / `flag_false` test a flag. `<meter>_above` / `<meter>_below` test one of the mode's meters (Kay: `weight`; Elysia: `mask`, `energy`). A secret only has one condition. For two conditions, chain two nodes, each with its own secret.
+`flag_true` / `flag_false` test a flag. `<meter>_above` / `<meter>_below` test one of the mode's meters (Kay: `weight`; Elysia: `mask`, `energy`; Ulyn: `busy`, `unsaid`). A secret only has one condition. For two conditions, chain two nodes, each with its own secret.
 
 ### Mode keys
 
@@ -161,6 +167,7 @@ Each mode adds its own keys. These are listed in its `INFO` (see below) and in [
 |---|---|---|---|
 | KayMode | `weight_change` | | `neutral`, `honest`, `helpful` |
 | ElysiaMode | `mask_change`, `energy_change` | `real_text`, `timed` | `neutral`, `honest`, `helpful`, `perform` |
+| UlynMode | `busy_change`, `unsaid_change` | `cut`, `cut_after`, `quiet` | `neutral`, `honest`, `helpful`, `open` |
 
 ## Relationship web
 

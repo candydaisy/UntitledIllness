@@ -2,7 +2,8 @@ class_name Typewriter
 extends RefCounted
 ## Reveals a RichTextLabel one character at a time, with typing sounds and
 ## short pauses after punctuation. Call tick() every frame.
-## start_edit() types one line, deletes it, then types another (self-editing).
+## start_edit() types one line, deletes it, then types another (self-editing),
+## or with instant = true breaks it off and switches straight to the other.
 
 signal finished
 
@@ -21,6 +22,7 @@ var is_typing := false
 
 var _text := "" # text without BBCode, matches visible_characters
 var _final_text := "" # what's typed after the unsaid line is deleted
+var _instant := false # switch to _final_text without deleting
 var _phase := Phase.IDLE
 var _progress := 0.0
 var _pause := 0.0
@@ -35,9 +37,11 @@ func start(text: String) -> void:
 	_final_text = ""
 	_begin(text)
 
-## Types `unsaid`, holds, deletes it, then types `text`.
-func start_edit(unsaid: String, text: String) -> void:
+## Types `unsaid`, holds, deletes it, then types `text`. With instant = true
+## it's cut off instead: after the hold, `text` replaces it straight away.
+func start_edit(unsaid: String, text: String, instant := false) -> void:
 	_final_text = text
+	_instant = instant
 	_begin(unsaid)
 
 func skip() -> void:
@@ -66,8 +70,13 @@ func tick(delta: float) -> void:
 
 	match _phase:
 		Phase.HOLD:
-			_phase = Phase.DELETING
-			_progress = label.visible_characters
+			if _instant:
+				var next := _final_text
+				_final_text = ""
+				_begin(next)
+			else:
+				_phase = Phase.DELETING
+				_progress = label.visible_characters
 		Phase.DELETING:
 			_tick_delete(delta)
 		Phase.TYPING:

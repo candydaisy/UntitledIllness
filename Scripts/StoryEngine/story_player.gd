@@ -12,6 +12,7 @@ extends Node2D
 @export var start_node := "1"
 @export var mode : StoryMode # empty = KayMode with default settings
 @export var ui_theme : Theme # this character's look for the dialog box, buttons, log and in-game menu
+@export var notice_color := Color("f2b33d") # clickable details: {eyes are red|NoticedRedEyes}
 @export var choice_delay := 1.5
 @export var auto_delay := 1.2 # seconds Auto waits after a line finishes...
 @export var auto_delay_per_char := 0.03 # ...plus this per character, so long lines stay up longer
@@ -47,6 +48,9 @@ const EMOTION_MULTIPLIERS := {
 	"nervous": 0.8,
 } #typing speed
 
+const NOTICE := "\\{([^{}|]+)\\|([A-Za-z0-9_]+)\\}" # {shown text|FlagName}
+const NOTICED_ALPHA := 0.55 # a detail fades a little once it's been noticed
+
 const TIMER_BAR_HEIGHT := 6.0
 const TIMER_BAR_COLOR  := Color(1, 1, 1, 0.8)
 
@@ -67,10 +71,15 @@ var pending_secret := ""
 var auto_mode := false
 var dialog_log : DialogLog
 var timer_bar : ColorRect # shrinks while a timed choice is waiting
+var phone : PhonePopup # incoming calls ("call" nodes)
 
 var _node_serial := 0 # bumped on every node change so stale awaits can bail out
 var _choice_time := 0.0 # length of the current timed choice, 0 = untimed
 var _choice_time_left := 0.0
+var _line_speed := 1.0 # this line's speed from the mode (quiet / rushing)
+var _hovered_notice := "" # a {detail|Flag} under the mouse
+var _notice_regex := RegEx.create_from_string(NOTICE)
+var _current_line := {} # what mode.line_for returned for the current node
 
 
 
@@ -100,6 +109,15 @@ func _ready() -> void:
 		_apply_theme(dialog) # before the log copies the dialog box's theme
 	dialog_log = DialogLog.new(dialog.get_node("DialogBox"))
 	dialog.add_child(dialog_log)
+
+	phone = PhonePopup.new(dialog.get_node("DialogBox"))
+	dialog.add_child(phone)
+	phone.picked.connect(_on_choice_pressed)
+
+	text_label.bbcode_enabled = true
+	text_label.meta_clicked.connect(_on_notice_clicked)
+	text_label.meta_hover_started.connect(func(meta): _hovered_notice = str(meta))
+	text_label.meta_hover_ended.connect(func(_meta): _hovered_notice = "")
 	_setup_button(auto_button, "Auto", _toggle_auto)
 	_setup_button(log_button, "Log", dialog_log.toggle)
 	_setup_button(menu_button, "Menu", setting_menu.open)
@@ -154,8 +172,8 @@ func _input(event: InputEvent) -> void:
 		return # scrolling and clicks belong to the log while it's open
 	if is_transitioning:
 		return
-	# Clicking Auto, Log or a choice shouldn't also advance the dialog.
-	if event is InputEventMouseButton and get_viewport().gui_get_hovered_control() is BaseButton:
+	# Clicking Auto, Log, a choice or a detail to notice shouldn't also advance the dialog.
+	if event is InputEventMouseButton and (get_viewport().gui_get_hovered_control() is BaseButton or _hovered_notice != ""):
 		return
 
 	if event.is_action_pressed("dialog_deprocess"):
@@ -172,6 +190,7 @@ func _handle_rewind() -> void:
 	typewriter.stop()
 	pending_secret = ""
 	choices_container.visible = false
+	phone.hang_up()
 	dialog_log.remove_last(2) # this line, and the one about to be shown again
 
 	var s = node_history.pop_back()
@@ -187,11 +206,12 @@ func _handle_rewind() -> void:
 
 
 func _handle_advance() -> void:
+	var entry := graph.get_entry(current_node)
 	if typewriter.is_typing:
-		typewriter.skip()
+		if mode.can_skip(entry):
+			typewriter.skip()
 		return
 
-	var entry := graph.get_entry(current_node)
 	if entry.has("choices"):
 		return
 
@@ -221,6 +241,7 @@ func process_node(node_name: String) -> void:
 	_node_serial += 1
 	var serial := _node_serial
 	choices_container.visible = false
+	phone.hang_up()
 
 	if not graph.has_entry(node_name):
 		push_error("Flow graph has no node: " + node_name)
@@ -238,15 +259,19 @@ func process_node(node_name: String) -> void:
 	audio.apply_sfx(entry)
 	audio.apply_voice(entry)
 	speaker_label.text = entry.get("speaker", "")
+	_line_speed = mode.line_speed(entry)
 	apply_emotion(entry.get("emotion", ""))
 
-	var line := mode.line_for(entry)
+	_current_line = mode.line_for(entry)
+	var line := _current_line
 	if line.has("unsaid"):
-		typewriter.start_edit(line["unsaid"], line["text"])
-		dialog_log.add_line(speaker_label.text, "[s]%s[/s]\n%s" % [line["unsaid"].strip_edges(), line["text"].strip_edges()])
+		var cut : bool = line.get("cut", false)
+		typewriter.start_edit(_render(line["unsaid"]), _render(line["text"]), cut)
+		var unsaid := _plain(line["unsaid"]).strip_edges()
+		dialog_log.add_line(speaker_label.text, "%s\n%s" % [unsaid if cut else "[s]%s[/s]" % unsaid, _plain(line["text"]).strip_edges()])
 	else:
-		typewriter.start(line["text"])
-		dialog_log.add_line(speaker_label.text, text_label.get_parsed_text())
+		typewriter.start(_render(line["text"]))
+		dialog_log.add_line(speaker_label.text, _plain(line["text"]))
 
 	if debug_log:
 		print("node ", node_name, " | ", mode.describe())
@@ -275,9 +300,11 @@ func _toggle_auto() -> void:
 	if auto_mode and not typewriter.is_typing:
 		_auto_advance()
 
-## After a line finishes, waits and advances on its own. Stops at choices.
+## After a line finishes, waits and advances on its own. Stops at choices
+## and at lines the mode keeps for the player (e.g. Ulyn's quiet scenes).
 func _auto_advance() -> void:
-	if not auto_mode or graph.get_entry(current_node).has("choices"):
+	var entry := graph.get_entry(current_node)
+	if not auto_mode or entry.has("choices") or not mode.auto_allowed(entry):
 		return
 	var serial := _node_serial
 	var wait := auto_delay + text_label.get_parsed_text().length() * auto_delay_per_char
@@ -332,6 +359,11 @@ func _show_choices() -> void:
 	if serial != _node_serial: # moved on (e.g. rewound) while waiting
 		return
 
+	if entry.has("call"):
+		phone.ring(entry["call"], current_choices)
+		_start_choice_timer(mode.choice_time(entry))
+		return
+
 	choices_container.visible = true
 	for i in choice_buttons.size():
 		if i < current_choices.size():
@@ -352,8 +384,8 @@ func _show_choices() -> void:
 func _start_choice_timer(seconds: float) -> void:
 	_choice_time = seconds
 	_choice_time_left = seconds
-	timer_bar.visible = seconds > 0.0
-	if seconds <= 0.0:
+	timer_bar.visible = seconds > 0.0 and not phone.visible
+	if seconds <= 0.0 or phone.visible:
 		return
 	var top : Control = null
 	for b in choice_buttons:
@@ -365,12 +397,13 @@ func _start_choice_timer(seconds: float) -> void:
 	timer_bar.scale.x = 1.0
 
 func _tick_choice_timer(delta: float) -> void:
-	if _choice_time <= 0.0 or not choices_container.visible:
+	if _choice_time <= 0.0 or not (choices_container.visible or phone.visible):
 		return
 	if dialog_log.visible or setting_menu.visible:
 		return # paused while reading the log or in the menu
 	_choice_time_left -= delta
 	timer_bar.scale.x = maxf(_choice_time_left / _choice_time, 0.0)
+	phone.set_progress(_choice_time_left / _choice_time)
 	if _choice_time_left <= 0.0:
 		select_choice(mode.timeout_choice(current_choices))
 
@@ -383,6 +416,7 @@ func _on_choice_pressed(index: int) -> void:
 
 func select_choice(choice: Dictionary) -> void:
 	choices_container.visible = false
+	phone.hang_up()
 	_choice_time = 0.0
 	timer_bar.visible = false
 	dialog_log.add_choice(choice.get("text", ""))
@@ -394,9 +428,13 @@ func select_choice(choice: Dictionary) -> void:
 	current_node = choice["next"]
 	process_node(current_node)
 
+## Locks choices the mode says are locked, and hides choices whose
+## "requires" flag hasn't been set (e.g. a detail that wasn't noticed).
 func filter_choices(choices: Array) -> Array:
 	var filtered := []
 	for choice in choices:
+		if choice.has("requires") and not flags.get(choice["requires"], false):
+			continue
 		var c = choice.duplicate()
 		c["locked"] = mode.is_locked(choice)
 		filtered.append(c)
@@ -409,7 +447,56 @@ func apply_emotion(emotion: String) -> void:
 	update_typing_speed()
 
 func update_typing_speed() -> void:
-	typewriter.speed = BASE_TYPING_SPEED * emotion_multiplier * mode.speed_multiplier()
+	typewriter.speed = BASE_TYPING_SPEED * emotion_multiplier * mode.speed_multiplier() * _line_speed
+
+
+# --- Noticing: {shown text|FlagName} in a line is a detail the player can click ---
+
+## Story text -> BBCode for the dialog: unnoticed details are links.
+func _render(text: String) -> String:
+	var out := text.replace("[", "[lb]")
+	for m in _notice_regex.search_all(text):
+		var flag := m.get_string(2)
+		var color := notice_color
+		var shown := m.get_string(1)
+		if flags.get(flag, false):
+			color.a = NOTICED_ALPHA
+			out = out.replace(m.get_string(), "[color=#%s]%s[/color]" % [color.to_html(), shown])
+		else:
+			out = out.replace(m.get_string(), "[url=%s][color=#%s]%s[/color][/url]" % [flag, color.to_html(), shown])
+	return out
+
+## Story text -> plain text (for the log).
+func _plain(text: String) -> String:
+	return _notice_regex.sub(text, "$1", true)
+
+func _on_notice_clicked(meta: Variant) -> void:
+	var flag := str(meta)
+	if flags.get(flag, false):
+		return
+	flags[flag] = true
+	_hovered_notice = ""
+	# Redraw the line so the detail shows as noticed, keeping the typing progress.
+	var shown := text_label.visible_characters
+	var line_text : String = _current_line.get("text", "")
+	if typewriter.is_typing and _current_line.has("unsaid"):
+		return # mid self-edit: it'll show as noticed next time
+	text_label.text = _render(line_text).strip_edges()
+	text_label.visible_characters = shown
+	_flash_noticed()
+
+func _flash_noticed() -> void:
+	var tag := Label.new()
+	tag.text = "noticed"
+	tag.add_theme_color_override("font_color", notice_color)
+	tag.position = text_label.global_position + Vector2(text_label.size.x - 120, -36)
+	tag.modulate.a = 0.0
+	dialog.add_child(tag)
+	var t := create_tween()
+	t.tween_property(tag, "modulate:a", 1.0, 0.2)
+	t.tween_interval(0.8)
+	t.tween_property(tag, "modulate:a", 0.0, 0.5)
+	t.tween_callback(tag.queue_free)
 
 
 
@@ -425,6 +512,18 @@ func _validate() -> void:
 	var choice_keys : Array = StoryMode.BASE_CHOICE_KEYS + info.get("choice_keys", [])
 	var choice_types : Array = info.get("choice_types", [])
 	var meters : Dictionary = info.get("meters", {})
+	for problem in mode.validate(graph):
+		push_warning(problem)
+
+	# Flags anything can set: choices, and details to notice.
+	var flags_set := {}
+	for id in graph.nodes:
+		var entry : Dictionary = graph.nodes[id]
+		for choice in entry.get("choices", []):
+			if choice.has("set_flag"):
+				flags_set[choice["set_flag"]] = true
+		for m in _notice_regex.search_all(String(entry.get("text", ""))):
+			flags_set[m.get_string(2)] = true
 
 	for id in graph.nodes:
 		var entry : Dictionary = graph.nodes[id]
@@ -437,6 +536,11 @@ func _validate() -> void:
 					push_warning("Node %s: choice key '%s' isn't used by %s" % [id, key, mode_name])
 			if choice_types and choice.get("type", "") not in choice_types:
 				push_warning("Node %s: choice type '%s' isn't one of %s" % [id, choice.get("type", ""), choice_types])
+		for choice in entry.get("choices", []):
+			if choice.has("requires") and choice["requires"] not in flags_set:
+				push_warning("Node %s: choice requires '%s', but nothing sets that flag (no choice or {detail|%s})" % [id, choice["requires"], choice["requires"]])
+		if entry.has("call") and entry.get("choices", []).is_empty():
+			push_warning("Node %s: a call needs choices (e.g. Decline / Answer)" % id)
 		var condition : String = entry.get("secret", {}).get("condition", "")
 		if condition.ends_with("_above") or condition.ends_with("_below"):
 			var meter := condition.trim_suffix("_above").trim_suffix("_below")

@@ -5,7 +5,7 @@ extends Control
 const STORY_SCENES := [
 	"res://Scenes/Characters/Story.tscn",  # K. Kay
 	"res://Scenes/Characters/Elysia.tscn", # E. Elysia
-	"",                                    # U. Ulyn
+	"res://Scenes/Characters/Ulyn.tscn",   # U. Ulyn
 	"",                                    # R.
 ]
 

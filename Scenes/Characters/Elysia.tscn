@@ -43,6 +43,7 @@ script = ExtResource("1_7yklv")
 flow_graph_path = "res://Story/Elysia/flow_graph.json"
 start_node = "start"
 ui_theme = ExtResource("30_theme")
+notice_color = Color(0.95, 0.18, 0.24, 1)
 mode = SubResource("Resource_elysia")
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]

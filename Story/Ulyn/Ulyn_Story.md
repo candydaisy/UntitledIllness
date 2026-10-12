@@ -8,10 +8,24 @@ Ulyn can't see inside Kay's head. Everything he thinks about Kay is a guess. Som
 
 The format is the same as `Story/Kay/Kay_Story.md`:
 - Narration is present tense. Ulyn's thoughts are in *italics*. Text messages are `in code`.
-- **◆ Choice** marks a decision, with type, weight change, and any flag it sets. **★** marks the **canon** choice (see `Story/Canon_Timeline.md`).
-- **▸** marks what happens after each option. **◇** marks where the branches meet again. **[If …]** marks a passage that depends on a flag or on weight.
+- **◆ Choice** marks a decision, with its type, how it changes his Busy and Unsaid, and any flag it sets or needs. **◆ Call** is a decision made on the phone. **★** marks the **canon** choice (see `Story/Canon_Timeline.md`).
+- **▸** marks what happens after each option. **◇** marks where the branches meet again. **[If …]** marks a passage that depends on a flag or on his meters.
+- **📞** marks a phone call, **✂** a thought that gets cut off, **◌** a quiet line, and **⟨…⟩** a detail the player can click to notice.
 
-**Starting weight:** 50. **Endings:** below 35 → *Home* · below 65 → *Most Nights* · otherwise → *Busy*.
+### How Ulyn's route plays
+
+Ulyn copes by staying busy. He has two hidden meters instead of Kay's Emotional Weight. The player never sees the numbers.
+
+- **Busy** is how full he keeps his life. Taking things on raises it, and dropping them lowers it.
+- **Unsaid** is everything he hasn't told anyone. It piles up while he avoids things and only goes down when he's honest. It decides the ending.
+- **Choice types:** `neutral`, `honest` (about someone else), `helpful`, and `open` (honest about himself).
+- **Locks:** `open` choices lock while Busy is above 80. Honest and helpful choices never lock: he can always help someone else.
+- **📞 Calls** ring for 6 seconds instead of showing choice buttons. Letting one ring out declines it. Some calls only have one button, so the player has to decline his mom themselves.
+- **✂ Cut-off thoughts:** at Busy 60 or more, a thought about home breaks off mid-sentence and turns into a task.
+- **◌ Quiet lines** type slowly and can't be skipped or auto-advanced. While he's busy, every other line types faster.
+- **⟨Noticing⟩:** some details about other people can be clicked. A choice marked *needs* `Flag` only appears if he noticed it.
+
+**Start:** Busy 60, Unsaid 50. **Endings:** Unsaid below 35 → *Home* · below 65 → *Most Nights* · otherwise → *Busy*.
 
 ### People only Ulyn's route introduces
 
@@ -30,11 +44,13 @@ Ulyn is on the couch, under a blanket that smells like Tan's laundry soap and no
 
 `coming home tomorrow? i'm making khao man gai 🍗` (Mom, 9:14 p.m.)
 
-He reads it again. It's his favorite. She knows it's his favorite. That's why she says it.
+He reads it again. *It's my favorite. She knows it's my favorite. That's why she says it.*
+
+> ✂ *Cut-off thought.* With Busy 60 or more, it breaks off after "She knows it's my favorite." and becomes: *Anyway. Council at eight. Coffee first.*
 
 **◆ Choice**
-- **A. ★** `can't tmr. council stuff` (neutral, +5)
-- **B.** `ok. i'll come.` (honest, −10, sets `HomeMonday`)
+- **A. ★** `can't tmr. council stuff` (neutral, Busy +5, Unsaid +5)
+- **B.** `ok. i'll come.` (open, Busy −5, Unsaid −10, sets `HomeMonday`)
 
 **▸ A.**
 `ok! next time 😊`
@@ -110,7 +126,7 @@ Bank looks at his phone. Scrolls. Scrolls again. The silence gets long enough to
 
 *He never read it. He never even opened it.*
 
-Ulyn looks at Kay. Kay's face doesn't move, but his hands do. One thumb presses into the other palm, hard.
+Ulyn looks at Kay. Kay's face doesn't move, but his hands do. ⟨One thumb presses into the other palm, hard.⟩ *(notice → `NoticedKayThumb`)*
 
 *Let him blank, Kay. Just once. Let it be someone else's problem.*
 
@@ -145,8 +161,9 @@ Back at their seats, Ulyn drops into the chair next to him.
 There's a lot of frustration in his chest. Some of it is about Bank and Fern. More of it is about Kay. Most of it, if Ulyn were being honest, which he isn't, is about something else.
 
 **◆ Choice**
-- **A. ★** "You're always like this, Kay." (neutral, +5)
-- **B.** "...I'm worried about you, man." (honest, −5, sets `SaidWorried`)
+- **A. ★** "You're always like this, Kay." (neutral, Busy 0, Unsaid +5)
+- **B.** "...I'm worried about you, man." (honest, Busy 0, Unsaid −5, sets `SaidWorried`)
+- **C.** "You were digging your thumb into your hand up there." (honest, Busy 0, Unsaid −5, sets `SaidWorried`, *needs* `NoticedKayThumb`)
 
 **▸ A.**
 "You're always like this, Kay."
@@ -166,6 +183,17 @@ Kay blinks at him. For a second something moves behind his face, and then the sh
 
 "...Right," Ulyn says. "They forgot."
 
+**▸ C.**
+Kay looks down at his hand like it belongs to someone else.
+
+"...Habit."
+
+"Since when?"
+
+"I don't know. A while."
+
+It's the most honest thing he's said all day. Ulyn puts it away with everything else he's noticed since March.
+
 **◇**
 
 Ulyn turns to face the front. He doesn't sound angry anymore, he can hear that in his own voice. Just tired.
@@ -184,6 +212,8 @@ He doesn't finish the thought. He's gotten good at not finishing that thought.
 
 "Oh. That's fine! Go."
 
+Kay says it to his tray. ⟨He hasn't touched his fried rice.⟩ *(notice → `NoticedKayTray`)*
+
 *That's fine. Exclamation mark.*
 
 "You sure? I can put it off and just do it tonight."
@@ -199,8 +229,9 @@ Kay looks at him for a long moment. Ulyn has the strange feeling that a whole co
 "...Okay. Save me a seat in class, then."
 
 **◆ Choice**
-- **A. ★** Go to the library. (neutral, +5)
-- **B.** Sit down anyway. (helpful, −5, sets `StayedAnyway`)
+- **A. ★** Go to the library. (neutral, Busy +5, Unsaid +5)
+- **B.** Sit down anyway. (helpful, Busy −5, Unsaid −5, sets `StayedAnyway`)
+- **C.** Sit down. "You haven't eaten anything." (helpful, Busy −5, Unsaid −5, sets `StayedAnyway`, *needs* `NoticedKayTray`)
 
 **▸ A.**
 He jogs off toward the building. At the door he glances back. Kay is still standing there, watching him go.
@@ -219,6 +250,19 @@ He makes it three steps. Then he turns around and drops his bag on the seat.
 Kay's face does something complicated. Ulyn doesn't know what, but he thinks some of it might be relief.
 
 After twenty minutes, Kay says, "Go. Seriously. I'll survive." This time he almost sounds like he means it, so Ulyn goes.
+
+**▸ C.**
+Ulyn drops his bag on the seat.
+
+"You haven't eaten anything. I'm not leaving till you eat half."
+
+"Ulyn—"
+
+"Half. I'll wait. I'm very patient."
+
+He isn't. He writes the chemistry report in his head the whole time. Kay eats half, slowly, like it's homework.
+
+It isn't a conversation. But it's twenty minutes of Kay not eating alone.
 
 **◇**
 
@@ -279,8 +323,8 @@ Ulyn thinks about Tan's couch. Mom's khao man gai. The quiet in that house, so q
 *Busy is good. Busy means you don't have to think.*
 
 **◆ Choice**
-- **A. ★** "I'll take it." (neutral, +10)
-- **B.** "Someone else should take this one. I've got a lot on." (honest, −5)
+- **A. ★** "I'll take it." (neutral, Busy +15, Unsaid +10)
+- **B.** "Someone else should take this one. I've got a lot on." (open, Busy −10, Unsaid −5)
 
 **▸ A.**
 "Oh thank god," Pim says, and writes **ULYN** across half the board in red.
@@ -309,7 +353,7 @@ The house is the same. Same shoes by the door, minus one pair. Mom has set three
 
 The khao man gai is perfect. They talk about the chicken for a long time, because the chicken is safe.
 
-On the balcony, her plants are brown. All of them.
+◌ On the balcony, her plants are brown. All of them.
 
 **[Otherwise]**
 At Tan's, they eat instant noodles over the sink.
@@ -339,7 +383,7 @@ The reply comes fast. Too fast, like it was ready.
 `you sure?`
 `like actually sure. not kay-sure`
 
-The typing dots appear and disappear three times. Ulyn sits up on the couch.
+⟨The typing dots appear and disappear three times.⟩ *(notice → `NoticedTyping`)* Ulyn sits up on the couch.
 
 *Come on. Come on, say it.*
 
@@ -348,8 +392,9 @@ The typing dots appear and disappear three times. Ulyn sits up on the couch.
 He looks at the message for a long time.
 
 **◆ Choice**
-- **A. ★** `ok. i'm here if you wanna talk. like whenever` (neutral, 0)
-- **B.** `kay. i'm serious.` (honest, −5)
+- **A. ★** `ok. i'm here if you wanna talk. like whenever` (neutral, Busy 0, Unsaid 0)
+- **B.** `kay. i'm serious.` (honest, Busy 0, Unsaid −5)
+- **C.** `you typed something three times. what was it?` (honest, Busy 0, Unsaid −5, *needs* `NoticedTyping`)
 
 **▸ A.**
 `thanks. i'm good`
@@ -358,6 +403,19 @@ He looks at the message for a long time.
 A long pause.
 
 `i know. i'm good. night`
+
+**▸ C.**
+Nothing for a full minute.
+
+`it was dumb`
+
+`dumb is fine. i like dumb`
+
+The dots again. Once.
+
+`maybe tomorrow`
+
+*Maybe tomorrow. It's the most he's given me since March.*
 
 **◇**
 
@@ -411,6 +469,8 @@ He remembers Mom's balcony. Before March it was full of herbs and a lime tree in
 
 *Nobody was home to water them.*
 
+> ✂ *Cut-off thought.* With Busy 60 or more, it breaks off after "Nobody was" and becomes: *Anyway. Look at those weeds.*
+
 "The garden," he hears himself say, pointing. "The agriculture club died two years ago. Nobody's touched it since."
 
 The teacher approves it. Fern says "aesthetic." Bank asks if gardening is physical, and Ulyn tells him yes, Bank, it's physical.
@@ -426,8 +486,8 @@ Ulyn's pen stops.
 "Sure. I'll handle the report."
 
 **◆ Choice**
-- **A. ★** Say nothing. (neutral, +5)
-- **B.** "We should split it. Everyone writes their own part." (honest, −5, sets `TriedSplit`)
+- **A. ★** Say nothing. (neutral, Busy 0, Unsaid +5)
+- **B.** "We should split it. Everyone writes their own part." (honest, Busy 0, Unsaid −5, sets `TriedSplit`)
 
 **▸ A.**
 He grips the pen and says nothing. Saying it in front of them would just embarrass Kay. That's what he tells himself.
@@ -483,7 +543,13 @@ There are spreadsheets of equipment, rosters of volunteers, and a WhatsApp group
 
 *Told you.*
 
-Mom calls every evening at seven. He watches it ring.
+Mom calls every evening at seven.
+
+> 📞 *Call: Mom. The only button is* Let it ring *(neutral, Busy +5, Unsaid +5).*
+
+*She's probably sitting at the table right now. Same chair. Same quiet kitchen.*
+
+> ✂ *Cut-off thought.* With Busy 60 or more, it breaks off after "She's probably sitting at the table" and becomes: *Ninety unread in the group chat. Answer the chat.*
 
 ---
 
@@ -493,7 +559,11 @@ The third Friday, he wakes up in history to the teacher saying his name. There's
 
 The class laughs. He did that. *Good.*
 
-After the bell, his phone buzzes on the desk. **Mom.** He declines it and shoves the phone in his pocket without looking, the way he always does.
+After the bell, his phone buzzes on the desk. **Mom.**
+
+> 📞 *Call: Mom. The only button is* Decline *(neutral, Busy +5, Unsaid +5).*
+
+He shoves the phone in his pocket, the way he always does.
 
 When he looks up, Kay is watching him.
 
@@ -505,11 +575,13 @@ Nobody has asked him that in— He tries to count. Tan asks *are you going home*
 
 And it's Kay asking. Kay, who hasn't asked him for anything since March.
 
+> ✂ *Cut-off thought.* With Busy 60 or more, it breaks off after "Kay, who hasn't asked me" and becomes: *Doesn't matter. Roster's due at five.*
+
 *He saw the call. Did he see who it was?*
 
 **◆ Choice**
-- **A. ★** "...Yeah. Just sports day stuff." (neutral, +5)
-- **B.** "...Not really." (honest, −10, sets `ToldKayNotReally`)
+- **A. ★** "...Yeah. Just sports day stuff." (neutral, Busy +5, Unsaid +5)
+- **B.** "...Not really." (open, Busy −5, Unsaid −10, sets `ToldKayNotReally`)
 
 **▸ A.**
 "...Yeah. Just sports day stuff."
@@ -537,12 +609,12 @@ He doesn't tell him later. But Kay's face, when he said *you can tell me*, stays
 
 At 7 p.m. the phone rings again. **Mom.**
 
-**◆ Choice**
-- **A. ★** Decline. (neutral, +5)
-- **B.** Answer. (helpful, −10, sets `AnsweredMom`)
+**◆ Call 📞 Mom**
+- **A. ★** Decline. (neutral, Busy +5, Unsaid +5)
+- **B.** Answer. (open, Busy −10, Unsaid −10, sets `AnsweredMom`)
 
 **▸ A.**
-He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.
+◌ He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.
 
 **▸ B.**
 "Hello?"
@@ -584,8 +656,8 @@ She's in her work clothes and must have taken the afternoon off. She waves. Smal
 Pim is shouting about the closing ceremony. Ninety people in the group chat need things.
 
 **◆ Choice**
-- **A. ★** Hold up the clipboard. "Too busy. Later." (neutral, +10)
-- **B.** Hand the megaphone to Pim and go up to her. (honest, −10, sets `MomSportsDay`)
+- **A. ★** Hold up the clipboard. "Too busy. Later." (neutral, Busy +10, Unsaid +10)
+- **B.** Hand the megaphone to Pim and go up to her. (open, Busy −10, Unsaid −10, sets `MomSportsDay`)
 
 **▸ A.**
 He points at the clipboard and mouths *busy, sorry, later*. She nods and smiles, like she expected it.
@@ -617,22 +689,22 @@ They sit for five minutes and watch the relay. She doesn't ask when he's coming 
 
 ## Chapter 8 — Midterms
 
-Week five. Midterms.
+◌ Week five. Midterms.
 
-Ulyn studies at Tan's kitchen counter at 1 a.m. Tan comes out for water.
+◌ Ulyn studies at Tan's kitchen counter at 1 a.m. Tan comes out for water.
 
 "When are you going home?"
 
 **◆ Choice**
-- **A. ★** "After exams." (neutral, +5)
-- **B.** "...I don't know how to." (honest, −10, sets `ToldTan`)
+- **A. ★** "After exams." (neutral, Busy +5, Unsaid +5)
+- **B.** "...I don't know how to." (open, Busy −5, Unsaid −10, sets `ToldTan`)
 
 **▸ A.**
 "You said that before the last exams."
 
 "Then I'll say it again before the next ones."
 
-Tan doesn't laugh. He fills his glass and goes back to bed.
+◌ Tan doesn't laugh. He fills his glass and goes back to bed.
 
 **▸ B.**
 Tan stops with the glass halfway to his mouth.
@@ -720,8 +792,8 @@ Student council has a sports day wrap-up meeting at 3:30. Ulyn is supposed to pr
 He finds Pim in the hallway.
 
 **◆ Choice**
-- **A. ★** "I've got a stomachache. Can you present it?" (neutral, +5)
-- **B.** "I can't today. My best friend needs me." (honest, −10, sets `ToldPim`)
+- **A. ★** "I've got a stomachache. Can you present it?" (neutral, Busy −25, Unsaid +5)
+- **B.** "I can't today. My best friend needs me." (honest, Busy −30, Unsaid −10, sets `ToldPim`)
 
 **▸ A.**
 "Ew. Okay. Feel better." Pim takes the folder.
@@ -806,8 +878,8 @@ Kay is quiet for a long time.
 Ulyn could let it go. That would be easy. They could eat the pork, watch the streetlights come on, and go back to Monday like nothing happened. Kay would be relieved. Ulyn knows how to give people what they want. He's been doing it all year.
 
 **◆ Choice**
-- **A. ★** "Don't do that. Not kay-sure. Please." (honest, −10, sets `PushedKay`)
-- **B.** "...Okay." (neutral, +10)
+- **A. ★** "Don't do that. Not kay-sure. Please." (honest, Busy −5, Unsaid −10, sets `PushedKay`)
+- **B.** "...Okay." (neutral, Busy +5, Unsaid +10)
 
 **▸ B.**
 "Okay."
@@ -852,8 +924,8 @@ A breath.
 Something cold goes through Ulyn, all the way down, like swallowing ice. Every part of him wants to grab Kay by the shoulders and say *what the hell, what the hell are you talking about.*
 
 **◆ Choice**
-- **A. ★** Breathe first. "It's not a fact. And thank you for telling me." (honest, −10, sets `StayedCalm`)
-- **B.** "Kay, what the hell—" (neutral, +10)
+- **A. ★** Breathe first. "It's not a fact. And thank you for telling me." (honest, Busy 0, Unsaid −10, sets `StayedCalm`)
+- **B.** "Kay, what the hell—" (neutral, Busy 0, Unsaid +10)
 
 **▸ B.**
 "Kay, what the *hell*—"
@@ -895,15 +967,15 @@ Kay's eyes go wet. He cries quietly, like he's had practice, and that's the wors
 
 They sit.
 
-The silence is different now. It's not the silence of not saying things. It's the silence after saying them.
+◌ The silence is different now. It's not the silence of not saying things. It's the silence after saying them.
 
 Ulyn thinks about his phone in his pocket. **Mom.** Seven o'clock, every night.
 
 *Fair's fair.*
 
 **◆ Choice**
-- **A. ★** "I'm not okay either, by the way." (honest, −10, sets `AdmittedNotOkay`)
-- **B.** Keep it to yourself. Tonight is about Kay. (neutral, +5)
+- **A. ★** "I'm not okay either, by the way." (open, Busy −10, Unsaid −10, sets `AdmittedNotOkay`)
+- **B.** Keep it to yourself. Tonight is about Kay. (neutral, Busy 0, Unsaid +5)
 
 **▸ A.**
 "I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school."
@@ -956,11 +1028,11 @@ The bus to Tan's place is number 8. The bus home is number 21.
 Both are coming. Twenty-one is first.
 
 **◆ Choice**
-- **A. ★** Get on 21. (honest, −15, sets `WentHome`)
-- **B.** Wait for 8. (neutral, +10)
+- **A. ★** Get on 21. (open, Busy −10, Unsaid −15, sets `WentHome`)
+- **B.** Wait for 8. (neutral, Busy +5, Unsaid +10)
 
 **▸ A.**
-The house is dark except for the kitchen.
+◌ The house is dark except for the kitchen.
 
 Mom is sitting at the table in her work clothes, doing nothing, just sitting. When the door opens, she turns around fast, like a deer.
 
@@ -982,22 +1054,24 @@ They eat it standing at the counter, out of the container, with two forks. Neith
 
 Mom puts her fork down. "Are *you* okay?"
 
-He looks at the third chair, the one nobody sits in.
+◌ He looks at the third chair, the one nobody sits in.
 
 "Not really," he says. It's the second time today. It's easier the second time.
 
 She doesn't cry. She just nods and squeezes his wrist across the counter, and they finish the container together.
 
-He sleeps in his own bed. The house is very quiet. He hears the fridge from upstairs. It's okay. It's just a fridge.
+◌ He sleeps in his own bed. The house is very quiet. He hears the fridge from upstairs. It's okay. It's just a fridge.
 
 **▸ B.**
-Twenty-one pulls up. The doors open. The driver looks at him.
+◌ Twenty-one pulls up. The doors open. The driver looks at him.
 
-He doesn't get on.
+◌ He doesn't get on.
 
-At Tan's, he lies on the couch and looks at the ceiling. His phone buzzes at nine. **Mom.**
+◌ At Tan's, he lies on the couch and looks at the ceiling. His phone buzzes at nine. **Mom.**
 
-He watches it until it stops.
+> 📞 *Call: Mom. The only button is* Let it ring *(neutral, Busy +5, Unsaid +5).*
+
+◌ He watches it until it stops.
 
 **◇**
 
@@ -1050,8 +1124,8 @@ She smiles. "How are *you*, Ulyn?"
 It's the second time this semester someone has asked him that and waited for the answer.
 
 **◆ Choice**
-- **A. ★** "Fine!" (neutral, +5)
-- **B.** "...Can I come next Thursday too?" (helpful, −15, sets `AskedNoi`)
+- **A. ★** "Fine!" (neutral, Busy 0, Unsaid +5)
+- **B.** "...Can I come next Thursday too?" (open, Busy −10, Unsaid −15, sets `AskedNoi`)
 
 **▸ A.**
 "Fine! Great. Busy. You know. Sports day." Sports day was three weeks ago.
@@ -1084,8 +1158,8 @@ Ulyn looks at Kay. Kay is looking at the soil.
 *Say it. Say it, say it, say—* Ulyn has the words ready in his own mouth. *He's not doing it all again. Not this time.* It would be so easy. It would even be true.
 
 **◆ Choice**
-- **A. ★** Wait. Let him say it. (honest, −5, sets `LetKaySpeak`)
-- **B.** "He's not doing it all again." (neutral, +5)
+- **A. ★** Wait. Let him say it. (honest, Busy −5, Unsaid −5, sets `LetKaySpeak`)
+- **B.** "He's not doing it all again." (neutral, Busy 0, Unsaid +5)
 
 **▸ A.**
 Ulyn closes his mouth. He looks at Kay and waits. *Your turn.*
@@ -1143,9 +1217,9 @@ On Sunday his phone rings. **Dad.**
 
 Ulyn hasn't picked up a call from his dad since April. They text on birthdays: *happy birthday son 🎂* / *thanks.*
 
-**◆ Choice**
-- **A. ★** Answer. (honest, −10, sets `AnsweredDad`)
-- **B.** Let it ring. (neutral, +5)
+**◆ Call 📞 Dad**
+- **A. ★** Answer. (open, Busy −5, Unsaid −10, sets `AnsweredDad`)
+- **B.** Let it ring. (neutral, Busy +5, Unsaid +5)
 
 **▸ A.**
 "...Hi, Dad."
@@ -1163,7 +1237,7 @@ It lasts four minutes. It's terribly awkward, and it's four minutes more than la
 **▸ B.**
 It rings out. A text comes after: `just wanted to say hi. proud of u.`
 
-He doesn't reply. He doesn't delete it either.
+◌ He doesn't reply. He doesn't delete it either.
 
 **◇**
 
@@ -1216,8 +1290,8 @@ Ulyn stops walking.
 He thinks about the ninety-person group chat, Tan's couch, the third chair, the bus number 21.
 
 **◆ Choice**
-- **A. ★** "...My mom wants me to come home more. I'm trying." (honest, −15, sets `ToldKayTruth`)
-- **B.** "Good! Great! Busy!" (neutral, +10)
+- **A. ★** "...My mom wants me to come home more. I'm trying." (open, Busy −5, Unsaid −15, sets `ToldKayTruth`)
+- **B.** "Good! Great! Busy!" (neutral, Busy +10, Unsaid +10)
 
 **▸ A.**
 "...My mom wants me to come home more. I'm trying."
@@ -1249,10 +1323,10 @@ Ulyn laughs, caught. He doesn't answer. But he doesn't change the subject either
 
 ---
 
-What happens next depends on how much Ulyn is carrying.
+What happens next depends on how much Ulyn still hasn't said.
 
-- **Weight below 35** → Ending A, *Home*
-- **Weight below 65** → Ending B, *Most Nights*
+- **Unsaid below 35** → Ending A, *Home*
+- **Unsaid below 65** → Ending B, *Most Nights*
 - **Otherwise** → Ending C, *Busy*
 
 ---
