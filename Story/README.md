@@ -12,7 +12,20 @@ Story/
 └── Elysia/flow_graph.json + Elysia_Story.md
 ```
 
-Ulyn's and Elysia's routes don't have backgrounds, characters or sounds yet.
+Elysia's route doesn't have backgrounds, characters or sounds yet.
+
+Ulyn's route has them. Some of his places don't have their own pictures yet, so in `Scenes/Characters/Ulyn.tscn` they borrow the closest existing one. To add the real art, select the node under **Bgs** and change its **Texture**; the story file doesn't need to change.
+
+| Background in Ulyn's story | Borrowing for now |
+|---|---|
+| `Tan's couch`, `Ulyn's kitchen` | the daytime bedroom |
+| `Tan's couch night`, `Tan's kitchen`, `Tan's balcony`, `Ulyn's kitchen night`, `Ulyn's room` | the night bedroom |
+| `Library` | the hallway |
+| `Council room` | the classroom |
+| `Garden`, `Sports field` | Kay's front lawn |
+| `Bus stop` | the sidewalk |
+
+His characters (`Ulyn`, `Kay`, `Elysia`, `mom`, `Bank`, `Fern`, `Tan`, `Pim`, `MsNoi`) have no sprites yet. Calls use the `Notification` sound until there's a ringtone; add one to `SFX` in `story_audio.gd` and use it on the `call` nodes.
 
 You don't need to touch any code to write or change dialogue. Edit the JSON, save, and run the game in Godot.
 
