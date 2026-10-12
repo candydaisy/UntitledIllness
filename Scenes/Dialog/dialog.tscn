@@ -171,7 +171,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_87kay")
 
-[node name="Button3" type="Button" parent="Buttons/Others" unique_id=928245122]
+[node name="Log" type="Button" parent="Buttons/Others" unique_id=928245122]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

@@ -11,6 +11,8 @@ extends Node2D
 @export var starting_weight := 55.0
 @export var max_weight := 100.0
 @export var choice_delay := 1.5
+@export var auto_delay := 1.2 # seconds Auto waits after a line finishes...
+@export var auto_delay_per_char := 0.03 # ...plus this per character, so long lines stay up longer
 @export var debug_log := false # print node / weight / state on every node
 
 @onready var type_sound : AudioStreamPlayer = $Audio/typing
@@ -27,6 +29,8 @@ extends Node2D
 	$Cenfix/Dialog/Buttons/Choices/choice2,
 	$Cenfix/Dialog/Buttons/Choices/choice3,
 ]
+@onready var auto_button : Button = $Cenfix/Dialog/Buttons/Others/Auto
+@onready var log_button : Button = $Cenfix/Dialog/Buttons/Others/Log
 
 
 const BASE_TYPING_SPEED := 30.0
@@ -64,6 +68,8 @@ var is_transitioning := false
 var current_choices := []
 var node_history : Array = []
 var pending_secret := ""
+var auto_mode := false
+var dialog_log : DialogLog
 
 var _node_serial := 0 # bumped on every node change so stale awaits can bail out
 var _tint_tween : Tween
@@ -86,8 +92,14 @@ func _ready() -> void:
 
 	weight.state_changed.connect(_on_weight_state_changed)
 	typewriter.finished.connect(_show_choices)
+	typewriter.finished.connect(_auto_advance)
 	for i in choice_buttons.size():
 		choice_buttons[i].pressed.connect(_on_choice_pressed.bind(i))
+
+	dialog_log = DialogLog.new(dialog.get_node("DialogBox"))
+	dialog.add_child(dialog_log)
+	_setup_button(auto_button, "Auto", _toggle_auto)
+	_setup_button(log_button, "Log", dialog_log.toggle)
 
 	if OS.is_debug_build():
 		_validate()
@@ -103,7 +115,20 @@ func _process(delta: float) -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if graph == null or event.is_echo() or is_transitioning:
+	if graph == null or event.is_echo():
+		return
+
+	if dialog_log.visible:
+		# The log covers the Log button, so check its area by hand. Esc also closes.
+		var on_log_button : bool = event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT \
+				and event.pressed and log_button.get_global_rect().has_point(event.position)
+		if on_log_button or event.is_action_pressed("ui_cancel"):
+			dialog_log.toggle()
+		return # scrolling and clicks belong to the log while it's open
+	if is_transitioning:
+		return
+	# Clicking Auto, Log or a choice shouldn't also advance the dialog.
+	if event is InputEventMouseButton and get_viewport().gui_get_hovered_control() is BaseButton:
 		return
 
 	if event.is_action_pressed("dialog_deprocess"):
@@ -120,6 +145,7 @@ func _handle_rewind() -> void:
 	typewriter.stop()
 	pending_secret = ""
 	choices_container.visible = false
+	dialog_log.remove_last(2) # this line, and the one about to be shown again
 
 	var s = node_history.pop_back()
 	current_node = s["node"]
@@ -185,10 +211,38 @@ func process_node(node_name: String) -> void:
 	speaker_label.text = entry.get("speaker", "")
 	apply_emotion(entry.get("emotion", ""))
 	typewriter.start(entry.get("text", ""))
+	dialog_log.add_line(speaker_label.text, text_label.get_parsed_text())
 
 	if debug_log:
 		print("node ", node_name, " | weight ", weight.value, " | ", EmotionalWeight.State.keys()[weight.state])
 
+
+
+func _setup_button(button: Button, label: String, action: Callable) -> void:
+	if button.text == "" and button.icon == null:
+		button.text = label
+	button.focus_mode = Control.FOCUS_NONE # so Space/Enter keep advancing the dialog
+	button.pressed.connect(action)
+
+
+func _toggle_auto() -> void:
+	auto_mode = not auto_mode
+	auto_button.modulate = Color(1, 1, 0.6) if auto_mode else Color.WHITE
+	if auto_mode and not typewriter.is_typing:
+		_auto_advance()
+
+## After a line finishes, waits and advances on its own. Stops at choices.
+func _auto_advance() -> void:
+	if not auto_mode or graph.get_entry(current_node).has("choices"):
+		return
+	var serial := _node_serial
+	var wait := auto_delay + text_label.get_parsed_text().length() * auto_delay_per_char
+	await get_tree().create_timer(wait).timeout
+	# Bail if the player moved on, turned Auto off, or is reading the log.
+	while dialog_log.visible and auto_mode and serial == _node_serial:
+		await get_tree().process_frame
+	if auto_mode and serial == _node_serial and not is_transitioning:
+		_handle_advance()
 
 
 func _show_choices() -> void:
@@ -224,6 +278,7 @@ func _on_choice_pressed(index: int) -> void:
 
 func select_choice(choice: Dictionary) -> void:
 	choices_container.visible = false
+	dialog_log.add_choice(choice.get("text", ""))
 	_push_history(current_node, true)  #block rewind past
 	weight.change(choice.get("weight_change", 0.0))
 	if choice.has("set_flag"):
