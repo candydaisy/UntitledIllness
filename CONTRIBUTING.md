@@ -57,6 +57,10 @@ UntitledIllness/
 
 **Write or edit dialogue** → read [`Story/README.md`](Story/README.md), then edit the character's `flow_graph.json`. No code needed.
 
+You can also use **[TTFUI](https://github.com/candydaisy/TTFUI)** ([open it in the browser](https://candydaisy.github.io/TTFUI/)), a visual editor for these files:
+- **Flow graph editor:** import a `flow_graph.json`, edit it as a node graph, playtest it with the character's real rules (meters, locks, timed choices, self-edits), and export. Exporting an unchanged story gives back the identical file.
+- **Relationship web editor** (the **Relationships** button): edits `Story/relationships.json`. **Open Story Folder** checks every story for speakers missing from the web.
+
 **Add a background**
 1. Put the image in `Assets/Photos/Background/`.
 2. Open the character's scene in `Scenes/Characters/`, add a `TextureRect` under **Bgs**, and set its texture.
@@ -223,6 +227,8 @@ const INFO := {
 When the game starts in the editor, it checks the story against this list. If a story uses a key, a choice type, or a meter that its mode doesn't know, the Output panel says so. This catches things like a `weight_change` left in Elysia's story, where it would silently do nothing.
 
 **To make a new mode:** copy `elysia_mode.gd` (or `kay_mode.gd`), change `class_name`, rewrite `INFO` and the functions you need, and delete the rest; the base versions do nothing harmful. Put tunable numbers in `@export` variables so they can be changed in the Inspector.
+
+Then add the same mode to `MODES` in TTFUI's `js/graph.js` (meters and their starting values, choice types, extra node keys, lock rule), so the editor can edit and playtest that character's story. If you change a mode's numbers in Godot (starting values, lock thresholds, timer), change them there too.
 
 ## Rules that keep things from breaking
 

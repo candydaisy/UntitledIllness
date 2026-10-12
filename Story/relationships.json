@@ -19,7 +19,6 @@
 		{"id": "Pun", "name": "Pun", "picture": "", "about": "Eight years old. Loves bugs the way Elysia used to."},
 		{"id": "Tan", "name": "Tan", "picture": "", "about": "21, a university student. Lets Ulyn sleep on his couch, and keeps asking when he's going home."},
 		{"id": "Pim", "name": "Pim", "picture": "", "about": "Student council president. Organized to the point of being frightening."},
-
 		{"id": "KayMom", "name": "Kay's Mom", "speaker": "Mom", "route": "Kay", "picture": "", "about": "Hospital shifts, always tired. Raised Kay alone."},
 		{"id": "KayDad", "name": "Kay's Dad", "picture": "", "about": "Left about five years ago."},
 		{"id": "ElysiaMom", "name": "Elysia's Mom", "speaker": "Mom", "route": "Elysia", "picture": "", "about": "Thinks Elysia is her easy one."},
@@ -55,9 +54,12 @@
 		{"from": "Elysia", "to": "ElysiaMom", "to_is": "mom", "from_is": "daughter"},
 
 		{"from": "Bank", "to": "Fern", "to_is": "groupmate", "from_is": "groupmate"},
+
 		{"from": "Ploy", "to": "Jane", "to_is": "friend", "from_is": "friend"},
 		{"from": "Ploy", "to": "Bow", "to_is": "friend", "from_is": "friend"},
+
 		{"from": "KayMom", "to": "KayDad", "to_is": "ex-husband", "from_is": "ex-wife"},
+
 		{"from": "UlynMom", "to": "UlynDad", "to_is": "separated", "from_is": "separated"}
 	]
 }
