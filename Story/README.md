@@ -12,11 +12,20 @@ Story/
 └── Elysia/flow_graph.json + Elysia_Story.md
 ```
 
-Elysia's route doesn't have backgrounds, characters or sounds yet.
+All three routes have backgrounds, characters and sounds. Some of Elysia's and Ulyn's places don't have their own pictures yet, so in their scenes they borrow the closest existing one. To add the real art, select the node under **Bgs** and change its **Texture**; the story file doesn't need to change.
 
-Ulyn's route has them. Some of his places don't have their own pictures yet, so in `Scenes/Characters/Ulyn.tscn` they borrow the closest existing one. To add the real art, select the node under **Bgs** and change its **Texture**; the story file doesn't need to change.
+| Background in Elysia's story (`Elysia.tscn`) | Borrowing for now |
+|---|---|
+| `Elysia's room`, `Elysia's kitchen`, `Pun's room` | the daytime bedroom |
+| `Elysia's room night` | the night bedroom |
+| `Art room` | the classroom |
+| `Garden`, `Sports field` | Kay's front lawn |
+| `Canal park`, `Bus` | the sidewalk |
+| `Museum` | the hallway |
 
-| Background in Ulyn's story | Borrowing for now |
+Her characters (`Elysia`, `Kay`, `Ulyn`, `mom`, `Ploy`, `Mint`, `Jane`, `Bow`, `Nam`, `Pun`) have no sprites yet.
+
+| Background in Ulyn's story (`Ulyn.tscn`) | Borrowing for now |
 |---|---|
 | `Tan's couch`, `Ulyn's kitchen` | the daytime bedroom |
 | `Tan's couch night`, `Tan's kitchen`, `Tan's balcony`, `Ulyn's kitchen night`, `Ulyn's room` | the night bedroom |

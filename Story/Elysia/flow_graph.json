@@ -2,7 +2,11 @@
 	"start": {
 		"speaker": "",
 		"text": "*1:04 a.m. Her phone lights up the ceiling. Ploy.*",
-		"next": "call_2"
+		"next": "call_2",
+		"background": "Elysia's room night",
+		"show_characters": ["Elysia"],
+		"sfx": "Notification",
+		"amb": "Bedroom"
 	},
 
 	"call_2": {
@@ -14,7 +18,8 @@
 	"call_3": {
 		"speaker": "",
 		"text": "*Elysia lies in the dark with the phone on the pillow next to her ear. Her eyes are closed.*",
-		"next": "call_4"
+		"next": "call_4",
+		"sfx": "Bednoises"
 	},
 
 	"call_4": {
@@ -85,13 +90,17 @@
 	"call_sleep_5": {
 		"speaker": "",
 		"text": "*Click. Elysia lies awake until two anyway, replaying \"sorry for bothering you\" until it stops sounding like words.*",
-		"next": "bfast_1"
+		"next": "bfast_1",
+		"sfx": "Bednoises"
 	},
 
 	"bfast_1": {
 		"speaker": "",
 		"text": "*At breakfast, Pun is eating eggs with one hand and holding a jar with the other.*",
-		"next": "bfast_2"
+		"next": "bfast_2",
+		"background": "Elysia's kitchen",
+		"show_characters": ["Pun", "mom"],
+		"amb": "stop"
 	},
 
 	"bfast_2": {
@@ -166,19 +175,25 @@
 	"gate_1": {
 		"speaker": "",
 		"text": "*At the gate, Ploy has her arm linked through Elysia's and is telling Jane and Bow about the meme. Elysia laughs at all the right places.*",
-		"next": "gate_2"
+		"next": "gate_2",
+		"background": "Gate",
+		"show_characters": ["Ploy", "Jane", "Bow"],
+		"hide_characters": ["Pun", "mom"],
+		"sfx": "Walkingstep"
 	},
 
 	"gate_2": {
 		"speaker": "",
 		"text": "*Then she feels it, the way she always does. Kay is somewhere behind her.*",
-		"next": "gate_3"
+		"next": "gate_3",
+		"sfx": "stop"
 	},
 
 	"gate_3": {
 		"speaker": "",
 		"text": "*She turns around. There he is, by the gate. Very still, looking at her like she's far away.*",
-		"next": "gate_4"
+		"next": "gate_4",
+		"show_characters": ["Kay"]
 	},
 
 	"gate_4": {
@@ -220,13 +235,17 @@
 	"gate_10": {
 		"speaker": "",
 		"text": "*She mouths \"later!\" to Kay and lets herself get pulled away.*",
-		"next": "line_1"
+		"next": "line_1",
+		"hide_characters": ["Kay"]
 	},
 
 	"line_1": {
 		"speaker": "",
 		"text": "*Lunch. She planned it. She'll admit that to herself, though never to anyone else.*",
-		"next": "line_2"
+		"next": "line_2",
+		"background": "Cafeteria",
+		"show_characters": ["Kay"],
+		"hide_characters": ["Bow", "Jane", "Ploy"]
 	},
 
 	"line_2": {
@@ -340,7 +359,8 @@
 	"line_20": {
 		"speaker": "",
 		"text": "*She carries her tray back to the table by the window, glancing over her shoulder once.*",
-		"next": "line_21"
+		"next": "line_21",
+		"show_characters": ["Ploy", "Jane", "Bow"]
 	},
 
 	"line_21": {
@@ -407,7 +427,8 @@
 	"line_31": {
 		"speaker": "",
 		"text": "*When Kay leaves to return his tray, Ploy leans in.*",
-		"next": "line_32"
+		"next": "line_32",
+		"hide_characters": ["Kay"]
 	},
 
 	"line_32": {
@@ -484,7 +505,10 @@
 	"walk_1": {
 		"speaker": "",
 		"text": "*After school. Kay is halfway through the gate.*",
-		"next": "walk_2"
+		"next": "walk_2",
+		"background": "Gate",
+		"show_characters": ["Kay"],
+		"hide_characters": ["Bow", "Jane", "Ploy"]
 	},
 
 	"walk_2": {
@@ -502,7 +526,8 @@
 	"walk_4": {
 		"speaker": "",
 		"text": "*Loud and bright, so it sounds easy. Behind her, Ploy whispers something to Jane. Elysia doesn't hear what. She hears the whisper.*",
-		"next": "walk_5"
+		"next": "walk_5",
+		"show_characters": ["Ploy", "Jane"]
 	},
 
 	"walk_5": {
@@ -550,13 +575,17 @@
 	"walk_12": {
 		"speaker": "",
 		"text": "*She walks off alone. The smile stays on past the 7-Eleven, the bus stop, the corner. A beat too long. Then a hundred.*",
-		"next": "walk_13"
+		"next": "walk_13",
+		"background": "Road",
+		"hide_characters": ["Jane", "Kay", "Ploy"],
+		"sfx": "Walkingstep"
 	},
 
 	"walk_13": {
 		"speaker": "Elysia",
 		"text": "\"You don't want people looking at us like that.\" Like what?",
-		"next": "walk_14"
+		"next": "walk_14",
+		"sfx": "stop"
 	},
 
 	"walk_14": {
@@ -586,7 +615,9 @@
 	"walk_18": {
 		"speaker": "",
 		"text": "*6:30. Mint calls. Mint has called on Mondays since they were six.*",
-		"next": "walk_19"
+		"next": "walk_19",
+		"background": "Elysia's room",
+		"sfx": "Notification"
 	},
 
 	"walk_19": {
@@ -697,13 +728,16 @@
 	"mint_fine_4": {
 		"speaker": "",
 		"text": "*Mint sighs the sigh of someone who has known you for eleven years and is choosing not to fight about it tonight.*",
-		"next": "tue_1"
+		"next": "tue_1",
+		"sfx": "Sigh"
 	},
 
 	"tue_1": {
 		"speaker": "",
 		"text": "*Tuesday. 6:20 a.m. She's been awake since five, typing.*",
-		"next": "tue_2"
+		"next": "tue_2",
+		"background": "Elysia's room",
+		"sfx": "Writing"
 	},
 
 	"tue_2": {
@@ -742,7 +776,8 @@
 	"tue_cheer_3": {
 		"speaker": "Kay",
 		"text": "morning! not yet lol",
-		"next": "tue_cheer_4"
+		"next": "tue_cheer_4",
+		"sfx": "Notification"
 	},
 
 	"tue_cheer_4": {
@@ -778,13 +813,15 @@
 	"tue_ask_1": {
 		"speaker": "",
 		"text": "*She sends it before the version can stop her, and throws the phone onto the bed like it's hot.*",
-		"next": "tue_ask_2"
+		"next": "tue_ask_2",
+		"sfx": "Bodyfallonbed"
 	},
 
 	"tue_ask_2": {
 		"speaker": "",
 		"text": "*It buzzes four minutes later.*",
-		"next": "tue_ask_3"
+		"next": "tue_ask_3",
+		"sfx": "Notification"
 	},
 
 	"tue_ask_3": {
@@ -826,7 +863,8 @@
 	"tue_ask_9": {
 		"speaker": "Kay",
 		"text": "i'm sorry",
-		"next": "tue_ask_10"
+		"next": "tue_ask_10",
+		"sfx": "Notification"
 	},
 
 	"tue_ask_10": {
@@ -838,7 +876,9 @@
 	"garden_1": {
 		"speaker": "",
 		"text": "*The second week, Ploy plans a mall trip for Wednesday.*",
-		"next": "garden_2"
+		"next": "garden_2",
+		"background": "Class",
+		"show_characters": ["Ploy"]
 	},
 
 	"garden_2": {
@@ -862,13 +902,18 @@
 	"garden_5": {
 		"speaker": "",
 		"text": "*Four beds behind the science building. Tiny seedlings. Very, very wet soil.*",
-		"next": "garden_6"
+		"next": "garden_6",
+		"background": "Garden",
+		"show_characters": ["Kay"],
+		"hide_characters": ["Ploy"],
+		"sfx": "Walkingstep"
 	},
 
 	"garden_6": {
 		"speaker": "",
 		"text": "*Kay looks up and sees her. For a second his face is unguarded. Surprised. Happy?*",
-		"next": "garden_7"
+		"next": "garden_7",
+		"sfx": "stop"
 	},
 
 	"garden_7": {
@@ -992,7 +1037,8 @@
 	"garden_go_1": {
 		"speaker": "",
 		"text": "*Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. How does it fly with those heavy wings? Do they bite?*",
-		"next": "garden_go_2"
+		"next": "garden_go_2",
+		"sfx": "Inhale"
 	},
 
 	"garden_go_2": {
@@ -1052,7 +1098,8 @@
 	"garden_gate_1": {
 		"speaker": "",
 		"text": "*They walk to the gate. In the evening light, she looks at him properly for the first time in days.*",
-		"next": "garden_gate_2"
+		"next": "garden_gate_2",
+		"background": "Gate"
 	},
 
 	"garden_gate_2": {
@@ -1106,7 +1153,11 @@
 	"nam_1": {
 		"speaker": "",
 		"text": "*The third week. In art class, Nam's plush frog keychain falls off her bag and skids across the floor to Ploy's feet.*",
-		"next": "nam_2"
+		"next": "nam_2",
+		"background": "Art room",
+		"show_characters": ["Nam", "Ploy", "Jane", "Bow"],
+		"hide_characters": ["Kay"],
+		"sfx": "Pageturning"
 	},
 
 	"nam_2": {
@@ -1194,7 +1245,10 @@
 	"pun_1": {
 		"speaker": "",
 		"text": "*The fourth week. Pun comes home from school and doesn't go to his jar. He sits at the kitchen table with his backpack still on.*",
-		"next": "pun_2"
+		"next": "pun_2",
+		"background": "Elysia's kitchen",
+		"show_characters": ["Pun"],
+		"hide_characters": ["Bow", "Jane", "Nam", "Ploy"]
 	},
 
 	"pun_2": {
@@ -1270,7 +1324,9 @@
 	"pun_hide_3": {
 		"speaker": "",
 		"text": "*He goes to his room. Later, when she walks past, the jar on his windowsill is empty. The lid is off. He let the beetle go.*",
-		"next": "pun_hide_4"
+		"next": "pun_hide_4",
+		"background": "Pun's room",
+		"hide_characters": ["Pun"]
 	},
 
 	"pun_hide_4": {
@@ -1306,19 +1362,24 @@
 	"pun_bug_4": {
 		"speaker": "",
 		"text": "*So she tells him. Sitting on his bedroom floor with her nose against the jar, like she's eight too.*",
-		"next": "sports_1"
+		"next": "sports_1",
+		"background": "Pun's room",
+		"sfx": "Pageturning"
 	},
 
 	"sports_1": {
 		"speaker": "",
 		"text": "*Friday. Sports day. Her class team is red, and she's on the cheer squad. She shouts until her voice goes. The version is very good at sports day.*",
-		"next": "sports_2"
+		"next": "sports_2",
+		"background": "Sports field",
+		"hide_characters": ["Pun"]
 	},
 
 	"sports_2": {
 		"speaker": "",
 		"text": "*At the water station by the track, Kay is filling paper cups. Alone. Clipboard under his arm. Grey.*",
-		"next": "sports_3"
+		"next": "sports_3",
+		"show_characters": ["Kay"]
 	},
 
 	"sports_3": {
@@ -1352,14 +1413,16 @@
 	"sports_drink_1": {
 		"speaker": "",
 		"text": "*She buys a cold drink from the canteen, runs over, and pushes it into his hands.*",
-		"next": "sports_drink_2"
+		"next": "sports_drink_2",
+		"sfx": "Walkingstep"
 	},
 
 	"sports_drink_2": {
 		"speaker": "Elysia",
 		"text": "\"Hydrate, water boy!\"",
 		"real_text": "\"You looked thirsty. And kind of alone.\"",
-		"next": "sports_drink_3"
+		"next": "sports_drink_3",
+		"sfx": "stop"
 	},
 
 	"sports_drink_3": {
@@ -1389,7 +1452,11 @@
 	"mid_1": {
 		"speaker": "",
 		"text": "*The fifth week. Midterms. Ploy and her boyfriend break up on Monday.*",
-		"next": "mid_2"
+		"next": "mid_2",
+		"background": "Elysia's room night",
+		"hide_characters": ["Kay"],
+		"sfx": "Notification",
+		"amb": "Bedroom"
 	},
 
 	"mid_2": {
@@ -1401,7 +1468,10 @@
 	"mid_3": {
 		"speaker": "",
 		"text": "*On Thursday her history score is twelve points lower than usual. Mom sees the paper on the table.*",
-		"next": "mid_4"
+		"next": "mid_4",
+		"background": "Elysia's kitchen",
+		"show_characters": ["mom"],
+		"amb": "stop"
 	},
 
 	"mid_4": {
@@ -1435,7 +1505,10 @@
 	"mid_sorry_2": {
 		"speaker": "",
 		"text": "*Elysia goes upstairs, sits on her bed, and doesn't cry. Easy ones don't.*",
-		"next": "thu_1"
+		"next": "thu_1",
+		"background": "Elysia's room",
+		"hide_characters": ["mom"],
+		"sfx": "Bodyfallonbed"
 	},
 
 	"mid_honest_1": {
@@ -1477,7 +1550,9 @@
 	"thu_1": {
 		"speaker": "",
 		"text": "*The sixth Thursday. Kay isn't at the gate. She always knows when he's there, and this morning she knows he isn't.*",
-		"next": "thu_2"
+		"next": "thu_2",
+		"background": "Gate",
+		"hide_characters": ["mom"]
 	},
 
 	"thu_2": {
@@ -1513,7 +1588,9 @@
 	"thu_7": {
 		"speaker": "",
 		"text": "*9:41. Math. Her phone buzzes in her pocket.*",
-		"next": "thu_8"
+		"next": "thu_8",
+		"background": "Class",
+		"sfx": "Notification"
 	},
 
 	"thu_8": {
@@ -1525,7 +1602,8 @@
 	"thu_9": {
 		"speaker": "",
 		"text": "*She reads it seven times.*",
-		"next": "thu_10"
+		"next": "thu_10",
+		"sfx": "Scrolls"
 	},
 
 	"thu_10": {
@@ -1579,7 +1657,8 @@
 	"thu_18": {
 		"speaker": "Kay",
 		"text": "leave me alone for now. sorry",
-		"next": "thu_19"
+		"next": "thu_19",
+		"sfx": "Notification"
 	},
 
 	"thu_19": {
@@ -1603,7 +1682,8 @@
 	"thu_22": {
 		"speaker": "",
 		"text": "*At lunch, she doesn't go to the table by the window.*",
-		"next": "thu_23"
+		"next": "thu_23",
+		"background": "Cafeteria"
 	},
 
 	"thu_23": {
@@ -1619,7 +1699,8 @@
 	"thu_ulyn_1": {
 		"speaker": "",
 		"text": "*Ulyn is at the end of a cafeteria table, about to sit down. She's never really talked to him without Kay.*",
-		"next": "thu_ulyn_2"
+		"next": "thu_ulyn_2",
+		"show_characters": ["Ulyn"]
 	},
 
 	"thu_ulyn_2": {
@@ -1679,19 +1760,24 @@
 	"thu_go_1": {
 		"speaker": "",
 		"text": "*After school she walks to Kay's street. She's been there twice, both times with him.*",
-		"next": "thu_go_2"
+		"next": "thu_go_2",
+		"background": "Road",
+		"sfx": "Walkingstep"
 	},
 
 	"thu_go_2": {
 		"speaker": "",
 		"text": "*She turns the corner and stops.*",
-		"next": "thu_go_3"
+		"next": "thu_go_3",
+		"sfx": "stop"
 	},
 
 	"thu_go_3": {
 		"speaker": "",
 		"text": "*Two people on Kay's front step. Kay, in a T-shirt. Ulyn, still in uniform, a plastic bag between them.*",
-		"next": "thu_go_4"
+		"next": "thu_go_4",
+		"background": "Kay's frontyard",
+		"show_characters": ["Kay", "Ulyn"]
 	},
 
 	"thu_go_4": {
@@ -1721,13 +1807,16 @@
 	"thu_go_8": {
 		"speaker": "",
 		"text": "*She turns around and walks home. She doesn't tell anyone she was there.*",
-		"next": "thu_night_1"
+		"next": "thu_night_1",
+		"background": "Road",
+		"hide_characters": ["Kay", "Ulyn"]
 	},
 
 	"thu_wait_1": {
 		"speaker": "",
 		"text": "*She doesn't go. She doesn't ask anyone. She sits through the afternoon and checks her phone every four minutes. Nothing.*",
-		"next": "thu_wait_2"
+		"next": "thu_wait_2",
+		"background": "Class"
 	},
 
 	"thu_wait_2": {
@@ -1746,6 +1835,9 @@
 		"speaker": "",
 		"text": "*Evening.*",
 		"next": "thu_night_2",
+		"background": "Elysia's room night",
+		"hide_characters": ["Ulyn"],
+		"amb": "Bedroom",
 		"secret": {"condition": "flag_true", "flag": "AskedUlyn", "next": "thu_ulyn_text_1"}
 	},
 
@@ -1764,7 +1856,8 @@
 	"thu_ulyn_text_1": {
 		"speaker": "",
 		"text": "*7:02 p.m. A number she saved two months ago and never used.*",
-		"next": "thu_ulyn_text_2"
+		"next": "thu_ulyn_text_2",
+		"sfx": "Notification"
 	},
 
 	"thu_ulyn_text_2": {
@@ -1776,13 +1869,18 @@
 	"thu_ulyn_text_3": {
 		"speaker": "",
 		"text": "*Elysia goes into the bathroom, turns on the fan so Pun won't hear, and cries for twenty minutes.*",
-		"next": "fri_1"
+		"next": "fri_1",
+		"background": "Bathroom1",
+		"amb": "stop"
 	},
 
 	"fri_1": {
 		"speaker": "",
 		"text": "*Friday night, she types for an hour and deletes all of it. Then:*",
-		"next": "fri_2"
+		"next": "fri_2",
+		"background": "Phone at night",
+		"hide_characters": ["Elysia"],
+		"amb": "stop"
 	},
 
 	"fri_2": {
@@ -1794,7 +1892,8 @@
 	"fri_3": {
 		"speaker": "Kay",
 		"text": "ok",
-		"next": "fri_4"
+		"next": "fri_4",
+		"sfx": "Notification"
 	},
 
 	"fri_4": {
@@ -1807,13 +1906,16 @@
 		"speaker": "",
 		"text": "*Saturday.*",
 		"next": "sat_2",
+		"background": "BlackScreen",
 		"secret": {"condition": "flag_true", "flag": "KeptGoing", "next": "sat_museum_1"}
 	},
 
 	"sat_2": {
 		"speaker": "",
 		"text": "*She takes him to the park by the canal and hands him a can of milk tea. A monitor lizard swims past very slowly, like it has somewhere to be.*",
-		"next": "sat_3"
+		"next": "sat_3",
+		"background": "Canal park",
+		"show_characters": ["Elysia", "Kay"]
 	},
 
 	"sat_3": {
@@ -1831,7 +1933,9 @@
 	"sat_museum_1": {
 		"speaker": "",
 		"text": "*She takes him to the natural history museum across the river. Free on Saturdays.*",
-		"next": "sat_museum_2"
+		"next": "sat_museum_2",
+		"background": "Museum",
+		"show_characters": ["Elysia", "Kay"]
 	},
 
 	"sat_museum_2": {
@@ -1946,6 +2050,7 @@
 		"speaker": "Elysia",
 		"text": "Now it's my turn.",
 		"timed": true,
+		"sfx": "Inhale",
 		"choices": [
 			{"text": "Tell him the truth. All of it.", "type": "honest", "mask_change": -20, "energy_change": 15, "next": "sat_truth_1", "set_flag": "DroppedVersion"},
 			{"text": "\"Kay, that's silly! You don't make me look weird at all!\"", "type": "perform", "mask_change": 10, "energy_change": -10, "next": "sat_version_1"}
@@ -2004,7 +2109,8 @@
 	"sat_truth_9": {
 		"speaker": "",
 		"text": "*She leans her head on his shoulder. She can feel him breathing.*",
-		"next": "sat_truth_10"
+		"next": "sat_truth_10",
+		"sfx": "Softpat"
 	},
 
 	"sat_truth_10": {
@@ -2112,13 +2218,17 @@
 	"mon_1": {
 		"speaker": "",
 		"text": "*Monday. Ploy, Jane, Bow, and Mint, who has drifted over from her own class for reasons she won't explain.*",
-		"next": "mon_2"
+		"next": "mon_2",
+		"background": "Gate",
+		"show_characters": ["Ploy", "Jane", "Bow", "Mint"],
+		"hide_characters": ["Kay"]
 	},
 
 	"mon_2": {
 		"speaker": "",
 		"text": "*Elysia feels Kay behind her. She turns around and waves.*",
 		"next": "mon_3",
+		"show_characters": ["Kay"],
 		"secret": {"condition": "flag_true", "flag": "DroppedVersion", "next": "mon_walk_1"}
 	},
 
@@ -2156,13 +2266,15 @@
 	"mon_walk_2": {
 		"speaker": "",
 		"text": "*He walks over. Straight across the front of the school, in front of everyone.*",
-		"next": "mon_walk_3"
+		"next": "mon_walk_3",
+		"sfx": "Walkingstep"
 	},
 
 	"mon_walk_3": {
 		"speaker": "",
 		"text": "*Check: Ploy, mouth open. Jane, grabbing Bow's arm. Bow, phone already up.*",
-		"next": "mon_walk_4"
+		"next": "mon_walk_4",
+		"sfx": "stop"
 	},
 
 	"mon_walk_4": {
@@ -2208,7 +2320,9 @@
 	"mon_say_6": {
 		"speaker": "",
 		"text": "*Later, in the hallway, Ploy grabs her arm.*",
-		"next": "mon_say_7"
+		"next": "mon_say_7",
+		"background": "School hallway",
+		"hide_characters": ["Bow", "Jane", "Kay", "Mint"]
 	},
 
 	"mon_say_7": {
@@ -2296,25 +2410,31 @@
 	"mon_hi_4": {
 		"speaker": "",
 		"text": "*He stands next to her friends for a minute. Then he goes to class.*",
-		"next": "late_1"
+		"next": "late_1",
+		"hide_characters": ["Kay"]
 	},
 
 	"late_1": {
 		"speaker": "",
 		"text": "*The eighth week. Ploy has a new crush, and the new crush has started leaving her on read.*",
-		"next": "late_2"
+		"next": "late_2",
+		"background": "Elysia's room night",
+		"hide_characters": ["Bow", "Jane", "Kay", "Mint", "Ploy"],
+		"amb": "Bedroom"
 	},
 
 	"late_2": {
 		"speaker": "",
 		"text": "*1:12 a.m. Elysia's phone lights up the ceiling. Ploy.*",
-		"next": "late_3"
+		"next": "late_3",
+		"sfx": "Notification"
 	},
 
 	"late_3": {
 		"speaker": "",
 		"text": "*She watches it ring. She thinks about Mom. It doesn't always have to be you. She thinks about Kay saying \"couldn't.\"*",
 		"timed": true,
+		"sfx": "Inhale",
 		"choices": [
 			{"text": "Answer, and say it. \"I can't do 1 a.m. calls anymore.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "late_no_1", "set_flag": "SetBoundary"},
 			{"text": "Answer, and listen until three", "type": "perform", "mask_change": 5, "energy_change": -15, "next": "late_yes_1"}
@@ -2354,7 +2474,10 @@
 	"late_no_6": {
 		"speaker": "",
 		"text": "*Ploy is cold for two days. She sits with Jane on Tuesday. She doesn't laugh at Elysia's jokes on Wednesday.*",
-		"next": "late_no_7"
+		"next": "late_no_7",
+		"background": "Cafeteria",
+		"show_characters": ["Ploy", "Jane", "Bow"],
+		"amb": "stop"
 	},
 
 	"late_no_7": {
@@ -2414,7 +2537,9 @@
 	"late_yes_2": {
 		"speaker": "",
 		"text": "*Elysia lies awake until five and goes to school with stinging eyes.*",
-		"next": "late_yes_3"
+		"next": "late_yes_3",
+		"background": "Class",
+		"amb": "stop"
 	},
 
 	"late_yes_3": {
@@ -2433,6 +2558,9 @@
 		"speaker": "",
 		"text": "*In art class that week, Elysia sits next to Nam.*",
 		"next": "art_2",
+		"background": "Art room",
+		"show_characters": ["Nam"],
+		"hide_characters": ["Bow", "Jane", "Ploy"],
 		"secret": {"condition": "flag_true", "flag": "StoodUpForNam", "next": "art_beetle_1"}
 	},
 
@@ -2457,19 +2585,23 @@
 	"art_5": {
 		"speaker": "",
 		"text": "*The next week, a tiny jewel beetle appears in green pen in the margin of Elysia's worksheet.*",
-		"next": "note_1"
+		"next": "note_1",
+		"sfx": "Writing"
 	},
 
 	"art_beetle_1": {
 		"speaker": "",
 		"text": "*Nam smiles when she sits down. Without saying anything, she draws a tiny jewel beetle in the margin of Elysia's worksheet. Green pen. Perfect.*",
-		"next": "note_1"
+		"next": "note_1",
+		"sfx": "Writing"
 	},
 
 	"note_1": {
 		"speaker": "",
 		"text": "*The ninth week. Kay's group presents the garden project.*",
-		"next": "note_2"
+		"next": "note_2",
+		"background": "Class",
+		"hide_characters": ["Nam"]
 	},
 
 	"note_2": {
@@ -2493,13 +2625,19 @@
 	"note_5": {
 		"speaker": "",
 		"text": "*That night she digs a box out of the back of her closet. Under old birthday cards and a broken Tamagotchi: a notebook from third grade. Stickers on the cover. A beetle on every page, in careful crayon, the Latin name copied underneath in big wobbly letters.*",
-		"next": "note_6"
+		"next": "note_6",
+		"background": "Elysia's room night",
+		"sfx": "Pageturning",
+		"amb": "Bedroom"
 	},
 
 	"note_6": {
 		"speaker": "",
 		"text": "*She takes it to Pun's room.*",
 		"next": "note_7",
+		"background": "Pun's room",
+		"show_characters": ["Pun"],
+		"amb": "stop",
 		"secret": {"condition": "flag_true", "flag": "ToldPunBugBoy", "next": "note_bug_1"}
 	},
 
@@ -2536,7 +2674,8 @@
 	"note_12": {
 		"speaker": "",
 		"text": "*Pun opens the notebook. He turns the pages slowly, then faster.*",
-		"next": "note_13"
+		"next": "note_13",
+		"sfx": "Pageturning"
 	},
 
 	"note_13": {
@@ -2638,13 +2777,17 @@
 	"last_1": {
 		"speaker": "",
 		"text": "*Friday. The last day of the semester.*",
-		"next": "last_2"
+		"next": "last_2",
+		"background": "Gate",
+		"show_characters": ["Ploy", "Jane", "Bow", "Mint"],
+		"hide_characters": ["Pun"]
 	},
 
 	"last_2": {
 		"speaker": "",
 		"text": "*Last night, Pun found a rhinoceros beetle by the drain. Huge. A male, horn and everything. He let her take a picture before he named it Kay. She didn't explain why that was funny.*",
-		"next": "last_3"
+		"next": "last_3",
+		"sfx": "Scrolls"
 	},
 
 	"last_3": {
@@ -2657,6 +2800,7 @@
 		"speaker": "",
 		"text": "*She feels Kay behind her.*",
 		"timed": true,
+		"show_characters": ["Kay"],
 		"choices": [
 			{"text": "Hold it up for everyone. Don't check.", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "last_all_1", "set_flag": "ShowedEveryone"},
 			{"text": "Show it just to Kay, quietly", "type": "neutral", "mask_change": 0, "energy_change": 5, "next": "last_kay_1"}
@@ -2727,6 +2871,8 @@
 		"speaker": "",
 		"text": "*At lunch, Mint sits down across from her with a carton of chocolate milk and her about-to-confess face.*",
 		"next": "mint_2",
+		"background": "Cafeteria",
+		"hide_characters": ["Bow", "Jane", "Kay", "Ploy"],
 		"secret": {"condition": "flag_true", "flag": "ToldMint", "next": "mint_confess_1"}
 	},
 
@@ -2812,6 +2958,8 @@
 		"speaker": "",
 		"text": "*The last bell rings.*",
 		"next": "ending_2",
+		"background": "BlackScreen",
+		"hide_characters": ["Elysia", "Mint"],
 		"secret": {"condition": "mask_above", "value": 69, "next": "endC_1"}
 	},
 
@@ -2826,13 +2974,17 @@
 		"speaker": "",
 		"text": "*Elysia walks out through the gate.*",
 		"next": "endB_1",
+		"background": "Gate",
+		"show_characters": ["Elysia"],
 		"secret": {"condition": "energy_above", "value": 54, "next": "endA_1"}
 	},
 
 	"endA_1": {
 		"speaker": "",
 		"text": "*On Sunday, she takes Pun to the natural history museum across the river.*",
-		"next": "endA_2"
+		"next": "endA_2",
+		"background": "Museum",
+		"show_characters": ["Pun"]
 	},
 
 	"endA_2": {
@@ -2857,13 +3009,15 @@
 	"endA_kay_1": {
 		"speaker": "",
 		"text": "*Kay is there too, a few steps behind, looking at the beetles the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the beetle's name.*",
-		"next": "endA_ploy_1"
+		"next": "endA_ploy_1",
+		"show_characters": ["Kay"]
 	},
 
 	"endA_ploy_1": {
 		"speaker": "",
 		"text": "*Her phone buzzes.*",
 		"next": "endA_ploy_2",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "SetBoundary", "next": "endA_pics_1"}
 	},
 
@@ -2876,7 +3030,8 @@
 	"endA_pics_1": {
 		"speaker": "Ploy",
 		"text": "send me a pic of the bugs. i want to see what the big deal is",
-		"next": "endA_pics_2"
+		"next": "endA_pics_2",
+		"sfx": "Notification"
 	},
 
 	"endA_pics_2": {
@@ -2888,7 +3043,8 @@
 	"endA_pics_3": {
 		"speaker": "Ploy",
 		"text": "ok that one is actually kind of cool",
-		"next": "endA_end_1"
+		"next": "endA_end_1",
+		"sfx": "Notification"
 	},
 
 	"endA_end_1": {
@@ -2906,7 +3062,9 @@
 	"endA_end_3": {
 		"speaker": "",
 		"text": "*On the bus home, Pun falls asleep against her shoulder, holding her notebook.*",
-		"next": "endA_end_4"
+		"next": "endA_end_4",
+		"background": "Bus",
+		"hide_characters": ["Kay"]
 	},
 
 	"endA_end_4": {
@@ -2929,7 +3087,9 @@
 	"endB_1": {
 		"speaker": "",
 		"text": "*She still does the version sometimes. At the gate. When Ploy is having a bad day. It's easier than not.*",
-		"next": "endB_2"
+		"next": "endB_2",
+		"background": "Gate",
+		"show_characters": ["Elysia", "Ploy"]
 	},
 
 	"endB_2": {
@@ -2941,7 +3101,11 @@
 	"endB_3": {
 		"speaker": "",
 		"text": "*That night, Ploy calls at 12:40. Elysia answers.*",
-		"next": "endB_4"
+		"next": "endB_4",
+		"background": "Elysia's room night",
+		"hide_characters": ["Ploy"],
+		"sfx": "Notification",
+		"amb": "Bedroom"
 	},
 
 	"endB_4": {
@@ -2971,7 +3135,8 @@
 	"endB_8": {
 		"speaker": "Kay",
 		"text": "yeah",
-		"next": "endB_9"
+		"next": "endB_9",
+		"sfx": "Notification"
 	},
 
 	"endB_9": {
@@ -2983,7 +3148,8 @@
 	"endB_10": {
 		"speaker": "Kay",
 		"text": "proud of u",
-		"next": "endB_11"
+		"next": "endB_11",
+		"sfx": "Notification"
 	},
 
 	"endB_11": {
@@ -2995,7 +3161,8 @@
 	"endB_12": {
 		"speaker": "Kay",
 		"text": "i know",
-		"next": "endB_13"
+		"next": "endB_13",
+		"sfx": "Notification"
 	},
 
 	"endB_13": {
@@ -3012,13 +3179,18 @@
 	"endC_1": {
 		"speaker": "",
 		"text": "*Everyone says Elysia is \"so easy to be around.\" Ploy says it. Mom says it. Her report card says \"a pleasure to have in class.\"*",
-		"next": "endC_2"
+		"next": "endC_2",
+		"background": "Class",
+		"show_characters": ["Elysia"]
 	},
 
 	"endC_2": {
 		"speaker": "",
 		"text": "*That night, Ploy calls at 1:04 a.m. Elysia answers. She listens until three.*",
-		"next": "endC_3"
+		"next": "endC_3",
+		"background": "Elysia's room night",
+		"sfx": "Notification",
+		"amb": "Bedroom"
 	},
 
 	"endC_3": {
@@ -3031,6 +3203,7 @@
 		"speaker": "",
 		"text": "*Her phone buzzes. Kay.*",
 		"next": "endC_5",
+		"sfx": "Notification",
 		"secret": {"condition": "flag_true", "flag": "DroppedVersion", "next": "endC_deal_1"}
 	},
 
@@ -3049,7 +3222,10 @@
 	"endC_msg_1": {
 		"speaker": "",
 		"text": "*She types \"all good!! 😊\"*",
-		"next": "endC_msg_2"
+		"next": "endC_msg_2",
+		"background": "Phone at night",
+		"hide_characters": ["Elysia"],
+		"amb": "stop"
 	},
 
 	"endC_msg_2": {
