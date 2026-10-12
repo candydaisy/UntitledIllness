@@ -614,16 +614,6 @@ theme_override_fonts/font = ExtResource("2_b1p23")
 theme_override_font_sizes/font_size = 28
 text = "Back"
 
-[node name="viewweb" type="Button" parent="UI/Selections" unique_id=1681412619]
-layout_mode = 0
-offset_left = 22.0
-offset_top = 22.0
-offset_right = 264.0
-offset_bottom = 98.0
-theme_override_fonts/font = ExtResource("2_b1p23")
-theme_override_font_sizes/font_size = 28
-text = "Back"
-
 [node name="Credits" type="Control" parent="UI" unique_id=610464874]
 visible = false
 anchors_preset = 0
