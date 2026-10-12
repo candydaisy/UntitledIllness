@@ -21,11 +21,11 @@ extends Node2D
 @onready var dialog := $Cenfix/Dialog #dialog panel
 @onready var speaker_label : Label = dialog.speaker
 @onready var text_label : RichTextLabel = dialog.dialog_line #dialog text
-@onready var choices_container : Control = $Cenfix/Dialog/Choices
+@onready var choices_container : Control = $Cenfix/Dialog/Buttons/Choices
 @onready var choice_buttons := [
-	$Cenfix/Dialog/Choices/choice1,
-	$Cenfix/Dialog/Choices/choice2,
-	$Cenfix/Dialog/Choices/choice3,
+	$Cenfix/Dialog/Buttons/Choices/choice1,
+	$Cenfix/Dialog/Buttons/Choices/choice2,
+	$Cenfix/Dialog/Buttons/Choices/choice3,
 ]
 
 

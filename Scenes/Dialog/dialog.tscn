@@ -72,7 +72,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 clip_text = true
 
-[node name="Choices" type="Control" parent="." unique_id=1738521739]
+[node name="Buttons" type="Control" parent="." unique_id=1738521739]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -80,7 +80,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="choice3" type="Button" parent="Choices" unique_id=9271355]
+[node name="Choices" type="Control" parent="Buttons" unique_id=698977378]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="choice3" type="Button" parent="Buttons/Choices" unique_id=9271355]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -96,7 +104,7 @@ grow_vertical = 2
 theme = ExtResource("2_87kay")
 text = "1"
 
-[node name="choice2" type="Button" parent="Choices" unique_id=959835235]
+[node name="choice2" type="Button" parent="Buttons/Choices" unique_id=959835235]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -112,7 +120,7 @@ grow_vertical = 2
 theme = ExtResource("2_87kay")
 text = "2"
 
-[node name="choice1" type="Button" parent="Choices" unique_id=2010027129]
+[node name="choice1" type="Button" parent="Buttons/Choices" unique_id=2010027129]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -127,3 +135,53 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_87kay")
 text = "3"
+
+[node name="Others" type="Control" parent="Buttons" unique_id=1564511563]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Setting" type="Button" parent="Buttons/Others" unique_id=301702113]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1204.0
+offset_top = 515.0
+offset_right = 1294.0
+offset_bottom = 605.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+
+[node name="Auto" type="Button" parent="Buttons/Others" unique_id=1480524365]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1111.0
+offset_top = 515.0
+offset_right = 1201.0
+offset_bottom = 605.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
+
+[node name="Button3" type="Button" parent="Buttons/Others" unique_id=928245122]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1018.0
+offset_top = 515.0
+offset_right = 1108.0
+offset_bottom = 605.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_87kay")
