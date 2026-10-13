@@ -37,6 +37,7 @@ UntitledIllness/
 │   ├── dialog_log.gd         The Log window
 │   ├── phone_popup.gd        Incoming calls ("call" nodes)
 │   ├── save_game.gd          Save slots in user://saves/
+│   ├── accessibility.gd      Screen reader helpers (spoken lines, focus, announcements)
 │   ├── story_stage.gd        Backgrounds, characters, fades
 │   └── story_audio.gd        Sound effect / ambience / voice list
 │
@@ -236,6 +237,43 @@ When the game starts in the editor, it checks the story against this list. If a 
 **To make a new mode:** copy `elysia_mode.gd` (or `kay_mode.gd`), change `class_name`, rewrite `INFO` and the functions you need, and delete the rest; the base versions do nothing harmful. Put tunable numbers in `@export` variables so they can be changed in the Inspector.
 
 Then add the same mode to `MODES` in TTFUI's `js/graph.js` (meters and their starting values, choice types, extra node keys, lock rule), so the editor can edit and playtest that character's story. If you change a mode's numbers in Godot (starting values, lock thresholds, timer), change them there too.
+
+## Accessibility (screen readers and keyboard)
+
+The game works with screen readers (NVDA on Windows, VoiceOver on macOS, Orca on Linux) through Godot's built-in accessibility (AccessKit). Sighted players see no difference.
+
+The menu has a **Screen reader** option: *Auto* (default) turns the support on when a screen reader is found, *On* forces it, and *Off* turns it off. Godot doesn't always detect screen readers on Linux, so the game also asks the system (the AT-SPI bus, which knows when Orca is running). If it still isn't detected, set it to *On*.
+
+> **Linux: use the official Godot download.** Distro packages such as Arch's `godot` are built without the AccessKit library, so Godot can't talk to Orca at all and nothing is read aloud. (When you run the game from the editor with a screen reader on, the Output panel warns about this.) The official build from [godotengine.org](https://godotengine.org/download/linux/) has it built in. Exported games use the official export templates, so players aren't affected.
+
+**With a screen reader running:**
+- Every line is announced as "Speaker: line", without the `*asterisks*`. Lines appear at once instead of being typed out.
+- Things that only show on screen are described in words:
+  - Elysia's self-edits: "Typed, then deleted: … Then: …"
+  - Ulyn's cut-off thoughts: "… cut off. Then: …"
+  - details to notice: "Something to notice: …. Press N to notice it."
+  - locked and timed choices
+  - incoming calls
+- Choices and calls are read out with their numbers, and keyboard focus moves to the first one.
+- Timed choices and calls last 3× longer (`screen_reader_timer_mult` on the story scene).
+- Menus focus their first button when they open. Save slots, volume sliders and the character buttons ("K." is read as "Kay") have spoken names.
+- The relationship web can be explored with the arrow keys. Each character is read out with all their connections.
+
+**Keyboard shortcuts in a story (for everyone):**
+
+| Key | Does |
+|---|---|
+| Space / Enter | Next line |
+| Backspace | Previous line |
+| 1 – 3 | Pick a choice (or answer / decline a call) |
+| N | Notice a detail in the current line |
+| A | Auto on / off |
+| L | Log |
+| Esc | Menu |
+
+**Testing without a screen reader:** run the game with `-- --screen-reader`. In the editor, put `--screen-reader` in **Debug → Customize Run Instances → Main Run Args**. What would be read aloud is in each Control's `accessibility_name`. With **Debug Log** on, you can print it from `story_player.gd`.
+
+**When you add UI:** give buttons that show only an icon or a letter an **Accessibility → Name** in the Inspector. Give anything that changes on its own (a popup, a counter) a **Live** mode so it gets announced. Use `Accessibility.focus()` instead of `grab_focus()` to focus something when it opens, so sighted players don't get a focus outline.
 
 ## Rules that keep things from breaking
 

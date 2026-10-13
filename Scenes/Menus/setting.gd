@@ -46,6 +46,10 @@ func _ready() -> void:
 		slider.value = AudioServer.get_bus_volume_linear(bus)
 		slider.value_changed.connect(_on_volume_changed.bind(bus))
 		slider.drag_ended.connect(func(_changed): _save_volumes())
+		var label_name := String(slider.name).trim_suffix("-slider")
+		var label := slider.get_parent().get_node_or_null(label_name) as Label
+		slider.accessibility_name = "%s volume" % (label.text if label else sliders[slider])
+		slider.accessibility_description = "Left and right arrows change it."
 
 	$Main/Setting.pressed.connect(_show_sub.bind(setting_panel))
 	$Main/Save.pressed.connect(_show_sub.bind(save_panel))
@@ -63,6 +67,13 @@ func _ready() -> void:
 	for slot in save_slots:
 		_add_slot_label(slot)
 
+	_add_screen_reader_option()
+
+	# Screen readers: say what each part is, and announce questions.
+	$Main/Return.accessibility_description = "Close the menu. Shortcut: Escape."
+	$Main/Exit.accessibility_description = "Back to the title screen, or quit from the title screen."
+	Accessibility.make_live(confirm_label, true)
+
 
 ## Shows the menu on the Settings page. In-game, call this before anything
 ## covers the screen so the save thumbnail is a picture of the story.
@@ -72,9 +83,11 @@ func open() -> void:
 	_hide_confirm()
 	_show_sub(setting_panel)
 	visible = true
+	Accessibility.focus($Main/Setting)
 
 func close() -> void:
 	_hide_confirm()
+	_save_volumes() # also covers volumes changed with the keyboard
 	visible = false
 	closed.emit()
 
@@ -87,6 +100,8 @@ func _show_sub(panel: Panel) -> void:
 		p.visible = (p == panel)
 	if panel != setting_panel:
 		_refresh_slots()
+	if visible:
+		Accessibility.focus_first_button.call_deferred(panel)
 
 
 
@@ -114,6 +129,33 @@ static func apply_saved_volumes() -> void:
 			AudioServer.set_bus_volume_linear(bus, value)
 			AudioServer.set_bus_mute(bus, value <= 0.0)
 
+
+
+# --- Screen reader ---
+
+## "Screen reader: Auto / On / Off", added under the volume sliders. Auto
+## turns the screen reader support on when one is found; On is for when it
+## isn't found (some Linux desktops).
+func _add_screen_reader_option() -> void:
+	var row := HBoxContainer.new()
+	row.name = "ScreenReader"
+	var voice := setting_panel.get_node("Voice-slider") as Control
+	row.position = Vector2(voice.position.x + 11, voice.position.y + voice.size.y + 40)
+	row.add_theme_constant_override("separation", 24)
+	var label := Label.new()
+	label.text = "Screen reader"
+	label.add_theme_font_size_override("font_size", 28)
+	row.add_child(label)
+	var pick := OptionButton.new()
+	pick.name = "Mode"
+	for text in ["Auto", "On", "Off"]:
+		pick.add_item(text)
+	pick.selected = Accessibility.get_mode()
+	pick.accessibility_name = "Screen reader support"
+	pick.accessibility_description = "Auto turns it on when a screen reader is found. On reads every line in full, lengthens timers and moves focus to choices."
+	pick.item_selected.connect(func(i): Accessibility.set_mode(i))
+	row.add_child(pick)
+	setting_panel.add_child(row)
 
 
 # --- Save / load ---
@@ -151,11 +193,13 @@ func _refresh_slots() -> void:
 				button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_COVERED if thumb else TextureButton.STRETCH_TILE
 				button.modulate = Color.WHITE
 				label.text = "%d  %s\n%s" % [slot, data.get("character", ""), String(data.get("saved_at", "")).replace("T", "  ")]
+				button.accessibility_name = "Slot %d: %s, saved %s" % [slot, data.get("character", ""), String(data.get("saved_at", "")).replace("T", " at ")]
 			else:
 				button.texture_normal = button.get_meta("empty_texture")
 				button.stretch_mode = TextureButton.STRETCH_TILE
 				button.modulate = EMPTY_SLOT_TINT if slots == load_slots else Color.WHITE
 				label.text = "%d  Empty" % slot
+				button.accessibility_name = "Slot %d: empty" % slot
 
 func _add_slot_label(button: TextureButton) -> void:
 	var label := Label.new()
@@ -183,6 +227,8 @@ func _ask(question: String, action: Callable) -> void:
 	confirm_label.text = question
 	_pending_action = action
 	confirm.visible = true
+	Accessibility.say(confirm_label, question.replace("\n", " ") + " Confirm or Cancel.")
+	Accessibility.focus($Confirm/Button)
 
 func _on_confirm() -> void:
 	var action := _pending_action

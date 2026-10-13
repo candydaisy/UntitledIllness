@@ -72,8 +72,9 @@ func ring(caller: String, choices: Array) -> void:
 		var b := Button.new()
 		b.text = choices[i].get("text", "")
 		b.custom_minimum_size = Vector2(150, 56)
-		b.focus_mode = Control.FOCUS_NONE
 		b.disabled = choices[i].get("locked", false)
+		b.focus_mode = Control.FOCUS_ALL
+		b.accessibility_description = "Locked." if b.disabled else ""
 		b.modulate = Color(1, 1, 1, 0.35 if b.disabled else 1.0)
 		b.pressed.connect(func(): picked.emit(i))
 		_buttons.add_child(b)
@@ -85,6 +86,13 @@ func ring(caller: String, choices: Array) -> void:
 	_pulse = create_tween().set_loops()
 	_pulse.tween_property(self, "scale", Vector2(1.03, 1.03), RING_PULSE / 2.0)
 	_pulse.tween_property(self, "scale", Vector2.ONE, RING_PULSE / 2.0)
+
+## Focuses the first button that can be pressed (keyboard / screen readers).
+func focus_first() -> void:
+	for b in _buttons.get_children():
+		if not b.disabled and not b.is_queued_for_deletion():
+			b.grab_focus()
+			return
 
 func hang_up() -> void:
 	visible = false

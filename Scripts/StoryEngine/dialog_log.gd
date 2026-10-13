@@ -64,6 +64,14 @@ func set_lines(lines: Array) -> void:
 	_refresh()
 
 
+## Puts keyboard / screen reader focus on the log text so it can be read.
+func focus_text() -> void:
+	_label.focus_mode = Control.FOCUS_ALL
+	_label.accessibility_name = "Dialog log"
+	_label.accessibility_description = "Every line so far, oldest first. Press L or Escape to close."
+	_label.grab_focus()
+
+
 func toggle() -> void:
 	visible = not visible
 	if visible:

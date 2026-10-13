@@ -9,6 +9,9 @@ const STORY_SCENES := [
 	"",                                    # R.
 ]
 
+## What screen readers call each character button (the buttons only show initials).
+const NAMES := ["Kay", "Elysia", "Ulyn", "R"]
+
 var charactersel: int = 0
 
 @onready var chars: Array[Control] = [
@@ -24,7 +27,18 @@ func _ready() -> void:
 	_show_character(0)
 	fade.modulate.a = 0.0
 	fade.visible = false
-	print(get_children())
+
+	# Screen readers: the buttons show only initials, so give them names, and
+	# read out the character's description from their card.
+	for i in chars.size():
+		var button : Button = $Panel/Selectors.get_node("Character%d" % (i + 1))
+		button.accessibility_name = NAMES[i] + ("" if STORY_SCENES[i] != "" else ", not playable yet")
+		var about := []
+		for label in chars[i].find_children("*", "Label", true, false):
+			if label.text.strip_edges() != "" and label.name != "Name":
+				about.append(label.text.strip_edges())
+		button.accessibility_description = " ".join(about)
+	start.accessibility_description = "Choose a character first."
 
 func _fade_then(callback: Callable) -> void:
 	fade.visible = true
@@ -44,6 +58,7 @@ func _show_character(index: int) -> void:
 func _select(index: int) -> void:
 	_show_character(index)
 	start.disabled = STORY_SCENES[index - 1] == ""
+	start.accessibility_description = "Not playable yet." if start.disabled else "Start %s's story." % NAMES[index - 1]
 
 func _on_character_1_pressed() -> void:
 	_select(1)

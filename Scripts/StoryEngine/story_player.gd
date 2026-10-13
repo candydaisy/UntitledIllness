@@ -17,6 +17,7 @@ extends Node2D
 @export var auto_delay := 1.2 # seconds Auto waits after a line finishes...
 @export var auto_delay_per_char := 0.03 # ...plus this per character, so long lines stay up longer
 @export var debug_log := false # print node and meters on every node
+@export var screen_reader_timer_mult := 3.0 # timed choices / calls last this much longer with a screen reader
 
 @onready var type_sound : AudioStreamPlayer = $Audio/typing
 @onready var sfx_player : AudioStreamPlayer = $Audio/sfx
@@ -80,6 +81,7 @@ var _line_speed := 1.0 # this line's speed from the mode (quiet / rushing)
 var _hovered_notice := "" # a {detail|Flag} under the mouse
 var _notice_regex := RegEx.create_from_string(NOTICE)
 var _current_line := {} # what mode.line_for returned for the current node
+var _screen_reader := false # Accessibility.screen_reader_on(), checked once per line
 
 
 
@@ -114,12 +116,13 @@ func _ready() -> void:
 	dialog.add_child(phone)
 	phone.picked.connect(_on_choice_pressed)
 
+	_setup_accessibility()
 	text_label.bbcode_enabled = true
 	text_label.meta_clicked.connect(_on_notice_clicked)
 	text_label.meta_hover_started.connect(func(meta): _hovered_notice = str(meta))
 	text_label.meta_hover_ended.connect(func(_meta): _hovered_notice = "")
 	_setup_button(auto_button, "Auto", _toggle_auto)
-	_setup_button(log_button, "Log", dialog_log.toggle)
+	_setup_button(log_button, "Log", _toggle_log)
 	_setup_button(menu_button, "Menu", setting_menu.open)
 	setting_menu.visible = false
 
@@ -164,12 +167,15 @@ func _input(event: InputEvent) -> void:
 		return
 
 	if dialog_log.visible:
-		# The log covers the Log button, so check its area by hand. Esc also closes.
+		# The log covers the Log button, so check its area by hand. Esc or L also closes.
 		var on_log_button : bool = event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT \
 				and event.pressed and log_button.get_global_rect().has_point(event.position)
-		if on_log_button or event.is_action_pressed("ui_cancel"):
-			dialog_log.toggle()
+		if on_log_button or event.is_action_pressed("ui_cancel") or _key_pressed(event, KEY_L):
+			_toggle_log()
 		return # scrolling and clicks belong to the log while it's open
+	if _handle_shortcut(event):
+		get_viewport().set_input_as_handled()
+		return
 	if is_transitioning:
 		return
 	# Clicking Auto, Log, a choice or a detail to notice shouldn't also advance the dialog.
@@ -264,6 +270,7 @@ func process_node(node_name: String) -> void:
 
 	_current_line = mode.line_for(entry)
 	var line := _current_line
+	_screen_reader = Accessibility.screen_reader_on()
 	if line.has("unsaid"):
 		var cut : bool = line.get("cut", false)
 		typewriter.start_edit(_render(line["unsaid"]), _render(line["text"]), cut)
@@ -272,6 +279,10 @@ func process_node(node_name: String) -> void:
 	else:
 		typewriter.start(_render(line["text"]))
 		dialog_log.add_line(speaker_label.text, _plain(line["text"]))
+
+	_announce_line(entry, line)
+	if _screen_reader:
+		typewriter.skip() # the screen reader reads the whole line; typing it out only gets in the way
 
 	if debug_log:
 		print("node ", node_name, " | ", mode.describe())
@@ -359,9 +370,13 @@ func _show_choices() -> void:
 	if serial != _node_serial: # moved on (e.g. rewound) while waiting
 		return
 
+	var seconds := mode.choice_time(entry) * (screen_reader_timer_mult if _screen_reader else 1.0)
 	if entry.has("call"):
 		phone.ring(entry["call"], current_choices)
-		_start_choice_timer(mode.choice_time(entry))
+		Accessibility.say(text_label, "Incoming call from %s. %s" % [entry["call"], _choices_speech(seconds)])
+		if _screen_reader:
+			phone.focus_first()
+		_start_choice_timer(seconds)
 		return
 
 	choices_container.visible = true
@@ -376,8 +391,14 @@ func _show_choices() -> void:
 		else:
 			choice_buttons[i].visible = false
 			choice_buttons[i].text    = ""
+		_describe_choice(choice_buttons[i], current_choices[i] if i < current_choices.size() else {}, seconds)
 
-	_start_choice_timer(mode.choice_time(entry))
+	Accessibility.say(text_label, _choices_speech(seconds))
+	for b in choice_buttons: # in choice order (the scene stores them bottom-up)
+		if b.visible and not b.disabled:
+			Accessibility.focus(b)
+			break
+	_start_choice_timer(seconds)
 
 
 ## Shows a bar above the top choice that empties over `seconds`.
@@ -475,6 +496,9 @@ func _on_notice_clicked(meta: Variant) -> void:
 	if flags.get(flag, false):
 		return
 	flags[flag] = true
+	for detail in Accessibility.notices(_current_line.get("text", "")):
+		if detail["flag"] == flag:
+			Accessibility.say(text_label, "Noticed: %s." % detail["text"])
 	_hovered_notice = ""
 	# Redraw the line so the detail shows as noticed, keeping the typing progress.
 	var shown := text_label.visible_characters
@@ -498,6 +522,99 @@ func _flash_noticed() -> void:
 	t.tween_property(tag, "modulate:a", 0.0, 0.5)
 	t.tween_callback(tag.queue_free)
 
+
+
+# --- Accessibility (screen readers and keyboard) ---
+
+## Names the buttons and makes the dialog line a live region, so screen
+## readers announce each new line by themselves.
+func _setup_accessibility() -> void:
+	if OS.is_debug_build() and Accessibility.screen_reader_on() and not Accessibility.supported():
+		push_warning("A screen reader is on, but this Godot build can't talk to it (no AccessKit). " +
+			"Use the official Godot download, or put accesskit.so next to the Godot executable.")
+	Accessibility.make_live(text_label)
+	text_label.accessibility_description = "Dialog. Space or Enter: next line. Backspace: previous line."
+	auto_button.accessibility_name = "Auto"
+	auto_button.accessibility_description = "Plays lines on their own. Shortcut: A."
+	log_button.accessibility_name = "Log"
+	log_button.accessibility_description = "Every line so far. Shortcut: L."
+	menu_button.accessibility_name = "Menu"
+	menu_button.accessibility_description = "Settings, save and load. Shortcut: Escape."
+	dialog_log.accessibility_name = "Dialog log"
+	for i in choice_buttons.size():
+		choice_buttons[i].focus_mode = Control.FOCUS_ALL # reachable with Tab and arrow keys
+
+## What a screen reader says for a line. Things that are only visible on
+## screen (a line typed then deleted, a thought cut off, a detail to notice)
+## are described in words.
+func _announce_line(entry: Dictionary, line: Dictionary) -> void:
+	var who : String = entry.get("speaker", "")
+	var prefix := who + ": " if who != "" else ""
+	var said := Accessibility.speech(line["text"])
+	var spoken := prefix + said
+	if line.has("unsaid"):
+		var unsaid := Accessibility.speech(line["unsaid"])
+		if line.get("cut", false):
+			spoken = "%s%s... cut off. Then: %s" % [prefix, unsaid.trim_suffix("—"), said]
+		else:
+			spoken = "%sTyped, then deleted: %s. Then: %s" % [prefix, unsaid, said]
+	var details := Accessibility.notices(line["text"]).filter(func(d): return not flags.get(d["flag"], false))
+	if not details.is_empty():
+		spoken += " Something to notice: %s. Press N to notice it." % ", ".join(details.map(func(d): return d["text"]))
+	if entry.has("choices") and not entry.has("call"):
+		spoken += " A choice is coming."
+	Accessibility.say(text_label, spoken)
+
+func _choices_speech(seconds: float) -> String:
+	var parts := []
+	for i in current_choices.size():
+		var c : Dictionary = current_choices[i]
+		parts.append("%d: %s%s" % [i + 1, Accessibility.speech(c.get("text", "")), " (locked)" if c.get("locked", false) else ""])
+	var timed := " You have %d seconds." % roundi(seconds) if seconds > 0.0 else ""
+	return "Choose. %s.%s Use the number keys or arrows and Enter." % [". ".join(parts), timed]
+
+func _describe_choice(button: Button, choice: Dictionary, seconds: float) -> void:
+	var notes := []
+	if choice.get("locked", false):
+		notes.append("Locked. You can't choose this right now.")
+	if seconds > 0.0:
+		notes.append("Timed.")
+	button.accessibility_description = " ".join(notes)
+
+## Keyboard shortcuts that work for everyone: 1-3 pick a choice, N notices a
+## detail, A toggles Auto, L opens the log.
+func _handle_shortcut(event: InputEvent) -> bool:
+	if not (event is InputEventKey and event.pressed):
+		return false
+	var key : Key = event.keycode
+	if key >= KEY_1 and key <= KEY_3 and (choices_container.visible or phone.visible):
+		var i := key - KEY_1
+		if i < current_choices.size() and not current_choices[i].get("locked", false):
+			select_choice(current_choices[i])
+		return true
+	match key:
+		KEY_N:
+			for detail in Accessibility.notices(_current_line.get("text", "")):
+				if not flags.get(detail["flag"], false):
+					_on_notice_clicked(detail["flag"])
+					return true
+			return true
+		KEY_A:
+			_toggle_auto()
+			Accessibility.say(text_label, "Auto on." if auto_mode else "Auto off.")
+			return true
+		KEY_L:
+			_toggle_log()
+			return true
+	return false
+
+func _key_pressed(event: InputEvent, key: Key) -> bool:
+	return event is InputEventKey and event.pressed and not event.is_echo() and event.keycode == key
+
+func _toggle_log() -> void:
+	dialog_log.toggle()
+	if dialog_log.visible and Accessibility.screen_reader_on():
+		dialog_log.focus_text()
 
 
 ## Warns about names in the flow graph that the scene doesn't have, and keys

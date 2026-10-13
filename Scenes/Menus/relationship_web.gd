@@ -49,6 +49,12 @@ var _heat := 1.0
 
 
 func _ready() -> void:
+	# Keyboard and screen readers: arrow keys move between characters, and each
+	# one is announced with their connections (the web itself is only drawn).
+	focus_mode = Control.FOCUS_ALL
+	accessibility_name = "Relationship web"
+	accessibility_description = "Arrow keys: move between characters. Escape: clear."
+	Accessibility.make_live(self)
 	_load()
 	if OS.is_debug_build():
 		_check_story_speakers()
@@ -209,6 +215,19 @@ func _draw_centered(font: Font, text: String, at: Vector2, font_size: int, color
 # --- Input ---
 
 func _gui_input(event: InputEvent) -> void:
+	if event is InputEventKey and event.pressed:
+		var ids := nodes.keys()
+		var at := ids.find(selected)
+		if event.is_action_pressed("ui_right") or event.is_action_pressed("ui_down"):
+			_select(ids[(at + 1) % ids.size()])
+		elif event.is_action_pressed("ui_left") or event.is_action_pressed("ui_up"):
+			_select(ids[(at - 1 + ids.size()) % ids.size()] if at >= 0 else ids[-1])
+		elif event.is_action_pressed("ui_cancel") and selected != "":
+			_select("")
+		else:
+			return
+		accept_event()
+		return
 	if event is InputEventMouseButton:
 		match event.button_index:
 			MOUSE_BUTTON_LEFT:
@@ -266,7 +285,18 @@ func _select(id: String) -> void:
 			_relations[l["from"]] = l.get("from_is", "")
 	_show_info(id)
 
+## What a screen reader says for the selected character.
+func _speech(id: String) -> String:
+	if id == "":
+		return "Relationship web. %d characters. Use the arrow keys to move between them." % nodes.size()
+	var n : Dictionary = nodes[id]
+	var links := []
+	for other in _relations:
+		links.append("%s, %s" % [nodes[other]["name"], _relations[other]])
+	return "%s%s. %s Connected to: %s." % [n["name"], ", playable" if n["playable"] else "", n["about"], "; ".join(links) if links else "nobody yet"]
+
 func _show_info(id: String) -> void:
+	Accessibility.say(self, _speech(id))
 	if id == "":
 		name_label.text = "Relationships"
 		about_label.text = "Click someone to see how they're connected. Drag to move, scroll to zoom."

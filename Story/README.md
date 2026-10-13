@@ -192,6 +192,13 @@ His calls ring for 6 seconds; letting one ring out picks the `neutral` choice (d
 
 Secrets can test any meter the mode has: `weight_above`, `mask_below`, `energy_above`, and so on.
 
+## Writing for screen reader players
+
+Blind players hear every line read aloud (see Accessibility in `CONTRIBUTING.md`). A few habits keep the story working for them:
+- **Choice text** should make sense on its own, because it's read as a list ("1: Go to the library. 2: Sit down anyway.").
+- **Narration** carries anything the player needs to know. Backgrounds and character sprites aren't announced, so if it matters that we're in the garden or that Mom just walked in, say it in the text.
+- **Details to notice** (`{text|Flag}`) are read out with "Press N to notice it", so keep the shown text short and specific.
+
 ## Checking your work
 
 Run the game from the Godot editor. On start it checks the whole story file and prints a **warning in the Output panel** for anything that doesn't line up: a `next` pointing to a missing node, a background or character name that isn't in the scene, an unknown sound, etc.
