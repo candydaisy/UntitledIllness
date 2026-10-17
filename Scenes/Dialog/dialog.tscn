@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bn685feysjf6w" path="res://Scenes/Dialog/dialog.gd" id="1_edf0l"]
 [ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="1_irs7l"]
-[ext_resource type="Theme" uid="uid://becm04wq40y7n" path="res://Assets/Themes/theme1.tres" id="2_87kay"]
+[ext_resource type="Theme" uid="uid://dvwvv7aa2bjrb" path="res://Assets/Themes/default-theme.tres" id="1_qa8q1"]
 [ext_resource type="PackedScene" uid="uid://xfvufrw0ho83" path="res://Scenes/Menus/Setting.tscn" id="4_qa8q1"]
 
 [node name="Dialog" type="Control" unique_id=137013451]
@@ -12,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_87kay")
+theme = ExtResource("1_qa8q1")
 script = ExtResource("1_edf0l")
 
 [node name="DialogBox" type="Panel" parent="." unique_id=533752345]
