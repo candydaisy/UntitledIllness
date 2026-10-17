@@ -541,22 +541,22 @@ He puts the phone face down on the floor, out of reach.
 
 *Beep. Beep. Beep.*
 
+**🎮 Minigame: Get up** (`get_up.tscn`, can't be won: the bar stops at 80%)
+- **Tried ★**: kept trying until the alarm ran out (+5, sets `TriedToGetUp`)
+- **Gave up**: stopped pressing, or "Stay in bed" (0)
+
 Kay doesn't slap the alarm off. He lets it ring until it gives up on its own.
 
 He knows he has to get up. His body doesn't move. It isn't like being tired. It's more like the distance between him and the floor got bigger overnight.
 
-**◆ Choice**
-- **A. ★** "Get up." (neutral, +5)
-- **B.** "Stay in bed." (neutral, 0)
-
-**▸ A.**
+**▸ Tried.**
 He sits up and puts his feet on the floor.
 
 His uniform is on the chair, two meters away. It might as well be across the ocean.
 
 He sits on the edge of the bed for forty minutes. Then he lies back down.
 
-**▸ B.**
+**▸ Gave up.**
 He doesn't fight it.
 
 He looks at the ceiling. *Just today.*
@@ -1192,6 +1192,8 @@ What happens next depends on how much Kay is carrying.
 ---
 
 ### Ending A — Enough
+
+**🎮 Minigame: Get up** (`get_up.tscn`, light this time: easy to win. Every result goes on.)
 
 Kay turns off the alarm. This time, he opens his eyes.
 

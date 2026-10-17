@@ -3420,10 +3420,16 @@
 	"absent_1": {
 		"speaker": "",
 		"text": "*Beep. Beep. Beep.*",
-		"next": "absent_2",
 		"background": "Kay's room1",
 		"show_characters": ["Kay"],
-		"sfx": "Alarm"
+		"sfx": "Alarm",
+		"minigame": "res://Scenes/Minigames/get_up.tscn",
+		"settings": {"max_progress": 0.8, "seconds": 12, "clock": "6:30"},
+		"results": {
+			"won":     {"text": "Tried to get up", "next": "absent_2", "weight_change": 5, "set_flag": "TriedToGetUp"},
+			"tried":   {"text": "Tried to get up", "next": "absent_2", "weight_change": 5, "set_flag": "TriedToGetUp"},
+			"gave_up": {"text": "Stayed in bed", "next": "absent_2", "weight_change": 0}
+		}
 	},
 
 	"absent_2": {
@@ -3442,17 +3448,8 @@
 	"absent_4": {
 		"speaker": "",
 		"text": "*It isn't like being tired. It's more like the distance between him and the floor got bigger overnight.*",
-		"next": "absent_5"
-	},
-
-	"absent_5": {
-		"speaker": "Kay",
-		"emotion": "tired",
-		"text": "...",
-		"choices": [
-			{"text": "Get up", "type": "neutral", "weight_change": 5, "next": "absent_try_1"},
-			{"text": "Stay in bed", "type": "neutral", "weight_change": 0, "next": "absent_stay_1"}
-		]
+		"next": "absent_stay_1",
+		"secret": {"condition": "flag_true", "flag": "TriedToGetUp", "next": "absent_try_1"}
 	},
 
 	"absent_try_1": {
@@ -5348,14 +5345,20 @@
 	"endA_1": {
 		"speaker": "",
 		"text": "*The last day of the semester.*",
-		"next": "endA_2",
-		"sfx": "stop"
+		"minigame": "res://Scenes/Minigames/get_up.tscn",
+		"settings": {"seconds": 20, "clock": "6:30"},
+		"results": {
+			"won":     {"text": "Got up", "next": "endA_2"},
+			"tried":   {"text": "Got up", "next": "endA_2"},
+			"gave_up": {"text": "Got up", "next": "endA_2"}
+		}
 	},
 
 	"endA_2": {
 		"speaker": "",
 		"text": "*Kay turns off the alarm. This time, he opens his eyes.*",
-		"next": "endA_3"
+		"next": "endA_3",
+		"sfx": "stop"
 	},
 
 	"endA_3": {

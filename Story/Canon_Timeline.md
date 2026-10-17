@@ -200,7 +200,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 | `wrecked_7` | "You okay? You look wrecked." | 90 |
 | `midterm_choice` | "just send me what you have. i'll do it." | 100 |
 | `mnight_phone` | Put the phone down *(texting is locked at Critical anyway)* | 100 |
-| `absent_5` | Get up *(and fail)* | 100 |
+| `absent_1` | Minigame: try to get up *(and fail; it can't be won)* | 100 |
 | `absent_msgs_11` | Reply to Elysia: "i couldn't get up today" | 90 |
 | `step_conf_13` | "It's fine. It was a long time ago." | 100 |
 | `step_fine_3` | "...I thought I was too much." | 90 |

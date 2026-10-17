@@ -8,7 +8,8 @@ extends Resource
 
 ## Keys every story can use, whatever the mode.
 const BASE_NODE_KEYS := ["speaker", "text", "emotion", "next", "choices", "secret",
-	"background", "show_characters", "hide_characters", "expression", "sfx", "amb", "voice", "call"]
+	"background", "show_characters", "hide_characters", "expression", "sfx", "amb", "voice", "call",
+	"minigame", "settings", "results"]
 const BASE_CHOICE_KEYS := ["text", "type", "next", "set_flag", "requires"]
 
 var player : StoryPlayer

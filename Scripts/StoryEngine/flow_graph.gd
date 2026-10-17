@@ -63,7 +63,7 @@ func find_broken_links() -> Array[String]:
 	for id in nodes:
 		var entry : Dictionary = nodes[id]
 		var targets := [entry.get("next", "")]
-		for choice in entry.get("choices", []):
+		for choice in entry.get("choices", []) + entry.get("results", {}).values():
 			targets.append(choice.get("next", ""))
 		if entry.has("secret"):
 			targets.append(entry["secret"].get("next", ""))

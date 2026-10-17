@@ -14,7 +14,7 @@ Story/
 
 All three routes have backgrounds, characters and sounds. Some of Elysia's and Ulyn's places don't have their own pictures yet, so in their scenes they borrow the closest existing one. To add the real art, select the node under **Bgs** and change its **Texture**; the story file doesn't need to change.
 
-| Background in Kay's story (`Story.tscn`) | Borrowing for now |
+| Background in Kay's story (`Kay.tscn`) | Borrowing for now |
 |---|---|
 | `Kay's kitchen` | the daytime bedroom |
 | `Kay's kitchen night` | the night bedroom |
@@ -127,7 +127,7 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 | `mask_above`, `mask_below`, `energy_above`, `energy_below` | `value` | the same, for Elysia's meters |
 | `busy_above`, `busy_below`, `unsaid_above`, `unsaid_below` | `value` | the same, for Ulyn's meters |
 
-## Calls and noticing (any character)
+## Calls, minigames and noticing (any character)
 
 **Phone calls.** Add `"call": "Mom"` to a node with choices, and the choices show up as buttons on a ringing phone instead (e.g. Decline / Answer). A call with one choice makes the player press it themselves.
 
@@ -142,6 +142,28 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 	]
 }
 ```
+
+**Minigames.** Add `"minigame"` (a scene path) to a node instead of `choices`. After the line, the minigame replaces the dialog box. When it ends, the matching entry in `results` is picked just like a choice (`next`, meter changes, `set_flag`, and `text` for the log). `settings` is passed to the minigame. Every result the minigame can end with needs an entry.
+
+```json
+"absent_1": {
+	"speaker": "",
+	"text": "*Beep. Beep. Beep.*",
+	"minigame": "res://Scenes/Minigames/get_up.tscn",
+	"settings": {"max_progress": 0.8, "seconds": 12, "clock": "6:30"},
+	"results": {
+		"won":     {"text": "Tried to get up", "next": "absent_2", "weight_change": 5},
+		"tried":   {"text": "Tried to get up", "next": "absent_2", "weight_change": 5},
+		"gave_up": {"text": "Stayed in bed", "next": "absent_2", "weight_change": 0}
+	}
+}
+```
+
+| Minigame | Results | Settings |
+|---|---|---|
+| `get_up.tscn` (Kay): hold Space, the mouse or the screen to sit up. Weight makes it harder. | `won` (sat up), `tried` (alarm ran out), `gave_up` (stopped pressing for 3 s, Escape, or "Stay in bed") | `seconds` (12), `max_progress` (1; below 1 it can't be won), `give_up_after` (3), `clock` ("6:30") |
+
+To make a new one: a scene whose root script has `start(settings, meters, time_mult)` (called before it's added) and emits `finished(result)`.
 
 **Noticing.** Write `{shown text|FlagName}` inside a line. The text shows up as a link in the character's color; clicking it sets `FlagName`. Give a choice `"requires": "FlagName"` and it only appears if the player noticed it.
 
@@ -160,7 +182,7 @@ Every story scene uses the same StoryPlayer, plus a **Mode** (set on the scene's
 
 | Scene | Mode | Meters |
 |---|---|---|
-| `Scenes/Characters/Story.tscn` | KayMode (the default when Mode is empty) | `weight` |
+| `Scenes/Characters/Kay.tscn` | KayMode (the default when Mode is empty) | `weight` |
 | `Scenes/Characters/Elysia.tscn` | ElysiaMode | `mask`, `energy` (both hidden) |
 | `Scenes/Characters/Ulyn.tscn` | UlynMode | `busy`, `unsaid` (both hidden) |
 

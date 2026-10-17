@@ -54,6 +54,7 @@ const NOTICED_ALPHA := 0.55 # a detail fades a little once it's been noticed
 
 const TIMER_BAR_HEIGHT := 6.0
 const TIMER_BAR_COLOR  := Color(1, 1, 1, 0.8)
+const MINIGAME_Z := 10 # above backgrounds and characters, under the side art
 
 
 var graph : FlowGraph
@@ -73,6 +74,7 @@ var auto_mode := false
 var dialog_log : DialogLog
 var timer_bar : ColorRect # shrinks while a timed choice is waiting
 var phone : PhonePopup # incoming calls ("call" nodes)
+var minigame : Control # the running "minigame" scene, if any
 
 var _node_serial := 0 # bumped on every node change so stale awaits can bail out
 var _choice_time := 0.0 # length of the current timed choice, 0 = untimed
@@ -153,8 +155,8 @@ func _process(delta: float) -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if graph == null or event.is_echo():
-		return
+	if graph == null or event.is_echo() or minigame:
+		return # a running minigame handles its own input
 
 	if setting_menu.visible:
 		if event.is_action_pressed("ui_cancel"):
@@ -218,7 +220,7 @@ func _handle_advance() -> void:
 			typewriter.skip()
 		return
 
-	if entry.has("choices"):
+	if entry.has("choices") or entry.has("minigame"):
 		return
 
 	var next : String = pending_secret if pending_secret != "" else entry.get("next", "")
@@ -315,7 +317,7 @@ func _toggle_auto() -> void:
 ## and at lines the mode keeps for the player (e.g. Ulyn's quiet scenes).
 func _auto_advance() -> void:
 	var entry := graph.get_entry(current_node)
-	if not auto_mode or entry.has("choices") or not mode.auto_allowed(entry):
+	if not auto_mode or entry.has("choices") or entry.has("minigame") or not mode.auto_allowed(entry):
 		return
 	var serial := _node_serial
 	var wait := auto_delay + text_label.get_parsed_text().length() * auto_delay_per_char
@@ -361,6 +363,9 @@ func _restore_save(data: Dictionary) -> void:
 
 func _show_choices() -> void:
 	var entry := graph.get_entry(current_node)
+	if entry.has("minigame"):
+		_start_minigame(entry)
+		return
 	if not entry.has("choices"):
 		return
 
@@ -440,7 +445,8 @@ func select_choice(choice: Dictionary) -> void:
 	phone.hang_up()
 	_choice_time = 0.0
 	timer_bar.visible = false
-	dialog_log.add_choice(choice.get("text", ""))
+	if choice.get("text", "") != "":
+		dialog_log.add_choice(choice["text"])
 	_push_history(current_node, true)  #block rewind past
 	mode.apply_choice(choice)
 	mode.apply_effects()
@@ -448,6 +454,34 @@ func select_choice(choice: Dictionary) -> void:
 		flags[choice["set_flag"]] = true
 	current_node = choice["next"]
 	process_node(current_node)
+
+## Plays a node's "minigame" scene in place of choices. The scene emits
+## finished(result), and the node's "results" entry for that result is then
+## picked like a choice (next, weight_change, set_flag, text for the log...).
+func _start_minigame(entry: Dictionary) -> void:
+	var serial := _node_serial
+	await get_tree().create_timer(choice_delay).timeout
+	if serial != _node_serial:
+		return
+	var scene : PackedScene = load(entry["minigame"])
+	if scene == null:
+		push_error("Node %s: can't load minigame %s" % [current_node, entry["minigame"]])
+		return
+	var game = scene.instantiate() # untyped: start() and finished come from the minigame's own script
+	game.start(entry.get("settings", {}), mode.get_meters(), screen_reader_timer_mult if _screen_reader else 1.0)
+	game.z_index = MINIGAME_Z
+	minigame = game
+	dialog.visible = false
+	add_child(game) # outside Cenfix, so the character's world tint applies to it
+	var result : String = await game.finished
+	game.queue_free()
+	minigame = null
+	dialog.visible = true
+	var results : Dictionary = entry.get("results", {})
+	if not results.has(result):
+		push_error("Node %s: minigame finished with '%s', which isn't in its results" % [current_node, result])
+		return
+	select_choice(results[result])
 
 ## Locks choices the mode says are locked, and hides choices whose
 ## "requires" flag hasn't been set (e.g. a detail that wasn't noticed).
@@ -636,7 +670,7 @@ func _validate() -> void:
 	var flags_set := {}
 	for id in graph.nodes:
 		var entry : Dictionary = graph.nodes[id]
-		for choice in entry.get("choices", []):
+		for choice in entry.get("choices", []) + entry.get("results", {}).values():
 			if choice.has("set_flag"):
 				flags_set[choice["set_flag"]] = true
 		for m in _notice_regex.search_all(String(entry.get("text", ""))):
@@ -656,6 +690,8 @@ func _validate() -> void:
 		for choice in entry.get("choices", []):
 			if choice.has("requires") and choice["requires"] not in flags_set:
 				push_warning("Node %s: choice requires '%s', but nothing sets that flag (no choice or {detail|%s})" % [id, choice["requires"], choice["requires"]])
+		if entry.has("minigame") and not ResourceLoader.exists(entry["minigame"]):
+			push_warning("Node %s: no minigame scene at %s" % [id, entry["minigame"]])
 		if entry.has("call") and entry.get("choices", []).is_empty():
 			push_warning("Node %s: a call needs choices (e.g. Decline / Answer)" % id)
 		var condition : String = entry.get("secret", {}).get("condition", "")

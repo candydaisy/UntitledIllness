@@ -22,11 +22,25 @@ func _init(theme_from: Control) -> void:
 		margin.add_theme_constant_override("margin_" + side, 60)
 	add_child(margin)
 
+	var column := VBoxContainer.new()
+	margin.add_child(column)
+
+	# Touch screens have no L or Escape key, so the log needs its own way out.
+	var back := Button.new()
+	back.text = "Back"
+	back.size_flags_horizontal = Control.SIZE_SHRINK_END
+	back.custom_minimum_size = Vector2(140, 56) # big enough to tap
+	back.focus_mode = Control.FOCUS_NONE # so Space/Enter don't press it
+	back.accessibility_description = "Closes the log. Shortcut: L or Escape."
+	back.pressed.connect(toggle)
+	column.add_child(back)
+
 	_label = RichTextLabel.new()
 	_label.bbcode_enabled = true
 	_label.scroll_following = true
+	_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_label.add_theme_font_size_override("normal_font_size", 26)
-	margin.add_child(_label)
+	column.add_child(_label)
 
 
 func _ready() -> void:
