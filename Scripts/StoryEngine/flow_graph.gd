@@ -68,6 +68,35 @@ func _load_translation(locale: String) -> Dictionary:
 		return {}
 	return json.data
 
+## Problems with a translation, one string each: nodes the story doesn't
+## have, a different number of choices, results the node doesn't have,
+## {detail|Flag} links that changed, and cut_after that isn't the start of
+## the translated line.
+func check_translation(lines: Dictionary) -> Array[String]:
+	var notice := RegEx.create_from_string(Accessibility.NOTICE)
+	var flags_in := func(text: String) -> Array:
+		var found := notice.search_all(text).map(func(m): return m.get_string(2))
+		found.sort()
+		return found
+	var problems : Array[String] = []
+	for id in lines:
+		if not source.has(id):
+			problems.append("%s: no such node in the story" % id)
+			continue
+		var en : Dictionary = source[id]
+		var th : Dictionary = lines[id]
+		if th.has("choices") and th["choices"].size() != en.get("choices", []).size():
+			problems.append("%s: %d choices, the story has %d" % [id, th["choices"].size(), en.get("choices", []).size()])
+		for name in th.get("results", {}):
+			if not en.get("results", {}).has(name):
+				problems.append("%s: result '%s' isn't one of %s" % [id, name, en.get("results", {}).keys()])
+		for key in ["text", "real_text"]:
+			if th.has(key) and flags_in.call(String(th[key])) != flags_in.call(String(en.get(key, ""))):
+				problems.append("%s: %s links %s, the story has %s" % [id, key, flags_in.call(String(th[key])), flags_in.call(String(en.get(key, "")))])
+		if th.has("cut_after") and not String(th.get("text", en.get("text", ""))).begins_with(th["cut_after"]):
+			problems.append("%s: cut_after isn't the start of its text" % id)
+	return problems
+
 ## (translated nodes, nodes with text), for the progress line in the editor.
 func translated_count() -> Vector2i:
 	var total := 0

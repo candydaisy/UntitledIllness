@@ -277,13 +277,10 @@ func process_node(node_name: String) -> void:
 	var line := _current_line
 	_screen_reader = Accessibility.screen_reader_on()
 	if line.has("unsaid"):
-		var cut : bool = line.get("cut", false)
-		typewriter.start_edit(_render(line["unsaid"]), _render(line["text"]), cut)
-		var unsaid := _plain(line["unsaid"]).strip_edges()
-		dialog_log.add_line(speaker_label.text, "%s\n%s" % [unsaid if cut else "[s]%s[/s]" % unsaid, _plain(line["text"]).strip_edges()])
+		typewriter.start_edit(_render(line["unsaid"]), _render(line["text"]), line.get("cut", false))
 	else:
 		typewriter.start(_render(line["text"]))
-		dialog_log.add_line(speaker_label.text, _plain(line["text"]))
+	_log_line(line)
 
 	_announce_line(entry, line)
 	if _screen_reader:
@@ -292,6 +289,44 @@ func process_node(node_name: String) -> void:
 	if debug_log:
 		print("node ", node_name, " | ", mode.describe())
 
+
+
+func _log_line(line: Dictionary) -> void:
+	if line.has("unsaid"):
+		var unsaid := _plain(line["unsaid"]).strip_edges()
+		var shown := unsaid if line.get("cut", false) else "[s]%s[/s]" % unsaid
+		dialog_log.add_line(speaker_label.text, "%s\n%s" % [shown, _plain(line["text"]).strip_edges()])
+	else:
+		dialog_log.add_line(speaker_label.text, _plain(line["text"]))
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_TRANSLATION_CHANGED and graph and current_node != "":
+		_relocalize()
+
+## The language changed: swap in the story text for the new locale and
+## redraw what's on screen (line, its log entry, choices, phone) without
+## moving the story, touching meters, or restarting a choice timer.
+func _relocalize() -> void:
+	graph.apply_language(TranslationServer.get_locale())
+	if not graph.has_entry(current_node) or is_transitioning:
+		return # process_node is about to draw the node anyway
+	var entry := graph.get_entry(current_node)
+	if typewriter.is_typing:
+		typewriter.skip() # show the whole line at once in the new language
+	_current_line = mode.line_for(entry)
+	text_label.text = _render(_current_line["text"]).strip_edges()
+	text_label.visible_characters = -1
+	dialog_log.remove_last(1)
+	_log_line(_current_line)
+	if choices_container.visible or phone.visible:
+		current_choices = filter_choices(entry.get("choices", []))
+		if phone.visible:
+			phone.ring(entry.get("call", ""), current_choices)
+		else:
+			for i in current_choices.size():
+				choice_buttons[i].text = current_choices[i]["text"]
+	_announce_line(entry, _current_line)
 
 
 ## Gives every themed Control in the dialog (and the in-game menu inside it)
@@ -676,6 +711,11 @@ func _toggle_log() -> void:
 func _validate() -> void:
 	for problem in graph.find_broken_links():
 		push_warning(problem)
+	for problem in graph.check_translation(graph.translation):
+		push_warning("%s: %s" % [TranslationServer.get_locale(), problem])
+	if not graph.translation.is_empty():
+		var count := graph.translated_count()
+		print("%s: %s %d/%d" % [TranslationServer.get_locale(), flow_graph_path.get_base_dir().get_file(), count.x, count.y])
 
 	var info := mode.info()
 	var mode_name : String = mode.get_script().get_global_name()
