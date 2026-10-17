@@ -38,7 +38,7 @@ func _ready() -> void:
 			if label.text.strip_edges() != "" and label.name != "Name":
 				about.append(label.text.strip_edges())
 		button.accessibility_description = " ".join(about)
-	start.accessibility_description = "Choose a character first."
+	start.accessibility_description = tr("Choose a character first.")
 
 func _fade_then(callback: Callable) -> void:
 	fade.visible = true
@@ -58,7 +58,7 @@ func _show_character(index: int) -> void:
 func _select(index: int) -> void:
 	_show_character(index)
 	start.disabled = STORY_SCENES[index - 1] == ""
-	start.accessibility_description = "Not playable yet." if start.disabled else "Start %s's story." % NAMES[index - 1]
+	start.accessibility_description = tr("Not playable yet.") if start.disabled else tr("Start %s's story.") % NAMES[index - 1]
 
 func _on_character_1_pressed() -> void:
 	_select(1)

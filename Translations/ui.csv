@@ -1,0 +1,249 @@
+keys,en,th
+"Play
+","Play
+","เล่น
+"
+Start,Start,เริ่ม
+Settings,Settings,ตั้งค่า
+Setting/Extra,Setting/Extra,ตั้งค่า/อื่นๆ
+Save,Save,เซฟ
+Load,Load,โหลด
+"Return
+","Return
+","กลับ
+"
+"Exit
+","Exit
+","ออก
+"
+Menu,Menu,เมนู
+Back,Back,กลับ
+Confirm,Confirm,ยืนยัน
+Cancel,Cancel,ยกเลิก
+Are you sure?,Are you sure?,แน่ใจนะ?
+Master,Master,เสียงรวม
+Ambient,Ambient,เสียงบรรยากาศ
+Sfx,Sfx,เอฟเฟกต์
+Voice,Voice,เสียงพากย์
+Credits,Credits,เครดิต
+About,About,เกี่ยวกับ
+Name,Name,ชื่อ
+Characters' Relation,Characters' Relation,ความสัมพันธ์ตัวละคร
+Thai,Thai,ไทย
+English,English,English
+"Quiet and dependable.
+
+Always seems to know what to do.
+
+The kind of person people rely on.","Quiet and dependable.
+
+Always seems to know what to do.
+
+The kind of person people rely on.","เงียบ ๆ แต่พึ่งพาได้
+
+ดูเหมือนจะรู้เสมอว่าต้องทำอะไร
+
+เป็นคนที่ใคร ๆ ก็ฝากเรื่องไว้"
+"Bright, friendly, and easy to talk to.
+
+Always ready to listen.
+
+Brings warmth into any group.","Bright, friendly, and easy to talk to.
+
+Always ready to listen.
+
+Brings warmth into any group.","สดใส เป็นมิตร คุยด้วยง่าย
+
+พร้อมรับฟังเสมอ
+
+อยู่กลุ่มไหนกลุ่มนั้นก็อบอุ่น"
+"Honest.
+
+Unfiltered.
+
+Not afraid to say what he thinks.","Honest.
+
+Unfiltered.
+
+Not afraid to say what he thinks.","ตรง ๆ
+
+ไม่กรองคำพูด
+
+คิดอะไรก็พูดอย่างนั้น"
+"Calm and self-sufficient.
+
+Rarely overreacts.
+
+Handles problems without a fuss.","Calm and self-sufficient.
+
+Rarely overreacts.
+
+Handles problems without a fuss.","ใจเย็น พึ่งตัวเองได้
+
+ไม่ค่อยตื่นตูม
+
+จัดการปัญหาได้แบบไม่วุ่นวาย"
+You don’t have to carry everything.,You don’t have to carry everything.,ไม่ต้องแบกทุกอย่างไว้คนเดียวก็ได้
+"mind feels like a bird in a cage, quietly waiting for the day it can finally stretch its wings.","mind feels like a bird in a cage, quietly waiting for the day it can finally stretch its wings.",ใจเหมือนนกในกรง ที่รออย่างเงียบ ๆ ให้ถึงวันที่ได้กางปีกเสียที
+His thoughts feel like carrying everyone else’s books while pretending his own bag is empty.,His thoughts feel like carrying everyone else’s books while pretending his own bag is empty.,ความคิดของเขาเหมือนการถือหนังสือของทุกคนไว้ แล้วทำเป็นว่ากระเป๋าตัวเองว่างเปล่า
+"His mind feels like a quiet room where emotional storms happen silently, hidden so that no one else has to feel them.","His mind feels like a quiet room where emotional storms happen silently, hidden so that no one else has to feel them.",ใจของเขาเหมือนห้องเงียบ ๆ ที่พายุอารมณ์เกิดขึ้นอย่างไร้เสียง ซ่อนไว้เพื่อไม่ให้ใครต้องรู้สึกตาม
+"Her mind feels like a mirror with a thin layer of fog. They can see their reflection, but never clearly enough to confront it.","Her mind feels like a mirror with a thin layer of fog. They can see their reflection, but never clearly enough to confront it.",ใจของเธอเหมือนกระจกที่มีฝ้าบาง ๆ มองเห็นเงาตัวเอง แต่ไม่เคยชัดพอจะกล้าเผชิญหน้า
+%s volume,%s volume,ระดับ%s
+Left and right arrows change it.,Left and right arrows change it.,กดลูกศรซ้าย-ขวาเพื่อปรับ
+Close the menu. Shortcut: Escape.,Close the menu. Shortcut: Escape.,ปิดเมนู ปุ่มลัด: Escape
+"Back to the title screen, or quit from the title screen.","Back to the title screen, or quit from the title screen.",กลับหน้าแรก หรือออกจากเกมเมื่ออยู่หน้าแรก
+Screen reader,Screen reader,โปรแกรมอ่านหน้าจอ
+Auto,Auto,อัตโนมัติ
+On,On,เปิด
+Off,Off,ปิด
+Screen reader support,Screen reader support,รองรับโปรแกรมอ่านหน้าจอ
+"Auto turns it on when a screen reader is found. On reads every line in full, lengthens timers and moves focus to choices.","Auto turns it on when a screen reader is found. On reads every line in full, lengthens timers and moves focus to choices.",อัตโนมัติ: เปิดเองเมื่อเจอโปรแกรมอ่านหน้าจอ เปิด: อ่านทุกบรรทัดเต็ม ๆ ยืดเวลาจับเวลา และย้ายโฟกัสไปที่ตัวเลือก
+Overwrite slot %d?,Overwrite slot %d?,เซฟทับช่อง %d?
+"Load slot %d?
+Unsaved progress is lost.","Load slot %d?
+Unsaved progress is lost.","โหลดช่อง %d?
+ความคืบหน้าที่ยังไม่เซฟจะหายไป"
+"Back to the title screen?
+Unsaved progress is lost.","Back to the title screen?
+Unsaved progress is lost.","กลับหน้าแรก?
+ความคืบหน้าที่ยังไม่เซฟจะหายไป"
+Quit the game?,Quit the game?,ออกจากเกม?
+%d  Empty,%d  Empty,%d  ว่าง
+Slot %d: empty,Slot %d: empty,ช่อง %d: ว่าง
+"Slot %d: %s, saved %s","Slot %d: %s, saved %s",ช่อง %d: %s เซฟเมื่อ %s
+"Volume, save and load.","Volume, save and load.",ระดับเสียง เซฟ และโหลด
+Debug,Debug,ดีบัก
+"Jump to scenes and minigames, change meters and flags.","Jump to scenes and minigames, change meters and flags.",กระโดดไปฉากหรือมินิเกม ปรับค่ามิเตอร์และแฟล็ก
+Jump to,Jump to,กระโดดไปที่
+Minigame: %s (%s),Minigame: %s (%s),มินิเกม: %s (%s)
+"node id, e.g. absent_1","node id, e.g. absent_1",รหัสโหนด เช่น absent_1
+Node id to jump to,Node id to jump to,รหัสโหนดที่จะกระโดดไป
+Go,Go,ไป
+Now at: %s,Now at: %s,ตอนนี้อยู่ที่: %s
+Meters,Meters,มิเตอร์
+Flags,Flags,แฟล็ก
+Closes the log. Shortcut: L or Escape.,Closes the log. Shortcut: L or Escape.,ปิดประวัติบทสนทนา ปุ่มลัด: L หรือ Escape
+Dialog log,Dialog log,ประวัติบทสนทนา
+"Every line so far, oldest first. Press L or Escape to close.","Every line so far, oldest first. Press L or Escape to close.",ทุกบรรทัดที่ผ่านมา เก่าสุดอยู่บน กด L หรือ Escape เพื่อปิด
+incoming call,incoming call,สายเรียกเข้า
+Locked.,Locked.,ล็อกอยู่
+Dialog. Space or Enter: next line. Backspace: previous line.,Dialog. Space or Enter: next line. Backspace: previous line.,บทสนทนา Space หรือ Enter: บรรทัดถัดไป Backspace: บรรทัดก่อนหน้า
+Log,Log,ประวัติ
+Plays lines on their own. Shortcut: A.,Plays lines on their own. Shortcut: A.,เล่นบทสนทนาเอง ปุ่มลัด: A
+Every line so far. Shortcut: L.,Every line so far. Shortcut: L.,ทุกบรรทัดที่ผ่านมา ปุ่มลัด: L
+"Settings, save and load. Shortcut: Escape.","Settings, save and load. Shortcut: Escape.",ตั้งค่า เซฟ และโหลด ปุ่มลัด: Escape
+Incoming call from %s. %s,Incoming call from %s. %s,สายเรียกเข้าจาก %s %s
+Noticed: %s.,Noticed: %s.,สังเกตเห็น: %s
+noticed,noticed,สังเกตแล้ว
+%s%s... cut off. Then: %s,%s%s... cut off. Then: %s,%s%s... ถูกตัดกลางคัน แล้วต่อด้วย: %s
+"%sTyped, then deleted: %s. Then: %s","%sTyped, then deleted: %s. Then: %s",%sพิมพ์ แล้วลบทิ้ง: %s แล้วต่อด้วย: %s
+ Something to notice: %s. Press N to notice it., Something to notice: %s. Press N to notice it., มีสิ่งให้สังเกต: %s กด N เพื่อสังเกต
+ A choice is coming., A choice is coming., กำลังจะมีตัวเลือก
+ You have %d seconds., You have %d seconds., มีเวลา %d วินาที
+Choose. %s.%s Use the number keys or arrows and Enter.,Choose. %s.%s Use the number keys or arrows and Enter.,เลือก %s%s ใช้ปุ่มตัวเลข หรือลูกศรแล้วกด Enter
+%d: %s%s,%d: %s%s,%d: %s%s
+ (locked), (locked), (ล็อก)
+Locked. You can't choose this right now.,Locked. You can't choose this right now.,ล็อกอยู่ ตอนนี้ยังเลือกไม่ได้
+Timed.,Timed.,จับเวลา
+Auto on.,Auto on.,เปิดอัตโนมัติ
+Auto off.,Auto off.,ปิดอัตโนมัติ
+Choose a character first.,Choose a character first.,เลือกตัวละครก่อน
+Not playable yet.,Not playable yet.,ยังเล่นไม่ได้
+Start %s's story.,Start %s's story.,เริ่มเรื่องของ %s
+Hold SPACE,Hold SPACE,กด SPACE ค้างไว้
+Hold the screen,Hold the screen,แตะหน้าจอค้างไว้
+%s to get up,%s to get up,%s เพื่อลุกขึ้น
+Stay in bed,Stay in bed,นอนต่อ
+"The alarm is ringing. %s to get up, or press Escape to stay in bed.","The alarm is ringing. %s to get up, or press Escape to stay in bed.",นาฬิกาปลุกดังอยู่ %s เพื่อลุกขึ้น หรือกด Escape เพื่อนอนต่อ
+Tap to drop oat flakes (%d left),Tap to drop oat flakes (%d left),แตะเพื่อวางข้าวโอ๊ต (เหลือ %d)
+It's looking for them...,It's looking for them...,มันกำลังหาอยู่...
+It found the shortest way.,It found the shortest way.,มันเจอทางที่สั้นที่สุดแล้ว
+Is someone on the path?,Is someone on the path?,มีใครอยู่บนทางเดินรึเปล่า?
+"A maze on the bark. The slime mold starts on the left. Drop %d oat flakes: click a spot, or move with the arrow keys and press Enter.","A maze on the bark. The slime mold starts on the left. Drop %d oat flakes: click a spot, or move with the arrow keys and press Enter.",เขาวงกตบนเปลือกไม้ ราเมือกเริ่มจากทางซ้าย วางข้าวโอ๊ต %d ชิ้น: คลิกตรงที่ต้องการ หรือเลื่อนด้วยลูกศรแล้วกด Enter
+It reached every flake. Now it pulls back to the shortest paths between them.,It reached every flake. Now it pulls back to the shortest paths between them.,มันไปถึงข้าวโอ๊ตครบทุกชิ้นแล้ว ตอนนี้มันหดกลับเหลือแค่ทางที่สั้นที่สุด
+"Column %d, row %d: %s.","Column %d, row %d: %s.",คอลัมน์ %d แถว %d: %s
+the slime mold,the slime mold,ราเมือก
+oat flake,oat flake,ข้าวโอ๊ต
+open,open,ทางว่าง
+wall,wall,กำแพง
+All flakes down. The slime mold spreads through every corridor at once.,All flakes down. The slime mold spreads through every corridor at once.,วางครบแล้ว ราเมือกแผ่ไปทุกทางพร้อมกัน
+Flake dropped. %d left.,Flake dropped. %d left.,วางแล้ว เหลือ %d ชิ้น
+"Is someone on the path? Press C to look, or keep going.","Is someone on the path? Press C to look, or keep going.",มีใครอยู่บนทางเดินรึเปล่า? กด C เพื่อหันไปดู หรือทำต่อไป
+Nobody's there.,Nobody's there.,ไม่มีใคร
+Decline,Decline,ปฏิเสธสาย
+Shortcut: D.,Shortcut: D.,ปุ่มลัด: D
+Mom,Mom,แม่
+%d unread,%d unread,ยังไม่อ่าน %d
+The group chat. Messages keep coming in. Tab between them and press Enter to answer one.,The group chat. Messages keep coming in. Tab between them and press Enter to answer one.,แชทกลุ่ม ข้อความเข้ามาไม่หยุด กด Tab เพื่อเลื่อน แล้วกด Enter เพื่อตอบ
+"Mom is calling. Press D to decline, or let it ring.","Mom is calling. Press D to decline, or let it ring.",แม่โทรมา กด D เพื่อปฏิเสธสาย หรือปล่อยให้มันดังไป
+where are the cones??,where are the cones??,กรวยอยู่ไหนอะ??
+who has the storeroom key,who has the storeroom key,ใครถือกุญแจห้องเก็บของ
+can I swap to the relay,can I swap to the relay,ขอย้ายไปวิ่งผลัดได้ป่ะ
+is the tent ours or 11/3's,is the tent ours or 11/3's,เต็นท์นี้ของเราหรือของ ม.5/3
+how many water bottles,how many water bottles,น้ำกี่ขวดอะ
+I can't come at 7am sorry,I can't come at 7am sorry,7 โมงไปไม่ทันอะ ขอโทษ
+which field is the long jump,which field is the long jump,กระโดดไกลสนามไหน
+does the roster have my name,does the roster have my name,ในรายชื่อมีชื่อเราป่ะ
+are we wearing the yellow shirts,are we wearing the yellow shirts,ใส่เสื้อเหลืองป่ะ
+who's bringing the speaker,who's bringing the speaker,ใครเอาลำโพงมา
+the whistle is missing,the whistle is missing,นกหวีดหาย
+can my friend volunteer too,can my friend volunteer too,เพื่อนเราขอมาช่วยด้วยได้ไหม
+what time is the warm up,what time is the warm up,วอร์มกี่โมง
+Pim says ask you,Pim says ask you,พิมบอกให้มาถามนาย
+is lunch provided??,is lunch provided??,มีข้าวเที่ยงให้ป่ะ??
+sorry one more question,sorry one more question,ขอโทษ ถามอีกข้อ
+Relationship web,Relationship web,ผังความสัมพันธ์
+Arrow keys: move between characters. Escape: clear.,Arrow keys: move between characters. Escape: clear.,ลูกศร: เลื่อนไปมาระหว่างตัวละคร Escape: ล้าง
+Relationships,Relationships,ความสัมพันธ์
+"Click someone to see how they're connected. Drag to move, scroll to zoom.","Click someone to see how they're connected. Drag to move, scroll to zoom.",คลิกที่ใครสักคนเพื่อดูว่าเกี่ยวข้องกันยังไง ลากเพื่อเลื่อน เลื่อนลูกกลิ้งเพื่อซูม
+%s%s. %s Connected to: %s.,%s%s. %s Connected to: %s.,%s%s %s เกี่ยวข้องกับ: %s
+", playable",", playable", (เล่นได้)
+nobody yet,nobody yet,ยังไม่มีใคร
+"Grade 11. Group leader by default. Carries everything and says ""it's fine.""","Grade 11. Group leader by default. Carries everything and says ""it's fine.""","ม.5 หัวหน้ากลุ่มแบบไม่มีใครเลือก แบกทุกอย่างไว้แล้วบอกว่า ""ไม่เป็นไร"""
+"Cheerful, the friend everyone calls. Was ""slime girl"" once, and decided never to be weird again.","Cheerful, the friend everyone calls. Was ""slime girl"" once, and decided never to be weird again.","ร่าเริง เป็นเพื่อนที่ทุกคนโทรหา เคยเป็น ""สาวราเมือก"" แล้วตัดสินใจว่าจะไม่แปลกอีกแล้ว"
+Student council. Always busy. Sleeps on his cousin's couch so he doesn't have to go home.,Student council. Always busy. Sleeps on his cousin's couch so he doesn't have to go home.,สภานักเรียน ยุ่งตลอด นอนโซฟาบ้านลูกพี่ลูกน้องจะได้ไม่ต้องกลับบ้าน
+Blunt. In a different class. Has known Elysia since kindergarten.,Blunt. In a different class. Has known Elysia since kindergarten.,พูดตรง อยู่คนละห้อง รู้จักเอลิเซียมาตั้งแต่อนุบาล
+"Group 3. Not a bad person, just used to Kay doing it.","Group 3. Not a bad person, just used to Kay doing it.",กลุ่ม 3 ไม่ใช่คนไม่ดี แค่ชินที่เคย์ทำให้
+"Group 3. Good at slides, better at photos.","Group 3. Good at slides, better at photos.",กลุ่ม 3 ทำสไลด์เก่ง ถ่ายรูปเก่งกว่า
+Home economics teacher. Garden project advisor. Runs the guidance room on Thursdays.,Home economics teacher. Garden project advisor. Runs the guidance room on Thursdays.,ครูคหกรรม ที่ปรึกษาโครงงานแปลงผัก ดูแลห้องแนะแนวทุกวันพฤหัส
+"Loud, generous, dramatic. Leads Elysia's friend group and leans on Elysia the hardest.","Loud, generous, dramatic. Leads Elysia's friend group and leans on Elysia the hardest.",เสียงดัง ใจกว้าง ดราม่า เป็นหัวโจกกลุ่มเพื่อนเอลิเซีย และพึ่งเอลิเซียหนักที่สุด
+Part of Elysia's friend group. Follows Ploy's lead.,Part of Elysia's friend group. Follows Ploy's lead.,อยู่กลุ่มเพื่อนเอลิเซีย ตามพลอยตลอด
+Part of Elysia's friend group. Usually on her phone.,Part of Elysia's friend group. Usually on her phone.,อยู่กลุ่มเพื่อนเอลิเซีย ส่วนใหญ่ก้มหน้าเล่นมือถือ
+A quiet girl in Elysia's class who draws in the margins of everything.,A quiet girl in Elysia's class who draws in the margins of everything.,เด็กผู้หญิงเงียบ ๆ ห้องเดียวกับเอลิเซีย วาดรูปตามขอบกระดาษทุกแผ่น
+Eight years old. Loves slime molds the way Elysia used to.,Eight years old. Loves slime molds the way Elysia used to.,อายุแปดขวบ รักราเมือกแบบที่เอลิเซียเคยรัก
+"21, a university student. Lets Ulyn sleep on his couch, and keeps asking when he's going home.","21, a university student. Lets Ulyn sleep on his couch, and keeps asking when he's going home.",21 ปี เป็นนักศึกษา ให้ยูลินนอนโซฟา แล้วก็ถามตลอดว่าเมื่อไหร่จะกลับบ้าน
+Student council president. Organized to the point of being frightening.,Student council president. Organized to the point of being frightening.,ประธานสภานักเรียน เป๊ะจนน่ากลัว
+"Hospital shifts, always tired. Raised Kay alone.","Hospital shifts, always tired. Raised Kay alone.",ทำงานเป็นกะที่โรงพยาบาล เหนื่อยตลอด เลี้ยงเคย์มาคนเดียว
+Left about five years ago.,Left about five years ago.,จากไปเมื่อประมาณห้าปีก่อน
+Thinks Elysia is her easy one.,Thinks Elysia is her easy one.,คิดว่าเอลิเซียเป็นลูกที่ไม่ต้องห่วง
+Works at a bank. Alone in a house that's too quiet since the separation.,Works at a bank. Alone in a house that's too quiet since the separation.,ทำงานธนาคาร อยู่คนเดียวในบ้านที่เงียบเกินไปตั้งแต่แยกทางกัน
+Moved out last spring.,Moved out last spring.,ย้ายออกไปเมื่อต้นปี
+best friend,best friend,เพื่อนสนิท
+best friend's boyfriend,best friend's boyfriend,แฟนของเพื่อนสนิท
+best friend's girlfriend,best friend's girlfriend,แฟนของเพื่อนสนิท
+big sister,big sister,พี่สาว
+boyfriend,boyfriend,แฟน
+boyfriend's best friend,boyfriend's best friend,เพื่อนสนิทของแฟน
+classmate,classmate,เพื่อนร่วมห้อง
+council member,council member,สมาชิกสภา
+council president,council president,ประธานสภา
+cousin,cousin,ลูกพี่ลูกน้อง
+dad,dad,พ่อ
+dad (left),dad (left),พ่อ (จากไปแล้ว)
+daughter,daughter,ลูกสาว
+ex-husband,ex-husband,อดีตสามี
+ex-wife,ex-wife,อดีตภรรยา
+friend,friend,เพื่อน
+friend she always calls,friend she always calls,เพื่อนที่เธอโทรหาตลอด
+garden advisor,garden advisor,ที่ปรึกษาแปลงผัก
+girlfriend,girlfriend,แฟน
+girlfriend's best friend,girlfriend's best friend,เพื่อนสนิทของแฟน
+group leader,group leader,หัวหน้ากลุ่ม
+groupmate,groupmate,เพื่อนร่วมกลุ่ม
+little brother,little brother,น้องชาย
+mom,mom,แม่
+separated,separated,แยกทางกัน
+son,son,ลูกชาย
+student,student,นักเรียน
+teacher,teacher,ครู
+Relationship web. %d characters. Use the arrow keys to move between them.,Relationship web. %d characters. Use the arrow keys to move between them.,ผังความสัมพันธ์ มีตัวละคร %d ตัว ใช้ลูกศรเพื่อเลื่อนไปมา

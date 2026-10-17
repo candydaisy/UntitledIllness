@@ -64,10 +64,10 @@ func start(settings: Dictionary, meters: Dictionary, time_mult := 1.0) -> void:
 func _ready() -> void:
 	call_panel.visible = false
 	decline.pressed.connect(_on_decline)
-	decline.accessibility_description = "Shortcut: D."
+	decline.accessibility_description = tr("Shortcut: D.")
 	Accessibility.make_live(unread_label, true)
 	_update_labels()
-	Accessibility.say(unread_label, "The group chat. Messages keep coming in. Tab between them and press Enter to answer one.")
+	Accessibility.say(unread_label, tr("The group chat. Messages keep coming in. Tab between them and press Enter to answer one."))
 	for i in 3:
 		_spawn_card.call_deferred() # after StoryPlayer has sized the desk
 
@@ -108,7 +108,7 @@ func _spawn_card() -> void:
 	if desk.get_child_count() >= MAX_CARDS:
 		return # buried under the pile: only the count goes up
 	var card := Button.new()
-	card.text = MESSAGES.pick_random()
+	card.text = MESSAGES.pick_random() # auto-translated
 	card.custom_minimum_size = CARD_SIZE
 	card.size = CARD_SIZE
 	card.clip_text = true
@@ -130,7 +130,7 @@ func _answer(card: Button) -> void:
 func _update_labels() -> void:
 	var minutes := 52 + int(_time * 8.0 / _before_call) # 6:52 -> 7:00 at the call, then on
 	clock.text = "%d:%02d PM" % [6 + floori(minutes / 60.0), minutes % 60]
-	unread_label.text = "%d unread" % _unread
+	unread_label.text = tr("%d unread") % _unread
 
 
 # --- Mom's call ---
@@ -143,7 +143,7 @@ func _start_call() -> void:
 	create_tween().tween_property(call_panel, "modulate:a", 1.0, CALL_FADE)
 	if ring:
 		ring.play()
-	Accessibility.say(unread_label, "Mom is calling. Press D to decline, or let it ring.")
+	Accessibility.say(unread_label, tr("Mom is calling. Press D to decline, or let it ring."))
 
 func _on_decline() -> void:
 	if not call_panel.visible:

@@ -53,12 +53,12 @@ func _ready() -> void:
 		progress.show_percentage = false
 
 	alarm.text = _clock
-	var how := "Hold the screen" if DisplayServer.is_touchscreen_available() else "Hold SPACE"
-	prompt.text = how + " to get up"
+	var how := tr("Hold the screen") if DisplayServer.is_touchscreen_available() else tr("Hold SPACE")
+	prompt.text = tr("%s to get up") % how
 	skip.pressed.connect(_finish.bind("gave_up"))
 	skip.focus_mode = Control.FOCUS_NONE # Space is for getting up, not for this button
 	Accessibility.make_live(prompt, true)
-	Accessibility.say(prompt, "The alarm is ringing. %s to get up, or press Escape to stay in bed." % how)
+	Accessibility.say(prompt, tr("The alarm is ringing. %s to get up, or press Escape to stay in bed.") % how)
 
 
 func _input(event: InputEvent) -> void:

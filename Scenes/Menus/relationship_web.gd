@@ -52,8 +52,8 @@ func _ready() -> void:
 	# Keyboard and screen readers: arrow keys move between characters, and each
 	# one is announced with their connections (the web itself is only drawn).
 	focus_mode = Control.FOCUS_ALL
-	accessibility_name = "Relationship web"
-	accessibility_description = "Arrow keys: move between characters. Escape: clear."
+	accessibility_name = tr("Relationship web")
+	accessibility_description = tr("Arrow keys: move between characters. Escape: clear.")
 	Accessibility.make_live(self)
 	_load()
 	if OS.is_debug_build():
@@ -288,18 +288,18 @@ func _select(id: String) -> void:
 ## What a screen reader says for the selected character.
 func _speech(id: String) -> String:
 	if id == "":
-		return "Relationship web. %d characters. Use the arrow keys to move between them." % nodes.size()
+		return tr("Relationship web. %d characters. Use the arrow keys to move between them.") % nodes.size()
 	var n : Dictionary = nodes[id]
 	var links := []
 	for other in _relations:
-		links.append("%s, %s" % [nodes[other]["name"], _relations[other]])
-	return "%s%s. %s Connected to: %s." % [n["name"], ", playable" if n["playable"] else "", n["about"], "; ".join(links) if links else "nobody yet"]
+		links.append("%s, %s" % [nodes[other]["name"], tr(_relations[other])])
+	return tr("%s%s. %s Connected to: %s.") % [n["name"], tr(", playable") if n["playable"] else "", tr(n["about"]), "; ".join(links) if links else tr("nobody yet")]
 
 func _show_info(id: String) -> void:
 	Accessibility.say(self, _speech(id))
 	if id == "":
-		name_label.text = "Relationships"
-		about_label.text = "Click someone to see how they're connected. Drag to move, scroll to zoom."
+		name_label.text = tr("Relationships")
+		about_label.text = tr("Click someone to see how they're connected. Drag to move, scroll to zoom.")
 		picture.visible = false
 		initial.visible = false
 		links_label.text = ""
@@ -307,7 +307,7 @@ func _show_info(id: String) -> void:
 
 	var n : Dictionary = nodes[id]
 	name_label.text = n["name"]
-	about_label.text = n["about"]
+	about_label.text = tr(n["about"])
 
 	var tex : Texture2D = load(n["picture"]) if n["picture"] != "" and ResourceLoader.exists(n["picture"]) else null
 	picture.texture = tex
@@ -319,5 +319,5 @@ func _show_info(id: String) -> void:
 	var lines := []
 	for other in _relations:
 		var o : Dictionary = nodes[other]
-		lines.append("[color=#%s]●[/color] %s — %s" % [o["color"].to_html(false), o["name"], _relations[other]])
+		lines.append("[color=#%s]●[/color] %s — %s" % [o["color"].to_html(false), o["name"], tr(_relations[other])])
 	links_label.text = "\n".join(lines)

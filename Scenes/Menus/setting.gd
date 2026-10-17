@@ -9,6 +9,7 @@ signal closed # Return was pressed (the title screen uses this to show itself ag
 const SETTINGS_PATH := "user://settings.cfg"
 const TITLE_SCENE := "res://Scenes/Menus/title_menu.tscn"
 const EMPTY_SLOT_TINT := Color(1, 1, 1, 0.35)
+const LOCALES := ["en", "th"]
 
 @onready var setting_panel : Panel = $"Sub1-setting"
 @onready var save_panel : Panel = $"Sub2-save"
@@ -33,6 +34,7 @@ var _pending_action : Callable # what Confirm does
 
 
 func _ready() -> void:
+	apply_saved_locale()
 	apply_saved_volumes()
 
 	for slider in sliders:
@@ -49,8 +51,8 @@ func _ready() -> void:
 		slider.drag_ended.connect(func(_changed): _save_volumes())
 		var label_name := String(slider.name).trim_suffix("-slider")
 		var label := slider.get_parent().get_node_or_null(label_name) as Label
-		slider.accessibility_name = "%s volume" % (label.text if label else sliders[slider])
-		slider.accessibility_description = "Left and right arrows change it."
+		slider.accessibility_name = tr("%s volume") % tr(label.text if label else sliders[slider])
+		slider.accessibility_description = tr("Left and right arrows change it.")
 
 	$Main/Setting.pressed.connect(_show_sub.bind(setting_panel))
 	$Main/Save.pressed.connect(_show_sub.bind(save_panel))
@@ -69,12 +71,14 @@ func _ready() -> void:
 		_add_slot_label(slot)
 
 	_add_screen_reader_option()
+	%English.pressed.connect(set_locale.bind("en"))
+	%Thai.pressed.connect(set_locale.bind("th"))
 	if OS.is_debug_build():
 		_add_debug_page()
 
 	# Screen readers: say what each part is, and announce questions.
-	$Main/Return.accessibility_description = "Close the menu. Shortcut: Escape."
-	$Main/Exit.accessibility_description = "Back to the title screen, or quit from the title screen."
+	$Main/Return.accessibility_description = tr("Close the menu. Shortcut: Escape.")
+	$Main/Exit.accessibility_description = tr("Back to the title screen, or quit from the title screen.")
 	Accessibility.make_live(confirm_label, true)
 
 
@@ -110,6 +114,24 @@ func _show_sub(panel: Panel) -> void:
 		_refresh_slots()
 	if visible:
 		Accessibility.focus_first_button.call_deferred(panel)
+
+
+
+# --- Language ---
+
+## Switches the game's language and remembers it. Labels and buttons change
+## by themselves; the story redraws its line (StoryPlayer._relocalize).
+static func set_locale(locale: String) -> void:
+	TranslationServer.set_locale(locale if locale in LOCALES else "en")
+	var cfg := ConfigFile.new()
+	cfg.load(SETTINGS_PATH) # keep other sections
+	cfg.set_value("general", "locale", TranslationServer.get_locale())
+	cfg.save(SETTINGS_PATH)
+
+static func apply_saved_locale() -> void:
+	var cfg := ConfigFile.new()
+	cfg.load(SETTINGS_PATH)
+	TranslationServer.set_locale(cfg.get_value("general", "locale", "en"))
 
 
 
@@ -151,7 +173,7 @@ func _add_screen_reader_option() -> void:
 	row.position = Vector2(voice.position.x + 11, voice.position.y + voice.size.y + 40)
 	row.add_theme_constant_override("separation", 24)
 	var label := Label.new()
-	label.text = "Screen reader"
+	label.text = "Screen reader" # auto-translated, so it follows language changes
 	label.add_theme_font_size_override("font_size", 28)
 	row.add_child(label)
 	var pick := OptionButton.new()
@@ -159,8 +181,8 @@ func _add_screen_reader_option() -> void:
 	for text in ["Auto", "On", "Off"]:
 		pick.add_item(text)
 	pick.selected = Accessibility.get_mode()
-	pick.accessibility_name = "Screen reader support"
-	pick.accessibility_description = "Auto turns it on when a screen reader is found. On reads every line in full, lengthens timers and moves focus to choices."
+	pick.accessibility_name = tr("Screen reader support")
+	pick.accessibility_description = tr("Auto turns it on when a screen reader is found. On reads every line in full, lengthens timers and moves focus to choices.")
 	pick.item_selected.connect(func(i): Accessibility.set_mode(i))
 	row.add_child(pick)
 	setting_panel.add_child(row)
@@ -171,9 +193,9 @@ func _add_screen_reader_option() -> void:
 func _add_debug_page() -> void:
 	var button := $Main/Load.duplicate(0) as Button # 0: without Load's click handler
 	button.name = "Debug"
-	button.text = "Debug"
+	button.text = "Debug" # auto-translated
 	button.position.y += $Main/Load.position.y - $Main/Save.position.y # one step below Load
-	button.accessibility_description = "Jump to scenes and minigames, change meters and flags."
+	button.accessibility_description = tr("Jump to scenes and minigames, change meters and flags.")
 	button.pressed.connect(func(): _show_sub(debug_panel))
 	$Main.add_child(button)
 
@@ -208,7 +230,7 @@ func _fill_debug_page() -> void:
 	if story == null:
 		return
 
-	column.add_child(_debug_heading("Jump to"))
+	column.add_child(_debug_heading(tr("Jump to")))
 	var games := []
 	for id in story.graph.nodes:
 		if story.graph.nodes[id].has("minigame"):
@@ -216,24 +238,24 @@ func _fill_debug_page() -> void:
 	games.sort()
 	for id in games:
 		var go := Button.new()
-		go.text = "Minigame: %s (%s)" % [String(story.graph.nodes[id]["minigame"]).get_file().get_basename(), id]
+		go.text = tr("Minigame: %s (%s)") % [String(story.graph.nodes[id]["minigame"]).get_file().get_basename(), id]
 		go.pressed.connect(_debug_jump.bind(id))
 		column.add_child(go)
 	var row := HBoxContainer.new()
 	var field := LineEdit.new()
-	field.placeholder_text = "node id, e.g. absent_1"
-	field.accessibility_name = "Node id to jump to"
+	field.placeholder_text = tr("node id, e.g. absent_1")
+	field.accessibility_name = tr("Node id to jump to")
 	field.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var jump := Button.new()
-	jump.text = "Go"
+	jump.text = tr("Go")
 	jump.pressed.connect(func(): _debug_jump(field.text.strip_edges()))
 	field.text_submitted.connect(func(text): _debug_jump(text.strip_edges()))
 	row.add_child(field)
 	row.add_child(jump)
 	column.add_child(row)
-	column.add_child(_debug_label("Now at: %s" % story.current_node))
+	column.add_child(_debug_label(tr("Now at: %s") % story.current_node))
 
-	column.add_child(_debug_heading("Meters"))
+	column.add_child(_debug_heading(tr("Meters")))
 	var meters : Dictionary = story.mode.get_meters()
 	for meter in meters:
 		var line := HBoxContainer.new()
@@ -254,7 +276,7 @@ func _fill_debug_page() -> void:
 		line.add_child(slider)
 		column.add_child(line)
 
-	column.add_child(_debug_heading("Flags"))
+	column.add_child(_debug_heading(tr("Flags")))
 	for flag in story.graph.flag_names():
 		var box := CheckBox.new()
 		box.text = flag
@@ -285,7 +307,7 @@ func _debug_label(text: String) -> Label:
 
 func _on_save_slot(slot: int) -> void:
 	if SaveGame.exists(slot):
-		_ask("Overwrite slot %d?" % slot, _save_to.bind(slot))
+		_ask(tr("Overwrite slot %d?") % slot, _save_to.bind(slot))
 	else:
 		_save_to(slot)
 
@@ -297,7 +319,7 @@ func _on_load_slot(slot: int) -> void:
 	if not SaveGame.exists(slot):
 		return
 	if _story():
-		_ask("Load slot %d?\nUnsaved progress is lost." % slot, SaveGame.load_slot.bind(get_tree(), slot))
+		_ask(tr("Load slot %d?\nUnsaved progress is lost.") % slot, SaveGame.load_slot.bind(get_tree(), slot))
 	else:
 		SaveGame.load_slot(get_tree(), slot)
 
@@ -316,13 +338,13 @@ func _refresh_slots() -> void:
 				button.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_COVERED if thumb else TextureButton.STRETCH_TILE
 				button.modulate = Color.WHITE
 				label.text = "%d  %s\n%s" % [slot, data.get("character", ""), String(data.get("saved_at", "")).replace("T", "  ")]
-				button.accessibility_name = "Slot %d: %s, saved %s" % [slot, data.get("character", ""), String(data.get("saved_at", "")).replace("T", " at ")]
+				button.accessibility_name = tr("Slot %d: %s, saved %s") % [slot, data.get("character", ""), String(data.get("saved_at", "")).replace("T", " at ")]
 			else:
 				button.texture_normal = button.get_meta("empty_texture")
 				button.stretch_mode = TextureButton.STRETCH_TILE
 				button.modulate = EMPTY_SLOT_TINT if slots == load_slots else Color.WHITE
-				label.text = "%d  Empty" % slot
-				button.accessibility_name = "Slot %d: empty" % slot
+				label.text = tr("%d  Empty") % slot
+				button.accessibility_name = tr("Slot %d: empty") % slot
 
 func _add_slot_label(button: TextureButton) -> void:
 	var label := Label.new()
@@ -342,9 +364,9 @@ func _add_slot_label(button: TextureButton) -> void:
 
 func _on_exit_pressed() -> void:
 	if _story():
-		_ask("Back to the title screen?\nUnsaved progress is lost.", get_tree().change_scene_to_file.bind(TITLE_SCENE))
+		_ask(tr("Back to the title screen?\nUnsaved progress is lost."), get_tree().change_scene_to_file.bind(TITLE_SCENE))
 	else:
-		_ask("Quit the game?", get_tree().quit)
+		_ask(tr("Quit the game?"), get_tree().quit)
 
 func _ask(question: String, action: Callable) -> void:
 	confirm_label.text = question
@@ -361,5 +383,5 @@ func _on_confirm() -> void:
 
 func _hide_confirm() -> void:
 	confirm.visible = false
-	confirm_label.text = "Are you sure?"
+	confirm_label.text = tr("Are you sure?")
 	_pending_action = Callable()

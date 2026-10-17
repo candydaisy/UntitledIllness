@@ -15,8 +15,8 @@ func _ready() -> void:
 	_show_panel(main)
 	blink.modulate.a = 1.0
 	setting_menu.closed.connect(_on_back_pressed) # Return brings the title menu back
-	$Main/Settings.accessibility_name = "Settings"
-	$Main/Settings.accessibility_description = "Volume, save and load."
+	$Main/Settings.accessibility_name = tr("Settings")
+	$Main/Settings.accessibility_description = tr("Volume, save and load.")
 	_focus(main)
 
 func _navigate_to(panel: Control) -> void:

@@ -31,12 +31,13 @@ func _init(theme_from: Control) -> void:
 	back.size_flags_horizontal = Control.SIZE_SHRINK_END
 	back.custom_minimum_size = Vector2(140, 56) # big enough to tap
 	back.focus_mode = Control.FOCUS_NONE # so Space/Enter don't press it
-	back.accessibility_description = "Closes the log. Shortcut: L or Escape."
+	back.accessibility_description = tr("Closes the log. Shortcut: L or Escape.")
 	back.pressed.connect(toggle)
 	column.add_child(back)
 
 	_label = RichTextLabel.new()
 	_label.bbcode_enabled = true
+	_label.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED # story lines
 	_label.scroll_following = true
 	_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_label.add_theme_font_size_override("normal_font_size", 26)
@@ -81,8 +82,8 @@ func set_lines(lines: Array) -> void:
 ## Puts keyboard / screen reader focus on the log text so it can be read.
 func focus_text() -> void:
 	_label.focus_mode = Control.FOCUS_ALL
-	_label.accessibility_name = "Dialog log"
-	_label.accessibility_description = "Every line so far, oldest first. Press L or Escape to close."
+	_label.accessibility_name = tr("Dialog log")
+	_label.accessibility_description = tr("Every line so far, oldest first. Press L or Escape to close.")
 	_label.grab_focus()
 
 

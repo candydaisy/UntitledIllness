@@ -39,6 +39,7 @@ func _init(theme_from: Control) -> void:
 	box.add_child(incoming)
 
 	_caller = Label.new()
+	_caller.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED # a name from the story
 	_caller.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_caller.add_theme_font_size_override("font_size", 40)
 	box.add_child(_caller)
@@ -71,10 +72,11 @@ func ring(caller: String, choices: Array) -> void:
 	for i in choices.size():
 		var b := Button.new()
 		b.text = choices[i].get("text", "")
+		b.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED # story text, already translated
 		b.custom_minimum_size = Vector2(150, 56)
 		b.disabled = choices[i].get("locked", false)
 		b.focus_mode = Control.FOCUS_ALL
-		b.accessibility_description = "Locked." if b.disabled else ""
+		b.accessibility_description = tr("Locked.") if b.disabled else ""
 		b.modulate = Color(1, 1, 1, 0.35 if b.disabled else 1.0)
 		b.pressed.connect(func(): picked.emit(i))
 		_buttons.add_child(b)

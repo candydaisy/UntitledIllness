@@ -120,6 +120,9 @@ func _ready() -> void:
 
 	_setup_accessibility()
 	text_label.bbcode_enabled = true
+	# Story text is translated by the flow graph (th.json), never by ui.csv.
+	for c in [text_label, speaker_label] + choice_buttons:
+		c.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
 	text_label.meta_clicked.connect(_on_notice_clicked)
 	text_label.meta_hover_started.connect(func(meta): _hovered_notice = str(meta))
 	text_label.meta_hover_ended.connect(func(_meta): _hovered_notice = "")
@@ -378,7 +381,7 @@ func _show_choices() -> void:
 	var seconds := mode.choice_time(entry) * (screen_reader_timer_mult if _screen_reader else 1.0)
 	if entry.has("call"):
 		phone.ring(entry["call"], current_choices)
-		Accessibility.say(text_label, "Incoming call from %s. %s" % [entry["call"], _choices_speech(seconds)])
+		Accessibility.say(text_label, tr("Incoming call from %s. %s") % [entry["call"], _choices_speech(seconds)])
 		if _screen_reader:
 			phone.focus_first()
 		_start_choice_timer(seconds)
@@ -549,7 +552,7 @@ func _on_notice_clicked(meta: Variant) -> void:
 	flags[flag] = true
 	for detail in Accessibility.notices(_current_line.get("text", "")):
 		if detail["flag"] == flag:
-			Accessibility.say(text_label, "Noticed: %s." % detail["text"])
+			Accessibility.say(text_label, tr("Noticed: %s.") % detail["text"])
 	_hovered_notice = ""
 	# Redraw the line so the detail shows as noticed, keeping the typing progress.
 	var shown := text_label.visible_characters
@@ -562,7 +565,7 @@ func _on_notice_clicked(meta: Variant) -> void:
 
 func _flash_noticed() -> void:
 	var tag := Label.new()
-	tag.text = "noticed"
+	tag.text = "noticed" # auto-translated
 	tag.add_theme_color_override("font_color", notice_color)
 	tag.position = text_label.global_position + Vector2(text_label.size.x - 120, -36)
 	tag.modulate.a = 0.0
@@ -584,14 +587,14 @@ func _setup_accessibility() -> void:
 		push_warning("A screen reader is on, but this Godot build can't talk to it (no AccessKit). " +
 			"Use the official Godot download, or put accesskit.so next to the Godot executable.")
 	Accessibility.make_live(text_label)
-	text_label.accessibility_description = "Dialog. Space or Enter: next line. Backspace: previous line."
-	auto_button.accessibility_name = "Auto"
-	auto_button.accessibility_description = "Plays lines on their own. Shortcut: A."
-	log_button.accessibility_name = "Log"
-	log_button.accessibility_description = "Every line so far. Shortcut: L."
-	menu_button.accessibility_name = "Menu"
-	menu_button.accessibility_description = "Settings, save and load. Shortcut: Escape."
-	dialog_log.accessibility_name = "Dialog log"
+	text_label.accessibility_description = tr("Dialog. Space or Enter: next line. Backspace: previous line.")
+	auto_button.accessibility_name = tr("Auto")
+	auto_button.accessibility_description = tr("Plays lines on their own. Shortcut: A.")
+	log_button.accessibility_name = tr("Log")
+	log_button.accessibility_description = tr("Every line so far. Shortcut: L.")
+	menu_button.accessibility_name = tr("Menu")
+	menu_button.accessibility_description = tr("Settings, save and load. Shortcut: Escape.")
+	dialog_log.accessibility_name = tr("Dialog log")
 	for i in choice_buttons.size():
 		choice_buttons[i].focus_mode = Control.FOCUS_ALL # reachable with Tab and arrow keys
 
@@ -606,30 +609,30 @@ func _announce_line(entry: Dictionary, line: Dictionary) -> void:
 	if line.has("unsaid"):
 		var unsaid := Accessibility.speech(line["unsaid"])
 		if line.get("cut", false):
-			spoken = "%s%s... cut off. Then: %s" % [prefix, unsaid.trim_suffix("—"), said]
+			spoken = tr("%s%s... cut off. Then: %s") % [prefix, unsaid.trim_suffix("—"), said]
 		else:
-			spoken = "%sTyped, then deleted: %s. Then: %s" % [prefix, unsaid, said]
+			spoken = tr("%sTyped, then deleted: %s. Then: %s") % [prefix, unsaid, said]
 	var details := Accessibility.notices(line["text"]).filter(func(d): return not flags.get(d["flag"], false))
 	if not details.is_empty():
-		spoken += " Something to notice: %s. Press N to notice it." % ", ".join(details.map(func(d): return d["text"]))
+		spoken += tr(" Something to notice: %s. Press N to notice it.") % ", ".join(details.map(func(d): return d["text"]))
 	if entry.has("choices") and not entry.has("call"):
-		spoken += " A choice is coming."
+		spoken += tr(" A choice is coming.")
 	Accessibility.say(text_label, spoken)
 
 func _choices_speech(seconds: float) -> String:
 	var parts := []
 	for i in current_choices.size():
 		var c : Dictionary = current_choices[i]
-		parts.append("%d: %s%s" % [i + 1, Accessibility.speech(c.get("text", "")), " (locked)" if c.get("locked", false) else ""])
-	var timed := " You have %d seconds." % roundi(seconds) if seconds > 0.0 else ""
-	return "Choose. %s.%s Use the number keys or arrows and Enter." % [". ".join(parts), timed]
+		parts.append(tr("%d: %s%s") % [i + 1, Accessibility.speech(c.get("text", "")), tr(" (locked)") if c.get("locked", false) else ""])
+	var timed := tr(" You have %d seconds.") % roundi(seconds) if seconds > 0.0 else ""
+	return tr("Choose. %s.%s Use the number keys or arrows and Enter.") % [". ".join(parts), timed]
 
 func _describe_choice(button: Button, choice: Dictionary, seconds: float) -> void:
 	var notes := []
 	if choice.get("locked", false):
-		notes.append("Locked. You can't choose this right now.")
+		notes.append(tr("Locked. You can't choose this right now."))
 	if seconds > 0.0:
-		notes.append("Timed.")
+		notes.append(tr("Timed."))
 	button.accessibility_description = " ".join(notes)
 
 ## Keyboard shortcuts that work for everyone: 1-3 pick a choice, N notices a
@@ -652,7 +655,7 @@ func _handle_shortcut(event: InputEvent) -> bool:
 			return true
 		KEY_A:
 			_toggle_auto()
-			Accessibility.say(text_label, "Auto on." if auto_mode else "Auto off.")
+			Accessibility.say(text_label, tr("Auto on.") if auto_mode else tr("Auto off."))
 			return true
 		KEY_L:
 			_toggle_log()

@@ -87,7 +87,7 @@ func _ready() -> void:
 	_check_wait = _next_check()
 	Accessibility.make_live(prompt, true)
 	_update_prompt()
-	Accessibility.say(prompt, "A maze on the bark. The slime mold starts on the left. Drop %d oat flakes: click a spot, or move with the arrow keys and press Enter." % _flakes_total)
+	Accessibility.say(prompt, tr("A maze on the bark. The slime mold starts on the left. Drop %d oat flakes: click a spot, or move with the arrow keys and press Enter.") % _flakes_total)
 
 
 ## Breadth-first search from the start: steps to every cell, and the way back.
@@ -117,7 +117,7 @@ func _process(delta: float) -> void:
 			if _spread >= _max_dist:
 				_keep_shortest_paths()
 				_set_phase(Phase.RETRACTING)
-				Accessibility.say(prompt, "It reached every flake. Now it pulls back to the shortest paths between them.")
+				Accessibility.say(prompt, tr("It reached every flake. Now it pulls back to the shortest paths between them."))
 		Phase.RETRACTING:
 			if _phase_time >= RETRACT_TIME:
 				_set_phase(Phase.DONE)
@@ -173,14 +173,14 @@ func _move_cursor(d: Vector2i) -> void:
 	var next := _cursor + d
 	if next.y >= 0 and next.y < MAZE.size() and next.x >= 0 and next.x < MAZE[0].length():
 		_cursor = next
-	Accessibility.say(prompt, "Column %d, row %d: %s." % [_cursor.x + 1, _cursor.y + 1, _describe(_cursor)])
+	Accessibility.say(prompt, tr("Column %d, row %d: %s.") % [_cursor.x + 1, _cursor.y + 1, _describe(_cursor)])
 
 func _describe(cell: Vector2i) -> String:
 	if cell == _start:
-		return "the slime mold"
+		return tr("the slime mold")
 	if cell in _flakes:
-		return "oat flake"
-	return "open" if _open.has(cell) else "wall"
+		return tr("oat flake")
+	return tr("open") if _open.has(cell) else tr("wall")
 
 func _place(cell: Vector2i) -> void:
 	if _phase != Phase.PLACING or not _open.has(cell) or cell == _start or cell in _flakes:
@@ -189,19 +189,19 @@ func _place(cell: Vector2i) -> void:
 	_update_prompt()
 	if _flakes.size() >= _flakes_total:
 		_set_phase(Phase.SPREADING)
-		Accessibility.say(prompt, "All flakes down. The slime mold spreads through every corridor at once.")
+		Accessibility.say(prompt, tr("All flakes down. The slime mold spreads through every corridor at once."))
 	else:
-		Accessibility.say(prompt, "Flake dropped. %d left." % (_flakes_total - _flakes.size()))
+		Accessibility.say(prompt, tr("Flake dropped. %d left.") % (_flakes_total - _flakes.size()))
 
 func _update_prompt() -> void:
 	match _phase:
 		Phase.PLACING:
 			var left := _flakes_total - _flakes.size()
-			prompt.text = "Tap to drop oat flakes (%d left)" % left
+			prompt.text = tr("Tap to drop oat flakes (%d left)") % left
 		Phase.SPREADING:
-			prompt.text = "It's looking for them..."
+			prompt.text = tr("It's looking for them...")
 		_:
-			prompt.text = "It found the shortest way."
+			prompt.text = tr("It found the shortest way.")
 
 
 # --- Checking the path ---
@@ -223,13 +223,13 @@ func _tick_check(delta: float) -> void:
 		if _check_wait <= 0.0:
 			check.visible = true
 			_check_left = CHECK_SHOWN * _time_mult
-			Accessibility.say(prompt, "Is someone on the path? Press C to look, or keep going.")
+			Accessibility.say(prompt, tr("Is someone on the path? Press C to look, or keep going."))
 
 func _on_check() -> void:
 	_checked = true
 	check.visible = false
 	_check_wait = _next_check()
-	Accessibility.say(prompt, "Nobody's there.")
+	Accessibility.say(prompt, tr("Nobody's there."))
 
 
 # --- Drawing ---
