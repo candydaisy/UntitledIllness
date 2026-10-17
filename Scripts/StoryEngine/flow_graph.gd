@@ -1,8 +1,15 @@
 class_name FlowGraph
 extends RefCounted
 ## A character's story, loaded from a flow_graph.json file.
+## A translation sits next to it as <locale>.json (e.g. th.json), keyed by
+## node id; see apply_language().
 
-var nodes : Dictionary = {}
+const TRANSLATABLE := ["text", "real_text", "cut", "cut_after"]
+
+var nodes : Dictionary = {} # what the game reads: English with the translation on top
+var source : Dictionary = {} # the English, never changed
+var translation : Dictionary = {} # the loaded <locale>.json, {} for English
+var _path := ""
 
 
 static func load_from(path: String) -> FlowGraph:
@@ -21,8 +28,56 @@ static func load_from(path: String) -> FlowGraph:
 		return null
 
 	var graph := FlowGraph.new()
-	graph.nodes = json.data
+	graph.source = json.data
+	graph._path = path
+	graph.apply_language(TranslationServer.get_locale())
 	return graph
+
+
+## Rebuilds `nodes` for a locale: the English, with every line the
+## translation has replaced. Anything it's missing stays English, and only
+## text changes, never next/flags/meters.
+func apply_language(locale: String) -> void:
+	nodes = source.duplicate(true)
+	translation = _load_translation(locale)
+	for id in translation:
+		if not nodes.has(id) or typeof(translation[id]) != TYPE_DICTIONARY:
+			continue
+		var entry : Dictionary = nodes[id]
+		var tr_entry : Dictionary = translation[id]
+		for key in TRANSLATABLE:
+			if tr_entry.has(key) and entry.has(key):
+				entry[key] = tr_entry[key]
+		var choices : Array = entry.get("choices", [])
+		var tr_choices : Array = tr_entry.get("choices", [])
+		for i in mini(choices.size(), tr_choices.size()): # by index, before any filtering
+			choices[i]["text"] = tr_choices[i]
+		var results : Dictionary = entry.get("results", {})
+		var tr_results : Dictionary = tr_entry.get("results", {})
+		for name in tr_results:
+			if results.has(name):
+				results[name]["text"] = tr_results[name]
+
+func _load_translation(locale: String) -> Dictionary:
+	var file := _path.get_base_dir().path_join(locale.get_slice("_", 0) + ".json")
+	if locale.begins_with("en") or _path == "" or not FileAccess.file_exists(file):
+		return {}
+	var json := JSON.new()
+	if json.parse(FileAccess.get_file_as_string(file)) != OK or typeof(json.data) != TYPE_DICTIONARY:
+		push_error("Can't read %s (line %d): %s. Playing in English." % [file, json.get_error_line(), json.get_error_message()])
+		return {}
+	return json.data
+
+## (translated nodes, nodes with text), for the progress line in the editor.
+func translated_count() -> Vector2i:
+	var total := 0
+	var done := 0
+	for id in source:
+		if source[id].has("text"):
+			total += 1
+			if translation.get(id, {}).has("text"):
+				done += 1
+	return Vector2i(done, total)
 
 
 func has_entry(id: String) -> bool:
