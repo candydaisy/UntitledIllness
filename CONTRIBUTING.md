@@ -60,6 +60,8 @@ UntitledIllness/
 
 **Write or edit dialogue** → read [`Story/README.md`](Story/README.md), then edit the character's `flow_graph.json`. No code needed.
 
+**Translate dialogue** → edit the character's `th.json` (see [Translations](Story/README.md#translations-thai)). Menu text is in `Translations/ui.csv`.
+
 You can also use **[TTFUI](https://github.com/candydaisy/TTFUI)** ([open it in the browser](https://candydaisy.github.io/TTFUI/)), a visual editor for these files:
 - **Flow graph editor:** import a `flow_graph.json`, edit it as a node graph, playtest it with the character's real rules (meters, locks, timed choices, self-edits), and export. Exporting an unchanged story gives back the identical file.
 - **Relationship web editor** (the **Relationships** button): edits `Story/relationships.json`. **Open Story Folder** checks every story for speakers missing from the web.

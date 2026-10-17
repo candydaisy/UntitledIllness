@@ -223,6 +223,27 @@ Blind players hear every line read aloud (see Accessibility in `CONTRIBUTING.md`
 - **Narration** carries anything the player needs to know. Backgrounds and character sprites aren't announced, so if it matters that we're in the garden or that Mom just walked in, say it in the text.
 - **Details to notice** (`{text|Flag}`) are read out with "Press N to notice it", so keep the shown text short and specific.
 
+## Translations (Thai)
+
+The game's language is picked in **Settings** (English / ไทย). Each story has its English in `flow_graph.json` and its Thai in `th.json` next to it, matched by node id. A node or key missing from `th.json` plays in English, so a half-done translation still runs.
+
+`th.json` only holds text. Never copy `next`, flags or meter changes into it:
+
+```json
+"wake_11":  {"text": "ทำอะไรก่อนดี", "choices": ["อาบน้ำ", "งีบอีกห้านาที", "กินข้าวเช้า"]},
+"call_sleep_3": {"text": "\"แกไม่ได้กวน—\"", "real_text": "\"แกไม่ได้กวนชั้นหรอก ชั้นแค่เหนื่อยมาก—\""},
+"busy_4b":  {"text": "ป่านนี้แม่คงนั่งอยู่ที่โต๊ะ เก้าอี้ตัวเดิม", "cut_after": "ป่านนี้แม่คงนั่งอยู่ที่โต๊ะ", "cut": "ไปตอบแชทซะ"},
+"busy_4":   {"text": "*ทุกเย็นคือแชทกลุ่ม*", "results": {"declined": "ปฏิเสธสาย", "let_ring": "ปล่อยให้ดัง"}}
+```
+
+- `choices` is a list in the **same order** as the English choices (including ones hidden by `requires`).
+- `results` uses the minigame's result names.
+- Keep `{detail|Flag}` links with the same flag names, and `cut_after` must be exactly the start of the Thai `text`.
+
+When you play a story from the editor in Thai, the Output panel prints `th: Kay 899/899` and warns about any line that breaks these rules. `Tests/test_translation_complete.gd` checks all three routes at once.
+
+Menus, buttons and minigame text are in `Translations/ui.csv` (columns `keys,en,th`). The English text is the key. To add a language, add a column there and a `<locale>.json` next to each story, then add the locale to `SettingMenu.LOCALES`.
+
 ## Checking your work
 
 Run the game from the Godot editor. On start it checks the whole story file and prints a **warning in the Output panel** for anything that doesn't line up: a `next` pointing to a missing node, a background or character name that isn't in the scene, an unknown sound, etc.
