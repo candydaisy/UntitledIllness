@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/StoryEngine/story_player.gd" id="1_7yklv"]
 [ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/Dialog/dialog.tscn" id="2_jk8no"]
-[ext_resource type="Texture2D" uid="uid://cgfkel8k50p0w" path="res://Assets/Photos/UI/sideart.png" id="3_42qhq"]
 [ext_resource type="AudioStream" uid="uid://vudt60emqi3g" path="res://Assets/audio/ui/typingtypeshi1.wav" id="3_hvbsa"]
 [ext_resource type="Texture2D" uid="uid://xy40dwn6ygwg" path="res://Assets/Photos/Background/BedroomDay_blury.png" id="4_42qhq"]
 [ext_resource type="Texture2D" uid="uid://c4571abywemgs" path="res://Assets/Photos/Background/bedroomnight_blur.png" id="5_4fkki"]
+[ext_resource type="Texture2D" uid="uid://jxr51lfitbcg" path="res://Assets/Photos/UI/Vine.png" id="5_hfvmx"]
 [ext_resource type="Texture2D" uid="uid://b5tysi5vijdrk" path="res://Assets/Photos/Background/FrontLawn_blury.png" id="6_8nrf5"]
 [ext_resource type="Texture2D" uid="uid://cd6wxyc30mlvo" path="res://Assets/Photos/Background/Bathroom_blur.png" id="7_dg8di"]
 [ext_resource type="Texture2D" uid="uid://v87lyhgapjmf" path="res://Assets/Photos/Background/Hallway_blury.png" id="8_7a8g2"]
@@ -14,15 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
 [ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
-
-[ext_resource type="Theme" path="res://Assets/Themes/kay_theme.tres" id="30_theme"]
-[ext_resource type="Shader" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
-shader = ExtResource("31_sideart")
-shader_parameter/tint = Color(0.35, 0.5, 1, 1)
-shader_parameter/highlight = 0.35
+[ext_resource type="Texture2D" uid="uid://b8e8nqb8igp0r" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
+[ext_resource type="Theme" uid="uid://vi2r7ec5j2ph" path="res://Assets/Themes/kay_theme.tres" id="30_theme"]
+[ext_resource type="Shader" uid="uid://d0drsdox313hm" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
 
@@ -34,6 +28,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
+shader = ExtResource("31_sideart")
+shader_parameter/tint = Color(0.35, 0.5, 1, 1)
+shader_parameter/highlight = 0.35
+
 [node name="KMain" type="Node2D" unique_id=1770389354]
 script = ExtResource("1_7yklv")
 start_node = "start"
@@ -44,32 +43,6 @@ notice_color = Color(0.35, 0.5, 1, 1)
 
 [node name="Dialog" parent="Cenfix" unique_id=137013451 instance=ExtResource("2_jk8no")]
 rotation = -0.0002826375
-
-[node name="Sideart" type="Control" parent="." unique_id=2005122816]
-material = SubResource("ShaderMaterial_sideart")
-layout_mode = 3
-anchors_preset = 0
-
-[node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
-use_parent_material = true
-z_index = 100
-layout_mode = 0
-offset_left = 1357.0
-offset_right = 1600.0
-offset_bottom = 900.0
-texture = ExtResource("3_42qhq")
-expand_mode = 1
-stretch_mode = 1
-
-[node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
-use_parent_material = true
-z_index = 100
-layout_mode = 0
-offset_right = 243.0
-offset_bottom = 900.0
-texture = ExtResource("3_42qhq")
-expand_mode = 1
-stretch_mode = 1
 
 [node name="Bgs" type="Node" parent="." unique_id=962250625]
 
@@ -267,7 +240,7 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Kay\'s kitchen" type="TextureRect" parent="Bgs"]
+[node name="Kay\'s kitchen" type="TextureRect" parent="Bgs" unique_id=901379162]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -279,7 +252,7 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Kay\'s kitchen night" type="TextureRect" parent="Bgs"]
+[node name="Kay\'s kitchen night" type="TextureRect" parent="Bgs" unique_id=295970155]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -291,7 +264,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Garden" type="TextureRect" parent="Bgs"]
+[node name="Garden" type="TextureRect" parent="Bgs" unique_id=1942677754]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -303,7 +276,7 @@ texture = ExtResource("6_8nrf5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Guidance room" type="TextureRect" parent="Bgs"]
+[node name="Guidance room" type="TextureRect" parent="Bgs" unique_id=1371936160]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -315,7 +288,7 @@ texture = ExtResource("10_vaay5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Canal park" type="TextureRect" parent="Bgs"]
+[node name="Canal park" type="TextureRect" parent="Bgs" unique_id=304741103]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -327,7 +300,7 @@ texture = ExtResource("12_e6el8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Museum" type="TextureRect" parent="Bgs"]
+[node name="Museum" type="TextureRect" parent="Bgs" unique_id=63005817]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -339,7 +312,7 @@ texture = ExtResource("8_7a8g2")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Phone at night" type="TextureRect" parent="Bgs"]
+[node name="Phone at night" type="TextureRect" parent="Bgs" unique_id=1444651478]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -404,19 +377,48 @@ scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="MsNoi" type="AnimatedSprite2D" parent="Characters"]
+[node name="MsNoi" type="AnimatedSprite2D" parent="Characters" unique_id=2080793514]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Mint" type="AnimatedSprite2D" parent="Characters"]
+[node name="Mint" type="AnimatedSprite2D" parent="Characters" unique_id=1109222708]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
+
+[node name="Sideart" type="Control" parent="." unique_id=2005122816]
+z_index = 16
+z_as_relative = false
+material = SubResource("ShaderMaterial_sideart")
+layout_mode = 3
+anchors_preset = 0
+
+[node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
+z_index = 100
+use_parent_material = true
+layout_mode = 0
+offset_left = 1357.0
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("5_hfvmx")
+expand_mode = 1
+stretch_mode = 2
+flip_h = true
+
+[node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
+z_index = 100
+use_parent_material = true
+layout_mode = 0
+offset_right = 243.0
+offset_bottom = 900.0
+texture = ExtResource("5_hfvmx")
+expand_mode = 1
+stretch_mode = 2
 
 [node name="Audio" type="Node" parent="." unique_id=1886730261]
 
@@ -430,8 +432,8 @@ bus = &"Sfx"
 bus = &"Voice"
 
 [node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
-bus = &"Sfx"
 stream = ExtResource("3_hvbsa")
 volume_db = -21.16
 pitch_scale = 0.4
 max_polyphony = 15
+bus = &"Sfx"
