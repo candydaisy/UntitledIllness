@@ -1029,9 +1029,20 @@
 		"speaker": "",
 		"text": "*She doesn't have a word for it. Nobody but Mint has ever looked at her like that while she was being slime girl.*",
 		"choices": [
-			{"text": "Keep going", "type": "honest", "mask_change": -10, "energy_change": 15, "next": "garden_go_1", "set_flag": "KeptGoing"},
+			{"text": "Keep going", "type": "honest", "mask_change": -10, "energy_change": 15, "next": "garden_maze", "set_flag": "KeptGoing"},
 			{"text": "\"Haha, anyway—\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "garden_stop_1"}
 		]
+	},
+
+	"garden_maze": {
+		"speaker": "Elysia",
+		"text": "\"Okay. Watch. You put food down, and it finds it. Every single time.\"",
+		"minigame": "res://Scenes/Minigames/slime_maze.tscn",
+		"settings": {"flakes": 3},
+		"results": {
+			"absorbed": {"text": "Showed Kay the maze", "energy_change": 5, "next": "garden_go_1"},
+			"checked":  {"text": "Checked the path", "mask_change": 5, "next": "garden_go_1", "set_flag": "CheckedPath"}
+		}
 	},
 
 	"garden_go_1": {
@@ -1044,12 +1055,19 @@
 	"garden_go_2": {
 		"speaker": "",
 		"text": "*Pink slime molds. Slime molds that crawl a few centimeters an hour. The one she kept in her lunchbox in third grade that found its way out of a paper maze overnight.*",
-		"next": "garden_go_3"
+		"next": "garden_go_3",
+		"secret": {"condition": "flag_true", "flag": "CheckedPath", "next": "garden_go_3b"}
 	},
 
 	"garden_go_3": {
 		"speaker": "",
 		"text": "*For twenty minutes she doesn't check anyone's face once.*",
+		"next": "garden_go_4"
+	},
+
+	"garden_go_3b": {
+		"speaker": "",
+		"text": "*She checks the path twice. Nobody's there. Both times, Kay waits for her to come back.*",
 		"next": "garden_go_4"
 	},
 

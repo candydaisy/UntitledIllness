@@ -463,9 +463,17 @@ She doesn't have a word for it. Nobody except Mint has ever looked at her like t
 - **B.** "Haha, anyway—" (perform, Mask +5, Energy −5)
 
 **▸ A.**
+"Okay. Watch. You put food down, and it finds it. Every single time."
+
+**🎮 Minigame: The Maze** (`slime_maze.tscn`). Drop 3 oat flakes; the slime spreads through every corridor, then keeps only the shortest paths between them. "Is someone on the path?" pops up now and then, more often the higher her Mask.
+- **Absorbed ★**: never pressed it (Energy +5)
+- **Checked**: pressed it at least once (Mask +5, sets `CheckedPath`)
+
 She keeps going. Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. *How does it know where to go without a brain? Can it hurt you?*
 
 She tells him about slime molds that are bright pink, slime molds that crawl a few centimeters an hour, and the one she kept in her lunchbox in third grade that found its way out of a paper maze overnight. For twenty minutes she doesn't check anyone's face once.
+
+**[If `CheckedPath`]** instead: *She checks the path twice. Nobody's there. Both times, Kay waits for her to come back.*
 
 When she finally runs out of words, the sun is lower, and Kay is smiling at her.
 

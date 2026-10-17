@@ -162,6 +162,8 @@ A secret sends the player somewhere else *after* this node, if a condition is me
 | Minigame | Results | Settings |
 |---|---|---|
 | `get_up.tscn` (Kay): hold Space, the mouse or the screen to sit up. Weight makes it harder. | `won` (sat up), `tried` (alarm ran out), `gave_up` (stopped pressing for 3 s, Escape, or "Stay in bed") | `seconds` (12), `max_progress` (1; below 1 it can't be won), `give_up_after` (3), `clock` ("6:30") |
+| `slime_maze.tscn` (Elysia): drop oat flakes in a maze; the slime spreads, then keeps the shortest paths. "Is someone on the path?" pops up more often as Mask rises. | `absorbed` (never checked), `checked` (pressed it, or C) | `flakes` (3) |
+| `ninety_unread.tscn` (Ulyn): tap message cards to answer them; they come faster as Busy rises. At 7:00 Mom calls with only Decline. | `declined` (pressed Decline, or D), `let_ring` (rang out) | `before_call` (8), `after_call` (8), `ring_time` (6), `unread` (90) |
 
 To make a new one: a scene whose root script has `start(settings, meters, time_mult)` (called before it's added) and emits `finished(result)`.
 

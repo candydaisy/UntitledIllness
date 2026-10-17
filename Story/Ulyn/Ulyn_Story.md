@@ -543,9 +543,11 @@ There are spreadsheets of equipment, rosters of volunteers, and a WhatsApp group
 
 *Told you.*
 
-Mom calls every evening at seven.
+Every evening, the group chat. Every evening at seven, Mom.
 
-> 📞 *Call: Mom. The only button is* Let it ring *(neutral, Busy +5, Unsaid +5).*
+**🎮 Minigame: Ninety Unread** (`ninety_unread.tscn`). Sports day questions pile up on the desk faster than he can answer them (faster the higher his Busy). At 7:00 Mom calls; the only button is Decline. Both results: Busy +5, Unsaid +5.
+- **Declined**: pressed Decline (sets `DeclinedMomHimself`). *He declined it himself. His thumb knew exactly where the button was.*
+- **Let it ring ★**: left it until it stopped. *It rang out under the pile. He didn't look up.*
 
 *She's probably sitting at the table right now. Same chair. Same quiet kitchen.*
 

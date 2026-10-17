@@ -1337,14 +1337,28 @@
 
 	"busy_4": {
 		"speaker": "",
-		"text": "*Mom calls every evening at seven. He watches it ring.*",
-		"call": "Mom",
+		"text": "*Every evening, the group chat. Every evening at seven, Mom.*",
 		"background": "Tan's couch night",
 		"sfx": "Notification",
 		"amb": "Bedroom",
-		"choices": [
-			{"text": "Let it ring", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "busy_4b"}
-		]
+		"minigame": "res://Scenes/Minigames/ninety_unread.tscn",
+		"settings": {"before_call": 8, "after_call": 8, "ring_time": 6, "unread": 90},
+		"results": {
+			"declined": {"text": "Declined", "busy_change": 5, "unsaid_change": 5, "next": "busy_4a", "set_flag": "DeclinedMomHimself"},
+			"let_ring": {"text": "Let it ring", "busy_change": 5, "unsaid_change": 5, "next": "busy_4c"}
+		}
+	},
+
+	"busy_4a": {
+		"speaker": "",
+		"text": "*He declined it himself. His thumb knew exactly where the button was.*",
+		"next": "busy_4b"
+	},
+
+	"busy_4c": {
+		"speaker": "",
+		"text": "*It rang out under the pile. He didn't look up.*",
+		"next": "busy_4b"
 	},
 
 	"busy_4b": {

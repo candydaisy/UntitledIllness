@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://b875wuga4nkhl"]
+
+[ext_resource type="Theme" uid="uid://b3jtan4wuqf1p" path="res://Assets/Themes/ulyn_theme.tres" id="1_tn8y2"]
+[ext_resource type="Script" path="res://Scenes/Minigames/ninety_unread.gd" id="2_unread"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qb7vt"]
+bg_color = Color(0, 0, 0, 0.39215687)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.9490196, 0, 0.09803922, 0.6156863)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ma5ps"]
+bg_color = Color(0, 0, 0, 0.39215687)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.9490196, 0.07058824, 0.23921569, 0.6156863)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+
+[node name="NinetyUnread" type="Control" unique_id=6591296]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tn8y2")
+script = ExtResource("2_unread")
+
+[node name="Desk" type="Control" parent="." unique_id=1420915904]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -304.0
+offset_right = 500.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Clock" type="Label" parent="." unique_id=1409473004]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 322.0
+offset_top = 168.0
+offset_right = 421.0
+offset_bottom = 195.0
+text = "6:52 PM"
+
+[node name="Unread" type="Label" parent="." unique_id=1603298040]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1156.0
+offset_top = 164.0
+offset_right = 1283.0
+offset_bottom = 191.0
+text = "90 unread"
+
+[node name="Call" type="Panel" parent="." unique_id=1334642590]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -246.5
+offset_top = -115.77002
+offset_right = 246.49963
+offset_bottom = -31.77002
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qb7vt")
+
+[node name="Decline" type="Button" parent="Call" unique_id=360093788]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8980392, 0.08235294, 0.16470589, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ma5ps")
+text = "Decline"

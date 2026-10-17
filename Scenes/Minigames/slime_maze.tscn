@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bqsj3whkk2mbw"]
+
+[ext_resource type="Theme" uid="uid://syw4q0x7dedm" path="res://Assets/Themes/elysia_theme.tres" id="1_uhq53"]
+[ext_resource type="Texture2D" uid="uid://k6naeejobqy7" path="res://Assets/Photos/Background/bark.jpg" id="2_104m5"]
+[ext_resource type="Script" path="res://Scenes/Minigames/slime_maze.gd" id="3_maze"]
+
+[node name="SlimeMaze" type="Control" unique_id=237289674]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_uhq53")
+script = ExtResource("3_maze")
+
+[node name="Bg" type="TextureRect" parent="." unique_id=169284523]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_104m5")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Board" type="Control" parent="." unique_id=752360308]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -316.0
+offset_right = 450.0
+offset_bottom = 184.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Prompt" type="Label" parent="." unique_id=1290286738]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -165.0
+offset_right = 192.0
+offset_bottom = -138.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Tap to drop oat flakes (3 left)"
+
+[node name="Check" type="Button" parent="." unique_id=1007791864]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -246.0
+offset_top = -105.0
+offset_right = 246.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Is someone on the path?"
