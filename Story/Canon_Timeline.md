@@ -19,12 +19,12 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 |---|---|
 | **Kay** | Grade 11. Group leader by default. Carries everything, says "it's fine." |
 | **Ulyn** | Kay's best friend since the first day of Grade 10. Student council. Avoids home. |
-| **Elysia** | Kay's girlfriend for about two months. Cheerful, the friend everyone calls. Was "bug girl" once. |
+| **Elysia** | Kay's girlfriend for about two months. Cheerful, the friend everyone calls. Was "slime girl" once. |
 | **Mint** | Elysia's best friend for eleven years, since kindergarten. Blunt. Different class. |
 | **Bank, Fern** | The other half of group 3. Not bad people, just used to Kay doing it. |
 | **Ploy, Jane, Bow** | Elysia's friend group. Ploy leads it and leans on Elysia hardest. |
 | **Nam** | A quiet girl in Elysia's class who draws in the margins of everything. |
-| **Pun** | Elysia's little brother, eight years old. Loves bugs the way she used to. |
+| **Pun** | Elysia's little brother, eight years old. Loves slime molds the way she used to. |
 | **Tan** | Ulyn's cousin, 21, a university student. Ulyn sleeps on his couch most nights. |
 | **Kay's mom** | Hospital shifts, always tired. Raised Kay alone after his dad left. |
 | **Ulyn's mom** | Works at a bank. Alone in a house that's too quiet since the separation. |
@@ -36,7 +36,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 
 - **About five years ago:** Kay's dad leaves. Kay's mom cries at the kitchen table for weeks. Twelve-year-old Kay decides to be "the easy one."
 - **Eleven years ago:** Elysia and Mint meet in kindergarten.
-- **Elysia, third grade:** A boy puts a cockroach in her bag and the class laughs for a week. She decides she'll never be weird again.
+- **Elysia, third grade:** A boy smears slime from a rotten log inside her bag and the class laughs for a week. She decides she'll never be weird again.
 - **First day of Grade 10:** Kay and Ulyn become friends. For most of that year, they tell each other everything.
 - **Last February–March:** Ulyn's parents separate. His dad moves out. His mom cries in the bathroom with the shower running. Ulyn starts sleeping at Tan's.
 - **Last March, 3 a.m.:** Kay messages Ulyn: *"can I call you."* Ulyn doesn't answer for four days, then sends *"sorry, was busy."* Kay never asks for anything again. Neither of them ever mentions it.
@@ -77,7 +77,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 
 ## Week 2
 
-- **Wednesday:** Elysia skips Ploy's mall trip, tells them she has to help her brother, and goes to the garden to see Kay. She finds a jewel beetle and catches herself mid-sentence. Kay: *"I care. Keep going."* She talks for twenty minutes. At the gate: *"You look tired, K." "I'm always tired." "That's what worries me."*
+- **Wednesday:** Elysia skips Ploy's mall trip, tells them she has to help her brother, and goes to the garden to see Kay. She finds a slime mold on a log and catches herself mid-sentence. Kay: *"I care. Keep going."* She talks for twenty minutes. At the gate: *"You look tired, K." "I'm always tired." "That's what worries me."*
 - **Thursday:** Mint stops Kay outside the library: *"She's been tired lately... You two are the same kind of idiot."* **Elysia doesn't know this happened.**
 
 ## Week 3
@@ -85,11 +85,11 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 - Elysia's nightly calls with Ploy continue.
 - In art class, Ploy mocks Nam's plush keychain. Elysia laughs along, and feels sick about it all afternoon.
 - **Friday:** Ulyn falls asleep in history. Kay notices the declined call from "Mom" and asks: *"You okay? You look wrecked."* Ulyn: *"...Yeah. Just sports day stuff. Thanks for asking, though."* It's the first time anyone has asked him in months. He declines the next call from his mom too.
-- The first seedlings sprout. *proud dad.* Elysia, by text: *ANY BUGS???*
+- The first seedlings sprout. *proud dad.* Elysia, by text: *ANY SLIME???*
 
 ## Week 4
 
-- **Pun** comes home and says the kids at school call him "bug boy." Elysia tells him, *"Maybe keep the bugs at home."* She hates herself for it.
+- **Pun** comes home and says the kids at school call him "slime boy." Elysia tells him, *"Maybe keep the slime at home."* She hates herself for it.
 - **Friday, sports day:** Ulyn runs it, and everything works. His mom comes to watch. He says he's "too busy, later," and she leaves a container of khao man gai at the council tent with a note. He eats it alone behind the gym. Kay works the water station, looking grey. Elysia brings him a cold drink in front of her friends and runs off before anyone can tease her.
 
 ## Week 5 (Midterms)
@@ -122,7 +122,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 
 ### Saturday
 
-- The natural history museum, in the beetle room. Elysia has never brought anyone there. Kay tells her why he keeps away from her at school: he thinks *he* makes *her* look weird. Elysia realizes her guess on Day 1 was backwards. She tells him about bug girl, the cockroach, and the "version." *"I lied too. I care so much it makes me tired. But I care about you more."*
+- The natural history museum, in the slime mold room at the back. Elysia has never brought anyone there. Kay tells her why he keeps away from her at school: he thinks *he* makes *her* look weird. Elysia realizes her guess on Day 1 was backwards. She tells him about slime girl, the slime in her bag, and the "version." *"I lied too. I care so much it makes me tired. But I care about you more."*
 - Kay: *"You don't have to do the version with me. Ever."* Elysia: *"Then you don't have to be fine with me. Deal?"* They make a pinky promise.
 
 ## Week 7
@@ -136,27 +136,27 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 ## Week 8
 
 - Ploy calls Elysia at 1 a.m. Elysia: *"I love you, but I can't do 1 a.m. calls anymore. Lunch tomorrow?"* Ploy sulks for two days, then at lunch: *"You could've said that earlier." "I know."*
-- Elysia sits next to Nam in art. Nam draws her a beetle in the margin of her worksheet.
+- Elysia sits next to Nam in art. Nam draws her a slime mold in the margin of her worksheet.
 - Ulyn's dad calls. Ulyn answers for the first time in months. It's awkward, and it's four minutes long.
 
 ## Week 9
 
 - **Monday, presentation day:** Bank blanks on the same kind of question as Day 1. Kay **waits** this time. Bank finds it himself: *"Two thousand nine! My uncle was actually in it."* Teacher: *"Good teamwork, everyone."* This time it's true.
 - The school keeps the garden, and the agriculture club returns next semester. Bank and Fern have signed up.
-- Elysia gives Pun her old notebook from third grade, full of beetle drawings. *"I was wrong before. Be bug boy. Bug boy is the best."*
+- Elysia gives Pun her old notebook from third grade, full of slime mold drawings. *"I was wrong before. Be slime boy. Slime boy is the best."*
 
 ## Week 10
 
 ### Friday, the last day
 
-- **Kay:** Hot shower. A full fridge and two notes from Mom. At the gate, Elysia shows her friends a rhinoceros beetle photo (Pun found it), and she doesn't check their faces. *"Isn't he perfect?" "He's perfect."*
+- **Kay:** Hot shower. A full fridge and two notes from Mom. At the gate, Elysia shows her friends a photo of a huge yellow slime mold (Pun found it), and she doesn't check their faces. *"Isn't he perfect?" "He's perfect."*
 - **Ulyn:** *"Morning. You look— actually, you look okay."* Kay: *"How are you? Actually."* Ulyn: *"...My mom wants me to come home more. I'm trying."* Kay offers to come over. *"Yeah. I'd like that."*
 - **Mint** tells Elysia she talked to Kay in Week 2. Elysia: *"You did WHAT."*
 - Kay waters the garden once, just enough.
 - **Saturday after:** Kay comes over to Ulyn's house. Ulyn's mom makes khao man gai for three. Kay and Ulyn repot her dead balcony plants. *"Too much water or too little?" "Too little. Nobody was home."*
-- **Sunday after:** Elysia takes Pun to the beetle room at the museum, and Kay comes too. She talks the bug girl way the whole time and doesn't check anyone's face.
+- **Sunday after:** Elysia takes Pun to the slime mold room at the museum, and Kay comes too. She talks the slime girl way the whole time and doesn't check anyone's face.
 
-**Canon endings:** Kay, *Enough*. Ulyn, *Home*. Elysia, *Bug Girl*.
+**Canon endings:** Kay, *Enough*. Ulyn, *Home*. Elysia, *Slime Girl*.
 
 ---
 
@@ -169,7 +169,7 @@ Every route covers the same ten weeks from a different person's eyes. A shared s
 | The March "can I call you" message | Kay, Ulyn | Everyone else |
 | Ulyn's parents' separation, sleeping at Tan's | Ulyn, Tan; Kay (Wk 6) | Elysia, Bank, Fern |
 | Ulyn declining his mom's calls | Ulyn; Kay noticed in secret since Wk 3 | Ulyn thinks nobody noticed |
-| Elysia's bug girl past and the "version" | Elysia, Mint; Kay (Wk 6 Sat) | Ploy, Jane, Bow |
+| Elysia's slime girl past and the "version" | Elysia, Mint; Kay (Wk 6 Sat) | Ploy, Jane, Bow |
 | Kay keeps his distance at school to "protect" Elysia | Kay; Elysia (Wk 6 Sat) | Elysia believed he was embarrassed of her until then |
 | Mint confronted Kay in Week 2 | Mint, Kay; Elysia (Wk 10) | |
 | Elysia sent Ulyn to Kay's house | Elysia, Ulyn | **Kay never learns** |
@@ -219,4 +219,4 @@ The canon choices are marked ★ in the story file. Ulyn's Busy maxes out by spo
 
 ### Elysia (`Story/Elysia/Elysia_Story.md`)
 
-The canon choices are marked ★ in the story file. Elysia's Mask rises and her Energy drains as she performs the "version." It turns at the museum, when she tells Kay she lied too. After that her Mask keeps falling and her Energy comes back as she sets boundaries. **Ending A: Bug Girl.**
+The canon choices are marked ★ in the story file. Elysia's Mask rises and her Energy drains as she performs the "version." It turns at the museum, when she tells Kay she lied too. After that her Mask keeps falling and her Energy comes back as she sets boundaries. **Ending A: Slime Girl.**

@@ -111,13 +111,13 @@
 
 	"bfast_3": {
 		"speaker": "",
-		"text": "*Inside the jar is a beetle as long as her thumb. Glossy brown, one curved horn like a tiny rhino.*",
+		"text": "*Inside the jar is a twig with something bright yellow spread across it. Like spilled egg yolk, branching into veins like a tiny map.*",
 		"next": "bfast_4"
 	},
 
 	"bfast_4": {
 		"speaker": "",
-		"text": "*Elysia knows exactly what it is. She knows the Latin name. She knows it's a male because of the horn.*",
+		"text": "*Elysia knows exactly what it is. She knows the Latin name. She knows it isn't mold at all. Not a plant. Not an animal.*",
 		"next": "bfast_5"
 	},
 
@@ -131,8 +131,8 @@
 		"speaker": "",
 		"text": "*Check: Mom, making coffee, not looking.*",
 		"choices": [
-			{"text": "\"It's just a beetle. Eat your eggs.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "bfast_just_1"},
-			{"text": "\"That's a rhinoceros beetle! He's a boy, look at the horn—\"", "type": "honest", "mask_change": -5, "energy_change": 10, "next": "bfast_rhino_1", "set_flag": "TaughtPun"}
+			{"text": "\"It's just mold. Eat your eggs.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "bfast_just_1"},
+			{"text": "\"That's a slime mold! It's not even mold, it's—\"", "type": "honest", "mask_change": -5, "energy_change": 10, "next": "bfast_rhino_1", "set_flag": "TaughtPun"}
 		]
 	},
 
@@ -590,7 +590,7 @@
 
 	"walk_14": {
 		"speaker": "Elysia",
-		"text": "Like the bug girl and the boy who has to stand next to her.",
+		"text": "Like the slime girl and the boy who has to stand next to her.",
 		"next": "walk_15"
 	},
 
@@ -954,7 +954,7 @@
 
 	"garden_13": {
 		"speaker": "",
-		"text": "*On a leaf, catching the light: a beetle. Green so bright it looks fake. Like jewelry someone dropped.*",
+		"text": "*On the old log edging the bed, where the soil is wettest: something bright yellow, spread across the bark. Like spilled egg yolk, branching into veins like a tiny map.*",
 		"next": "garden_14"
 	},
 
@@ -972,7 +972,7 @@
 
 	"garden_16": {
 		"speaker": "Elysia",
-		"text": "\"That's a jewel beetle. Sternocera, I think. People used their wing covers in old palace art, on ceilings, because the color never fades. It's not pigment, it's the structure of the shell, the light bounces—\"",
+		"text": "\"That's a slime mold. Physarum, I think. It's not a mold, it's not a plant, it's not an animal, it doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down in the shape of the cities around Tokyo, and it grew a network that looked almost exactly like the real train lines—\"",
 		"next": "garden_17"
 	},
 
@@ -996,14 +996,14 @@
 
 	"garden_20": {
 		"speaker": "Elysia",
-		"text": "\"Sorry. That's weird. Nobody cares about bugs.\"",
-		"real_text": "\"I really, really like bugs.\"",
+		"text": "\"Sorry. That's weird. Nobody cares about slime.\"",
+		"real_text": "\"I really, really like slime molds.\"",
 		"next": "garden_21"
 	},
 
 	"garden_21": {
 		"speaker": "",
-		"text": "*Kay is looking at her. Not at the beetle. At her.*",
+		"text": "*Kay is looking at her. Not at the slime mold. At her.*",
 		"next": "garden_22"
 	},
 
@@ -1027,7 +1027,7 @@
 
 	"garden_25": {
 		"speaker": "",
-		"text": "*She doesn't have a word for it. Nobody but Mint has ever looked at her like that while she was being bug girl.*",
+		"text": "*She doesn't have a word for it. Nobody but Mint has ever looked at her like that while she was being slime girl.*",
 		"choices": [
 			{"text": "Keep going", "type": "honest", "mask_change": -10, "energy_change": 15, "next": "garden_go_1", "set_flag": "KeptGoing"},
 			{"text": "\"Haha, anyway—\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "garden_stop_1"}
@@ -1036,14 +1036,14 @@
 
 	"garden_go_1": {
 		"speaker": "",
-		"text": "*Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. How does it fly with those heavy wings? Do they bite?*",
+		"text": "*Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. How does it know where to go without a brain? Can it hurt you?*",
 		"next": "garden_go_2",
 		"sfx": "Inhale"
 	},
 
 	"garden_go_2": {
 		"speaker": "",
-		"text": "*Jewel beetles. Rhinoceros beetles. The click beetle she caught in third grade that could flip itself over with a sound like a snapped finger.*",
+		"text": "*Pink slime molds. Slime molds that crawl a few centimeters an hour. The one she kept in her lunchbox in third grade that found its way out of a paper maze overnight.*",
 		"next": "garden_go_3"
 	},
 
@@ -1091,7 +1091,7 @@
 
 	"garden_stop_4": {
 		"speaker": "",
-		"text": "*She tips the beetle onto another leaf and doesn't look at it again.*",
+		"text": "*She doesn't look at the log again.*",
 		"next": "garden_gate_1"
 	},
 
@@ -1278,7 +1278,7 @@
 	"pun_6": {
 		"speaker": "Pun",
 		"emotion": "sad",
-		"text": "\"...They call me bug boy. Tee put a cockroach in my bag. A dead one. Everyone laughed.\"",
+		"text": "\"...They call me slime boy. I took my slime mold for show-and-tell and Tee smeared it all over the inside of my bag. Everyone laughed.\"",
 		"next": "pun_7"
 	},
 
@@ -1290,7 +1290,7 @@
 
 	"pun_8": {
 		"speaker": "Elysia",
-		"text": "Third grade. A cockroach in my bag. A whole week.",
+		"text": "Third grade. Slime in my bag. A whole week.",
 		"next": "pun_9"
 	},
 
@@ -1304,8 +1304,8 @@
 		"speaker": "",
 		"text": "*She knows exactly what she learned. She could teach it to him in one sentence.*",
 		"choices": [
-			{"text": "\"Maybe... keep the bugs at home? Just at school. Just for a while.\"", "type": "perform", "mask_change": 10, "energy_change": -15, "next": "pun_hide_1", "set_flag": "ToldPunHide"},
-			{"text": "\"Then be bug boy. Bug boy is the best kind of boy.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "pun_bug_1", "set_flag": "ToldPunBugBoy"}
+			{"text": "\"Maybe... keep the slime at home? Just at school. Just for a while.\"", "type": "perform", "mask_change": 10, "energy_change": -15, "next": "pun_hide_1", "set_flag": "ToldPunHide"},
+			{"text": "\"Then be slime boy. Slime boy is the best kind of boy.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "pun_bug_1", "set_flag": "ToldPunBugBoy"}
 		]
 	},
 
@@ -1323,7 +1323,7 @@
 
 	"pun_hide_3": {
 		"speaker": "",
-		"text": "*He goes to his room. Later, when she walks past, the jar on his windowsill is empty. The lid is off. He let the beetle go.*",
+		"text": "*He goes to his room. Later, when she walks past, the jar on his windowsill is empty. The lid is off. He took the slime mold back to the drain where he found it.*",
 		"next": "pun_hide_4",
 		"background": "Pun's room",
 		"hide_characters": ["Pun"]
@@ -1349,13 +1349,13 @@
 
 	"pun_bug_2": {
 		"speaker": "Elysia",
-		"text": "\"Really. Tee is going to be boring his whole life. You're going to know what a Sternocera is.\"",
+		"text": "\"Really. Tee is going to be boring his whole life. You're going to know what a Physarum is.\"",
 		"next": "pun_bug_3"
 	},
 
 	"pun_bug_3": {
 		"speaker": "Pun",
-		"text": "\"What's a Sternocera?\"",
+		"text": "\"What's a Physarum?\"",
 		"next": "pun_bug_4"
 	},
 
@@ -1920,7 +1920,7 @@
 
 	"sat_3": {
 		"speaker": "",
-		"text": "*She thinks about the museum across the river. The beetle room. The fact that she's never brought anyone.*",
+		"text": "*She thinks about the museum across the river. The back room. The fact that she's never brought anyone.*",
 		"next": "sat_4"
 	},
 
@@ -1940,7 +1940,7 @@
 
 	"sat_museum_2": {
 		"speaker": "",
-		"text": "*Straight past the dinosaurs, to a dim room at the back. Glass cases, beetles pinned in rows, labeled in tiny old handwriting.*",
+		"text": "*Straight past the dinosaurs, to a dim room at the back. Fungi and slime molds: tiny dried specimens in matchbox trays, labeled in tiny old handwriting. An old screen in the corner loops a time-lapse of something yellow solving a maze.*",
 		"next": "sat_museum_3"
 	},
 
@@ -2071,7 +2071,7 @@
 
 	"sat_truth_3": {
 		"speaker": "Elysia",
-		"text": "\"Bug girl. In third grade a boy put a cockroach in my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
+		"text": "\"Slime girl. In third grade a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
 		"next": "sat_truth_4"
 	},
 
@@ -2584,14 +2584,14 @@
 
 	"art_5": {
 		"speaker": "",
-		"text": "*The next week, a tiny jewel beetle appears in green pen in the margin of Elysia's worksheet.*",
+		"text": "*The next week, a tiny slime mold appears in yellow pen in the margin of Elysia's worksheet.*",
 		"next": "note_1",
 		"sfx": "Writing"
 	},
 
 	"art_beetle_1": {
 		"speaker": "",
-		"text": "*Nam smiles when she sits down. Without saying anything, she draws a tiny jewel beetle in the margin of Elysia's worksheet. Green pen. Perfect.*",
+		"text": "*Nam smiles when she sits down. Without saying anything, she draws a tiny slime mold in the margin of Elysia's worksheet. Yellow pen, branching like a map. Perfect.*",
 		"next": "note_1",
 		"sfx": "Writing"
 	},
@@ -2624,7 +2624,7 @@
 
 	"note_5": {
 		"speaker": "",
-		"text": "*That night she digs a box out of the back of her closet. Under old birthday cards and a broken Tamagotchi: a notebook from third grade. Stickers on the cover. A beetle on every page, in careful crayon, the Latin name copied underneath in big wobbly letters.*",
+		"text": "*That night she digs a box out of the back of her closet. Under old birthday cards and a broken Tamagotchi: a notebook from third grade. Stickers on the cover. A slime mold on every page, in careful yellow crayon, the Latin name copied underneath in big wobbly letters. A dried oat flake still taped inside the cover.*",
 		"next": "note_6",
 		"background": "Elysia's room night",
 		"sfx": "Pageturning",
@@ -2649,7 +2649,7 @@
 
 	"note_8": {
 		"speaker": "Elysia",
-		"text": "\"Pun. I was wrong. About keeping the bugs at home. I was wrong.\"",
+		"text": "\"Pun. I was wrong. About keeping the slime at home. I was wrong.\"",
 		"next": "note_9"
 	},
 
@@ -2661,13 +2661,13 @@
 
 	"note_10": {
 		"speaker": "Elysia",
-		"text": "\"When I was your age, someone put a cockroach in my bag too. And I stopped liking things out loud. And I thought that was me being smart.\"",
+		"text": "\"When I was your age, someone put slime in my bag too. And I stopped liking things out loud. And I thought that was me being smart.\"",
 		"next": "note_11"
 	},
 
 	"note_11": {
 		"speaker": "Elysia",
-		"text": "\"It wasn't smart. It was just sad. Be bug boy. Bug boy is the best kind of boy.\"",
+		"text": "\"It wasn't smart. It was just sad. Be slime boy. Slime boy is the best kind of boy.\"",
 		"next": "note_12"
 	},
 
@@ -2713,7 +2713,7 @@
 
 	"note_hide_yes_2": {
 		"speaker": "",
-		"text": "*The next morning, there's a beetle in the jar on the windowsill again.*",
+		"text": "*The next morning, there's a slime mold in the jar on the windowsill again.*",
 		"next": "last_1"
 	},
 
@@ -2725,13 +2725,13 @@
 
 	"note_hide_no_2": {
 		"speaker": "",
-		"text": "*The next morning, there's a beetle in the jar on the windowsill again.*",
+		"text": "*The next morning, there's a slime mold in the jar on the windowsill again.*",
 		"next": "last_1"
 	},
 
 	"note_bug_1": {
 		"speaker": "",
-		"text": "*Pun's windowsill has three jars now. Bug boy for five weeks, and he's decided he likes it. Two other kids in his class have started bringing bugs too.*",
+		"text": "*Pun's windowsill has three jars now. Slime boy for five weeks, and he's decided he likes it. Two other kids in his class have started growing their own.*",
 		"next": "note_bug_2"
 	},
 
@@ -2749,7 +2749,7 @@
 
 	"note_bug_4": {
 		"speaker": "Pun",
-		"text": "\"You were bug girl?\"",
+		"text": "\"You were slime girl?\"",
 		"choices": [
 			{"text": "\"...I still am, kind of.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "note_bug_yes_1", "set_flag": "GaveNotebook"},
 			{"text": "\"A long time ago.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "note_bug_no_1"}
@@ -2785,7 +2785,7 @@
 
 	"last_2": {
 		"speaker": "",
-		"text": "*Last night, Pun found a rhinoceros beetle by the drain. Huge. A male, horn and everything. He let her take a picture before he named it Kay. She didn't explain why that was funny.*",
+		"text": "*Last night, Pun found a slime mold on the drain cover. Huge. Yellow and foamy, like someone dropped scrambled eggs. It's called dog vomit slime mold, which Pun thinks is the best name anything has ever had. He let her take a picture before he named it Kay. She didn't explain why that was funny.*",
 		"next": "last_3",
 		"sfx": "Scrolls"
 	},
@@ -2944,7 +2944,7 @@
 
 	"mint_confess_7": {
 		"speaker": "",
-		"text": "*Elysia opens her mouth. Closes it. She thinks about the beetle room, and the canal, and \"couldn't.\"*",
+		"text": "*Elysia opens her mouth. Closes it. She thinks about the back room, and the canal, and \"couldn't.\"*",
 		"next": "mint_confess_8"
 	},
 
@@ -2995,7 +2995,7 @@
 
 	"endA_3": {
 		"speaker": "Pun",
-		"text": "\"Sternocera. Elysia. ELYSIA. That's the one from your notebook!\"",
+		"text": "\"Physarum. Elysia. ELYSIA. That's the one from your notebook!\"",
 		"next": "endA_4"
 	},
 
@@ -3008,7 +3008,7 @@
 
 	"endA_kay_1": {
 		"speaker": "",
-		"text": "*Kay is there too, a few steps behind, looking at the beetles the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the beetle's name.*",
+		"text": "*Kay is there too, a few steps behind, looking at the cases the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the slime mold's name.*",
 		"next": "endA_ploy_1",
 		"show_characters": ["Kay"]
 	},
@@ -3029,7 +3029,7 @@
 
 	"endA_pics_1": {
 		"speaker": "Ploy",
-		"text": "send me a pic of the bugs. i want to see what the big deal is",
+		"text": "send me a pic of the slime. i want to see what the big deal is",
 		"next": "endA_pics_2",
 		"sfx": "Notification"
 	},
@@ -3049,13 +3049,13 @@
 
 	"endA_end_1": {
 		"speaker": "",
-		"text": "*They stay until closing. She tells Pun everything. The wing covers. The palace ceilings. The light that bounces.*",
+		"text": "*They stay until closing. She tells Pun everything. The oat flakes. The train lines. The maze it remembers.*",
 		"next": "endA_end_2"
 	},
 
 	"endA_end_2": {
 		"speaker": "",
-		"text": "*She talks loud and fast, the bug girl way, and doesn't check anyone's face once.*",
+		"text": "*She talks loud and fast, the slime girl way, and doesn't check anyone's face once.*",
 		"next": "endA_end_3"
 	},
 
@@ -3081,7 +3081,7 @@
 
 	"endA_end_6": {
 		"speaker": "",
-		"text": "— Ending A: Bug Girl —"
+		"text": "— Ending A: Slime Girl —"
 	},
 
 	"endB_1": {

@@ -9,7 +9,7 @@ Elysia is friendly, talkative, and supportive. She's the one friends come to for
 
 ## Core Struggle
 
-Elysia is afraid of being seen as "weird." In primary school she was the bug girl: she knew the name of every beetle and couldn't stop talking about them. In third grade, a boy put a cockroach in her bag, and the whole class laughed about it for a week. She decided she would never be weird again.
+Elysia is afraid of being seen as "weird." In primary school she was the slime girl: she kept slime molds in jars and lunchboxes, knew all their Latin names, and couldn't stop talking about how something with no brain could solve a maze. In third grade, a boy scraped slime off a rotten log and smeared it inside her bag, and the whole class laughed about it for a week. She decided she would never be weird again.
 
 Since then she watches everything she says and every reaction she has. With most of her friends she performs a version of herself that's louder, lighter, and always fine. She puts other people's feelings ahead of her own to keep friendships stable, even when it wears her out.
 
@@ -23,6 +23,6 @@ She wants to relax and be herself without overthinking how others will judge her
 
 ## Comfort
 
-**Mint**, her best friend of eleven years, who knew her as the bug girl and stayed.
+**Mint**, her best friend of eleven years, who knew her as the slime girl and stayed.
 
 **Kay**, her boyfriend, the only other person she doesn't perform the version for. That's why it hurts when Kay keeps his distance at school. To her, it feels like he's agreeing with everyone who ever called her weird.

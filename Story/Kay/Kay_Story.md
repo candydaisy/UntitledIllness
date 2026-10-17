@@ -302,13 +302,13 @@ She crouches beside the chili bed to look at the seedlings, and then she goes ve
 
 "Oh. *Oh.* Kay. Come here. Don't move fast."
 
-On a leaf, catching the light, there's a beetle. Green so bright it looks fake, like it's made of metal.
+On the old log edging the bed, something bright yellow has spread across the bark. It looks like spilled egg yolk, branching into veins like a tiny map.
 
-"That's a jewel beetle," she whispers. "*Sternocera*, I think. People used to use their wing covers in old palace art, like, on ceilings, because the color never fades, it's not pigment, it's the *structure* of the shell, the light bounces—"
+"That's a slime mold," she whispers. "*Physarum*, I think. It's not a mold, it's not a plant, it's not an animal, it doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down like the cities around Tokyo, and it grew the train lines—"
 
 She stops in the middle of the sentence and glances over her shoulder at the path. Then she laughs, too bright.
 
-"Sorry. That's weird. Nobody cares about bugs."
+"Sorry. That's weird. Nobody cares about slime."
 
 **◆ Choice**
 - **A. ★** "I care. Keep going." (honest, −5, sets `ElysiaBugs`)
@@ -317,7 +317,7 @@ She stops in the middle of the sentence and glances over her shoulder at the pat
 **▸ A.**
 She stares at him.
 
-Then she keeps going, slowly at first and then fast again. For twenty minutes she tells him about jewel beetles, rhinoceros beetles, and a click beetle she caught in third grade that could flip itself over.
+Then she keeps going, slowly at first and then fast again. For twenty minutes she tells him about pink slime molds, slime molds that crawl a few centimeters an hour, and the one she kept in her lunchbox in third grade that found its way out of a paper maze overnight.
 
 She sounds different. It isn't the loud cafeteria Elysia or the polite-smile Elysia. *This must be what she sounds like when she isn't checking.*
 
@@ -326,7 +326,7 @@ He wants to be someone she never has to check around.
 **▸ B.**
 "Yeah! Totally."
 
-She tips the beetle gently off her finger onto a leaf. On the walk out she talks about her friends' mall trip, about a café, about a lot of things. She doesn't mention the beetle again.
+She stands up and brushes off her knees. On the walk out she talks about her friends' mall trip, about a café, about a lot of things. She doesn't mention the slime mold again.
 
 Kay has the feeling he missed something. He doesn't know what.
 
@@ -406,7 +406,7 @@ Kay takes a picture and sends it to the group chat before he can talk himself ou
 Fern hearts it. Bank sends `🔥🔥🔥`. Ulyn sends `proud dad`.
 
 **[If `ElysiaBugs`]**
-He sends it to Elysia too. She replies in four seconds: `ANY BUGS???`
+He sends it to Elysia too. She replies in four seconds: `ANY SLIME???`
 
 ---
 
@@ -868,7 +868,7 @@ She laughs and cries at the same time, and so does he.
 Elysia texts on Friday night: `tomorrow. 10am. i'm picking u up. no is not an option 😤`
 
 **[If `ElysiaBugs`]**
-She takes him to the natural history museum across the river. It's free on Saturdays. She walks straight past the dinosaurs to a dim room full of glass cases with pinned beetles in rows, labeled in tiny handwriting.
+She takes him to the natural history museum across the river. It's free on Saturdays. She walks straight past the dinosaurs to a dim room of fungi and slime molds, tiny dried specimens in glass cases, labeled in tiny handwriting.
 
 "I've never brought anyone here," she says. "Not even Mint. Mint knows, but I've never *brought* anyone."
 
@@ -913,7 +913,7 @@ She pulls her knees up onto the bench.
 
 **◇**
 
-"K. I used to be the weird kid." She says it to her shoes. "Bug girl. In third grade, a boy put a cockroach in my bag, and everyone laughed for a whole week. And I decided I would never be weird again. Ever."
+"K. I used to be the weird kid." She says it to her shoes. "Slime girl. In third grade, a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I would never be weird again. Ever."
 
 "I watch everything I say. Every single thing. With my friends I'm doing a *version*. The fun one. The one who's always fine. It's so tiring."
 
@@ -1215,7 +1215,7 @@ At the gate, Elysia is with her friends. She turns around like she felt him ther
 He walks over.
 
 **[If `ElysiaSafe`]**
-She holds up her phone in front of everyone: a photo of a rhinoceros beetle, huge, horn and all. "*Look* at him. Isn't he perfect?"
+She holds up her phone in front of everyone: a photo of a slime mold, huge and yellow and foamy, spread across a drain cover. "*Look* at him. Isn't he perfect?"
 
 One of her friends makes a face. Elysia doesn't look over her shoulder. She doesn't even check.
 

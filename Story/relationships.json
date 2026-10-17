@@ -5,7 +5,7 @@
 
 	"characters": [
 		{"id": "Kay", "name": "Kay", "playable": true, "color": "#5980ff", "picture": "", "about": "Grade 11. Group leader by default. Carries everything and says \"it's fine.\""},
-		{"id": "Elysia", "name": "Elysia", "playable": true, "color": "#f22e3d", "picture": "", "about": "Cheerful, the friend everyone calls. Was \"bug girl\" once, and decided never to be weird again."},
+		{"id": "Elysia", "name": "Elysia", "playable": true, "color": "#f22e3d", "picture": "", "about": "Cheerful, the friend everyone calls. Was \"slime girl\" once, and decided never to be weird again."},
 		{"id": "Ulyn", "name": "Ulyn", "playable": true, "color": "#f2b33d", "picture": "", "about": "Student council. Always busy. Sleeps on his cousin's couch so he doesn't have to go home."},
 
 		{"id": "Mint", "name": "Mint", "picture": "", "about": "Blunt. In a different class. Has known Elysia since kindergarten."},
@@ -16,7 +16,7 @@
 		{"id": "Jane", "name": "Jane", "picture": "", "about": "Part of Elysia's friend group. Follows Ploy's lead."},
 		{"id": "Bow", "name": "Bow", "picture": "", "about": "Part of Elysia's friend group. Usually on her phone."},
 		{"id": "Nam", "name": "Nam", "picture": "", "about": "A quiet girl in Elysia's class who draws in the margins of everything."},
-		{"id": "Pun", "name": "Pun", "picture": "", "about": "Eight years old. Loves bugs the way Elysia used to."},
+		{"id": "Pun", "name": "Pun", "picture": "", "about": "Eight years old. Loves slime molds the way Elysia used to."},
 		{"id": "Tan", "name": "Tan", "picture": "", "about": "21, a university student. Lets Ulyn sleep on his couch, and keeps asking when he's going home."},
 		{"id": "Pim", "name": "Pim", "picture": "", "about": "Student council president. Organized to the point of being frightening."},
 		{"id": "KayMom", "name": "Kay's Mom", "speaker": "Mom", "route": "Kay", "picture": "", "about": "Hospital shifts, always tired. Raised Kay alone."},

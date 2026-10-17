@@ -2708,13 +2708,13 @@
 
 	"bug_4": {
 		"speaker": "",
-		"text": "*On a leaf, catching the light, there's a beetle. Green so bright it looks fake, like metal.*",
+		"text": "*On the old log edging the bed, something bright yellow has spread across the bark. Like spilled egg yolk, branching into veins like a tiny map.*",
 		"next": "bug_5"
 	},
 
 	"bug_5": {
 		"speaker": "Elysia",
-		"text": "\"That's a jewel beetle. Sternocera, I think. People used their wing covers in old palace art, on ceilings, because the color never fades—\"",
+		"text": "\"That's a slime mold. Physarum, I think. It doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down like the cities around Tokyo, and it grew the train lines—\"",
 		"next": "bug_6"
 	},
 
@@ -2733,7 +2733,7 @@
 
 	"bug_8": {
 		"speaker": "Elysia",
-		"text": "\"Sorry. That's weird. Nobody cares about bugs.\"",
+		"text": "\"Sorry. That's weird. Nobody cares about slime.\"",
 		"choices": [
 			{"text": "\"I care. Keep going.\"", "type": "honest", "weight_change": -5, "next": "bug_care_1", "set_flag": "ElysiaBugs"},
 			{"text": "\"We should probably head back before it gets dark.\"", "type": "neutral", "weight_change": 5, "next": "bug_leave_1"}
@@ -2748,7 +2748,7 @@
 
 	"bug_care_2": {
 		"speaker": "",
-		"text": "*Then she keeps going. Slowly at first, then fast again. Jewel beetles, rhinoceros beetles, a click beetle she caught in third grade that could flip itself over.*",
+		"text": "*Then she keeps going. Slowly at first, then fast again. Pink slime molds, slime molds that crawl a few centimeters an hour, the one she kept in her lunchbox in third grade that got out of a paper maze overnight.*",
 		"next": "bug_care_3"
 	},
 
@@ -2778,13 +2778,13 @@
 
 	"bug_leave_2": {
 		"speaker": "",
-		"text": "*She tips the beetle gently off her finger onto a leaf. On the walk out, she talks about the mall trip, a café, a lot of things.*",
+		"text": "*She stands up and brushes off her knees. On the walk out, she talks about the mall trip, a café, a lot of things.*",
 		"next": "bug_leave_3"
 	},
 
 	"bug_leave_3": {
 		"speaker": "",
-		"text": "*She doesn't mention the beetle again.*",
+		"text": "*She doesn't mention the slime mold again.*",
 		"next": "bug_leave_4"
 	},
 
@@ -3052,7 +3052,7 @@
 
 	"sprout_bug_2": {
 		"speaker": "Elysia",
-		"text": "ANY BUGS???",
+		"text": "ANY SLIME???",
 		"next": "midterm_1",
 		"sfx": "Notification"
 	},
@@ -4433,7 +4433,7 @@
 
 	"sat_museum_2": {
 		"speaker": "",
-		"text": "*She walks straight past the dinosaurs to a dim room of glass cases, beetles pinned in rows, labeled in tiny handwriting.*",
+		"text": "*She walks straight past the dinosaurs to a dim room of fungi and slime molds, tiny dried specimens in glass cases, labeled in tiny handwriting.*",
 		"next": "sat_museum_3"
 	},
 
@@ -4530,7 +4530,7 @@
 
 	"sat_bug_2": {
 		"speaker": "Elysia",
-		"text": "\"Bug girl. In third grade a boy put a cockroach in my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
+		"text": "\"Slime girl. In third grade a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
 		"next": "sat_bug_3"
 	},
 
@@ -5427,7 +5427,7 @@
 
 	"endA_beetle_1": {
 		"speaker": "",
-		"text": "*She holds up her phone in front of everyone: a rhinoceros beetle, huge, horn and all.*",
+		"text": "*She holds up her phone in front of everyone: a slime mold, huge and yellow and foamy, spread across a drain cover.*",
 		"next": "endA_beetle_2"
 	},
 

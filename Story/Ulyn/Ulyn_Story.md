@@ -1271,7 +1271,7 @@ This time Ulyn looks at Bank and Fern, then at Kay. Kay is smiling, and his eyes
 
 Friday, the last day of the semester.
 
-At the gate, Elysia is showing her friends a picture of a huge beetle. Ulyn has no idea why. She's beaming.
+At the gate, Elysia is showing her friends a picture of a huge yellow blob. Ulyn has no idea why. She's beaming.
 
 Kay is standing next to her, and he looks... Ulyn squints.
 

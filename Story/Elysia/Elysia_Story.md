@@ -23,7 +23,7 @@ Elysia has two hidden meters instead of Kay's Emotional Weight. The player never
 - **Locks:** honest choices lock when Energy is below 20 or Mask is above 85.
 - **✎ Self-edit:** at Mask 60 or higher, a marked line is typed out, deleted, and replaced with the version. Below 60 she just says the real line. The log shows the deleted line crossed out.
 
-**Start:** Mask 60, Energy 60. **Endings:** Mask above 69 → *The Version* · Mask below 50 and Energy above 54 → *Bug Girl* · anything else → *Half a Version*.
+**Start:** Mask 60, Energy 60. **Endings:** Mask above 69 → *The Version* · Mask below 50 and Energy above 54 → *Slime Girl* · anything else → *Half a Version*.
 
 ### People only Elysia's route introduces
 
@@ -78,15 +78,15 @@ At breakfast, Pun is eating his eggs with one hand and holding a jar with the ot
 
 "Look. LOOK. I found him by the drain."
 
-Inside the jar is a beetle as long as her thumb. Glossy brown, with one curved horn like a tiny rhino.
+Inside the jar is a twig with something bright yellow spread across it, like spilled egg yolk, branching into veins like a tiny map.
 
-Elysia knows exactly what it is. She knows the Latin name. She knows it's a male because of the horn. She knows that in third grade she'd have been on the floor next to Pun, nose against the glass.
+Elysia knows exactly what it is. She knows the Latin name. She knows it isn't mold at all, or a plant, or an animal. She knows that in third grade she'd have been on the floor next to Pun, nose against the glass.
 
 *Check: Mom, making coffee, not looking.*
 
 **◆ Choice**
-- **A. ★** "It's just a beetle. Eat your eggs." (perform, Mask +5, Energy −5)
-- **B.** "That's a rhinoceros beetle! He's a boy, look at the horn—" (honest, Mask −5, Energy +10, sets `TaughtPun`)
+- **A. ★** "It's just mold. Eat your eggs." (perform, Mask +5, Energy −5)
+- **B.** "That's a slime mold! It's not even mold, it's—" (honest, Mask −5, Energy +10, sets `TaughtPun`)
 
 **▸ A.**
 Pun's face falls just a little. He puts the jar down next to his plate and eats his eggs.
@@ -180,7 +180,7 @@ She carries her tray back to the table by the window. On the way, she glances ov
 
 He comes.
 
-She's in the middle of a story about Pun's beetle (not the beetle part, the funny part, where Pun tried to name it after their mom) when she looks up and Kay is standing there with his tray.
+She's in the middle of a story about Pun's slime mold (not the slime part, the funny part, where Pun tried to name it after their mom) when she looks up and Kay is standing there with his tray.
 
 "Hey. Is it okay if I sit here?"
 
@@ -272,7 +272,7 @@ She waves and walks off alone. She keeps the smile on all the way past the 7-Ele
 
 *Like what?*
 
-*Like the bug girl and the boy who has to stand next to her.*
+*Like the slime girl and the boy who has to stand next to her.*
 
 She knows it's not fair. Kay has never said anything like that. Kay is the gentlest person she knows.
 
@@ -400,7 +400,7 @@ The typing dots appear and vanish three times.
 
 ---
 
-## Chapter 5 — The Beetle
+## Chapter 5 — The Slime Mold
 
 The second week, Ploy plans a mall trip for Wednesday.
 
@@ -428,7 +428,7 @@ She crouches by the chili bed to look at the seedlings, mostly so he can't see h
 
 And then she sees it.
 
-On a leaf, catching the afternoon light, is a beetle. It's green so bright it looks fake, like a piece of jewelry someone dropped.
+On the old log edging the bed, where the soil is wettest, something bright yellow has spread across the bark. It looks like spilled egg yolk, branching into veins like a tiny map.
 
 The version goes completely offline.
 
@@ -436,7 +436,7 @@ The version goes completely offline.
 
 He crouches next to her.
 
-"That's a jewel beetle. *Sternocera*, I think. People used to use their wing covers in old palace art, like, on ceilings, because the color never fades. It's not pigment, it's the *structure* of the shell, the light bounces—"
+"That's a slime mold. *Physarum*, I think. It's not a mold, it's not a plant, it's not an animal, it doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down in the shape of the cities around Tokyo, and it grew a network that looked almost exactly like the real train lines—"
 
 She hears herself. Loud. Fast. *Weird.*
 
@@ -444,11 +444,11 @@ She stops in the middle of the sentence and glances over her shoulder at the pat
 
 *Check: nobody. Nobody's there. Check again.*
 
-She laughs, too bright. "Sorry. That's weird. Nobody cares about bugs."
+She laughs, too bright. "Sorry. That's weird. Nobody cares about slime."
 
-> ✎ *Self-edit.* With her Mask low, she says "I really, really like bugs." instead. With it high, she types that, deletes it, and says the line above.
+> ✎ *Self-edit.* With her Mask low, she says "I really, really like slime molds." instead. With it high, she types that, deletes it, and says the line above.
 
-Kay is looking at her. Not at the beetle. At her.
+Kay is looking at her. Not at the slime mold. At her.
 
 "I care," he says. "Keep going."
 
@@ -456,16 +456,16 @@ She stares at him.
 
 *Check: his face. It's not polite. It's not pity. It's...*
 
-She doesn't have a word for it. Nobody except Mint has ever looked at her like that while she was being bug girl.
+She doesn't have a word for it. Nobody except Mint has ever looked at her like that while she was being slime girl.
 
 **◆ Choice**
 - **A. ★** Keep going. (honest, Mask −10, Energy +15, sets `KeptGoing`)
 - **B.** "Haha, anyway—" (perform, Mask +5, Energy −5)
 
 **▸ A.**
-She keeps going. Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. *How does it fly with those heavy wings? Do they bite?*
+She keeps going. Slowly at first, testing the ice. Then faster, because he keeps nodding and asking questions. *How does it know where to go without a brain? Can it hurt you?*
 
-She tells him about jewel beetles, rhinoceros beetles, and the click beetle she caught in third grade that could flip itself over with a sound like a snapped finger. For twenty minutes she doesn't check anyone's face once.
+She tells him about slime molds that are bright pink, slime molds that crawl a few centimeters an hour, and the one she kept in her lunchbox in third grade that found its way out of a paper maze overnight. For twenty minutes she doesn't check anyone's face once.
 
 When she finally runs out of words, the sun is lower, and Kay is smiling at her.
 
@@ -478,7 +478,7 @@ When she finally runs out of words, the sun is lower, and Kay is smiling at her.
 
 Kay looks at her for a second like he's trying to work something out. "...I think so," he says.
 
-She tips the beetle gently onto another leaf and doesn't look at it again.
+She doesn't look at the log again.
 
 **◇**
 
@@ -544,7 +544,7 @@ Elysia smiles at Nam, a small one, just for her. Nam stares back, surprised. The
 
 ---
 
-## Chapter 7 — Bug Boy
+## Chapter 7 — Slime Boy
 
 The fourth week, Pun comes home from school and doesn't go to his jar.
 
@@ -558,26 +558,26 @@ He sits at the kitchen table with his backpack still on.
 
 "Pun."
 
-"...They call me bug boy." His voice wobbles. "Tee put a cockroach in my bag. A dead one. Everyone laughed."
+"...They call me slime boy." His voice wobbles. "I took my slime mold for show-and-tell and Tee smeared it all over the inside of my bag. Everyone laughed."
 
 Elysia's whole body goes cold.
 
-*Third grade. A cockroach in my bag. A whole week.*
+*Third grade. Slime in my bag. A whole week.*
 
 *He's going to go through what I went through. Unless he learns what I learned.*
 
 She knows exactly what she learned. She can teach it to him in one sentence.
 
 **◆ Choice**
-- **A. ★** "Maybe... keep the bugs at home? Just at school. Just for a while." (perform, Mask +10, Energy −15, sets `ToldPunHide`)
-- **B.** "Then be bug boy. Bug boy is the best kind of boy." (honest, Mask −10, Energy +10, sets `ToldPunBugBoy`)
+- **A. ★** "Maybe... keep the slime at home? Just at school. Just for a while." (perform, Mask +10, Energy −15, sets `ToldPunHide`)
+- **B.** "Then be slime boy. Slime boy is the best kind of boy." (honest, Mask −10, Energy +10, sets `ToldPunBugBoy`)
 
 **▸ A.**
 Pun looks at her for a long time.
 
 "Okay," he says quietly.
 
-He goes to his room. Later, when she walks past, the jar on his windowsill is empty. The lid is off. He let the beetle go.
+He goes to his room. Later, when she walks past, the jar on his windowsill is empty. The lid is off. He took the slime mold back to the drain where he found it.
 
 She stands in the doorway and can't breathe properly. *I did that. I did what they did to me, except I was nice about it.*
 
@@ -586,9 +586,9 @@ She hears herself say it.
 
 Pun looks up. "...Really?"
 
-"Really. Tee is going to be boring his whole life. You're going to know what a *Sternocera* is."
+"Really. Tee is going to be boring his whole life. You're going to know what a *Physarum* is."
 
-"What's a *Sternocera*?"
+"What's a *Physarum*?"
 
 So she tells him, sitting on his bedroom floor with her nose against the glass of his jar, like she's eight too.
 
@@ -806,12 +806,12 @@ On Friday night she types for an hour and deletes all of it. Then she sends:
 
 ---
 
-## Chapter 11 — The Beetle Room
+## Chapter 11 — The Back Room
 
 **[If `KeptGoing`]**
 She takes him to the natural history museum across the river. It's free on Saturdays.
 
-She walks him straight past the dinosaurs to a dim room at the back, full of glass cases and beetles pinned in rows, each labeled in tiny old handwriting.
+She walks him straight past the dinosaurs to a dim room at the back, all fungi and slime molds: glass cases of tiny dried specimens in matchbox trays, each labeled in tiny old handwriting, and an old screen in the corner looping a time-lapse of something yellow solving a maze.
 
 She has come here alone maybe thirty times since third grade. She has never told her friends. She has never brought anyone.
 
@@ -822,7 +822,7 @@ Kay looks around the room like it's a church.
 **[Otherwise]**
 She takes him to the park by the canal and hands him a can of milk tea. They sit on a bench facing the water. A monitor lizard swims past very slowly, like it has somewhere to be.
 
-She thinks about the museum across the river, the beetle room, and the fact that she's never brought anyone. *Not today*, she thinks. *Maybe not ever.*
+She thinks about the museum across the river, the back room, and the fact that she's never brought anyone. *Not today*, she thinks. *Maybe not ever.*
 
 **◇**
 
@@ -871,7 +871,7 @@ She laughs, because it's absurd. Then she stops laughing, because it isn't.
 
 She says it to her shoes. It's easier.
 
-"Bug girl. In third grade a boy put a cockroach in my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever."
+"Slime girl. In third grade a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever."
 
 "I watch everything I say. Every single thing. With my friends I'm doing a *version*. The fun one. The one who's always fine." Her voice wobbles. "It's so tiring."
 
@@ -1065,7 +1065,7 @@ Elysia lies awake until five and goes to school with her eyes stinging. *That's 
 In art class that week, Elysia sits next to Nam.
 
 **[If `StoodUpForNam`]**
-Nam smiles when she sits down. Without saying anything, she draws a tiny jewel beetle in the margin of Elysia's worksheet, green pen, perfect.
+Nam smiles when she sits down. Without saying anything, she draws a tiny slime mold in the margin of Elysia's worksheet, yellow pen, branching like a map, perfect.
 
 **[Otherwise]**
 Nam glances up, wary, then back at her paper.
@@ -1074,7 +1074,7 @@ Elysia takes a breath. "I'm sorry. About the frog. I laughed. I shouldn't have."
 
 Nam looks at her for a long time. Then she takes the frog out of her pocket and hooks it back onto her bag.
 
-The next week, a tiny jewel beetle appears in green pen in the margin of Elysia's worksheet.
+The next week, a tiny slime mold appears in yellow pen in the margin of Elysia's worksheet.
 
 **◇**
 
@@ -1088,7 +1088,7 @@ The ninth week. Kay's group presents the garden project. She hears from Mint, wh
 
 ---
 
-That night she goes to her closet and digs out a box from the back. Under old birthday cards and a broken Tamagotchi, she finds it: a notebook from third grade with a cover full of stickers. Every page has a beetle drawn in careful crayon, with the Latin name copied underneath in big wobbly letters.
+That night she goes to her closet and digs out a box from the back. Under old birthday cards and a broken Tamagotchi, she finds it: a notebook from third grade with a cover full of stickers. Every page has a slime mold drawn in careful crayon, mostly yellow, with the Latin name copied underneath in big wobbly letters. A dried oat flake is still taped inside the cover.
 
 She takes it to Pun's room.
 
@@ -1099,11 +1099,11 @@ His windowsill is still empty. It has been empty for five weeks.
 
 He's doing homework and doesn't look up.
 
-"I was wrong," she says. "About keeping the bugs at home. I was wrong."
+"I was wrong," she says. "About keeping the slime at home. I was wrong."
 
 He looks up.
 
-"When I was your age, someone put a cockroach in my bag too. And I stopped. I stopped liking things out loud. And I thought that was me being smart." She holds out the notebook. "It wasn't smart. It was just sad. Be bug boy. Bug boy is the best kind of boy."
+"When I was your age, someone put slime in my bag too. And I stopped. I stopped liking things out loud. And I thought that was me being smart." She holds out the notebook. "It wasn't smart. It was just sad. Be slime boy. Slime boy is the best kind of boy."
 
 Pun opens the notebook. He turns the pages slowly, then faster.
 
@@ -1115,7 +1115,7 @@ Pun opens the notebook. He turns the pages slowly, then faster.
 
 "It's yours."
 
-The next morning there's a beetle in the jar on the windowsill again.
+The next morning there's a slime mold in the jar on the windowsill again.
 
 **◆ Choice**
 - **A. ★** Tell him one more thing. "And if anyone says it's weird, tell them your sister said so too." (honest, Mask −10, Energy +10, sets `GaveNotebook`)
@@ -1130,15 +1130,15 @@ She puts it on his desk and goes. She hears him turning the pages through the wa
 **◇**
 
 **[If `ToldPunBugBoy`]**
-Pun's windowsill has three jars now. He has been "bug boy" for five weeks and has decided he likes it. Tee has stopped, mostly, because two other kids in his class have started bringing bugs too.
+Pun's windowsill has three jars now. He has been "slime boy" for five weeks and has decided he likes it. Tee has stopped, mostly, because two other kids in his class have started growing their own.
 
 "Look," she says, holding out the notebook. "I made this when I was your age."
 
 He takes it like it's treasure.
 
-"You were bug girl?"
+"You were slime girl?"
 
-"I was bug girl."
+"I was slime girl."
 
 **◆ Choice**
 - **A. ★** "...I still am, kind of." (honest, Mask −10, Energy +10, sets `GaveNotebook`)
@@ -1160,7 +1160,7 @@ Pun nods and turns the pages. "You were so good at it," he says, and she doesn't
 
 Friday, the last day of the semester.
 
-On Thursday night, Pun found a rhinoceros beetle by the drain. A huge one, a male, with a horn and everything. He let Elysia take a picture before he named it Kay. She didn't explain why that was funny.
+On Thursday night, Pun found a slime mold on the drain cover. A huge one, yellow and foamy, like someone dropped scrambled eggs. It's called dog vomit slime mold, which Pun thinks is the best name anything has ever had. He let Elysia take a picture before he named it Kay. She didn't explain why that was funny.
 
 At the gate, Ploy, Jane, Bow, and Mint are all there. Elysia has the picture on her phone.
 
@@ -1211,7 +1211,7 @@ At lunch, Mint sits down across from her with a carton of chocolate milk and the
 
 "Was I wrong?"
 
-Elysia opens her mouth, then closes it. She thinks about the canal, or the beetle room, and *couldn't*.
+Elysia opens her mouth, then closes it. She thinks about the canal, or the back room, and *couldn't*.
 
 "...No," she says. "You weren't wrong."
 
@@ -1233,26 +1233,26 @@ Elysia opens her mouth, then closes it. She thinks about the canal, or the beetl
 What happens next depends on how much of the version is left, and what it has cost her.
 
 - **Mask above 69** → Ending C, *The Version*
-- **Mask below 50 and Energy above 54** → Ending A, *Bug Girl*
+- **Mask below 50 and Energy above 54** → Ending A, *Slime Girl*
 - **Anything else** → Ending B, *Half a Version*
 
 ---
 
-### Ending A — Bug Girl
+### Ending A — Slime Girl
 
 On Sunday she takes Pun to the natural history museum across the river.
 
 She walks him straight past the dinosaurs to the dim room at the back. Pun presses his nose against the glass of the first case and fogs it up completely.
 
-"*Sternocera*," he reads off the label, sounding it out. "Elysia. ELYSIA. That's the one from your notebook!"
+"*Physarum*," he reads off the label, sounding it out. "Elysia. ELYSIA. That's the one from your notebook!"
 
 "It is."
 
 **[If `DroppedVersion`]**
-Kay is there too, a few steps behind, looking at the beetles the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the beetle's name.
+Kay is there too, a few steps behind, looking at the cases the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the slime mold's name.
 
 **[If `SetBoundary`]**
-Her phone buzzes in her pocket. Ploy: `send me a pic of the bugs. i want to see what the big deal is`
+Her phone buzzes in her pocket. Ploy: `send me a pic of the slime. i want to see what the big deal is`
 
 She sends six.
 
@@ -1260,7 +1260,7 @@ She sends six.
 
 **◇**
 
-They stay until closing. She tells Pun everything she knows: the wing covers, the palace ceilings, the light that bounces. She talks loud and fast, the bug girl way, and she doesn't check anyone's face once.
+They stay until closing. She tells Pun everything she knows: the oat flakes, the train lines, the maze it remembers. She talks loud and fast, the slime girl way, and she doesn't check anyone's face once.
 
 On the bus home, Pun falls asleep against her shoulder, holding her notebook.
 
@@ -1268,7 +1268,7 @@ On the bus home, Pun falls asleep against her shoulder, holding her notebook.
 
 It doesn't hurt. It feels like taking off shoes that were too small.
 
-**— Ending A: Bug Girl —**
+**— Ending A: Slime Girl —**
 
 ---
 
