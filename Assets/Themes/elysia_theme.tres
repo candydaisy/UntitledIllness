@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://syw4q0x7dedm"]
 
-[ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="1_font"]
+[ext_resource type="FontVariation" path="res://Assets/Fonts/noto.tres" id="1_font"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hover"]
 bg_color = Color(0.25, 0.02, 0.05, 0.32)

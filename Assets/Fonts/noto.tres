@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" format=3]
+
+[ext_resource type="FontFile" path="res://Assets/Fonts/NotoSans-Regular.ttf" id="1_latin"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/NotoSansThai-Regular.ttf" id="2_thai"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_thai")])
+base_font = ExtResource("1_latin")

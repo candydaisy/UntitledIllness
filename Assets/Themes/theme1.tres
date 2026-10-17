@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://becm04wq40y7n"]
 
-[ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="1_ky6mq"]
+[ext_resource type="FontVariation" path="res://Assets/Fonts/noto.tres" id="1_ky6mq"]
 [ext_resource type="StyleBox" uid="uid://1wglqfiuen7n" path="res://Assets/Themes/DialogSBF.tres" id="1_tp3fm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tp3fm"]
