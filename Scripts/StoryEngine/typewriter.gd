@@ -101,6 +101,8 @@ func _tick_type(delta: float) -> void:
 	while label.visible_characters < target:
 		var ch := _text[label.visible_characters]
 		label.visible_characters += 1
+		while label.visible_characters < _text.length() and is_combining(_text[label.visible_characters]):
+			label.visible_characters += 1 # a Thai letter appears with its marks
 		if ch not in SILENT_CHARS:
 			play_sound = true
 		if ch in PAUSE_DURATIONS:
@@ -122,12 +124,22 @@ func _tick_delete(delta: float) -> void:
 	var before := label.visible_characters
 	_progress -= speed * DELETE_MULT * delta
 	label.visible_characters = maxi(int(_progress), 0)
+	while label.visible_characters > 0 and label.visible_characters < _text.length() \
+			and is_combining(_text[label.visible_characters]):
+		label.visible_characters -= 1 # delete a Thai letter together with its marks
+		_progress = label.visible_characters
 	if label.visible_characters < before:
 		_play_sound()
 	if label.visible_characters == 0:
 		var next := _final_text
 		_final_text = ""
 		_begin(next)
+
+
+## Thai vowels and tone marks drawn above or below the letter before them.
+static func is_combining(ch: String) -> bool:
+	var c := ch.unicode_at(0)
+	return c == 0x0E31 or (c >= 0x0E34 and c <= 0x0E3A) or (c >= 0x0E47 and c <= 0x0E4E)
 
 
 func _finish() -> void:
