@@ -12,11 +12,13 @@ const ENGLISH := {
 	"z": {"text": "The end of {the hall|SawHall}.", "next": ""},
 	"cutme": {"text": "She's at the table right now.", "cut_after": "She's at the table", "cut": "Answer the chat.", "next": "z"},
 	"m": {"text": "Beep.", "minigame": "res://x.tscn", "results": {"won": {"text": "Up", "next": "z"}}},
+	"bg": {"text": "Morning.", "background": "Kay's room1", "next": "z"},
 }
 const THAI := {
 	"q": {"text": "คำถาม?", "choices": ["ใช่", "ไม่"]},
 	"ring": {"text": "โทรศัพท์ดัง", "choices": ["ปฏิเสธสาย"]},
 	"z": {"text": "สุด{ทางเดิน|SawHall}"},
+	"bg": {"text": "ตอนเช้า"},
 }
 
 var story
@@ -69,6 +71,32 @@ func _initialize() -> void:
 	await process_frame
 	if not "ทางเดิน" in story.text_label.text: return fail("loaded line not Thai: " + story.text_label.text)
 	if story.dialog_log.get_lines()[0] != "Kay\nQuestion?": return fail("old log line was changed")
+	story.free()
+
+	# 5. Switch in the moment between the line finishing and the choices appearing.
+	SettingMenu.set_locale("en")
+	await _start("q")
+	await _until(func(): return not story.is_transitioning and not story.typewriter.is_typing)
+	if story.choices_container.visible: return fail("test setup: choices already showing")
+	SettingMenu.set_locale("th")
+	await _until(func(): return story.choices_container.visible)
+	var late = story.choice_buttons.filter(func(b): return b.visible).map(func(b): return b.text)
+	late.sort()
+	if late != ["ใช่", "ไม่"]: return fail("choices shown after a pre-choice switch are not Thai: %s" % [late])
+	story.free()
+
+	# 6. Switch while the scene is still transitioning in (before the line is drawn).
+	SettingMenu.set_locale("en")
+	story = load("res://Scenes/Characters/Kay.tscn").instantiate()
+	story.flow_graph_path = DIR + "/flow_graph.json"
+	story.start_node = "bg"
+	root.add_child(story)
+	current_scene = story
+	if not story.is_transitioning: return fail("test setup: not transitioning")
+	SettingMenu.set_locale("th")
+	await _until(func(): return not story.is_transitioning)
+	await process_frame
+	if not "ตอนเช้า" in story.text_label.text: return fail("line after a mid-transition switch not Thai: " + story.text_label.text)
 	story.free()
 
 	# 4. The checker.

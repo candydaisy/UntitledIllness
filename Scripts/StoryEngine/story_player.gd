@@ -265,6 +265,7 @@ func process_node(node_name: String) -> void:
 	await stage.apply(entry)
 	if serial != _node_serial:
 		return
+	entry = graph.get_entry(node_name) # the language may have changed during the transition
 	is_transitioning = false
 
 	audio.apply_sfx(entry)
@@ -408,10 +409,11 @@ func _show_choices() -> void:
 		return
 
 	var serial := _node_serial
-	current_choices = filter_choices(entry["choices"])
 	await get_tree().create_timer(choice_delay).timeout
 	if serial != _node_serial: # moved on (e.g. rewound) while waiting
 		return
+	entry = graph.get_entry(current_node) # the language may have changed while waiting
+	current_choices = filter_choices(entry["choices"])
 
 	var seconds := mode.choice_time(entry) * (screen_reader_timer_mult if _screen_reader else 1.0)
 	if entry.has("call"):
