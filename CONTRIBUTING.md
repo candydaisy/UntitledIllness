@@ -22,7 +22,7 @@ UntitledIllness/
 ├── Scenes/                     Godot scenes, each next to its script
 │   ├── Menus/                Splash screen, title menu, character select, settings/save menu
 │   ├── Dialog/               The dialogue box, choice buttons, Auto / Log / Menu buttons
-│   └── Characters/           One story scene per character (Story.tscn = Kay, Elysia.tscn, Ulyn.tscn)
+│   └── Characters/           One story scene per character (Kay.tscn, Elysia.tscn, Ulyn.tscn)
 │
 ├── Scripts/StoryEngine/        The code that plays a story (shared by all characters)
 │   ├── story_player.gd       Main script, attached to each character's story scene
@@ -80,7 +80,7 @@ You can also use **[TTFUI](https://github.com/candydaisy/TTFUI)** ([open it in t
 **Add a new character's story**
 1. Write `Story/<Name>/<Name>_Story.md` first, then turn it into `Story/<Name>/flow_graph.json` (see [Story file structure](#story-file-structure)).
 2. Pick a mode. Reuse one (`KayMode`, `ElysiaMode`), or write a new one (see [Character modes](#character-modes)).
-3. Duplicate `Scenes/Characters/Story.tscn` in Godot's FileSystem panel and rename it.
+3. Duplicate `Scenes/Characters/Kay.tscn` in Godot's FileSystem panel and rename it.
 4. Select the root node. In the Inspector, set **Flow Graph Path**, **Start Node** (usually `start`), and **Mode** (click it → New *YourMode*). The mode's numbers show up underneath, ready to tune.
 5. Swap in that character's backgrounds and sprites.
 6. Give them their own look:

@@ -3,7 +3,7 @@ extends Control
 ## Story scene for each character button, in order (Character1 = first).
 ## "" = not playable yet; its Start button stays disabled.
 const STORY_SCENES := [
-	"res://Scenes/Characters/Story.tscn",  # K. Kay
+	"res://Scenes/Characters/Kay.tscn",  # K. Kay
 	"res://Scenes/Characters/Elysia.tscn", # E. Elysia
 	"res://Scenes/Characters/Ulyn.tscn",   # U. Ulyn
 	"",                                    # R.

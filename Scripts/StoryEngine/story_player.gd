@@ -4,7 +4,7 @@ extends Node2D
 ## Reuse this script for every character's story scene: set flow_graph_path,
 ## start_node and mode in the Inspector. The mode (KayMode, ElysiaMode, ...)
 ## decides the character's meters, choice rules and effects; see StoryMode.
-## The scene needs the same node layout as Story.tscn: Bgs, Characters, Audio
+## The scene needs the same node layout as Kay.tscn: Bgs, Characters, Audio
 ## and Cenfix/Dialog.
 
 @export_file("*.json") var flow_graph_path := "res://Story/Kay/flow_graph.json"
