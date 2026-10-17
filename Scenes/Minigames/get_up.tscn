@@ -3,7 +3,7 @@
 [ext_resource type="StyleBox" uid="uid://1wglqfiuen7n" path="res://Assets/Themes/DialogSBF.tres" id="1_bst1h"]
 [ext_resource type="FontFile" uid="uid://b0h42nnbvyg5a" path="res://Assets/Fonts/Minecraft.ttf" id="2_61rfh"]
 [ext_resource type="Texture2D" uid="uid://c5x0n0004ihms" path="res://Assets/Photos/Background/ceiling.jpg" id="3_rku81"]
-[ext_resource type="Script" path="res://Scenes/Minigames/get_up.gd" id="4_getup"]
+[ext_resource type="Script" uid="uid://bmn5ku2meycgq" path="res://Scenes/Minigames/get_up.gd" id="4_getup"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hover"]
 bg_color = Color(0.04, 0.06, 0.25, 0.32)
@@ -47,6 +47,17 @@ Button/styles/pressed = SubResource("StyleBoxFlat_pressed")
 ItemList/styles/panel = SubResource("StyleBoxFlat_normal")
 Panel/styles/panel = SubResource("StyleBoxFlat_normal")
 ProgressBar/styles/background = ExtResource("1_bst1h")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vhrwg"]
+bg_color = Color(0, 0, 0, 0.39215687)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.078431375, 0.08627451, 0.6156863)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
 
 [node name="GetUp" type="Control" unique_id=1040278942]
 layout_mode = 3
@@ -123,16 +134,18 @@ text = "Hold SPACE to get up"
 [node name="Skip" type="Button" parent="." unique_id=1177769733]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -213.0
-offset_top = -74.0
-offset_right = -21.0
-offset_bottom = -24.0
-grow_horizontal = 0
+offset_left = -96.0
+offset_top = -80.0
+offset_right = 96.0
+offset_bottom = -30.0
+grow_horizontal = 2
 grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.1764706, 0.1764706, 1)
 theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_vhrwg")
 text = "Stay in bed"

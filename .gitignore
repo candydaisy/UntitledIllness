@@ -5,3 +5,11 @@
 
 # TTFUI editor (its own repo: github.com/candydaisy/TTFUI)
 .TTFUI/
+
+# Personal notes and tool folders
+.IdeaOfUntitledIllness.md
+.claude/
+.obsidian/
+
+# Editor backup copies (e.g. Vine.png~)
+*~

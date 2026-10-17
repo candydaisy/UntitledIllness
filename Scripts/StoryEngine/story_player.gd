@@ -473,6 +473,7 @@ func _start_minigame(entry: Dictionary) -> void:
 	minigame = game
 	dialog.visible = false
 	add_child(game) # outside Cenfix, so the character's world tint applies to it
+	game.size = get_viewport_rect().size # a Node2D parent has no rect, so full-screen anchors alone give 0x0
 	var result : String = await game.finished
 	game.queue_free()
 	minigame = null
@@ -482,6 +483,22 @@ func _start_minigame(entry: Dictionary) -> void:
 		push_error("Node %s: minigame finished with '%s', which isn't in its results" % [current_node, result])
 		return
 	select_choice(results[result])
+
+## Debug menu: goes straight to a node. Meters and flags stay as they are,
+## and rewinding stops here.
+func debug_jump(node: String) -> void:
+	if not graph.has_entry(node) or minigame:
+		return
+	typewriter.stop()
+	pending_secret = ""
+	_push_history(current_node, true)
+	current_node = node
+	process_node(node)
+
+## Debug menu: sets meters and shows their effects (tint, typing speed...).
+func debug_set_meters(meters: Dictionary) -> void:
+	mode.set_meters(meters)
+	mode.apply_effects()
 
 ## Locks choices the mode says are locked, and hides choices whose
 ## "requires" flag hasn't been set (e.g. a detail that wasn't noticed).

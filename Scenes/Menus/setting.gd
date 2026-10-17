@@ -27,6 +27,7 @@ const EMPTY_SLOT_TINT := Color(1, 1, 1, 0.35)
 @onready var save_slots : Array = $"Sub2-save/Container".get_children()
 @onready var load_slots : Array = $"Sub3-load/Container".get_children()
 
+var debug_panel : Panel # only in debug builds (editor runs, "Export With Debug")
 var screenshot : Image # taken when the menu opens in-game, before it covers the screen
 var _pending_action : Callable # what Confirm does
 
@@ -68,6 +69,8 @@ func _ready() -> void:
 		_add_slot_label(slot)
 
 	_add_screen_reader_option()
+	if OS.is_debug_build():
+		_add_debug_page()
 
 	# Screen readers: say what each part is, and announce questions.
 	$Main/Return.accessibility_description = "Close the menu. Shortcut: Escape."
@@ -80,6 +83,8 @@ func _ready() -> void:
 func open() -> void:
 	screenshot = get_viewport().get_texture().get_image() if _story() else null
 	$Main/Save.disabled = _story() == null # nothing to save on the title screen
+	if debug_panel:
+		$Main/Debug.visible = _story() != null
 	_hide_confirm()
 	_show_sub(setting_panel)
 	visible = true
@@ -96,9 +101,12 @@ func _story() -> StoryPlayer:
 	return get_tree().current_scene as StoryPlayer
 
 func _show_sub(panel: Panel) -> void:
-	for p in [setting_panel, save_panel, load_panel]:
-		p.visible = (p == panel)
-	if panel != setting_panel:
+	for p in [setting_panel, save_panel, load_panel, debug_panel]:
+		if p:
+			p.visible = (p == panel)
+	if panel == debug_panel:
+		_fill_debug_page()
+	elif panel != setting_panel:
 		_refresh_slots()
 	if visible:
 		Accessibility.focus_first_button.call_deferred(panel)
@@ -156,6 +164,121 @@ func _add_screen_reader_option() -> void:
 	pick.item_selected.connect(func(i): Accessibility.set_mode(i))
 	row.add_child(pick)
 	setting_panel.add_child(row)
+
+
+# --- Debug (to show and test the story: jump anywhere, change meters and flags) ---
+
+func _add_debug_page() -> void:
+	var button := $Main/Load.duplicate(0) as Button # 0: without Load's click handler
+	button.name = "Debug"
+	button.text = "Debug"
+	button.position.y += $Main/Load.position.y - $Main/Save.position.y # one step below Load
+	button.accessibility_description = "Jump to scenes and minigames, change meters and flags."
+	button.pressed.connect(func(): _show_sub(debug_panel))
+	$Main.add_child(button)
+
+	debug_panel = Panel.new()
+	debug_panel.name = "Sub4-debug"
+	for prop in ["anchor_left", "anchor_top", "anchor_right", "anchor_bottom", "offset_left", "offset_top", "offset_right", "offset_bottom"]:
+		debug_panel.set(prop, setting_panel.get(prop)) # same place and size as the Settings page
+	debug_panel.visible = false
+	add_child(debug_panel)
+	move_child(debug_panel, confirm.get_index()) # under the Confirm popup
+
+	var margin := MarginContainer.new()
+	margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	for side in ["left", "right", "top", "bottom"]:
+		margin.add_theme_constant_override("margin_" + side, 32)
+	debug_panel.add_child(margin)
+	var scroll := ScrollContainer.new()
+	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	margin.add_child(scroll)
+	var column := VBoxContainer.new()
+	column.name = "Column"
+	column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	column.add_theme_constant_override("separation", 12)
+	scroll.add_child(column)
+
+## Rebuilt every time the page opens, so it always shows the story's current state.
+func _fill_debug_page() -> void:
+	var column := debug_panel.find_child("Column", true, false) as VBoxContainer
+	for child in column.get_children():
+		child.queue_free()
+	var story := _story()
+	if story == null:
+		return
+
+	column.add_child(_debug_heading("Jump to"))
+	var games := []
+	for id in story.graph.nodes:
+		if story.graph.nodes[id].has("minigame"):
+			games.append(id)
+	games.sort()
+	for id in games:
+		var go := Button.new()
+		go.text = "Minigame: %s (%s)" % [String(story.graph.nodes[id]["minigame"]).get_file().get_basename(), id]
+		go.pressed.connect(_debug_jump.bind(id))
+		column.add_child(go)
+	var row := HBoxContainer.new()
+	var field := LineEdit.new()
+	field.placeholder_text = "node id, e.g. absent_1"
+	field.accessibility_name = "Node id to jump to"
+	field.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var jump := Button.new()
+	jump.text = "Go"
+	jump.pressed.connect(func(): _debug_jump(field.text.strip_edges()))
+	field.text_submitted.connect(func(text): _debug_jump(text.strip_edges()))
+	row.add_child(field)
+	row.add_child(jump)
+	column.add_child(row)
+	column.add_child(_debug_label("Now at: %s" % story.current_node))
+
+	column.add_child(_debug_heading("Meters"))
+	var meters : Dictionary = story.mode.get_meters()
+	for meter in meters:
+		var line := HBoxContainer.new()
+		var label := _debug_label("%s  %d" % [meter, meters[meter]])
+		label.custom_minimum_size.x = 220
+		var slider := HSlider.new()
+		slider.min_value = 0
+		slider.max_value = 100
+		slider.step = 1
+		slider.value = meters[meter]
+		slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		slider.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+		slider.accessibility_name = meter
+		slider.value_changed.connect(func(v):
+			story.debug_set_meters({meter: v})
+			label.text = "%s  %d" % [meter, v])
+		line.add_child(label)
+		line.add_child(slider)
+		column.add_child(line)
+
+	column.add_child(_debug_heading("Flags"))
+	for flag in story.graph.flag_names():
+		var box := CheckBox.new()
+		box.text = flag
+		box.button_pressed = story.flags.get(flag, false)
+		box.toggled.connect(func(on): story.flags[flag] = on)
+		column.add_child(box)
+
+func _debug_jump(node: String) -> void:
+	var story := _story()
+	if story == null or not story.graph.has_entry(node):
+		return
+	close()
+	story.debug_jump(node)
+
+func _debug_heading(text: String) -> Label:
+	var label := _debug_label(text)
+	label.add_theme_font_size_override("font_size", 30)
+	return label
+
+func _debug_label(text: String) -> Label:
+	var label := Label.new()
+	label.text = text
+	label.add_theme_font_size_override("font_size", 22)
+	return label
 
 
 # --- Save / load ---

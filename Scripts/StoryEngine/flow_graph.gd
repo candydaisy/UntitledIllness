@@ -71,3 +71,22 @@ func find_broken_links() -> Array[String]:
 			if target != "" and not nodes.has(target):
 				problems.append("Node %s points to missing node %s" % [id, target])
 	return problems
+
+
+## Every flag the story sets or checks, sorted (for the debug menu).
+func flag_names() -> Array:
+	var notice := RegEx.create_from_string(Accessibility.NOTICE)
+	var found := {}
+	for id in nodes:
+		var entry : Dictionary = nodes[id]
+		for choice in entry.get("choices", []) + entry.get("results", {}).values():
+			for key in ["set_flag", "requires"]:
+				if choice.has(key):
+					found[choice[key]] = true
+		if entry.get("secret", {}).has("flag"):
+			found[entry["secret"]["flag"]] = true
+		for m in notice.search_all(String(entry.get("text", ""))):
+			found[m.get_string(2)] = true
+	var names := found.keys()
+	names.sort()
+	return names
