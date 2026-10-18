@@ -1,7 +1,8 @@
 class_name StoryAudio
 extends RefCounted
 ## Sound effects and ambience shared by every character's story.
-## Add new sounds to SFX / AMB / VOICE and use their names in a flow graph.
+## Add new sounds to SFX / AMB and use their names in a flow graph.
+## Voice lines are files, found by path: see voice_path().
 
 const SFX_VOLUME_DB := -10.0
 const VOICE_VOLUME_DB := 0.0
@@ -34,10 +35,10 @@ const AMB := {
 	#"school":  preload("")
 }
 
-## Voice lines. Put the files in Assets/audio/voice/ and give each a name here,
-## e.g. "kay_wake_3": preload("res://Assets/audio/voice/kay_wake_3.ogg"),
-const VOICE := {
-}
+## Voice lines (made with the TTFUI voice tool):
+## Assets/audio/voice/<Route>/<node id>.mp3, plus <node id>_th.mp3 for Thai.
+## A node's "voice" key names a file directly: "kay_wake_3" -> voice/kay_wake_3.mp3
+const VOICE_DIR := "res://Assets/audio/voice/"
 
 var host : Node # creates the tweens
 var sfx_player : AudioStreamPlayer
@@ -61,7 +62,13 @@ func has_amb(amb_name: String) -> bool:
 	return amb_name == "stop" or AMB.has(amb_name)
 
 func has_voice(voice_name: String) -> bool:
-	return VOICE.has(voice_name)
+	return ResourceLoader.exists(VOICE_DIR + voice_name + ".mp3")
+
+
+## The voice file for a line in a language (it may not exist).
+static func voice_path(entry: Dictionary, route: String, node_id: String, locale: String) -> String:
+	var base : String = entry["voice"] if entry.has("voice") else route + "/" + node_id
+	return VOICE_DIR + base + ("_th" if locale.begins_with("th") else "") + ".mp3"
 
 
 ## Applies a node's "sfx" key: a sound name, or "stop" to fade it out.
@@ -83,15 +90,13 @@ func apply_sfx(entry: Dictionary) -> void:
 
 ## Applies a node's "voice" key. A voice line belongs to its node, so the
 ## previous one is cut off whenever the dialog moves to another line.
-func apply_voice(entry: Dictionary) -> void:
+## Most lines have no voice file; those stay silent without a warning.
+func apply_voice(entry: Dictionary, route: String, node_id: String) -> void:
 	voice_player.stop()
-	if not entry.has("voice"):
+	var path := voice_path(entry, route, node_id, TranslationServer.get_locale())
+	if not ResourceLoader.exists(path):
 		return
-	var voice_name : String = entry["voice"]
-	if not VOICE.has(voice_name):
-		push_warning("Unknown voice: " + voice_name)
-		return
-	voice_player.stream    = VOICE[voice_name]
+	voice_player.stream    = load(path)
 	voice_player.volume_db = VOICE_VOLUME_DB
 	voice_player.play()
 

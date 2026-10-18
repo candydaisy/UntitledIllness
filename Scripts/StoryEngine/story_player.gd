@@ -269,7 +269,7 @@ func process_node(node_name: String) -> void:
 	is_transitioning = false
 
 	audio.apply_sfx(entry)
-	audio.apply_voice(entry)
+	audio.apply_voice(entry, flow_graph_path.get_base_dir().get_file(), node_name)
 	speaker_label.text = entry.get("speaker", "")
 	_line_speed = mode.line_speed(entry)
 	apply_emotion(entry.get("emotion", ""))
