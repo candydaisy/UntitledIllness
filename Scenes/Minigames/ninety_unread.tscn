@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b875wuga4nkhl"]
 
 [ext_resource type="Theme" uid="uid://b3jtan4wuqf1p" path="res://Assets/Themes/ulyn_theme.tres" id="1_tn8y2"]
-[ext_resource type="Script" path="res://Scenes/Minigames/ninety_unread.gd" id="2_unread"]
+[ext_resource type="Script" uid="uid://ctsmk4c4ixdn0" path="res://Scenes/Minigames/ninety_unread.gd" id="2_unread"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qb7vt"]
 bg_color = Color(0, 0, 0, 0.39215687)
@@ -35,6 +35,38 @@ grow_vertical = 2
 theme = ExtResource("1_tn8y2")
 script = ExtResource("2_unread")
 
+[node name="Call" type="Panel" parent="." unique_id=1334642590]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -303.0
+offset_top = -775.0
+offset_right = 276.0
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qb7vt")
+
+[node name="Decline" type="Button" parent="Call" unique_id=360093788]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 144.0
+offset_top = 638.0
+offset_right = -133.0
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8980392, 0.08235294, 0.16470589, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ma5ps")
+text = "Decline"
+
 [node name="Desk" type="Control" parent="." unique_id=1420915904]
 unique_name_in_owner = true
 layout_mode = 1
@@ -67,31 +99,3 @@ offset_top = 164.0
 offset_right = 1283.0
 offset_bottom = 191.0
 text = "90 unread"
-
-[node name="Call" type="Panel" parent="." unique_id=1334642590]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -246.5
-offset_top = -115.77002
-offset_right = 246.49963
-offset_bottom = -31.77002
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_qb7vt")
-
-[node name="Decline" type="Button" parent="Call" unique_id=360093788]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.8980392, 0.08235294, 0.16470589, 1)
-theme_override_styles/normal = SubResource("StyleBoxFlat_ma5ps")
-text = "Decline"

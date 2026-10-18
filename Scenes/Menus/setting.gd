@@ -170,7 +170,7 @@ func _add_screen_reader_option() -> void:
 	var row := HBoxContainer.new()
 	row.name = "ScreenReader"
 	var voice := setting_panel.get_node("Voice-slider") as Control
-	row.position = Vector2(voice.position.x + 11, voice.position.y + voice.size.y + 40)
+	row.position = Vector2(voice.position.x + 11, voice.position.y + voice.size.y + 120)
 	row.add_theme_constant_override("separation", 24)
 	var label := Label.new()
 	label.text = "Screen reader" # auto-translated, so it follows language changes
