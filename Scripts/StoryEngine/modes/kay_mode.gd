@@ -8,9 +8,9 @@ extends StoryMode
 
 const WEIGHT_MODULATE := [
 	Color(1.0,  1.0,  1.0 ), # LOW
-	Color(0.9,  0.9,  0.9 ), # MEDIUM
-	Color(0.75, 0.75, 0.75), # HIGH
-	Color(0.6,  0.6,  0.6 ), # CRITICAL
+	Color(0.75, 0.75, 0.75), # MEDIUM
+	Color(0.52,  0.52, 0.52 ), # HIGH
+	Color(0.32,  0.32, 0.32 ), # CRITICAL
 ]
 
 const WEIGHT_SPEED_MULT := [1.0, 0.9, 0.7, 0.5]

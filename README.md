@@ -18,6 +18,10 @@ There is no winning or losing. Your choices shape how characters respond to thei
 - **Multiple perspectives.** Each route follows a different student and a different way of coping: suppressing feelings, staying busy to avoid them, regret, isolation, or struggling to communicate.
 - **Emotional Weight system.** There's no health bar or morality meter. Instead, an internal *Emotional Weight* tracks how much pressure a character is carrying.
 - **Presentation that reacts to how the character feels.** As pressure builds, colours desaturate, text slows down, choices disappear, and the world gets quieter.
+- **Small minigames inside the story.** Getting out of bed, a slime maze, a phone with ninety unread messages. Short moments you play instead of read.
+- **Relationship web.** See how the characters are connected and how those ties change.
+- **English and Thai.** Switch language at any time in Settings, even mid-scene.
+- **Accessibility.** Screen reader support and full keyboard controls.
 - **Quiet, realistic storytelling.** Classrooms, school entrances, cafeterias, and bedrooms. The struggles happen in ordinary daily life, not in big dramatic events.
 
 ## Emotional Weight
@@ -36,6 +40,10 @@ Supportive interactions can bring some temporary stability. Stressful situations
 ## Characters
 
 **Kay** is the student everyone goes to for advice. He seems calm, reliable, and put-together. Inside, he overthinks constantly and lives with difficult thoughts he never shares. His story is about wanting to be there for others while being afraid that talking about his own problems would make him a burden.
+
+**Elysia** is Kay's girlfriend: friendly, talkative, and the one her friends lean on. As a kid she was teased for loving slime molds, and she decided never to be "weird" again. Her story is about the tiring work of always being acceptable, and wanting to be liked for who she really is.
+
+**Ulyn** is Kay's best friend: loud, funny, and on every committee. He stays busy so he never has to be at home after his parents' separation. Last year he didn't answer when Kay needed him, and he has regretted it ever since. His story is about avoidance and wanting a second chance.
 
 *More routes and characters are in development.*
 
@@ -76,13 +84,22 @@ Mainly high school and university-age players, especially those who enjoy visual
 3. Open Godot, choose **Import**, and select `project.godot`.
 4. Press **F5** to run.
 
+To run the tests (needs `godot` on your `PATH`):
+
+```bash
+Tests/run_all.sh
+```
+
 ## Project structure
 
 ```
 UntitledIllness/
 ├── Story/              # Dialogue and branching, one folder per character
 ├── Scenes/             # Menus, dialogue box, and each character's story scene
+├── Scenes/Minigames/   # Minigames played inside the routes
 ├── Scripts/StoryEngine # Shared code that plays a story
+├── Translations/       # Interface text in English and Thai
+├── Tests/              # Headless Godot tests
 ├── Assets/             # Art, audio, fonts, themes
 └── Docs/               # Project write-ups
 ```

@@ -5,6 +5,23 @@
 [ext_resource type="Texture2D" uid="uid://c5x0n0004ihms" path="res://Assets/Photos/Background/ceiling.jpg" id="3_rku81"]
 [ext_resource type="Script" uid="uid://bmn5ku2meycgq" path="res://Scenes/Minigames/get_up.gd" id="4_getup"]
 
+[sub_resource type="Shader" id="Shader_grey"]
+code = "shader_type canvas_item;
+
+// 0 = full colour, 1 = grey. get_up.gd raises it as the bar fills.
+uniform float amount : hint_range(0.0, 1.0) = 0.0;
+uniform sampler2D screen : hint_screen_texture, filter_linear;
+
+void fragment() {
+	vec3 c = texture(screen, SCREEN_UV).rgb;
+	COLOR = vec4(mix(c, vec3(dot(c, vec3(0.299, 0.587, 0.114))), amount), 1.0);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_grey"]
+shader = SubResource("Shader_grey")
+shader_parameter/amount = 0.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hover"]
 bg_color = Color(0.04, 0.06, 0.25, 0.32)
 border_width_left = 1
@@ -149,3 +166,18 @@ theme_override_colors/font_color = Color(1, 0.1764706, 0.1764706, 1)
 theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_vhrwg")
 text = "Stay in bed"
+
+[node name="Grey" type="ColorRect" parent="." unique_id=1873402291]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_grey")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

@@ -22,6 +22,7 @@ Elysia has two hidden meters instead of Kay's Emotional Weight. The player never
 - **⏱ Timed choices** happen when people are waiting on her. She gets 8 seconds at Mask 0 and 4 seconds at Mask 100. When time runs out, she says the `perform` answer.
 - **Locks:** honest choices lock when Energy is below 20 or Mask is above 85.
 - **✎ Self-edit:** at Mask 60 or higher, a marked line is typed out, deleted, and replaced with the version. Below 60 she just says the real line. The log shows the deleted line crossed out.
+- **Alone with Kay**, no choice is ever timed. Nobody is waiting on her.
 
 **Start:** Mask 60, Energy 60. **Endings:** Mask above 69 → *The Version* · Mask below 50 and Energy above 54 → *Slime Girl* · anything else → *Half a Version*.
 
@@ -400,6 +401,114 @@ The typing dots appear and vanish three times.
 
 ---
 
+On Thursday, tutoring lets out at eight. The tutoring center is one street over from Kay's. She knows that. She has never once let herself think about it on purpose.
+
+Pun has texted her `SHRIMP CRACKERS. EMERGENCY.` four times, so she goes into the 7-Eleven at the end of Kay's street.
+
+He's there.
+
+He's standing in front of the hot food case in a T-shirt, holding one ham and cheese toastie and staring at a second one like it's a hard question on a test.
+
+*Check: nobody from school. Nobody. Just the guy at the counter, watching a drama on his phone.*
+
+"You're buying *one* toastie. For dinner."
+
+He turns around, and for a second his face is completely open. *Surprised. Happy?* Then he looks at her basket.
+
+"Tutoring's on the next street," she says, before he can ask. "Pun wants shrimp crackers. It's an emergency."
+
+"For Pun."
+
+"For Pun."
+
+"All three."
+
+"...Two are for Pun."
+
+"And the third one's an emergency too?"
+
+"It's a *very serious* emergency," she says, and feels her ears go hot.
+
+*He's teasing me.* Kay, who could barely lift his hand at the gate on Monday, is teasing her in a 7-Eleven.
+
+"Like the pad kra pao line," he says. "That was an emergency too?"
+
+**◆ Choice**
+- **A. ★** "That was a *coincidence*." (neutral, Mask 0, Energy 0)
+- **B.** "...Okay, fine. I planned it." (honest, Mask −5, Energy +5, sets `AdmittedLine`)
+
+**▸ A.**
+"That was a *coincidence*."
+
+"It's been a coincidence every Monday for two months."
+
+"*K!*" She hits his arm with her tutoring folder. "I'm putting a yogurt drink in your basket. As a punishment."
+
+**▸ B.**
+"...Okay, fine. I planned it."
+
+"I know."
+
+"You *knew*?"
+
+"Every Monday for two months."
+
+"*K!*" She hits his arm with her tutoring folder. "I'm putting a yogurt drink in your basket. As a punishment."
+
+**◇**
+
+She does. Strawberry.
+
+---
+
+Outside, she looks at his one toastie, and then at him.
+
+"Your mom's working?"
+
+"Night shift."
+
+*One toastie. Nobody home.* She doesn't say anything. She just puts it somewhere, carefully, the way she keeps things she might need later.
+
+"I'll walk you to the stop," Kay says.
+
+*Here.* On a dark street, a hundred meters, where nobody can see.
+
+**◆ Choice**
+- **A.** Ask him: "Why here? But not on Monday?" (honest, Mask −5, Energy 0, sets `AskedWhyHere`)
+- **B. ★** Don't ask. Don't ruin it. (perform, Mask +5, Energy −5)
+
+**▸ A.**
+He goes quiet for a few steps.
+
+"...Here, nobody's looking," he says.
+
+*At what? At me?*
+
+The bus comes before she can ask.
+
+**▸ B.**
+They walk very slowly. She eats one of Pun's shrimp crackers and offers him one, and he takes it. Their hands bump, twice, and the second time neither of them moves away.
+
+At the stop she looks at him a second too long. The question is right there. *Why here, and not Monday?*
+
+She doesn't ask. The bus comes.
+
+**◇**
+
+"Eat your toastie," she says from the steps. "*And* the yogurt."
+
+"Yes, ma'am."
+
+The doors close. Her face is on fire.
+
+She sits by the window and watches him get smaller.
+
+*So he can walk with me. Just not where anyone can see.*
+
+*So it is them. It's them he's hiding me from.*
+
+---
+
 ## Chapter 5 — The Slime Mold
 
 The second week, Ploy plans a mall trip for Wednesday.
@@ -481,6 +590,40 @@ When she finally runs out of words, the sun is lower, and Kay is smiling at her.
 
 "It wasn't," he says.
 
+She's still crouched by the log with her chin on her knees.
+
+"Should I be jealous?" Kay says.
+
+"Of *what*?"
+
+"*Physarum.* You've never looked at me like that."
+
+*He's teasing me about slime.* Nobody teases her about slime. People laugh at her about slime. She waits for those to feel the same. They don't. They aren't even close.
+
+**◆ Choice**
+- **A. ★** "*K!!*" (honest, Mask −5, Energy +10)
+- **B.** Laugh it off: "Haha, it's just slime." (perform, Mask +5, Energy −5)
+
+**▸ A.**
+She shoves his shoulder so hard he nearly sits in the chili bed. Her ears are burning.
+
+"It solved a *maze*. Without a *brain*. What have you ever solved?"
+
+"Bank's slides."
+
+"That's not a maze. That's a hostage situation."
+
+He laughs. Really laughs, loud, with his head back. She has never heard him do that at school. She didn't know he could.
+
+*I made Kay laugh. With slime.*
+
+**▸ B.**
+"Haha, it's just slime."
+
+"...Okay," Kay says, and the laugh goes out of his face. She doesn't know why that feels like losing something.
+
+**◇**
+
 **▸ B.**
 "Haha, anyway—" She stands up and brushes off her knees. "Wow, your chilies are so small! Is that normal?"
 
@@ -507,6 +650,92 @@ He laughs it off. She doesn't laugh.
 *He'll tell me when he's ready.*
 
 *...Will he?*
+
+---
+
+On Friday, Ploy calls until three. On Saturday night Elysia video-calls Kay to do chemistry homework "together," which mostly means pointing her camera at her ceiling and groaning at question four.
+
+At nine she props the phone up and squints at him. He looks pale in the screen light.
+
+"Did you eat?"
+
+"...Define *eat*."
+
+"*Kay.*"
+
+"I had a yogurt drink."
+
+"That's a *drink*. It's in the *name*." She points at the screen like it's him. "Go make eggs. I'm not hanging up until I hear the pan."
+
+"Yes, ma'am."
+
+"Don't *ma'am* me." She smiles into her hoodie sleeve so he won't see how much she likes it. "Go. Pan. Now."
+
+He makes two fried eggs with the phone balanced on the kettle. She supervises. The second one is structurally a tragedy, and she tells him so. He eats it anyway.
+
+Back on question four, she yawns so wide the camera shakes.
+
+"Were you up late again?" Kay asks.
+
+*Check: his face. He's asking. He actually wants to know.*
+
+**◆ Choice**
+- **A. ★** "...A little. Till three. Ploy stuff." (honest, Mask −5, Energy +5)
+- **B.** "Nope! Slept like a baby 😇" (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"...A little. Till three. Ploy stuff." She waves it away. "It's fine."
+
+"You're very bossy about my sleep."
+
+**▸ B.**
+"Nope! Slept like a baby 😇"
+
+He looks at her for a second. "You're very bossy about my sleep for someone who slept like a baby."
+
+**◇**
+
+"That's *different*."
+
+"How?"
+
+"Because it's *you*," she says, like it's obvious. Then she hears herself and pulls her hood all the way over her face.
+
+---
+
+The last thing she remembers is question six. His pencil, scratching. The fridge hum on his end. *I could fall asleep like this every night*, she thinks, and then she does.
+
+In the morning:
+
+`did i fall asleep on u`
+
+`you snore`
+
+`I DO NOT`
+
+`small ones. like a cat`
+
+`DELETE THIS CHAT`
+
+Then she opens her textbook.
+
+`also WHY are 6 and 7 done in my book`
+
+`they're not`
+
+`K.`
+
+`...only 6 and 7`
+
+*He did my homework.* Of course he did. He did it at midnight, while she was asleep, for no reason, like it was nothing.
+
+*Who does his?*
+
+She sends the furious cat sticker, then another one, then a voice message of herself saying "*don't do my homework*" as sternly as she can.
+
+`yes ma'am`
+
+`😤😤😤`
 
 ---
 
@@ -549,6 +778,68 @@ The laughing stops.
 Elysia smiles at Nam, a small one, just for her. Nam stares back, surprised. Then she hooks the frog back onto her bag, right where it was.
 
 **◇**
+
+---
+
+After school she goes to the garden without texting first. It's the one place she doesn't have to do anything.
+
+Kay is holding the hose. He sees her and turns off the screaming tap.
+
+She doesn't crouch by the log. She sits on the edge of the basil bed with her bag still on her shoulder and pulls out a weed, then another one. She can't think of anything to say. That has never happened to her before.
+
+Kay sits down next to her. She can feel him trying to work out what's wrong. Then she watches him decide to make her laugh.
+
+"Careful," he says. "Next you'll be keeping slime in your bag."
+
+Her whole body goes cold.
+
+*A rotten log. A boy's hands. The inside of her bag, slick and yellow. A whole week of laughing.*
+
+*He doesn't know. He can't know. It's a joke about the version of me he likes. It's a* nice *joke.*
+
+**◆ Choice**
+- **A. ★** "Haha. It's fine!" (perform, Mask +5, Energy −10)
+- **B.** "...That one kind of hurt." (honest, Mask −10, Energy 0, sets `ToldKayHurt`)
+
+**▸ A.**
+The laugh comes out by itself. It's the cafeteria one. The bright one.
+
+"Haha. It's fine!"
+
+*Oh no*, she thinks. *I'm doing the version. With Kay.*
+
+Kay looks at her for a long time.
+
+"...Sorry," he says. "That was a dumb joke."
+
+"It was a little dumb." She bumps his shoulder with hers, because she has to do something. "It's not you. Long day."
+
+She stays ten more minutes. She doesn't talk about slime molds. When she leaves, she waves from the path and doesn't look back, because if she looks back he'll see her face.
+
+**▸ B.**
+It comes out small.
+
+Kay's face goes stricken. "Sorry. I didn't— *sorry*."
+
+"You didn't know."
+
+"Know what?"
+
+"...Not today. Okay?"
+
+"Okay," he says. He doesn't push. He turns the tap back on, very low, so there's a sound in the garden that isn't either of them.
+
+*He didn't push.* She sits with that for a long time.
+
+**◇**
+
+On Friday, Kay sends her a picture: tiny green hooks coming up out of the soil. *Water spinach*, he writes.
+
+She replies in four seconds.
+
+`ANY SLIME???`
+
+It's the most normal thing she can think of. It means *we're okay*. It means *I'm okay*. It means *keep sending me things*.
 
 ---
 
@@ -638,11 +929,189 @@ From across the field, she watches him fill cup after cup. He doesn't drink any.
 
 ---
 
+By five the field is empty. Her voice is gone. She finds Kay stacking the last of the paper cups by the water station.
+
+**[If `SportsDayDrink`]**
+The bottle she gave him is on the bench beside him. Empty, with the cap screwed back on, like he's keeping it.
+
+**◇**
+
+She sits on the bottom row of the bleachers with her pom-poms in her lap.
+
+"I yelled," she croaks, "for nine hours."
+
+**[If `ToldPunHide`]**
+He sits down next to her.
+
+She thinks about Pun's empty windowsill. She hasn't told anyone. Not Mint. Not Mom.
+
+**◆ Choice**
+- **A. ★** Tell him about Pun. (honest, Mask −10, Energy +10, sets `ToldKayPun`)
+- **B.** Talk about the cheer routine instead. (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"My little brother got called slime boy this week," she says. "A kid smeared his slime mold all over the inside of his bag. Everyone laughed."
+
+Kay flinches. It's small, but she sees it.
+
+*Why did he flinch?*
+
+"And I told him to keep the slime at home." She picks at a pom-pom. "Just at school. Just for a while. Like that was *advice*. Like it was a *good idea*."
+
+"You were trying to protect him."
+
+"Yeah."
+
+"I do that too," Kay says. "It doesn't always work."
+
+*Protect who? From what?* She doesn't ask. She files it with the toastie and the night shift.
+
+**▸ B.**
+She tells him about the cheer routine, and how Bow dropped a pom-pom in the second half and Ploy pretended not to notice. He nods in the right places.
+
+It isn't the version, exactly. It isn't *not* the version.
+
+**◇**
+
+**◇**
+
+She looks at him sideways. Grey. Grey all day, under the enormous sun. He hasn't said a single thing to make her go red.
+
+**◆ Choice**
+- **A. ★** "You didn't make fun of me once today." (honest, Mask 0, Energy −5, sets `NoticedNoTease`)
+- **B.** Let him be quiet. (neutral, Mask 0, Energy 0)
+
+**▸ A.**
+"You didn't make fun of me once today."
+
+"I was busy."
+
+"Usually you'd have called me *ma'am* by now. Like four times. Today, zero." Her voice cracks, mostly from the yelling. "That's how I know something's wrong."
+
+"It's just the sun."
+
+*It isn't the sun.*
+
+"Okay," she says.
+
+She slides her hand into his on the bleacher between them, where nobody would see even if anyone were there.
+
+**▸ B.**
+She doesn't say it. He's quiet, and she lets him be quiet.
+
+*He isn't teasing me. He's grey again. I don't know which one scares me more.*
+
+She slides her hand into his on the bleacher between them anyway.
+
+**◇**
+
+They sit until the sprinklers come on.
+
+"Tease me about something," she says. "Anything. I need it."
+
+He takes much too long to think of something.
+
+"...Your voice sounds like a duck."
+
+"*Thank* you," she quacks, and leans on him, and laughs until she coughs.
+
+---
+
 ## Chapter 9 — Midterms
 
 The fifth week is midterms. Ploy and her boyfriend break up on Monday.
 
 Ploy calls on Monday night, Tuesday night, and Wednesday night. Elysia answers every time and listens until two, three, four. She studies chemistry in the gaps, when Ploy is crying too hard to talk.
+
+---
+
+On Wednesday, between exams, she drags Kay to the back table of the library.
+
+"Phone." She holds out her hand. "It goes in my bag until we finish the chemistry."
+
+"Yes, ma'am."
+
+"*Stop* that." She made flashcards at 4 a.m., forty of them, color-coded, with tiny slime molds drawn in the corners of the hard ones. She quizzes him. He gets the first eleven right.
+
+"Ugh. You're *annoyingly* right."
+
+"You made the cards."
+
+"I made them *hard*."
+
+Somewhere around card twenty, his answers get slower. Then they stop.
+
+His head lands on her shoulder.
+
+*Oh.*
+
+She doesn't move. She holds the same flashcard for so long that she memorizes it. *Avogadro's number. Six point zero two times ten to the twenty-third.*
+
+Her phone buzzes on the table. **Ploy.** She turns it face down and lets it buzz.
+
+Asleep, he looks younger. He looks like someone who isn't carrying anything, for once. By minute fifteen her arm has gone numb. She doesn't move it.
+
+Forty minutes.
+
+---
+
+He jerks awake so fast the chair squeaks.
+
+"Sorry. *Sorry.* Your arm—"
+
+"My arm is dead," Elysia says calmly. "It's fine. I've accepted it." She shakes it out and winces. "Also, you drool."
+
+"I do *not*."
+
+"Little bit. Like a dog."
+
+"...Not like a cat?"
+
+"Cats are dignified." She is extremely pleased with herself. "Now we're even."
+
+He laughs. Then he looks at her, properly, and the laugh goes somewhere.
+
+"You look tired," he says.
+
+"I'm always tired."
+
+*Oh*, she thinks a second later. *That's his line. From the garden gate.*
+
+"...That's what worries me," Kay says.
+
+Neither of them laughs.
+
+**◆ Choice**
+- **A. ★** "K. Are you okay? Actually?" (honest, Mask −5, Energy +5, sets `AskedKayOkay`)
+- **B.** Don't ask. Not today. (neutral, Mask 0, Energy 0)
+
+**▸ A.**
+She puts the flashcard down.
+
+"K. Are you okay? Actually?"
+
+"It's fine. Just midterms."
+
+*That's what I'd say.*
+
+She looks at him like she's going to argue. She has the whole argument ready. Then she looks at the grey under his eyes and doesn't.
+
+"Okay. Then sleep tonight. That's an order."
+
+"Yes, ma'am."
+
+She doesn't sleep either. Ploy calls at 11:50.
+
+**▸ B.**
+She doesn't ask. She picks the next flashcard up instead.
+
+At the gate she says, "Sleep tonight. That's an order."
+
+"Yes, ma'am."
+
+**◇**
+
+---
 
 On Thursday her history score is twelve points lower than usual.
 
@@ -932,6 +1401,84 @@ He is. They sit until the milk tea is warm. Neither of them says anything else r
 
 ---
 
+**[If `DroppedVersion`]**
+Afterward, neither of them wants to go home yet.
+
+**[If `KeptGoing`]** (the museum)
+They stay in the back room for another hour. She reads him every label out loud in the slime girl voice, the fast one, and she doesn't check his face once. She gets to *Physarum* and goes soft around the mouth.
+
+"You talk about it like it's your ex," Kay says.
+
+"It's not my *ex*. It's my *friend*."
+
+"It's your lock screen."
+
+"...It's a very good photo." She hits his arm. Her ears are on fire. She's grinning so hard it hurts. "You're back, huh."
+
+"What?"
+
+"The teasing. You stopped. I noticed." She means to say it lightly. It doesn't come out lightly. "I missed it."
+
+**◇**
+
+On the way back, there's a cart selling mango sticky rice. They share one box. She gives him all the crunchy mung beans and tells him she's "not a bean person." It's a lie. She just likes watching him eat something.
+
+The wind off the river is cold. She shivers and pretends she isn't.
+
+Kay takes off his hoodie and holds it out.
+
+**◆ Choice**
+- **A. ★** "I'm not cold." Put it on anyway. (honest, Mask −5, Energy +5, sets `StoleHoodie`)
+- **B.** "I'm fine! Really!" (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"I'm not cold," she says, already putting it on. The sleeves go past her hands. She pulls them over her fingers and looks at him from inside the hood, daring him to say something.
+
+"It looks better on you," Kay says. "Don't tell anyone I said that."
+
+"I'm *keeping* it."
+
+"I know."
+
+**▸ B.**
+"I'm fine! Really!"
+
+He puts it around her shoulders anyway, without saying anything, and goes back to the sticky rice. She leaves it there. It smells like his laundry soap.
+
+**◇**
+
+"I didn't think I'd laugh this week," Kay says.
+
+**◆ Choice**
+- **A. ★** Tell him you know the word *couldn't*. (honest, Mask −5, Energy +5, sets `KnowsCouldnt`)
+- **B.** "Me neither!" Keep it light. (neutral, Mask 0, Energy 0)
+
+**▸ A.**
+"Me neither." She pulls the sleeves down over her hands.
+
+"When you texted *couldn't* on Thursday... I know that word. Not like you, maybe. But some mornings I know it."
+
+She has never said that to anyone. Not to Mint. Not to Mom. Not to herself, in words.
+
+He looks at her. She doesn't look away.
+
+**▸ B.**
+"Me neither!"
+
+It's true. It's just not all of it. He looks at her for a moment like he heard the rest anyway.
+
+**◇**
+
+"You don't have to be fine with me either," he says. "That's the deal. Both ways."
+
+She hooks her pinky around his, inside the sleeve, where nobody can see.
+
+"Both ways," she says.
+
+**◇**
+
+---
+
 ## Chapter 12 — Monday, the Gate
 
 Monday. Elysia is at the gate with Ploy, Jane, Bow, and Mint, who has drifted over from her own class for reasons she won't explain.
@@ -1022,6 +1569,57 @@ Elysia smiles, relieved. *Too much. I was too much.* She puts the feeling back i
 
 **◇**
 
+**[If `SaidItOutLoud`]**
+After the last bell, Kay is waiting at the gate. Not by the side of it. Right in the middle, where anyone can see.
+
+"Walk home with me?" he says.
+
+*The sentence.* The one from the first day, the other way round. He says it like it's normal.
+
+Behind her, Ploy and Jane make a noise like a kettle. Elysia waves them off without turning around.
+
+"In front of people?"
+
+"In front of everyone."
+
+They walk past the 7-Eleven, the bus stop, and the corner. It's the same way she walked alone on the first day, smiling a hundred beats too long.
+
+"*Yes*," Kay says, in a high bright voice that sounds nothing like her, "*he's my boyfriend, we all know, moving on.*"
+
+"*Stop.*"
+
+"Very smooth. Very calm. Your ears were on fire, though."
+
+**◆ Choice**
+- **A. ★** "My ears are on *my* side. I regret *nothing*." (honest, Mask −5, Energy +5)
+- **B.** "...Was it too much?" (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"My ears are on *my* side," she says. "I regret *nothing*."
+
+"Your ears regret it."
+
+She shoves him into a hedge. He lets her. She pulls him out again by the sleeve and keeps holding it for the rest of the street.
+
+**▸ B.**
+"...Was it too much?"
+
+Kay stops walking.
+
+"No," he says. "It was the best thing anyone's done for me in a long time."
+
+She doesn't know what to say to that. So she holds his sleeve for the rest of the street.
+
+**◇**
+
+At her corner she says, "Same time tomorrow?"
+
+"Same time tomorrow."
+
+He doesn't check anyone's face when he says it. Neither does she.
+
+**◇**
+
 ---
 
 ## Chapter 13 — 1 A.M.
@@ -1050,6 +1648,85 @@ Click.
 Ploy is cold to her for two days. She sits with Jane on Tuesday. She doesn't laugh at Elysia's jokes on Wednesday.
 
 *Check: Ploy. Cold. Check: Jane. Awkward. Check: Bow. Doesn't know which side to be on.*
+
+**[If `DroppedVersion`]**
+On Tuesday after school she goes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap.
+
+Kay turns off the tap and sits next to her.
+
+**◆ Choice**
+- **A. ★** Tell him you're scared. (honest, Mask −5, Energy +5)
+- **B.** "It's fine! She'll get over it!" (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"I said no to Ploy," she says. "Sunday night. She called at one, and I said *I love you, but I can't do one a.m. calls anymore.*"
+
+"That's good."
+
+"She hasn't talked to me since. She sat with Jane today. She looked right through me." She presses the heels of her hands into her eyes. "What if that was it? What if three years is just over because I wanted to *sleep*?"
+
+"Can I tell you something?" Kay says.
+
+**▸ B.**
+"Ploy's being weird because I said no to a 1 a.m. call," she says. "It's fine! She'll get over it!"
+
+Kay looks at her for a long moment, the way he looks at the soil before he decides whether to water it.
+
+"Okay," he says. "Can I tell you something anyway?"
+
+**◇**
+
+"On Thursdays I go to the guidance room. Ms. Noi makes tea and I mostly don't talk."
+
+Elysia looks up.
+
+*He's telling me something. On purpose.*
+
+"Last week I said one thing out loud I'd never said to anyone. I thought something would break." He pushes his finger into the soil, finds it damp, and leaves it. "Nothing broke."
+
+"...Nothing?"
+
+"Bank still has my pen. But that's separate."
+
+She laughs, wet and surprised.
+
+Then Kay takes a breath.
+
+"In the third week, I made a joke about you keeping slime in your bag."
+
+She goes very still.
+
+**[If `ToldKayHurt`]**
+"You told me it hurt, and I didn't ask why. I didn't know about third grade. But I'm sorry."
+
+**[Otherwise]**
+"You said it was fine. I should have known it wasn't. I say that too." He looks at the water spinach. "I didn't know about third grade. But I'm sorry."
+
+**◇**
+
+For a long moment she can't say anything.
+
+"...You remembered that?"
+
+"I've thought about it a lot."
+
+"Of course you have," she says, very softly, and leans into his shoulder. "Thank you."
+
+He waits until she's stopped sniffing before he risks it.
+
+"Ploy'll come back. You're very bossy. She's probably scared of you."
+
+"I am *not* bossy."
+
+"You made me cook eggs on a video call."
+
+"That was *care*!"
+
+"Yes, ma'am."
+
+She hits him with her phone. It's still face down. She hasn't turned it over once, and she can tell he's noticed.
+
+**◇**
 
 On Thursday, Ploy sits down across from her at lunch and stabs her rice.
 
@@ -1164,6 +1841,127 @@ Pun nods and turns the pages. "You were so good at it," he says, and she doesn't
 
 ---
 
+**[If `DroppedVersion`]**
+On Friday, Mom invites Kay to dinner. Elysia tells him in a text that is mostly the word *sorry* in different fonts.
+
+He comes at six with a bag of oranges, because of course he does. Mom decides he's too thin within five minutes. Pun sits directly across from him and stares at him over his rice like he's a specimen.
+
+*Check: Mom, delighted. Pun, suspicious. Kay, terrified. Okay.*
+
+"Are you Elysia's boyfriend?"
+
+"Yes."
+
+"Do you like slime molds?"
+
+Elysia shakes her head at Kay very slightly. *Don't encourage him.*
+
+"I'm learning," Kay says.
+
+Pun narrows his eyes. "What's the best one?"
+
+"...The yellow one. *Physarum*. It's your sister's favorite."
+
+*He remembered.* Of course he remembered.
+
+Pun considers this for a long time. Then he nods, once, like a judge.
+
+"Elysia had a funeral for one," he announces. "When she was eight. It dried out and she had a *funeral*."
+
+"*Pun.*"
+
+"Mom told me. She *sang*."
+
+"I was *EIGHT*."
+
+"What did she sing?" Kay asks.
+
+**◆ Choice**
+- **A. ★** Let Pun answer. (honest, Mask −5, Energy +5)
+- **B.** "Pun. Eat your rice." (perform, Mask +5, Energy −5)
+
+**▸ A.**
+"The birthday song," Pun says. "But *sad*."
+
+Elysia puts her face in both hands.
+
+"Was it a nice funeral?" Kay asks her, very seriously.
+
+From behind her hands, muffled: "...It was a *very* nice funeral."
+
+Mom laughs so hard she has to put the ladle down.
+
+**▸ B.**
+"Pun. Eat your rice."
+
+Pun eats his rice. Under the table, Kay bumps her foot with his. Once. The way she did at lunch, on the first day.
+
+*He's giving it back.*
+
+**◇**
+
+After dinner, Pun brings out her old notebook and lays it in front of Kay like evidence.
+
+"Elysia made it," Pun says. "When she was slime girl. Now it's mine."
+
+Kay turns the pages slowly. Elysia watches his face the whole time.
+
+*Check: his face. Check: his face. Check—*
+
+Somewhere around page six, she stops.
+
+"These are really good," Kay says, and he means it. She can hear that he means it.
+
+---
+
+At the door, Mom presses a container of leftovers into his hands.
+
+"Come again, Kay. She never brings anyone home." Mom squeezes Elysia's shoulder. "This one never asks for anything. She's my easy one."
+
+Kay's face does something. It's quick. Elysia almost misses it.
+
+"She's not the easy one," Kay says. "She just makes it look easy."
+
+Mom blinks. She looks at Elysia, who has gone completely still. Then she looks back at Kay for a long moment, like she's seeing something she walked past for years.
+
+"...Yes," she says quietly. "I suppose she does."
+
+*Why does he say it like he knows?*
+
+She doesn't ask. She walks him to the corner without saying anything, and at the corner she hugs him, hard and fast, and runs back before he can see her face.
+
+---
+
+Mom is still in the kitchen, drying the same bowl.
+
+"Is that true?" Mom asks. "What he said?"
+
+**◆ Choice**
+- **A. ★** "...Yeah. A little. A lot." (honest, Mask −10, Energy +10, sets `NotEasyOne`)
+- **B.** "He's just being nice!" (perform, Mask +5, Energy −5)
+
+**▸ A.**
+Mom puts the bowl down.
+
+"Okay," she says. "Then you can ask for things. You hear me? Even small things. *Especially* small things."
+
+"...Can I have the last of the leftovers?"
+
+"I gave them to Kay."
+
+"*Mom.*"
+
+They both laugh. Then Mom hugs her, which she hasn't done in the kitchen since Elysia was little.
+
+**▸ B.**
+"He's just being nice!"
+
+Mom nods slowly and goes back to drying the bowl. She dries it for a long time.
+
+**◇**
+
+---
+
 ## Chapter 15 — The Last Day
 
 Friday, the last day of the semester.
@@ -1190,6 +1988,21 @@ Elysia doesn't look over her shoulder. She doesn't check anyone's face.
 She realizes, a second later, that she didn't check. She realizes it the way you notice a headache is gone.
 
 "He's perfect," Kay agrees.
+
+"Pun named him Kay," Elysia says.
+
+"...Should I be flattered?"
+
+"He's yellow, he's foamy, and he solves mazes."
+
+"So, yes."
+
+She sticks her tongue out at him, in front of everyone, and doesn't check a single face.
+
+**[If `StoleHoodie`]**
+She's wearing his hoodie. She has been since that Saturday. He's stopped asking for it back.
+
+**◇**
 
 **▸ B.**
 She waits until Kay is next to her, then tilts her phone so only he can see.
@@ -1259,6 +2072,12 @@ She walks him straight past the dinosaurs to the dim room at the back. Pun press
 **[If `DroppedVersion`]**
 Kay is there too, a few steps behind, looking at the cases the way she looks at them. Pun has already decided Kay is his best friend, mostly because of the slime mold's name.
 
+Kay stops at a case near the end and reads the label out loud. "*Fuligo septica.* Dog vomit slime mold."
+
+"That's *KAY*," Pun shouts.
+
+"I've been told," Kay says, and catches Elysia's eye over Pun's head, and she has to turn around and laugh at the wall.
+
 **[If `SetBoundary`]**
 Her phone buzzes in her pocket. Ploy: `send me a pic of the slime. i want to see what the big deal is`
 
@@ -1310,6 +2129,14 @@ She opens her chat with Kay.
 
 He does know. She can tell. That's the thing about Kay.
 
+`also. "kind of"`
+
+`SHUT UP 😤`
+
+`proud of u. kind of`
+
+She laughs into her pillow so Pun won't hear.
+
 **— Ending B: Half a Version —**
 
 ---
@@ -1321,6 +2148,8 @@ The semester ends, and everyone says Elysia is "so easy to be around." Ploy says
 That night, Ploy calls at 1:04 a.m. Elysia answers. She listens until three.
 
 When it's over, she lies in the dark and looks at the ceiling. Somewhere in the house, Pun is asleep next to an empty windowsill.
+
+Kay used to tease her. She can't remember when he stopped. She can't remember if she stopped first.
 
 **[If `DroppedVersion`]**
 Her phone buzzes. Kay.

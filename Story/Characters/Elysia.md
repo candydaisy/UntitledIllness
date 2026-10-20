@@ -25,4 +25,4 @@ She wants to relax and be herself without overthinking how others will judge her
 
 **Mint**, her best friend of eleven years, who knew her as the slime girl and stayed.
 
-**Kay**, her boyfriend, the only other person she doesn't perform the version for. That's why it hurts when Kay keeps his distance at school. To her, it feels like he's agreeing with everyone who ever called her weird.
+**Kay**, her boyfriend, the only other person she doesn't perform the version for. When it's just them, he teases her, and she goes red, hits his arm, says "K!!", and gets him back. Being teased about slime by someone who likes it is nothing like being laughed at for it. That's why it hurts when Kay keeps his distance at school. To her, it feels like he's agreeing with everyone who ever called her weird.

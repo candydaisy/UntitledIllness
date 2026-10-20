@@ -13,11 +13,15 @@ const SINK := 0.2 # per second while not holding, at Weight 0
 const SINK_WEIGHT := 0.004
 const TAP := 0.03 # each press gives a small push, so tapping works too
 const STRAIN_SHAKE := 6.0 # pixels the bar shakes when it can't go higher
+const SLOWDOWN := 2.0 # rise speed is multiplied by e^(-SLOWDOWN * progress), so the top of the bar crawls
+const CURVE := 3.0 # how sharply the grey and the screen shake ramp up near the top
+const SCREEN_SHAKE := 9.0 # pixels the whole screen shakes at a full bar (Grey overhangs by 40)
 
 @onready var progress : Range = %Progress
 @onready var alarm : Label = %Alarm
 @onready var prompt : Label = %Prompt
 @onready var skip : Button = %Skip
+@onready var grey : ColorRect = %Grey
 
 var _seconds := 12.0 # until the alarm gives up
 var _max_progress := 1.0
@@ -31,6 +35,7 @@ var _tried := false # pressed at least once
 var _done := false
 var _straining := false # at max_progress and still holding: the bar shakes
 var _bar_pos := Vector2.ZERO # where the bar sits when it isn't shaking
+var _home := Vector2.ZERO # where the screen sits when it isn't shaking
 
 
 ## Called by StoryPlayer before the game shows. time_mult stretches the
@@ -45,6 +50,7 @@ func start(settings: Dictionary, meters: Dictionary, time_mult := 1.0) -> void:
 
 func _ready() -> void:
 	_time_left = _seconds
+	_home = position
 	progress.min_value = 0.0
 	progress.max_value = 1.0
 	progress.step = 0.0
@@ -84,7 +90,7 @@ func _process(delta: float) -> void:
 		return
 	if _holding:
 		_idle = 0.0
-		progress.value = minf(progress.value + maxf(RISE - RISE_WEIGHT * _weight, 0.05) * delta, _max_progress)
+		progress.value = minf(progress.value + maxf(RISE - RISE_WEIGHT * _weight, 0.05) * exp(-SLOWDOWN * progress.value) * delta, _max_progress)
 	else:
 		progress.value -= (SINK + SINK_WEIGHT * _weight) * delta
 		if _tried:
@@ -97,6 +103,9 @@ func _process(delta: float) -> void:
 	_straining = straining
 	if straining:
 		progress.position = _bar_pos + Vector2(randf_range(-1, 1), randf_range(-1, 1)) * STRAIN_SHAKE
+	var ramp := (exp(CURVE * progress.value) - 1.0) / (exp(CURVE) - 1.0) # 0 at empty, 1 at full, mostly near the top
+	grey.material.set_shader_parameter("amount", ramp)
+	position = _home + Vector2(randf_range(-1, 1), randf_range(-1, 1)) * SCREEN_SHAKE * ramp
 	alarm.visible = fmod(_time_left, 1.0) > 0.4 # blinks once a second
 
 	_time_left -= delta
@@ -112,6 +121,7 @@ func _finish(result: String) -> void:
 	if _done:
 		return
 	_done = true
+	position = _home
 	finished.emit(result)
 
 

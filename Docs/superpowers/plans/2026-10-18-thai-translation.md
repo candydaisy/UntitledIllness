@@ -99,9 +99,9 @@
 
 - [ ] **Step 1: Write the failing test.**
   - Load `Kay.tscn` at a node with choices. Wait until the choices show, then switch to `th`. Assert:
-    - the visible choice buttons show the Thai text from the fixture
-    - `current_node` and the meters are unchanged
-    - the choice timer (if any) wasn't reset
+	- the visible choice buttons show the Thai text from the fixture
+	- `current_node` and the meters are unchanged
+	- the choice timer (if any) wasn't reset
     - the log has no duplicate line
   - Repeat with a `call` node (Ulyn `seven_1`) and check the phone buttons.
   - Load a save made in English while `th` is selected: the current line is Thai, and older log lines stay as they were.

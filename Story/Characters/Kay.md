@@ -7,6 +7,8 @@
 
 Kay seems calm, reliable, and steady. Classmates come to him for advice and help because he looks like someone who has everything together. He's the group leader by default, the one who knows every date, and the one who finishes everybody's slides at 2:30 in the morning.
 
+Alone with Elysia, he's someone else: he teases her. He goes after her slime-nerd side, her ears going red, and her bossiness ("yes, ma'am"). It's the most himself he ever is. As things get heavier, the teasing is the first thing to go, and Elysia notices before anyone.
+
 Inside, he is constantly overthinking, and that overthinking slowly turns into depressive thoughts. He keeps them hidden so he won't become a burden to anyone.
 
 ## Core Struggle

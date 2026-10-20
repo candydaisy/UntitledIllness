@@ -34,7 +34,6 @@
 		"speaker": "",
 		"text": "*He reaches for the phone beside his pillow. One unread message in the group chat.*",
 		"next": "wake_6",
-		"background": "PhoneCheck",
 		"hide_characters": ["Kay"]
 	},
 
@@ -68,7 +67,6 @@
 		"speaker": "",
 		"text": "*He sits up. The bed creaks.*",
 		"next": "wake_11",
-		"background": "Kay's room1",
 		"show_characters": ["Kay"],
 		"sfx": "Bednoises"
 	},
@@ -2524,7 +2522,7 @@
 	"tnight_3": {
 		"speaker": "Kay",
 		"text": "At least I know how to do this. It's the one thing I always know how to do.",
-		"next": "garden_1"
+		"next": "shop_1"
 	},
 
 	"tnight_split_1": {
@@ -2536,6 +2534,271 @@
 	"tnight_split_2": {
 		"speaker": "",
 		"text": "*He keeps turning it over, looking for the catch.*",
+		"next": "shop_1"
+	},
+
+	"shop_1": {
+		"speaker": "",
+		"text": "*Thursday night. Mom is on a night shift, and the fridge still has nothing in it but the sticky note.*",
+		"next": "shop_2"
+	},
+
+	"shop_2": {
+		"speaker": "",
+		"text": "*8:15. Kay stands in the 7-Eleven at the end of his street, holding one ham and cheese toastie and wondering if a second one would be greedy.*",
+		"next": "shop_3"
+	},
+
+	"shop_3": {
+		"speaker": "Elysia",
+		"text": "\"You're buying one toastie. For dinner.\"",
+		"next": "shop_4"
+	},
+
+	"shop_4": {
+		"speaker": "",
+		"text": "*He turns around. Elysia, still in her uniform, a tutoring folder under her arm and a basket in her hand. Nobody from school anywhere. Just her, the fridge hum, and the guy at the counter watching a drama on his phone.*",
+		"next": "shop_5"
+	},
+
+	"shop_5": {
+		"speaker": "Elysia",
+		"text": "\"Tutoring's on the next street. Pun wants shrimp crackers. It's an emergency.\"",
+		"next": "shop_6"
+	},
+
+	"shop_6": {
+		"speaker": "",
+		"text": "*Kay looks into her basket. Three bags of shrimp crackers.*",
+		"next": "shop_7"
+	},
+
+	"shop_7": {
+		"speaker": "Kay",
+		"text": "\"For Pun.\"",
+		"next": "shop_8"
+	},
+
+	"shop_8": {
+		"speaker": "Elysia",
+		"text": "\"For Pun.\"",
+		"next": "shop_9"
+	},
+
+	"shop_9": {
+		"speaker": "Kay",
+		"text": "\"All three.\"",
+		"next": "shop_10"
+	},
+
+	"shop_10": {
+		"speaker": "Elysia",
+		"text": "\"...Two are for Pun.\"",
+		"choices": [
+			{"text": "\"And the third one's an emergency too?\"", "type": "neutral", "weight_change": 0, "next": "shop_tease_1"},
+			{"text": "\"Nice. I'll get going, then.\"", "type": "neutral", "weight_change": 5, "next": "shop_go_1"}
+		]
+	},
+
+	"shop_tease_1": {
+		"speaker": "Elysia",
+		"text": "\"It's a very serious emergency.\"",
+		"next": "shop_tease_2"
+	},
+
+	"shop_tease_2": {
+		"speaker": "",
+		"text": "*She goes red from the ears in.*",
+		"next": "shop_tease_3"
+	},
+
+	"shop_tease_3": {
+		"speaker": "Kay",
+		"text": "Huh. Her ears do that.",
+		"next": "shop_yog_1",
+		"secret": {"condition": "flag_true", "flag": "MetElysia", "next": "shop_line_1"}
+	},
+
+	"shop_line_1": {
+		"speaker": "Kay",
+		"text": "\"Like the pad kra pao line. That was an emergency too?\"",
+		"next": "shop_line_2"
+	},
+
+	"shop_line_2": {
+		"speaker": "Elysia",
+		"text": "\"That was a coincidence.\"",
+		"next": "shop_line_3"
+	},
+
+	"shop_line_3": {
+		"speaker": "Kay",
+		"text": "\"It's been a coincidence every Monday for two months.\"",
+		"next": "shop_line_4"
+	},
+
+	"shop_line_4": {
+		"speaker": "Elysia",
+		"text": "\"K!\"",
+		"next": "shop_line_5"
+	},
+
+	"shop_line_5": {
+		"speaker": "",
+		"text": "*She hits his arm with the folder. It doesn't hurt at all.*",
+		"next": "shop_line_6"
+	},
+
+	"shop_line_6": {
+		"speaker": "Elysia",
+		"text": "\"I'm putting a yogurt drink in your basket. As a punishment.\"",
+		"next": "shop_line_7"
+	},
+
+	"shop_yog_1": {
+		"speaker": "Elysia",
+		"text": "\"I'm putting a yogurt drink in your basket. Calcium. You look like you need it.\"",
+		"next": "shop_line_7"
+	},
+
+	"shop_line_7": {
+		"speaker": "",
+		"text": "*She does. It's strawberry.*",
+		"next": "shop_out_1"
+	},
+
+	"shop_go_1": {
+		"speaker": "Elysia",
+		"text": "\"Okay! See you tomorrow.\"",
+		"next": "shop_go_2"
+	},
+
+	"shop_go_2": {
+		"speaker": "",
+		"text": "*On her way to the counter she puts a yogurt drink in his hand anyway, without saying anything about it.*",
+		"next": "shop_out_1"
+	},
+
+	"shop_out_1": {
+		"speaker": "",
+		"text": "*Outside, the street is dark except for the 7-Eleven and the bus stop. She looks at his one toastie, then at him.*",
+		"next": "shop_out_2"
+	},
+
+	"shop_out_2": {
+		"speaker": "Elysia",
+		"text": "\"Your mom's working?\"",
+		"next": "shop_out_3"
+	},
+
+	"shop_out_3": {
+		"speaker": "Kay",
+		"text": "\"Night shift.\"",
+		"next": "shop_out_4"
+	},
+
+	"shop_out_4": {
+		"speaker": "",
+		"text": "*She doesn't say anything about it. She just nods, slowly, like she's putting it somewhere.*",
+		"next": "shop_out_5"
+	},
+
+	"shop_out_5": {
+		"speaker": "",
+		"text": "*Her bus stop is a hundred meters away, at the corner. Nobody on the street. Nobody to look at them like that.*",
+		"choices": [
+			{"text": "\"I'll walk you to the stop.\"", "type": "honest", "weight_change": -5, "next": "shop_walk_1", "set_flag": "WalkedCorner"},
+			{"text": "\"Text me when you're home.\"", "type": "neutral", "weight_change": 0, "next": "shop_text_1"}
+		]
+	},
+
+	"shop_walk_1": {
+		"speaker": "",
+		"text": "*They walk the hundred meters very slowly. She eats one of Pun's shrimp crackers and offers him one. Their hands bump, twice. The second time, neither of them moves away.*",
+		"next": "shop_walk_2"
+	},
+
+	"shop_walk_2": {
+		"speaker": "",
+		"text": "*At the stop she looks at him a second too long, like she's about to ask something. She doesn't. The bus comes.*",
+		"next": "shop_walk_3"
+	},
+
+	"shop_walk_3": {
+		"speaker": "Elysia",
+		"text": "\"Eat your toastie. And the yogurt.\"",
+		"next": "shop_walk_4"
+	},
+
+	"shop_walk_4": {
+		"speaker": "Kay",
+		"text": "\"Yes, ma'am.\"",
+		"next": "shop_walk_5"
+	},
+
+	"shop_walk_5": {
+		"speaker": "",
+		"text": "*The doors close on her face, which has gone red again.*",
+		"next": "shop_walk_6"
+	},
+
+	"shop_walk_6": {
+		"speaker": "Kay",
+		"text": "I could walk her here. Just not anywhere people can see.",
+		"next": "shop_walk_7"
+	},
+
+	"shop_walk_7": {
+		"speaker": "",
+		"text": "*He doesn't let himself think about why that sounds bad.*",
+		"next": "garden_1"
+	},
+
+	"shop_text_1": {
+		"speaker": "",
+		"text": "*Eleven minutes later:*",
+		"next": "shop_text_2"
+	},
+
+	"shop_text_2": {
+		"speaker": "Elysia",
+		"text": "home!! 🏠",
+		"next": "shop_text_3"
+	},
+
+	"shop_text_3": {
+		"speaker": "Elysia",
+		"text": "did u eat the toastie",
+		"next": "shop_text_4"
+	},
+
+	"shop_text_4": {
+		"speaker": "Kay",
+		"text": "yes",
+		"next": "shop_text_5"
+	},
+
+	"shop_text_5": {
+		"speaker": "Elysia",
+		"text": "and the yogurt",
+		"next": "shop_text_6"
+	},
+
+	"shop_text_6": {
+		"speaker": "Kay",
+		"text": "...yes",
+		"next": "shop_text_7"
+	},
+
+	"shop_text_7": {
+		"speaker": "Elysia",
+		"text": "good 😤",
+		"next": "shop_text_8"
+	},
+
+	"shop_text_8": {
+		"speaker": "",
+		"text": "*He stares at the screen until it goes dark.*",
 		"next": "garden_1"
 	},
 
@@ -2767,6 +3030,66 @@
 	"bug_care_5": {
 		"speaker": "Kay",
 		"text": "I want to be someone she never has to check around.",
+		"next": "bug_tease_1"
+	},
+
+	"bug_tease_1": {
+		"speaker": "",
+		"text": "*When she finally runs out of words, she's still crouched by the log with her chin on her knees, looking at the slime mold like it's a puppy.*",
+		"next": "bug_tease_2"
+	},
+
+	"bug_tease_2": {
+		"speaker": "Kay",
+		"text": "\"Should I be jealous?\"",
+		"next": "bug_tease_3"
+	},
+
+	"bug_tease_3": {
+		"speaker": "Elysia",
+		"text": "\"Of what?\"",
+		"next": "bug_tease_4"
+	},
+
+	"bug_tease_4": {
+		"speaker": "Kay",
+		"text": "\"Physarum. You've never looked at me like that.\"",
+		"next": "bug_tease_5"
+	},
+
+	"bug_tease_5": {
+		"speaker": "Elysia",
+		"text": "\"K!!\"",
+		"next": "bug_tease_6"
+	},
+
+	"bug_tease_6": {
+		"speaker": "",
+		"text": "*She shoves his shoulder so hard he nearly sits in the chili bed. Her ears have gone red again.*",
+		"next": "bug_tease_7"
+	},
+
+	"bug_tease_7": {
+		"speaker": "Elysia",
+		"text": "\"It solved a maze. Without a brain. What have you ever solved?\"",
+		"next": "bug_tease_8"
+	},
+
+	"bug_tease_8": {
+		"speaker": "Kay",
+		"text": "\"Bank's slides.\"",
+		"next": "bug_tease_9"
+	},
+
+	"bug_tease_9": {
+		"speaker": "Elysia",
+		"text": "\"That's not a maze. That's a hostage situation.\"",
+		"next": "bug_tease_10"
+	},
+
+	"bug_tease_10": {
+		"speaker": "",
+		"text": "*He laughs, really laughs. She looks so pleased with herself that he decides not to mention her ears.*",
 		"next": "bug_gate_1"
 	},
 
@@ -2898,6 +3221,411 @@
 	"mint_11": {
 		"speaker": "",
 		"text": "*She walks away before he can answer.*",
+		"next": "vcall_1"
+	},
+
+	"vcall_1": {
+		"speaker": "",
+		"text": "*Saturday night. Elysia video-calls him to do chemistry homework \"together.\" Mostly it means her camera points at her ceiling while she groans at question four.*",
+		"next": "vcall_2"
+	},
+
+	"vcall_2": {
+		"speaker": "",
+		"text": "*At nine she props the phone up and squints at him.*",
+		"next": "vcall_3"
+	},
+
+	"vcall_3": {
+		"speaker": "Elysia",
+		"text": "\"Did you eat?\"",
+		"next": "vcall_4"
+	},
+
+	"vcall_4": {
+		"speaker": "Kay",
+		"text": "\"...Define eat.\"",
+		"next": "vcall_5"
+	},
+
+	"vcall_5": {
+		"speaker": "Elysia",
+		"text": "\"Kay.\"",
+		"next": "vcall_6"
+	},
+
+	"vcall_6": {
+		"speaker": "Kay",
+		"text": "\"I had a yogurt drink.\"",
+		"next": "vcall_7"
+	},
+
+	"vcall_7": {
+		"speaker": "Elysia",
+		"text": "\"That's a drink. It's in the name. Go make eggs. I'm not hanging up until I hear the pan.\"",
+		"choices": [
+			{"text": "\"Yes, ma'am.\"", "type": "neutral", "weight_change": 0, "next": "vcall_maam_1"},
+			{"text": "\"I'm not really hungry.\"", "type": "neutral", "weight_change": 5, "next": "vcall_hungry_1"}
+		]
+	},
+
+	"vcall_maam_1": {
+		"speaker": "Elysia",
+		"text": "\"Don't ma'am me.\"",
+		"next": "vcall_maam_2"
+	},
+
+	"vcall_maam_2": {
+		"speaker": "",
+		"text": "*But she's smiling into her hoodie sleeve.*",
+		"next": "vcall_maam_3"
+	},
+
+	"vcall_maam_3": {
+		"speaker": "Elysia",
+		"text": "\"Go. Pan. Now.\"",
+		"next": "vcall_eggs_1"
+	},
+
+	"vcall_hungry_1": {
+		"speaker": "Elysia",
+		"text": "\"I didn't ask if you were hungry. I asked if you ate. Pan. Now. I'll wait.\"",
+		"next": "vcall_eggs_1"
+	},
+
+	"vcall_eggs_1": {
+		"speaker": "",
+		"text": "*He makes two fried eggs with the phone balanced on the kettle. She supervises. She says the second one is \"structurally a tragedy,\" and he eats it anyway.*",
+		"next": "vcall_eggs_2"
+	},
+
+	"vcall_eggs_2": {
+		"speaker": "",
+		"text": "*Back on question four, she yawns so wide her camera shakes.*",
+		"next": "vcall_eggs_3"
+	},
+
+	"vcall_eggs_3": {
+		"speaker": "Kay",
+		"text": "She's been tired lately. She won't say it.",
+		"next": "vcall_eggs_4"
+	},
+
+	"vcall_eggs_4": {
+		"speaker": "Kay",
+		"text": "\"Were you up late again?\"",
+		"next": "vcall_eggs_5"
+	},
+
+	"vcall_eggs_5": {
+		"speaker": "",
+		"text": "*A pause.*",
+		"next": "vcall_eggs_6"
+	},
+
+	"vcall_eggs_6": {
+		"speaker": "Elysia",
+		"text": "\"...A little. Till three. Ploy stuff. It's fine.\"",
+		"next": "vcall_eggs_7"
+	},
+
+	"vcall_eggs_7": {
+		"speaker": "Kay",
+		"text": "\"You're very bossy about my sleep.\"",
+		"next": "vcall_eggs_8"
+	},
+
+	"vcall_eggs_8": {
+		"speaker": "Elysia",
+		"text": "\"That's different.\"",
+		"next": "vcall_eggs_9"
+	},
+
+	"vcall_eggs_9": {
+		"speaker": "Kay",
+		"text": "\"How?\"",
+		"next": "vcall_eggs_10"
+	},
+
+	"vcall_eggs_10": {
+		"speaker": "Elysia",
+		"text": "\"Because it's you.\"",
+		"next": "vcall_eggs_11"
+	},
+
+	"vcall_eggs_11": {
+		"speaker": "",
+		"text": "*She says it like it's obvious. Then she hears herself and pulls her hoodie over her face.*",
+		"next": "vcall_sleep_1"
+	},
+
+	"vcall_sleep_1": {
+		"speaker": "",
+		"text": "*At 11:20 she stops talking in the middle of question six.*",
+		"next": "vcall_sleep_2"
+	},
+
+	"vcall_sleep_2": {
+		"speaker": "",
+		"text": "*She's asleep with her cheek on her textbook. Every few breaths she makes a very small noise. It sounds like a cat.*",
+		"next": "vcall_sleep_3"
+	},
+
+	"vcall_sleep_3": {
+		"speaker": "Kay",
+		"text": "I should hang up.",
+		"next": "vcall_sleep_4"
+	},
+
+	"vcall_sleep_4": {
+		"speaker": "",
+		"text": "*He doesn't. He does question six. Then seven. He tells himself he's just checking his own answers.*",
+		"next": "vcall_sleep_5"
+	},
+
+	"vcall_sleep_5": {
+		"speaker": "Kay",
+		"text": "She's tired. It's two questions. It's nothing.",
+		"next": "vcall_sleep_6"
+	},
+
+	"vcall_sleep_6": {
+		"speaker": "",
+		"text": "*He finally hangs up at midnight. In the morning:*",
+		"next": "vcall_am_1"
+	},
+
+	"vcall_am_1": {
+		"speaker": "Elysia",
+		"text": "did i fall asleep on u",
+		"next": "vcall_am_2"
+	},
+
+	"vcall_am_2": {
+		"speaker": "Kay",
+		"text": "you snore",
+		"next": "vcall_am_3"
+	},
+
+	"vcall_am_3": {
+		"speaker": "Elysia",
+		"text": "I DO NOT",
+		"next": "vcall_am_4"
+	},
+
+	"vcall_am_4": {
+		"speaker": "Kay",
+		"text": "small ones. like a cat",
+		"next": "vcall_am_5"
+	},
+
+	"vcall_am_5": {
+		"speaker": "Elysia",
+		"text": "DELETE THIS CHAT",
+		"next": "vcall_am_6"
+	},
+
+	"vcall_am_6": {
+		"speaker": "Elysia",
+		"text": "also WHY are 6 and 7 done in my book",
+		"next": "vcall_am_7"
+	},
+
+	"vcall_am_7": {
+		"speaker": "Kay",
+		"text": "they're not",
+		"next": "vcall_am_8"
+	},
+
+	"vcall_am_8": {
+		"speaker": "Elysia",
+		"text": "K.",
+		"next": "vcall_am_9"
+	},
+
+	"vcall_am_9": {
+		"speaker": "Kay",
+		"text": "...only 6 and 7",
+		"next": "vcall_am_10"
+	},
+
+	"vcall_am_10": {
+		"speaker": "",
+		"text": "*She sends the furious cat sticker, then another one, then a voice message that's just her saying \"don't do my homework\" very sternly.*",
+		"next": "vcall_am_11"
+	},
+
+	"vcall_am_11": {
+		"speaker": "Kay",
+		"text": "yes ma'am",
+		"next": "vcall_am_12"
+	},
+
+	"vcall_am_12": {
+		"speaker": "Elysia",
+		"text": "😤😤😤",
+		"next": "joke_1"
+	},
+
+	"joke_1": {
+		"speaker": "",
+		"text": "*Tuesday of the third week. She comes to the garden after school without texting first.*",
+		"next": "joke_2"
+	},
+
+	"joke_2": {
+		"speaker": "",
+		"text": "*She doesn't crouch by the log. She sits on the edge of the basil bed with her bag still on her shoulder and pulls out a weed, then another one. Elysia is never this quiet.*",
+		"next": "joke_3"
+	},
+
+	"joke_3": {
+		"speaker": "",
+		"text": "*Kay turns off the screaming tap.*",
+		"next": "joke_4"
+	},
+
+	"joke_4": {
+		"speaker": "Kay",
+		"text": "I want her to laugh. I know how to make her laugh now. It's the one thing I figured out this year that isn't for school.",
+		"choices": [
+			{"text": "Tease her: \"Careful. Next you'll be keeping slime in your bag.\"", "type": "neutral", "weight_change": 0, "next": "joke_bag_1", "set_flag": "BagJoke"},
+			{"text": "\"You're quiet today.\"", "type": "honest", "weight_change": -5, "next": "joke_quiet_1"}
+		]
+	},
+
+	"joke_bag_1": {
+		"speaker": "Kay",
+		"text": "\"Careful. Next you'll be keeping slime in your bag.\"",
+		"next": "joke_bag_2"
+	},
+
+	"joke_bag_2": {
+		"speaker": "",
+		"text": "*She laughs. It's the wrong laugh. The cafeteria one, the bright one, the one she uses at the gate when her friends are watching. Nobody's watching.*",
+		"next": "joke_bag_3"
+	},
+
+	"joke_bag_3": {
+		"speaker": "Elysia",
+		"text": "\"Haha. It's fine!\"",
+		"next": "joke_bag_4"
+	},
+
+	"joke_bag_4": {
+		"speaker": "Kay",
+		"text": "It's fine. I know that one. I say it about cold showers.",
+		"choices": [
+			{"text": "\"...Sorry. That was a dumb joke.\"", "type": "honest", "weight_change": -5, "next": "joke_sorry_1"},
+			{"text": "Keep going: \"You're doing the thing with your ears.\"", "type": "neutral", "weight_change": 5, "next": "joke_more_1"}
+		]
+	},
+
+	"joke_sorry_1": {
+		"speaker": "",
+		"text": "*She looks at him. For a second her face does something he can't read.*",
+		"next": "joke_sorry_2"
+	},
+
+	"joke_sorry_2": {
+		"speaker": "Elysia",
+		"text": "\"It was a little dumb.\"",
+		"next": "joke_sorry_3"
+	},
+
+	"joke_sorry_3": {
+		"speaker": "",
+		"text": "*She bumps his shoulder with hers.*",
+		"next": "joke_sorry_4"
+	},
+
+	"joke_sorry_4": {
+		"speaker": "Elysia",
+		"text": "\"It's not you. Long day.\"",
+		"next": "joke_sorry_5"
+	},
+
+	"joke_sorry_5": {
+		"speaker": "",
+		"text": "*She stays ten more minutes. She doesn't talk about slime molds. When she leaves, she waves from the path and doesn't look back.*",
+		"next": "joke_sorry_6"
+	},
+
+	"joke_sorry_6": {
+		"speaker": "Kay",
+		"text": "Long day. I know that one too.",
+		"next": "wrecked_1"
+	},
+
+	"joke_more_1": {
+		"speaker": "Kay",
+		"text": "\"You're doing the thing with your ears.\"",
+		"next": "joke_more_2"
+	},
+
+	"joke_more_2": {
+		"speaker": "Elysia",
+		"text": "\"Haha.\"",
+		"next": "joke_more_3"
+	},
+
+	"joke_more_3": {
+		"speaker": "",
+		"text": "*She covers her ears with her hands. It's still the wrong laugh.*",
+		"next": "joke_more_4"
+	},
+
+	"joke_more_4": {
+		"speaker": "Elysia",
+		"text": "\"I should go. Pun's waiting.\"",
+		"next": "joke_more_5"
+	},
+
+	"joke_more_5": {
+		"speaker": "",
+		"text": "*Pun wasn't waiting five minutes ago. Kay doesn't say that.*",
+		"next": "wrecked_1"
+	},
+
+	"joke_quiet_1": {
+		"speaker": "",
+		"text": "*She keeps pulling weeds.*",
+		"next": "joke_quiet_2"
+	},
+
+	"joke_quiet_2": {
+		"speaker": "Elysia",
+		"text": "\"...I did something mean today. A girl in my class dropped her keychain, and my friends laughed at it, and I laughed too. It was so easy. That's the worst part. It was easy.\"",
+		"next": "joke_quiet_3"
+	},
+
+	"joke_quiet_3": {
+		"speaker": "Kay",
+		"text": "\"You feel bad about it.\"",
+		"next": "joke_quiet_4"
+	},
+
+	"joke_quiet_4": {
+		"speaker": "Elysia",
+		"text": "\"I feel sick about it.\"",
+		"next": "joke_quiet_5"
+	},
+
+	"joke_quiet_5": {
+		"speaker": "Kay",
+		"text": "\"Then that's the part that isn't mean.\"",
+		"next": "joke_quiet_6"
+	},
+
+	"joke_quiet_6": {
+		"speaker": "",
+		"text": "*She looks at him. Then she leans her head on his shoulder for exactly three seconds and stands up.*",
+		"next": "joke_quiet_7"
+	},
+
+	"joke_quiet_7": {
+		"speaker": "Elysia",
+		"text": "\"Okay. Okay. Water your plants, K.\"",
 		"next": "wrecked_1"
 	},
 
@@ -3040,7 +3768,7 @@
 	"sprout_5": {
 		"speaker": "Ulyn",
 		"text": "proud dad",
-		"next": "midterm_1",
+		"next": "stands_1",
 		"secret": {"condition": "flag_true", "flag": "ElysiaBugs", "next": "sprout_bug_1"}
 	},
 
@@ -3053,8 +3781,199 @@
 	"sprout_bug_2": {
 		"speaker": "Elysia",
 		"text": "ANY SLIME???",
-		"next": "midterm_1",
+		"next": "stands_1",
+		"secret": {"condition": "flag_true", "flag": "BagJoke", "next": "sprout_bag_1"},
 		"sfx": "Notification"
+	},
+
+	"sprout_bag_1": {
+		"speaker": "",
+		"text": "*It's the first message with three question marks she's sent since Tuesday. He didn't know he was counting.*",
+		"next": "stands_1"
+	},
+
+	"stands_1": {
+		"speaker": "",
+		"text": "*The fourth Friday. Sports day.*",
+		"next": "stands_2"
+	},
+
+	"stands_2": {
+		"speaker": "",
+		"text": "*Kay is on the water station by the track, filling paper cups from a cooler, a clipboard under his arm. The sun is enormous. Ulyn has been shouting into a megaphone since seven.*",
+		"next": "stands_3"
+	},
+
+	"stands_3": {
+		"speaker": "",
+		"text": "*Someone pushes a cold bottle into his hands.*",
+		"next": "stands_4"
+	},
+
+	"stands_4": {
+		"speaker": "Elysia",
+		"text": "\"Hydrate, water boy!\"",
+		"next": "stands_5"
+	},
+
+	"stands_5": {
+		"speaker": "",
+		"text": "*Elysia, in a red cheer shirt, already running. Behind her, her friends yell \"ELYSIAAAA\" in the voice that means teasing. She doesn't look back.*",
+		"next": "stands_6"
+	},
+
+	"stands_6": {
+		"speaker": "",
+		"text": "*He stands there holding the drink with both hands. He doesn't open it for a long time.*",
+		"next": "stands_7"
+	},
+
+	"stands_7": {
+		"speaker": "",
+		"text": "*By five, the field is empty. When Kay turns around from the last stack of cups, Elysia is sitting on the bottom row of the bleachers with her pom-poms in her lap and no voice left.*",
+		"next": "stands_8"
+	},
+
+	"stands_8": {
+		"speaker": "Elysia",
+		"text": "\"I yelled for nine hours.\"",
+		"next": "stands_9"
+	},
+
+	"stands_9": {
+		"speaker": "",
+		"text": "*He sits down next to her. She doesn't say anything for a while. It isn't her usual quiet. It's heavier.*",
+		"next": "stands_10"
+	},
+
+	"stands_10": {
+		"speaker": "Elysia",
+		"text": "\"My little brother got called slime boy this week. A kid smeared his slime mold all over the inside of his bag. Everyone laughed.\"",
+		"next": "stands_12",
+		"secret": {"condition": "flag_true", "flag": "BagJoke", "next": "stands_11"}
+	},
+
+	"stands_11": {
+		"speaker": "",
+		"text": "*Kay thinks about Tuesday. Careful. Next you'll be keeping slime in your bag. His stomach drops, though he doesn't know exactly why.*",
+		"next": "stands_12"
+	},
+
+	"stands_12": {
+		"speaker": "Elysia",
+		"text": "\"And I told him to keep the slime at home. Just at school. Just for a while. Like that was advice. Like it was a good idea.\"",
+		"next": "stands_13"
+	},
+
+	"stands_13": {
+		"speaker": "Kay",
+		"text": "\"You were trying to protect him.\"",
+		"next": "stands_14"
+	},
+
+	"stands_14": {
+		"speaker": "Elysia",
+		"text": "\"Yeah.\"",
+		"next": "stands_15"
+	},
+
+	"stands_15": {
+		"speaker": "Kay",
+		"text": "\"I do that too. It doesn't always work.\"",
+		"next": "stands_16"
+	},
+
+	"stands_16": {
+		"speaker": "",
+		"text": "*She looks at him sideways.*",
+		"next": "stands_17"
+	},
+
+	"stands_17": {
+		"speaker": "Elysia",
+		"text": "\"You didn't make fun of me once today.\"",
+		"next": "stands_18"
+	},
+
+	"stands_18": {
+		"speaker": "Kay",
+		"text": "\"I was busy.\"",
+		"next": "stands_19"
+	},
+
+	"stands_19": {
+		"speaker": "Elysia",
+		"text": "\"Usually you'd have called me ma'am by now. Like four times. Today, zero. That's how I know something's wrong.\"",
+		"choices": [
+			{"text": "\"I've been really tired. Not sports-day tired.\"", "type": "honest", "weight_change": -10, "next": "stands_tired_1", "set_flag": "ToldElysiaTired"},
+			{"text": "\"It's just the sun.\"", "type": "neutral", "weight_change": 5, "next": "stands_sun_1"}
+		]
+	},
+
+	"stands_tired_1": {
+		"speaker": "",
+		"text": "*She doesn't say anything right away. She slides her hand into his on the bleacher between them, where nobody would see even if anyone were there.*",
+		"next": "stands_tired_2"
+	},
+
+	"stands_tired_2": {
+		"speaker": "Elysia",
+		"text": "\"Thank you for telling me.\"",
+		"next": "stands_tired_3"
+	},
+
+	"stands_tired_3": {
+		"speaker": "",
+		"text": "*He doesn't know what to say to that. So he holds on.*",
+		"next": "stands_end_1"
+	},
+
+	"stands_sun_1": {
+		"speaker": "Elysia",
+		"text": "\"Okay.\"",
+		"next": "stands_sun_2"
+	},
+
+	"stands_sun_2": {
+		"speaker": "",
+		"text": "*She doesn't believe him. He can tell. She slides her hand into his on the bleacher between them, where nobody would see even if anyone were there.*",
+		"next": "stands_end_1"
+	},
+
+	"stands_end_1": {
+		"speaker": "",
+		"text": "*They sit until the sprinklers come on.*",
+		"next": "stands_end_2"
+	},
+
+	"stands_end_2": {
+		"speaker": "Elysia",
+		"text": "\"Tease me about something. Anything. I need it.\"",
+		"next": "stands_end_3"
+	},
+
+	"stands_end_3": {
+		"speaker": "",
+		"text": "*He tries to think of something. It takes longer than it should.*",
+		"next": "stands_end_4"
+	},
+
+	"stands_end_4": {
+		"speaker": "Kay",
+		"text": "\"...Your voice sounds like a duck.\"",
+		"next": "stands_end_5"
+	},
+
+	"stands_end_5": {
+		"speaker": "Elysia",
+		"text": "\"Thank you.\"",
+		"next": "stands_end_6"
+	},
+
+	"stands_end_6": {
+		"speaker": "",
+		"text": "*She says it like a duck, and leans on him, and laughs until she coughs.*",
+		"next": "midterm_1"
 	},
 
 	"midterm_1": {
@@ -3116,7 +4035,7 @@
 	"midterm_do_2": {
 		"speaker": "",
 		"text": "*Kay writes three pages between 11 p.m. and 1:40 a.m., and studies for chemistry in the gaps.*",
-		"next": "score_1",
+		"next": "study_1",
 		"sfx": "Writing"
 	},
 
@@ -3159,6 +4078,219 @@
 	"midterm_teach_7": {
 		"speaker": "",
 		"text": "*Nothing breaks.*",
+		"next": "study_1"
+	},
+
+	"study_1": {
+		"speaker": "",
+		"text": "*Wednesday, between exams. Elysia drags him to the back table of the library.*",
+		"next": "study_2"
+	},
+
+	"study_2": {
+		"speaker": "Elysia",
+		"text": "\"Phone. It goes in my bag until we finish the chemistry.\"",
+		"next": "study_3"
+	},
+
+	"study_3": {
+		"speaker": "Kay",
+		"text": "\"Yes, ma'am.\"",
+		"next": "study_4"
+	},
+
+	"study_4": {
+		"speaker": "Elysia",
+		"text": "\"Stop that.\"",
+		"next": "study_5"
+	},
+
+	"study_5": {
+		"speaker": "",
+		"text": "*She's made flashcards. Forty of them, color-coded, with tiny slime molds drawn in the corners of the hard ones. She quizzes him. He gets the first eleven right.*",
+		"next": "study_6"
+	},
+
+	"study_6": {
+		"speaker": "Elysia",
+		"text": "\"Ugh. You're annoyingly right.\"",
+		"next": "study_7"
+	},
+
+	"study_7": {
+		"speaker": "Kay",
+		"text": "\"You made the cards.\"",
+		"next": "study_8"
+	},
+
+	"study_8": {
+		"speaker": "Elysia",
+		"text": "\"I made them hard.\"",
+		"next": "study_9"
+	},
+
+	"study_9": {
+		"speaker": "",
+		"text": "*Somewhere around card twenty, the words start sliding off the paper. The library is warm. He hasn't slept properly in a week.*",
+		"next": "study_10"
+	},
+
+	"study_10": {
+		"speaker": "",
+		"text": "*He doesn't remember deciding to close his eyes.*",
+		"next": "study_11"
+	},
+
+	"study_11": {
+		"speaker": "",
+		"text": "*When he opens them, his head is on her shoulder. Forty minutes have gone by. Elysia hasn't moved. Her phone is face down on the table, buzzing every so often. She's letting it buzz.*",
+		"next": "study_12"
+	},
+
+	"study_12": {
+		"speaker": "Kay",
+		"text": "\"Sorry. Sorry. Your arm—\"",
+		"next": "study_13"
+	},
+
+	"study_13": {
+		"speaker": "Elysia",
+		"text": "\"My arm is dead. It's fine. I've accepted it.\"",
+		"next": "study_14"
+	},
+
+	"study_14": {
+		"speaker": "",
+		"text": "*She shakes it out and winces.*",
+		"next": "study_15"
+	},
+
+	"study_15": {
+		"speaker": "Elysia",
+		"text": "\"Also, you drool.\"",
+		"next": "study_16"
+	},
+
+	"study_16": {
+		"speaker": "Kay",
+		"text": "\"I do not.\"",
+		"next": "study_17"
+	},
+
+	"study_17": {
+		"speaker": "Elysia",
+		"text": "\"Little bit. Like a dog.\"",
+		"next": "study_18"
+	},
+
+	"study_18": {
+		"speaker": "Kay",
+		"text": "\"...Not like a cat?\"",
+		"next": "study_19"
+	},
+
+	"study_19": {
+		"speaker": "Elysia",
+		"text": "\"Cats are dignified. Now we're even.\"",
+		"next": "study_20"
+	},
+
+	"study_20": {
+		"speaker": "",
+		"text": "*He laughs. Then he looks at her properly, in the library light, and the laugh goes somewhere. She has shadows under her eyes like thumbprints.*",
+		"next": "study_21"
+	},
+
+	"study_21": {
+		"speaker": "Kay",
+		"text": "She's been tired lately. She won't say it.",
+		"next": "study_22"
+	},
+
+	"study_22": {
+		"speaker": "Kay",
+		"text": "\"You look tired.\"",
+		"next": "study_23"
+	},
+
+	"study_23": {
+		"speaker": "Elysia",
+		"text": "\"I'm always tired.\"",
+		"next": "study_24"
+	},
+
+	"study_24": {
+		"speaker": "",
+		"text": "*She hears it a second after he does. It's his line, from the gate.*",
+		"next": "study_25"
+	},
+
+	"study_25": {
+		"speaker": "Kay",
+		"text": "\"...That's what worries me.\"",
+		"next": "study_26"
+	},
+
+	"study_26": {
+		"speaker": "",
+		"text": "*Neither of them laughs at that.*",
+		"next": "study_27"
+	},
+
+	"study_27": {
+		"speaker": "Elysia",
+		"text": "\"K. Are you okay? Actually?\"",
+		"choices": [
+			{"text": "\"...No. Not really.\"", "type": "honest", "weight_change": -10, "next": "study_no_1", "set_flag": "ToldElysiaNotOkay"},
+			{"text": "\"It's fine. Just midterms.\"", "type": "neutral", "weight_change": 5, "next": "study_fine_1"}
+		]
+	},
+
+	"study_no_1": {
+		"speaker": "",
+		"text": "*She doesn't flinch.*",
+		"next": "study_no_2"
+	},
+
+	"study_no_2": {
+		"speaker": "Elysia",
+		"text": "\"Okay. Do you want to talk, or do you want me to just sit here?\"",
+		"next": "study_no_3"
+	},
+
+	"study_no_3": {
+		"speaker": "Kay",
+		"text": "\"Sit.\"",
+		"next": "study_no_4"
+	},
+
+	"study_no_4": {
+		"speaker": "",
+		"text": "*So she sits. Her phone buzzes again, and she lets it. They don't do any more chemistry. When the library closes, she walks him all the way to the gate and doesn't let go of his sleeve until she has to.*",
+		"next": "score_1"
+	},
+
+	"study_fine_1": {
+		"speaker": "",
+		"text": "*She looks at him like she's going to argue. Then she doesn't.*",
+		"next": "study_fine_2"
+	},
+
+	"study_fine_2": {
+		"speaker": "Elysia",
+		"text": "\"Okay. Then sleep tonight. That's an order.\"",
+		"next": "study_fine_3"
+	},
+
+	"study_fine_3": {
+		"speaker": "Kay",
+		"text": "\"Yes, ma'am.\"",
+		"next": "study_fine_4"
+	},
+
+	"study_fine_4": {
+		"speaker": "",
+		"text": "*He doesn't.*",
 		"next": "score_1"
 	},
 
@@ -3426,9 +4558,9 @@
 		"minigame": "res://Scenes/Minigames/get_up.tscn",
 		"settings": {"max_progress": 0.8, "seconds": 12, "clock": "6:30"},
 		"results": {
-			"won":     {"text": "Tried to get up", "next": "absent_2", "weight_change": 5, "set_flag": "TriedToGetUp"},
-			"tried":   {"text": "Tried to get up", "next": "absent_2", "weight_change": 5, "set_flag": "TriedToGetUp"},
-			"gave_up": {"text": "Stayed in bed", "next": "absent_2", "weight_change": 0}
+			"won": {"text": "Tried to get up", "weight_change": 5, "next": "absent_2", "set_flag": "TriedToGetUp"},
+			"tried": {"text": "Tried to get up", "weight_change": 5, "next": "absent_2", "set_flag": "TriedToGetUp"},
+			"gave_up": {"text": "Stayed in bed", "next": "absent_2"}
 		}
 	},
 
@@ -4612,6 +5744,204 @@
 	"sat_safe_4": {
 		"speaker": "Kay",
 		"text": "\"Deal.\"",
+		"next": "rice_0"
+	},
+
+	"rice_0": {
+		"speaker": "",
+		"text": "*Afterward, neither of them wants to go home yet.*",
+		"next": "rice_out_1",
+		"secret": {"condition": "flag_true", "flag": "ElysiaBugs", "next": "rice_1"}
+	},
+
+	"rice_1": {
+		"speaker": "",
+		"text": "*They stay in the back room for another hour. She reads him every label out loud, in the slime girl voice, the fast one. She gets to Physarum and goes soft around the mouth.*",
+		"next": "rice_2"
+	},
+
+	"rice_2": {
+		"speaker": "Kay",
+		"text": "\"You talk about it like it's your ex.\"",
+		"next": "rice_3"
+	},
+
+	"rice_3": {
+		"speaker": "Elysia",
+		"text": "\"It's not my ex. It's my friend.\"",
+		"next": "rice_4"
+	},
+
+	"rice_4": {
+		"speaker": "Kay",
+		"text": "\"It's your lock screen.\"",
+		"next": "rice_5"
+	},
+
+	"rice_5": {
+		"speaker": "Elysia",
+		"text": "\"...It's a very good photo.\"",
+		"next": "rice_6"
+	},
+
+	"rice_6": {
+		"speaker": "",
+		"text": "*She hits his arm. Her ears are red. She's grinning so hard it must hurt.*",
+		"next": "rice_7"
+	},
+
+	"rice_7": {
+		"speaker": "Elysia",
+		"text": "\"You're back, huh.\"",
+		"next": "rice_8"
+	},
+
+	"rice_8": {
+		"speaker": "Kay",
+		"text": "\"What?\"",
+		"next": "rice_9"
+	},
+
+	"rice_9": {
+		"speaker": "Elysia",
+		"text": "\"The teasing. You stopped. I noticed. I missed it.\"",
+		"next": "rice_10"
+	},
+
+	"rice_10": {
+		"speaker": "",
+		"text": "*She says it lightly. She doesn't say it lightly.*",
+		"next": "rice_out_1"
+	},
+
+	"rice_out_1": {
+		"speaker": "",
+		"text": "*On the way back, there's a cart selling mango sticky rice. They share one box, and she gives him all the crunchy mung beans because she says she's \"not a bean person,\" which he's pretty sure is a lie.*",
+		"next": "rice_out_2"
+	},
+
+	"rice_out_2": {
+		"speaker": "",
+		"text": "*The wind off the river is cold. She shivers and pretends she isn't.*",
+		"choices": [
+			{"text": "Give her your hoodie", "type": "helpful", "weight_change": -5, "next": "rice_hood_1", "set_flag": "Hoodie"},
+			{"text": "Tease her: \"Should've brought a jacket, ma'am.\"", "type": "neutral", "weight_change": 0, "next": "rice_tease_1"}
+		]
+	},
+
+	"rice_hood_1": {
+		"speaker": "",
+		"text": "*He takes it off and holds it out.*",
+		"next": "rice_hood_2"
+	},
+
+	"rice_hood_2": {
+		"speaker": "Elysia",
+		"text": "\"I'm not cold.\"",
+		"next": "rice_hood_3"
+	},
+
+	"rice_hood_3": {
+		"speaker": "",
+		"text": "*She's already putting it on. The sleeves go past her hands. She pulls them over her fingers and looks at him from inside the hood, daring him to say something.*",
+		"next": "rice_hood_4"
+	},
+
+	"rice_hood_4": {
+		"speaker": "Kay",
+		"text": "\"It looks better on you. Don't tell anyone I said that.\"",
+		"next": "rice_hood_5"
+	},
+
+	"rice_hood_5": {
+		"speaker": "Elysia",
+		"text": "\"I'm keeping it.\"",
+		"next": "rice_hood_6"
+	},
+
+	"rice_hood_6": {
+		"speaker": "Kay",
+		"text": "\"I know.\"",
+		"next": "rice_talk_1"
+	},
+
+	"rice_tease_1": {
+		"speaker": "Elysia",
+		"text": "\"Rude.\"",
+		"next": "rice_tease_2"
+	},
+
+	"rice_tease_2": {
+		"speaker": "",
+		"text": "*She takes the hoodie off his lap and puts it on.*",
+		"next": "rice_tease_3"
+	},
+
+	"rice_tease_3": {
+		"speaker": "Elysia",
+		"text": "\"I'm keeping this now. That's the punishment.\"",
+		"next": "rice_talk_1"
+	},
+
+	"rice_talk_1": {
+		"speaker": "",
+		"text": "*They sit until the sticky rice is gone.*",
+		"next": "rice_talk_2"
+	},
+
+	"rice_talk_2": {
+		"speaker": "Kay",
+		"text": "\"I didn't think I'd laugh this week.\"",
+		"next": "rice_talk_3"
+	},
+
+	"rice_talk_3": {
+		"speaker": "Elysia",
+		"text": "\"Me neither.\"",
+		"next": "rice_talk_3b",
+		"secret": {"condition": "flag_true", "flag": "ToldElysiaEarly", "next": "rice_talk_4a"}
+	},
+
+	"rice_talk_3b": {
+		"speaker": "",
+		"text": "*She pulls the sleeves down over her hands.*",
+		"next": "rice_talk_5",
+		"secret": {"condition": "flag_true", "flag": "ToldElysia", "next": "rice_talk_4b"}
+	},
+
+	"rice_talk_4a": {
+		"speaker": "Elysia",
+		"text": "\"When you texted couldn't on Thursday... I know that word. Not like you, maybe. But some mornings I know it.\"",
+		"next": "rice_talk_5"
+	},
+
+	"rice_talk_4b": {
+		"speaker": "Elysia",
+		"text": "\"When you said it today. That you couldn't get up. I know that. Not like you, maybe. But some mornings I know it.\"",
+		"next": "rice_talk_5"
+	},
+
+	"rice_talk_5": {
+		"speaker": "",
+		"text": "*He looks at her. She doesn't look away, which is new.*",
+		"next": "rice_talk_6"
+	},
+
+	"rice_talk_6": {
+		"speaker": "Kay",
+		"text": "\"You don't have to be fine with me either. That's the deal. Both ways.\"",
+		"next": "rice_talk_7"
+	},
+
+	"rice_talk_7": {
+		"speaker": "",
+		"text": "*She hooks her pinky around his, inside the sleeve, where nobody can see.*",
+		"next": "rice_talk_8"
+	},
+
+	"rice_talk_8": {
+		"speaker": "Elysia",
+		"text": "\"Both ways.\"",
 		"next": "mon_1"
 	},
 
@@ -4684,6 +6014,159 @@
 	"mon_walk_5": {
 		"speaker": "",
 		"text": "*Behind her, Mint gives Kay a very small thumbs up.*",
+		"next": "home2_1"
+	},
+
+	"home2_1": {
+		"speaker": "",
+		"text": "*After the last bell, Kay waits at the gate, right in the middle of it, where anyone can see. Elysia comes out with her friends. She sees him and stops.*",
+		"next": "home2_2"
+	},
+
+	"home2_2": {
+		"speaker": "Kay",
+		"text": "\"Walk home with me?\"",
+		"next": "home2_3"
+	},
+
+	"home2_3": {
+		"speaker": "",
+		"text": "*It's the sentence he couldn't say on the first day. It comes out normal. Nobody dies.*",
+		"next": "home2_4"
+	},
+
+	"home2_4": {
+		"speaker": "",
+		"text": "*Her friends make a noise like a kettle. Elysia waves them off without turning around.*",
+		"next": "home2_5"
+	},
+
+	"home2_5": {
+		"speaker": "Elysia",
+		"text": "\"In front of people?\"",
+		"next": "home2_6"
+	},
+
+	"home2_6": {
+		"speaker": "Kay",
+		"text": "\"In front of everyone.\"",
+		"next": "home2_7"
+	},
+
+	"home2_7": {
+		"speaker": "",
+		"text": "*They walk past the 7-Eleven and the bus stop, and they go slowly at the corner.*",
+		"next": "home2_8"
+	},
+
+	"home2_8": {
+		"speaker": "Kay",
+		"text": "\"Yes, he's my boyfriend, we all know, moving on.\"",
+		"next": "home2_9"
+	},
+
+	"home2_9": {
+		"speaker": "",
+		"text": "*He says it in a high bright voice that isn't anything like hers.*",
+		"next": "home2_10"
+	},
+
+	"home2_10": {
+		"speaker": "Elysia",
+		"text": "\"Stop.\"",
+		"next": "home2_11"
+	},
+
+	"home2_11": {
+		"speaker": "Kay",
+		"text": "\"Very smooth. Very calm.\"",
+		"choices": [
+			{"text": "\"Your ears were on fire, though.\"", "type": "neutral", "weight_change": 0, "next": "home2_ears_1"},
+			{"text": "\"...Thank you. For this morning.\"", "type": "honest", "weight_change": -5, "next": "home2_thanks_1"}
+		]
+	},
+
+	"home2_ears_1": {
+		"speaker": "Kay",
+		"text": "\"Your ears were on fire, though.\"",
+		"next": "home2_ears_2"
+	},
+
+	"home2_ears_2": {
+		"speaker": "Elysia",
+		"text": "\"My ears are on my side. I regret nothing.\"",
+		"next": "home2_ears_3"
+	},
+
+	"home2_ears_3": {
+		"speaker": "Kay",
+		"text": "\"Your ears regret it.\"",
+		"next": "home2_ears_4"
+	},
+
+	"home2_ears_4": {
+		"speaker": "",
+		"text": "*She shoves him into a hedge. He lets her. She pulls him out again by the sleeve and keeps holding it for the rest of the street.*",
+		"next": "home2_end_1"
+	},
+
+	"home2_thanks_1": {
+		"speaker": "Kay",
+		"text": "\"...Thank you. For this morning.\"",
+		"next": "home2_thanks_2"
+	},
+
+	"home2_thanks_2": {
+		"speaker": "",
+		"text": "*She stops walking.*",
+		"next": "home2_thanks_3"
+	},
+
+	"home2_thanks_3": {
+		"speaker": "Elysia",
+		"text": "\"You don't have to thank me for holding your hand, dummy. I've been wanting to do that since the first day.\"",
+		"next": "home2_thanks_4"
+	},
+
+	"home2_thanks_4": {
+		"speaker": "Kay",
+		"text": "\"Of school?\"",
+		"next": "home2_thanks_5"
+	},
+
+	"home2_thanks_5": {
+		"speaker": "Elysia",
+		"text": "\"Of us, dummy.\"",
+		"next": "home2_thanks_6"
+	},
+
+	"home2_thanks_6": {
+		"speaker": "",
+		"text": "*She takes his hand again, to prove it.*",
+		"next": "home2_end_1"
+	},
+
+	"home2_end_1": {
+		"speaker": "",
+		"text": "*At her corner she turns around.*",
+		"next": "home2_end_2"
+	},
+
+	"home2_end_2": {
+		"speaker": "Elysia",
+		"text": "\"Same time tomorrow?\"",
+		"next": "home2_end_3"
+	},
+
+	"home2_end_3": {
+		"speaker": "Kay",
+		"text": "\"Same time tomorrow.\"",
+		"next": "home2_end_4"
+	},
+
+	"home2_end_4": {
+		"speaker": "",
+		"text": "*He says it before he can check. He doesn't need to check.*",
 		"next": "guide_1"
 	},
 
@@ -5106,6 +6589,235 @@
 	"water_6": {
 		"speaker": "",
 		"text": "*The next morning, the basil is fine.*",
+		"next": "ploy_0"
+	},
+
+	"ploy_0": {
+		"speaker": "",
+		"text": "*The eighth week.*",
+		"next": "ploy_00",
+		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "ploy_1"}
+	},
+
+	"ploy_00": {
+		"speaker": "",
+		"text": "*The garden mostly looks after itself now.*",
+		"next": "pres2_1",
+		"secret": {"condition": "flag_true", "flag": "ToldElysia", "next": "ploy_1"}
+	},
+
+	"ploy_1": {
+		"speaker": "",
+		"text": "*On Tuesday, Elysia comes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap.*",
+		"next": "ploy_2"
+	},
+
+	"ploy_2": {
+		"speaker": "Elysia",
+		"text": "\"I said no to Ploy. Sunday night. She called at one, and I said I love you, but I can't do one a.m. calls anymore.\"",
+		"next": "ploy_3"
+	},
+
+	"ploy_3": {
+		"speaker": "Kay",
+		"text": "\"That's good.\"",
+		"next": "ploy_4"
+	},
+
+	"ploy_4": {
+		"speaker": "Elysia",
+		"text": "\"She hasn't talked to me since. She sat with Jane today. She looked right through me.\"",
+		"next": "ploy_5"
+	},
+
+	"ploy_5": {
+		"speaker": "",
+		"text": "*She presses the heels of her hands into her eyes.*",
+		"next": "ploy_6"
+	},
+
+	"ploy_6": {
+		"speaker": "Elysia",
+		"text": "\"What if that was it? What if three years is just over because I wanted to sleep?\"",
+		"next": "ploy_7"
+	},
+
+	"ploy_7": {
+		"speaker": "Kay",
+		"text": "I want to fix it. I can feel it in my hands, the way they go to the tap.",
+		"choices": [
+			{"text": "Tell her about Thursdays", "type": "honest", "weight_change": -5, "next": "ploy_thu_1", "requires": "Counselor"},
+			{"text": "\"You did the right thing.\"", "type": "neutral", "weight_change": 0, "next": "ploy_right_1"}
+		]
+	},
+
+	"ploy_thu_1": {
+		"speaker": "Kay",
+		"text": "\"Can I tell you something? On Thursdays I go to the guidance room. Ms. Noi makes tea and I mostly don't talk.\"",
+		"next": "ploy_thu_2"
+	},
+
+	"ploy_thu_2": {
+		"speaker": "",
+		"text": "*Elysia takes her hands off her eyes.*",
+		"next": "ploy_thu_3"
+	},
+
+	"ploy_thu_3": {
+		"speaker": "Kay",
+		"text": "\"Last week I said one thing out loud I'd never said to anyone. I thought something would break.\"",
+		"next": "ploy_thu_4"
+	},
+
+	"ploy_thu_4": {
+		"speaker": "",
+		"text": "*He pushes his finger into the soil. Damp. He leaves it.*",
+		"next": "ploy_thu_5"
+	},
+
+	"ploy_thu_5": {
+		"speaker": "Kay",
+		"text": "\"Nothing broke.\"",
+		"next": "ploy_thu_6"
+	},
+
+	"ploy_thu_6": {
+		"speaker": "Elysia",
+		"text": "\"...Nothing?\"",
+		"next": "ploy_thu_7"
+	},
+
+	"ploy_thu_7": {
+		"speaker": "Kay",
+		"text": "\"Bank still has my pen. But that's separate.\"",
+		"next": "ploy_thu_8"
+	},
+
+	"ploy_thu_8": {
+		"speaker": "",
+		"text": "*She laughs, wet and surprised.*",
+		"next": "ploy_end_1",
+		"secret": {"condition": "flag_true", "flag": "BagJoke", "next": "ploy_bag_1"}
+	},
+
+	"ploy_right_1": {
+		"speaker": "Kay",
+		"text": "\"You did the right thing.\"",
+		"next": "ploy_right_2"
+	},
+
+	"ploy_right_2": {
+		"speaker": "Elysia",
+		"text": "\"I know. Knowing doesn't help at all.\"",
+		"next": "ploy_right_3"
+	},
+
+	"ploy_right_3": {
+		"speaker": "Kay",
+		"text": "\"Yeah.\"",
+		"next": "ploy_right_4"
+	},
+
+	"ploy_right_4": {
+		"speaker": "",
+		"text": "*He gets that.*",
+		"next": "ploy_end_1",
+		"secret": {"condition": "flag_true", "flag": "BagJoke", "next": "ploy_bag_1"}
+	},
+
+	"ploy_bag_1": {
+		"speaker": "",
+		"text": "*He takes a breath.*",
+		"next": "ploy_bag_2"
+	},
+
+	"ploy_bag_2": {
+		"speaker": "Kay",
+		"text": "\"In the third week, I made a joke about you keeping slime in your bag.\"",
+		"next": "ploy_bag_3"
+	},
+
+	"ploy_bag_3": {
+		"speaker": "",
+		"text": "*She goes very still.*",
+		"next": "ploy_bag_4"
+	},
+
+	"ploy_bag_4": {
+		"speaker": "Kay",
+		"text": "\"You said it was fine. I should have known it wasn't. I say that too.\"",
+		"next": "ploy_bag_5"
+	},
+
+	"ploy_bag_5": {
+		"speaker": "Kay",
+		"text": "\"I didn't know about third grade. But I'm sorry.\"",
+		"next": "ploy_bag_6"
+	},
+
+	"ploy_bag_6": {
+		"speaker": "Elysia",
+		"text": "\"...You remembered that?\"",
+		"next": "ploy_bag_7"
+	},
+
+	"ploy_bag_7": {
+		"speaker": "Kay",
+		"text": "\"I've thought about it a lot.\"",
+		"next": "ploy_bag_8"
+	},
+
+	"ploy_bag_8": {
+		"speaker": "Elysia",
+		"text": "\"Of course you have. Thank you.\"",
+		"next": "ploy_bag_9"
+	},
+
+	"ploy_bag_9": {
+		"speaker": "",
+		"text": "*She says it very softly and leans into his shoulder.*",
+		"next": "ploy_end_1"
+	},
+
+	"ploy_end_1": {
+		"speaker": "",
+		"text": "*He waits until she's stopped sniffing before he risks it.*",
+		"next": "ploy_end_2"
+	},
+
+	"ploy_end_2": {
+		"speaker": "Kay",
+		"text": "\"Ploy'll come back. You're very bossy. She's probably scared of you.\"",
+		"next": "ploy_end_3"
+	},
+
+	"ploy_end_3": {
+		"speaker": "Elysia",
+		"text": "\"I am not bossy.\"",
+		"next": "ploy_end_4"
+	},
+
+	"ploy_end_4": {
+		"speaker": "Kay",
+		"text": "\"You made me cook eggs on a video call.\"",
+		"next": "ploy_end_5"
+	},
+
+	"ploy_end_5": {
+		"speaker": "Elysia",
+		"text": "\"That was care!\"",
+		"next": "ploy_end_6"
+	},
+
+	"ploy_end_6": {
+		"speaker": "Kay",
+		"text": "\"Yes, ma'am.\"",
+		"next": "ploy_end_7"
+	},
+
+	"ploy_end_7": {
+		"speaker": "",
+		"text": "*She hits him with her phone. It's still face down. He notices she hasn't turned it over once.*",
 		"next": "pres2_1"
 	},
 
@@ -5321,6 +7033,242 @@
 	"noi_end_6": {
 		"speaker": "Bank",
 		"text": "\"My uncle cried when I showed him the photos.\"",
+		"next": "dinner_0"
+	},
+
+	"dinner_0": {
+		"speaker": "",
+		"text": "*The week goes by.*",
+		"next": "dinner_00",
+		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "dinner_1"}
+	},
+
+	"dinner_00": {
+		"speaker": "",
+		"text": "*Friday comes.*",
+		"next": "last_1",
+		"secret": {"condition": "flag_true", "flag": "ToldElysia", "next": "dinner_1"}
+	},
+
+	"dinner_1": {
+		"speaker": "",
+		"text": "*On Friday, Elysia's mom invites him to dinner. Elysia tells him in a text that's mostly the word sorry in different fonts.*",
+		"next": "dinner_2"
+	},
+
+	"dinner_2": {
+		"speaker": "",
+		"text": "*Her house smells like garlic and fish sauce. Her mom is kind and busy and decides he's too thin within five minutes. Pun sits directly across from him and stares at him over a bowl of rice like he's a specimen.*",
+		"next": "dinner_3"
+	},
+
+	"dinner_3": {
+		"speaker": "Pun",
+		"text": "\"Are you Elysia's boyfriend?\"",
+		"next": "dinner_4"
+	},
+
+	"dinner_4": {
+		"speaker": "Kay",
+		"text": "\"Yes.\"",
+		"next": "dinner_5"
+	},
+
+	"dinner_5": {
+		"speaker": "Pun",
+		"text": "\"Do you like slime molds?\"",
+		"next": "dinner_6"
+	},
+
+	"dinner_6": {
+		"speaker": "",
+		"text": "*Elysia is shaking her head at him very slightly. Don't encourage him.*",
+		"next": "dinner_7"
+	},
+
+	"dinner_7": {
+		"speaker": "Kay",
+		"text": "\"I'm learning.\"",
+		"next": "dinner_8"
+	},
+
+	"dinner_8": {
+		"speaker": "Pun",
+		"text": "\"What's the best one?\"",
+		"next": "dinner_9"
+	},
+
+	"dinner_9": {
+		"speaker": "Kay",
+		"text": "\"...The yellow one. Physarum. It's your sister's favorite.\"",
+		"next": "dinner_10"
+	},
+
+	"dinner_10": {
+		"speaker": "",
+		"text": "*Pun considers this for a long time. Then he nods, once, like a judge.*",
+		"next": "dinner_11"
+	},
+
+	"dinner_11": {
+		"speaker": "Pun",
+		"text": "\"Elysia had a funeral for one. When she was eight. It dried out and she had a funeral.\"",
+		"next": "dinner_12"
+	},
+
+	"dinner_12": {
+		"speaker": "Elysia",
+		"text": "\"Pun.\"",
+		"next": "dinner_13"
+	},
+
+	"dinner_13": {
+		"speaker": "Pun",
+		"text": "\"Mom told me. She sang.\"",
+		"next": "dinner_14"
+	},
+
+	"dinner_14": {
+		"speaker": "Elysia",
+		"text": "\"I was EIGHT.\"",
+		"choices": [
+			{"text": "\"What did she sing?\"", "type": "neutral", "weight_change": 0, "next": "dinner_sing_1"},
+			{"text": "Rescue her: \"So, Pun. What's in the jar?\"", "type": "helpful", "weight_change": -5, "next": "dinner_jar_1"}
+		]
+	},
+
+	"dinner_sing_1": {
+		"speaker": "Kay",
+		"text": "\"What did she sing?\"",
+		"next": "dinner_sing_2"
+	},
+
+	"dinner_sing_2": {
+		"speaker": "Pun",
+		"text": "\"The birthday song. But sad.\"",
+		"next": "dinner_sing_3"
+	},
+
+	"dinner_sing_3": {
+		"speaker": "",
+		"text": "*Elysia puts her face in both hands.*",
+		"next": "dinner_sing_4"
+	},
+
+	"dinner_sing_4": {
+		"speaker": "",
+		"text": "*Kay turns to her, very seriously.*",
+		"next": "dinner_sing_5"
+	},
+
+	"dinner_sing_5": {
+		"speaker": "Kay",
+		"text": "\"Was it a nice funeral?\"",
+		"next": "dinner_sing_6"
+	},
+
+	"dinner_sing_6": {
+		"speaker": "Elysia",
+		"text": "\"...It was a very nice funeral.\"",
+		"next": "dinner_sing_7"
+	},
+
+	"dinner_sing_7": {
+		"speaker": "",
+		"text": "*She says it from behind her hands. Her mom laughs so hard she has to put the ladle down.*",
+		"next": "dinner_book_1"
+	},
+
+	"dinner_jar_1": {
+		"speaker": "Kay",
+		"text": "\"So, Pun. What's in the jar?\"",
+		"next": "dinner_jar_2"
+	},
+
+	"dinner_jar_2": {
+		"speaker": "",
+		"text": "*Pun's face lights up, and the funeral is forgotten in four seconds. Under the table, Elysia kicks his ankle gently. It means thank you. He's pretty sure it also means I'll get you for knowing I needed that.*",
+		"next": "dinner_book_1"
+	},
+
+	"dinner_book_1": {
+		"speaker": "",
+		"text": "*After dinner, Pun brings out a notebook covered in old stickers and lays it in front of Kay like evidence. Every page has a slime mold drawn in careful crayon, with the Latin name copied underneath in big wobbly letters.*",
+		"next": "dinner_book_2"
+	},
+
+	"dinner_book_2": {
+		"speaker": "Pun",
+		"text": "\"Elysia made it. When she was slime girl. Now it's mine.\"",
+		"next": "dinner_book_3"
+	},
+
+	"dinner_book_3": {
+		"speaker": "",
+		"text": "*Kay turns the pages slowly. Elysia watches his face the whole time. He can feel her doing it, the way she checks. Somewhere around page six, he feels her stop.*",
+		"next": "dinner_book_4"
+	},
+
+	"dinner_book_4": {
+		"speaker": "Kay",
+		"text": "\"These are really good.\"",
+		"next": "dinner_door_1"
+	},
+
+	"dinner_door_1": {
+		"speaker": "",
+		"text": "*At the door, Elysia's mom presses a container of leftovers into his hands.*",
+		"next": "dinner_door_2"
+	},
+
+	"dinner_door_2": {
+		"speaker": "Elysia's mom",
+		"text": "\"Come again, Kay. She never brings anyone home. This one never asks for anything. She's my easy one.\"",
+		"next": "dinner_door_3"
+	},
+
+	"dinner_door_3": {
+		"speaker": "Kay",
+		"text": "The easy one. I know that one. I've been the easy one since I was twelve.",
+		"choices": [
+			{"text": "\"She's not the easy one. She just makes it look easy.\"", "type": "honest", "weight_change": -5, "next": "dinner_easy_1", "set_flag": "EasyOne"},
+			{"text": "\"Thank you for dinner.\"", "type": "neutral", "weight_change": 0, "next": "dinner_thanks_1"}
+		]
+	},
+
+	"dinner_easy_1": {
+		"speaker": "Kay",
+		"text": "\"She's not the easy one. She just makes it look easy.\"",
+		"next": "dinner_easy_2"
+	},
+
+	"dinner_easy_2": {
+		"speaker": "",
+		"text": "*It comes out before he can be polite about it. Her mom blinks. She looks at Elysia, who has gone completely still. Then she looks back at Kay for a long moment, like she's seeing something she walked past for years.*",
+		"next": "dinner_easy_3"
+	},
+
+	"dinner_easy_3": {
+		"speaker": "Elysia's mom",
+		"text": "\"...Yes. I suppose she does.\"",
+		"next": "dinner_easy_4"
+	},
+
+	"dinner_easy_4": {
+		"speaker": "",
+		"text": "*Elysia walks him to the corner without saying anything. At the corner she hugs him, hard and fast, and runs back before he can see her face.*",
+		"next": "last_1"
+	},
+
+	"dinner_thanks_1": {
+		"speaker": "Kay",
+		"text": "\"Thank you for dinner.\"",
+		"next": "dinner_thanks_2"
+	},
+
+	"dinner_thanks_2": {
+		"speaker": "",
+		"text": "*Her mom beams. Elysia walks him to the corner and doesn't say much, but she holds his sleeve the whole way.*",
 		"next": "last_1"
 	},
 
@@ -5348,8 +7296,8 @@
 		"minigame": "res://Scenes/Minigames/get_up.tscn",
 		"settings": {"seconds": 20, "clock": "6:30"},
 		"results": {
-			"won":     {"text": "Got up", "next": "endA_2"},
-			"tried":   {"text": "Got up", "next": "endA_2"},
+			"won": {"text": "Got up", "next": "endA_2"},
+			"tried": {"text": "Got up", "next": "endA_2"},
 			"gave_up": {"text": "Got up", "next": "endA_2"}
 		}
 	},
@@ -5449,6 +7397,43 @@
 	"endA_beetle_4": {
 		"speaker": "Kay",
 		"text": "\"He's perfect.\"",
+		"next": "endA_tongue_1"
+	},
+
+	"endA_tongue_1": {
+		"speaker": "Elysia",
+		"text": "\"Pun named him Kay.\"",
+		"next": "endA_tongue_2"
+	},
+
+	"endA_tongue_2": {
+		"speaker": "Kay",
+		"text": "\"...Should I be flattered?\"",
+		"next": "endA_tongue_3"
+	},
+
+	"endA_tongue_3": {
+		"speaker": "Elysia",
+		"text": "\"He's yellow, he's foamy, and he solves mazes.\"",
+		"next": "endA_tongue_4"
+	},
+
+	"endA_tongue_4": {
+		"speaker": "Kay",
+		"text": "\"So, yes.\"",
+		"next": "endA_tongue_5"
+	},
+
+	"endA_tongue_5": {
+		"speaker": "",
+		"text": "*She sticks her tongue out at him, in front of everyone, and doesn't check a single face.*",
+		"next": "endA_ulyn_1",
+		"secret": {"condition": "flag_true", "flag": "Hoodie", "next": "endA_tongue_6"}
+	},
+
+	"endA_tongue_6": {
+		"speaker": "",
+		"text": "*She's wearing his hoodie. She has been since that Saturday. He's stopped asking for it back.*",
 		"next": "endA_ulyn_1"
 	},
 
@@ -5638,8 +7623,15 @@
 		"speaker": "",
 		"text": "*At the gate, Elysia waves. He waves back and smiles. Not the practiced smile. Not entirely.*",
 		"next": "endB_4",
+		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "endB_tongue_1"},
 		"background": "Gate",
 		"show_characters": ["Elysia"]
+	},
+
+	"endB_tongue_1": {
+		"speaker": "",
+		"text": "*She sticks her tongue out at him. He sticks his out back. One of her friends shrieks.*",
+		"next": "endB_4"
 	},
 
 	"endB_4": {
@@ -5825,6 +7817,36 @@
 	"endC_8": {
 		"speaker": "",
 		"text": "*He reads it. It's like reading somebody else's message.*",
+		"next": "endC_lunch_1"
+	},
+
+	"endC_lunch_1": {
+		"speaker": "",
+		"text": "*At lunch, Elysia sits next to him and doesn't say anything for a while.*",
+		"next": "endC_lunch_2"
+	},
+
+	"endC_lunch_2": {
+		"speaker": "Elysia",
+		"text": "\"You haven't teased me in weeks.\"",
+		"next": "endC_lunch_3"
+	},
+
+	"endC_lunch_3": {
+		"speaker": "",
+		"text": "*She says it very quietly.*",
+		"next": "endC_lunch_4"
+	},
+
+	"endC_lunch_4": {
+		"speaker": "Kay",
+		"text": "\"I've been busy.\"",
+		"next": "endC_lunch_5"
+	},
+
+	"endC_lunch_5": {
+		"speaker": "",
+		"text": "*She nods, like she's adding it to a list she's been keeping.*",
 		"next": "endC_9"
 	},
 

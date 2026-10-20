@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://d4g6v2naf3gcq"]
 
 [ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/StoryEngine/story_player.gd" id="1_7yklv"]
 [ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/Dialog/dialog.tscn" id="2_jk8no"]
@@ -16,16 +16,16 @@
 [ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
 [ext_resource type="Texture2D" uid="uid://b8e8nqb8igp0r" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
 [ext_resource type="Script" uid="uid://c8llnyl23203d" path="res://Scripts/StoryEngine/modes/ulyn_mode.gd" id="20_mode"]
-[ext_resource type="Theme" path="res://Assets/Themes/ulyn_theme.tres" id="30_theme"]
+[ext_resource type="Theme" uid="uid://b3jtan4wuqf1p" path="res://Assets/Themes/ulyn_theme.tres" id="30_theme"]
 [ext_resource type="Shader" uid="uid://d0drsdox313hm" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
+
+[sub_resource type="Resource" id="Resource_ulyn"]
+script = ExtResource("20_mode")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
 shader = ExtResource("31_sideart")
 shader_parameter/tint = Color(0.95, 0.7, 0.24, 1)
 shader_parameter/highlight = 0.25
-
-[sub_resource type="Resource" id="Resource_ulyn"]
-script = ExtResource("20_mode")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
 
@@ -41,9 +41,9 @@ animations = [{
 script = ExtResource("1_7yklv")
 flow_graph_path = "res://Story/Ulyn/flow_graph.json"
 start_node = "start"
+mode = SubResource("Resource_ulyn")
 ui_theme = ExtResource("30_theme")
 notice_color = Color(0.95, 0.7, 0.24, 1)
-mode = SubResource("Resource_ulyn")
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 
@@ -57,8 +57,8 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
-use_parent_material = true
 z_index = 100
+use_parent_material = true
 layout_mode = 0
 offset_left = 1357.0
 offset_right = 1600.0
@@ -69,8 +69,8 @@ stretch_mode = 2
 flip_h = true
 
 [node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
-use_parent_material = true
 z_index = 100
+use_parent_material = true
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 900.0
@@ -274,7 +274,7 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Tan\'s couch" type="TextureRect" parent="Bgs"]
+[node name="Tan\'s couch" type="TextureRect" parent="Bgs" unique_id=1954712429]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -286,7 +286,7 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Tan\'s couch night" type="TextureRect" parent="Bgs"]
+[node name="Tan\'s couch night" type="TextureRect" parent="Bgs" unique_id=1745801898]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -298,7 +298,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Tan\'s kitchen" type="TextureRect" parent="Bgs"]
+[node name="Tan\'s kitchen" type="TextureRect" parent="Bgs" unique_id=779482450]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -310,7 +310,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Tan\'s balcony" type="TextureRect" parent="Bgs"]
+[node name="Tan\'s balcony" type="TextureRect" parent="Bgs" unique_id=1440227716]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -322,7 +322,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Library" type="TextureRect" parent="Bgs"]
+[node name="Library" type="TextureRect" parent="Bgs" unique_id=10653416]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -334,7 +334,7 @@ texture = ExtResource("8_7a8g2")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Council room" type="TextureRect" parent="Bgs"]
+[node name="Council room" type="TextureRect" parent="Bgs" unique_id=1963067485]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -346,7 +346,7 @@ texture = ExtResource("10_vaay5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Garden" type="TextureRect" parent="Bgs"]
+[node name="Garden" type="TextureRect" parent="Bgs" unique_id=1775879192]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -358,7 +358,7 @@ texture = ExtResource("6_8nrf5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Sports field" type="TextureRect" parent="Bgs"]
+[node name="Sports field" type="TextureRect" parent="Bgs" unique_id=9544446]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -370,7 +370,7 @@ texture = ExtResource("6_8nrf5")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Bus stop" type="TextureRect" parent="Bgs"]
+[node name="Bus stop" type="TextureRect" parent="Bgs" unique_id=778959467]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -382,7 +382,7 @@ texture = ExtResource("12_e6el8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Ulyn\'s kitchen" type="TextureRect" parent="Bgs"]
+[node name="Ulyn\'s kitchen" type="TextureRect" parent="Bgs" unique_id=39162853]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -394,7 +394,7 @@ texture = ExtResource("4_42qhq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Ulyn\'s kitchen night" type="TextureRect" parent="Bgs"]
+[node name="Ulyn\'s kitchen night" type="TextureRect" parent="Bgs" unique_id=1569369979]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -406,7 +406,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Ulyn\'s room" type="TextureRect" parent="Bgs"]
+[node name="Ulyn\'s room" type="TextureRect" parent="Bgs" unique_id=1739982004]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -418,7 +418,7 @@ texture = ExtResource("5_4fkki")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Phone at night" type="TextureRect" parent="Bgs"]
+[node name="Phone at night" type="TextureRect" parent="Bgs" unique_id=1778162155]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -482,21 +482,21 @@ scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Tan" type="AnimatedSprite2D" parent="Characters"]
+[node name="Tan" type="AnimatedSprite2D" parent="Characters" unique_id=202475807]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Pim" type="AnimatedSprite2D" parent="Characters"]
+[node name="Pim" type="AnimatedSprite2D" parent="Characters" unique_id=37568206]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="MsNoi" type="AnimatedSprite2D" parent="Characters"]
+[node name="MsNoi" type="AnimatedSprite2D" parent="Characters" unique_id=1633460336]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
@@ -515,8 +515,8 @@ bus = &"Sfx"
 bus = &"Voice"
 
 [node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
-bus = &"Sfx"
 stream = ExtResource("3_hvbsa")
 volume_db = -21.16
 pitch_scale = 0.4
 max_polyphony = 15
+bus = &"Sfx"
