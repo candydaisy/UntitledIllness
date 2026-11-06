@@ -1,6 +1,7 @@
 # Untitled Illness
 
 [![Itch Pages](https://img.shields.io/badge/Live%20Demo-Itch%20Pages-red?style=for-the-badge&logo=itch)](https://candyest.itch.io/untitled-illness)
+[![Story Editor](https://img.shields.io/badge/Story%20Editor-TTFUI-blue?style=for-the-badge&logo=github)](https://candydaisy.github.io/TTFUI/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 > *People can look fine on the outside and still be carrying something heavy.*
@@ -69,10 +70,29 @@ The game doesn't tell you what to think. It asks you to notice, and to reconside
 
 Mainly high school and university-age players, especially those who enjoy visual novels, narrative games, and psychological storytelling. The themes aren't limited to students, though. Anyone who has dealt with academic pressure, difficult relationships, holding emotions in, or not knowing how to reach out may see themselves in parts of the story.
 
+## Story editor: TTFUI
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://candydaisy.github.io/TTFUI/)
+[![Repository](https://img.shields.io/badge/Source-candydaisy%2FTTFUI-black?style=for-the-badge&logo=github)](https://github.com/candydaisy/TTFUI)
+
+The story files in `Story/` are JSON, and writing branching dialogue by hand in JSON is slow and easy to break, especially for writers who don't code. **TTFUI (The Tool For Untitled Illness)** is a browser-based visual editor built alongside the game so the story can be written and edited without touching code.
+
+- **Visual flow graph.** Each line is a node. Choices, secret routes, and minigame results each get their own output port, and dashed links show where story flags are set and checked.
+- **Same rules as the game.** Kay, Elysia, and Ulyn each have their own meters and choice types in `Scripts/StoryEngine/modes/`. The editor mirrors these modes, so its sidebar, diagnostics, and playtest follow the same logic as the game.
+- **Playtest in the browser.** Run a route with live meters, flags, locked choices, and timed choices without opening Godot.
+- **Story linter.** Catches missing targets, dead ends, orphan nodes, broken conditions, and speakers or emotions that aren't in the cast.
+- **Lossless round-trip.** Importing a `flow_graph.json` and exporting it again produces an identical file, so git diffs only show real story changes.
+- **Auto-layout** based on longest-path layering, to keep large graphs readable.
+- **Saving and sharing without a backend.** Files are saved straight to disk with the File System Access API. Projects are shared through links that encode the data in the URL, since itch.io's CSP blocks Firebase.
+- **Extra tools** for Thai translations (`th.json`), the relationship web (`relationships.json`), and voice-over generation.
+
+Built with plain HTML, CSS, and JavaScript (ES modules), with no dependencies and unit tests that run on Node.js.
+
 ## Built with
 
 - [Godot Engine 4.7](https://godotengine.org/) (GL Compatibility renderer)
 - Export targets: **Web** (itch.io) and **Android**
+- Story editing: [TTFUI](https://github.com/candydaisy/TTFUI) (HTML, CSS, JavaScript)
 
 ## Running the project
 
@@ -104,7 +124,7 @@ UntitledIllness/
 └── Docs/               # Project write-ups
 ```
 
-Want to help? See [CONTRIBUTING.md](CONTRIBUTING.md). Writing dialogue? See [Story/README.md](Story/README.md).
+WWant to help? See [CONTRIBUTING.md](CONTRIBUTING.md). Writing dialogue? Use [TTFUI](https://candydaisy.github.io/TTFUI/), or see [Story/README.md](Story/README.md) for the file format.
 
 ## A note on the subject matter
 
