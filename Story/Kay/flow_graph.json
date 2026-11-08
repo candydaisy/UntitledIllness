@@ -11,6 +11,7 @@
 	"wake_2": {
 		"speaker": "",
 		"text": "*Kay slaps the alarm off without opening his eyes.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "wake_3",
 		"background": "Kay's room1",
 		"sfx": "stop"
@@ -214,6 +215,7 @@
 	"gate_7": {
 		"speaker": "",
 		"text": "*A hand lands on his back.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "gate_8",
 		"show_characters": ["Ulyn"],
 		"hide_characters": ["Elysia"],
@@ -223,6 +225,7 @@
 	"gate_8": {
 		"speaker": "Ulyn",
 		"text": "[teasing] \"Morning. You look like a zombie.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "gate_9"
 	},
 
@@ -230,6 +233,7 @@
 		"speaker": "Kay",
 		"emotion": "tired",
 		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
+		"expression": {"Kay": "tired"},
 		"next": "gate_10"
 	},
 
@@ -272,6 +276,7 @@
 	"gate_16": {
 		"speaker": "",
 		"text": "*Ulyn doesn't push. He gives Kay a long look, then starts walking.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "gate_17",
 		"background": "School hallway"
 	},
@@ -279,6 +284,7 @@
 	"gate_17": {
 		"speaker": "Ulyn",
 		"text": "[playful] [encouraging] \"Come on, leader. Don't be late to your own presentation.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "pres_1"
 	},
 
@@ -318,6 +324,7 @@
 	"pres_6": {
 		"speaker": "Ulyn",
 		"text": "[smug] [playful] \"Ulyn. I made the slides, so if they look good, you're welcome.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "pres_7",
 		"show_characters": ["Ulyn"],
 		"hide_characters": ["Kay"]
@@ -455,6 +462,7 @@
 	"pres_22": {
 		"speaker": "",
 		"text": "*Ulyn doesn't say anything. He's looking at Kay, not at them.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "after_1",
 		"show_characters": ["Ulyn"],
 		"hide_characters": ["Bank", "Fern"]
@@ -470,6 +478,7 @@
 		"speaker": "Ulyn",
 		"emotion": "angry",
 		"text": "[frustrated] \"Why didn't you just let him blank?\"",
+		"expression": {"Ulyn": "angry"},
 		"next": "after_3"
 	},
 
@@ -496,6 +505,7 @@
 		"speaker": "Ulyn",
 		"emotion": "sad",
 		"text": "[sad] [quietly] \"You're always like this, Kay.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "after_7"
 	},
 
@@ -518,6 +528,7 @@
 	"after_awkward": {
 		"speaker": "Ulyn",
 		"text": "[pointed] [dry] \"For anyone except you, you mean.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "after_8"
 	},
 
@@ -565,6 +576,7 @@
 	"lunch_4": {
 		"speaker": "Ulyn",
 		"text": "[concerned] \"You sure? I can put it off and just do it tonight.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "lunch_5"
 	},
 
@@ -646,6 +658,7 @@
 		"speaker": "Kay",
 		"emotion": "nervous",
 		"text": "[nervous] [small voice] \"...Could you? Just for today.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "lunch_stay_2"
 	},
 
@@ -723,6 +736,7 @@
 	"food_kp_4": {
 		"speaker": "",
 		"text": "*He turns around. Elysia, hands behind her back, smiling like she's been waiting.*",
+		"expression": {"Kay": "neutral"},
 		"next": "food_kp_5",
 		"show_characters": ["Elysia", "Kay"]
 	},
@@ -737,6 +751,7 @@
 		"speaker": "Kay",
 		"emotion": "nervous",
 		"text": "[flustered] [stammering] \"Y-you're one to talk. You're in the same line.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "food_kp_7"
 	},
 
@@ -921,6 +936,7 @@
 	"food_nd_say_1": {
 		"speaker": "Kay",
 		"text": "[hesitant] [interrupting] \"Hey—\"",
+		"expression": {"Kay": "neutral"},
 		"next": "food_nd_say_2",
 		"show_characters": ["Kay"]
 	},
@@ -1083,6 +1099,7 @@
 	"seat_el_2": {
 		"speaker": "Kay",
 		"text": "[shy] [nervous] \"Hey. Is it okay if I sit here?\"",
+		"expression": {"Kay": "nervous"},
 		"next": "seat_el_3",
 		"show_characters": ["Elysia"],
 		"sfx": "Walkingstep"
@@ -1091,6 +1108,7 @@
 	"seat_el_3": {
 		"speaker": "Elysia",
 		"text": "[surprised] [delighted] \"Ah— yeah! Of course!\"",
+		"expression": {"Elysia": "happy"},
 		"next": "seat_el_4",
 		"sfx": "stop"
 	},
@@ -1104,6 +1122,7 @@
 	"seat_el_5": {
 		"speaker": "Elysia",
 		"text": "[embarrassed] [scolding] \"Hey. Stop staring at him. Eat your food.\"",
+		"expression": {"Elysia": "flustered"},
 		"next": "seat_el_6"
 	},
 
@@ -1156,6 +1175,7 @@
 	"class2_2": {
 		"speaker": "",
 		"text": "*Kay and Ulyn sit next to each other, like always.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "class2_3",
 		"show_characters": ["Kay", "Ulyn"],
 		"secret": {"condition": "flag_true", "flag": "UlynStayed", "next": "class2_stay"}
@@ -1189,18 +1209,21 @@
 	"class2_el_1": {
 		"speaker": "Kay",
 		"text": "[shy] [small smile] \"It was... good, actually.\"",
+		"expression": {"Kay": "smile"},
 		"next": "class2_el_2"
 	},
 
 	"class2_el_2": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [delighted] \"Ohh? You saw Elysia, didn't you. Look at your face.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "class2_el_3"
 	},
 
 	"class2_el_3": {
 		"speaker": "Kay",
 		"text": "[embarrassed] [mumbling] \"Shut up.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "class2_hec_1"
 	},
 
@@ -1245,6 +1268,7 @@
 	"walk_2": {
 		"speaker": "",
 		"text": "*Kay is halfway through the gate when he hears his name.*",
+		"expression": {"Kay": "neutral"},
 		"next": "walk_3",
 		"background": "Gate",
 		"show_characters": ["Kay"]
@@ -1253,6 +1277,7 @@
 	"walk_3": {
 		"speaker": "Elysia",
 		"text": "[playful] [sing-song] \"Kayyy~ Wanna walk home together?\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "walk_4",
 		"show_characters": ["Elysia"]
 	},
@@ -1349,6 +1374,7 @@
 		"speaker": "Kay",
 		"emotion": "nervous",
 		"text": "[nervous] [apologetic] \"Sorry. I didn't mean to make things weird for you.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "walk_yes_6"
 	},
 
@@ -1413,6 +1439,7 @@
 	"home_2": {
 		"speaker": "",
 		"text": "*In his room, Kay falls face-first onto his bed, still in his uniform.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "home_3",
 		"background": "Kay's room1",
 		"show_characters": ["Kay"],
@@ -2109,6 +2136,7 @@
 	"proj_1": {
 		"speaker": "",
 		"text": "*Homeroom. The teacher writes COMMUNITY PROJECT on the board and underlines it twice.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "proj_2",
 		"background": "Class",
 		"show_characters": ["Ulyn", "Bank", "Fern"],
@@ -2319,6 +2347,7 @@
 	"tlunch_4": {
 		"speaker": "Ulyn",
 		"text": "[exhausted] [dry] \"Finished the chemistry report at three. Don't look at me.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "tlunch_5"
 	},
 
@@ -2331,6 +2360,7 @@
 	"tlunch_open_1": {
 		"speaker": "",
 		"text": "*Ulyn buys two plates of pad kra pao, crispy pork, a fried egg on each, and slides one across the table without a word.*",
+		"expression": {"Ulyn": "neutral"},
 		"show_characters": ["Ulyn"],
 		"next": "tlunch_open_2"
 	},
@@ -2374,12 +2404,14 @@
 	"tlunch_open_8": {
 		"speaker": "Kay",
 		"text": "[suspicious] [small smile] \"Was that a joke about the presentation?\"",
+		"expression": {"Kay": "smile"},
 		"next": "tlunch_open_9"
 	},
 
 	"tlunch_open_9": {
 		"speaker": "Ulyn",
 		"text": "[playful] [smug] \"A little bit.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "tlunch_open_10"
 	},
 
@@ -2416,6 +2448,7 @@
 	"tlunch_stay_5": {
 		"speaker": "Kay",
 		"text": "[embarrassed] [quietly] \"...I kind of did.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "tlunch_stay_6"
 	},
 
@@ -2428,6 +2461,7 @@
 	"kettle_1": {
 		"speaker": "",
 		"text": "*That night, Kay boils the kettle and carries it to the bathroom, mixing it with cold water in a bucket so he can wash his hair without his scalp going numb.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "kettle_2",
 		"background": "Bathroom2",
 		"hide_characters": ["Ulyn"],
@@ -2592,12 +2626,14 @@
 	"shop_9": {
 		"speaker": "Kay",
 		"text": "[deadpan] [teasing] \"All three.\"",
+		"expression": {"Kay": "casual_teasing"},
 		"next": "shop_10"
 	},
 
 	"shop_10": {
 		"speaker": "Elysia",
 		"text": "[embarrassed] [quietly] \"...Two are for Pun.\"",
+		"expression": {"Elysia": "flustered"},
 		"choices": [
 			{"text": "\"And the third one's an emergency too?\"", "type": "neutral", "weight_change": 0, "next": "shop_tease_1"},
 			{"text": "\"Nice. I'll get going, then.\"", "type": "neutral", "weight_change": 5, "next": "shop_go_1"}
@@ -2662,6 +2698,7 @@
 	"shop_yog_1": {
 		"speaker": "Elysia",
 		"text": "[bossy] [caring] \"I'm putting a yogurt drink in your basket. Calcium. You look like you need it.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "shop_line_7"
 	},
 
@@ -2674,6 +2711,7 @@
 	"shop_go_1": {
 		"speaker": "Elysia",
 		"text": "[cheerful] \"Okay! See you tomorrow.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "shop_go_2"
 	},
 
@@ -2686,6 +2724,7 @@
 	"shop_out_1": {
 		"speaker": "",
 		"text": "*Outside, the street is dark except for the 7-Eleven and the bus stop. She looks at his one toastie, then at him.*",
+		"expression": {"Kay": "casual_neutral", "Elysia": "neutral"},
 		"background": "Street night",
 		"next": "shop_out_2"
 	},
@@ -2738,6 +2777,7 @@
 	"shop_walk_4": {
 		"speaker": "Kay",
 		"text": "[teasing] [deadpan] \"Yes, ma'am.\"",
+		"expression": {"Kay": "casual_teasing"},
 		"next": "shop_walk_5"
 	},
 
@@ -2763,6 +2803,7 @@
 	"shop_text_1": {
 		"speaker": "",
 		"text": "*Eleven minutes later:*",
+		"expression": {"Kay": "casual_neutral"},
 		"background": "Kay's room2",
 		"next": "shop_text_2"
 	},
@@ -2812,6 +2853,7 @@
 	"garden_1": {
 		"speaker": "",
 		"text": "*Saturday. The garden behind the science building: four raised beds, weeds up to the knee, a hose with three holes in it, and a tap that screams when you turn it.*",
+		"expression": {"Kay": "neutral"},
 		"next": "garden_2",
 		"background": "Garden",
 		"sfx": "Walkingstep",
@@ -2828,6 +2870,7 @@
 	"garden_3": {
 		"speaker": "",
 		"text": "*Ulyn shows up at 8:20 with a bag of bread and no apology. Fern arrives at nine and takes before-photos for twenty minutes.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "garden_4",
 		"show_characters": ["Ulyn", "Fern"]
 	},
@@ -2888,6 +2931,7 @@
 	"garden_noi_4": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [deadpan] \"Like Kay.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "garden_noi_5"
 	},
 
@@ -2973,6 +3017,7 @@
 	"bug_3": {
 		"speaker": "Elysia",
 		"text": "\"[gasps] Oh. Oh! [excited whisper] Kay. Come here. Don't move fast.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "bug_4"
 	},
 
@@ -3004,6 +3049,7 @@
 	"bug_8": {
 		"speaker": "Elysia",
 		"text": "\"[catches herself] Sorry. [embarrassed] [quietly] That's weird. Nobody cares about slime.\"",
+		"expression": {"Elysia": "flustered"},
 		"choices": [
 			{"text": "\"I care. Keep going.\"", "type": "honest", "weight_change": -5, "next": "bug_care_1", "set_flag": "ElysiaBugs"},
 			{"text": "\"We should probably head back before it gets dark.\"", "type": "neutral", "weight_change": 5, "next": "bug_leave_1"}
@@ -3049,6 +3095,7 @@
 	"bug_tease_2": {
 		"speaker": "Kay",
 		"text": "[teasing] [mock-serious] \"Should I be jealous?\"",
+		"expression": {"Kay": "teasing"},
 		"next": "bug_tease_3"
 	},
 
@@ -3091,6 +3138,7 @@
 	"bug_tease_9": {
 		"speaker": "Elysia",
 		"text": "\"[laughs] That's not a maze. That's a hostage situation.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "bug_tease_10"
 	},
 
@@ -3103,6 +3151,7 @@
 	"bug_leave_1": {
 		"speaker": "Elysia",
 		"text": "[forced brightness] \"Yeah! Totally.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "bug_leave_2"
 	},
 
@@ -3127,6 +3176,7 @@
 	"bug_gate_1": {
 		"speaker": "",
 		"text": "*They reach the gate.*",
+		"expression": {"Kay": "neutral"},
 		"next": "mint_1",
 		"background": "Gate",
 		"secret": {"condition": "weight_above", "value": 60, "next": "bug_tired_1"}
@@ -3147,12 +3197,14 @@
 	"bug_tired_3": {
 		"speaker": "Kay",
 		"text": "[dismissive] [tired] \"I'm always tired.\"",
+		"expression": {"Kay": "tired"},
 		"next": "bug_tired_4"
 	},
 
 	"bug_tired_4": {
 		"speaker": "Elysia",
 		"text": "[worried] [quietly] \"That's what worries me.\"",
+		"expression": {"Elysia": "nervous"},
 		"next": "bug_tired_5"
 	},
 
@@ -3165,6 +3217,7 @@
 	"mint_1": {
 		"speaker": "",
 		"text": "*The next day, a girl stops Kay outside the library. Short. Blunt bob. Doesn't smile.*",
+		"expression": {"Kay": "neutral"},
 		"next": "mint_2",
 		"background": "School hallway",
 		"show_characters": ["Mint"],
@@ -3234,6 +3287,7 @@
 	"vcall_1": {
 		"speaker": "",
 		"text": "*Saturday night. Elysia video-calls him to do chemistry homework \"together.\" Mostly it means her camera points at her ceiling while she groans at question four.*",
+		"expression": {"Kay": "casual_neutral"},
 		"background": "Kay's room2",
 		"next": "vcall_2"
 	},
@@ -3340,6 +3394,7 @@
 	"vcall_eggs_7": {
 		"speaker": "Kay",
 		"text": "[teasing] [pointed] \"You're very bossy about my sleep.\"",
+		"expression": {"Kay": "casual_teasing"},
 		"next": "vcall_eggs_8"
 	},
 
@@ -3400,6 +3455,7 @@
 	"vcall_sleep_6": {
 		"speaker": "",
 		"text": "*He finally hangs up at midnight. In the morning:*",
+		"expression": {"Kay": "casual_neutral"},
 		"background": "Kay's room1",
 		"next": "vcall_am_1"
 	},
@@ -3479,6 +3535,7 @@
 	"joke_1": {
 		"speaker": "",
 		"text": "*Tuesday of the third week. She comes to the garden after school without texting first.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"show_characters": ["Elysia"],
 		"background": "Garden",
 		"next": "joke_2"
@@ -3508,6 +3565,7 @@
 	"joke_bag_1": {
 		"speaker": "Kay",
 		"text": "[teasing] [playful] \"Careful. Next you'll be keeping slime in your bag.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "joke_bag_2"
 	},
 
@@ -3541,6 +3599,7 @@
 	"joke_sorry_2": {
 		"speaker": "Elysia",
 		"text": "[quietly] [hurt] \"It was a little dumb.\"",
+		"expression": {"Elysia": "sad"},
 		"next": "joke_sorry_3"
 	},
 
@@ -3553,6 +3612,7 @@
 	"joke_sorry_4": {
 		"speaker": "Elysia",
 		"text": "[tired] [reassuring] \"It's not you. Long day.\"",
+		"expression": {"Elysia": "tired"},
 		"next": "joke_sorry_5"
 	},
 
@@ -3577,6 +3637,7 @@
 	"joke_more_2": {
 		"speaker": "Elysia",
 		"text": "[forced laugh] [flat] \"Haha.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "joke_more_3"
 	},
 
@@ -3607,6 +3668,7 @@
 	"joke_quiet_2": {
 		"speaker": "Elysia",
 		"text": "[ashamed] [quietly] [voice tight] \"...I did something mean today. A girl in my class dropped her keychain, and my friends laughed at it, and I laughed too. It was so easy. That's the worst part. It was easy.\"",
+		"expression": {"Elysia": "sad"},
 		"next": "joke_quiet_3"
 	},
 
@@ -3637,12 +3699,14 @@
 	"joke_quiet_7": {
 		"speaker": "Elysia",
 		"text": "[relieved] [softly] \"Okay. Okay. Water your plants, K.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "wrecked_1"
 	},
 
 	"wrecked_1": {
 		"speaker": "",
 		"text": "*End of the third week. Ulyn falls asleep in history with his forehead on the student council folder.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "wrecked_2",
 		"background": "Class",
 		"show_characters": ["Ulyn"],
@@ -3658,6 +3722,7 @@
 	"wrecked_3": {
 		"speaker": "Ulyn",
 		"text": "[smug] [tired] \"Present. And also correct.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "wrecked_4"
 	},
 
@@ -3698,6 +3763,7 @@
 	"wrecked_ask_2": {
 		"speaker": "Ulyn",
 		"text": "[evasive] [too casual] \"...Yeah. Just sports day stuff.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "wrecked_ask_3"
 	},
 
@@ -3740,6 +3806,7 @@
 	"wrecked_quiet_4": {
 		"speaker": "Kay",
 		"text": "[deadpan] [teasing] \"You have chalk on your face.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "wrecked_quiet_5"
 	},
 
@@ -3752,6 +3819,7 @@
 	"sprout_1": {
 		"speaker": "",
 		"text": "*On the last Friday of the third week, the first seedlings come up. Water spinach first, little green hooks pushing out of the soil.*",
+		"expression": {"Kay": "neutral"},
 		"next": "sprout_2",
 		"background": "Garden",
 		"hide_characters": ["Ulyn"]
@@ -3819,6 +3887,7 @@
 	"stands_3": {
 		"speaker": "",
 		"text": "*Someone pushes a cold bottle into his hands.*",
+		"expression": {"Elysia": "neutral"},
 		"show_characters": ["Elysia"],
 		"next": "stands_4"
 	},
@@ -3826,6 +3895,7 @@
 	"stands_4": {
 		"speaker": "Elysia",
 		"text": "[shouting] [cheerful] \"Hydrate, water boy!\"",
+		"expression": {"Elysia": "happy"},
 		"next": "stands_5"
 	},
 
@@ -3845,6 +3915,7 @@
 	"stands_7": {
 		"speaker": "",
 		"text": "*By five, the field is empty. When Kay turns around from the last stack of cups, Elysia is sitting on the bottom row of the bleachers with her pom-poms in her lap and no voice left.*",
+		"expression": {"Elysia": "neutral"},
 		"show_characters": ["Elysia"],
 		"next": "stands_8"
 	},
@@ -3864,6 +3935,7 @@
 	"stands_10": {
 		"speaker": "Elysia",
 		"text": "[sad] [quietly] \"My little brother got called slime boy this week. A kid smeared his slime mold all over the inside of his bag. Everyone laughed.\"",
+		"expression": {"Elysia": "sad"},
 		"next": "stands_12",
 		"secret": {"condition": "flag_true", "flag": "BagJoke", "next": "stands_11"}
 	},
@@ -3913,12 +3985,14 @@
 	"stands_18": {
 		"speaker": "Kay",
 		"text": "[evasive] [tired] \"I was busy.\"",
+		"expression": {"Kay": "tired"},
 		"next": "stands_19"
 	},
 
 	"stands_19": {
 		"speaker": "Elysia",
 		"text": "[worried] [half-teasing] \"Usually you'd have called me ma'am by now. Like four times. Today, zero. That's how I know something's wrong.\"",
+		"expression": {"Elysia": "nervous"},
 		"choices": [
 			{"text": "\"I've been really tired. Not sports-day tired.\"", "type": "honest", "weight_change": -10, "next": "stands_tired_1", "set_flag": "ToldElysiaTired"},
 			{"text": "\"It's just the sun.\"", "type": "neutral", "weight_change": 5, "next": "stands_sun_1"}
@@ -3964,6 +4038,7 @@
 	"stands_end_2": {
 		"speaker": "Elysia",
 		"text": "[pleading] [half-laughing] \"Tease me about something. Anything. I need it.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "stands_end_3"
 	},
 
@@ -3976,6 +4051,7 @@
 	"stands_end_4": {
 		"speaker": "Kay",
 		"text": "\"[hesitates] ...[teasing] Your voice sounds like a duck.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "stands_end_5"
 	},
 
@@ -3994,6 +4070,7 @@
 	"midterm_1": {
 		"speaker": "",
 		"text": "*Week five. Midterms.*",
+		"expression": {"Kay": "casual_neutral"},
 		"hide_characters": ["Elysia"],
 		"next": "midterm_2",
 		"background": "Kay's room2",
@@ -4100,6 +4177,7 @@
 	"study_1": {
 		"speaker": "",
 		"text": "*Wednesday, between exams. Elysia drags him to the back table of the library.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"show_characters": ["Elysia"],
 		"background": "Library",
 		"next": "study_2"
@@ -4114,12 +4192,14 @@
 	"study_3": {
 		"speaker": "Kay",
 		"text": "[teasing] \"Yes, ma'am.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "study_4"
 	},
 
 	"study_4": {
 		"speaker": "Elysia",
 		"text": "[annoyed] [flustered] \"Stop that.\"",
+		"expression": {"Elysia": "flustered"},
 		"next": "study_5"
 	},
 
@@ -4186,6 +4266,7 @@
 	"study_15": {
 		"speaker": "Elysia",
 		"text": "[teasing] \"Also, you drool.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "study_16"
 	},
 
@@ -4234,6 +4315,7 @@
 	"study_23": {
 		"speaker": "Elysia",
 		"text": "[dismissive] [tired] \"I'm always tired.\"",
+		"expression": {"Elysia": "tired"},
 		"next": "study_24"
 	},
 
@@ -4297,6 +4379,7 @@
 	"study_fine_2": {
 		"speaker": "Elysia",
 		"text": "[unconvinced] [bossy] \"Okay. Then sleep tonight. That's an order.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "study_fine_3"
 	},
 
@@ -4315,6 +4398,7 @@
 	"score_1": {
 		"speaker": "",
 		"text": "*Thursday. The history teacher hands back the midterms. Kay is top of the class again.*",
+		"expression": {"Kay": "neutral"},
 		"hide_characters": ["Elysia"],
 		"next": "score_2",
 		"background": "Class",
@@ -4445,6 +4529,7 @@
 	"mnight_1": {
 		"speaker": "",
 		"text": "*That night, he can't sleep.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "mnight_2",
 		"background": "Kay's room2",
 		"hide_characters": ["MsNoi"],
@@ -4822,6 +4907,7 @@
 	"absent_call_3": {
 		"speaker": "Kay",
 		"text": "[voice breaking] [quietly] \"...No.\"",
+		"expression": {"Kay": "casual_sad"},
 		"next": "absent_call_4"
 	},
 
@@ -4858,6 +4944,7 @@
 	"knock_1": {
 		"speaker": "",
 		"text": "*Kay sleeps through the afternoon without meaning to.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "knock_2",
 		"background": "Kay's room1"
 	},
@@ -4880,6 +4967,7 @@
 	"step_2": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [worried] \"You look terrible.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_3",
 		"sfx": "stop"
 	},
@@ -4887,6 +4975,7 @@
 	"step_3": {
 		"speaker": "Kay",
 		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
+		"expression": {"Kay": "casual_tired"},
 		"next": "step_4"
 	},
 
@@ -4905,6 +4994,7 @@
 	"step_6": {
 		"speaker": "Ulyn",
 		"text": "[dry] [teasing] \"Your plants look worse than our garden.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "step_7"
 	},
 
@@ -4917,6 +5007,7 @@
 	"step_8": {
 		"speaker": "Ulyn",
 		"text": "[dry] [pointed] \"Yeah. Probably that.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "step_9",
 		"secret": {"condition": "flag_true", "flag": "CalledUlyn", "next": "step_called_1"}
 	},
@@ -4931,12 +5022,14 @@
 	"step_10": {
 		"speaker": "Ulyn",
 		"text": "[serious] [worried] \"You weren't at school. You're never not at school.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_11"
 	},
 
 	"step_11": {
 		"speaker": "Ulyn",
 		"text": "[exasperated] [fond] \"You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
+		"expression": {"Ulyn": "angry"},
 		"next": "step_conf_1"
 	},
 
@@ -4949,12 +5042,14 @@
 	"step_called_2": {
 		"speaker": "Kay",
 		"text": "[quietly] [embarrassed] \"...Yeah.\"",
+		"expression": {"Kay": "casual_nervous"},
 		"next": "step_called_3"
 	},
 
 	"step_called_3": {
 		"speaker": "Ulyn",
 		"text": "[emotional] [softly] \"You've never called me. Not once. Not since—\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_called_4"
 	},
 
@@ -4973,6 +5068,7 @@
 	"step_texted_1": {
 		"speaker": "Ulyn",
 		"text": "[shaken] [rushed] \"You texted me last night. 'You up.' And I was asleep. And then you weren't at school, and I thought—\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_texted_2"
 	},
 
@@ -5003,6 +5099,7 @@
 	"step_conf_3": {
 		"speaker": "Ulyn",
 		"text": "[guilty] [quietly] \"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_conf_4"
 	},
 
@@ -5118,6 +5215,7 @@
 	"step_fine2_5": {
 		"speaker": "Ulyn",
 		"text": "[warm] [dry] \"Offer stands. Forever, probably. Annoyingly.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "mom_1"
 	},
 
@@ -5130,6 +5228,7 @@
 	"step_why_2": {
 		"speaker": "Ulyn",
 		"text": "[sad] [knowing] \"Because you'd have done the thing. You'd have taken it on.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_why_3"
 	},
 
@@ -5142,6 +5241,7 @@
 	"step_why_4": {
 		"speaker": "Kay",
 		"text": "[laughing through tears] \"...That's so stupid.\"",
+		"expression": {"Kay": "casual_sad"},
 		"next": "step_why_5"
 	},
 
@@ -5205,6 +5305,7 @@
 	"step_honest_6": {
 		"speaker": "Ulyn",
 		"text": "[concerned] [interrupting] \"Kay—\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_honest_7"
 	},
 
@@ -5255,6 +5356,7 @@
 	"step_honest_14": {
 		"speaker": "Ulyn",
 		"text": "[emotional] [firm] \"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_honest_15"
 	},
 
@@ -5274,6 +5376,7 @@
 	"step_honest_17": {
 		"speaker": "Ulyn",
 		"text": "[honest] [tired laugh] \"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "step_honest_18"
 	},
 
@@ -5310,6 +5413,7 @@
 	"mom_1": {
 		"speaker": "",
 		"text": "*Mom gets home at eight. She doesn't take her shoes off.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "mom_2",
 		"background": "Kay's kitchen night",
 		"show_characters": ["mom"],
@@ -5457,6 +5561,7 @@
 	"mom_told_8": {
 		"speaker": "Kay",
 		"text": "[quietly] [choked up] \"I didn't want to make it worse.\"",
+		"expression": {"Kay": "casual_sad"},
 		"next": "mom_told_9"
 	},
 
@@ -5513,6 +5618,7 @@
 	"mom_heatcheck_3": {
 		"speaker": "Kay",
 		"text": "[sheepish] \"...The water heater's broken.\"",
+		"expression": {"Kay": "casual_nervous"},
 		"next": "mom_heatcheck_4"
 	},
 
@@ -5560,6 +5666,7 @@
 	"sat_3": {
 		"speaker": "",
 		"text": "*She takes him to the park by the canal and hands him a can of milk tea.*",
+		"expression": {"Kay": "casual_neutral", "Elysia": "casual_neutral"},
 		"next": "sat_4",
 		"background": "Canal park",
 		"show_characters": ["Kay", "Elysia"]
@@ -5631,6 +5738,7 @@
 	"sat_tell_3": {
 		"speaker": "Kay",
 		"text": "[nervous] [honest] \"At school I keep away from you because I think being seen with me makes people talk about you. Makes you look weird.\"",
+		"expression": {"Kay": "casual_nervous"},
 		"next": "sat_tell_4"
 	},
 
@@ -5643,6 +5751,7 @@
 	"sat_tell_5": {
 		"speaker": "Elysia",
 		"text": "[disbelief] [hurt] \"You think you make me look weird?\"",
+		"expression": {"Elysia": "casual_sad"},
 		"next": "sat_tell_6"
 	},
 
@@ -5685,6 +5794,7 @@
 	"sat_bug_3": {
 		"speaker": "Elysia",
 		"text": "[tired] [honest] \"I watch everything I say. Every single thing. With my friends I'm doing a version. The fun one. The one who's always fine.\"",
+		"expression": {"Elysia": "casual_tired"},
 		"next": "sat_bug_4"
 	},
 
@@ -5705,6 +5815,7 @@
 	"sat_why_1": {
 		"speaker": "Elysia",
 		"text": "[hurt] [honest] \"So when you won't walk with me because people will talk, it feels like you're agreeing with them. Like even you think I should be careful.\"",
+		"expression": {"Elysia": "casual_sad"},
 		"next": "sat_why_2"
 	},
 
@@ -5751,6 +5862,7 @@
 	"sat_safe_2": {
 		"speaker": "Elysia",
 		"text": "[warm] [relieved] \"Okay. Then you don't have to be fine with me. Deal?\"",
+		"expression": {"Elysia": "casual_happy"},
 		"next": "sat_safe_3"
 	},
 
@@ -5782,12 +5894,14 @@
 	"rice_2": {
 		"speaker": "Kay",
 		"text": "[teasing] \"You talk about it like it's your ex.\"",
+		"expression": {"Kay": "casual_teasing"},
 		"next": "rice_3"
 	},
 
 	"rice_3": {
 		"speaker": "Elysia",
 		"text": "[defensive] [indignant] \"It's not my ex. It's my friend.\"",
+		"expression": {"Elysia": "casual_flustered"},
 		"next": "rice_4"
 	},
 
@@ -5812,6 +5926,7 @@
 	"rice_7": {
 		"speaker": "Elysia",
 		"text": "[softly] [smiling] \"You're back, huh.\"",
+		"expression": {"Elysia": "casual_happy"},
 		"next": "rice_8"
 	},
 
@@ -5851,6 +5966,7 @@
 	"rice_hood_1": {
 		"speaker": "",
 		"text": "*He takes it off and holds it out.*",
+		"expression": {"Elysia": "hoodie_neutral"},
 		"next": "rice_hood_2"
 	},
 
@@ -5875,24 +5991,28 @@
 	"rice_hood_5": {
 		"speaker": "Elysia",
 		"text": "[smug] [happy] \"I'm keeping it.\"",
+		"expression": {"Elysia": "hoodie_happy"},
 		"next": "rice_hood_6"
 	},
 
 	"rice_hood_6": {
 		"speaker": "Kay",
 		"text": "[fond] \"I know.\"",
+		"expression": {"Kay": "casual_smile"},
 		"next": "rice_talk_1"
 	},
 
 	"rice_tease_1": {
 		"speaker": "Elysia",
 		"text": "[pouting] [laughing] \"Rude.\"",
+		"expression": {"Elysia": "casual_happy"},
 		"next": "rice_tease_2"
 	},
 
 	"rice_tease_2": {
 		"speaker": "",
 		"text": "*She takes the hoodie off his lap and puts it on.*",
+		"expression": {"Elysia": "hoodie_neutral"},
 		"next": "rice_tease_3"
 	},
 
@@ -5967,6 +6087,7 @@
 	"sat_sorry_1": {
 		"speaker": "Elysia",
 		"text": "[gentle] [firm] \"Don't be sorry.\"",
+		"expression": {"Elysia": "casual_neutral"},
 		"next": "sat_sorry_2"
 	},
 
@@ -5985,6 +6106,7 @@
 	"mon_1": {
 		"speaker": "",
 		"text": "*Monday. Elysia is at the gate with her friends, same as always. She turns around like she felt him there, and waves.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"next": "mon_2",
 		"background": "Gate",
 		"show_characters": ["Mint"],
@@ -6021,6 +6143,7 @@
 	"mon_walk_3": {
 		"speaker": "Elysia",
 		"text": "[loud] [embarrassed] [rushed] \"Yes, he's my boyfriend, we all know, moving on.\"",
+		"expression": {"Elysia": "flustered"},
 		"next": "mon_walk_4"
 	},
 
@@ -6081,6 +6204,7 @@
 	"home2_8": {
 		"speaker": "Kay",
 		"text": "[teasing] [imitating her] \"Yes, he's my boyfriend, we all know, moving on.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "home2_9"
 	},
 
@@ -6114,6 +6238,7 @@
 	"home2_ears_2": {
 		"speaker": "Elysia",
 		"text": "[defiant] [laughing] \"My ears are on my side. I regret nothing.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "home2_ears_3"
 	},
 
@@ -6180,6 +6305,7 @@
 	"home2_end_3": {
 		"speaker": "Kay",
 		"text": "[warm] [smiling] \"Same time tomorrow.\"",
+		"expression": {"Kay": "smile"},
 		"next": "home2_end_4"
 	},
 
@@ -6192,6 +6318,7 @@
 	"guide_1": {
 		"speaker": "",
 		"text": "*Thursday. The guidance room is next to the home ec room. Someone has stuck paper flowers on the door, slightly crooked.*",
+		"expression": {"Kay": "neutral"},
 		"next": "guide_2",
 		"background": "School hallway",
 		"hide_characters": ["Elysia", "Mint"]
@@ -6227,6 +6354,7 @@
 	"guide_ulyn_1": {
 		"speaker": "",
 		"text": "*Ulyn walked him here, and is still standing at the end of the hallway.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "guide_ulyn_2",
 		"show_characters": ["Ulyn"]
 	},
@@ -6234,6 +6362,7 @@
 	"guide_ulyn_2": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [firm] \"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "guide_choice"
 	},
 
@@ -6377,6 +6506,7 @@
 	"guide_away_ulyn_1": {
 		"speaker": "Ulyn",
 		"text": "[surprised] [gentle] \"That was fast.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "guide_away_ulyn_2",
 		"show_characters": ["Ulyn"]
 	},
@@ -6496,6 +6626,7 @@
 	"group_handle_3": {
 		"speaker": "",
 		"text": "*On Sunday, Ulyn comes over and sits on the floor doing the budget without being asked.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "group_handle_4",
 		"background": "Kay's room1",
 		"hide_characters": ["Bank", "Fern"]
@@ -6559,6 +6690,7 @@
 	"group_split2_2": {
 		"speaker": "Ulyn",
 		"text": "[dry] [playful] \"And I'll do the budget. And stop sleeping in class. Maybe.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "group_split2_3"
 	},
 
@@ -6574,6 +6706,7 @@
 	"water_1": {
 		"speaker": "",
 		"text": "*Before he leaves, Kay pushes his finger into the soil of the basil bed. Still damp from yesterday.*",
+		"expression": {"Kay": "neutral"},
 		"next": "water_2",
 		"background": "Garden",
 		"hide_characters": ["Ulyn"]
@@ -6628,6 +6761,7 @@
 	"ploy_1": {
 		"speaker": "",
 		"text": "*On Tuesday, Elysia comes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap.*",
+		"expression": {"Elysia": "neutral"},
 		"show_characters": ["Elysia"],
 		"next": "ploy_2"
 	},
@@ -6635,6 +6769,7 @@
 	"ploy_2": {
 		"speaker": "Elysia",
 		"text": "[shaky] [proud] \"I said no to Ploy. Sunday night. She called at one, and I said I love you, but I can't do one a.m. calls anymore.\"",
+		"expression": {"Elysia": "nervous"},
 		"next": "ploy_3"
 	},
 
@@ -6647,6 +6782,7 @@
 	"ploy_4": {
 		"speaker": "Elysia",
 		"text": "[hurt] [quietly] \"She hasn't talked to me since. She sat with Jane today. She looked right through me.\"",
+		"expression": {"Elysia": "sad"},
 		"next": "ploy_5"
 	},
 
@@ -6710,6 +6846,7 @@
 	"ploy_thu_7": {
 		"speaker": "Kay",
 		"text": "[deadpan] [teasing] \"Bank still has my pen. But that's separate.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "ploy_thu_8"
 	},
 
@@ -6790,6 +6927,7 @@
 	"ploy_bag_8": {
 		"speaker": "Elysia",
 		"text": "[fond] [laughing softly] \"Of course you have. Thank you.\"",
+		"expression": {"Elysia": "happy"},
 		"next": "ploy_bag_9"
 	},
 
@@ -6814,6 +6952,7 @@
 	"ploy_end_3": {
 		"speaker": "Elysia",
 		"text": "[indignant] \"I am not bossy.\"",
+		"expression": {"Elysia": "flustered"},
 		"next": "ploy_end_4"
 	},
 
@@ -6844,6 +6983,7 @@
 	"pres2_1": {
 		"speaker": "",
 		"text": "*Presentation day. First period. History.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"hide_characters": ["Elysia"],
 		"next": "pres2_2",
 		"background": "Class",
@@ -6865,6 +7005,7 @@
 	"pres2_4": {
 		"speaker": "Ulyn",
 		"text": "[smug] [playful] \"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "pres2_5"
 	},
 
@@ -7022,6 +7163,7 @@
 	"noi_end_1": {
 		"speaker": "",
 		"text": "*That afternoon, Ms. Noi comes out to the garden with their grades and a piece of news.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "noi_end_2",
 		"background": "Garden",
 		"show_characters": ["MsNoi"]
@@ -7080,6 +7222,7 @@
 	"dinner_2": {
 		"speaker": "",
 		"text": "*Her house smells like garlic and fish sauce. Her mom is kind and busy and decides he's too thin within five minutes. Pun sits directly across from him and stares at him over a bowl of rice like he's a specimen.*",
+		"expression": {"Kay": "casual_neutral", "Elysia": "casual_neutral"},
 		"show_characters": ["Elysia", "Pun", "ElysiaMom"],
 		"background": "Elysia's kitchen",
 		"next": "dinner_3"
@@ -7142,6 +7285,7 @@
 	"dinner_12": {
 		"speaker": "Elysia",
 		"text": "[warning] [embarrassed] \"Pun.\"",
+		"expression": {"Elysia": "casual_flustered"},
 		"next": "dinner_13"
 	},
 
@@ -7387,6 +7531,7 @@
 	"endA_gate_1": {
 		"speaker": "",
 		"text": "*At the gate, Elysia is with her friends. She turns around like she felt him there.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"next": "endA_gate_2",
 		"background": "Gate",
 		"show_characters": ["Elysia"]
@@ -7408,6 +7553,7 @@
 	"endA_beetle_2": {
 		"speaker": "Elysia",
 		"text": "[delighted] [adoring] \"Look at him. Isn't he perfect?\"",
+		"expression": {"Elysia": "happy"},
 		"next": "endA_beetle_3"
 	},
 
@@ -7420,6 +7566,7 @@
 	"endA_beetle_4": {
 		"speaker": "Kay",
 		"text": "[fond] [amused] \"He's perfect.\"",
+		"expression": {"Kay": "smile"},
 		"next": "endA_tongue_1"
 	},
 
@@ -7438,6 +7585,7 @@
 	"endA_tongue_3": {
 		"speaker": "Elysia",
 		"text": "[teasing] [affectionate] \"He's yellow, he's foamy, and he solves mazes.\"",
+		"expression": {"Elysia": "neutral"},
 		"next": "endA_tongue_4"
 	},
 
@@ -7457,6 +7605,7 @@
 	"endA_tongue_6": {
 		"speaker": "",
 		"text": "*She's wearing his hoodie. She has been since that Saturday. He's stopped asking for it back.*",
+		"expression": {"Elysia": "hoodie_neutral"},
 		"next": "endA_ulyn_1"
 	},
 
@@ -7471,6 +7620,7 @@
 	"endA_ulyn_2": {
 		"speaker": "Ulyn",
 		"text": "[teasing] \"Morning. You look—\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "endA_ulyn_3"
 	},
 
@@ -7508,6 +7658,7 @@
 	"endA_ask_4": {
 		"speaker": "Ulyn",
 		"text": "[quietly] [sad] \"It's weird there. Quiet.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "endA_ask_5"
 	},
 
@@ -7532,6 +7683,7 @@
 	"endA_class_1": {
 		"speaker": "",
 		"text": "*They walk to class together.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "endA_garden_1",
 		"background": "Class",
 		"hide_characters": ["Elysia"],
@@ -7578,6 +7730,7 @@
 	"endA_garden_5": {
 		"speaker": "",
 		"text": "*That night, he lies in bed and looks at the ceiling.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "endA_garden_6",
 		"background": "Kay's room2",
 		"amb": "Bedroom"
@@ -7645,6 +7798,7 @@
 	"endB_3": {
 		"speaker": "",
 		"text": "*At the gate, Elysia waves. He waves back and smiles. Not the practiced smile. Not entirely.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"next": "endB_4",
 		"secret": {"condition": "flag_true", "flag": "ElysiaSafe", "next": "endB_tongue_1"},
 		"background": "Gate",
@@ -7686,12 +7840,14 @@
 	"endB_8": {
 		"speaker": "Kay",
 		"text": "[teasing] \"Yeah. Your treat.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "endB_9"
 	},
 
 	"endB_9": {
 		"speaker": "Ulyn",
 		"text": "[indignant] [laughing] \"My treat? Since when is it my treat?\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "endB_10"
 	},
 
@@ -7710,6 +7866,7 @@
 	"endB_12": {
 		"speaker": "",
 		"text": "*After school, Kay waters the garden one last time before the break. He's halfway through a second pass before he catches himself, and turns off the tap.*",
+		"expression": {"Kay": "neutral"},
 		"next": "endB_13",
 		"background": "Garden",
 		"hide_characters": ["Ulyn"],
@@ -7726,6 +7883,7 @@
 	"endB_14": {
 		"speaker": "",
 		"text": "*That night, he lies in bed.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "endB_15",
 		"background": "Kay's room2",
 		"amb": "Bedroom"
@@ -7807,6 +7965,7 @@
 	"endC_3": {
 		"speaker": "",
 		"text": "*At school, everything goes well. Group 3 gets the top grade. The teacher says \"as always.\" Bank and Fern hug him at the same time.*",
+		"expression": {"Kay": "neutral"},
 		"next": "endC_4",
 		"background": "Class",
 		"show_characters": ["Bank", "Fern"]
@@ -7853,6 +8012,7 @@
 	"endC_lunch_2": {
 		"speaker": "Elysia",
 		"text": "[quietly] [worried] \"You haven't teased me in weeks.\"",
+		"expression": {"Elysia": "nervous"},
 		"next": "endC_lunch_3"
 	},
 
@@ -7900,6 +8060,7 @@
 	"endC_12": {
 		"speaker": "",
 		"text": "*That night, Kay lies in bed and looks at the ceiling.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "endC_13",
 		"background": "Kay's room2",
 		"amb": "Bedroom"

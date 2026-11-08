@@ -2,6 +2,7 @@
 	"start": {
 		"speaker": "",
 		"text": "*Tan's alarm goes off at six. It's a song Tan hates, so that he has to get up to turn it off.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "wake_2",
 		"background": "Tan's couch",
 		"show_characters": ["Ulyn"],
@@ -97,6 +98,7 @@
 	"gate_1": {
 		"speaker": "",
 		"text": "*At the gate, Kay is standing very still, staring at Elysia and her friends like they're a TV he forgot to turn off.*",
+		"expression": {"Kay": "neutral"},
 		"next": "gate_2",
 		"background": "Gate",
 		"show_characters": ["Kay"],
@@ -139,12 +141,14 @@
 	"gate_7": {
 		"speaker": "Ulyn",
 		"text": "[teasing] \"Morning. You look like a zombie.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "gate_8"
 	},
 
 	"gate_8": {
 		"speaker": "Kay",
 		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
+		"expression": {"Kay": "tired"},
 		"next": "gate_9"
 	},
 
@@ -223,6 +227,7 @@
 	"pres_1": {
 		"speaker": "",
 		"text": "*History. Group 3 at the front of the room. A gap between each of them, about one person wide.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "pres_2",
 		"background": "Class",
 		"show_characters": ["Bank", "Fern"]
@@ -249,6 +254,7 @@
 	"pres_5": {
 		"speaker": "Ulyn",
 		"text": "[smug] [playful] \"Ulyn. I made the slides, so if they look good, you're welcome.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "pres_6"
 	},
 
@@ -346,6 +352,7 @@
 	"pres_21": {
 		"speaker": "Ulyn",
 		"text": "[frustrated] \"Why didn't you just let him blank?\"",
+		"expression": {"Ulyn": "angry"},
 		"next": "pres_22"
 	},
 
@@ -428,6 +435,7 @@
 	"pres_thumb_3": {
 		"speaker": "Ulyn",
 		"text": "[concerned] \"Since when?\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "pres_thumb_4"
 	},
 
@@ -502,6 +510,7 @@
 	"lunch_5": {
 		"speaker": "Ulyn",
 		"text": "[concerned] \"You sure? I can put it off and just do it tonight.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "lunch_6"
 	},
 
@@ -610,6 +619,7 @@
 	"lunch_tray_4": {
 		"speaker": "Ulyn",
 		"text": "[stubborn] [teasing] \"Half. I'll wait. I'm very patient.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "lunch_tray_5"
 	},
 
@@ -628,6 +638,7 @@
 	"lunch_window_1": {
 		"speaker": "",
 		"text": "*From the library's second floor, you can see the cafeteria. Ulyn isn't looking. He's doing his chemistry report.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "lunch_window_2",
 		"background": "Library",
 		"hide_characters": ["Kay"]
@@ -674,18 +685,21 @@
 	"lunch_window_8": {
 		"speaker": "Kay",
 		"text": "[shy] [small smile] \"It was... good, actually.\"",
+		"expression": {"Kay": "smile"},
 		"next": "lunch_window_9"
 	},
 
 	"lunch_window_9": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [delighted] \"Ohh? You saw Elysia, didn't you. Look at your face.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "lunch_window_10"
 	},
 
 	"lunch_window_10": {
 		"speaker": "Kay",
 		"text": "[embarrassed] [mumbling] \"Shut up.\"",
+		"expression": {"Kay": "nervous"},
 		"next": "lunch_window_11"
 	},
 
@@ -728,6 +742,7 @@
 	"council_1": {
 		"speaker": "",
 		"text": "*After school, the student council room smells like whiteboard markers and somebody's fish ball noodles.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "council_2",
 		"background": "Council room",
 		"show_characters": ["Pim"],
@@ -1096,6 +1111,7 @@
 	"tue_1": {
 		"speaker": "",
 		"text": "*Tuesday. Lunch. He finished the chemistry report at three. He lies with his forehead flat against the table.*",
+		"expression": {"Kay": "neutral"},
 		"next": "tue_2",
 		"background": "Cafeteria",
 		"show_characters": ["Kay"],
@@ -1106,6 +1122,7 @@
 	"tue_2": {
 		"speaker": "Ulyn",
 		"text": "[exhausted] [dry] \"Finished the chemistry report at three. Don't look at me.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "tue_3"
 	},
 
@@ -1118,6 +1135,7 @@
 	"tue_4": {
 		"speaker": "",
 		"text": "*Homeroom. The teacher writes COMMUNITY PROJECT on the board.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "tue_5",
 		"background": "Class",
 		"show_characters": ["Bank", "Fern"]
@@ -1286,6 +1304,7 @@
 	"sat_9": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [deadpan] \"Like Kay.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "sat_10"
 	},
 
@@ -1317,6 +1336,7 @@
 	"busy_1": {
 		"speaker": "",
 		"text": "*Sports day takes over his life. Spreadsheets. Rosters. A group chat with ninety people in it who all have questions.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "busy_2",
 		"background": "Council room",
 		"hide_characters": ["Kay", "MsNoi"],
@@ -1381,6 +1401,7 @@
 	"busy_6": {
 		"speaker": "Ulyn",
 		"text": "[smug] [tired] \"Present. And also correct.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "busy_7"
 	},
 
@@ -1450,6 +1471,7 @@
 	"busy_fine_1": {
 		"speaker": "Ulyn",
 		"text": "[evasive] [too casual] \"...Yeah. Just sports day stuff.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "busy_fine_2"
 	},
 
@@ -1486,6 +1508,7 @@
 	"busy_honest_3": {
 		"speaker": "Ulyn",
 		"text": "[tired] [honest] \"My mom keeps calling. I keep not answering. Long story.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "busy_honest_4"
 	},
 
@@ -1510,6 +1533,7 @@
 	"seven_1": {
 		"speaker": "",
 		"text": "*At 7 p.m. the phone rings again. Mom.*",
+		"expression": {"Ulyn": "neutral"},
 		"call": "Mom",
 		"background": "Tan's couch night",
 		"hide_characters": ["Kay"],
@@ -1597,6 +1621,7 @@
 	"sports_6": {
 		"speaker": "",
 		"text": "*Elysia runs up to the station, pushes a cold drink into Kay's hands, and sprints away before her friends can catch her. Kay holds it like it's made of glass.*",
+		"expression": {"Elysia": "neutral"},
 		"next": "sports_7",
 		"show_characters": ["Elysia"]
 	},
@@ -1765,6 +1790,7 @@
 	"mid_honest_5": {
 		"speaker": "Ulyn",
 		"text": "[surprised] [laughing softly] \"...Seriously?\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "mid_honest_6"
 	},
 
@@ -1824,6 +1850,7 @@
 	"mid_text_8": {
 		"speaker": "",
 		"text": "*Thursday night, he falls asleep at 11 with the light on.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "where_1",
 		"background": "Tan's couch night",
 		"show_characters": ["Ulyn"],
@@ -1880,6 +1907,7 @@
 	"where_8": {
 		"speaker": "Elysia",
 		"text": "[nervous] [urgent] \"Can I talk to you? Just for a second.\"",
+		"expression": {"Elysia": "nervous"},
 		"next": "where_9"
 	},
 
@@ -1946,6 +1974,7 @@
 	"where_19": {
 		"speaker": "Ulyn",
 		"text": "[determined] [shaken] \"Yeah. Yeah. I'll go.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "where_20"
 	},
 
@@ -1958,6 +1987,7 @@
 	"where_21": {
 		"speaker": "",
 		"text": "*The council has the sports day wrap-up at 3:30. Ulyn is supposed to present the volunteer report. He finds Pim in the hallway.*",
+		"expression": {"Ulyn": "neutral"},
 		"background": "Council room",
 		"show_characters": ["Pim"],
 		"hide_characters": ["Elysia"],
@@ -2035,6 +2065,7 @@
 	"step_2": {
 		"speaker": "",
 		"text": "*Kay is in a T-shirt with sleep lines on his face. Smaller than at school, like the uniform was holding him up.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "step_3",
 		"show_characters": ["Kay"]
 	},
@@ -2048,12 +2079,14 @@
 	"step_4": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [worried] \"You look terrible.\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_5"
 	},
 
 	"step_5": {
 		"speaker": "Kay",
 		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
+		"expression": {"Kay": "casual_tired"},
 		"next": "step_6"
 	},
 
@@ -2066,6 +2099,7 @@
 	"step_7": {
 		"speaker": "Ulyn",
 		"text": "[dry] [teasing] \"Your plants look worse than our garden.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "step_8"
 	},
 
@@ -2078,6 +2112,7 @@
 	"step_9": {
 		"speaker": "Ulyn",
 		"text": "[dry] [pointed] \"Yeah. Probably that.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "step_10"
 	},
 
@@ -2090,6 +2125,7 @@
 	"step_11": {
 		"speaker": "Ulyn",
 		"text": "[serious] [exasperated] [fond] \"You weren't at school. You're never not at school. You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
+		"expression": {"Ulyn": "angry"},
 		"next": "step_12"
 	},
 
@@ -2120,6 +2156,7 @@
 	"step_16": {
 		"speaker": "Ulyn",
 		"text": "[guilty] [quietly] \"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_17"
 	},
 
@@ -2213,6 +2250,7 @@
 	"step_okay_5": {
 		"speaker": "Ulyn",
 		"text": "[warm] [dry] \"Offer stands. Forever, probably. Annoyingly.\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "step_okay_6"
 	},
 
@@ -2285,12 +2323,14 @@
 	"step_push_9": {
 		"speaker": "Kay",
 		"text": "[sad] [bitter] [hurting] \"And I decided I'd just be easy. The kid who doesn't need anything. And when you didn't answer, I thought, yeah. That's right. That's what happens when I ask.\"",
+		"expression": {"Kay": "casual_sad"},
 		"next": "step_push_10"
 	},
 
 	"step_push_10": {
 		"speaker": "Ulyn",
 		"text": "[concerned] [interrupting] \"Kay—\"",
+		"expression": {"Ulyn": "worried"},
 		"next": "step_push_11"
 	},
 
@@ -2332,6 +2372,7 @@
 	"step_panic_3": {
 		"speaker": "Kay",
 		"text": "[panicked] [retreating] \"Forget it. I didn't mean it like— forget it.\"",
+		"expression": {"Kay": "casual_nervous"},
 		"next": "step_panic_4"
 	},
 
@@ -2423,6 +2464,7 @@
 	"step_ask_5": {
 		"speaker": "Ulyn",
 		"text": "[emotional] [firm] \"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "step_ask_6"
 	},
 
@@ -2464,6 +2506,7 @@
 	"step_admit_1": {
 		"speaker": "Ulyn",
 		"text": "[honest] [tired laugh] \"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
+		"expression": {"Ulyn": "tired"},
 		"next": "step_admit_2"
 	},
 
@@ -2542,6 +2585,7 @@
 	"bus_1": {
 		"speaker": "",
 		"text": "*7 p.m. The bus stop.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "bus_2",
 		"background": "Bus stop",
 		"hide_characters": ["Kay"],
@@ -2711,6 +2755,7 @@
 	"bus_home_16": {
 		"speaker": "Ulyn",
 		"text": "[quietly] [voice breaking] \"Not really.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "bus_home_17"
 	},
 
@@ -2730,6 +2775,7 @@
 	"bus_home_19": {
 		"speaker": "",
 		"text": "*He sleeps in his own bed. The house is very quiet. He can hear the fridge from upstairs.*",
+		"expression": {"Ulyn": "neutral"},
 		"quiet": true,
 		"next": "bus_home_20",
 		"background": "Ulyn's room",
@@ -2781,6 +2827,7 @@
 	"gate2_1": {
 		"speaker": "",
 		"text": "*The next Monday, from the top of the stairs, Ulyn watches Kay walk straight across the front of the school to Elysia and her friends. In front of everybody.*",
+		"expression": {"Kay": "neutral", "Elysia": "neutral"},
 		"next": "gate2_2",
 		"background": "Gate",
 		"show_characters": ["Kay", "Elysia"],
@@ -2790,6 +2837,7 @@
 	"gate2_2": {
 		"speaker": "Elysia",
 		"text": "[loud] [embarrassed] [rushed] \"Yes, he's my boyfriend, we all know, moving on.\"",
+		"expression": {"Elysia": "flustered"},
 		"next": "gate2_3"
 	},
 
@@ -2843,6 +2891,7 @@
 	"thu_walk_2": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [firm] \"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "thu_walk_3",
 		"sfx": "stop"
 	},
@@ -2856,6 +2905,7 @@
 	"thu_walk_4": {
 		"speaker": "",
 		"text": "*Ulyn waits in the cafeteria for forty minutes, watching the hallway. Kay doesn't come out.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "thu_walk_5",
 		"background": "Cafeteria",
 		"hide_characters": ["Kay"]
@@ -3022,6 +3072,7 @@
 	"group_say_1": {
 		"speaker": "Ulyn",
 		"text": "[angry] [protective] \"He did the slides at 2:30 in the morning. And the poster. And the skit. So no.\"",
+		"expression": {"Ulyn": "angry"},
 		"next": "group_say_2"
 	},
 
@@ -3052,6 +3103,7 @@
 	"group_end_2": {
 		"speaker": "Ulyn",
 		"text": "[dry] [playful] \"And I'll do the budget. And stop sleeping in class. Maybe.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "group_end_3"
 	},
 
@@ -3067,6 +3119,7 @@
 	"sun_1": {
 		"speaker": "",
 		"text": "*Sunday.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "sun_2",
 		"background": "Tan's couch",
 		"show_characters": ["Ulyn"],
@@ -3178,6 +3231,7 @@
 	"pres2_2": {
 		"speaker": "Ulyn",
 		"text": "[smug] [playful] \"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "pres2_3"
 	},
 
@@ -3232,6 +3286,7 @@
 	"last_1": {
 		"speaker": "",
 		"text": "*Friday. The last day of the semester.*",
+		"expression": {"Elysia": "neutral", "Ulyn": "neutral"},
 		"next": "last_2",
 		"background": "Gate",
 		"show_characters": ["Elysia"],
@@ -3255,6 +3310,7 @@
 	"last_4": {
 		"speaker": "Ulyn",
 		"text": "[teasing] \"Morning. You look—\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "last_5"
 	},
 
@@ -3306,6 +3362,7 @@
 	"last_true_3": {
 		"speaker": "Ulyn",
 		"text": "[quietly] [sad] \"It's weird there. Quiet.\"",
+		"expression": {"Ulyn": "sad"},
 		"next": "last_true_4"
 	},
 
@@ -3330,6 +3387,7 @@
 	"last_busy_1": {
 		"speaker": "Ulyn",
 		"text": "[overly cheerful] [rushed] \"Good! Great! Busy! Next semester Pim wants me on the—\"",
+		"expression": {"Ulyn": "neutral"},
 		"next": "last_busy_2"
 	},
 
@@ -3354,6 +3412,7 @@
 	"last_busy_5": {
 		"speaker": "Kay",
 		"text": "[teasing] [gentle] \"Not ulyn-sure.\"",
+		"expression": {"Kay": "teasing"},
 		"next": "last_busy_6"
 	},
 
@@ -3416,6 +3475,7 @@
 	"endA_lunch_1": {
 		"speaker": "",
 		"text": "*Kay comes over. Mom makes khao man gai for three. She sets three plates. Nobody has to move one back.*",
+		"expression": {"Kay": "casual_neutral"},
 		"next": "endA_lunch_2",
 		"background": "Ulyn's kitchen",
 		"show_characters": ["Kay", "mom"]
@@ -3463,12 +3523,14 @@
 	"endA_lunch_8": {
 		"speaker": "Kay",
 		"text": "[teacherly] [teasing] \"Once a day. Only if it's dry.\"",
+		"expression": {"Kay": "casual_teasing"},
 		"next": "endA_lunch_9"
 	},
 
 	"endA_lunch_9": {
 		"speaker": "Ulyn",
 		"text": "[teasing] [deadpan] \"Yes, Ms. Noi.\"",
+		"expression": {"Ulyn": "grin"},
 		"next": "endA_dad_1",
 		"secret": {"condition": "flag_true", "flag": "AskedNoi", "next": "endA_noi_1"}
 	},
@@ -3476,6 +3538,7 @@
 	"endA_noi_1": {
 		"speaker": "",
 		"text": "*On Thursdays, Ulyn has the slot after Kay's. They pass each other in the doorway. Neither of them makes it weird. Ms. Noi makes too much tea.*",
+		"expression": {"Kay": "neutral", "Ulyn": "neutral"},
 		"next": "endA_dad_1",
 		"background": "School hallway"
 	},
