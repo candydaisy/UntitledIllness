@@ -1,0 +1,18 @@
+{
+	"model": "s2-pro",
+	"voices": {
+		"Kay": "1d52151a55eb4878a997bd06e816b5f6",
+		"Bank": "b5f4515fd395410b9ed3aef6fa51d9a0",
+		"Ulyn": "711cf3ed00ab441a8f54a45058047b7a",
+		"Fern": "091cad5003ed4e90826a92e1fadde278",
+		"Teacher": "4746f1b456494387993af9041d0516c4",
+		"???": "bddf65d5a84c4a9aa36b7136bdac57a9",
+		"Elysia": "bddf65d5a84c4a9aa36b7136bdac57a9",
+		"Lunch Lady": "9a9cf47702da476aa4629e2506d4a857",
+		"Mom": "e3cd384158934cc9a01029cd7d278634",
+		"Ms. Noi": "b347db033a6549378b48d00acb0d06cd",
+		"Mint": "3b3698528082474791f9dd22f024fd3c",
+		"Pun": "5036ff6ae88847fdb786358dcb4efaee",
+		"Elysia's mom": "c2623f0c075b4492ac367989aee1576f"
+	}
+}

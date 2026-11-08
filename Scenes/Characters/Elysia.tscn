@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://c7ibl8br8d6xp"]
 
 [ext_resource type="Script" uid="uid://dr65y5jiv5h11" path="res://Scripts/StoryEngine/story_player.gd" id="1_7yklv"]
 [ext_resource type="PackedScene" uid="uid://cy5rt1lx5iqp0" path="res://Scenes/Dialog/dialog.tscn" id="2_jk8no"]
@@ -14,30 +14,30 @@
 [ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
 [ext_resource type="Script" uid="uid://bjdsdx8ens6an" path="res://Scripts/StoryEngine/modes/elysia_mode.gd" id="20_mode"]
-[ext_resource type="Theme" path="res://Assets/Themes/elysia_theme.tres" id="30_theme"]
+[ext_resource type="Theme" uid="uid://syw4q0x7dedm" path="res://Assets/Themes/elysia_theme.tres" id="30_theme"]
 [ext_resource type="Shader" uid="uid://d0drsdox313hm" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ConvenienceStoreNight_blur.jpeg" id="bg_ConvenienceStoreNight_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ArtRoom_blur.jpeg" id="bg_ArtRoom_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/BusInterior_blur.jpeg" id="bg_BusInterior_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/CanalPark_blur.jpeg" id="bg_CanalPark_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ElysiaBathroom_blur.jpeg" id="bg_ElysiaBathroom_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ElysiaKitchen_blur.jpeg" id="bg_ElysiaKitchen_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ElysiaRoomDay_blur.jpeg" id="bg_ElysiaRoomDay_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ElysiaRoomNight_blur.jpeg" id="bg_ElysiaRoomNight_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolGarden_blur.jpeg" id="bg_SchoolGarden_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolLibrary_blur.jpeg" id="bg_SchoolLibrary_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/MuseumSlimeRoom_blur.jpeg" id="bg_MuseumSlimeRoom_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/PunRoom_blur.jpeg" id="bg_PunRoom_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SportsField_blur.jpeg" id="bg_SportsField_blur"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/Background/StreetNight_blur.jpeg" id="bg_StreetNight_blur"]
+[ext_resource type="Texture2D" uid="uid://bp4oom1msyosh" path="res://Assets/Photos/Background/ArtRoom_blur.jpeg" id="bg_ArtRoom_blur"]
+[ext_resource type="Texture2D" uid="uid://bs6r30frvf5jo" path="res://Assets/Photos/Background/BusInterior_blur.jpeg" id="bg_BusInterior_blur"]
+[ext_resource type="Texture2D" uid="uid://5vrk65p6nq2a" path="res://Assets/Photos/Background/CanalPark_blur.jpeg" id="bg_CanalPark_blur"]
+[ext_resource type="Texture2D" uid="uid://bxchu5rfe573a" path="res://Assets/Photos/Background/ConvenienceStoreNight_blur.jpeg" id="bg_ConvenienceStoreNight_blur"]
+[ext_resource type="Texture2D" uid="uid://domhxwxul8a2f" path="res://Assets/Photos/Background/ElysiaBathroom_blur.jpeg" id="bg_ElysiaBathroom_blur"]
+[ext_resource type="Texture2D" uid="uid://dbd3witmhbi73" path="res://Assets/Photos/Background/ElysiaKitchen_blur.jpeg" id="bg_ElysiaKitchen_blur"]
+[ext_resource type="Texture2D" uid="uid://bke5wy7cf0bhf" path="res://Assets/Photos/Background/ElysiaRoomDay_blur.jpeg" id="bg_ElysiaRoomDay_blur"]
+[ext_resource type="Texture2D" uid="uid://d04unxw707opv" path="res://Assets/Photos/Background/ElysiaRoomNight_blur.jpeg" id="bg_ElysiaRoomNight_blur"]
+[ext_resource type="Texture2D" uid="uid://ynpwh5pk7tqx" path="res://Assets/Photos/Background/MuseumSlimeRoom_blur.jpeg" id="bg_MuseumSlimeRoom_blur"]
+[ext_resource type="Texture2D" uid="uid://cskq6omlqflas" path="res://Assets/Photos/Background/PunRoom_blur.jpeg" id="bg_PunRoom_blur"]
+[ext_resource type="Texture2D" uid="uid://c47c2qjwk4btm" path="res://Assets/Photos/Background/SchoolGarden_blur.jpeg" id="bg_SchoolGarden_blur"]
+[ext_resource type="Texture2D" uid="uid://y1of2ik11yta" path="res://Assets/Photos/Background/SchoolLibrary_blur.jpeg" id="bg_SchoolLibrary_blur"]
+[ext_resource type="Texture2D" uid="uid://qaaqopcmgxud" path="res://Assets/Photos/Background/SportsField_blur.jpeg" id="bg_SportsField_blur"]
+[ext_resource type="Texture2D" uid="uid://bhuqy8xn4fcwi" path="res://Assets/Photos/Background/StreetNight_blur.jpeg" id="bg_StreetNight_blur"]
+
+[sub_resource type="Resource" id="Resource_elysia"]
+script = ExtResource("20_mode")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sideart"]
 shader = ExtResource("31_sideart")
 shader_parameter/tint = Color(0.95, 0.18, 0.24, 1)
 shader_parameter/highlight = 0.25
-
-[sub_resource type="Resource" id="Resource_elysia"]
-script = ExtResource("20_mode")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
 
@@ -53,9 +53,9 @@ animations = [{
 script = ExtResource("1_7yklv")
 flow_graph_path = "res://Story/Elysia/flow_graph.json"
 start_node = "start"
+mode = SubResource("Resource_elysia")
 ui_theme = ExtResource("30_theme")
 notice_color = Color(0.95, 0.18, 0.24, 1)
-mode = SubResource("Resource_elysia")
 
 [node name="Cenfix" type="CanvasLayer" parent="." unique_id=982504405]
 
@@ -69,8 +69,8 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="SIDEART1" type="TextureRect" parent="Sideart" unique_id=2018269243]
-use_parent_material = true
 z_index = 100
+use_parent_material = true
 layout_mode = 0
 offset_left = 1357.0
 offset_right = 1600.0
@@ -81,8 +81,8 @@ stretch_mode = 2
 flip_h = true
 
 [node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
-use_parent_material = true
 z_index = 100
+use_parent_material = true
 layout_mode = 0
 offset_right = 243.0
 offset_bottom = 900.0
@@ -250,7 +250,7 @@ texture = ExtResource("12_e6el8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Elysia\'s room" type="TextureRect" parent="Bgs"]
+[node name="Elysia\'s room" type="TextureRect" parent="Bgs" unique_id=616257541]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -262,7 +262,7 @@ texture = ExtResource("bg_ElysiaRoomDay_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Elysia\'s room night" type="TextureRect" parent="Bgs"]
+[node name="Elysia\'s room night" type="TextureRect" parent="Bgs" unique_id=2000441129]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -274,7 +274,7 @@ texture = ExtResource("bg_ElysiaRoomNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Elysia\'s kitchen" type="TextureRect" parent="Bgs"]
+[node name="Elysia\'s kitchen" type="TextureRect" parent="Bgs" unique_id=1647276715]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -286,7 +286,7 @@ texture = ExtResource("bg_ElysiaKitchen_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Pun\'s room" type="TextureRect" parent="Bgs"]
+[node name="Pun\'s room" type="TextureRect" parent="Bgs" unique_id=242431818]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -298,7 +298,7 @@ texture = ExtResource("bg_PunRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Art room" type="TextureRect" parent="Bgs"]
+[node name="Art room" type="TextureRect" parent="Bgs" unique_id=683318290]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -310,7 +310,7 @@ texture = ExtResource("bg_ArtRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Garden" type="TextureRect" parent="Bgs"]
+[node name="Garden" type="TextureRect" parent="Bgs" unique_id=673319586]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -322,7 +322,7 @@ texture = ExtResource("bg_SchoolGarden_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Sports field" type="TextureRect" parent="Bgs"]
+[node name="Sports field" type="TextureRect" parent="Bgs" unique_id=938375230]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -334,7 +334,7 @@ texture = ExtResource("bg_SportsField_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Canal park" type="TextureRect" parent="Bgs"]
+[node name="Canal park" type="TextureRect" parent="Bgs" unique_id=902132792]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -346,7 +346,7 @@ texture = ExtResource("bg_CanalPark_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Museum" type="TextureRect" parent="Bgs"]
+[node name="Museum" type="TextureRect" parent="Bgs" unique_id=529814548]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -358,7 +358,7 @@ texture = ExtResource("bg_MuseumSlimeRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Bus" type="TextureRect" parent="Bgs"]
+[node name="Bus" type="TextureRect" parent="Bgs" unique_id=348009793]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -470,28 +470,28 @@ scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Jane" type="AnimatedSprite2D" parent="Characters"]
+[node name="Jane" type="AnimatedSprite2D" parent="Characters" unique_id=420439687]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Bow" type="AnimatedSprite2D" parent="Characters"]
+[node name="Bow" type="AnimatedSprite2D" parent="Characters" unique_id=2040012464]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Nam" type="AnimatedSprite2D" parent="Characters"]
+[node name="Nam" type="AnimatedSprite2D" parent="Characters" unique_id=936539296]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
 sprite_frames = SubResource("SpriteFrames_nrl2c")
 animation = &"new_animation"
 
-[node name="Pun" type="AnimatedSprite2D" parent="Characters"]
+[node name="Pun" type="AnimatedSprite2D" parent="Characters" unique_id=1647276985]
 visible = false
 position = Vector2(1325, 450)
 scale = Vector2(1, 0.23770492)
@@ -510,8 +510,8 @@ bus = &"Sfx"
 bus = &"Voice"
 
 [node name="typing" type="AudioStreamPlayer" parent="Audio" unique_id=1372376130]
-bus = &"Sfx"
 stream = ExtResource("3_hvbsa")
 volume_db = -21.16
 pitch_scale = 0.4
 max_polyphony = 15
+bus = &"Sfx"
