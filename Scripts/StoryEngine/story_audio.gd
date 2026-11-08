@@ -36,7 +36,7 @@ const AMB := {
 }
 
 ## Voice lines (made with the TTFUI voice tool):
-## Assets/audio/voice/<Route>/<node id>.mp3, plus <node id>_th.mp3 for Thai.
+## Assets/audio/voice/<Route>/<node id>.mp3. Thai plays the English voice too.
 ## A node's "voice" key names a file directly: "kay_wake_3" -> voice/kay_wake_3.mp3
 const VOICE_DIR := "res://Assets/audio/voice/"
 
@@ -65,10 +65,10 @@ func has_voice(voice_name: String) -> bool:
 	return ResourceLoader.exists(VOICE_DIR + voice_name + ".mp3")
 
 
-## The voice file for a line in a language (it may not exist).
-static func voice_path(entry: Dictionary, route: String, node_id: String, locale: String) -> String:
+## The voice file for a line (it may not exist). Every language plays the English one.
+static func voice_path(entry: Dictionary, route: String, node_id: String) -> String:
 	var base : String = entry["voice"] if entry.has("voice") else route + "/" + node_id
-	return VOICE_DIR + base + ("_th" if locale.begins_with("th") else "") + ".mp3"
+	return VOICE_DIR + base + ".mp3"
 
 
 ## Applies a node's "sfx" key: a sound name, or "stop" to fade it out.
@@ -93,7 +93,7 @@ func apply_sfx(entry: Dictionary) -> void:
 ## Most lines have no voice file; those stay silent without a warning.
 func apply_voice(entry: Dictionary, route: String, node_id: String) -> void:
 	voice_player.stop()
-	var path := voice_path(entry, route, node_id, TranslationServer.get_locale())
+	var path := voice_path(entry, route, node_id)
 	if not ResourceLoader.exists(path):
 		return
 	voice_player.stream    = load(path)
