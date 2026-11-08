@@ -876,6 +876,7 @@
 	"shop_1": {
 		"speaker": "",
 		"text": "*Thursday. Tutoring lets out at eight. The tutoring center is one street over from Kay's. She knows that. She has never once let herself think about it on purpose.*",
+		"background": "Street night",
 		"next": "shop_2"
 	},
 
@@ -888,6 +889,7 @@
 	"shop_3": {
 		"speaker": "",
 		"text": "*Pun has sent it four times. So she goes into the 7-Eleven at the end of Kay's street.*",
+		"background": "7-Eleven night",
 		"next": "shop_4"
 	},
 
@@ -1041,6 +1043,7 @@
 	"shop_out_1": {
 		"speaker": "",
 		"text": "*Outside, she looks at his one toastie, then at him.*",
+		"background": "Street night",
 		"next": "shop_out_2"
 	},
 
@@ -1552,6 +1555,7 @@
 	"vcall_1": {
 		"speaker": "",
 		"text": "*On Friday, Ploy calls until three. On Saturday night, Elysia video-calls Kay to do chemistry homework \"together,\" which mostly means pointing her camera at her ceiling and groaning at question four.*",
+		"background": "Elysia's room night",
 		"next": "vcall_2"
 	},
 
@@ -1705,6 +1709,7 @@
 	"vcall_sleep_3": {
 		"speaker": "",
 		"text": "*And then she does. In the morning:*",
+		"background": "Elysia's room",
 		"next": "vcall_am_1"
 	},
 
@@ -1893,6 +1898,7 @@
 	"joke_1": {
 		"speaker": "",
 		"text": "*After school she goes to the garden without texting first. It's the one place she doesn't have to do anything.*",
+		"background": "Garden",
 		"next": "joke_2"
 	},
 
@@ -2052,6 +2058,7 @@
 	"joke_text_1": {
 		"speaker": "",
 		"text": "*On Friday, Kay sends her a picture: tiny green hooks coming up out of the soil. Water spinach, he writes.*",
+		"background": "Elysia's room",
 		"next": "joke_text_2"
 	},
 
@@ -2505,6 +2512,7 @@
 	"study_1": {
 		"speaker": "",
 		"text": "*On Wednesday, between exams, she drags Kay to the back table of the library.*",
+		"background": "Library",
 		"next": "study_2"
 	},
 
@@ -2718,12 +2726,14 @@
 	"study_ask_7": {
 		"speaker": "",
 		"text": "*She doesn't sleep either. Ploy calls at 11:50.*",
+		"background": "Elysia's room night",
 		"next": "mid_3"
 	},
 
 	"study_skip_1": {
 		"speaker": "",
 		"text": "*She doesn't ask. She picks up the next flashcard instead. At the gate:*",
+		"background": "Gate",
 		"next": "study_skip_2"
 	},
 
@@ -3144,7 +3154,7 @@
 		"speaker": "",
 		"text": "*Elysia goes into the bathroom, turns on the fan so Pun won't hear, and cries for twenty minutes.*",
 		"next": "fri_1",
-		"background": "Bathroom1",
+		"background": "Elysia's bathroom",
 		"amb": "stop"
 	},
 
@@ -3152,7 +3162,7 @@
 		"speaker": "",
 		"text": "*Friday night, she types for an hour and deletes all of it. Then:*",
 		"next": "fri_2",
-		"background": "Phone at night",
+		"background": "Elysia's room night",
 		"hide_characters": ["Elysia"],
 		"amb": "stop"
 	},
@@ -3884,6 +3894,7 @@
 	"home2_1": {
 		"speaker": "",
 		"text": "*After the last bell, Kay is waiting at the gate. Not by the side of it. Right in the middle, where anyone can see.*",
+		"background": "Gate",
 		"next": "home2_2"
 	},
 
@@ -3920,6 +3931,7 @@
 	"home2_7": {
 		"speaker": "",
 		"text": "*They walk past the 7-Eleven, the bus stop, and the corner. The same way she walked alone on the first day, smiling a hundred beats too long.*",
+		"background": "Road",
 		"next": "home2_8"
 	},
 
@@ -4104,6 +4116,7 @@
 	"ploy_1": {
 		"speaker": "",
 		"text": "*On Tuesday after school she goes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap. Kay turns off the tap and sits next to her.*",
+		"background": "Garden",
 		"choices": [
 			{"text": "Tell him you're scared", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "ploy_scared_1"},
 			{"text": "\"It's fine! She'll get over it!\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "ploy_fine_1"}
@@ -4625,6 +4638,7 @@
 	"dinner_2": {
 		"speaker": "",
 		"text": "*He comes at six with a bag of oranges, because of course he does. Mom decides he's too thin within five minutes. Pun sits directly across from him and stares at him over his rice like he's a specimen.*",
+		"background": "Elysia's kitchen",
 		"next": "dinner_3"
 	},
 
@@ -5480,7 +5494,7 @@
 		"speaker": "",
 		"text": "*She types \"all good!! 😊\"*",
 		"next": "endC_msg_2",
-		"background": "Phone at night",
+		"background": "Elysia's room night",
 		"hide_characters": ["Elysia"],
 		"amb": "stop"
 	},

@@ -13,11 +13,22 @@
 [ext_resource type="Texture2D" uid="uid://x5i276wmrc5n" path="res://Assets/Photos/Background/Classroom_blury.png" id="10_vaay5"]
 [ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
-[ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
-[ext_resource type="Texture2D" uid="uid://b8e8nqb8igp0r" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
 [ext_resource type="Script" uid="uid://c8llnyl23203d" path="res://Scripts/StoryEngine/modes/ulyn_mode.gd" id="20_mode"]
 [ext_resource type="Theme" uid="uid://b3jtan4wuqf1p" path="res://Assets/Themes/ulyn_theme.tres" id="30_theme"]
 [ext_resource type="Shader" uid="uid://d0drsdox313hm" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/BusStopNight_blur.jpeg" id="bg_BusStopNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/CouncilRoom_blur.jpeg" id="bg_CouncilRoom_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolGarden_blur.jpeg" id="bg_SchoolGarden_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolLibrary_blur.jpeg" id="bg_SchoolLibrary_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SportsField_blur.jpeg" id="bg_SportsField_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/TanBalconyNight_blur.jpeg" id="bg_TanBalconyNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/TanLivingRoomDay_blur.jpeg" id="bg_TanLivingRoomDay_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/TanLivingRoomNight_blur.jpeg" id="bg_TanLivingRoomNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/TanKitchenNight_blur.jpeg" id="bg_TanKitchenNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/UlynKitchenDay_blur.jpeg" id="bg_UlynKitchenDay_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/UlynKitchenNight_blur.jpeg" id="bg_UlynKitchenNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/UlynRoomNight_blur.jpg" id="bg_UlynRoomNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/UlynRoomDay_blur.jpg" id="bg_UlynRoomDay_blur"]
 
 [sub_resource type="Resource" id="Resource_ulyn"]
 script = ExtResource("20_mode")
@@ -238,42 +249,6 @@ texture = ExtResource("12_e6el8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="PhoneCheck" type="TextureRect" parent="Bgs" unique_id=656241005]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("13_wbpxj")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Phone" type="TextureRect" parent="Bgs" unique_id=748534356]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_42qhq")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Scrolls" type="TextureRect" parent="Bgs" unique_id=952774727]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_42qhq")
-expand_mode = 1
-stretch_mode = 5
-
 [node name="Tan\'s couch" type="TextureRect" parent="Bgs" unique_id=1954712429]
 visible = false
 z_index = -1
@@ -282,7 +257,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_42qhq")
+texture = ExtResource("bg_TanLivingRoomDay_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -294,7 +269,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_TanLivingRoomNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -306,7 +281,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_TanKitchenNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -318,7 +293,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_TanBalconyNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -330,7 +305,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("8_7a8g2")
+texture = ExtResource("bg_SchoolLibrary_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -342,7 +317,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("10_vaay5")
+texture = ExtResource("bg_CouncilRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -354,7 +329,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_8nrf5")
+texture = ExtResource("bg_SchoolGarden_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -366,7 +341,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_8nrf5")
+texture = ExtResource("bg_SportsField_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -378,7 +353,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_e6el8")
+texture = ExtResource("bg_BusStopNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -390,7 +365,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_42qhq")
+texture = ExtResource("bg_UlynKitchenDay_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -402,7 +377,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_UlynKitchenNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -414,11 +389,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_UlynRoomNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Phone at night" type="TextureRect" parent="Bgs" unique_id=1778162155]
+[node name="Ulyn\'s room day" type="TextureRect" parent="Bgs" unique_id=1098621227]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -426,7 +401,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_phone")
+texture = ExtResource("bg_UlynRoomDay_blur")
 expand_mode = 1
 stretch_mode = 5
 

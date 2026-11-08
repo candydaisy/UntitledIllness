@@ -883,7 +883,7 @@
 		"speaker": "",
 		"text": "*10:47 p.m. Ulyn opens his chat with Kay.*",
 		"next": "text_2",
-		"background": "Phone at night",
+		"background": "Tan's couch night",
 		"hide_characters": ["Tan", "Ulyn", "mom"]
 	},
 
@@ -1778,7 +1778,7 @@
 		"speaker": "",
 		"text": "*Wednesday night, he texts Kay.*",
 		"next": "mid_text_2",
-		"background": "Phone at night",
+		"background": "Tan's couch night",
 		"hide_characters": ["Tan", "Ulyn"],
 		"sfx": "stop",
 		"amb": "stop"
@@ -3059,7 +3059,7 @@
 		"speaker": "",
 		"text": "*That night there are four cursors in the shared document. Kay's cursor sits in the corner, not moving. He's just reading what the others wrote.*",
 		"next": "sun_1",
-		"background": "Phone at night",
+		"background": "Tan's couch night",
 		"hide_characters": ["Bank", "Fern", "Kay", "Ulyn"],
 		"sfx": "Writing"
 	},
@@ -3383,7 +3383,7 @@
 		"speaker": "",
 		"text": "*Saturday.*",
 		"next": "endA_2",
-		"background": "Ulyn's room",
+		"background": "Ulyn's room day",
 		"show_characters": ["Ulyn"],
 		"secret": {"condition": "flag_true", "flag": "ToldKayTruth", "next": "endA_lunch_1"}
 	},
@@ -3669,7 +3669,7 @@
 		"speaker": "",
 		"text": "*11:40 p.m. Tan's couch. His phone buzzes. Kay.*",
 		"next": "endC_msg_2",
-		"background": "Phone at night",
+		"background": "Tan's couch night",
 		"hide_characters": ["Ulyn"],
 		"sfx": "Notification",
 		"amb": "stop"

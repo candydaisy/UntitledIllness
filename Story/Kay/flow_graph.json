@@ -1598,7 +1598,7 @@
 		"speaker": "",
 		"text": "*Cat videos. A cat falls off a table. A cat is scared of a cucumber. Another cat. Another one.*",
 		"next": "phone_3",
-		"background": "Scrolls",
+		"background": "Kay's room1",
 		"hide_characters": ["Kay"],
 		"sfx": "Scrolls"
 	},
@@ -1621,7 +1621,7 @@
 		"speaker": "",
 		"text": "*A notification slides down over the video. It's Ulyn.*",
 		"next": "phone_ulyn_2",
-		"background": "Phone",
+		"background": "Kay's room1",
 		"sfx": "Notification"
 	},
 
@@ -2546,6 +2546,7 @@
 	"shop_2": {
 		"speaker": "",
 		"text": "*8:15. Kay stands in the 7-Eleven at the end of his street, holding one ham and cheese toastie and wondering if a second one would be greedy.*",
+		"background": "7-Eleven night",
 		"next": "shop_3"
 	},
 
@@ -2682,6 +2683,7 @@
 	"shop_out_1": {
 		"speaker": "",
 		"text": "*Outside, the street is dark except for the 7-Eleven and the bus stop. She looks at his one toastie, then at him.*",
+		"background": "Street night",
 		"next": "shop_out_2"
 	},
 
@@ -2757,6 +2759,7 @@
 	"shop_text_1": {
 		"speaker": "",
 		"text": "*Eleven minutes later:*",
+		"background": "Kay's room2",
 		"next": "shop_text_2"
 	},
 
@@ -3227,6 +3230,7 @@
 	"vcall_1": {
 		"speaker": "",
 		"text": "*Saturday night. Elysia video-calls him to do chemistry homework \"together.\" Mostly it means her camera points at her ceiling while she groans at question four.*",
+		"background": "Kay's room2",
 		"next": "vcall_2"
 	},
 
@@ -3392,6 +3396,7 @@
 	"vcall_sleep_6": {
 		"speaker": "",
 		"text": "*He finally hangs up at midnight. In the morning:*",
+		"background": "Kay's room1",
 		"next": "vcall_am_1"
 	},
 
@@ -3470,6 +3475,7 @@
 	"joke_1": {
 		"speaker": "",
 		"text": "*Tuesday of the third week. She comes to the garden after school without texting first.*",
+		"background": "Garden",
 		"next": "joke_2"
 	},
 
@@ -3795,6 +3801,7 @@
 	"stands_1": {
 		"speaker": "",
 		"text": "*The fourth Friday. Sports day.*",
+		"background": "Sports field",
 		"next": "stands_2"
 	},
 
@@ -4084,6 +4091,7 @@
 	"study_1": {
 		"speaker": "",
 		"text": "*Wednesday, between exams. Elysia drags him to the back table of the library.*",
+		"background": "Library",
 		"next": "study_2"
 	},
 
@@ -4483,7 +4491,7 @@
 	"mnight_phone": {
 		"speaker": "",
 		"text": "*His phone is on the pillow. Ulyn's name is right there at the top of his chats.*",
-		"background": "Phone at night",
+		"background": "Kay's room2",
 		"hide_characters": ["Kay"],
 		"amb": "stop",
 		"choices": [
@@ -5525,7 +5533,7 @@
 		"speaker": "Elysia",
 		"text": "[bossy] [excited] tomorrow. 10am. i'm picking u up. no is not an option 😤",
 		"next": "sat_2",
-		"background": "Phone at night",
+		"background": "Kay's room2",
 		"hide_characters": ["Kay", "mom"],
 		"sfx": "Notification"
 	},
@@ -7059,6 +7067,7 @@
 	"dinner_2": {
 		"speaker": "",
 		"text": "*Her house smells like garlic and fish sauce. Her mom is kind and busy and decides he's too thin within five minutes. Pun sits directly across from him and stares at him over a bowl of rice like he's a specimen.*",
+		"background": "Elysia's kitchen",
 		"next": "dinner_3"
 	},
 
@@ -7919,7 +7928,7 @@
 		"speaker": "",
 		"text": "*Kay types \"yeah all good!\" His thumb hovers over send.*",
 		"next": "endC_msg_3",
-		"background": "Phone at night",
+		"background": "Kay's room2",
 		"hide_characters": ["Kay"],
 		"amb": "stop"
 	},

@@ -13,10 +13,22 @@
 [ext_resource type="Texture2D" uid="uid://x5i276wmrc5n" path="res://Assets/Photos/Background/Classroom_blury.png" id="10_vaay5"]
 [ext_resource type="Texture2D" uid="uid://du8rh6cqnnx73" path="res://Assets/Photos/Background/Cafeteria_blury.png" id="11_endbs"]
 [ext_resource type="Texture2D" uid="uid://cyworgien865l" path="res://Assets/Photos/Background/sidewalk_blur.png" id="12_e6el8"]
-[ext_resource type="Texture2D" uid="uid://bkdr63mfngb8b" path="res://Assets/Photos/Background/textpresentation.png" id="13_wbpxj"]
-[ext_resource type="Texture2D" uid="uid://b8e8nqb8igp0r" path="res://Assets/Photos/Background/checkphone.png" id="14_phone"]
 [ext_resource type="Theme" uid="uid://vi2r7ec5j2ph" path="res://Assets/Themes/kay_theme.tres" id="30_theme"]
 [ext_resource type="Shader" uid="uid://d0drsdox313hm" path="res://Assets/Shaders/sideart_tint.gdshader" id="31_sideart"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ConvenienceStoreNight_blur.jpeg" id="bg_ConvenienceStoreNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/CanalPark_blur.jpeg" id="bg_CanalPark_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/ElysiaKitchen_blur.jpeg" id="bg_ElysiaKitchen_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolGarden_blur.jpeg" id="bg_SchoolGarden_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/GuidanceRoom_blur.jpeg" id="bg_GuidanceRoom_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/FriedRiceStall_blur.jpeg" id="bg_FriedRiceStall_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/KayKitchenDay_blur.jpeg" id="bg_KayKitchenDay_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/KayKitchenNight_blur.jpeg" id="bg_KayKitchenNight_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/KrapaoStall_blur.jpeg" id="bg_KrapaoStall_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SchoolLibrary_blur.jpeg" id="bg_SchoolLibrary_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/MuseumSlimeRoom_blur.jpeg" id="bg_MuseumSlimeRoom_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/NoodleStall_blur.jpeg" id="bg_NoodleStall_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/SportsField_blur.jpeg" id="bg_SportsField_blur"]
+[ext_resource type="Texture2D" path="res://Assets/Photos/Background/StreetNight_blur.jpeg" id="bg_StreetNight_blur"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
 
@@ -164,7 +176,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_endbs")
+texture = ExtResource("bg_KrapaoStall_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -176,7 +188,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_endbs")
+texture = ExtResource("bg_NoodleStall_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -188,7 +200,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_endbs")
+texture = ExtResource("bg_FriedRiceStall_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -204,42 +216,6 @@ texture = ExtResource("12_e6el8")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="PhoneCheck" type="TextureRect" parent="Bgs" unique_id=656241005]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("13_wbpxj")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Phone" type="TextureRect" parent="Bgs" unique_id=748534356]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_42qhq")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Scrolls" type="TextureRect" parent="Bgs" unique_id=952774727]
-visible = false
-z_index = -1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_42qhq")
-expand_mode = 1
-stretch_mode = 5
-
 [node name="Kay\'s kitchen" type="TextureRect" parent="Bgs" unique_id=901379162]
 visible = false
 z_index = -1
@@ -248,7 +224,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_42qhq")
+texture = ExtResource("bg_KayKitchenDay_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -260,7 +236,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_4fkki")
+texture = ExtResource("bg_KayKitchenNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -272,7 +248,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_8nrf5")
+texture = ExtResource("bg_SchoolGarden_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -284,7 +260,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("10_vaay5")
+texture = ExtResource("bg_GuidanceRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -296,7 +272,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_e6el8")
+texture = ExtResource("bg_CanalPark_blur")
 expand_mode = 1
 stretch_mode = 5
 
@@ -308,11 +284,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("8_7a8g2")
+texture = ExtResource("bg_MuseumSlimeRoom_blur")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Phone at night" type="TextureRect" parent="Bgs" unique_id=1444651478]
+[node name="7-Eleven night" type="TextureRect" parent="Bgs" unique_id=245058271]
 visible = false
 z_index = -1
 anchors_preset = 15
@@ -320,7 +296,55 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_phone")
+texture = ExtResource("bg_ConvenienceStoreNight_blur")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Elysia\'s kitchen" type="TextureRect" parent="Bgs" unique_id=1017410348]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("bg_ElysiaKitchen_blur")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Library" type="TextureRect" parent="Bgs" unique_id=1058842408]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("bg_SchoolLibrary_blur")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Sports field" type="TextureRect" parent="Bgs" unique_id=1112382047]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("bg_SportsField_blur")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Street night" type="TextureRect" parent="Bgs" unique_id=1851014595]
+visible = false
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("bg_StreetNight_blur")
 expand_mode = 1
 stretch_mode = 5
 
