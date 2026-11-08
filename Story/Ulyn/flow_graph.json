@@ -22,7 +22,7 @@
 	},
 
 	"wake_4": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[warm] [hopeful] coming home tomorrow? i'm making khao man gai 🍗",
 		"next": "wake_5",
 		"sfx": "Notification"
@@ -40,7 +40,7 @@
 	},
 
 	"wake_cant_1": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[disappointed] [forced cheerful] ok! next time 😊",
 		"next": "wake_cant_2"
 	},
@@ -52,7 +52,7 @@
 	},
 
 	"wake_come_1": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[excited] [overjoyed] !!!! ok!! 😊😊",
 		"next": "wake_come_2"
 	},
@@ -855,7 +855,7 @@
 	},
 
 	"evening_home_3": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[hopeful] [careful] \"How was school?\"",
 		"next": "evening_home_4"
 	},
@@ -1538,7 +1538,7 @@
 	},
 
 	"seven_answer_2": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[surprised] [nervous] \"Oh! Hi. Hi, Ulyn. I just— are you eating?\"",
 		"next": "seven_answer_3"
 	},
@@ -1550,7 +1550,7 @@
 	},
 
 	"seven_answer_4": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[emotional] [relieved] \"Good. Good. I just wanted to hear your voice.\"",
 		"next": "seven_answer_5"
 	},
@@ -1680,7 +1680,7 @@
 	},
 
 	"sports_mom_5": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[nervous] [hopeful] \"I brought khao man gai. It's in the car. I didn't know if you'd—\"",
 		"next": "sports_mom_6"
 	},
@@ -2630,7 +2630,7 @@
 	},
 
 	"bus_home_3": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[surprised] [hopeful] \"Ulyn?\"",
 		"next": "bus_home_4"
 	},
@@ -2642,7 +2642,7 @@
 	},
 
 	"bus_home_5": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[flustered] [rushed] [happy] \"You didn't say you were— I don't have anything. There's leftover khao man gai, from Sunday, I can heat it—\"",
 		"next": "bus_home_6"
 	},
@@ -2666,7 +2666,7 @@
 	},
 
 	"bus_home_9": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[worried] \"Oh, no. Is he okay?\"",
 		"next": "bus_home_10"
 	},
@@ -2696,7 +2696,7 @@
 	},
 
 	"bus_home_14": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[gentle] [careful] \"Are you okay?\"",
 		"next": "bus_home_15"
 	},
@@ -3441,7 +3441,7 @@
 	},
 
 	"endA_lunch_5": {
-		"speaker": "Mom",
+		"speaker": "Ulyn's mom",
 		"text": "[sad] [wry] \"Too little. Nobody was home.\"",
 		"next": "endA_lunch_6"
 	},

@@ -2759,7 +2759,7 @@
 	},
 
 	"mid_4": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[disappointed] [worried] \"Elysia. What happened? You're always so good at history.\"",
 		"next": "mid_5"
 	},
@@ -2772,7 +2772,7 @@
 	},
 
 	"mid_6": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[stern] [worried] \"You're on your phone too much. I see your light on at three in the morning.\"",
 		"choices": [
 			{"text": "\"Sorry. I'll fix it.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "mid_sorry_1"},
@@ -2781,7 +2781,7 @@
 	},
 
 	"mid_sorry_1": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[warm] [relieved] \"Okay. I know you will. You're my easy one.\"",
 		"next": "mid_sorry_2"
 	},
@@ -2796,7 +2796,7 @@
 	},
 
 	"mid_honest_1": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[shocked] [concerned] \"Every night?\"",
 		"next": "mid_honest_2"
 	},
@@ -2808,7 +2808,7 @@
 	},
 
 	"mid_honest_3": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[sympathetic] [gentle] \"Oh, sweetheart. You know you're allowed to hang up, right?\"",
 		"next": "mid_honest_4"
 	},
@@ -2820,7 +2820,7 @@
 	},
 
 	"mid_honest_5": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[gentle] [wise] \"Maybe. And you're hurt now. Somebody's going to be hurt either way. It doesn't always have to be you.\"",
 		"next": "mid_honest_6"
 	},
@@ -4838,7 +4838,7 @@
 	},
 
 	"dinner_door_2": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[warm] [cheerful] \"Come again, Kay. She never brings anyone home. This one never asks for anything. She's my easy one.\"",
 		"next": "dinner_door_3"
 	},
@@ -4862,7 +4862,7 @@
 	},
 
 	"dinner_door_6": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "\"[pauses] ...[thoughtful] [softly] Yes. I suppose she does.\"",
 		"next": "dinner_door_7"
 	},
@@ -4886,7 +4886,7 @@
 	},
 
 	"dinner_kitchen_2": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[gentle] [serious] \"Is that true? What he said?\"",
 		"choices": [
 			{"text": "\"...Yeah. A little. A lot.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "dinner_true_1", "set_flag": "NotEasyOne"},
@@ -4907,7 +4907,7 @@
 	},
 
 	"dinner_true_3": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[firm] [loving] \"Okay. Then you can ask for things. You hear me? Even small things. Especially small things.\"",
 		"next": "dinner_true_4"
 	},
@@ -4919,7 +4919,7 @@
 	},
 
 	"dinner_true_5": {
-		"speaker": "Mom",
+		"speaker": "Elysia's mom",
 		"text": "[teasing] [deadpan] \"I gave them to Kay.\"",
 		"next": "dinner_true_6"
 	},

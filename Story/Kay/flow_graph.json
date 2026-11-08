@@ -1499,7 +1499,7 @@
 	},
 
 	"plants_4": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[warm] [teasing] \"Look at you, doing chores without being asked.\"",
 		"next": "plants_5"
 	},
@@ -1511,7 +1511,7 @@
 	},
 
 	"plants_6": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[tired] [apologetic] \"Did you eat breakfast? I know the fridge is empty. Sorry. I'll go shopping this weekend.\"",
 		"next": "plants_7"
 	},
@@ -1523,7 +1523,7 @@
 	},
 
 	"plants_8": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[gentle] [tired] \"How was school?\"",
 		"next": "plants_9"
 	},
@@ -1538,19 +1538,19 @@
 	},
 
 	"plants_fine": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[tired] [accepting] \"Fine is good.\"",
 		"next": "plants_10"
 	},
 
 	"plants_told_1": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[sighs] [sympathetic] \"Again? Oh, Kay...\"",
 		"next": "plants_told_2"
 	},
 
 	"plants_told_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[gentle] [motherly] \"You know you don't have to carry everybody, right?\"",
 		"next": "plants_told_3"
 	},
@@ -1850,7 +1850,7 @@
 	},
 
 	"night_mom": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[echoing] [gentle] \"How was school?\"",
 		"next": "night_10"
 	},
@@ -2441,7 +2441,7 @@
 	},
 
 	"kettle_3": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[puzzled] \"What are you doing with the kettle?\"",
 		"choices": [
 			{"text": "\"The water heater's broken. It's been broken for a week.\"", "type": "honest", "weight_change": -5, "next": "kettle_told_1", "set_flag": "ToldMomHeater"},
@@ -2450,7 +2450,7 @@
 	},
 
 	"kettle_told_1": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[shocked] [worried] \"A week? Kay. Why didn't you say anything?\"",
 		"next": "kettle_told_2"
 	},
@@ -2468,7 +2468,7 @@
 	},
 
 	"kettle_told_4": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[firm] [hurt] \"I'm not too busy for you to have hot water.\"",
 		"next": "kettle_told_5"
 	},
@@ -2486,7 +2486,7 @@
 	},
 
 	"kettle_tea_1": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[amused] [suspicious] \"Since when do you drink tea?\"",
 		"next": "kettle_tea_2"
 	},
@@ -4318,7 +4318,7 @@
 	},
 
 	"score_3": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[excited] [proud] !!!!! proud of you",
 		"next": "score_4",
 		"sfx": "Notification"
@@ -4624,7 +4624,7 @@
 	},
 
 	"absent_mom_1": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[cheerful] [rushed] \"Bye, Kay! There's bread!\"",
 		"next": "absent_mom_2"
 	},
@@ -5306,20 +5306,20 @@
 	},
 
 	"mom_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[worried] [serious] \"The school called. They said you were absent.\"",
 		"next": "mom_3"
 	},
 
 	"mom_3": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[hurt] [confused] \"You said bye this morning like everything was normal.\"",
 		"next": "mom_wait_1",
 		"secret": {"condition": "flag_true", "flag": "ToldMomHeater", "next": "mom_heater_1"}
 	},
 
 	"mom_heater_1": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[gentle] [encouraging] \"You told me about the heater. It got fixed. See? You can tell me things.\"",
 		"next": "mom_wait_1"
 	},
@@ -5344,7 +5344,7 @@
 	},
 
 	"mom_ask": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[worried] [gentle] \"Were you sick?\"",
 		"choices": [
 			{"text": "\"Just a headache. I'm fine now.\"", "type": "neutral", "weight_change": 10, "next": "mom_fine_1"},
@@ -5359,7 +5359,7 @@
 	},
 
 	"mom_fine_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[relieved] [puzzled] \"No fever.\"",
 		"next": "mom_fine_3"
 	},
@@ -5377,7 +5377,7 @@
 	},
 
 	"mom_fine_5": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[tired] [gentle] \"Okay. Go to bed early.\"",
 		"next": "mom_fine_6"
 	},
@@ -5389,7 +5389,7 @@
 	},
 
 	"mom_fine_7": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[on the phone] [tired] \"...No, he said he's fine.\"",
 		"next": "mom_fine_8"
 	},
@@ -5413,7 +5413,7 @@
 	},
 
 	"mom_told_3": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[worried] [gentle] \"How long is 'a while'?\"",
 		"next": "mom_told_4"
 	},
@@ -5432,13 +5432,13 @@
 	},
 
 	"mom_told_6": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[emotional] [guilty] \"Kay. When your dad left, you got so easy. You stopped asking for anything. And I was so tired that I let you.\"",
 		"next": "mom_told_7"
 	},
 
 	"mom_told_7": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[voice breaking] [regretful] \"I thought, he's okay. Thank god one of us is okay.\"",
 		"next": "mom_told_8"
 	},
@@ -5450,7 +5450,7 @@
 	},
 
 	"mom_told_9": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[crying] [firm] \"You don't make it worse. You're my kid. You're not a chore I'm managing.\"",
 		"next": "mom_told_10"
 	},
@@ -5462,7 +5462,7 @@
 	},
 
 	"mom_told_11": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[laughing through tears] \"Look at us.\"",
 		"next": "mom_told_12"
 	},
@@ -5481,7 +5481,7 @@
 	},
 
 	"mom_thursday_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[firm] [warm] \"Then Thursday.\"",
 		"next": "mom_heatcheck_1"
 	},
@@ -5494,7 +5494,7 @@
 	},
 
 	"mom_heatcheck_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[sniffles] [puzzled] \"Also. Why is there a kettle in the bathroom?\"",
 		"next": "mom_heatcheck_3"
 	},
@@ -5506,7 +5506,7 @@
 	},
 
 	"mom_heatcheck_4": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[suspicious] \"Since when?\"",
 		"next": "mom_heatcheck_5"
 	},
@@ -5518,7 +5518,7 @@
 	},
 
 	"mom_heatcheck_6": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[exasperated] [fond] \"Kay.\"",
 		"next": "mom_heatcheck_7"
 	},
@@ -6200,7 +6200,7 @@
 	},
 
 	"guide_mom_2": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[warm] [proud] thursday 🌱 proud of you whatever you decide",
 		"next": "guide_door_1",
 		"sfx": "Notification"
@@ -7817,7 +7817,7 @@
 	},
 
 	"endC_7": {
-		"speaker": "Mom",
+		"speaker": "Kay's mom",
 		"text": "[excited] [proud] !!!!! proud of you",
 		"next": "endC_8",
 		"sfx": "Notification"
