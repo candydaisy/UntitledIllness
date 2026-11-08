@@ -164,13 +164,14 @@
 		"next": "gate_1",
 		"background": "Kay's room1",
 		"show_characters": ["Kay"],
-		"expression": {"Kay": "School"},
+		"expression": {"Kay": "neutral"},
 		"sfx": "stop"
 	},
 
 	"gate_1": {
 		"speaker": "",
 		"text": "*The school gate. Same as every morning.*",
+		"expression": {"Kay": "neutral"},
 		"next": "gate_2",
 		"background": "Gate",
 		"sfx": "Walkingstep"
@@ -181,7 +182,7 @@
 		"text": "[softly] [wistful] That's Elysia... with her friends again.",
 		"next": "gate_3",
 		"show_characters": ["Elysia"],
-		"expression": {"Elysia": "friends"},
+		"expression": {"Elysia": "happy"},
 		"sfx": "stop"
 	},
 
@@ -195,7 +196,7 @@
 		"speaker": "",
 		"text": "*Before he can look away, Elysia turns around like she felt him there. She smiles and waves.*",
 		"next": "gate_5",
-		"expression": {"Elysia": "default"}
+		"expression": {"Elysia": "neutral"}
 	},
 
 	"gate_5": {
@@ -723,7 +724,7 @@
 		"speaker": "",
 		"text": "*He turns around. Elysia, hands behind her back, smiling like she's been waiting.*",
 		"next": "food_kp_5",
-		"show_characters": ["Elysia"]
+		"show_characters": ["Elysia", "Kay"]
 	},
 
 	"food_kp_5": {
@@ -2330,6 +2331,7 @@
 	"tlunch_open_1": {
 		"speaker": "",
 		"text": "*Ulyn buys two plates of pad kra pao, crispy pork, a fried egg on each, and slides one across the table without a word.*",
+		"show_characters": ["Ulyn"],
 		"next": "tlunch_open_2"
 	},
 
@@ -2559,6 +2561,7 @@
 	"shop_4": {
 		"speaker": "",
 		"text": "*He turns around. Elysia, still in her uniform, a tutoring folder under her arm and a basket in her hand. Nobody from school anywhere. Just her, the fridge hum, and the guy at the counter watching a drama on his phone.*",
+		"show_characters": ["Elysia"],
 		"next": "shop_5"
 	},
 
@@ -2741,6 +2744,7 @@
 	"shop_walk_5": {
 		"speaker": "",
 		"text": "*The doors close on her face, which has gone red again.*",
+		"hide_characters": ["Elysia"],
 		"next": "shop_walk_6"
 	},
 
@@ -3475,6 +3479,7 @@
 	"joke_1": {
 		"speaker": "",
 		"text": "*Tuesday of the third week. She comes to the garden after school without texting first.*",
+		"show_characters": ["Elysia"],
 		"background": "Garden",
 		"next": "joke_2"
 	},
@@ -3641,7 +3646,7 @@
 		"next": "wrecked_2",
 		"background": "Class",
 		"show_characters": ["Ulyn"],
-		"hide_characters": ["Mint"]
+		"hide_characters": ["Mint", "Elysia"]
 	},
 
 	"wrecked_2": {
@@ -3814,6 +3819,7 @@
 	"stands_3": {
 		"speaker": "",
 		"text": "*Someone pushes a cold bottle into his hands.*",
+		"show_characters": ["Elysia"],
 		"next": "stands_4"
 	},
 
@@ -3832,12 +3838,14 @@
 	"stands_6": {
 		"speaker": "",
 		"text": "*He stands there holding the drink with both hands. He doesn't open it for a long time.*",
+		"hide_characters": ["Elysia"],
 		"next": "stands_7"
 	},
 
 	"stands_7": {
 		"speaker": "",
 		"text": "*By five, the field is empty. When Kay turns around from the last stack of cups, Elysia is sitting on the bottom row of the bleachers with her pom-poms in her lap and no voice left.*",
+		"show_characters": ["Elysia"],
 		"next": "stands_8"
 	},
 
@@ -3986,6 +3994,7 @@
 	"midterm_1": {
 		"speaker": "",
 		"text": "*Week five. Midterms.*",
+		"hide_characters": ["Elysia"],
 		"next": "midterm_2",
 		"background": "Kay's room2",
 		"sfx": "Pageturning",
@@ -4091,6 +4100,7 @@
 	"study_1": {
 		"speaker": "",
 		"text": "*Wednesday, between exams. Elysia drags him to the back table of the library.*",
+		"show_characters": ["Elysia"],
 		"background": "Library",
 		"next": "study_2"
 	},
@@ -4305,6 +4315,7 @@
 	"score_1": {
 		"speaker": "",
 		"text": "*Thursday. The history teacher hands back the midterms. Kay is top of the class again.*",
+		"hide_characters": ["Elysia"],
 		"next": "score_2",
 		"background": "Class",
 		"sfx": "Pageturning",
@@ -6617,6 +6628,7 @@
 	"ploy_1": {
 		"speaker": "",
 		"text": "*On Tuesday, Elysia comes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap.*",
+		"show_characters": ["Elysia"],
 		"next": "ploy_2"
 	},
 
@@ -6832,6 +6844,7 @@
 	"pres2_1": {
 		"speaker": "",
 		"text": "*Presentation day. First period. History.*",
+		"hide_characters": ["Elysia"],
 		"next": "pres2_2",
 		"background": "Class",
 		"show_characters": ["Ulyn", "Bank", "Fern"]
@@ -7067,6 +7080,7 @@
 	"dinner_2": {
 		"speaker": "",
 		"text": "*Her house smells like garlic and fish sauce. Her mom is kind and busy and decides he's too thin within five minutes. Pun sits directly across from him and stares at him over a bowl of rice like he's a specimen.*",
+		"show_characters": ["Elysia", "Pun", "ElysiaMom"],
 		"background": "Elysia's kitchen",
 		"next": "dinner_3"
 	},
@@ -7286,7 +7300,7 @@
 		"text": "*Beep. Beep. Beep.*",
 		"next": "last_2",
 		"background": "Kay's room1",
-		"hide_characters": ["Bank", "Fern", "MsNoi", "Ulyn"],
+		"hide_characters": ["Bank", "Fern", "MsNoi", "Ulyn", "Elysia", "Pun", "ElysiaMom"],
 		"sfx": "Alarm",
 		"secret": {"condition": "weight_below", "value": 35, "next": "endA_1"}
 	},
@@ -7832,6 +7846,7 @@
 	"endC_lunch_1": {
 		"speaker": "",
 		"text": "*At lunch, Elysia sits next to him and doesn't say anything for a while.*",
+		"show_characters": ["Elysia"],
 		"next": "endC_lunch_2"
 	},
 
@@ -7864,7 +7879,7 @@
 		"text": "*After the last bell, he goes to the garden alone and waters every bed. Then again.*",
 		"next": "endC_10",
 		"background": "Garden",
-		"hide_characters": ["Bank", "Fern"],
+		"hide_characters": ["Bank", "Fern", "Elysia"],
 		"sfx": "Waterspraying"
 	},
 

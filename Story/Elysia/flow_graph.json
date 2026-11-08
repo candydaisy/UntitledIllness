@@ -896,6 +896,7 @@
 	"shop_4": {
 		"speaker": "",
 		"text": "*He's there. In a T-shirt, in front of the hot food case, holding one ham and cheese toastie and staring at a second one like it's a hard question on a test.*",
+		"show_characters": ["Kay"],
 		"next": "shop_5"
 	},
 
@@ -1143,6 +1144,7 @@
 	"shop_bus_3": {
 		"speaker": "",
 		"text": "*The doors close. Her face is on fire. She sits by the window and watches him get smaller.*",
+		"hide_characters": ["Kay"],
 		"next": "shop_bus_4"
 	},
 
@@ -1905,6 +1907,7 @@
 	"joke_2": {
 		"speaker": "",
 		"text": "*Kay is holding the hose. He sees her and turns off the screaming tap.*",
+		"show_characters": ["Kay"],
 		"next": "joke_3"
 	},
 
@@ -2058,6 +2061,7 @@
 	"joke_text_1": {
 		"speaker": "",
 		"text": "*On Friday, Kay sends her a picture: tiny green hooks coming up out of the soil. Water spinach, he writes.*",
+		"hide_characters": ["Kay"],
 		"background": "Elysia's room",
 		"next": "joke_text_2"
 	},
@@ -2512,6 +2516,7 @@
 	"study_1": {
 		"speaker": "",
 		"text": "*On Wednesday, between exams, she drags Kay to the back table of the library.*",
+		"show_characters": ["Kay"],
 		"background": "Library",
 		"next": "study_2"
 	},
@@ -2726,6 +2731,7 @@
 	"study_ask_7": {
 		"speaker": "",
 		"text": "*She doesn't sleep either. Ploy calls at 11:50.*",
+		"hide_characters": ["Kay"],
 		"background": "Elysia's room night",
 		"next": "mid_3"
 	},
@@ -2752,6 +2758,7 @@
 	"mid_3": {
 		"speaker": "",
 		"text": "*On Thursday her history score is twelve points lower than usual. Mom sees the paper on the table.*",
+		"hide_characters": ["Kay"],
 		"next": "mid_4",
 		"background": "Elysia's kitchen",
 		"show_characters": ["mom"],
@@ -3894,6 +3901,7 @@
 	"home2_1": {
 		"speaker": "",
 		"text": "*After the last bell, Kay is waiting at the gate. Not by the side of it. Right in the middle, where anyone can see.*",
+		"show_characters": ["Kay"],
 		"background": "Gate",
 		"next": "home2_2"
 	},
@@ -4116,6 +4124,7 @@
 	"ploy_1": {
 		"speaker": "",
 		"text": "*On Tuesday after school she goes to the garden and sits on the edge of the water spinach bed with her phone face down in her lap. Kay turns off the tap and sits next to her.*",
+		"show_characters": ["Kay"],
 		"background": "Garden",
 		"choices": [
 			{"text": "Tell him you're scared", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "ploy_scared_1"},
@@ -4337,6 +4346,7 @@
 	"late_no_8": {
 		"speaker": "",
 		"text": "*On Thursday, Ploy sits down across from her at lunch and stabs her rice.*",
+		"hide_characters": ["Kay"],
 		"next": "late_no_9"
 	},
 
@@ -4638,6 +4648,7 @@
 	"dinner_2": {
 		"speaker": "",
 		"text": "*He comes at six with a bag of oranges, because of course he does. Mom decides he's too thin within five minutes. Pun sits directly across from him and stares at him over his rice like he's a specimen.*",
+		"show_characters": ["Kay", "mom", "Pun"],
 		"background": "Elysia's kitchen",
 		"next": "dinner_3"
 	},
@@ -4882,6 +4893,7 @@
 	"dinner_kitchen_1": {
 		"speaker": "",
 		"text": "*Mom is still in the kitchen, drying the same bowl.*",
+		"hide_characters": ["Kay", "Pun"],
 		"next": "dinner_kitchen_2"
 	},
 
@@ -4954,7 +4966,7 @@
 		"next": "last_2",
 		"background": "Gate",
 		"show_characters": ["Ploy", "Jane", "Bow", "Mint"],
-		"hide_characters": ["Pun"]
+		"hide_characters": ["Pun", "mom"]
 	},
 
 	"last_2": {

@@ -30,6 +30,49 @@
 [ext_resource type="Texture2D" uid="uid://cqhbghe1o2y30" path="res://Assets/Photos/Background/SchoolLibrary_blur.jpg" id="bg_SchoolLibrary_blur"]
 [ext_resource type="Texture2D" uid="uid://cqeh414iudd5v" path="res://Assets/Photos/Background/SportsField_blur.jpg" id="bg_SportsField_blur"]
 [ext_resource type="Texture2D" uid="uid://e4sr0p6idl8a" path="res://Assets/Photos/Background/StreetNight_blur.jpg" id="bg_StreetNight_blur"]
+[ext_resource type="Texture2D" uid="uid://b4qj8lgdnmb1i" path="res://Assets/Sprites/Supporting_sprite/Bow_neutral.png" id="spr_Bow_neutral"]
+[ext_resource type="Texture2D" uid="uid://dsb5vprbhfgpg" path="res://Assets/Sprites/Supporting_sprite/ElysiaMom_neutral.png" id="spr_ElysiaMom_neutral"]
+[ext_resource type="Texture2D" uid="uid://bjc8fl2ecoakb" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_flustered.png" id="spr_Elysia_casual_flustered"]
+[ext_resource type="Texture2D" uid="uid://bk15obgjiesxt" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_happy.png" id="spr_Elysia_casual_happy"]
+[ext_resource type="Texture2D" uid="uid://cgeafdyl186fs" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_nervous.png" id="spr_Elysia_casual_nervous"]
+[ext_resource type="Texture2D" uid="uid://b3i1bcnmds3s6" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_neutral.png" id="spr_Elysia_casual_neutral"]
+[ext_resource type="Texture2D" uid="uid://dpld81y7xab2s" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_sad.png" id="spr_Elysia_casual_sad"]
+[ext_resource type="Texture2D" uid="uid://du0mikx6tlljk" path="res://Assets/Sprites/Elysia_sprite/casual/Elysia_casual_tired.png" id="spr_Elysia_casual_tired"]
+[ext_resource type="Texture2D" uid="uid://16qg8wyvgjcu" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_flustered.png" id="spr_Elysia_flustered"]
+[ext_resource type="Texture2D" uid="uid://cgbhkm37brad7" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_happy.png" id="spr_Elysia_happy"]
+[ext_resource type="Texture2D" uid="uid://yxkiwpq6wqgv" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_flustered.png" id="spr_Elysia_hoodie_flustered"]
+[ext_resource type="Texture2D" uid="uid://iwbbnl300ins" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_happy.png" id="spr_Elysia_hoodie_happy"]
+[ext_resource type="Texture2D" uid="uid://c1yw1skvile6a" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_nervous.png" id="spr_Elysia_hoodie_nervous"]
+[ext_resource type="Texture2D" uid="uid://kukaitdrqjhj" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_neutral.png" id="spr_Elysia_hoodie_neutral"]
+[ext_resource type="Texture2D" uid="uid://b73dvahoi61q" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_sad.png" id="spr_Elysia_hoodie_sad"]
+[ext_resource type="Texture2D" uid="uid://dngcy7pexijqv" path="res://Assets/Sprites/Elysia_sprite/hoodie/Elysia_hoodie_tired.png" id="spr_Elysia_hoodie_tired"]
+[ext_resource type="Texture2D" uid="uid://bu5dqbpggfkrl" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_nervous.png" id="spr_Elysia_nervous"]
+[ext_resource type="Texture2D" uid="uid://cpq13n825gdfk" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_neutral.png" id="spr_Elysia_neutral"]
+[ext_resource type="Texture2D" uid="uid://vpkeafds5ptn" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_sad.png" id="spr_Elysia_sad"]
+[ext_resource type="Texture2D" uid="uid://bk1mrpomkm2kg" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_tired.png" id="spr_Elysia_tired"]
+[ext_resource type="Texture2D" uid="uid://ccadejqfwxnd7" path="res://Assets/Sprites/Supporting_sprite/Jane_neutral.png" id="spr_Jane_neutral"]
+[ext_resource type="Texture2D" uid="uid://c7mx4lg35l7uu" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_nervous.png" id="spr_Kay_casual_nervous"]
+[ext_resource type="Texture2D" uid="uid://0jg6gkc8lx0n" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_neutral.png" id="spr_Kay_casual_neutral"]
+[ext_resource type="Texture2D" uid="uid://bjgyq60fv8rjw" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_sad.png" id="spr_Kay_casual_sad"]
+[ext_resource type="Texture2D" uid="uid://ctiw4mrjrm2k8" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_smile.png" id="spr_Kay_casual_smile"]
+[ext_resource type="Texture2D" uid="uid://dburawkbyli31" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_teasing.png" id="spr_Kay_casual_teasing"]
+[ext_resource type="Texture2D" uid="uid://bdcbpob1jgnvh" path="res://Assets/Sprites/Kay_sprite/Casual/Kay_casual_tired.png" id="spr_Kay_casual_tired"]
+[ext_resource type="Texture2D" uid="uid://cvksnn6w3iaa5" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_nervous.png" id="spr_Kay_nervous"]
+[ext_resource type="Texture2D" uid="uid://dtbq4mdgv5v6h" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_neutral.png" id="spr_Kay_neutral"]
+[ext_resource type="Texture2D" uid="uid://df1004rqj26eu" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_sad.png" id="spr_Kay_sad"]
+[ext_resource type="Texture2D" uid="uid://dd0xyweahe3wf" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_smile.png" id="spr_Kay_smile"]
+[ext_resource type="Texture2D" uid="uid://cnhchr8ruf8ku" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_teasing.png" id="spr_Kay_teasing"]
+[ext_resource type="Texture2D" uid="uid://sxynp61s3ljc" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_tired.png" id="spr_Kay_tired"]
+[ext_resource type="Texture2D" uid="uid://dr6047reg3y3k" path="res://Assets/Sprites/Supporting_sprite/Mint_neutral.png" id="spr_Mint_neutral"]
+[ext_resource type="Texture2D" uid="uid://cuyw2wbb38jb3" path="res://Assets/Sprites/Supporting_sprite/Nam_neutral.png" id="spr_Nam_neutral"]
+[ext_resource type="Texture2D" uid="uid://b1ts8ixi6uayq" path="res://Assets/Sprites/Supporting_sprite/Ploy_neutral.png" id="spr_Ploy_neutral"]
+[ext_resource type="Texture2D" uid="uid://ct5jsfgo5720r" path="res://Assets/Sprites/Supporting_sprite/Pun_neutral.png" id="spr_Pun_neutral"]
+[ext_resource type="Texture2D" uid="uid://0ddqkol6qa8m" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_angry.png" id="spr_Ulyn_angry"]
+[ext_resource type="Texture2D" uid="uid://cqlmqfq0527rf" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_grin.png" id="spr_Ulyn_grin"]
+[ext_resource type="Texture2D" uid="uid://sx1mj88vtw64" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_neutral.png" id="spr_Ulyn_neutral"]
+[ext_resource type="Texture2D" uid="uid://3nc5uge3dexy" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_sad.png" id="spr_Ulyn_sad"]
+[ext_resource type="Texture2D" uid="uid://sshcecfjl0c" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_tired.png" id="spr_Ulyn_tired"]
+[ext_resource type="Texture2D" uid="uid://bq5ee6kw1yua" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_worried.png" id="spr_Ulyn_worried"]
 
 [sub_resource type="Resource" id="Resource_elysia"]
 script = ExtResource("20_mode")
@@ -39,13 +82,377 @@ shader = ExtResource("31_sideart")
 shader_parameter/tint = Color(0.95, 0.18, 0.24, 1)
 shader_parameter/highlight = 0.25
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_78m1k"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_nrl2c"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_Kay"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_nervous")
+}],
 "loop": 1,
-"name": &"new_animation",
+"name": &"casual_nervous",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_neutral")
+}],
+"loop": 1,
+"name": &"casual_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_sad")
+}],
+"loop": 1,
+"name": &"casual_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_smile")
+}],
+"loop": 1,
+"name": &"casual_smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_teasing")
+}],
+"loop": 1,
+"name": &"casual_teasing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_casual_tired")
+}],
+"loop": 1,
+"name": &"casual_tired",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_nervous")
+}],
+"loop": 1,
+"name": &"nervous",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_sad")
+}],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_smile")
+}],
+"loop": 1,
+"name": &"smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_teasing")
+}],
+"loop": 1,
+"name": &"teasing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Kay_tired")
+}],
+"loop": 1,
+"name": &"tired",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Ulyn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_angry")
+}],
+"loop": 1,
+"name": &"angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_grin")
+}],
+"loop": 1,
+"name": &"grin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_sad")
+}],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_tired")
+}],
+"loop": 1,
+"name": &"tired",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ulyn_worried")
+}],
+"loop": 1,
+"name": &"worried",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Elysia"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_flustered")
+}],
+"loop": 1,
+"name": &"casual_flustered",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_happy")
+}],
+"loop": 1,
+"name": &"casual_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_nervous")
+}],
+"loop": 1,
+"name": &"casual_nervous",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_neutral")
+}],
+"loop": 1,
+"name": &"casual_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_sad")
+}],
+"loop": 1,
+"name": &"casual_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_casual_tired")
+}],
+"loop": 1,
+"name": &"casual_tired",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_flustered")
+}],
+"loop": 1,
+"name": &"flustered",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_happy")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_flustered")
+}],
+"loop": 1,
+"name": &"hoodie_flustered",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_happy")
+}],
+"loop": 1,
+"name": &"hoodie_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_nervous")
+}],
+"loop": 1,
+"name": &"hoodie_nervous",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_neutral")
+}],
+"loop": 1,
+"name": &"hoodie_neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_sad")
+}],
+"loop": 1,
+"name": &"hoodie_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_hoodie_tired")
+}],
+"loop": 1,
+"name": &"hoodie_tired",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_nervous")
+}],
+"loop": 1,
+"name": &"nervous",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_sad")
+}],
+"loop": 1,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Elysia_tired")
+}],
+"loop": 1,
+"name": &"tired",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mom"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_ElysiaMom_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Ploy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Ploy_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Mint"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Mint_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Jane"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Jane_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Bow"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Bow_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Nam"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Nam_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_Pun"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("spr_Pun_neutral")
+}],
+"loop": 1,
+"name": &"neutral",
 "speed": 5.0
 }]
 
@@ -431,72 +838,82 @@ color = Color(0, 0, 0, 1)
 
 [node name="Kay" type="AnimatedSprite2D" parent="Characters" unique_id=83434114]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_78m1k")
+position = Vector2(1364, 612.00006)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Kay")
+animation = &"neutral"
+flip_h = true
 
 [node name="Ulyn" type="AnimatedSprite2D" parent="Characters" unique_id=1993542231]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(1340, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Ulyn")
+animation = &"neutral"
+flip_h = true
 
 [node name="Elysia" type="AnimatedSprite2D" parent="Characters" unique_id=1827681189]
 visible = false
-position = Vector2(235, 582)
-scale = Vector2(0.8181153, 0.7678506)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(260, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Elysia")
+animation = &"neutral"
 
 [node name="mom" type="AnimatedSprite2D" parent="Characters" unique_id=487807491]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(1340, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_mom")
+animation = &"neutral"
+flip_h = true
 
 [node name="Ploy" type="AnimatedSprite2D" parent="Characters" unique_id=625788519]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(500, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Ploy")
+animation = &"neutral"
+flip_h = true
 
 [node name="Mint" type="AnimatedSprite2D" parent="Characters" unique_id=1720998487]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(1150, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Mint")
+animation = &"neutral"
+flip_h = true
 
 [node name="Jane" type="AnimatedSprite2D" parent="Characters" unique_id=420439687]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(720, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Jane")
+animation = &"neutral"
+flip_h = true
 
 [node name="Bow" type="AnimatedSprite2D" parent="Characters" unique_id=2040012464]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(940, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Bow")
+animation = &"neutral"
+flip_h = true
 
 [node name="Nam" type="AnimatedSprite2D" parent="Characters" unique_id=936539296]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(1364, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Nam")
+animation = &"neutral"
+flip_h = true
 
 [node name="Pun" type="AnimatedSprite2D" parent="Characters" unique_id=1647276985]
 visible = false
-position = Vector2(1325, 450)
-scale = Vector2(1, 0.23770492)
-sprite_frames = SubResource("SpriteFrames_nrl2c")
-animation = &"new_animation"
+position = Vector2(1340, 612)
+scale = Vector2(0.385, 0.385)
+sprite_frames = SubResource("SpriteFrames_Pun")
+animation = &"neutral"
+flip_h = true
 
 [node name="Audio" type="Node" parent="." unique_id=1886730261]
 

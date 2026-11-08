@@ -18,6 +18,11 @@ extends Node2D
 @export var auto_delay_per_char := 0.03 # ...plus this per character, so long lines stay up longer
 @export var debug_log := false # print node and meters on every node
 @export var screen_reader_timer_mult := 3.0 # timed choices / calls last this much longer with a screen reader
+@export_group("Speaker highlight")
+@export_range(0.0, 1.0) var speaker_dim := 0.55 # brightness of characters who aren't talking (1 = off)
+@export var speaker_bounce := 14.0 # pixels the speaker hops when they start talking (0 = off)
+@export var speaker_bounce_time := 0.28 # seconds for the hop
+@export_group("")
 
 @onready var type_sound : AudioStreamPlayer = $Audio/typing
 @onready var sfx_player : AudioStreamPlayer = $Audio/sfx
@@ -96,6 +101,9 @@ func _ready() -> void:
 
 	typewriter = Typewriter.new(text_label, type_sound)
 	stage      = StoryStage.new(self, bgs_container, characters_container)
+	stage.dim = speaker_dim
+	stage.bounce_height = speaker_bounce
+	stage.bounce_time = speaker_bounce_time
 	audio      = StoryAudio.new(self, sfx_player, amb_player, voice_player)
 	world_tint = CanvasModulate.new()
 	add_child(world_tint)
@@ -267,6 +275,7 @@ func process_node(node_name: String) -> void:
 		return
 	entry = graph.get_entry(node_name) # the language may have changed during the transition
 	is_transitioning = false
+	stage.highlight(entry.get("speaker", ""))
 
 	audio.apply_sfx(entry)
 	audio.apply_voice(entry, flow_graph_path.get_base_dir().get_file(), node_name)

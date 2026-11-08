@@ -11,6 +11,14 @@ var characters : Node
 
 var _tweens := {} # CanvasItem -> Tween
 
+# Speaker highlight (set from the story node's Inspector, see story_player.gd)
+var dim := 0.55 # brightness of everyone on stage who isn't talking (1 = no dimming)
+var bounce_height := 14.0 # pixels the speaker hops when they start talking (0 = no hop)
+var bounce_time := 0.28
+var _speaker : Node2D = null
+var _dim_tweens := {} # CanvasItem -> Tween
+var _bounce_tweens := {} # Node2D -> Tween
+
 
 func _init(host_node: Node, bgs: Node, chars: Node) -> void:
 	host = host_node
@@ -77,6 +85,54 @@ func restore(state: Dictionary) -> void:
 		if state["characters"].get(char_name, "") != "":
 			_play_expression(char_name, state["characters"][char_name])
 	await _await_all(tweens)
+
+
+## The sprite for a speaker name, or null: "Kay" -> Kay, "Ms. Noi" -> MsNoi,
+## "Elysia's mom" -> ElysiaMom if the scene has one, else mom (each route's
+## scene has its own mom).
+func speaker_node(speaker: String) -> Node2D:
+	var mom := "mom" if speaker.ends_with("'s mom") else ""
+	var named_mom := speaker.replace("'s mom", "Mom").replace(" ", "") if mom else ""
+	for node_name in [speaker, speaker.replace(" ", "").replace(".", ""), named_mom, mom]:
+		if node_name != "" and characters.has_node(NodePath(node_name)):
+			return characters.get_node(NodePath(node_name)) as Node2D
+	return null
+
+
+## Makes the speaker stand out: everyone else on stage is dimmed, and the
+## speaker hops once when they start talking. Narration, or a speaker who
+## isn't on stage, leaves everyone at full brightness.
+func highlight(speaker: String) -> void:
+	var who := speaker_node(speaker)
+	if who and not who.visible:
+		who = null
+	for n in characters.get_children():
+		if not n is CanvasItem:
+			continue
+		var target := Color.WHITE if who == null or n == who else Color(dim, dim, dim)
+		if n.self_modulate != target:
+			var running : Tween = _dim_tweens.get(n)
+			if running and running.is_valid():
+				running.kill()
+			_dim_tweens[n] = host.create_tween()
+			_dim_tweens[n].tween_property(n, "self_modulate", target, FADE_TIME * 0.5)
+	if who and who != _speaker:
+		_bounce(who)
+	_speaker = who
+
+
+func _bounce(n: Node2D) -> void:
+	if bounce_height <= 0.0:
+		return
+	var base_y : float = n.get_meta("base_y", n.position.y) # where it stands, even mid-hop
+	n.set_meta("base_y", base_y)
+	var running : Tween = _bounce_tweens.get(n)
+	if running and running.is_valid():
+		running.kill()
+	var t := host.create_tween()
+	t.tween_property(n, "position:y", base_y - bounce_height, bounce_time * 0.4).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	t.tween_property(n, "position:y", base_y, bounce_time * 0.6).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	_bounce_tweens[n] = t
 
 
 func _play_expression(char_name: String, anim: String) -> void:
