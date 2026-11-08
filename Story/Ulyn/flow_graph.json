@@ -23,14 +23,14 @@
 
 	"wake_4": {
 		"speaker": "Mom",
-		"text": "coming home tomorrow? i'm making khao man gai 🍗",
+		"text": "[warm] [hopeful] coming home tomorrow? i'm making khao man gai 🍗",
 		"next": "wake_5",
 		"sfx": "Notification"
 	},
 
 	"wake_5": {
 		"speaker": "Ulyn",
-		"text": "It's my favorite. She knows it's my favorite. That's why she says it.",
+		"text": "[bitter] [guilty, to himself] It's my favorite. She knows it's my favorite. That's why she says it.",
 		"cut_after": "She knows it's my favorite.",
 		"cut": "Anyway. Council at eight. Coffee first.",
 		"choices": [
@@ -41,7 +41,7 @@
 
 	"wake_cant_1": {
 		"speaker": "Mom",
-		"text": "ok! next time 😊",
+		"text": "[disappointed] [forced cheerful] ok! next time 😊",
 		"next": "wake_cant_2"
 	},
 
@@ -53,7 +53,7 @@
 
 	"wake_come_1": {
 		"speaker": "Mom",
-		"text": "!!!! ok!! 😊😊",
+		"text": "[excited] [overjoyed] !!!! ok!! 😊😊",
 		"next": "wake_come_2"
 	},
 
@@ -72,19 +72,19 @@
 
 	"wake_tan_2": {
 		"speaker": "Tan",
-		"text": "\"You going home this week?\"",
+		"text": "[casual] [knowing] \"You going home this week?\"",
 		"next": "wake_tan_3"
 	},
 
 	"wake_tan_3": {
 		"speaker": "Ulyn",
-		"text": "\"Council stuff.\"",
+		"text": "[evasive] [flat] \"Council stuff.\"",
 		"next": "wake_tan_4"
 	},
 
 	"wake_tan_4": {
 		"speaker": "Tan",
-		"text": "\"Uh-huh.\"",
+		"text": "[skeptical] [dry] \"Uh-huh.\"",
 		"next": "wake_tan_5"
 	},
 
@@ -106,14 +106,14 @@
 
 	"gate_2": {
 		"speaker": "Ulyn",
-		"text": "He looks terrible. Grey under the eyes. Hair still wet.",
+		"text": "[worried] [to himself] He looks terrible. Grey under the eyes. Hair still wet.",
 		"next": "gate_3",
 		"sfx": "stop"
 	},
 
 	"gate_3": {
 		"speaker": "Ulyn",
-		"text": "Cold shower again? Did his heater break? He'd never say.",
+		"text": "[concerned] [to himself] Cold shower again? Did his heater break? He'd never say.",
 		"next": "gate_4"
 	},
 
@@ -125,7 +125,7 @@
 
 	"gate_5": {
 		"speaker": "Ulyn",
-		"text": "He waved like a robot. Good job, Kay.",
+		"text": "[dry] [sarcastic, to himself] He waved like a robot. Good job, Kay.",
 		"next": "gate_6"
 	},
 
@@ -138,31 +138,31 @@
 
 	"gate_7": {
 		"speaker": "Ulyn",
-		"text": "\"Morning. You look like a zombie.\"",
+		"text": "[teasing] \"Morning. You look like a zombie.\"",
 		"next": "gate_8"
 	},
 
 	"gate_8": {
 		"speaker": "Kay",
-		"text": "\"Thanks. Love you too.\"",
+		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
 		"next": "gate_9"
 	},
 
 	"gate_9": {
 		"speaker": "Ulyn",
-		"text": "\"What time did you sleep?\"",
+		"text": "[suspicious] \"What time did you sleep?\"",
 		"next": "gate_10"
 	},
 
 	"gate_10": {
 		"speaker": "Kay",
-		"text": "\"...Late-ish.\"",
+		"text": "[hesitant] [evasive] \"...Late-ish.\"",
 		"next": "gate_11"
 	},
 
 	"gate_11": {
 		"speaker": "Ulyn",
-		"text": "Late-ish. That means two at the earliest.",
+		"text": "[knowing] [worried, to himself] Late-ish. That means two at the earliest.",
 		"next": "gate_12"
 	},
 
@@ -174,25 +174,25 @@
 
 	"gate_13": {
 		"speaker": "Ulyn",
-		"text": "\"You did their slides again, didn't you.\"",
+		"text": "[knowing] [disapproving] \"You did their slides again, didn't you.\"",
 		"next": "gate_14"
 	},
 
 	"gate_14": {
 		"speaker": "Kay",
-		"text": "\"They were busy. It was faster if I just did it.\"",
+		"text": "[defensive] [casual] \"They were busy. It was faster if I just did it.\"",
 		"next": "gate_15"
 	},
 
 	"gate_15": {
 		"speaker": "Ulyn",
-		"text": "The science poster. The English skit. Now Obama. They were busy every time.",
+		"text": "[frustrated] [to himself] The science poster. The English skit. Now Obama. They were busy every time.",
 		"next": "gate_16"
 	},
 
 	"gate_16": {
 		"speaker": "Ulyn",
-		"text": "\"Uh-huh. They're always busy.\"",
+		"text": "[sarcastic] \"Uh-huh. They're always busy.\"",
 		"next": "gate_17"
 	},
 
@@ -210,13 +210,13 @@
 
 	"gate_19": {
 		"speaker": "Ulyn",
-		"text": "If I push, he'll just smile harder.",
+		"text": "[resigned] [to himself] If I push, he'll just smile harder.",
 		"next": "gate_20"
 	},
 
 	"gate_20": {
 		"speaker": "Ulyn",
-		"text": "\"Come on, leader. Don't be late to your own presentation.\"",
+		"text": "[playful] [encouraging] \"Come on, leader. Don't be late to your own presentation.\"",
 		"next": "pres_1"
 	},
 
@@ -236,7 +236,7 @@
 
 	"pres_3": {
 		"speaker": "Ulyn",
-		"text": "To everyone else he looks perfectly fine.",
+		"text": "[bitter] [to himself] To everyone else he looks perfectly fine.",
 		"next": "pres_4"
 	},
 
@@ -248,7 +248,7 @@
 
 	"pres_5": {
 		"speaker": "Ulyn",
-		"text": "\"Ulyn. I made the slides, so if they look good, you're welcome.\"",
+		"text": "[smug] [playful] \"Ulyn. I made the slides, so if they look good, you're welcome.\"",
 		"next": "pres_6"
 	},
 
@@ -260,7 +260,7 @@
 
 	"pres_7": {
 		"speaker": "Bank",
-		"text": "\"So Obama was... he was born in...\"",
+		"text": "[nervous] [stammering] \"So Obama was... he was born in...\"",
 		"next": "pres_8"
 	},
 
@@ -273,7 +273,7 @@
 
 	"pres_9": {
 		"speaker": "Ulyn",
-		"text": "He never read it. He never even opened it.",
+		"text": "[annoyed] [to himself] He never read it. He never even opened it.",
 		"next": "pres_10"
 	},
 
@@ -285,19 +285,19 @@
 
 	"pres_11": {
 		"speaker": "Ulyn",
-		"text": "Let him blank, Kay. Just once. Let it be someone else's problem.",
+		"text": "[pleading] [tense, to himself] Let him blank, Kay. Just once. Let it be someone else's problem.",
 		"next": "pres_12"
 	},
 
 	"pres_12": {
 		"speaker": "Kay",
-		"text": "\"—Hawaii, 1961. Sorry, I'll jump in, we split this part.\"",
+		"text": "[quickly] [smoothing it over] \"—Hawaii, 1961. Sorry, I'll jump in, we split this part.\"",
 		"next": "pres_13"
 	},
 
 	"pres_13": {
 		"speaker": "Ulyn",
-		"text": "Of course.",
+		"text": "[sighs] [resigned] Of course.",
 		"next": "pres_14"
 	},
 
@@ -309,25 +309,25 @@
 
 	"pres_15": {
 		"speaker": "Teacher",
-		"text": "\"Very well organized, group 3. Good teamwork, everyone.\"",
+		"text": "[pleased] [teacherly] \"Very well organized, group 3. Good teamwork, everyone.\"",
 		"next": "pres_16"
 	},
 
 	"pres_16": {
 		"speaker": "Bank",
-		"text": "\"Nice one, Kay! You saved us.\"",
+		"text": "[relieved] [cheerful] \"Nice one, Kay! You saved us.\"",
 		"next": "pres_17"
 	},
 
 	"pres_17": {
 		"speaker": "Fern",
-		"text": "\"Seriously, you're the best.\"",
+		"text": "[gushing] \"Seriously, you're the best.\"",
 		"next": "pres_18"
 	},
 
 	"pres_18": {
 		"speaker": "Kay",
-		"text": "\"Ha... it's nothing.\"",
+		"text": "\"[awkward laugh] Ha... [modest] it's nothing.\"",
 		"next": "pres_19"
 	},
 
@@ -345,25 +345,25 @@
 
 	"pres_21": {
 		"speaker": "Ulyn",
-		"text": "\"Why didn't you just let him blank?\"",
+		"text": "[frustrated] \"Why didn't you just let him blank?\"",
 		"next": "pres_22"
 	},
 
 	"pres_22": {
 		"speaker": "Kay",
-		"text": "\"In front of everyone? That would've been mean.\"",
+		"text": "[defensive] [softly] \"In front of everyone? That would've been mean.\"",
 		"next": "pres_23"
 	},
 
 	"pres_23": {
 		"speaker": "Ulyn",
-		"text": "\"It would've been fair. You wrote his part. You wrote her part. And they get the same grade as you.\"",
+		"text": "[angry] [exasperated] \"It would've been fair. You wrote his part. You wrote her part. And they get the same grade as you.\"",
 		"next": "pres_24"
 	},
 
 	"pres_24": {
 		"speaker": "Ulyn",
-		"text": "\"Last semester it was the science poster. Before that, the English skit.\"",
+		"text": "[frustrated] [listing] \"Last semester it was the science poster. Before that, the English skit.\"",
 		"next": "pres_25"
 	},
 
@@ -379,13 +379,13 @@
 
 	"pres_always_1": {
 		"speaker": "Kay",
-		"text": "\"They just forgot. It's not a big deal.\"",
+		"text": "[dismissive] [quietly] \"They just forgot. It's not a big deal.\"",
 		"next": "pres_always_2"
 	},
 
 	"pres_always_2": {
 		"speaker": "Ulyn",
-		"text": "\"Right. They forgot. For the third time.\"",
+		"text": "[sarcastic] [flat] \"Right. They forgot. For the third time.\"",
 		"next": "pres_after_1"
 	},
 
@@ -403,13 +403,13 @@
 
 	"pres_worried_3": {
 		"speaker": "Kay",
-		"text": "\"Don't be. I'm fine. They just forgot.\"",
+		"text": "[quickly] [reassuring] \"Don't be. I'm fine. They just forgot.\"",
 		"next": "pres_worried_4"
 	},
 
 	"pres_worried_4": {
 		"speaker": "Ulyn",
-		"text": "\"...Right. They forgot.\"",
+		"text": "\"[sighs] ...[flat] [unconvinced] Right. They forgot.\"",
 		"next": "pres_after_1"
 	},
 
@@ -421,19 +421,19 @@
 
 	"pres_thumb_2": {
 		"speaker": "Kay",
-		"text": "\"...Habit.\"",
+		"text": "[evasive] [quietly] \"...Habit.\"",
 		"next": "pres_thumb_3"
 	},
 
 	"pres_thumb_3": {
 		"speaker": "Ulyn",
-		"text": "\"Since when?\"",
+		"text": "[concerned] \"Since when?\"",
 		"next": "pres_thumb_4"
 	},
 
 	"pres_thumb_4": {
 		"speaker": "Kay",
-		"text": "\"I don't know. A while.\"",
+		"text": "[shrugging] [quietly] \"I don't know. A while.\"",
 		"next": "pres_thumb_5"
 	},
 
@@ -451,13 +451,13 @@
 
 	"pres_after_2": {
 		"speaker": "Ulyn",
-		"text": "He's looking at me like he thinks I'm mad at him.",
+		"text": "[frustrated] [to himself] He's looking at me like he thinks I'm mad at him.",
 		"next": "pres_after_3"
 	},
 
 	"pres_after_3": {
 		"speaker": "Ulyn",
-		"text": "I'm not mad at you, idiot. I'm mad at—",
+		"text": "[angry] [fond, to himself] I'm not mad at you, idiot. I'm mad at—",
 		"next": "pres_after_4"
 	},
 
@@ -477,13 +477,13 @@
 
 	"lunch_2": {
 		"speaker": "Ulyn",
-		"text": "\"Hey, so... I can't eat with you today. My chemistry report's due tomorrow and I haven't started.\"",
+		"text": "[apologetic] [stressed] \"Hey, so... I can't eat with you today. My chemistry report's due tomorrow and I haven't started.\"",
 		"next": "lunch_3"
 	},
 
 	"lunch_3": {
 		"speaker": "Kay",
-		"text": "\"Oh. That's fine! Go.\"",
+		"text": "[overly cheerful] [quickly] \"Oh. That's fine! Go.\"",
 		"next": "lunch_3b"
 	},
 
@@ -495,13 +495,13 @@
 
 	"lunch_4": {
 		"speaker": "Ulyn",
-		"text": "That's fine. Exclamation mark.",
+		"text": "[dry] [skeptical, to himself] That's fine. Exclamation mark.",
 		"next": "lunch_5"
 	},
 
 	"lunch_5": {
 		"speaker": "Ulyn",
-		"text": "\"You sure? I can put it off and just do it tonight.\"",
+		"text": "[concerned] \"You sure? I can put it off and just do it tonight.\"",
 		"next": "lunch_6"
 	},
 
@@ -519,19 +519,19 @@
 
 	"lunch_8": {
 		"speaker": "Kay",
-		"text": "\"I'm good. Really. Don't worry about me.\"",
+		"text": "[forced brightness] \"I'm good. Really. Don't worry about me.\"",
 		"next": "lunch_9"
 	},
 
 	"lunch_9": {
 		"speaker": "Ulyn",
-		"text": "Don't worry about me. I could make a list of every time he's said that, starting last April.",
+		"text": "[bitter] [frustrated] Don't worry about me. I could make a list of every time he's said that, starting last April.",
 		"next": "lunch_10"
 	},
 
 	"lunch_10": {
 		"speaker": "Ulyn",
-		"text": "\"...Okay. Save me a seat in class, then.\"",
+		"text": "[hesitant] [unconvinced] \"...Okay. Save me a seat in class, then.\"",
 		"choices": [
 			{"text": "Go to the library", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "lunch_go_1"},
 			{"text": "Sit down anyway", "type": "helpful", "busy_change": -5, "unsaid_change": -5, "next": "lunch_sit_1", "set_flag": "StayedAnyway"},
@@ -548,7 +548,7 @@
 
 	"lunch_go_2": {
 		"speaker": "Ulyn",
-		"text": "He looks like a kid at a bus stop.",
+		"text": "[sad] [to himself] He looks like a kid at a bus stop.",
 		"next": "lunch_window_1",
 		"sfx": "stop"
 	},
@@ -561,19 +561,19 @@
 
 	"lunch_sit_2": {
 		"speaker": "Ulyn",
-		"text": "\"Changed my mind.\"",
+		"text": "[casual] [determined] \"Changed my mind.\"",
 		"next": "lunch_sit_3"
 	},
 
 	"lunch_sit_3": {
 		"speaker": "Kay",
-		"text": "\"Ulyn, your report—\"",
+		"text": "[surprised] [protesting] \"Ulyn, your report—\"",
 		"next": "lunch_sit_4"
 	},
 
 	"lunch_sit_4": {
 		"speaker": "Ulyn",
-		"text": "\"Too late, I'm sitting. What are we eating?\"",
+		"text": "[casual] [stubborn] \"Too late, I'm sitting. What are we eating?\"",
 		"next": "lunch_sit_5"
 	},
 
@@ -597,19 +597,19 @@
 
 	"lunch_tray_2": {
 		"speaker": "Ulyn",
-		"text": "\"You haven't eaten anything. I'm not leaving till you eat half.\"",
+		"text": "[stern] [caring] \"You haven't eaten anything. I'm not leaving till you eat half.\"",
 		"next": "lunch_tray_3"
 	},
 
 	"lunch_tray_3": {
 		"speaker": "Kay",
-		"text": "\"Ulyn—\"",
+		"text": "[protesting] \"Ulyn—\"",
 		"next": "lunch_tray_4"
 	},
 
 	"lunch_tray_4": {
 		"speaker": "Ulyn",
-		"text": "\"Half. I'll wait. I'm very patient.\"",
+		"text": "[stubborn] [teasing] \"Half. I'll wait. I'm very patient.\"",
 		"next": "lunch_tray_5"
 	},
 
@@ -647,7 +647,7 @@
 
 	"lunch_window_4": {
 		"speaker": "Ulyn",
-		"text": "Good. Someone's dragging him out of himself.",
+		"text": "[relieved] [to himself] Good. Someone's dragging him out of himself.",
 		"next": "lunch_window_5"
 	},
 
@@ -659,13 +659,13 @@
 
 	"lunch_window_6": {
 		"speaker": "Ulyn",
-		"text": "Kay voluntarily sat at a table of other humans? I'm teasing him about this until the end of time.",
+		"text": "[amused] [delighted] Kay voluntarily sat at a table of other humans? I'm teasing him about this until the end of time.",
 		"next": "lunch_window_7"
 	},
 
 	"lunch_window_7": {
 		"speaker": "Ulyn",
-		"text": "\"How was lunch?\"",
+		"text": "[curious] \"How was lunch?\"",
 		"next": "lunch_window_8",
 		"background": "Class",
 		"show_characters": ["Kay"]
@@ -673,19 +673,19 @@
 
 	"lunch_window_8": {
 		"speaker": "Kay",
-		"text": "\"It was... good, actually.\"",
+		"text": "[shy] [small smile] \"It was... good, actually.\"",
 		"next": "lunch_window_9"
 	},
 
 	"lunch_window_9": {
 		"speaker": "Ulyn",
-		"text": "\"Ohh? You saw Elysia, didn't you. Look at your face.\"",
+		"text": "[teasing] [delighted] \"Ohh? You saw Elysia, didn't you. Look at your face.\"",
 		"next": "lunch_window_10"
 	},
 
 	"lunch_window_10": {
 		"speaker": "Kay",
-		"text": "\"Shut up.\"",
+		"text": "[embarrassed] [mumbling] \"Shut up.\"",
 		"next": "lunch_window_11"
 	},
 
@@ -697,7 +697,7 @@
 
 	"lunch_window_12": {
 		"speaker": "Teacher",
-		"text": "\"The most common way people kill a plant isn't forgetting about it. It's overwatering it. Giving it more than it can take.\"",
+		"text": "[teacherly] [thoughtful] \"The most common way people kill a plant isn't forgetting about it. It's overwatering it. Giving it more than it can take.\"",
 		"next": "lunch_window_13"
 	},
 
@@ -709,13 +709,13 @@
 
 	"lunch_window_14": {
 		"speaker": "Ulyn",
-		"text": "He waters the plants in his front yard every day. He told me once, back when he still told me things.",
+		"text": "[wistful] [sad] He waters the plants in his front yard every day. He told me once, back when he still told me things.",
 		"next": "lunch_window_15"
 	},
 
 	"lunch_window_15": {
 		"speaker": "Ulyn",
-		"text": "I bet he's drowning them.",
+		"text": "[worried] [quietly] I bet he's drowning them.",
 		"next": "lunch_window_16"
 	},
 
@@ -736,7 +736,7 @@
 
 	"council_2": {
 		"speaker": "Pim",
-		"text": "\"Sports day. I need someone to run equipment, schedules, and the volunteer roster. It's basically half of the whole thing.\"",
+		"text": "[stressed] [rapid] \"Sports day. I need someone to run equipment, schedules, and the volunteer roster. It's basically half of the whole thing.\"",
 		"next": "council_3"
 	},
 
@@ -754,7 +754,7 @@
 
 	"council_5": {
 		"speaker": "Ulyn",
-		"text": "Busy is good. Busy means you don't have to think.",
+		"text": "[flat] [rationalizing] Busy is good. Busy means you don't have to think.",
 		"choices": [
 			{"text": "\"I'll take it.\"", "type": "neutral", "busy_change": 15, "unsaid_change": 10, "next": "council_take_1"},
 			{"text": "\"Someone else should take this one. I've got a lot on.\"", "type": "open", "busy_change": -10, "unsaid_change": -5, "next": "council_no_1"}
@@ -763,7 +763,7 @@
 
 	"council_take_1": {
 		"speaker": "Pim",
-		"text": "\"Oh thank god.\"",
+		"text": "[relieved] [exhales] \"Oh thank god.\"",
 		"next": "council_take_2"
 	},
 
@@ -788,7 +788,7 @@
 
 	"council_no_2": {
 		"speaker": "Pim",
-		"text": "\"...Okay. Fair. You've done a lot this year.\"",
+		"text": "[surprised] [understanding] \"...Okay. Fair. You've done a lot this year.\"",
 		"next": "council_no_3"
 	},
 
@@ -816,25 +816,25 @@
 
 	"evening_3": {
 		"speaker": "Tan",
-		"text": "\"Your mom texted me, by the way. She asked if you're eating.\"",
+		"text": "[casual] [pointed] \"Your mom texted me, by the way. She asked if you're eating.\"",
 		"next": "evening_4"
 	},
 
 	"evening_4": {
 		"speaker": "Ulyn",
-		"text": "\"I'm eating.\"",
+		"text": "[defensive] \"I'm eating.\"",
 		"next": "evening_5"
 	},
 
 	"evening_5": {
 		"speaker": "Tan",
-		"text": "\"You're eating noodles over a sink.\"",
+		"text": "[deadpan] \"You're eating noodles over a sink.\"",
 		"next": "evening_6"
 	},
 
 	"evening_6": {
 		"speaker": "Ulyn",
-		"text": "\"That counts.\"",
+		"text": "[stubborn] [dry] \"That counts.\"",
 		"next": "text_1"
 	},
 
@@ -856,13 +856,13 @@
 
 	"evening_home_3": {
 		"speaker": "Mom",
-		"text": "\"How was school?\"",
+		"text": "[hopeful] [careful] \"How was school?\"",
 		"next": "evening_home_4"
 	},
 
 	"evening_home_4": {
 		"speaker": "Ulyn",
-		"text": "\"Fine.\"",
+		"text": "[flat] [curt] \"Fine.\"",
 		"next": "evening_home_5"
 	},
 
@@ -895,7 +895,7 @@
 
 	"text_3": {
 		"speaker": "Ulyn",
-		"text": "yo. you good? you seemed off today",
+		"text": "[casual] [concerned] yo. you good? you seemed off today",
 		"next": "text_4"
 	},
 
@@ -907,26 +907,26 @@
 
 	"text_5": {
 		"speaker": "Kay",
-		"text": "yeah all good! just tired lol",
+		"text": "[fake cheerful] yeah all good! just tired lol",
 		"next": "text_6",
 		"sfx": "Notification"
 	},
 
 	"text_6": {
 		"speaker": "Ulyn",
-		"text": "Exclamation mark. \"lol.\" That's his customer service voice.",
+		"text": "[dry] [knowing] Exclamation mark. \"lol.\" That's his customer service voice.",
 		"next": "text_7"
 	},
 
 	"text_7": {
 		"speaker": "Ulyn",
-		"text": "you sure?",
+		"text": "[concerned] you sure?",
 		"next": "text_8"
 	},
 
 	"text_8": {
 		"speaker": "Ulyn",
-		"text": "like actually sure. not kay-sure",
+		"text": "[serious] [gentle] like actually sure. not kay-sure",
 		"next": "text_9"
 	},
 
@@ -938,13 +938,13 @@
 
 	"text_10": {
 		"speaker": "Ulyn",
-		"text": "Come on. Come on, say it.",
+		"text": "[pleading] [to himself] Come on. Come on, say it.",
 		"next": "text_11"
 	},
 
 	"text_11": {
 		"speaker": "Kay",
-		"text": "yeah, i'm sure. don't worry",
+		"text": "[flat] [dismissive] yeah, i'm sure. don't worry",
 		"sfx": "Notification",
 		"choices": [
 			{"text": "\"ok. i'm here if you wanna talk. like whenever\"", "type": "neutral", "busy_change": 0, "unsaid_change": 0, "next": "text_here_1"},
@@ -955,7 +955,7 @@
 
 	"text_here_1": {
 		"speaker": "Kay",
-		"text": "thanks. i'm good",
+		"text": "[flat] thanks. i'm good",
 		"next": "march_1",
 		"sfx": "Notification"
 	},
@@ -968,7 +968,7 @@
 
 	"text_serious_2": {
 		"speaker": "Kay",
-		"text": "i know. i'm good. night",
+		"text": "[flat] [closing off] i know. i'm good. night",
 		"next": "march_1",
 		"sfx": "Notification"
 	},
@@ -981,14 +981,14 @@
 
 	"text_dots_2": {
 		"speaker": "Kay",
-		"text": "it was dumb",
+		"text": "[embarrassed] [quietly] it was dumb",
 		"next": "text_dots_3",
 		"sfx": "Notification"
 	},
 
 	"text_dots_3": {
 		"speaker": "Ulyn",
-		"text": "dumb is fine. i like dumb",
+		"text": "[warm] [gentle] dumb is fine. i like dumb",
 		"next": "text_dots_4"
 	},
 
@@ -1000,14 +1000,14 @@
 
 	"text_dots_5": {
 		"speaker": "Kay",
-		"text": "maybe tomorrow",
+		"text": "[hesitant] [quietly] maybe tomorrow",
 		"next": "text_dots_6",
 		"sfx": "Notification"
 	},
 
 	"text_dots_6": {
 		"speaker": "Ulyn",
-		"text": "Maybe tomorrow. It's the most he's given me since March.",
+		"text": "[hopeful] [softly] Maybe tomorrow. It's the most he's given me since March.",
 		"next": "march_1"
 	},
 
@@ -1022,7 +1022,7 @@
 
 	"march_2": {
 		"speaker": "Ulyn",
-		"text": "I'm here if you wanna talk. As if he would. As if I've earned that.",
+		"text": "[bitter] [guilty] I'm here if you wanna talk. As if he would. As if I've earned that.",
 		"next": "march_3"
 	},
 
@@ -1041,7 +1041,7 @@
 
 	"march_5": {
 		"speaker": "Kay",
-		"text": "can I call you",
+		"text": "[desperate] [quietly] can I call you",
 		"next": "march_6"
 	},
 
@@ -1053,7 +1053,7 @@
 
 	"march_7": {
 		"speaker": "Ulyn",
-		"text": "sorry, was busy",
+		"text": "[flat] [ashamed] sorry, was busy",
 		"next": "march_8"
 	},
 
@@ -1083,7 +1083,7 @@
 
 	"march_12": {
 		"speaker": "Ulyn",
-		"text": "I broke something. I just don't know if he knows I know.",
+		"text": "[guilty] [quietly] I broke something. I just don't know if he knows I know.",
 		"next": "march_13"
 	},
 
@@ -1105,7 +1105,7 @@
 
 	"tue_2": {
 		"speaker": "Ulyn",
-		"text": "\"Finished the chemistry report at three. Don't look at me.\"",
+		"text": "[exhausted] [dry] \"Finished the chemistry report at three. Don't look at me.\"",
 		"next": "tue_3"
 	},
 
@@ -1125,13 +1125,13 @@
 
 	"tue_5": {
 		"speaker": "Bank",
-		"text": "\"Kay! Group?\"",
+		"text": "[eager] \"Kay! Group?\"",
 		"next": "tue_6"
 	},
 
 	"tue_6": {
 		"speaker": "Ulyn",
-		"text": "\"He's with me. You two can come, I guess.\"",
+		"text": "[dry] [possessive] \"He's with me. You two can come, I guess.\"",
 		"next": "tue_7"
 	},
 
@@ -1149,7 +1149,7 @@
 
 	"tue_9": {
 		"speaker": "Ulyn",
-		"text": "Nobody was home to water them.",
+		"text": "[sad] [to himself] Nobody was home to water them.",
 		"cut_after": "Nobody was",
 		"cut": "Anyway. Look at those weeds.",
 		"next": "tue_10"
@@ -1157,7 +1157,7 @@
 
 	"tue_10": {
 		"speaker": "Ulyn",
-		"text": "\"The garden. The agriculture club died two years ago. Nobody's touched it since.\"",
+		"text": "[matter-of-fact] \"The garden. The agriculture club died two years ago. Nobody's touched it since.\"",
 		"next": "tue_11"
 	},
 
@@ -1169,7 +1169,7 @@
 
 	"tue_12": {
 		"speaker": "Fern",
-		"text": "\"So you'll do the report and the plan, right? You're so good at that.\"",
+		"text": "[sweet] [manipulative] \"So you'll do the report and the plan, right? You're so good at that.\"",
 		"next": "tue_13"
 	},
 
@@ -1181,13 +1181,13 @@
 
 	"tue_14": {
 		"speaker": "Ulyn",
-		"text": "Say no. Say no, say no, say—",
+		"text": "[pleading] [tense] Say no. Say no, say no, say—",
 		"next": "tue_15"
 	},
 
 	"tue_15": {
 		"speaker": "Kay",
-		"text": "\"Sure. I'll handle the report.\"",
+		"text": "[flat] [agreeable] \"Sure. I'll handle the report.\"",
 		"choices": [
 			{"text": "Say nothing", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "tue_quiet_1"},
 			{"text": "\"We should split it. Everyone writes their own part.\"", "type": "honest", "busy_change": 0, "unsaid_change": -5, "next": "tue_split_1", "set_flag": "TriedSplit"}
@@ -1208,19 +1208,19 @@
 
 	"tue_split_2": {
 		"speaker": "Ulyn",
-		"text": "\"I mean— it's a lot for one person.\"",
+		"text": "[hesitant] [protesting] \"I mean— it's a lot for one person.\"",
 		"next": "tue_split_3"
 	},
 
 	"tue_split_3": {
 		"speaker": "Kay",
-		"text": "\"It's fine. I'm faster at it anyway.\"",
+		"text": "[dismissive] [casual] \"It's fine. I'm faster at it anyway.\"",
 		"next": "tue_split_4"
 	},
 
 	"tue_split_4": {
 		"speaker": "Fern",
-		"text": "\"See? He's faster.\"",
+		"text": "[oblivious] [cheerful] \"See? He's faster.\"",
 		"next": "tue_split_5"
 	},
 
@@ -1248,25 +1248,25 @@
 
 	"sat_3": {
 		"speaker": "Ulyn",
-		"text": "\"What time did you get here?\"",
+		"text": "[suspicious] \"What time did you get here?\"",
 		"next": "sat_4"
 	},
 
 	"sat_4": {
 		"speaker": "Kay",
-		"text": "\"Seven-forty.\"",
+		"text": "[casual] \"Seven-forty.\"",
 		"next": "sat_5"
 	},
 
 	"sat_5": {
 		"speaker": "Ulyn",
-		"text": "\"The plan said eight.\"",
+		"text": "[dry] [pointed] \"The plan said eight.\"",
 		"next": "sat_6"
 	},
 
 	"sat_6": {
 		"speaker": "Kay",
-		"text": "\"I know.\"",
+		"text": "[quietly] \"I know.\"",
 		"next": "sat_7"
 	},
 
@@ -1278,26 +1278,26 @@
 
 	"sat_8": {
 		"speaker": "Ms. Noi",
-		"text": "\"Water spinach is forgiving. Basil isn't. Chili sulks if you love it too much.\"",
+		"text": "[wry] [warm] \"Water spinach is forgiving. Basil isn't. Chili sulks if you love it too much.\"",
 		"next": "sat_9",
 		"show_characters": ["MsNoi"]
 	},
 
 	"sat_9": {
 		"speaker": "Ulyn",
-		"text": "\"Like Kay.\"",
+		"text": "[teasing] [deadpan] \"Like Kay.\"",
 		"next": "sat_10"
 	},
 
 	"sat_10": {
 		"speaker": "Kay",
-		"text": "\"I don't sulk.\"",
+		"text": "[sulking] \"I don't sulk.\"",
 		"next": "sat_11"
 	},
 
 	"sat_11": {
 		"speaker": "Ms. Noi",
-		"text": "\"Once a day. Only if the soil is dry.\"",
+		"text": "[firm] [gentle] \"Once a day. Only if the soil is dry.\"",
 		"next": "sat_12"
 	},
 
@@ -1310,7 +1310,7 @@
 
 	"sat_13": {
 		"speaker": "Ulyn",
-		"text": "He's going to water them twice a day. I'd bet my lunch.",
+		"text": "[dry] [knowing] He's going to water them twice a day. I'd bet my lunch.",
 		"next": "busy_1"
 	},
 
@@ -1331,7 +1331,7 @@
 
 	"busy_3": {
 		"speaker": "Ulyn",
-		"text": "Told you.",
+		"text": "[smug] [sad] Told you.",
 		"next": "busy_4"
 	},
 
@@ -1363,7 +1363,7 @@
 
 	"busy_4b": {
 		"speaker": "Ulyn",
-		"text": "She's probably sitting at the table right now. Same chair. Same quiet kitchen.",
+		"text": "[guilty] [sad] She's probably sitting at the table right now. Same chair. Same quiet kitchen.",
 		"cut_after": "She's probably sitting at the table",
 		"cut": "Ninety unread in the group chat. Answer the chat.",
 		"next": "busy_5"
@@ -1380,7 +1380,7 @@
 
 	"busy_6": {
 		"speaker": "Ulyn",
-		"text": "\"Present. And also correct.\"",
+		"text": "[smug] [tired] \"Present. And also correct.\"",
 		"next": "busy_7"
 	},
 
@@ -1414,7 +1414,7 @@
 
 	"busy_10": {
 		"speaker": "Kay",
-		"text": "\"You okay? You look wrecked.\"",
+		"text": "[concerned] [gentle] \"You okay? You look wrecked.\"",
 		"next": "busy_11"
 	},
 
@@ -1432,7 +1432,7 @@
 
 	"busy_13": {
 		"speaker": "Ulyn",
-		"text": "And it's Kay asking. Kay, who hasn't asked me for anything since March.",
+		"text": "[surprised] [touched] And it's Kay asking. Kay, who hasn't asked me for anything since March.",
 		"cut_after": "Kay, who hasn't asked me",
 		"cut": "Doesn't matter. Roster's due at five.",
 		"next": "busy_14"
@@ -1440,7 +1440,7 @@
 
 	"busy_14": {
 		"speaker": "Ulyn",
-		"text": "Did he see the call? Did he see who it was?",
+		"text": "[anxious] [to himself] Did he see the call? Did he see who it was?",
 		"choices": [
 			{"text": "\"...Yeah. Just sports day stuff.\"", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "busy_fine_1"},
 			{"text": "\"...Not really.\"", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "busy_honest_1", "set_flag": "ToldKayNotReally"}
@@ -1449,13 +1449,13 @@
 
 	"busy_fine_1": {
 		"speaker": "Ulyn",
-		"text": "\"...Yeah. Just sports day stuff.\"",
+		"text": "[evasive] [too casual] \"...Yeah. Just sports day stuff.\"",
 		"next": "busy_fine_2"
 	},
 
 	"busy_fine_2": {
 		"speaker": "Ulyn",
-		"text": "\"Thanks for asking, though.\"",
+		"text": "[softly] [grateful] \"Thanks for asking, though.\"",
 		"next": "busy_fine_3"
 	},
 
@@ -1479,25 +1479,25 @@
 
 	"busy_honest_2": {
 		"speaker": "Kay",
-		"text": "\"What's wrong?\"",
+		"text": "[concerned] \"What's wrong?\"",
 		"next": "busy_honest_3"
 	},
 
 	"busy_honest_3": {
 		"speaker": "Ulyn",
-		"text": "\"My mom keeps calling. I keep not answering. Long story.\"",
+		"text": "[tired] [honest] \"My mom keeps calling. I keep not answering. Long story.\"",
 		"next": "busy_honest_4"
 	},
 
 	"busy_honest_4": {
 		"speaker": "Kay",
-		"text": "\"...You can tell me. If you want.\"",
+		"text": "[hesitant] [gentle] \"...You can tell me. If you want.\"",
 		"next": "busy_honest_5"
 	},
 
 	"busy_honest_5": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. Later. It's a long one.\"",
+		"text": "[tired] [grateful] \"Yeah. Later. It's a long one.\"",
 		"next": "busy_honest_6"
 	},
 
@@ -1533,25 +1533,25 @@
 
 	"seven_answer_1": {
 		"speaker": "Ulyn",
-		"text": "\"Hello?\"",
+		"text": "[hesitant] [quietly] \"Hello?\"",
 		"next": "seven_answer_2"
 	},
 
 	"seven_answer_2": {
 		"speaker": "Mom",
-		"text": "\"Oh! Hi. Hi, Ulyn. I just— are you eating?\"",
+		"text": "[surprised] [nervous] \"Oh! Hi. Hi, Ulyn. I just— are you eating?\"",
 		"next": "seven_answer_3"
 	},
 
 	"seven_answer_3": {
 		"speaker": "Ulyn",
-		"text": "\"I'm eating.\"",
+		"text": "[awkward] [softly] \"I'm eating.\"",
 		"next": "seven_answer_4"
 	},
 
 	"seven_answer_4": {
 		"speaker": "Mom",
-		"text": "\"Good. Good. I just wanted to hear your voice.\"",
+		"text": "[emotional] [relieved] \"Good. Good. I just wanted to hear your voice.\"",
 		"next": "seven_answer_5"
 	},
 
@@ -1590,7 +1590,7 @@
 
 	"sports_5": {
 		"speaker": "Ulyn",
-		"text": "He looks like he hasn't slept since the Obama presentation.",
+		"text": "[worried] [to himself] He looks like he hasn't slept since the Obama presentation.",
 		"next": "sports_6"
 	},
 
@@ -1611,7 +1611,7 @@
 
 	"sports_8": {
 		"speaker": "Ulyn",
-		"text": "Why is she here.",
+		"text": "[tense] [flat] Why is she here.",
 		"next": "sports_9"
 	},
 
@@ -1656,19 +1656,19 @@
 
 	"sports_mom_1": {
 		"speaker": "Ulyn",
-		"text": "\"Pim. Five minutes.\"",
+		"text": "[firm] [tense] \"Pim. Five minutes.\"",
 		"next": "sports_mom_2"
 	},
 
 	"sports_mom_2": {
 		"speaker": "Pim",
-		"text": "\"Ulyn, the closing—\"",
+		"text": "[stressed] [protesting] \"Ulyn, the closing—\"",
 		"next": "sports_mom_3"
 	},
 
 	"sports_mom_3": {
 		"speaker": "Ulyn",
-		"text": "\"Five minutes.\"",
+		"text": "[firm] \"Five minutes.\"",
 		"next": "sports_mom_4"
 	},
 
@@ -1681,13 +1681,13 @@
 
 	"sports_mom_5": {
 		"speaker": "Mom",
-		"text": "\"I brought khao man gai. It's in the car. I didn't know if you'd—\"",
+		"text": "[nervous] [hopeful] \"I brought khao man gai. It's in the car. I didn't know if you'd—\"",
 		"next": "sports_mom_6"
 	},
 
 	"sports_mom_6": {
 		"speaker": "Ulyn",
-		"text": "\"I'll eat it. Thanks for coming.\"",
+		"text": "[softly] [awkward] \"I'll eat it. Thanks for coming.\"",
 		"next": "sports_mom_7"
 	},
 
@@ -1711,7 +1711,7 @@
 
 	"mid_2": {
 		"speaker": "Tan",
-		"text": "\"When are you going home?\"",
+		"text": "[casual] [pointed] \"When are you going home?\"",
 		"choices": [
 			{"text": "\"After exams.\"", "type": "neutral", "busy_change": 5, "unsaid_change": 5, "next": "mid_after_1"},
 			{"text": "\"...I don't know how to.\"", "type": "open", "busy_change": -5, "unsaid_change": -10, "next": "mid_honest_1", "set_flag": "ToldTan"}
@@ -1720,13 +1720,13 @@
 
 	"mid_after_1": {
 		"speaker": "Tan",
-		"text": "\"You said that before the last exams.\"",
+		"text": "[dry] [skeptical] \"You said that before the last exams.\"",
 		"next": "mid_after_2"
 	},
 
 	"mid_after_2": {
 		"speaker": "Ulyn",
-		"text": "\"Then I'll say it again before the next ones.\"",
+		"text": "[defensive] [dry] \"Then I'll say it again before the next ones.\"",
 		"next": "mid_after_3"
 	},
 
@@ -1746,7 +1746,7 @@
 
 	"mid_honest_2": {
 		"speaker": "Ulyn",
-		"text": "\"It's so quiet there. She tries so hard. She sets three plates and then moves one. I don't know how to be in that kitchen.\"",
+		"text": "[quietly] [pained] \"It's so quiet there. She tries so hard. She sets three plates and then moves one. I don't know how to be in that kitchen.\"",
 		"next": "mid_honest_3"
 	},
 
@@ -1758,19 +1758,19 @@
 
 	"mid_honest_4": {
 		"speaker": "Tan",
-		"text": "\"When my parents split, I lived at the 24-hour McDonald's for a month.\"",
+		"text": "[casual] [honest] \"When my parents split, I lived at the 24-hour McDonald's for a month.\"",
 		"next": "mid_honest_5"
 	},
 
 	"mid_honest_5": {
 		"speaker": "Ulyn",
-		"text": "\"...Seriously?\"",
+		"text": "[surprised] [laughing softly] \"...Seriously?\"",
 		"next": "mid_honest_6"
 	},
 
 	"mid_honest_6": {
 		"speaker": "Tan",
-		"text": "\"Didn't fix anything. Just made me fat. You can stay here as long as you want. But you know you can't stay here forever.\"",
+		"text": "[dry] [gentle] \"Didn't fix anything. Just made me fat. You can stay here as long as you want. But you know you can't stay here forever.\"",
 		"next": "mid_text_1"
 	},
 
@@ -1786,20 +1786,20 @@
 
 	"mid_text_2": {
 		"speaker": "Ulyn",
-		"text": "u alive? midterms are killing me",
+		"text": "[casual] [tired] u alive? midterms are killing me",
 		"next": "mid_text_3"
 	},
 
 	"mid_text_3": {
 		"speaker": "Kay",
-		"text": "alive! good luck 💪",
+		"text": "[fake cheerful] alive! good luck 💪",
 		"next": "mid_text_4",
 		"sfx": "Notification"
 	},
 
 	"mid_text_4": {
 		"speaker": "Ulyn",
-		"text": "Exclamation mark. Flexing emoji. Kay does not use emojis. Kay uses periods.",
+		"text": "[worried] [dry] Exclamation mark. Flexing emoji. Kay does not use emojis. Kay uses periods.",
 		"next": "mid_text_5"
 	},
 
@@ -1817,7 +1817,7 @@
 
 	"mid_text_7": {
 		"speaker": "Ulyn",
-		"text": "What would I even say?",
+		"text": "[frustrated] [helpless] What would I even say?",
 		"next": "mid_text_8"
 	},
 
@@ -1840,13 +1840,13 @@
 
 	"where_2": {
 		"speaker": "Ulyn",
-		"text": "Kay is never late. He came in with a fever in tenth grade and threw up in the bin by the stairs and then sat through math.",
+		"text": "[worried] [to himself] Kay is never late. He came in with a fever in tenth grade and threw up in the bin by the stairs and then sat through math.",
 		"next": "where_3"
 	},
 
 	"where_3": {
 		"speaker": "Ulyn",
-		"text": "where are u. ur never late",
+		"text": "[worried] where are u. ur never late",
 		"next": "where_4"
 	},
 
@@ -1865,7 +1865,7 @@
 
 	"where_6": {
 		"speaker": "Ulyn",
-		"text": "He'd answer if he was just sick. He'd say \"just a cold! don't worry!\" with an exclamation mark.",
+		"text": "[anxious] [to himself] He'd answer if he was just sick. He'd say \"just a cold! don't worry!\" with an exclamation mark.",
 		"next": "where_7"
 	},
 
@@ -1879,7 +1879,7 @@
 
 	"where_8": {
 		"speaker": "Elysia",
-		"text": "\"Can I talk to you? Just for a second.\"",
+		"text": "[nervous] [urgent] \"Can I talk to you? Just for a second.\"",
 		"next": "where_9"
 	},
 
@@ -1891,7 +1891,7 @@
 
 	"where_10": {
 		"speaker": "Elysia",
-		"text": "\"Kay texted me this morning. He said he couldn't get up.\"",
+		"text": "[worried] [quietly] \"Kay texted me this morning. He said he couldn't get up.\"",
 		"next": "where_11"
 	},
 
@@ -1903,7 +1903,7 @@
 
 	"where_12": {
 		"speaker": "Elysia",
-		"text": "\"Not didn't. Couldn't.\"",
+		"text": "[serious] [scared] \"Not didn't. Couldn't.\"",
 		"next": "where_13"
 	},
 
@@ -1915,13 +1915,13 @@
 
 	"where_14": {
 		"speaker": "Elysia",
-		"text": "\"He asked me to leave him alone for now. So I am. I want to respect that.\"",
+		"text": "[careful] [worried] \"He asked me to leave him alone for now. So I am. I want to respect that.\"",
 		"next": "where_15"
 	},
 
 	"where_15": {
 		"speaker": "Elysia",
-		"text": "\"But you're... different. You're Ulyn. He talks about you like...\"",
+		"text": "[hesitant] [searching for words] \"But you're... different. You're Ulyn. He talks about you like...\"",
 		"next": "where_16"
 	},
 
@@ -1933,25 +1933,25 @@
 
 	"where_17": {
 		"speaker": "Elysia",
-		"text": "\"Could you go see him? After school?\"",
+		"text": "[pleading] [softly] \"Could you go see him? After school?\"",
 		"next": "where_18"
 	},
 
 	"where_18": {
 		"speaker": "Ulyn",
-		"text": "He talks about me like what?",
+		"text": "[surprised] [curious, to himself] He talks about me like what?",
 		"next": "where_19"
 	},
 
 	"where_19": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. Yeah. I'll go.\"",
+		"text": "[determined] [shaken] \"Yeah. Yeah. I'll go.\"",
 		"next": "where_20"
 	},
 
 	"where_20": {
 		"speaker": "Elysia",
-		"text": "\"Don't tell him I asked you. He'll think he's a bother.\"",
+		"text": "[urgent] [quietly] \"Don't tell him I asked you. He'll think he's a bother.\"",
 		"next": "where_21"
 	},
 
@@ -1969,13 +1969,13 @@
 
 	"where_lie_1": {
 		"speaker": "Pim",
-		"text": "\"Ew. Okay. Feel better.\"",
+		"text": "[grossed out] [casual] \"Ew. Okay. Feel better.\"",
 		"next": "where_lie_2"
 	},
 
 	"where_lie_2": {
 		"speaker": "Ulyn",
-		"text": "Liar.",
+		"text": "[guilty] [to himself] Liar.",
 		"next": "where_lie_3"
 	},
 
@@ -1993,7 +1993,7 @@
 
 	"where_true_2": {
 		"speaker": "Pim",
-		"text": "\"Go. I've got it.\"",
+		"text": "[firm] [supportive] \"Go. I've got it.\"",
 		"next": "where_true_3"
 	},
 
@@ -2021,7 +2021,7 @@
 
 	"shop_3": {
 		"speaker": "Ulyn",
-		"text": "He ate these every single day in tenth grade. One at a time, slowly, like they were expensive. I haven't seen him eat one since March.",
+		"text": "[nostalgic] [sad] He ate these every single day in tenth grade. One at a time, slowly, like they were expensive. I haven't seen him eat one since March.",
 		"next": "step_1"
 	},
 
@@ -2041,19 +2041,19 @@
 
 	"step_3": {
 		"speaker": "Ulyn",
-		"text": "Oh. Oh, Kay.",
+		"text": "[shocked] [heartbroken, whispering] Oh. Oh, Kay.",
 		"next": "step_4"
 	},
 
 	"step_4": {
 		"speaker": "Ulyn",
-		"text": "\"You look terrible.\"",
+		"text": "[teasing] [worried] \"You look terrible.\"",
 		"next": "step_5"
 	},
 
 	"step_5": {
 		"speaker": "Kay",
-		"text": "\"Thanks. Love you too.\"",
+		"text": "[tired] [deadpan] \"Thanks. Love you too.\"",
 		"next": "step_6"
 	},
 
@@ -2065,19 +2065,19 @@
 
 	"step_7": {
 		"speaker": "Ulyn",
-		"text": "\"Your plants look worse than our garden.\"",
+		"text": "[dry] [teasing] \"Your plants look worse than our garden.\"",
 		"next": "step_8"
 	},
 
 	"step_8": {
 		"speaker": "Kay",
-		"text": "\"I water them every day.\"",
+		"text": "[defensive] \"I water them every day.\"",
 		"next": "step_9"
 	},
 
 	"step_9": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. Probably that.\"",
+		"text": "[dry] [pointed] \"Yeah. Probably that.\"",
 		"next": "step_10"
 	},
 
@@ -2089,7 +2089,7 @@
 
 	"step_11": {
 		"speaker": "Ulyn",
-		"text": "\"You weren't at school. You're never not at school. You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
+		"text": "[serious] [exasperated] [fond] \"You weren't at school. You're never not at school. You came in with a fever in tenth grade. You threw up in the bin by the stairs and then sat through math.\"",
 		"next": "step_12"
 	},
 
@@ -2107,7 +2107,7 @@
 
 	"step_14": {
 		"speaker": "Ulyn",
-		"text": "\"Can I say something? You don't have to say anything back.\"",
+		"text": "[hesitant] [serious] \"Can I say something? You don't have to say anything back.\"",
 		"next": "step_15"
 	},
 
@@ -2119,13 +2119,13 @@
 
 	"step_16": {
 		"speaker": "Ulyn",
-		"text": "\"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
+		"text": "[guilty] [quietly] \"Last year. March. You messaged me at like three in the morning. 'Can I call you.'\"",
 		"next": "step_17"
 	},
 
 	"step_17": {
 		"speaker": "Ulyn",
-		"text": "\"I saw it. And I didn't answer for four days. And then I said, 'sorry, was busy.'\"",
+		"text": "[ashamed] [voice heavy] \"I saw it. And I didn't answer for four days. And then I said, 'sorry, was busy.'\"",
 		"next": "step_18"
 	},
 
@@ -2137,13 +2137,13 @@
 
 	"step_19": {
 		"speaker": "Ulyn",
-		"text": "\"And you never asked me for anything again. Not even 'can I call you.'\"",
+		"text": "[sad] [voice breaking] \"And you never asked me for anything again. Not even 'can I call you.'\"",
 		"next": "step_20"
 	},
 
 	"step_20": {
 		"speaker": "Ulyn",
-		"text": "\"I've been waiting a whole year for you to try again so I could do it right. And you just got really, really good at being fine.\"",
+		"text": "[emotional] [bitter laugh] \"I've been waiting a whole year for you to try again so I could do it right. And you just got really, really good at being fine.\"",
 		"next": "step_21"
 	},
 
@@ -2155,25 +2155,25 @@
 
 	"step_22": {
 		"speaker": "Kay",
-		"text": "\"It's fine. It was a long time ago.\"",
+		"text": "[quickly] [dismissive] \"It's fine. It was a long time ago.\"",
 		"next": "step_23"
 	},
 
 	"step_23": {
 		"speaker": "Ulyn",
-		"text": "There it is.",
+		"text": "[frustrated] [to himself] There it is.",
 		"next": "step_24"
 	},
 
 	"step_24": {
 		"speaker": "Ulyn",
-		"text": "\"Kay.\"",
+		"text": "[firm] [gentle] \"Kay.\"",
 		"next": "step_25"
 	},
 
 	"step_25": {
 		"speaker": "Kay",
-		"text": "\"Really. You had your own stuff going on.\"",
+		"text": "[quickly] [reassuring] \"Really. You had your own stuff going on.\"",
 		"next": "step_26"
 	},
 
@@ -2188,7 +2188,7 @@
 
 	"step_okay_1": {
 		"speaker": "Ulyn",
-		"text": "\"Okay.\"",
+		"text": "[quietly] [accepting] \"Okay.\"",
 		"next": "step_okay_2"
 	},
 
@@ -2200,7 +2200,7 @@
 
 	"step_okay_3": {
 		"speaker": "Ulyn",
-		"text": "Relief. Or giving up. I can't tell. I never could.",
+		"text": "[uncertain] [sad, to himself] Relief. Or giving up. I can't tell. I never could.",
 		"next": "step_okay_4"
 	},
 
@@ -2212,13 +2212,13 @@
 
 	"step_okay_5": {
 		"speaker": "Ulyn",
-		"text": "\"Offer stands. Forever, probably. Annoyingly.\"",
+		"text": "[warm] [dry] \"Offer stands. Forever, probably. Annoyingly.\"",
 		"next": "step_okay_6"
 	},
 
 	"step_okay_6": {
 		"speaker": "Kay",
-		"text": "\"Thanks.\"",
+		"text": "[softly] \"Thanks.\"",
 		"next": "step_okay_7"
 	},
 
@@ -2248,7 +2248,7 @@
 
 	"step_push_3": {
 		"speaker": "Kay",
-		"text": "\"...I thought I was too much.\"",
+		"text": "\"[hesitates] ...[small voice] I thought I was too much.\"",
 		"next": "step_push_4"
 	},
 
@@ -2260,51 +2260,51 @@
 
 	"step_push_5": {
 		"speaker": "Kay",
-		"text": "\"Not just for you. When my dad left, I was twelve. Mom cried at the kitchen table for like a month.\"",
+		"text": "[quietly] [distant] \"Not just for you. When my dad left, I was twelve. Mom cried at the kitchen table for like a month.\"",
 		"next": "step_push_6"
 	},
 
 	"step_push_6": {
 		"speaker": "Ulyn",
-		"text": "His dad.",
+		"text": "[stunned] [whispering] His dad.",
 		"next": "step_push_7"
 	},
 
 	"step_push_7": {
 		"speaker": "Ulyn",
-		"text": "Two years. I've eaten his mom's food. Slept on his floor after horror movies. I knew his dad wasn't around. I never asked. He never said.",
+		"text": "[shaken] [self-critical] Two years. I've eaten his mom's food. Slept on his floor after horror movies. I knew his dad wasn't around. I never asked. He never said.",
 		"next": "step_push_8"
 	},
 
 	"step_push_8": {
 		"speaker": "Ulyn",
-		"text": "I thought I knew him.",
+		"text": "[stunned] [quietly] I thought I knew him.",
 		"next": "step_push_9"
 	},
 
 	"step_push_9": {
 		"speaker": "Kay",
-		"text": "\"And I decided I'd just be easy. The kid who doesn't need anything. And when you didn't answer, I thought, yeah. That's right. That's what happens when I ask.\"",
+		"text": "[sad] [bitter] [hurting] \"And I decided I'd just be easy. The kid who doesn't need anything. And when you didn't answer, I thought, yeah. That's right. That's what happens when I ask.\"",
 		"next": "step_push_10"
 	},
 
 	"step_push_10": {
 		"speaker": "Ulyn",
-		"text": "\"Kay—\"",
+		"text": "[concerned] [interrupting] \"Kay—\"",
 		"next": "step_push_11"
 	},
 
 	"step_push_11": {
 		"speaker": "Kay",
 		"emotion": "sad",
-		"text": "\"And this year it's been... It's like everything's far away. I wake up and I already want the day to be over.\"",
+		"text": "[sad] [voice shaking] \"And this year it's been... It's like everything's far away. I wake up and I already want the day to be over.\"",
 		"next": "step_push_12"
 	},
 
 	"step_push_12": {
 		"speaker": "Kay",
 		"emotion": "sad",
-		"text": "\"Some nights I think everyone would be fine without me. Not like— I'm not going to do anything. I just think it. Like it's a fact.\"",
+		"text": "[sad] [quietly] [hesitant] \"Some nights I think everyone would be fine without me. Not like— I'm not going to do anything. I just think it. Like it's a fact.\"",
 		"next": "step_push_13"
 	},
 
@@ -2319,7 +2319,7 @@
 
 	"step_panic_1": {
 		"speaker": "Ulyn",
-		"text": "\"Kay, what the hell—\"",
+		"text": "[shocked] [panicked] \"Kay, what the hell—\"",
 		"next": "step_panic_2"
 	},
 
@@ -2331,19 +2331,19 @@
 
 	"step_panic_3": {
 		"speaker": "Kay",
-		"text": "\"Forget it. I didn't mean it like— forget it.\"",
+		"text": "[panicked] [retreating] \"Forget it. I didn't mean it like— forget it.\"",
 		"next": "step_panic_4"
 	},
 
 	"step_panic_4": {
 		"speaker": "Ulyn",
-		"text": "No. No no no.",
+		"text": "[panicked] [to himself] No. No no no.",
 		"next": "step_panic_5"
 	},
 
 	"step_panic_5": {
 		"speaker": "Ulyn",
-		"text": "\"No— sorry. Sorry. I panicked. I'm listening. I'm here. Please don't forget it.\"",
+		"text": "[apologetic] [pleading] [breathless] \"No— sorry. Sorry. I panicked. I'm listening. I'm here. Please don't forget it.\"",
 		"next": "step_panic_6"
 	},
 
@@ -2355,7 +2355,7 @@
 
 	"step_panic_7": {
 		"speaker": "Kay",
-		"text": "\"...Okay.\"",
+		"text": "[hesitant] [quietly] \"...Okay.\"",
 		"next": "step_panic_8"
 	},
 
@@ -2367,7 +2367,7 @@
 
 	"step_panic_9": {
 		"speaker": "Ulyn",
-		"text": "\"It's not a fact. And I'm glad you told me.\"",
+		"text": "[gentle] [shaky] \"It's not a fact. And I'm glad you told me.\"",
 		"next": "step_ask_1"
 	},
 
@@ -2380,7 +2380,7 @@
 
 	"step_calm_2": {
 		"speaker": "Ulyn",
-		"text": "\"It's not a fact. And thank you for telling me. I mean it.\"",
+		"text": "[gentle] [sincere] \"It's not a fact. And thank you for telling me. I mean it.\"",
 		"next": "step_calm_3"
 	},
 
@@ -2392,25 +2392,25 @@
 
 	"step_calm_4": {
 		"speaker": "Ulyn",
-		"text": "He expected me to freak out. I am freaking out. Just very quietly.",
+		"text": "[anxious] [dry, to himself] He expected me to freak out. I am freaking out. Just very quietly.",
 		"next": "step_ask_1"
 	},
 
 	"step_ask_1": {
 		"speaker": "Ulyn",
-		"text": "\"But I'm not okay with you thinking that alone. Will you talk to someone? Someone who actually knows what to do. Not just me throwing pork at you.\"",
+		"text": "[firm] [caring] [small laugh] \"But I'm not okay with you thinking that alone. Will you talk to someone? Someone who actually knows what to do. Not just me throwing pork at you.\"",
 		"next": "step_ask_2"
 	},
 
 	"step_ask_2": {
 		"speaker": "Ulyn",
-		"text": "\"Ms. Noi runs the guidance room on Thursdays. My cousin went to something like that last year. It helped him.\"",
+		"text": "[gentle] [encouraging] \"Ms. Noi runs the guidance room on Thursdays. My cousin went to something like that last year. It helped him.\"",
 		"next": "step_ask_3"
 	},
 
 	"step_ask_3": {
 		"speaker": "Ulyn",
-		"text": "Tan never talks about it. He told me once, at two in the morning.",
+		"text": "[quietly] [to himself] Tan never talks about it. He told me once, at two in the morning.",
 		"next": "step_ask_4"
 	},
 
@@ -2422,7 +2422,7 @@
 
 	"step_ask_5": {
 		"speaker": "Ulyn",
-		"text": "\"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
+		"text": "[emotional] [firm] \"And you're not too much. You were never too much. I was too little, that week. That's different.\"",
 		"next": "step_ask_6"
 	},
 
@@ -2454,7 +2454,7 @@
 
 	"step_ask_10": {
 		"speaker": "Ulyn",
-		"text": "Fair's fair.",
+		"text": "[resigned] [brave] Fair's fair.",
 		"choices": [
 			{"text": "\"I'm not okay either, by the way.\"", "type": "open", "busy_change": -10, "unsaid_change": -10, "next": "step_admit_1", "set_flag": "AdmittedNotOkay"},
 			{"text": "Keep it to yourself. Tonight is about Kay.", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "step_keep_1"}
@@ -2463,25 +2463,25 @@
 
 	"step_admit_1": {
 		"speaker": "Ulyn",
-		"text": "\"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
+		"text": "[honest] [tired laugh] \"I'm not okay either, by the way. I don't go home if I can help it. That's why I'm on every committee in this school.\"",
 		"next": "step_admit_2"
 	},
 
 	"step_admit_2": {
 		"speaker": "Kay",
-		"text": "\"I know.\"",
+		"text": "[softly] \"I know.\"",
 		"next": "step_admit_3"
 	},
 
 	"step_admit_3": {
 		"speaker": "Ulyn",
-		"text": "\"You know?\"",
+		"text": "[surprised] \"You know?\"",
 		"next": "step_admit_4"
 	},
 
 	"step_admit_4": {
 		"speaker": "Kay",
-		"text": "\"You decline your mom's calls in class.\"",
+		"text": "[gentle] [knowing] \"You decline your mom's calls in class.\"",
 		"next": "step_admit_5"
 	},
 
@@ -2493,13 +2493,13 @@
 
 	"step_admit_6": {
 		"speaker": "Ulyn",
-		"text": "He saw. All this time I was watching him so carefully, and he was watching me back.",
+		"text": "[surprised] [moved] He saw. All this time I was watching him so carefully, and he was watching me back.",
 		"next": "step_admit_7"
 	},
 
 	"step_admit_7": {
 		"speaker": "Ulyn",
-		"text": "\"...Okay, detective.\"",
+		"text": "\"[surprised laugh] ...Okay, detective.\"",
 		"next": "step_admit_8"
 	},
 
@@ -2523,7 +2523,7 @@
 
 	"step_keep_3": {
 		"speaker": "Kay",
-		"text": "\"Are you going home tonight?\"",
+		"text": "[gentle] [curious] \"Are you going home tonight?\"",
 		"next": "step_keep_4"
 	},
 
@@ -2535,7 +2535,7 @@
 
 	"step_keep_5": {
 		"speaker": "Ulyn",
-		"text": "\"...Maybe.\"",
+		"text": "\"[hesitates] ...[quietly] Maybe.\"",
 		"next": "bus_1"
 	},
 
@@ -2550,20 +2550,20 @@
 
 	"bus_2": {
 		"speaker": "Ulyn",
-		"text": "i went. he says he's fine.",
+		"text": "[tired] [worried] i went. he says he's fine.",
 		"next": "bus_3"
 	},
 
 	"bus_3": {
 		"speaker": "Elysia",
-		"text": "ok",
+		"text": "[quietly] ok",
 		"next": "bus_4",
 		"sfx": "Notification"
 	},
 
 	"bus_4": {
 		"speaker": "Elysia",
-		"text": "do u believe him?",
+		"text": "[worried] do u believe him?",
 		"next": "bus_5"
 	},
 
@@ -2575,13 +2575,13 @@
 
 	"bus_6": {
 		"speaker": "Ulyn",
-		"text": "no",
+		"text": "[flat] [honest] no",
 		"next": "bus_wait_1"
 	},
 
 	"bus_ok_1": {
 		"speaker": "Ulyn",
-		"text": "he's ok. ish. thanks for telling me.",
+		"text": "[tired] [grateful] he's ok. ish. thanks for telling me.",
 		"next": "bus_ok_2"
 	},
 
@@ -2594,7 +2594,7 @@
 
 	"bus_ok_3": {
 		"speaker": "Ulyn",
-		"text": "She's crying. Or she's in class. No, it's seven. She's crying.",
+		"text": "[guilty] [to himself] She's crying. Or she's in class. No, it's seven. She's crying.",
 		"next": "bus_wait_1"
 	},
 
@@ -2631,25 +2631,25 @@
 
 	"bus_home_3": {
 		"speaker": "Mom",
-		"text": "\"Ulyn?\"",
+		"text": "[surprised] [hopeful] \"Ulyn?\"",
 		"next": "bus_home_4"
 	},
 
 	"bus_home_4": {
 		"speaker": "Ulyn",
-		"text": "\"Hi.\"",
+		"text": "[awkward] [softly] \"Hi.\"",
 		"next": "bus_home_5"
 	},
 
 	"bus_home_5": {
 		"speaker": "Mom",
-		"text": "\"You didn't say you were— I don't have anything. There's leftover khao man gai, from Sunday, I can heat it—\"",
+		"text": "[flustered] [rushed] [happy] \"You didn't say you were— I don't have anything. There's leftover khao man gai, from Sunday, I can heat it—\"",
 		"next": "bus_home_6"
 	},
 
 	"bus_home_6": {
 		"speaker": "Ulyn",
-		"text": "\"I'll just have it cold.\"",
+		"text": "[gentle] [quietly] \"I'll just have it cold.\"",
 		"next": "bus_home_7"
 	},
 
@@ -2661,19 +2661,19 @@
 
 	"bus_home_8": {
 		"speaker": "Ulyn",
-		"text": "\"Kay wasn't at school today. He's not doing good.\"",
+		"text": "[serious] [quietly] \"Kay wasn't at school today. He's not doing good.\"",
 		"next": "bus_home_9"
 	},
 
 	"bus_home_9": {
 		"speaker": "Mom",
-		"text": "\"Oh, no. Is he okay?\"",
+		"text": "[worried] \"Oh, no. Is he okay?\"",
 		"next": "bus_home_10"
 	},
 
 	"bus_home_10": {
 		"speaker": "Ulyn",
-		"text": "\"He will be.\"",
+		"text": "[firm] [hopeful] \"He will be.\"",
 		"next": "bus_home_11"
 	},
 
@@ -2685,7 +2685,7 @@
 
 	"bus_home_12": {
 		"speaker": "Ulyn",
-		"text": "\"I don't know. I hope so.\"",
+		"text": "[honest] [quietly] \"I don't know. I hope so.\"",
 		"next": "bus_home_13"
 	},
 
@@ -2697,7 +2697,7 @@
 
 	"bus_home_14": {
 		"speaker": "Mom",
-		"text": "\"Are you okay?\"",
+		"text": "[gentle] [careful] \"Are you okay?\"",
 		"next": "bus_home_15"
 	},
 
@@ -2710,7 +2710,7 @@
 
 	"bus_home_16": {
 		"speaker": "Ulyn",
-		"text": "\"Not really.\"",
+		"text": "[quietly] [voice breaking] \"Not really.\"",
 		"next": "bus_home_17"
 	},
 
@@ -2740,7 +2740,7 @@
 
 	"bus_home_20": {
 		"speaker": "Ulyn",
-		"text": "It's okay. It's just a fridge.",
+		"text": "[sad] [convincing himself] It's okay. It's just a fridge.",
 		"quiet": true,
 		"next": "gate2_1"
 	},
@@ -2789,7 +2789,7 @@
 
 	"gate2_2": {
 		"speaker": "Elysia",
-		"text": "\"Yes, he's my boyfriend, we all know, moving on.\"",
+		"text": "[loud] [embarrassed] [rushed] \"Yes, he's my boyfriend, we all know, moving on.\"",
 		"next": "gate2_3"
 	},
 
@@ -2801,7 +2801,7 @@
 
 	"gate2_4": {
 		"speaker": "Ulyn",
-		"text": "Whatever happened on Saturday, I'm taking partial credit.",
+		"text": "[smug] [amused, to himself] Whatever happened on Saturday, I'm taking partial credit.",
 		"next": "gate2_5"
 	},
 
@@ -2822,7 +2822,7 @@
 
 	"gate2_7": {
 		"speaker": "Ulyn",
-		"text": "Let him decide.",
+		"text": "[patient] [to himself] Let him decide.",
 		"next": "gate2_8"
 	},
 
@@ -2842,7 +2842,7 @@
 
 	"thu_walk_2": {
 		"speaker": "Ulyn",
-		"text": "\"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
+		"text": "[teasing] [firm] \"I'll be in the cafeteria. If you come out in thirty seconds, I'm sending you back in.\"",
 		"next": "thu_walk_3",
 		"sfx": "stop"
 	},
@@ -2863,7 +2863,7 @@
 
 	"thu_walk_5": {
 		"speaker": "Ulyn",
-		"text": "Good. That's good. Stay in there.",
+		"text": "[relieved] [proud, to himself] Good. That's good. Stay in there.",
 		"next": "noi_1"
 	},
 
@@ -2878,19 +2878,19 @@
 
 	"noi_2": {
 		"speaker": "Ms. Noi",
-		"text": "\"You're the one who walked him.\"",
+		"text": "[knowing] [warm] \"You're the one who walked him.\"",
 		"next": "noi_3"
 	},
 
 	"noi_3": {
 		"speaker": "Ulyn",
-		"text": "\"I don't know what you're talking about.\"",
+		"text": "[innocent] [deadpan] \"I don't know what you're talking about.\"",
 		"next": "noi_4"
 	},
 
 	"noi_4": {
 		"speaker": "Ms. Noi",
-		"text": "\"How are you, Ulyn?\"",
+		"text": "[gentle] [knowing] \"How are you, Ulyn?\"",
 		"next": "noi_5"
 	},
 
@@ -2905,7 +2905,7 @@
 
 	"noi_fine_1": {
 		"speaker": "Ulyn",
-		"text": "\"Fine! Great. Busy. You know. Sports day.\"",
+		"text": "[overly cheerful] [rushed] \"Fine! Great. Busy. You know. Sports day.\"",
 		"next": "noi_fine_2"
 	},
 
@@ -2917,7 +2917,7 @@
 
 	"noi_fine_3": {
 		"speaker": "Ms. Noi",
-		"text": "\"Thursday's every week.\"",
+		"text": "[warm] [patient] \"Thursday's every week.\"",
 		"next": "group_1"
 	},
 
@@ -2929,7 +2929,7 @@
 
 	"noi_ask_2": {
 		"speaker": "Ms. Noi",
-		"text": "\"The slot after Kay's is free. Come with an empty stomach. I make too much tea.\"",
+		"text": "[warm] [wry] \"The slot after Kay's is free. Come with an empty stomach. I make too much tea.\"",
 		"next": "group_1"
 	},
 
@@ -2945,14 +2945,14 @@
 
 	"group_2": {
 		"speaker": "Fern",
-		"text": "\"Okay, so Kay. You'll put the presentation together like last time? You're the fastest.\"",
+		"text": "[casual] [oblivious] \"Okay, so Kay. You'll put the presentation together like last time? You're the fastest.\"",
 		"next": "group_3",
 		"sfx": "stop"
 	},
 
 	"group_3": {
 		"speaker": "Bank",
-		"text": "\"And the report.\"",
+		"text": "[casual] \"And the report.\"",
 		"next": "group_4"
 	},
 
@@ -2964,7 +2964,7 @@
 
 	"group_5": {
 		"speaker": "Ulyn",
-		"text": "He's not doing it all again. Not this time. I could just say it.",
+		"text": "[determined] [to himself] He's not doing it all again. Not this time. I could just say it.",
 		"choices": [
 			{"text": "Wait. Let him say it.", "type": "honest", "busy_change": -5, "unsaid_change": -5, "next": "group_wait_1", "set_flag": "LetKaySpeak"},
 			{"text": "\"He's not doing it all again.\"", "type": "neutral", "busy_change": 0, "unsaid_change": 5, "next": "group_say_1"}
@@ -2979,7 +2979,7 @@
 
 	"group_wait_2": {
 		"speaker": "Ulyn",
-		"text": "Your turn.",
+		"text": "[encouraging] [to himself] Your turn.",
 		"next": "group_wait_3"
 	},
 
@@ -2991,7 +2991,7 @@
 
 	"group_wait_4": {
 		"speaker": "Kay",
-		"text": "\"I can't do all of it this time. I need everyone to do their own part.\"",
+		"text": "[nervous] [firm] \"I can't do all of it this time. I need everyone to do their own part.\"",
 		"next": "group_wait_5"
 	},
 
@@ -3003,13 +3003,13 @@
 
 	"group_wait_6": {
 		"speaker": "Bank",
-		"text": "\"Oh. Wait. Did you... not want to? Before?\"",
+		"text": "[surprised] [uncertain] \"Oh. Wait. Did you... not want to? Before?\"",
 		"next": "group_wait_7"
 	},
 
 	"group_wait_7": {
 		"speaker": "Kay",
-		"text": "\"I offered because I didn't know how not to.\"",
+		"text": "[honest] [quietly] \"I offered because I didn't know how not to.\"",
 		"next": "group_wait_8"
 	},
 
@@ -3021,7 +3021,7 @@
 
 	"group_say_1": {
 		"speaker": "Ulyn",
-		"text": "\"He did the slides at 2:30 in the morning. And the poster. And the skit. So no.\"",
+		"text": "[angry] [protective] \"He did the slides at 2:30 in the morning. And the poster. And the skit. So no.\"",
 		"next": "group_say_2"
 	},
 
@@ -3039,7 +3039,7 @@
 
 	"group_say_4": {
 		"speaker": "Ulyn",
-		"text": "Oh. That was his to say.",
+		"text": "[guilty] [realizing] Oh. That was his to say.",
 		"next": "group_end_1"
 	},
 
@@ -3051,7 +3051,7 @@
 
 	"group_end_2": {
 		"speaker": "Ulyn",
-		"text": "\"And I'll do the budget. And stop sleeping in class. Maybe.\"",
+		"text": "[dry] [playful] \"And I'll do the budget. And stop sleeping in class. Maybe.\"",
 		"next": "group_end_3"
 	},
 
@@ -3112,31 +3112,31 @@
 
 	"dad_answer_1": {
 		"speaker": "Ulyn",
-		"text": "\"...Hi, Dad.\"",
+		"text": "\"[hesitates] ...[stiff] [quietly] Hi, Dad.\"",
 		"next": "dad_answer_2"
 	},
 
 	"dad_answer_2": {
 		"speaker": "Dad",
-		"text": "\"Ulyn! Hi. Hi. I didn't think you'd— How's school?\"",
+		"text": "[surprised] [nervous] [eager] \"Ulyn! Hi. Hi. I didn't think you'd— How's school?\"",
 		"next": "dad_answer_3"
 	},
 
 	"dad_answer_3": {
 		"speaker": "Ulyn",
-		"text": "\"Fine. We're doing a garden.\"",
+		"text": "[flat] [guarded] \"Fine. We're doing a garden.\"",
 		"next": "dad_answer_4"
 	},
 
 	"dad_answer_4": {
 		"speaker": "Dad",
-		"text": "\"A garden! Your mom always had the green thumb.\"",
+		"text": "[enthusiastic] [nostalgic] \"A garden! Your mom always had the green thumb.\"",
 		"next": "dad_answer_5"
 	},
 
 	"dad_answer_5": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. She did.\"",
+		"text": "[quietly] [bittersweet] \"Yeah. She did.\"",
 		"next": "dad_answer_6"
 	},
 
@@ -3154,7 +3154,7 @@
 
 	"dad_ring_2": {
 		"speaker": "Dad",
-		"text": "just wanted to say hi. proud of u.",
+		"text": "[awkward] [sincere] just wanted to say hi. proud of u.",
 		"next": "dad_ring_3",
 		"sfx": "Notification"
 	},
@@ -3177,7 +3177,7 @@
 
 	"pres2_2": {
 		"speaker": "Ulyn",
-		"text": "\"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
+		"text": "[smug] [playful] \"Ulyn. I did the budget, so if it looks cheap, that's on purpose.\"",
 		"next": "pres2_3"
 	},
 
@@ -3189,7 +3189,7 @@
 
 	"pres2_4": {
 		"speaker": "Bank",
-		"text": "\"So, the garden was first built in... in, uh...\"",
+		"text": "[nervous] [stammering] \"So, the garden was first built in... in, uh...\"",
 		"next": "pres2_5"
 	},
 
@@ -3213,13 +3213,13 @@
 
 	"pres2_8": {
 		"speaker": "Bank",
-		"text": "\"Two thousand nine! The agriculture club. My uncle was actually in it. That's him, in the yellow boots.\"",
+		"text": "[excited] [proud] \"Two thousand nine! The agriculture club. My uncle was actually in it. That's him, in the yellow boots.\"",
 		"next": "pres2_9"
 	},
 
 	"pres2_9": {
 		"speaker": "Teacher",
-		"text": "\"Very well done, group 3. Good teamwork, everyone.\"",
+		"text": "[pleased] [teacherly] \"Very well done, group 3. Good teamwork, everyone.\"",
 		"next": "pres2_10"
 	},
 
@@ -3254,25 +3254,25 @@
 
 	"last_4": {
 		"speaker": "Ulyn",
-		"text": "\"Morning. You look—\"",
+		"text": "[teasing] \"Morning. You look—\"",
 		"next": "last_5"
 	},
 
 	"last_5": {
 		"speaker": "Ulyn",
-		"text": "Not like a zombie. Not grey. Not like old newspaper.",
+		"text": "[relieved] [to himself] Not like a zombie. Not grey. Not like old newspaper.",
 		"next": "last_6"
 	},
 
 	"last_6": {
 		"speaker": "Ulyn",
-		"text": "\"Actually, you look okay.\"",
+		"text": "[surprised] [warm] \"Actually, you look okay.\"",
 		"next": "last_7"
 	},
 
 	"last_7": {
 		"speaker": "Kay",
-		"text": "\"How are you? Actually.\"",
+		"text": "[sincere] [gentle] \"How are you? Actually.\"",
 		"next": "last_8"
 	},
 
@@ -3293,7 +3293,7 @@
 
 	"last_true_1": {
 		"speaker": "Ulyn",
-		"text": "\"...My mom wants me to come home more. I'm trying.\"",
+		"text": "[hesitant] [honest] \"...My mom wants me to come home more. I'm trying.\"",
 		"next": "last_true_2"
 	},
 
@@ -3305,13 +3305,13 @@
 
 	"last_true_3": {
 		"speaker": "Ulyn",
-		"text": "\"It's weird there. Quiet.\"",
+		"text": "[quietly] [sad] \"It's weird there. Quiet.\"",
 		"next": "last_true_4"
 	},
 
 	"last_true_4": {
 		"speaker": "Kay",
-		"text": "\"Want company? I can come over and be boring at your house.\"",
+		"text": "[warm] [playful] \"Want company? I can come over and be boring at your house.\"",
 		"next": "last_true_5"
 	},
 
@@ -3323,13 +3323,13 @@
 
 	"last_true_6": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. I'd like that.\"",
+		"text": "[softly] [touched] \"Yeah. I'd like that.\"",
 		"next": "ending_1"
 	},
 
 	"last_busy_1": {
 		"speaker": "Ulyn",
-		"text": "\"Good! Great! Busy! Next semester Pim wants me on the—\"",
+		"text": "[overly cheerful] [rushed] \"Good! Great! Busy! Next semester Pim wants me on the—\"",
 		"next": "last_busy_2"
 	},
 
@@ -3341,19 +3341,19 @@
 
 	"last_busy_3": {
 		"speaker": "Kay",
-		"text": "\"Ulyn.\"",
+		"text": "[gentle] [firm] \"Ulyn.\"",
 		"next": "last_busy_4"
 	},
 
 	"last_busy_4": {
 		"speaker": "Ulyn",
-		"text": "\"...What.\"",
+		"text": "[defensive] [sheepish] \"...What.\"",
 		"next": "last_busy_5"
 	},
 
 	"last_busy_5": {
 		"speaker": "Kay",
-		"text": "\"Not ulyn-sure.\"",
+		"text": "[teasing] [gentle] \"Not ulyn-sure.\"",
 		"next": "last_busy_6"
 	},
 
@@ -3396,7 +3396,7 @@
 
 	"endA_3": {
 		"speaker": "Ulyn",
-		"text": "come over? my mom's making khao man gai. she'd like it. i'd like it.",
+		"text": "[hopeful] [warm] come over? my mom's making khao man gai. she'd like it. i'd like it.",
 		"next": "endA_4"
 	},
 
@@ -3408,7 +3408,7 @@
 
 	"endA_5": {
 		"speaker": "Kay",
-		"text": "omw",
+		"text": "[happy] [quick] omw",
 		"next": "endA_lunch_1",
 		"sfx": "Notification"
 	},
@@ -3436,13 +3436,13 @@
 
 	"endA_lunch_4": {
 		"speaker": "Kay",
-		"text": "\"Too much water or too little?\"",
+		"text": "[curious] [gentle] \"Too much water or too little?\"",
 		"next": "endA_lunch_5"
 	},
 
 	"endA_lunch_5": {
 		"speaker": "Mom",
-		"text": "\"Too little. Nobody was home.\"",
+		"text": "[sad] [wry] \"Too little. Nobody was home.\"",
 		"next": "endA_lunch_6"
 	},
 
@@ -3462,13 +3462,13 @@
 
 	"endA_lunch_8": {
 		"speaker": "Kay",
-		"text": "\"Once a day. Only if it's dry.\"",
+		"text": "[teacherly] [teasing] \"Once a day. Only if it's dry.\"",
 		"next": "endA_lunch_9"
 	},
 
 	"endA_lunch_9": {
 		"speaker": "Ulyn",
-		"text": "\"Yes, Ms. Noi.\"",
+		"text": "[teasing] [deadpan] \"Yes, Ms. Noi.\"",
 		"next": "endA_dad_1",
 		"secret": {"condition": "flag_true", "flag": "AskedNoi", "next": "endA_noi_1"}
 	},
@@ -3525,7 +3525,7 @@
 
 	"endB_2": {
 		"speaker": "Tan",
-		"text": "\"Most nights is a lot better than no nights.\"",
+		"text": "[wise] [dry] \"Most nights is a lot better than no nights.\"",
 		"next": "endB_3"
 	},
 
@@ -3555,32 +3555,32 @@
 
 	"endB_garden_2": {
 		"speaker": "Kay",
-		"text": "\"You going home tonight?\"",
+		"text": "[gentle] [curious] \"You going home tonight?\"",
 		"next": "endB_garden_3",
 		"sfx": "stop"
 	},
 
 	"endB_garden_3": {
 		"speaker": "Ulyn",
-		"text": "\"...Yeah. I think so.\"",
+		"text": "\"[hesitates] ...[softly] Yeah. I think so.\"",
 		"next": "endB_garden_4"
 	},
 
 	"endB_garden_4": {
 		"speaker": "Kay",
-		"text": "\"Text me when you're there.\"",
+		"text": "[caring] [casual] \"Text me when you're there.\"",
 		"next": "endB_garden_5"
 	},
 
 	"endB_garden_5": {
 		"speaker": "Ulyn",
-		"text": "\"Why?\"",
+		"text": "[curious] \"Why?\"",
 		"next": "endB_garden_6"
 	},
 
 	"endB_garden_6": {
 		"speaker": "Kay",
-		"text": "\"So I know.\"",
+		"text": "[softly] [sincere] \"So I know.\"",
 		"next": "endB_garden_7"
 	},
 
@@ -3595,13 +3595,13 @@
 
 	"endB_garden_8": {
 		"speaker": "Ulyn",
-		"text": "home",
+		"text": "[content] home",
 		"next": "endB_garden_9"
 	},
 
 	"endB_garden_9": {
 		"speaker": "Kay",
-		"text": "👍",
+		"text": "[warm] 👍",
 		"next": "endB_garden_10",
 		"sfx": "Notification"
 	},
@@ -3633,7 +3633,7 @@
 
 	"endC_2": {
 		"speaker": "Pim",
-		"text": "\"You're amazing. Seriously, what would we do without you?\"",
+		"text": "[gushing] [relieved] \"You're amazing. Seriously, what would we do without you?\"",
 		"next": "endC_3"
 	},
 
@@ -3677,7 +3677,7 @@
 
 	"endC_msg_2": {
 		"speaker": "Kay",
-		"text": "hey. how are you? actually.",
+		"text": "[gentle] [sincere] hey. how are you? actually.",
 		"next": "endC_msg_3"
 	},
 

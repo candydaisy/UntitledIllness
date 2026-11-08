@@ -5,6 +5,9 @@ extends RefCounted
 ## node id; see apply_language().
 
 const TRANSLATABLE := ["text", "real_text", "cut", "cut_after"]
+## ElevenLabs audio tags like [sighs] or [softly, to himself]: they steer the
+## voice generator, which reads the JSON; the game drops them at load.
+const VOICE_TAG := "\\[[a-z][a-z ,'-]*\\]\\s*"
 
 var nodes : Dictionary = {} # what the game reads: English with the translation on top
 var source : Dictionary = {} # the English, never changed
@@ -28,7 +31,7 @@ static func load_from(path: String) -> FlowGraph:
 		return null
 
 	var graph := FlowGraph.new()
-	graph.source = json.data
+	graph.source = strip_voice_tags(json.data)
 	graph._path = path
 	graph.apply_language(TranslationServer.get_locale())
 	return graph
@@ -66,7 +69,21 @@ func _load_translation(locale: String) -> Dictionary:
 	if json.parse(FileAccess.get_file_as_string(file)) != OK or typeof(json.data) != TYPE_DICTIONARY:
 		push_error("Can't read %s (line %d): %s. Playing in English." % [file, json.get_error_line(), json.get_error_message()])
 		return {}
-	return json.data
+	return strip_voice_tags(json.data)
+
+
+## Removes audio tags from every line's text, in place, and returns `lines`.
+static func strip_voice_tags(lines: Dictionary) -> Dictionary:
+	var tag := RegEx.create_from_string(VOICE_TAG)
+	for id in lines:
+		if typeof(lines[id]) != TYPE_DICTIONARY:
+			continue
+		for key in ["text", "real_text"]:
+			if lines[id].get(key) is String:
+				var plain := tag.sub(lines[id][key], "", true)
+				if plain != lines[id][key]:
+					lines[id][key] = plain.strip_edges()
+	return lines
 
 ## Problems with a translation, one string each: nodes the story doesn't
 ## have, a different number of choices, results the node doesn't have,

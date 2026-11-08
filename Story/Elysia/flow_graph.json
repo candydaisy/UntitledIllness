@@ -11,7 +11,7 @@
 
 	"call_2": {
 		"speaker": "Ploy",
-		"text": "\"He left me on read, Elysia. For three hours. And then he sent a meme.\"",
+		"text": "[whiny] [dramatic] \"He left me on read, Elysia. For three hours. And then he sent a meme.\"",
 		"next": "call_3"
 	},
 
@@ -24,13 +24,13 @@
 
 	"call_4": {
 		"speaker": "Elysia",
-		"text": "History presentation tomorrow. No, today. And it's Monday. Kay always gets pad kra pao on Mondays.",
+		"text": "[tired] [to herself] History presentation tomorrow. No, today. And it's Monday. Kay always gets pad kra pao on Mondays.",
 		"next": "call_5"
 	},
 
 	"call_5": {
 		"speaker": "Elysia",
-		"text": "\"That's so annoying.\"",
+		"text": "[sleepy] [forced sympathy] \"That's so annoying.\"",
 		"next": "call_6"
 	},
 
@@ -42,7 +42,7 @@
 
 	"call_7": {
 		"speaker": "Ploy",
-		"text": "\"Right?? Okay, so here's what he said, I'll read you the whole thing—\"",
+		"text": "[excited] [rapid] \"Right?? Okay, so here's what he said, I'll read you the whole thing—\"",
 		"timed": true,
 		"choices": [
 			{"text": "Stay on the call", "type": "perform", "mask_change": 5, "energy_change": -10, "next": "call_stay_1"},
@@ -58,7 +58,7 @@
 
 	"call_stay_2": {
 		"speaker": "Elysia",
-		"text": "Good. That's good. That's what I'm for.",
+		"text": "[tired] [convincing herself] Good. That's good. That's what I'm for.",
 		"next": "bfast_1"
 	},
 
@@ -70,20 +70,20 @@
 
 	"call_sleep_2": {
 		"speaker": "Ploy",
-		"text": "\"...Oh. Yeah. Sure. Sorry for bothering you.\"",
+		"text": "[hurt] [quietly] \"...Oh. Yeah. Sure. Sorry for bothering you.\"",
 		"next": "call_sleep_3"
 	},
 
 	"call_sleep_3": {
 		"speaker": "Elysia",
-		"text": "\"You're not bothering—\"",
+		"text": "[tired] [quickly] \"You're not bothering—\"",
 		"real_text": "\"You're not bothering me, I'm just so tired—\"",
 		"next": "call_sleep_4"
 	},
 
 	"call_sleep_4": {
 		"speaker": "Ploy",
-		"text": "\"No, it's fine! Sleep! Night!\"",
+		"text": "[forced cheerful] [rushed] \"No, it's fine! Sleep! Night!\"",
 		"next": "call_sleep_5"
 	},
 
@@ -105,7 +105,7 @@
 
 	"bfast_2": {
 		"speaker": "Pun",
-		"text": "\"Look. LOOK. I found him by the drain.\"",
+		"text": "[excited] [shouting] \"Look. LOOK. I found him by the drain.\"",
 		"next": "bfast_3"
 	},
 
@@ -156,13 +156,13 @@
 
 	"bfast_rhino_2": {
 		"speaker": "Pun",
-		"text": "\"How do you KNOW that?\"",
+		"text": "[amazed] \"How do you KNOW that?\"",
 		"next": "bfast_rhino_3"
 	},
 
 	"bfast_rhino_3": {
 		"speaker": "Elysia",
-		"text": "\"I just... read about it once. Eat your eggs. You'll be late.\"",
+		"text": "\"[hesitates] I just... [quickly] read about it once. [bossy] Eat your eggs. You'll be late.\"",
 		"next": "bfast_rhino_4"
 	},
 
@@ -198,7 +198,7 @@
 
 	"gate_4": {
 		"speaker": "Elysia",
-		"text": "He looks so tired. Grey. Did he sleep at all?",
+		"text": "[worried] [softly, to herself] He looks so tired. Grey. Did he sleep at all?",
 		"next": "gate_5"
 	},
 
@@ -210,25 +210,25 @@
 
 	"gate_6": {
 		"speaker": "Elysia",
-		"text": "...Is he mad at me?",
+		"text": "[anxious] [to herself] ...Is he mad at me?",
 		"next": "gate_7"
 	},
 
 	"gate_7": {
 		"speaker": "Elysia",
-		"text": "No. He's just Kay. He's always like that at school.",
+		"text": "[reassuring herself] No. He's just Kay. He's always like that at school.",
 		"next": "gate_8"
 	},
 
 	"gate_8": {
 		"speaker": "Elysia",
-		"text": "Right?",
+		"text": "[uncertain] [quietly] Right?",
 		"next": "gate_9"
 	},
 
 	"gate_9": {
 		"speaker": "Ploy",
-		"text": "\"Elysia, focus, I'm getting to the part with the meme.\"",
+		"text": "[impatient] [whiny] \"Elysia, focus, I'm getting to the part with the meme.\"",
 		"next": "gate_10"
 	},
 
@@ -256,7 +256,7 @@
 
 	"line_3": {
 		"speaker": "Elysia",
-		"text": "\"Hey. Behind you~\"",
+		"text": "[playful] [sing-song] \"Hey. Behind you~\"",
 		"next": "line_4"
 	},
 
@@ -268,19 +268,19 @@
 
 	"line_5": {
 		"speaker": "Elysia",
-		"text": "\"Pad kra pao again? You're so predictable.\"",
+		"text": "[teasing] \"Pad kra pao again? You're so predictable.\"",
 		"next": "line_6"
 	},
 
 	"line_6": {
 		"speaker": "Kay",
-		"text": "\"Y-you're one to talk. You're in the same line.\"",
+		"text": "[flustered] [stammering] \"Y-you're one to talk. You're in the same line.\"",
 		"next": "line_7"
 	},
 
 	"line_7": {
 		"speaker": "Elysia",
-		"text": "\"Mm. And why do you think I'm in this line?\"",
+		"text": "[playful] [flirty] \"Mm. And why do you think I'm in this line?\"",
 		"next": "line_8"
 	},
 
@@ -292,13 +292,13 @@
 
 	"line_9": {
 		"speaker": "Kay",
-		"text": "\"Because it's good?\"",
+		"text": "[nervous] [evasive] \"Because it's good?\"",
 		"next": "line_10"
 	},
 
 	"line_10": {
 		"speaker": "Elysia",
-		"text": "Coward.",
+		"text": "[fond] [annoyed, to herself] Coward.",
 		"next": "line_11"
 	},
 
@@ -310,37 +310,37 @@
 
 	"line_12": {
 		"speaker": "Elysia",
-		"text": "\"Wow. Okay. Sure. Because it's good.\"",
+		"text": "[sarcastic] [amused] \"Wow. Okay. Sure. Because it's good.\"",
 		"next": "line_13"
 	},
 
 	"line_13": {
 		"speaker": "Elysia",
-		"text": "\"You know, I always have to come find you. You never come find me.\"",
+		"text": "[pouting] [half-serious] \"You know, I always have to come find you. You never come find me.\"",
 		"next": "line_14"
 	},
 
 	"line_14": {
 		"speaker": "Kay",
-		"text": "\"I didn't want to bother you. You're always with your friends.\"",
+		"text": "[shy] [awkward] \"I didn't want to bother you. You're always with your friends.\"",
 		"next": "line_15"
 	},
 
 	"line_15": {
 		"speaker": "Elysia",
-		"text": "\"Always with your friends.\" Why does that sound like \"always somewhere I'm not allowed\"?",
+		"text": "[hurt] [to herself] \"Always with your friends.\" Why does that sound like \"always somewhere I'm not allowed\"?",
 		"next": "line_16"
 	},
 
 	"line_16": {
 		"speaker": "Elysia",
-		"text": "\"You're not a bother, dummy.\"",
+		"text": "[warm] [affectionate] \"You're not a bother, dummy.\"",
 		"next": "line_17"
 	},
 
 	"line_17": {
 		"speaker": "Lunch Lady",
-		"text": "\"Are you two ordering, or just flirting?\"",
+		"text": "[dry] [unimpressed] \"Are you two ordering, or just flirting?\"",
 		"next": "line_18"
 	},
 
@@ -352,7 +352,7 @@
 
 	"line_19": {
 		"speaker": "Elysia",
-		"text": "\"Come sit with us if you want, okay?\"",
+		"text": "[warm] [hopeful] \"Come sit with us if you want, okay?\"",
 		"next": "line_20"
 	},
 
@@ -377,13 +377,13 @@
 
 	"line_23": {
 		"speaker": "Kay",
-		"text": "\"Hey. Is it okay if I sit here?\"",
+		"text": "[shy] [nervous] \"Hey. Is it okay if I sit here?\"",
 		"next": "line_24"
 	},
 
 	"line_24": {
 		"speaker": "Elysia",
-		"text": "\"Ah— yeah! Of course!\"",
+		"text": "[surprised] [delighted] \"Ah— yeah! Of course!\"",
 		"real_text": "\"...Yeah. I'd like that.\"",
 		"next": "line_25"
 	},
@@ -402,7 +402,7 @@
 
 	"line_27": {
 		"speaker": "Elysia",
-		"text": "\"Hey. Stop staring at him. Eat your food.\"",
+		"text": "[embarrassed] [scolding] \"Hey. Stop staring at him. Eat your food.\"",
 		"next": "line_28"
 	},
 
@@ -414,7 +414,7 @@
 
 	"line_29": {
 		"speaker": "Elysia",
-		"text": "He came over. He actually came over. In front of everyone.",
+		"text": "[giddy] [softly, to herself] He came over. He actually came over. In front of everyone.",
 		"next": "line_30"
 	},
 
@@ -433,7 +433,7 @@
 
 	"line_32": {
 		"speaker": "Ploy",
-		"text": "\"So that's the boyfriend. He's cute. He's just... so quiet. Kind of weird?\"",
+		"text": "[gossipy] [judgmental] \"So that's the boyfriend. He's cute. He's just... so quiet. Kind of weird?\"",
 		"next": "line_33"
 	},
 
@@ -455,13 +455,13 @@
 
 	"shy_1": {
 		"speaker": "Elysia",
-		"text": "\"Haha, he's just shy.\"",
+		"text": "[forced laugh] [defensive] \"Haha, he's just shy.\"",
 		"next": "shy_2"
 	},
 
 	"shy_2": {
 		"speaker": "Jane",
-		"text": "\"Shy is cute.\"",
+		"text": "[sweet] [casual] \"Shy is cute.\"",
 		"next": "shy_3"
 	},
 
@@ -485,13 +485,13 @@
 
 	"notweird_2": {
 		"speaker": "Ploy",
-		"text": "\"Okay, defensive. I didn't mean it bad.\"",
+		"text": "[defensive] [dismissive] \"Okay, defensive. I didn't mean it bad.\"",
 		"next": "notweird_3"
 	},
 
 	"notweird_3": {
 		"speaker": "Elysia",
-		"text": "\"I know! I know. Sorry. He's just quiet. That's all.\"",
+		"text": "[backpedaling] [quickly] \"I know! I know. Sorry. He's just quiet. That's all.\"",
 		"real_text": "\"No, I meant it. He's not weird.\"",
 		"next": "notweird_4"
 	},
@@ -513,13 +513,13 @@
 
 	"walk_2": {
 		"speaker": "Elysia",
-		"text": "Do it. You're allowed to walk home with your own boyfriend.",
+		"text": "[determined] [to herself] Do it. You're allowed to walk home with your own boyfriend.",
 		"next": "walk_3"
 	},
 
 	"walk_3": {
 		"speaker": "Elysia",
-		"text": "\"Kayyy~ Wanna walk home together?\"",
+		"text": "[playful] [sing-song] \"Kayyy~ Wanna walk home together?\"",
 		"next": "walk_4"
 	},
 
@@ -538,7 +538,7 @@
 
 	"walk_6": {
 		"speaker": "Kay",
-		"text": "\"I... shouldn't. You don't want people looking at us like that.\"",
+		"text": "[awkward] [apologetic] \"I... shouldn't. You don't want people looking at us like that.\"",
 		"next": "walk_7"
 	},
 
@@ -556,19 +556,19 @@
 
 	"walk_9": {
 		"speaker": "Elysia",
-		"text": "\"Oh! Okay. That's fine! No worries.\"",
+		"text": "\"[surprised] Oh! [forced brightness] Okay. That's fine! No worries.\"",
 		"next": "walk_10"
 	},
 
 	"walk_10": {
 		"speaker": "Elysia",
-		"text": "Smile. Smile. Smile.",
+		"text": "[strained] [to herself] Smile. Smile. Smile.",
 		"next": "walk_11"
 	},
 
 	"walk_11": {
 		"speaker": "Elysia",
-		"text": "\"See you tomorrow, then.\"",
+		"text": "[quietly] [disappointed] \"See you tomorrow, then.\"",
 		"next": "walk_12"
 	},
 
@@ -583,14 +583,14 @@
 
 	"walk_13": {
 		"speaker": "Elysia",
-		"text": "\"You don't want people looking at us like that.\" Like what?",
+		"text": "[hurt] [to herself] \"You don't want people looking at us like that.\" Like what?",
 		"next": "walk_14",
 		"sfx": "stop"
 	},
 
 	"walk_14": {
 		"speaker": "Elysia",
-		"text": "Like the slime girl and the boy who has to stand next to her.",
+		"text": "[bitter] [hurt] Like the slime girl and the boy who has to stand next to her.",
 		"next": "walk_15"
 	},
 
@@ -602,13 +602,13 @@
 
 	"walk_16": {
 		"speaker": "Elysia",
-		"text": "But he came to the table. And the second my friends were watching, he said no.",
+		"text": "[confused] [hurt] But he came to the table. And the second my friends were watching, he said no.",
 		"next": "walk_17"
 	},
 
 	"walk_17": {
 		"speaker": "Elysia",
-		"text": "He's embarrassed of me. Like everyone. Like third grade.",
+		"text": "[sad] [voice breaking] He's embarrassed of me. Like everyone. Like third grade.",
 		"next": "walk_18"
 	},
 
@@ -622,13 +622,13 @@
 
 	"walk_19": {
 		"speaker": "Mint",
-		"text": "\"So? Did you get him in the pad kra pao line?\"",
+		"text": "[curious] [deadpan] \"So? Did you get him in the pad kra pao line?\"",
 		"next": "walk_20"
 	},
 
 	"walk_20": {
 		"speaker": "Elysia",
-		"text": "\"I did! He sat with us. And then after school I asked him to walk home, and he said...\"",
+		"text": "[excited] [then uncertain] \"I did! He sat with us. And then after school I asked him to walk home, and he said...\"",
 		"next": "walk_21"
 	},
 
@@ -640,7 +640,7 @@
 
 	"walk_22": {
 		"speaker": "Elysia",
-		"text": "\"He said he shouldn't. Because people would look at us.\"",
+		"text": "[hurt] [quietly] \"He said he shouldn't. Because people would look at us.\"",
 		"next": "walk_23"
 	},
 
@@ -652,7 +652,7 @@
 
 	"walk_24": {
 		"speaker": "Mint",
-		"text": "\"How do you feel about that?\"",
+		"text": "[gentle] [calm] \"How do you feel about that?\"",
 		"choices": [
 			{"text": "\"...It kind of hurt.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "mint_hurt_1", "set_flag": "ToldMint"},
 			{"text": "\"It's fine! He's just busy.\"", "type": "perform", "mask_change": 5, "energy_change": -10, "next": "mint_fine_1"}
@@ -661,13 +661,13 @@
 
 	"mint_hurt_1": {
 		"speaker": "Elysia",
-		"text": "\"It kind of hurt. Like he doesn't want people to know he's with me.\"",
+		"text": "[sad] [honest] \"It kind of hurt. Like he doesn't want people to know he's with me.\"",
 		"next": "mint_hurt_2"
 	},
 
 	"mint_hurt_2": {
 		"speaker": "Mint",
-		"text": "\"Do you want me to fight him?\"",
+		"text": "[deadpan] [serious] \"Do you want me to fight him?\"",
 		"next": "mint_hurt_3"
 	},
 
@@ -679,25 +679,25 @@
 
 	"mint_hurt_4": {
 		"speaker": "Elysia",
-		"text": "\"No!\"",
+		"text": "[laughing] [alarmed] \"No!\"",
 		"next": "mint_hurt_5"
 	},
 
 	"mint_hurt_5": {
 		"speaker": "Mint",
-		"text": "\"I'm small but I'm fast.\"",
+		"text": "[deadpan] [threatening] \"I'm small but I'm fast.\"",
 		"next": "mint_hurt_6"
 	},
 
 	"mint_hurt_6": {
 		"speaker": "Elysia",
-		"text": "\"No, Mint.\"",
+		"text": "[laughing] [exasperated] \"No, Mint.\"",
 		"next": "mint_hurt_7"
 	},
 
 	"mint_hurt_7": {
 		"speaker": "Mint",
-		"text": "\"Hmm.\"",
+		"text": "[thoughtful] [unconvinced] \"Hmm.\"",
 		"next": "mint_hurt_8"
 	},
 
@@ -709,19 +709,19 @@
 
 	"mint_fine_1": {
 		"speaker": "Elysia",
-		"text": "\"It's fine! He's just busy. He's always busy.\"",
+		"text": "[forced cheerful] \"It's fine! He's just busy. He's always busy.\"",
 		"next": "mint_fine_2"
 	},
 
 	"mint_fine_2": {
 		"speaker": "Mint",
-		"text": "\"Elysia. It's me.\"",
+		"text": "[gentle] [firm] \"Elysia. It's me.\"",
 		"next": "mint_fine_3"
 	},
 
 	"mint_fine_3": {
 		"speaker": "Elysia",
-		"text": "\"I know! It's fine. Really.\"",
+		"text": "[forced brightness] [insistent] \"I know! It's fine. Really.\"",
 		"next": "mint_fine_4"
 	},
 
@@ -763,7 +763,7 @@
 
 	"tue_cheer_1": {
 		"speaker": "Elysia",
-		"text": "goooood morning!! ☀️ did u eat breakfast",
+		"text": "[cheerful] [sing-song] goooood morning!! ☀️ did u eat breakfast",
 		"next": "tue_cheer_2"
 	},
 
@@ -775,14 +775,14 @@
 
 	"tue_cheer_3": {
 		"speaker": "Kay",
-		"text": "morning! not yet lol",
+		"text": "[casual] morning! not yet lol",
 		"next": "tue_cheer_4",
 		"sfx": "Notification"
 	},
 
 	"tue_cheer_4": {
 		"speaker": "Elysia",
-		"text": "EAT SOMETHING 😤",
+		"text": "[shouting] [bossy] EAT SOMETHING 😤",
 		"next": "tue_cheer_5"
 	},
 
@@ -800,7 +800,7 @@
 
 	"tue_cheer_7": {
 		"speaker": "Elysia",
-		"text": "He's fine. We're fine. Everything's normal.",
+		"text": "[forced calm] [to herself] He's fine. We're fine. Everything's normal.",
 		"next": "tue_cheer_8"
 	},
 
@@ -826,19 +826,19 @@
 
 	"tue_ask_3": {
 		"speaker": "Kay",
-		"text": "sorry about yesterday. i didn't mean it like that.",
+		"text": "[apologetic] [quietly] sorry about yesterday. i didn't mean it like that.",
 		"next": "tue_ask_4"
 	},
 
 	"tue_ask_4": {
 		"speaker": "Elysia",
-		"text": "Like what? What did you mean?",
+		"text": "[hurt] [to herself] Like what? What did you mean?",
 		"next": "tue_ask_5"
 	},
 
 	"tue_ask_5": {
 		"speaker": "Elysia",
-		"text": "it's ok!!",
+		"text": "[quick] [bright] it's ok!!",
 		"next": "tue_ask_6"
 	},
 
@@ -850,7 +850,7 @@
 
 	"tue_ask_7": {
 		"speaker": "Elysia",
-		"text": "it kind of stung tbh",
+		"text": "[honest] [softly] it kind of stung tbh",
 		"next": "tue_ask_8"
 	},
 
@@ -862,7 +862,7 @@
 
 	"tue_ask_9": {
 		"speaker": "Kay",
-		"text": "i'm sorry",
+		"text": "[sincere] [quietly] i'm sorry",
 		"next": "tue_ask_10",
 		"sfx": "Notification"
 	},
@@ -881,7 +881,7 @@
 
 	"shop_2": {
 		"speaker": "Pun",
-		"text": "SHRIMP CRACKERS. EMERGENCY.",
+		"text": "[shouting] [urgent] SHRIMP CRACKERS. EMERGENCY.",
 		"next": "shop_3"
 	},
 
@@ -905,7 +905,7 @@
 
 	"shop_6": {
 		"speaker": "Elysia",
-		"text": "\"You're buying one toastie. For dinner.\"",
+		"text": "[teasing] [disapproving] \"You're buying one toastie. For dinner.\"",
 		"next": "shop_7"
 	},
 
@@ -917,43 +917,43 @@
 
 	"shop_8": {
 		"speaker": "Elysia",
-		"text": "\"Tutoring's on the next street. Pun wants shrimp crackers. It's an emergency.\"",
+		"text": "[dramatic] [playful] \"Tutoring's on the next street. Pun wants shrimp crackers. It's an emergency.\"",
 		"next": "shop_9"
 	},
 
 	"shop_9": {
 		"speaker": "Kay",
-		"text": "\"For Pun.\"",
+		"text": "[skeptical] [deadpan] \"For Pun.\"",
 		"next": "shop_10"
 	},
 
 	"shop_10": {
 		"speaker": "Elysia",
-		"text": "\"For Pun.\"",
+		"text": "[firm] [unconvincing] \"For Pun.\"",
 		"next": "shop_11"
 	},
 
 	"shop_11": {
 		"speaker": "Kay",
-		"text": "\"All three.\"",
+		"text": "[deadpan] [teasing] \"All three.\"",
 		"next": "shop_12"
 	},
 
 	"shop_12": {
 		"speaker": "Elysia",
-		"text": "\"...Two are for Pun.\"",
+		"text": "[embarrassed] [quietly] \"...Two are for Pun.\"",
 		"next": "shop_13"
 	},
 
 	"shop_13": {
 		"speaker": "Kay",
-		"text": "\"And the third one's an emergency too?\"",
+		"text": "[teasing] \"And the third one's an emergency too?\"",
 		"next": "shop_14"
 	},
 
 	"shop_14": {
 		"speaker": "Elysia",
-		"text": "\"It's a very serious emergency.\"",
+		"text": "[flustered] [mock-serious] \"It's a very serious emergency.\"",
 		"next": "shop_15"
 	},
 
@@ -965,13 +965,13 @@
 
 	"shop_16": {
 		"speaker": "Elysia",
-		"text": "He's teasing me. Kay, who could barely lift his hand at the gate on Monday, is teasing me in a 7-Eleven.",
+		"text": "[surprised] [delighted, to herself] He's teasing me. Kay, who could barely lift his hand at the gate on Monday, is teasing me in a 7-Eleven.",
 		"next": "shop_17"
 	},
 
 	"shop_17": {
 		"speaker": "Kay",
-		"text": "\"Like the pad kra pao line. That was an emergency too?\"",
+		"text": "[teasing] \"Like the pad kra pao line. That was an emergency too?\"",
 		"choices": [
 			{"text": "\"That was a coincidence.\"", "type": "neutral", "mask_change": 0, "energy_change": 0, "next": "shop_coin_1"},
 			{"text": "\"...Okay, fine. I planned it.\"", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "shop_plan_1", "set_flag": "AdmittedLine"}
@@ -980,43 +980,43 @@
 
 	"shop_coin_1": {
 		"speaker": "Elysia",
-		"text": "\"That was a coincidence.\"",
+		"text": "[too quickly] [defensive] \"That was a coincidence.\"",
 		"next": "shop_coin_2"
 	},
 
 	"shop_coin_2": {
 		"speaker": "Kay",
-		"text": "\"It's been a coincidence every Monday for two months.\"",
+		"text": "[teasing] [deadpan] \"It's been a coincidence every Monday for two months.\"",
 		"next": "shop_hit_1"
 	},
 
 	"shop_plan_1": {
 		"speaker": "Elysia",
-		"text": "\"...Okay, fine. I planned it.\"",
+		"text": "[sighs] [embarrassed] \"...Okay, fine. I planned it.\"",
 		"next": "shop_plan_2"
 	},
 
 	"shop_plan_2": {
 		"speaker": "Kay",
-		"text": "\"I know.\"",
+		"text": "[smug] [softly] \"I know.\"",
 		"next": "shop_plan_3"
 	},
 
 	"shop_plan_3": {
 		"speaker": "Elysia",
-		"text": "\"You knew?\"",
+		"text": "[shocked] \"You knew?\"",
 		"next": "shop_plan_4"
 	},
 
 	"shop_plan_4": {
 		"speaker": "Kay",
-		"text": "\"Every Monday for two months.\"",
+		"text": "[teasing] [deadpan] \"Every Monday for two months.\"",
 		"next": "shop_hit_1"
 	},
 
 	"shop_hit_1": {
 		"speaker": "Elysia",
-		"text": "\"K!\"",
+		"text": "[embarrassed] [shouting] \"K!\"",
 		"next": "shop_hit_2"
 	},
 
@@ -1028,7 +1028,7 @@
 
 	"shop_hit_3": {
 		"speaker": "Elysia",
-		"text": "\"I'm putting a yogurt drink in your basket. As a punishment.\"",
+		"text": "[flustered] [bossy] \"I'm putting a yogurt drink in your basket. As a punishment.\"",
 		"next": "shop_hit_4"
 	},
 
@@ -1046,19 +1046,19 @@
 
 	"shop_out_2": {
 		"speaker": "Elysia",
-		"text": "\"Your mom's working?\"",
+		"text": "[curious] [gentle] \"Your mom's working?\"",
 		"next": "shop_out_3"
 	},
 
 	"shop_out_3": {
 		"speaker": "Kay",
-		"text": "\"Night shift.\"",
+		"text": "[casual] [flat] \"Night shift.\"",
 		"next": "shop_out_4"
 	},
 
 	"shop_out_4": {
 		"speaker": "Elysia",
-		"text": "One toastie. Nobody home.",
+		"text": "[worried] [to herself] One toastie. Nobody home.",
 		"next": "shop_out_5"
 	},
 
@@ -1070,13 +1070,13 @@
 
 	"shop_out_6": {
 		"speaker": "Kay",
-		"text": "\"I'll walk you to the stop.\"",
+		"text": "[shy] [softly] \"I'll walk you to the stop.\"",
 		"next": "shop_out_7"
 	},
 
 	"shop_out_7": {
 		"speaker": "Elysia",
-		"text": "Here. On a dark street, a hundred meters, where nobody can see.",
+		"text": "[realizing] [hurt] Here. On a dark street, a hundred meters, where nobody can see.",
 		"choices": [
 			{"text": "Ask him: \"Why here? But not on Monday?\"", "type": "honest", "mask_change": -5, "energy_change": 0, "next": "shop_ask_1", "set_flag": "AskedWhyHere"},
 			{"text": "Don't ask. Don't ruin it.", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "shop_quiet_1"}
@@ -1085,7 +1085,7 @@
 
 	"shop_ask_1": {
 		"speaker": "Elysia",
-		"text": "\"Why here? But not on Monday?\"",
+		"text": "[hesitant] [hurt] \"Why here? But not on Monday?\"",
 		"next": "shop_ask_2"
 	},
 
@@ -1097,13 +1097,13 @@
 
 	"shop_ask_3": {
 		"speaker": "Kay",
-		"text": "\"...Here, nobody's looking.\"",
+		"text": "\"[hesitates] ...[quietly] Here, nobody's looking.\"",
 		"next": "shop_ask_4"
 	},
 
 	"shop_ask_4": {
 		"speaker": "Elysia",
-		"text": "At what? At me?",
+		"text": "[hurt] [to herself] At what? At me?",
 		"next": "shop_ask_5"
 	},
 
@@ -1127,13 +1127,13 @@
 
 	"shop_bus_1": {
 		"speaker": "Elysia",
-		"text": "\"Eat your toastie. And the yogurt.\"",
+		"text": "[bossy] [caring] \"Eat your toastie. And the yogurt.\"",
 		"next": "shop_bus_2"
 	},
 
 	"shop_bus_2": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[teasing] [deadpan] \"Yes, ma'am.\"",
 		"next": "shop_bus_3"
 	},
 
@@ -1145,13 +1145,13 @@
 
 	"shop_bus_4": {
 		"speaker": "Elysia",
-		"text": "So he can walk with me. Just not where anyone can see.",
+		"text": "[sad] [to herself] So he can walk with me. Just not where anyone can see.",
 		"next": "shop_bus_5"
 	},
 
 	"shop_bus_5": {
 		"speaker": "Elysia",
-		"text": "So it is them. It's them he's hiding me from.",
+		"text": "[sad] [bitter] So it is them. It's them he's hiding me from.",
 		"next": "garden_1"
 	},
 
@@ -1165,13 +1165,13 @@
 
 	"garden_2": {
 		"speaker": "Ploy",
-		"text": "\"Elysia, you're coming, right?\"",
+		"text": "[expectant] \"Elysia, you're coming, right?\"",
 		"next": "garden_3"
 	},
 
 	"garden_3": {
 		"speaker": "Elysia",
-		"text": "\"I can't, I have to help my brother with a thing.\"",
+		"text": "[apologetic] [lying] \"I can't, I have to help my brother with a thing.\"",
 		"next": "garden_4"
 	},
 
@@ -1206,25 +1206,25 @@
 
 	"garden_8": {
 		"speaker": "Kay",
-		"text": "\"Hi.\"",
+		"text": "[surprised] [shy] \"Hi.\"",
 		"next": "garden_9"
 	},
 
 	"garden_9": {
 		"speaker": "Elysia",
-		"text": "\"Hi! I was in the area.\"",
+		"text": "[too bright] [nervous] \"Hi! I was in the area.\"",
 		"next": "garden_10"
 	},
 
 	"garden_10": {
 		"speaker": "Kay",
-		"text": "\"You were in the area. Behind the science building.\"",
+		"text": "[deadpan] [amused] \"You were in the area. Behind the science building.\"",
 		"next": "garden_11"
 	},
 
 	"garden_11": {
 		"speaker": "Elysia",
-		"text": "\"I'm very outdoorsy.\"",
+		"text": "[mock-serious] [playful] \"I'm very outdoorsy.\"",
 		"next": "garden_12"
 	},
 
@@ -1248,13 +1248,13 @@
 
 	"garden_15": {
 		"speaker": "Elysia",
-		"text": "\"Oh. Oh! Kay. Come here. Don't move fast.\"",
+		"text": "\"[gasps] Oh. Oh! [excited whisper] Kay. Come here. Don't move fast.\"",
 		"next": "garden_16"
 	},
 
 	"garden_16": {
 		"speaker": "Elysia",
-		"text": "\"That's a slime mold. Physarum, I think. It's not a mold, it's not a plant, it's not an animal, it doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down in the shape of the cities around Tokyo, and it grew a network that looked almost exactly like the real train lines—\"",
+		"text": "[excited] [rapid] [nerdy] \"That's a slime mold. Physarum, I think. It's not a mold, it's not a plant, it's not an animal, it doesn't even have a brain, and it can still solve a maze. Scientists put oat flakes down in the shape of the cities around Tokyo, and it grew a network that looked almost exactly like the real train lines—\"",
 		"next": "garden_17"
 	},
 
@@ -1278,7 +1278,7 @@
 
 	"garden_20": {
 		"speaker": "Elysia",
-		"text": "\"Sorry. That's weird. Nobody cares about slime.\"",
+		"text": "\"[catches herself] Sorry. [embarrassed] [quietly] That's weird. Nobody cares about slime.\"",
 		"real_text": "\"I really, really like slime molds.\"",
 		"next": "garden_21"
 	},
@@ -1291,7 +1291,7 @@
 
 	"garden_22": {
 		"speaker": "Kay",
-		"text": "\"I care. Keep going.\"",
+		"text": "[gentle] [sincere] \"I care. Keep going.\"",
 		"next": "garden_23"
 	},
 
@@ -1318,7 +1318,7 @@
 
 	"garden_maze": {
 		"speaker": "Elysia",
-		"text": "\"Okay. Watch. You put food down, and it finds it. Every single time.\"",
+		"text": "[excited] [eager] \"Okay. Watch. You put food down, and it finds it. Every single time.\"",
 		"minigame": "res://Scenes/Minigames/slime_maze.tscn",
 		"settings": {"flakes": 3},
 		"results": {
@@ -1361,13 +1361,13 @@
 
 	"garden_go_5": {
 		"speaker": "Elysia",
-		"text": "\"Sorry. That was a lot.\"",
+		"text": "[embarrassed] [breathless] \"Sorry. That was a lot.\"",
 		"next": "garden_go_6"
 	},
 
 	"garden_go_6": {
 		"speaker": "Kay",
-		"text": "\"It wasn't.\"",
+		"text": "[warm] [softly] \"It wasn't.\"",
 		"next": "garden_tease_1"
 	},
 
@@ -1379,25 +1379,25 @@
 
 	"garden_tease_2": {
 		"speaker": "Kay",
-		"text": "\"Should I be jealous?\"",
+		"text": "[teasing] [mock-serious] \"Should I be jealous?\"",
 		"next": "garden_tease_3"
 	},
 
 	"garden_tease_3": {
 		"speaker": "Elysia",
-		"text": "\"Of what?\"",
+		"text": "[confused] \"Of what?\"",
 		"next": "garden_tease_4"
 	},
 
 	"garden_tease_4": {
 		"speaker": "Kay",
-		"text": "\"Physarum. You've never looked at me like that.\"",
+		"text": "[teasing] [deadpan] \"Physarum. You've never looked at me like that.\"",
 		"next": "garden_tease_5"
 	},
 
 	"garden_tease_5": {
 		"speaker": "Elysia",
-		"text": "He's teasing me about slime. Nobody teases me about slime. People laugh at me about slime.",
+		"text": "[surprised] [moved, to herself] He's teasing me about slime. Nobody teases me about slime. People laugh at me about slime.",
 		"next": "garden_tease_6"
 	},
 
@@ -1412,7 +1412,7 @@
 
 	"garden_tease_k_1": {
 		"speaker": "Elysia",
-		"text": "\"K!!\"",
+		"text": "[embarrassed] [shouting] \"K!!\"",
 		"next": "garden_tease_k_2"
 	},
 
@@ -1424,19 +1424,19 @@
 
 	"garden_tease_k_3": {
 		"speaker": "Elysia",
-		"text": "\"It solved a maze. Without a brain. What have you ever solved?\"",
+		"text": "[playful] [defensive] \"It solved a maze. Without a brain. What have you ever solved?\"",
 		"next": "garden_tease_k_4"
 	},
 
 	"garden_tease_k_4": {
 		"speaker": "Kay",
-		"text": "\"Bank's slides.\"",
+		"text": "[deadpan] \"Bank's slides.\"",
 		"next": "garden_tease_k_5"
 	},
 
 	"garden_tease_k_5": {
 		"speaker": "Elysia",
-		"text": "\"That's not a maze. That's a hostage situation.\"",
+		"text": "\"[laughs] That's not a maze. That's a hostage situation.\"",
 		"next": "garden_tease_k_6"
 	},
 
@@ -1448,19 +1448,19 @@
 
 	"garden_tease_k_7": {
 		"speaker": "Elysia",
-		"text": "I made Kay laugh. With slime.",
+		"text": "[giddy] [softly, to herself] I made Kay laugh. With slime.",
 		"next": "garden_gate_1"
 	},
 
 	"garden_tease_off_1": {
 		"speaker": "Elysia",
-		"text": "\"Haha, it's just slime.\"",
+		"text": "[forced laugh] [dismissive] \"Haha, it's just slime.\"",
 		"next": "garden_tease_off_2"
 	},
 
 	"garden_tease_off_2": {
 		"speaker": "Kay",
-		"text": "\"...Okay.\"",
+		"text": "[uncertain] [quietly] \"...Okay.\"",
 		"next": "garden_tease_off_3"
 	},
 
@@ -1472,7 +1472,7 @@
 
 	"garden_stop_1": {
 		"speaker": "Elysia",
-		"text": "\"Haha, anyway— wow, your chilies are so small! Is that normal?\"",
+		"text": "\"[forced laugh] Haha, anyway— [overly bright] wow, your chilies are so small! Is that normal?\"",
 		"next": "garden_stop_2"
 	},
 
@@ -1484,7 +1484,7 @@
 
 	"garden_stop_3": {
 		"speaker": "Kay",
-		"text": "\"...I think so.\"",
+		"text": "[uncertain] [quietly] \"...I think so.\"",
 		"next": "garden_stop_4"
 	},
 
@@ -1503,25 +1503,25 @@
 
 	"garden_gate_2": {
 		"speaker": "Elysia",
-		"text": "Grey. He's grey, like a photo left in the sun.",
+		"text": "[worried] [softly, to herself] Grey. He's grey, like a photo left in the sun.",
 		"next": "garden_gate_3"
 	},
 
 	"garden_gate_3": {
 		"speaker": "Elysia",
-		"text": "\"You look tired, K.\"",
+		"text": "[concerned] [softly] \"You look tired, K.\"",
 		"next": "garden_gate_4"
 	},
 
 	"garden_gate_4": {
 		"speaker": "Kay",
-		"text": "\"I'm always tired.\"",
+		"text": "[dismissive] [tired] \"I'm always tired.\"",
 		"next": "garden_gate_5"
 	},
 
 	"garden_gate_5": {
 		"speaker": "Elysia",
-		"text": "\"That's what worries me.\"",
+		"text": "[worried] [quietly] \"That's what worries me.\"",
 		"next": "garden_gate_6"
 	},
 
@@ -1533,19 +1533,19 @@
 
 	"garden_gate_7": {
 		"speaker": "Elysia",
-		"text": "He's carrying something. He's always carrying something.",
+		"text": "[worried] [to herself] He's carrying something. He's always carrying something.",
 		"next": "garden_gate_8"
 	},
 
 	"garden_gate_8": {
 		"speaker": "Elysia",
-		"text": "He'll tell me when he's ready.",
+		"text": "[hopeful] [to herself] He'll tell me when he's ready.",
 		"next": "garden_gate_9"
 	},
 
 	"garden_gate_9": {
 		"speaker": "Elysia",
-		"text": "...Will he?",
+		"text": "[doubtful] [whispering] ...Will he?",
 		"next": "vcall_1"
 	},
 
@@ -1563,43 +1563,43 @@
 
 	"vcall_3": {
 		"speaker": "Elysia",
-		"text": "\"Did you eat?\"",
+		"text": "[suspicious] [caring] \"Did you eat?\"",
 		"next": "vcall_4"
 	},
 
 	"vcall_4": {
 		"speaker": "Kay",
-		"text": "\"...Define eat.\"",
+		"text": "[evasive] [deadpan] \"...Define eat.\"",
 		"next": "vcall_5"
 	},
 
 	"vcall_5": {
 		"speaker": "Elysia",
-		"text": "\"Kay.\"",
+		"text": "[stern] [warning] \"Kay.\"",
 		"next": "vcall_6"
 	},
 
 	"vcall_6": {
 		"speaker": "Kay",
-		"text": "\"I had a yogurt drink.\"",
+		"text": "[sheepish] \"I had a yogurt drink.\"",
 		"next": "vcall_7"
 	},
 
 	"vcall_7": {
 		"speaker": "Elysia",
-		"text": "\"That's a drink. It's in the name. Go make eggs. I'm not hanging up until I hear the pan.\"",
+		"text": "[exasperated] [bossy] \"That's a drink. It's in the name. Go make eggs. I'm not hanging up until I hear the pan.\"",
 		"next": "vcall_8"
 	},
 
 	"vcall_8": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[teasing] \"Yes, ma'am.\"",
 		"next": "vcall_9"
 	},
 
 	"vcall_9": {
 		"speaker": "Elysia",
-		"text": "\"Don't ma'am me.\"",
+		"text": "[annoyed] [flustered] \"Don't ma'am me.\"",
 		"next": "vcall_10"
 	},
 
@@ -1611,7 +1611,7 @@
 
 	"vcall_11": {
 		"speaker": "Elysia",
-		"text": "\"Go. Pan. Now.\"",
+		"text": "[bossy] [firm] \"Go. Pan. Now.\"",
 		"next": "vcall_12"
 	},
 
@@ -1629,7 +1629,7 @@
 
 	"vcall_14": {
 		"speaker": "Kay",
-		"text": "\"Were you up late again?\"",
+		"text": "[gentle] [concerned] \"Were you up late again?\"",
 		"next": "vcall_15"
 	},
 
@@ -1644,43 +1644,43 @@
 
 	"vcall_little_1": {
 		"speaker": "Elysia",
-		"text": "\"...A little. Till three. Ploy stuff. It's fine.\"",
+		"text": "[tired] [dismissive] \"...A little. Till three. Ploy stuff. It's fine.\"",
 		"next": "vcall_little_2"
 	},
 
 	"vcall_little_2": {
 		"speaker": "Kay",
-		"text": "\"You're very bossy about my sleep.\"",
+		"text": "[teasing] [pointed] \"You're very bossy about my sleep.\"",
 		"next": "vcall_diff_1"
 	},
 
 	"vcall_baby_1": {
 		"speaker": "Elysia",
-		"text": "\"Nope! Slept like a baby 😇\"",
+		"text": "[overly cheerful] [lying] \"Nope! Slept like a baby 😇\"",
 		"next": "vcall_baby_2"
 	},
 
 	"vcall_baby_2": {
 		"speaker": "Kay",
-		"text": "\"You're very bossy about my sleep for someone who slept like a baby.\"",
+		"text": "[teasing] [skeptical] \"You're very bossy about my sleep for someone who slept like a baby.\"",
 		"next": "vcall_diff_1"
 	},
 
 	"vcall_diff_1": {
 		"speaker": "Elysia",
-		"text": "\"That's different.\"",
+		"text": "[defensive] [quickly] \"That's different.\"",
 		"next": "vcall_diff_2"
 	},
 
 	"vcall_diff_2": {
 		"speaker": "Kay",
-		"text": "\"How?\"",
+		"text": "[curious] [softly] \"How?\"",
 		"next": "vcall_diff_3"
 	},
 
 	"vcall_diff_3": {
 		"speaker": "Elysia",
-		"text": "\"Because it's you.\"",
+		"text": "[softly] [sincere] \"Because it's you.\"",
 		"next": "vcall_diff_4"
 	},
 
@@ -1698,7 +1698,7 @@
 
 	"vcall_sleep_2": {
 		"speaker": "Elysia",
-		"text": "I could fall asleep like this every night.",
+		"text": "[sleepy] [content, to herself] I could fall asleep like this every night.",
 		"next": "vcall_sleep_3"
 	},
 
@@ -1710,31 +1710,31 @@
 
 	"vcall_am_1": {
 		"speaker": "Elysia",
-		"text": "did i fall asleep on u",
+		"text": "[embarrassed] [sleepy] did i fall asleep on u",
 		"next": "vcall_am_2"
 	},
 
 	"vcall_am_2": {
 		"speaker": "Kay",
-		"text": "you snore",
+		"text": "[teasing] you snore",
 		"next": "vcall_am_3"
 	},
 
 	"vcall_am_3": {
 		"speaker": "Elysia",
-		"text": "I DO NOT",
+		"text": "[shouting] [embarrassed] I DO NOT",
 		"next": "vcall_am_4"
 	},
 
 	"vcall_am_4": {
 		"speaker": "Kay",
-		"text": "small ones. like a cat",
+		"text": "[teasing] [fond] small ones. like a cat",
 		"next": "vcall_am_5"
 	},
 
 	"vcall_am_5": {
 		"speaker": "Elysia",
-		"text": "DELETE THIS CHAT",
+		"text": "[shouting] [mortified] DELETE THIS CHAT",
 		"next": "vcall_am_6"
 	},
 
@@ -1746,37 +1746,37 @@
 
 	"vcall_am_7": {
 		"speaker": "Elysia",
-		"text": "also WHY are 6 and 7 done in my book",
+		"text": "[suspicious] [indignant] also WHY are 6 and 7 done in my book",
 		"next": "vcall_am_8"
 	},
 
 	"vcall_am_8": {
 		"speaker": "Kay",
-		"text": "they're not",
+		"text": "[innocent] [deadpan] they're not",
 		"next": "vcall_am_9"
 	},
 
 	"vcall_am_9": {
 		"speaker": "Elysia",
-		"text": "K.",
+		"text": "[stern] K.",
 		"next": "vcall_am_10"
 	},
 
 	"vcall_am_10": {
 		"speaker": "Kay",
-		"text": "...only 6 and 7",
+		"text": "[sheepish] ...only 6 and 7",
 		"next": "vcall_am_11"
 	},
 
 	"vcall_am_11": {
 		"speaker": "Elysia",
-		"text": "He did my homework. Of course he did. At midnight, while I was asleep, like it was nothing.",
+		"text": "[touched] [worried, to herself] He did my homework. Of course he did. At midnight, while I was asleep, like it was nothing.",
 		"next": "vcall_am_12"
 	},
 
 	"vcall_am_12": {
 		"speaker": "Elysia",
-		"text": "Who does his?",
+		"text": "[worried] [quietly] Who does his?",
 		"next": "vcall_am_13"
 	},
 
@@ -1788,13 +1788,13 @@
 
 	"vcall_am_14": {
 		"speaker": "Kay",
-		"text": "yes ma'am",
+		"text": "[teasing] yes ma'am",
 		"next": "vcall_am_15"
 	},
 
 	"vcall_am_15": {
 		"speaker": "Elysia",
-		"text": "😤😤😤",
+		"text": "[huffs] [flustered] 😤😤😤",
 		"next": "nam_1"
 	},
 
@@ -1810,7 +1810,7 @@
 
 	"nam_2": {
 		"speaker": "Ploy",
-		"text": "\"Oh my god. Who brings a plushie to high school?\"",
+		"text": "[mocking] [laughing] \"Oh my god. Who brings a plushie to high school?\"",
 		"next": "nam_3"
 	},
 
@@ -1834,7 +1834,7 @@
 
 	"nam_6": {
 		"speaker": "Elysia",
-		"text": "If I laugh, it's over in a second. If I don't...",
+		"text": "[conflicted] [to herself] If I laugh, it's over in a second. If I don't...",
 		"timed": true,
 		"choices": [
 			{"text": "Laugh along", "type": "perform", "mask_change": 10, "energy_change": -15, "next": "nam_laugh_1"},
@@ -1874,13 +1874,13 @@
 
 	"nam_cute_3": {
 		"speaker": "Ploy",
-		"text": "\"...Okay? Weird, but okay.\"",
+		"text": "[dismissive] [judgmental] \"...Okay? Weird, but okay.\"",
 		"next": "nam_cute_4"
 	},
 
 	"nam_cute_4": {
 		"speaker": "Elysia",
-		"text": "Weird.",
+		"text": "[hurt] [quietly, to herself] Weird.",
 		"next": "nam_cute_5"
 	},
 
@@ -1916,7 +1916,7 @@
 
 	"joke_5": {
 		"speaker": "Kay",
-		"text": "\"Careful. Next you'll be keeping slime in your bag.\"",
+		"text": "[teasing] [playful] \"Careful. Next you'll be keeping slime in your bag.\"",
 		"next": "joke_6"
 	},
 
@@ -1934,7 +1934,7 @@
 
 	"joke_8": {
 		"speaker": "Elysia",
-		"text": "He doesn't know. He can't know. It's a joke about the version of me he likes. It's a nice joke.",
+		"text": "[hurt] [rationalizing] He doesn't know. He can't know. It's a joke about the version of me he likes. It's a nice joke.",
 		"choices": [
 			{"text": "\"Haha. It's fine!\"", "type": "perform", "mask_change": 5, "energy_change": -10, "next": "joke_fine_1"},
 			{"text": "\"...That one kind of hurt.\"", "type": "honest", "mask_change": -10, "energy_change": 0, "next": "joke_hurt_1", "set_flag": "ToldKayHurt"}
@@ -1949,13 +1949,13 @@
 
 	"joke_fine_2": {
 		"speaker": "Elysia",
-		"text": "\"Haha. It's fine!\"",
+		"text": "\"[forced laugh] Haha. [tight] It's fine!\"",
 		"next": "joke_fine_3"
 	},
 
 	"joke_fine_3": {
 		"speaker": "Elysia",
-		"text": "Oh no. I'm doing the version. With Kay.",
+		"text": "[dismayed] [to herself] Oh no. I'm doing the version. With Kay.",
 		"next": "joke_fine_4"
 	},
 
@@ -1967,13 +1967,13 @@
 
 	"joke_fine_5": {
 		"speaker": "Kay",
-		"text": "\"...Sorry. That was a dumb joke.\"",
+		"text": "[apologetic] [quietly] \"...Sorry. That was a dumb joke.\"",
 		"next": "joke_fine_6"
 	},
 
 	"joke_fine_6": {
 		"speaker": "Elysia",
-		"text": "\"It was a little dumb.\"",
+		"text": "[quietly] [hurt] \"It was a little dumb.\"",
 		"next": "joke_fine_7"
 	},
 
@@ -1985,7 +1985,7 @@
 
 	"joke_fine_8": {
 		"speaker": "Elysia",
-		"text": "\"It's not you. Long day.\"",
+		"text": "[tired] [reassuring] \"It's not you. Long day.\"",
 		"next": "joke_fine_9"
 	},
 
@@ -1997,7 +1997,7 @@
 
 	"joke_hurt_1": {
 		"speaker": "Elysia",
-		"text": "\"...That one kind of hurt.\"",
+		"text": "[quietly] [honest] \"...That one kind of hurt.\"",
 		"next": "joke_hurt_2"
 	},
 
@@ -2009,31 +2009,31 @@
 
 	"joke_hurt_3": {
 		"speaker": "Kay",
-		"text": "\"Sorry. I didn't— sorry.\"",
+		"text": "[flustered] [apologetic] \"Sorry. I didn't— sorry.\"",
 		"next": "joke_hurt_4"
 	},
 
 	"joke_hurt_4": {
 		"speaker": "Elysia",
-		"text": "\"You didn't know.\"",
+		"text": "[gentle] [softly] \"You didn't know.\"",
 		"next": "joke_hurt_5"
 	},
 
 	"joke_hurt_5": {
 		"speaker": "Kay",
-		"text": "\"Know what?\"",
+		"text": "[confused] [gentle] \"Know what?\"",
 		"next": "joke_hurt_6"
 	},
 
 	"joke_hurt_6": {
 		"speaker": "Elysia",
-		"text": "\"...Not today. Okay?\"",
+		"text": "[hesitant] [pleading] \"...Not today. Okay?\"",
 		"next": "joke_hurt_7"
 	},
 
 	"joke_hurt_7": {
 		"speaker": "Kay",
-		"text": "\"Okay.\"",
+		"text": "[gentle] \"Okay.\"",
 		"next": "joke_hurt_8"
 	},
 
@@ -2045,7 +2045,7 @@
 
 	"joke_hurt_9": {
 		"speaker": "Elysia",
-		"text": "He didn't push.",
+		"text": "[relieved] [touched, to herself] He didn't push.",
 		"next": "joke_text_1"
 	},
 
@@ -2063,7 +2063,7 @@
 
 	"joke_text_3": {
 		"speaker": "Elysia",
-		"text": "ANY SLIME???",
+		"text": "[shouting] [excited] ANY SLIME???",
 		"next": "joke_text_4"
 	},
 
@@ -2084,13 +2084,13 @@
 
 	"pun_2": {
 		"speaker": "Elysia",
-		"text": "\"What's wrong?\"",
+		"text": "[concerned] [gentle] \"What's wrong?\"",
 		"next": "pun_3"
 	},
 
 	"pun_3": {
 		"speaker": "Pun",
-		"text": "\"Nothing.\"",
+		"text": "[sulking] [quietly] \"Nothing.\"",
 		"next": "pun_4"
 	},
 
@@ -2102,14 +2102,14 @@
 
 	"pun_5": {
 		"speaker": "Elysia",
-		"text": "\"Pun.\"",
+		"text": "[gentle] [firm] \"Pun.\"",
 		"next": "pun_6"
 	},
 
 	"pun_6": {
 		"speaker": "Pun",
 		"emotion": "sad",
-		"text": "\"...They call me slime boy. I took my slime mold for show-and-tell and Tee smeared it all over the inside of my bag. Everyone laughed.\"",
+		"text": "[sad] [voice breaking] [crying] \"...They call me slime boy. I took my slime mold for show-and-tell and Tee smeared it all over the inside of my bag. Everyone laughed.\"",
 		"next": "pun_7"
 	},
 
@@ -2121,13 +2121,13 @@
 
 	"pun_8": {
 		"speaker": "Elysia",
-		"text": "Third grade. Slime in my bag. A whole week.",
+		"text": "[pained] [to herself] Third grade. Slime in my bag. A whole week.",
 		"next": "pun_9"
 	},
 
 	"pun_9": {
 		"speaker": "Elysia",
-		"text": "He's going to go through what I went through. Unless he learns what I learned.",
+		"text": "[protective] [determined] He's going to go through what I went through. Unless he learns what I learned.",
 		"next": "pun_10"
 	},
 
@@ -2148,7 +2148,7 @@
 
 	"pun_hide_2": {
 		"speaker": "Pun",
-		"text": "\"Okay.\"",
+		"text": "[sad] [small voice] \"Okay.\"",
 		"next": "pun_hide_3"
 	},
 
@@ -2168,25 +2168,25 @@
 
 	"pun_hide_5": {
 		"speaker": "Elysia",
-		"text": "I did that. I did what they did to me. I was just nice about it.",
+		"text": "[horrified] [to herself] I did that. I did what they did to me. I was just nice about it.",
 		"next": "sports_1"
 	},
 
 	"pun_bug_1": {
 		"speaker": "Pun",
-		"text": "\"...Really?\"",
+		"text": "[hopeful] [sniffles] \"...Really?\"",
 		"next": "pun_bug_2"
 	},
 
 	"pun_bug_2": {
 		"speaker": "Elysia",
-		"text": "\"Really. Tee is going to be boring his whole life. You're going to know what a Physarum is.\"",
+		"text": "[warm] [proud] \"Really. Tee is going to be boring his whole life. You're going to know what a Physarum is.\"",
 		"next": "pun_bug_3"
 	},
 
 	"pun_bug_3": {
 		"speaker": "Pun",
-		"text": "\"What's a Physarum?\"",
+		"text": "[curious] [excited] \"What's a Physarum?\"",
 		"next": "pun_bug_4"
 	},
 
@@ -2227,13 +2227,13 @@
 
 	"sports_5": {
 		"speaker": "Elysia",
-		"text": "Kay talks about him like a house he used to live in. Same street. Name still on the mailbox.",
+		"text": "[thoughtful] [to herself] Kay talks about him like a house he used to live in. Same street. Name still on the mailbox.",
 		"next": "sports_6"
 	},
 
 	"sports_6": {
 		"speaker": "Elysia",
-		"text": "I don't know what happened between them. Kay has never said.",
+		"text": "[curious] [quietly] I don't know what happened between them. Kay has never said.",
 		"timed": true,
 		"choices": [
 			{"text": "Get him a cold drink, in front of everyone", "type": "helpful", "mask_change": -10, "energy_change": 5, "next": "sports_drink_1", "set_flag": "SportsDayDrink"},
@@ -2250,7 +2250,7 @@
 
 	"sports_drink_2": {
 		"speaker": "Elysia",
-		"text": "\"Hydrate, water boy!\"",
+		"text": "[shouting] [cheerful] \"Hydrate, water boy!\"",
 		"real_text": "\"You looked thirsty. And kind of alone.\"",
 		"next": "sports_drink_3",
 		"sfx": "stop"
@@ -2270,7 +2270,7 @@
 
 	"sports_stay_1": {
 		"speaker": "Elysia",
-		"text": "He doesn't want people looking at us like that.",
+		"text": "[hurt] [to herself] He doesn't want people looking at us like that.",
 		"next": "sports_stay_2"
 	},
 
@@ -2301,7 +2301,7 @@
 
 	"stands_3": {
 		"speaker": "Elysia",
-		"text": "\"I yelled for nine hours.\"",
+		"text": "[hoarse] [proud] \"I yelled for nine hours.\"",
 		"next": "stands_note_1",
 		"secret": {"condition": "flag_true", "flag": "ToldPunHide", "next": "stands_4"}
 	},
@@ -2317,7 +2317,7 @@
 
 	"stands_pun_1": {
 		"speaker": "Elysia",
-		"text": "\"My little brother got called slime boy this week. A kid smeared his slime mold all over the inside of his bag. Everyone laughed.\"",
+		"text": "[sad] [quietly] \"My little brother got called slime boy this week. A kid smeared his slime mold all over the inside of his bag. Everyone laughed.\"",
 		"next": "stands_pun_2"
 	},
 
@@ -2329,37 +2329,37 @@
 
 	"stands_pun_3": {
 		"speaker": "Elysia",
-		"text": "Why did he flinch?",
+		"text": "[puzzled] [to herself] Why did he flinch?",
 		"next": "stands_pun_4"
 	},
 
 	"stands_pun_4": {
 		"speaker": "Elysia",
-		"text": "\"And I told him to keep the slime at home. Just at school. Just for a while. Like that was advice. Like it was a good idea.\"",
+		"text": "[guilty] [voice breaking] \"And I told him to keep the slime at home. Just at school. Just for a while. Like that was advice. Like it was a good idea.\"",
 		"next": "stands_pun_5"
 	},
 
 	"stands_pun_5": {
 		"speaker": "Kay",
-		"text": "\"You were trying to protect him.\"",
+		"text": "[gentle] \"You were trying to protect him.\"",
 		"next": "stands_pun_6"
 	},
 
 	"stands_pun_6": {
 		"speaker": "Elysia",
-		"text": "\"Yeah.\"",
+		"text": "[quietly] \"Yeah.\"",
 		"next": "stands_pun_7"
 	},
 
 	"stands_pun_7": {
 		"speaker": "Kay",
-		"text": "\"I do that too. It doesn't always work.\"",
+		"text": "[softly] [honest] \"I do that too. It doesn't always work.\"",
 		"next": "stands_pun_8"
 	},
 
 	"stands_pun_8": {
 		"speaker": "Elysia",
-		"text": "Protect who? From what?",
+		"text": "[curious] [worried, to herself] Protect who? From what?",
 		"next": "stands_pun_9"
 	},
 
@@ -2392,37 +2392,37 @@
 
 	"stands_said_1": {
 		"speaker": "Elysia",
-		"text": "\"You didn't make fun of me once today.\"",
+		"text": "[gentle] [observant] \"You didn't make fun of me once today.\"",
 		"next": "stands_said_2"
 	},
 
 	"stands_said_2": {
 		"speaker": "Kay",
-		"text": "\"I was busy.\"",
+		"text": "[evasive] [tired] \"I was busy.\"",
 		"next": "stands_said_3"
 	},
 
 	"stands_said_3": {
 		"speaker": "Elysia",
-		"text": "\"Usually you'd have called me ma'am by now. Like four times. Today, zero. That's how I know something's wrong.\"",
+		"text": "[worried] [half-teasing] \"Usually you'd have called me ma'am by now. Like four times. Today, zero. That's how I know something's wrong.\"",
 		"next": "stands_said_4"
 	},
 
 	"stands_said_4": {
 		"speaker": "Kay",
-		"text": "\"It's just the sun.\"",
+		"text": "[dismissive] \"It's just the sun.\"",
 		"next": "stands_said_5"
 	},
 
 	"stands_said_5": {
 		"speaker": "Elysia",
-		"text": "It isn't the sun.",
+		"text": "[worried] [to herself] It isn't the sun.",
 		"next": "stands_said_6"
 	},
 
 	"stands_said_6": {
 		"speaker": "Elysia",
-		"text": "\"Okay.\"",
+		"text": "[quietly] [accepting] \"Okay.\"",
 		"next": "stands_said_7"
 	},
 
@@ -2440,7 +2440,7 @@
 
 	"stands_quiet_2": {
 		"speaker": "Elysia",
-		"text": "He isn't teasing me. He's grey again. I don't know which one scares me more.",
+		"text": "[scared] [to herself] He isn't teasing me. He's grey again. I don't know which one scares me more.",
 		"next": "stands_quiet_3"
 	},
 
@@ -2458,7 +2458,7 @@
 
 	"stands_end_2": {
 		"speaker": "Elysia",
-		"text": "\"Tease me about something. Anything. I need it.\"",
+		"text": "[pleading] [half-laughing] \"Tease me about something. Anything. I need it.\"",
 		"next": "stands_end_3"
 	},
 
@@ -2470,13 +2470,13 @@
 
 	"stands_end_4": {
 		"speaker": "Kay",
-		"text": "\"...Your voice sounds like a duck.\"",
+		"text": "\"[hesitates] ...[teasing] Your voice sounds like a duck.\"",
 		"next": "stands_end_5"
 	},
 
 	"stands_end_5": {
 		"speaker": "Elysia",
-		"text": "\"Thank you.\"",
+		"text": "[relieved] [laughing softly] \"Thank you.\"",
 		"next": "stands_end_6"
 	},
 
@@ -2510,19 +2510,19 @@
 
 	"study_2": {
 		"speaker": "Elysia",
-		"text": "\"Phone. It goes in my bag until we finish the chemistry.\"",
+		"text": "[bossy] [firm] \"Phone. It goes in my bag until we finish the chemistry.\"",
 		"next": "study_3"
 	},
 
 	"study_3": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[teasing] \"Yes, ma'am.\"",
 		"next": "study_4"
 	},
 
 	"study_4": {
 		"speaker": "Elysia",
-		"text": "\"Stop that.\"",
+		"text": "[annoyed] [flustered] \"Stop that.\"",
 		"next": "study_5"
 	},
 
@@ -2534,19 +2534,19 @@
 
 	"study_6": {
 		"speaker": "Elysia",
-		"text": "\"Ugh. You're annoyingly right.\"",
+		"text": "[groans] [grudging] \"Ugh. You're annoyingly right.\"",
 		"next": "study_7"
 	},
 
 	"study_7": {
 		"speaker": "Kay",
-		"text": "\"You made the cards.\"",
+		"text": "[gentle] \"You made the cards.\"",
 		"next": "study_8"
 	},
 
 	"study_8": {
 		"speaker": "Elysia",
-		"text": "\"I made them hard.\"",
+		"text": "[smug] \"I made them hard.\"",
 		"next": "study_9"
 	},
 
@@ -2558,7 +2558,7 @@
 
 	"study_10": {
 		"speaker": "Elysia",
-		"text": "Oh.",
+		"text": "[surprised] [softly] Oh.",
 		"next": "study_11"
 	},
 
@@ -2576,7 +2576,7 @@
 
 	"study_13": {
 		"speaker": "Elysia",
-		"text": "Asleep, he looks younger. Like someone who isn't carrying anything, for once.",
+		"text": "[tender] [whispering] Asleep, he looks younger. Like someone who isn't carrying anything, for once.",
 		"next": "study_14"
 	},
 
@@ -2594,13 +2594,13 @@
 
 	"study_16": {
 		"speaker": "Kay",
-		"text": "\"Sorry. Sorry. Your arm—\"",
+		"text": "[startled] [apologetic] \"Sorry. Sorry. Your arm—\"",
 		"next": "study_17"
 	},
 
 	"study_17": {
 		"speaker": "Elysia",
-		"text": "\"My arm is dead. It's fine. I've accepted it.\"",
+		"text": "[dramatic] [deadpan] \"My arm is dead. It's fine. I've accepted it.\"",
 		"next": "study_18"
 	},
 
@@ -2612,31 +2612,31 @@
 
 	"study_19": {
 		"speaker": "Elysia",
-		"text": "\"Also, you drool.\"",
+		"text": "[teasing] \"Also, you drool.\"",
 		"next": "study_20"
 	},
 
 	"study_20": {
 		"speaker": "Kay",
-		"text": "\"I do not.\"",
+		"text": "[indignant] \"I do not.\"",
 		"next": "study_21"
 	},
 
 	"study_21": {
 		"speaker": "Elysia",
-		"text": "\"Little bit. Like a dog.\"",
+		"text": "[teasing] [giggling] \"Little bit. Like a dog.\"",
 		"next": "study_22"
 	},
 
 	"study_22": {
 		"speaker": "Kay",
-		"text": "\"...Not like a cat?\"",
+		"text": "[hopeful] [deadpan] \"...Not like a cat?\"",
 		"next": "study_23"
 	},
 
 	"study_23": {
 		"speaker": "Elysia",
-		"text": "\"Cats are dignified. Now we're even.\"",
+		"text": "[smug] [playful] \"Cats are dignified. Now we're even.\"",
 		"next": "study_24"
 	},
 
@@ -2648,25 +2648,25 @@
 
 	"study_25": {
 		"speaker": "Kay",
-		"text": "\"You look tired.\"",
+		"text": "[gentle] [concerned] \"You look tired.\"",
 		"next": "study_26"
 	},
 
 	"study_26": {
 		"speaker": "Elysia",
-		"text": "\"I'm always tired.\"",
+		"text": "[dismissive] [tired] \"I'm always tired.\"",
 		"next": "study_27"
 	},
 
 	"study_27": {
 		"speaker": "Elysia",
-		"text": "Oh. That's his line. From the gate.",
+		"text": "[realizing] [to herself] Oh. That's his line. From the gate.",
 		"next": "study_28"
 	},
 
 	"study_28": {
 		"speaker": "Kay",
-		"text": "\"...That's what worries me.\"",
+		"text": "\"[hesitates] ...[worried] [softly] That's what worries me.\"",
 		"next": "study_29"
 	},
 
@@ -2681,19 +2681,19 @@
 
 	"study_ask_1": {
 		"speaker": "Elysia",
-		"text": "\"K. Are you okay? Actually?\"",
+		"text": "[serious] [gentle] \"K. Are you okay? Actually?\"",
 		"next": "study_ask_2"
 	},
 
 	"study_ask_2": {
 		"speaker": "Kay",
-		"text": "\"It's fine. Just midterms.\"",
+		"text": "[dismissive] [tired] \"It's fine. Just midterms.\"",
 		"next": "study_ask_3"
 	},
 
 	"study_ask_3": {
 		"speaker": "Elysia",
-		"text": "That's what I'd say.",
+		"text": "[worried] [to herself] That's what I'd say.",
 		"next": "study_ask_4"
 	},
 
@@ -2705,13 +2705,13 @@
 
 	"study_ask_5": {
 		"speaker": "Elysia",
-		"text": "\"Okay. Then sleep tonight. That's an order.\"",
+		"text": "[unconvinced] [bossy] \"Okay. Then sleep tonight. That's an order.\"",
 		"next": "study_ask_6"
 	},
 
 	"study_ask_6": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[softly] [teasing] \"Yes, ma'am.\"",
 		"next": "study_ask_7"
 	},
 
@@ -2729,13 +2729,13 @@
 
 	"study_skip_2": {
 		"speaker": "Elysia",
-		"text": "\"Sleep tonight. That's an order.\"",
+		"text": "[bossy] [gentle] \"Sleep tonight. That's an order.\"",
 		"next": "study_skip_3"
 	},
 
 	"study_skip_3": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[softly] [teasing] \"Yes, ma'am.\"",
 		"next": "mid_3"
 	},
 
@@ -2750,20 +2750,20 @@
 
 	"mid_4": {
 		"speaker": "Mom",
-		"text": "\"Elysia. What happened? You're always so good at history.\"",
+		"text": "[disappointed] [worried] \"Elysia. What happened? You're always so good at history.\"",
 		"next": "mid_5"
 	},
 
 	"mid_5": {
 		"speaker": "Elysia",
-		"text": "\"I know. Sorry.\"",
+		"text": "[quietly] [ashamed] \"I know. Sorry.\"",
 		"real_text": "\"I'm just tired, Mom.\"",
 		"next": "mid_6"
 	},
 
 	"mid_6": {
 		"speaker": "Mom",
-		"text": "\"You're on your phone too much. I see your light on at three in the morning.\"",
+		"text": "[stern] [worried] \"You're on your phone too much. I see your light on at three in the morning.\"",
 		"choices": [
 			{"text": "\"Sorry. I'll fix it.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "mid_sorry_1"},
 			{"text": "\"Ploy's going through a breakup. She calls me every night. I don't know how to say no.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "mid_honest_1", "set_flag": "ToldMomPloy"}
@@ -2772,7 +2772,7 @@
 
 	"mid_sorry_1": {
 		"speaker": "Mom",
-		"text": "\"Okay. I know you will. You're my easy one.\"",
+		"text": "[warm] [relieved] \"Okay. I know you will. You're my easy one.\"",
 		"next": "mid_sorry_2"
 	},
 
@@ -2787,31 +2787,31 @@
 
 	"mid_honest_1": {
 		"speaker": "Mom",
-		"text": "\"Every night?\"",
+		"text": "[shocked] [concerned] \"Every night?\"",
 		"next": "mid_honest_2"
 	},
 
 	"mid_honest_2": {
 		"speaker": "Elysia",
-		"text": "\"Every night.\"",
+		"text": "[tired] [quietly] \"Every night.\"",
 		"next": "mid_honest_3"
 	},
 
 	"mid_honest_3": {
 		"speaker": "Mom",
-		"text": "\"Oh, sweetheart. You know you're allowed to hang up, right?\"",
+		"text": "[sympathetic] [gentle] \"Oh, sweetheart. You know you're allowed to hang up, right?\"",
 		"next": "mid_honest_4"
 	},
 
 	"mid_honest_4": {
 		"speaker": "Elysia",
-		"text": "\"She'd be hurt.\"",
+		"text": "[worried] [small voice] \"She'd be hurt.\"",
 		"next": "mid_honest_5"
 	},
 
 	"mid_honest_5": {
 		"speaker": "Mom",
-		"text": "\"Maybe. And you're hurt now. Somebody's going to be hurt either way. It doesn't always have to be you.\"",
+		"text": "[gentle] [wise] \"Maybe. And you're hurt now. Somebody's going to be hurt either way. It doesn't always have to be you.\"",
 		"next": "mid_honest_6"
 	},
 
@@ -2831,7 +2831,7 @@
 
 	"thu_2": {
 		"speaker": "Elysia",
-		"text": "K? didn't see u at the gate 👀",
+		"text": "[concerned] [casual] K? didn't see u at the gate 👀",
 		"next": "thu_3"
 	},
 
@@ -2843,7 +2843,7 @@
 
 	"thu_4": {
 		"speaker": "Elysia",
-		"text": "are you sick??",
+		"text": "[worried] are you sick??",
 		"next": "thu_5"
 	},
 
@@ -2855,7 +2855,7 @@
 
 	"thu_6": {
 		"speaker": "Elysia",
-		"text": "Kay doesn't get sick. Kay gets sick and comes anyway, grey, and says it's fine.",
+		"text": "[worried] [to herself] Kay doesn't get sick. Kay gets sick and comes anyway, grey, and says it's fine.",
 		"next": "thu_7"
 	},
 
@@ -2869,7 +2869,7 @@
 
 	"thu_8": {
 		"speaker": "Kay",
-		"text": "i couldn't get up today",
+		"text": "[flat] [tired] i couldn't get up today",
 		"next": "thu_9"
 	},
 
@@ -2882,13 +2882,13 @@
 
 	"thu_10": {
 		"speaker": "Elysia",
-		"text": "Couldn't. Not didn't. Not slept in. Not sick, lol.",
+		"text": "[alarmed] [to herself] Couldn't. Not didn't. Not slept in. Not sick, lol.",
 		"next": "thu_11"
 	},
 
 	"thu_11": {
 		"speaker": "Elysia",
-		"text": "Couldn't.",
+		"text": "[scared] [whispering] Couldn't.",
 		"next": "thu_12"
 	},
 
@@ -2906,19 +2906,19 @@
 
 	"thu_14": {
 		"speaker": "Elysia",
-		"text": "If it were me, what would I want someone to say?",
+		"text": "[thoughtful] [careful] If it were me, what would I want someone to say?",
 		"next": "thu_15"
 	},
 
 	"thu_15": {
 		"speaker": "Elysia",
-		"text": "ok. thank u for telling me.",
+		"text": "[gentle] [softly] ok. thank u for telling me.",
 		"next": "thu_16"
 	},
 
 	"thu_16": {
 		"speaker": "Elysia",
-		"text": "do u want me to call or do u want me to leave u alone",
+		"text": "[careful] [gentle] do u want me to call or do u want me to leave u alone",
 		"next": "thu_17"
 	},
 
@@ -2930,20 +2930,20 @@
 
 	"thu_18": {
 		"speaker": "Kay",
-		"text": "leave me alone for now. sorry",
+		"text": "[tired] [apologetic] leave me alone for now. sorry",
 		"next": "thu_19",
 		"sfx": "Notification"
 	},
 
 	"thu_19": {
 		"speaker": "Elysia",
-		"text": "Don't be sorry. Don't you dare be sorry.",
+		"text": "[fierce] [protective, to herself] Don't be sorry. Don't you dare be sorry.",
 		"next": "thu_20"
 	},
 
 	"thu_20": {
 		"speaker": "Elysia",
-		"text": "don't be sorry. i'm here.",
+		"text": "[warm] [reassuring] don't be sorry. i'm here.",
 		"next": "thu_21"
 	},
 
@@ -2962,7 +2962,7 @@
 
 	"thu_23": {
 		"speaker": "Elysia",
-		"text": "He asked me to leave him alone. I want to respect that. But someone should go.",
+		"text": "[torn] [to herself] He asked me to leave him alone. I want to respect that. But someone should go.",
 		"choices": [
 			{"text": "Find Ulyn", "type": "helpful", "mask_change": 0, "energy_change": 5, "next": "thu_ulyn_1", "set_flag": "AskedUlyn"},
 			{"text": "Go yourself, after school", "type": "helpful", "mask_change": -5, "energy_change": -5, "next": "thu_go_1", "set_flag": "WentHerself"},
@@ -2979,7 +2979,7 @@
 
 	"thu_ulyn_2": {
 		"speaker": "Elysia",
-		"text": "\"Can I talk to you? Just for a second.\"",
+		"text": "[nervous] [urgent] \"Can I talk to you? Just for a second.\"",
 		"next": "thu_ulyn_3"
 	},
 
@@ -2991,19 +2991,19 @@
 
 	"thu_ulyn_4": {
 		"speaker": "Elysia",
-		"text": "He knows something. Something I don't.",
+		"text": "[suspicious] [to herself] He knows something. Something I don't.",
 		"next": "thu_ulyn_5"
 	},
 
 	"thu_ulyn_5": {
 		"speaker": "Elysia",
-		"text": "\"He asked me to leave him alone for now. So I am. I want to respect that.\"",
+		"text": "[careful] [worried] \"He asked me to leave him alone for now. So I am. I want to respect that.\"",
 		"next": "thu_ulyn_6"
 	},
 
 	"thu_ulyn_6": {
 		"speaker": "Elysia",
-		"text": "\"But you're... different. You're Ulyn. He talks about you like...\"",
+		"text": "[hesitant] [searching for words] \"But you're... different. You're Ulyn. He talks about you like...\"",
 		"next": "thu_ulyn_7"
 	},
 
@@ -3015,19 +3015,19 @@
 
 	"thu_ulyn_8": {
 		"speaker": "Elysia",
-		"text": "\"Could you go see him? After school?\"",
+		"text": "[pleading] [softly] \"Could you go see him? After school?\"",
 		"next": "thu_ulyn_9"
 	},
 
 	"thu_ulyn_9": {
 		"speaker": "Ulyn",
-		"text": "\"Yeah. Yeah. I'll go.\"",
+		"text": "[determined] [shaken] \"Yeah. Yeah. I'll go.\"",
 		"next": "thu_ulyn_10"
 	},
 
 	"thu_ulyn_10": {
 		"speaker": "Elysia",
-		"text": "\"Don't tell him I asked you. He'll think he's a bother.\"",
+		"text": "[urgent] [quietly] \"Don't tell him I asked you. He'll think he's a bother.\"",
 		"next": "thu_night_1"
 	},
 
@@ -3062,13 +3062,13 @@
 
 	"thu_go_5": {
 		"speaker": "Elysia",
-		"text": "Oh.",
+		"text": "[surprised] [softly] Oh.",
 		"next": "thu_go_6"
 	},
 
 	"thu_go_6": {
 		"speaker": "Elysia",
-		"text": "He has someone. Right now, he has someone.",
+		"text": "[relieved] [moved] He has someone. Right now, he has someone.",
 		"next": "thu_go_7"
 	},
 
@@ -3095,13 +3095,13 @@
 
 	"thu_wait_2": {
 		"speaker": "Elysia",
-		"text": "I did the right thing. He asked for space.",
+		"text": "[convincing herself] I did the right thing. He asked for space.",
 		"next": "thu_wait_3"
 	},
 
 	"thu_wait_3": {
 		"speaker": "Elysia",
-		"text": "Then why does it feel like I did nothing?",
+		"text": "[sad] [frustrated] Then why does it feel like I did nothing?",
 		"next": "thu_night_1"
 	},
 
@@ -3117,7 +3117,7 @@
 
 	"thu_night_2": {
 		"speaker": "Elysia",
-		"text": "still here 🌙",
+		"text": "[gentle] [softly] still here 🌙",
 		"next": "thu_night_3"
 	},
 
@@ -3136,7 +3136,7 @@
 
 	"thu_ulyn_text_2": {
 		"speaker": "Ulyn",
-		"text": "he's ok. ish. thanks for telling me.",
+		"text": "[tired] [grateful] he's ok. ish. thanks for telling me.",
 		"next": "thu_ulyn_text_3"
 	},
 
@@ -3159,20 +3159,20 @@
 
 	"fri_2": {
 		"speaker": "Elysia",
-		"text": "tomorrow. 10am. i'm picking u up. no is not an option 😤",
+		"text": "[bossy] [excited] tomorrow. 10am. i'm picking u up. no is not an option 😤",
 		"next": "fri_3"
 	},
 
 	"fri_3": {
 		"speaker": "Kay",
-		"text": "ok",
+		"text": "[quietly] ok",
 		"next": "fri_4",
 		"sfx": "Notification"
 	},
 
 	"fri_4": {
 		"speaker": "Elysia",
-		"text": "He said ok.",
+		"text": "[surprised] [relieved] He said ok.",
 		"next": "sat_1"
 	},
 
@@ -3200,7 +3200,7 @@
 
 	"sat_4": {
 		"speaker": "Elysia",
-		"text": "Not today. Maybe not ever.",
+		"text": "[thoughtful] [to herself] Not today. Maybe not ever.",
 		"next": "sat_talk_1"
 	},
 
@@ -3226,7 +3226,7 @@
 
 	"sat_museum_4": {
 		"speaker": "Elysia",
-		"text": "\"I've never brought anyone here. Not even Mint. Mint knows. But I've never brought anyone.\"",
+		"text": "[shy] [softly] \"I've never brought anyone here. Not even Mint. Mint knows. But I've never brought anyone.\"",
 		"next": "sat_museum_5"
 	},
 
@@ -3238,7 +3238,7 @@
 
 	"sat_talk_1": {
 		"speaker": "Elysia",
-		"text": "\"You told me you couldn't get up. Thank you for telling me. You don't have to explain it.\"",
+		"text": "[gentle] [warm] \"You told me you couldn't get up. Thank you for telling me. You don't have to explain it.\"",
 		"next": "sat_talk_2"
 	},
 
@@ -3250,7 +3250,7 @@
 
 	"sat_talk_3": {
 		"speaker": "Kay",
-		"text": "\"I want to explain it. Some of it.\"",
+		"text": "[hesitant] [brave] \"I want to explain it. Some of it.\"",
 		"next": "sat_talk_4"
 	},
 
@@ -3268,13 +3268,13 @@
 
 	"sat_talk_6": {
 		"speaker": "Elysia",
-		"text": "Something old. The house on the same street, I think. I might never know.",
+		"text": "[thoughtful] [to herself] Something old. The house on the same street, I think. I might never know.",
 		"next": "sat_talk_7"
 	},
 
 	"sat_talk_7": {
 		"speaker": "Kay",
-		"text": "\"At school I keep away from you because I think being seen with me makes people talk about you. Makes you look weird.\"",
+		"text": "[nervous] [honest] \"At school I keep away from you because I think being seen with me makes people talk about you. Makes you look weird.\"",
 		"next": "sat_talk_8"
 	},
 
@@ -3286,13 +3286,13 @@
 
 	"sat_talk_9": {
 		"speaker": "Elysia",
-		"text": "...What?",
+		"text": "[stunned] [whispering] ...What?",
 		"next": "sat_talk_10"
 	},
 
 	"sat_talk_10": {
 		"speaker": "Elysia",
-		"text": "He wasn't embarrassed of me. He thought he was the embarrassing one.",
+		"text": "[realizing] [overwhelmed] He wasn't embarrassed of me. He thought he was the embarrassing one.",
 		"next": "sat_talk_11"
 	},
 
@@ -3304,7 +3304,7 @@
 
 	"sat_talk_12": {
 		"speaker": "Elysia",
-		"text": "\"You think you make me look weird?\"",
+		"text": "[disbelief] [hurt] \"You think you make me look weird?\"",
 		"next": "sat_talk_13"
 	},
 
@@ -3322,7 +3322,7 @@
 
 	"sat_talk_15": {
 		"speaker": "Elysia",
-		"text": "Now it's my turn.",
+		"text": "[nervous] [determined] Now it's my turn.",
 		"timed": true,
 		"sfx": "Inhale",
 		"choices": [
@@ -3333,7 +3333,7 @@
 
 	"sat_truth_1": {
 		"speaker": "Elysia",
-		"text": "\"K. I used to be the weird kid.\"",
+		"text": "[quietly] [vulnerable] \"K. I used to be the weird kid.\"",
 		"next": "sat_truth_2"
 	},
 
@@ -3345,38 +3345,38 @@
 
 	"sat_truth_3": {
 		"speaker": "Elysia",
-		"text": "\"Slime girl. In third grade a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
+		"text": "[pained] [steady] \"Slime girl. In third grade a boy scraped slime off a rotten log and smeared it inside my bag, and everyone laughed for a whole week. And I decided I'd never be weird again. Ever.\"",
 		"next": "sat_truth_4"
 	},
 
 	"sat_truth_4": {
 		"speaker": "Elysia",
-		"text": "\"I watch everything I say. Every single thing. With my friends I'm doing a version. The fun one. The one who's always fine.\"",
+		"text": "[tired] [honest] \"I watch everything I say. Every single thing. With my friends I'm doing a version. The fun one. The one who's always fine.\"",
 		"next": "sat_truth_5"
 	},
 
 	"sat_truth_5": {
 		"speaker": "Elysia",
 		"emotion": "tired",
-		"text": "\"It's so tiring.\"",
+		"text": "[exhausted] [sighs] \"It's so tiring.\"",
 		"next": "sat_truth_6"
 	},
 
 	"sat_truth_6": {
 		"speaker": "Elysia",
-		"text": "\"You and Mint are the only people I don't do the version with. So when you won't walk with me because people will talk, it feels like you're agreeing with them. Like even you think I should be careful.\"",
+		"text": "[vulnerable] [hurt] \"You and Mint are the only people I don't do the version with. So when you won't walk with me because people will talk, it feels like you're agreeing with them. Like even you think I should be careful.\"",
 		"next": "sat_truth_7"
 	},
 
 	"sat_truth_7": {
 		"speaker": "Kay",
-		"text": "\"I didn't— I thought I was protecting you.\"",
+		"text": "[flustered] [defensive] \"I didn't— I thought I was protecting you.\"",
 		"next": "sat_truth_8"
 	},
 
 	"sat_truth_8": {
 		"speaker": "Elysia",
-		"text": "\"I know.\"",
+		"text": "[softly] [understanding] \"I know.\"",
 		"next": "sat_truth_9"
 	},
 
@@ -3389,7 +3389,7 @@
 
 	"sat_truth_10": {
 		"speaker": "Elysia",
-		"text": "\"I said I don't care what they think. I lied too. I care so much it makes me tired. But I care about you more.\"",
+		"text": "[emotional] [sincere] \"I said I don't care what they think. I lied too. I care so much it makes me tired. But I care about you more.\"",
 		"next": "sat_truth_11"
 	},
 
@@ -3401,7 +3401,7 @@
 
 	"sat_truth_12": {
 		"speaker": "Kay",
-		"text": "\"You don't have to do the version with me. Ever.\"",
+		"text": "[sincere] [firm] \"You don't have to do the version with me. Ever.\"",
 		"next": "sat_truth_13"
 	},
 
@@ -3413,7 +3413,7 @@
 
 	"sat_truth_14": {
 		"speaker": "Elysia",
-		"text": "\"Okay. Then you don't have to be fine with me. Deal?\"",
+		"text": "[warm] [relieved] \"Okay. Then you don't have to be fine with me. Deal?\"",
 		"next": "sat_truth_15"
 	},
 
@@ -3425,7 +3425,7 @@
 
 	"sat_truth_16": {
 		"speaker": "Kay",
-		"text": "\"Deal.\"",
+		"text": "[softly] [sincere] \"Deal.\"",
 		"next": "rice_0"
 	},
 
@@ -3444,25 +3444,25 @@
 
 	"rice_2": {
 		"speaker": "Kay",
-		"text": "\"You talk about it like it's your ex.\"",
+		"text": "[teasing] \"You talk about it like it's your ex.\"",
 		"next": "rice_3"
 	},
 
 	"rice_3": {
 		"speaker": "Elysia",
-		"text": "\"It's not my ex. It's my friend.\"",
+		"text": "[defensive] [indignant] \"It's not my ex. It's my friend.\"",
 		"next": "rice_4"
 	},
 
 	"rice_4": {
 		"speaker": "Kay",
-		"text": "\"It's your lock screen.\"",
+		"text": "[teasing] [deadpan] \"It's your lock screen.\"",
 		"next": "rice_5"
 	},
 
 	"rice_5": {
 		"speaker": "Elysia",
-		"text": "\"...It's a very good photo.\"",
+		"text": "[embarrassed] [quietly] \"...It's a very good photo.\"",
 		"next": "rice_6"
 	},
 
@@ -3474,19 +3474,19 @@
 
 	"rice_7": {
 		"speaker": "Elysia",
-		"text": "\"You're back, huh.\"",
+		"text": "[softly] [smiling] \"You're back, huh.\"",
 		"next": "rice_8"
 	},
 
 	"rice_8": {
 		"speaker": "Kay",
-		"text": "\"What?\"",
+		"text": "[confused] \"What?\"",
 		"next": "rice_9"
 	},
 
 	"rice_9": {
 		"speaker": "Elysia",
-		"text": "\"The teasing. You stopped. I noticed. I missed it.\"",
+		"text": "[warm] [softly] \"The teasing. You stopped. I noticed. I missed it.\"",
 		"next": "rice_10"
 	},
 
@@ -3513,7 +3513,7 @@
 
 	"rice_hood_1": {
 		"speaker": "Elysia",
-		"text": "\"I'm not cold.\"",
+		"text": "[stubborn] [shivering] \"I'm not cold.\"",
 		"next": "rice_hood_2"
 	},
 
@@ -3525,25 +3525,25 @@
 
 	"rice_hood_3": {
 		"speaker": "Kay",
-		"text": "\"It looks better on you. Don't tell anyone I said that.\"",
+		"text": "[shy] [teasing] \"It looks better on you. Don't tell anyone I said that.\"",
 		"next": "rice_hood_4"
 	},
 
 	"rice_hood_4": {
 		"speaker": "Elysia",
-		"text": "\"I'm keeping it.\"",
+		"text": "[smug] [happy] \"I'm keeping it.\"",
 		"next": "rice_hood_5"
 	},
 
 	"rice_hood_5": {
 		"speaker": "Kay",
-		"text": "\"I know.\"",
+		"text": "[fond] \"I know.\"",
 		"next": "rice_talk_1"
 	},
 
 	"rice_fine_1": {
 		"speaker": "Elysia",
-		"text": "\"I'm fine! Really!\"",
+		"text": "[forced cheerful] \"I'm fine! Really!\"",
 		"next": "rice_fine_2"
 	},
 
@@ -3555,7 +3555,7 @@
 
 	"rice_talk_1": {
 		"speaker": "Kay",
-		"text": "\"I didn't think I'd laugh this week.\"",
+		"text": "[softly] [surprised] \"I didn't think I'd laugh this week.\"",
 		"choices": [
 			{"text": "Tell him you know the word couldn't", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "rice_know_1", "set_flag": "KnowsCouldnt"},
 			{"text": "\"Me neither!\" Keep it light.", "type": "neutral", "mask_change": 0, "energy_change": 0, "next": "rice_light_1"}
@@ -3564,7 +3564,7 @@
 
 	"rice_know_1": {
 		"speaker": "Elysia",
-		"text": "\"Me neither.\"",
+		"text": "[softly] \"Me neither.\"",
 		"next": "rice_know_2"
 	},
 
@@ -3576,7 +3576,7 @@
 
 	"rice_know_3": {
 		"speaker": "Elysia",
-		"text": "\"When you texted couldn't on Thursday... I know that word. Not like you, maybe. But some mornings I know it.\"",
+		"text": "[gentle] [vulnerable] \"When you texted couldn't on Thursday... I know that word. Not like you, maybe. But some mornings I know it.\"",
 		"next": "rice_know_4"
 	},
 
@@ -3594,7 +3594,7 @@
 
 	"rice_light_1": {
 		"speaker": "Elysia",
-		"text": "\"Me neither!\"",
+		"text": "[forced cheerful] \"Me neither!\"",
 		"next": "rice_light_2"
 	},
 
@@ -3606,7 +3606,7 @@
 
 	"rice_deal_1": {
 		"speaker": "Kay",
-		"text": "\"You don't have to be fine with me either. That's the deal. Both ways.\"",
+		"text": "[sincere] [warm] \"You don't have to be fine with me either. That's the deal. Both ways.\"",
 		"next": "rice_deal_2"
 	},
 
@@ -3618,13 +3618,13 @@
 
 	"rice_deal_3": {
 		"speaker": "Elysia",
-		"text": "\"Both ways.\"",
+		"text": "[softly] [smiling] \"Both ways.\"",
 		"next": "mon_1"
 	},
 
 	"sat_version_1": {
 		"speaker": "Elysia",
-		"text": "\"Kay, that's silly! You don't make me look weird at all! My friends love you!\"",
+		"text": "[forced laugh] [overly bright] \"Kay, that's silly! You don't make me look weird at all! My friends love you!\"",
 		"next": "sat_version_2"
 	},
 
@@ -3636,7 +3636,7 @@
 
 	"sat_version_3": {
 		"speaker": "Kay",
-		"text": "\"...Okay.\"",
+		"text": "[hesitant] [unconvinced] \"...Okay.\"",
 		"next": "sat_version_4"
 	},
 
@@ -3648,7 +3648,7 @@
 
 	"sat_version_5": {
 		"speaker": "Elysia",
-		"text": "Why did I do that?",
+		"text": "[frustrated] [to herself] Why did I do that?",
 		"next": "sat_version_6"
 	},
 
@@ -3660,7 +3660,7 @@
 
 	"sat_version_7": {
 		"speaker": "Kay",
-		"text": "\"I'm sorry.\"",
+		"text": "[quietly] [apologetic] \"I'm sorry.\"",
 		"next": "sat_version_8"
 	},
 
@@ -3672,7 +3672,7 @@
 
 	"sat_version_9": {
 		"speaker": "Elysia",
-		"text": "\"Don't be sorry. Just be here.\"",
+		"text": "[gentle] [tender] \"Don't be sorry. Just be here.\"",
 		"next": "sat_version_10"
 	},
 
@@ -3707,13 +3707,13 @@
 
 	"mon_4": {
 		"speaker": "Ploy",
-		"text": "\"Kay's so sweet. Quiet, but sweet.\"",
+		"text": "[casual] [sweet] \"Kay's so sweet. Quiet, but sweet.\"",
 		"next": "mon_5"
 	},
 
 	"mon_5": {
 		"speaker": "Elysia",
-		"text": "\"He is.\"",
+		"text": "[softly] [fond] \"He is.\"",
 		"real_text": "\"He is. I really like him.\"",
 		"next": "mon_6"
 	},
@@ -3746,7 +3746,7 @@
 
 	"mon_walk_4": {
 		"speaker": "Elysia",
-		"text": "...Stop checking.",
+		"text": "[nervous] [scolding herself] ...Stop checking.",
 		"timed": true,
 		"choices": [
 			{"text": "\"Yes, he's my boyfriend, we all know, moving on.\"", "type": "honest", "mask_change": -15, "energy_change": 10, "next": "mon_say_1", "set_flag": "SaidItOutLoud"},
@@ -3774,7 +3774,7 @@
 
 	"mon_say_4": {
 		"speaker": "Elysia",
-		"text": "Why is Mint giving Kay a thumbs up?",
+		"text": "[confused] [amused, to herself] Why is Mint giving Kay a thumbs up?",
 		"next": "mon_say_5"
 	},
 
@@ -3794,7 +3794,7 @@
 
 	"mon_say_7": {
 		"speaker": "Ploy",
-		"text": "\"That was a lot, Elysia.\"",
+		"text": "[surprised] [judgmental] \"That was a lot, Elysia.\"",
 		"next": "mon_say_8"
 	},
 
@@ -3810,7 +3810,7 @@
 
 	"mon_like_1": {
 		"speaker": "Elysia",
-		"text": "\"Yeah. I like him a lot.\"",
+		"text": "[confident] [softly] \"Yeah. I like him a lot.\"",
 		"next": "mon_like_2"
 	},
 
@@ -3822,13 +3822,13 @@
 
 	"mon_like_3": {
 		"speaker": "Ploy",
-		"text": "\"Okay. Okay! Good for you. He's still weird, though.\"",
+		"text": "[surprised] [teasing] \"Okay. Okay! Good for you. He's still weird, though.\"",
 		"next": "mon_like_4"
 	},
 
 	"mon_like_4": {
 		"speaker": "Elysia",
-		"text": "\"Yeah. So am I.\"",
+		"text": "[proud] [smiling] \"Yeah. So am I.\"",
 		"next": "mon_like_5"
 	},
 
@@ -3840,13 +3840,13 @@
 
 	"mon_much_1": {
 		"speaker": "Ploy",
-		"text": "\"A little. But cute.\"",
+		"text": "[teasing] [dismissive] \"A little. But cute.\"",
 		"next": "mon_much_2"
 	},
 
 	"mon_much_2": {
 		"speaker": "Elysia",
-		"text": "Too much. I was too much.",
+		"text": "[embarrassed] [to herself] Too much. I was too much.",
 		"next": "mon_much_3"
 	},
 
@@ -3870,7 +3870,7 @@
 
 	"mon_hi_3": {
 		"speaker": "Kay",
-		"text": "\"Hi.\"",
+		"text": "[shy] [warm] \"Hi.\"",
 		"next": "mon_hi_4"
 	},
 
@@ -3889,13 +3889,13 @@
 
 	"home2_2": {
 		"speaker": "Kay",
-		"text": "\"Walk home with me?\"",
+		"text": "[nervous] [brave] \"Walk home with me?\"",
 		"next": "home2_3"
 	},
 
 	"home2_3": {
 		"speaker": "Elysia",
-		"text": "The sentence. The one from the first day, the other way round. He says it like it's normal.",
+		"text": "[moved] [to herself] The sentence. The one from the first day, the other way round. He says it like it's normal.",
 		"next": "home2_4"
 	},
 
@@ -3907,13 +3907,13 @@
 
 	"home2_5": {
 		"speaker": "Elysia",
-		"text": "\"In front of people?\"",
+		"text": "[surprised] [disbelief] \"In front of people?\"",
 		"next": "home2_6"
 	},
 
 	"home2_6": {
 		"speaker": "Kay",
-		"text": "\"In front of everyone.\"",
+		"text": "[resolute] [softly] \"In front of everyone.\"",
 		"next": "home2_7"
 	},
 
@@ -3925,7 +3925,7 @@
 
 	"home2_8": {
 		"speaker": "Kay",
-		"text": "\"Yes, he's my boyfriend, we all know, moving on.\"",
+		"text": "[teasing] [imitating her] \"Yes, he's my boyfriend, we all know, moving on.\"",
 		"next": "home2_9"
 	},
 
@@ -3937,19 +3937,19 @@
 
 	"home2_10": {
 		"speaker": "Elysia",
-		"text": "\"Stop.\"",
+		"text": "[embarrassed] [laughing] \"Stop.\"",
 		"next": "home2_11"
 	},
 
 	"home2_11": {
 		"speaker": "Kay",
-		"text": "\"Very smooth. Very calm.\"",
+		"text": "[teasing] [deadpan] \"Very smooth. Very calm.\"",
 		"next": "home2_12"
 	},
 
 	"home2_12": {
 		"speaker": "Kay",
-		"text": "\"Your ears were on fire, though.\"",
+		"text": "[teasing] \"Your ears were on fire, though.\"",
 		"choices": [
 			{"text": "\"My ears are on my side. I regret nothing.\"", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "home2_ears_1"},
 			{"text": "\"...Was it too much?\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "home2_much_1"}
@@ -3958,13 +3958,13 @@
 
 	"home2_ears_1": {
 		"speaker": "Elysia",
-		"text": "\"My ears are on my side. I regret nothing.\"",
+		"text": "[defiant] [laughing] \"My ears are on my side. I regret nothing.\"",
 		"next": "home2_ears_2"
 	},
 
 	"home2_ears_2": {
 		"speaker": "Kay",
-		"text": "\"Your ears regret it.\"",
+		"text": "[teasing] \"Your ears regret it.\"",
 		"next": "home2_ears_3"
 	},
 
@@ -3976,7 +3976,7 @@
 
 	"home2_much_1": {
 		"speaker": "Elysia",
-		"text": "\"...Was it too much?\"",
+		"text": "[nervous] [small voice] \"...Was it too much?\"",
 		"next": "home2_much_2"
 	},
 
@@ -3988,7 +3988,7 @@
 
 	"home2_much_3": {
 		"speaker": "Kay",
-		"text": "\"No. It was the best thing anyone's done for me in a long time.\"",
+		"text": "[sincere] [emotional] \"No. It was the best thing anyone's done for me in a long time.\"",
 		"next": "home2_much_4"
 	},
 
@@ -4006,13 +4006,13 @@
 
 	"home2_end_2": {
 		"speaker": "Elysia",
-		"text": "\"Same time tomorrow?\"",
+		"text": "[happy] [hopeful] \"Same time tomorrow?\"",
 		"next": "home2_end_3"
 	},
 
 	"home2_end_3": {
 		"speaker": "Kay",
-		"text": "\"Same time tomorrow.\"",
+		"text": "[warm] [smiling] \"Same time tomorrow.\"",
 		"next": "home2_end_4"
 	},
 
@@ -4051,7 +4051,7 @@
 
 	"late_no_1": {
 		"speaker": "Elysia",
-		"text": "\"Ploy, I love you. But I can't do 1 a.m. calls anymore. Lunch tomorrow?\"",
+		"text": "[nervous] [firm but kind] \"Ploy, I love you. But I can't do 1 a.m. calls anymore. Lunch tomorrow?\"",
 		"next": "late_no_2"
 	},
 
@@ -4063,13 +4063,13 @@
 
 	"late_no_3": {
 		"speaker": "Ploy",
-		"text": "\"...Oh. Okay. Yeah. Sorry for bothering you.\"",
+		"text": "[hurt] [quietly] \"...Oh. Okay. Yeah. Sorry for bothering you.\"",
 		"next": "late_no_4"
 	},
 
 	"late_no_4": {
 		"speaker": "Elysia",
-		"text": "\"You're not bothering me. I just need to sleep. Lunch. I promise.\"",
+		"text": "[gentle] [firm] \"You're not bothering me. I just need to sleep. Lunch. I promise.\"",
 		"next": "late_no_5"
 	},
 
@@ -4112,19 +4112,19 @@
 
 	"ploy_scared_1": {
 		"speaker": "Elysia",
-		"text": "\"I said no to Ploy. Sunday night. She called at one, and I said I love you, but I can't do one a.m. calls anymore.\"",
+		"text": "[shaky] [proud] \"I said no to Ploy. Sunday night. She called at one, and I said I love you, but I can't do one a.m. calls anymore.\"",
 		"next": "ploy_scared_2"
 	},
 
 	"ploy_scared_2": {
 		"speaker": "Kay",
-		"text": "\"That's good.\"",
+		"text": "[gentle] \"That's good.\"",
 		"next": "ploy_scared_3"
 	},
 
 	"ploy_scared_3": {
 		"speaker": "Elysia",
-		"text": "\"She hasn't talked to me since. She sat with Jane today. She looked right through me.\"",
+		"text": "[hurt] [quietly] \"She hasn't talked to me since. She sat with Jane today. She looked right through me.\"",
 		"next": "ploy_scared_4"
 	},
 
@@ -4136,19 +4136,19 @@
 
 	"ploy_scared_5": {
 		"speaker": "Elysia",
-		"text": "\"What if that was it? What if three years is just over because I wanted to sleep?\"",
+		"text": "[anxious] [voice breaking] \"What if that was it? What if three years is just over because I wanted to sleep?\"",
 		"next": "ploy_scared_6"
 	},
 
 	"ploy_scared_6": {
 		"speaker": "Kay",
-		"text": "\"Can I tell you something?\"",
+		"text": "[gentle] [hesitant] \"Can I tell you something?\"",
 		"next": "ploy_thu_1"
 	},
 
 	"ploy_fine_1": {
 		"speaker": "Elysia",
-		"text": "\"Ploy's being weird because I said no to a 1 a.m. call. It's fine! She'll get over it!\"",
+		"text": "[forced cheerful] [rushed] \"Ploy's being weird because I said no to a 1 a.m. call. It's fine! She'll get over it!\"",
 		"next": "ploy_fine_2"
 	},
 
@@ -4160,13 +4160,13 @@
 
 	"ploy_fine_3": {
 		"speaker": "Kay",
-		"text": "\"Okay. Can I tell you something anyway?\"",
+		"text": "[gentle] [patient] \"Okay. Can I tell you something anyway?\"",
 		"next": "ploy_thu_1"
 	},
 
 	"ploy_thu_1": {
 		"speaker": "Kay",
-		"text": "\"On Thursdays I go to the guidance room. Ms. Noi makes tea and I mostly don't talk.\"",
+		"text": "[hesitant] [gentle] \"On Thursdays I go to the guidance room. Ms. Noi makes tea and I mostly don't talk.\"",
 		"next": "ploy_thu_2"
 	},
 
@@ -4178,13 +4178,13 @@
 
 	"ploy_thu_3": {
 		"speaker": "Elysia",
-		"text": "He's telling me something. On purpose.",
+		"text": "[surprised] [touched, to herself] He's telling me something. On purpose.",
 		"next": "ploy_thu_4"
 	},
 
 	"ploy_thu_4": {
 		"speaker": "Kay",
-		"text": "\"Last week I said one thing out loud I'd never said to anyone. I thought something would break.\"",
+		"text": "[quietly] [honest] \"Last week I said one thing out loud I'd never said to anyone. I thought something would break.\"",
 		"next": "ploy_thu_5"
 	},
 
@@ -4196,19 +4196,19 @@
 
 	"ploy_thu_6": {
 		"speaker": "Kay",
-		"text": "\"Nothing broke.\"",
+		"text": "[softly] \"Nothing broke.\"",
 		"next": "ploy_thu_7"
 	},
 
 	"ploy_thu_7": {
 		"speaker": "Elysia",
-		"text": "\"...Nothing?\"",
+		"text": "[surprised] [hopeful] \"...Nothing?\"",
 		"next": "ploy_thu_8"
 	},
 
 	"ploy_thu_8": {
 		"speaker": "Kay",
-		"text": "\"Bank still has my pen. But that's separate.\"",
+		"text": "[deadpan] [teasing] \"Bank still has my pen. But that's separate.\"",
 		"next": "ploy_thu_9"
 	},
 
@@ -4220,7 +4220,7 @@
 
 	"ploy_thu_10": {
 		"speaker": "Kay",
-		"text": "\"In the third week, I made a joke about you keeping slime in your bag.\"",
+		"text": "[hesitant] [serious] \"In the third week, I made a joke about you keeping slime in your bag.\"",
 		"next": "ploy_thu_11"
 	},
 
@@ -4233,19 +4233,19 @@
 
 	"ploy_hurt_1": {
 		"speaker": "Kay",
-		"text": "\"You told me it hurt, and I didn't ask why. I didn't know about third grade. But I'm sorry.\"",
+		"text": "[regretful] [sincere] \"You told me it hurt, and I didn't ask why. I didn't know about third grade. But I'm sorry.\"",
 		"next": "ploy_after_1"
 	},
 
 	"ploy_fine2_1": {
 		"speaker": "Kay",
-		"text": "\"You said it was fine. I should have known it wasn't. I say that too.\"",
+		"text": "[regretful] [honest] \"You said it was fine. I should have known it wasn't. I say that too.\"",
 		"next": "ploy_fine2_2"
 	},
 
 	"ploy_fine2_2": {
 		"speaker": "Kay",
-		"text": "\"I didn't know about third grade. But I'm sorry.\"",
+		"text": "[sincere] [softly] \"I didn't know about third grade. But I'm sorry.\"",
 		"next": "ploy_after_1"
 	},
 
@@ -4257,19 +4257,19 @@
 
 	"ploy_after_2": {
 		"speaker": "Elysia",
-		"text": "\"...You remembered that?\"",
+		"text": "[surprised] [moved] \"...You remembered that?\"",
 		"next": "ploy_after_3"
 	},
 
 	"ploy_after_3": {
 		"speaker": "Kay",
-		"text": "\"I've thought about it a lot.\"",
+		"text": "[softly] \"I've thought about it a lot.\"",
 		"next": "ploy_after_4"
 	},
 
 	"ploy_after_4": {
 		"speaker": "Elysia",
-		"text": "\"Of course you have. Thank you.\"",
+		"text": "[fond] [laughing softly] \"Of course you have. Thank you.\"",
 		"next": "ploy_after_5"
 	},
 
@@ -4287,31 +4287,31 @@
 
 	"ploy_after_7": {
 		"speaker": "Kay",
-		"text": "\"Ploy'll come back. You're very bossy. She's probably scared of you.\"",
+		"text": "[teasing] [warm] \"Ploy'll come back. You're very bossy. She's probably scared of you.\"",
 		"next": "ploy_after_8"
 	},
 
 	"ploy_after_8": {
 		"speaker": "Elysia",
-		"text": "\"I am not bossy.\"",
+		"text": "[indignant] \"I am not bossy.\"",
 		"next": "ploy_after_9"
 	},
 
 	"ploy_after_9": {
 		"speaker": "Kay",
-		"text": "\"You made me cook eggs on a video call.\"",
+		"text": "[teasing] [deadpan] \"You made me cook eggs on a video call.\"",
 		"next": "ploy_after_10"
 	},
 
 	"ploy_after_10": {
 		"speaker": "Elysia",
-		"text": "\"That was care!\"",
+		"text": "[defensive] [laughing] \"That was care!\"",
 		"next": "ploy_after_11"
 	},
 
 	"ploy_after_11": {
 		"speaker": "Kay",
-		"text": "\"Yes, ma'am.\"",
+		"text": "[teasing] \"Yes, ma'am.\"",
 		"next": "ploy_after_12"
 	},
 
@@ -4329,25 +4329,25 @@
 
 	"late_no_9": {
 		"speaker": "Ploy",
-		"text": "\"You could've said that earlier. Like, months ago.\"",
+		"text": "[hurt] [defensive] \"You could've said that earlier. Like, months ago.\"",
 		"next": "late_no_10"
 	},
 
 	"late_no_10": {
 		"speaker": "Elysia",
-		"text": "\"I know.\"",
+		"text": "[quietly] [guilty] \"I know.\"",
 		"next": "late_no_11"
 	},
 
 	"late_no_11": {
 		"speaker": "Ploy",
-		"text": "\"I didn't know it was that much. ...Sorry.\"",
+		"text": "[softening] [apologetic] \"I didn't know it was that much. ...Sorry.\"",
 		"next": "late_no_12"
 	},
 
 	"late_no_12": {
 		"speaker": "Elysia",
-		"text": "\"It's okay.\"",
+		"text": "[gentle] \"It's okay.\"",
 		"next": "late_no_13"
 	},
 
@@ -4359,7 +4359,7 @@
 
 	"late_no_14": {
 		"speaker": "Elysia",
-		"text": "\"It wasn't okay. But it's okay now.\"",
+		"text": "[honest] [warm] \"It wasn't okay. But it's okay now.\"",
 		"next": "art_1"
 	},
 
@@ -4379,7 +4379,7 @@
 
 	"late_yes_3": {
 		"speaker": "Elysia",
-		"text": "That's what I'm for.",
+		"text": "[tired] [hollow, to herself] That's what I'm for.",
 		"next": "late_yes_4"
 	},
 
@@ -4407,7 +4407,7 @@
 
 	"art_3": {
 		"speaker": "Elysia",
-		"text": "\"I'm sorry. About the frog. I laughed. I shouldn't have.\"",
+		"text": "[nervous] [sincere] \"I'm sorry. About the frog. I laughed. I shouldn't have.\"",
 		"next": "art_4"
 	},
 
@@ -4447,7 +4447,7 @@
 
 	"note_3": {
 		"speaker": "Elysia",
-		"text": "Weird.",
+		"text": "[softly] [fond, to herself] Weird.",
 		"next": "note_4"
 	},
 
@@ -4484,7 +4484,7 @@
 
 	"note_8": {
 		"speaker": "Elysia",
-		"text": "\"Pun. I was wrong. About keeping the slime at home. I was wrong.\"",
+		"text": "[sincere] [firm] \"Pun. I was wrong. About keeping the slime at home. I was wrong.\"",
 		"next": "note_9"
 	},
 
@@ -4496,13 +4496,13 @@
 
 	"note_10": {
 		"speaker": "Elysia",
-		"text": "\"When I was your age, someone put slime in my bag too. And I stopped liking things out loud. And I thought that was me being smart.\"",
+		"text": "[gentle] [vulnerable] \"When I was your age, someone put slime in my bag too. And I stopped liking things out loud. And I thought that was me being smart.\"",
 		"next": "note_11"
 	},
 
 	"note_11": {
 		"speaker": "Elysia",
-		"text": "\"It wasn't smart. It was just sad. Be slime boy. Slime boy is the best kind of boy.\"",
+		"text": "[warm] [proud] \"It wasn't smart. It was just sad. Be slime boy. Slime boy is the best kind of boy.\"",
 		"next": "note_12"
 	},
 
@@ -4515,25 +4515,25 @@
 
 	"note_13": {
 		"speaker": "Pun",
-		"text": "\"You drew all these?\"",
+		"text": "[amazed] \"You drew all these?\"",
 		"next": "note_14"
 	},
 
 	"note_14": {
 		"speaker": "Elysia",
-		"text": "\"All of them.\"",
+		"text": "[proud] [softly] \"All of them.\"",
 		"next": "note_15"
 	},
 
 	"note_15": {
 		"speaker": "Pun",
-		"text": "\"...Can I have it?\"",
+		"text": "[hopeful] [shy] \"...Can I have it?\"",
 		"next": "note_16"
 	},
 
 	"note_16": {
 		"speaker": "Elysia",
-		"text": "\"It's yours.\"",
+		"text": "[warm] [smiling] \"It's yours.\"",
 		"choices": [
 			{"text": "\"And if anyone says it's weird, tell them your sister said so too.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "note_hide_yes_1", "set_flag": "GaveNotebook"},
 			{"text": "Just leave the notebook and go", "type": "neutral", "mask_change": 0, "energy_change": 0, "next": "note_hide_no_1"}
@@ -4572,7 +4572,7 @@
 
 	"note_bug_2": {
 		"speaker": "Elysia",
-		"text": "\"Look. I made this when I was your age.\"",
+		"text": "[shy] [gentle] \"Look. I made this when I was your age.\"",
 		"next": "note_bug_3"
 	},
 
@@ -4584,7 +4584,7 @@
 
 	"note_bug_4": {
 		"speaker": "Pun",
-		"text": "\"You were slime girl?\"",
+		"text": "[amazed] [excited] \"You were slime girl?\"",
 		"choices": [
 			{"text": "\"...I still am, kind of.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "note_bug_yes_1", "set_flag": "GaveNotebook"},
 			{"text": "\"A long time ago.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "note_bug_no_1"}
@@ -4599,7 +4599,7 @@
 
 	"note_bug_no_1": {
 		"speaker": "Pun",
-		"text": "\"You were so good at it.\"",
+		"text": "[admiring] \"You were so good at it.\"",
 		"next": "note_bug_no_2"
 	},
 
@@ -4636,19 +4636,19 @@
 
 	"dinner_4": {
 		"speaker": "Pun",
-		"text": "\"Are you Elysia's boyfriend?\"",
+		"text": "[blunt] [curious] \"Are you Elysia's boyfriend?\"",
 		"next": "dinner_5"
 	},
 
 	"dinner_5": {
 		"speaker": "Kay",
-		"text": "\"Yes.\"",
+		"text": "[calm] [sure] \"Yes.\"",
 		"next": "dinner_6"
 	},
 
 	"dinner_6": {
 		"speaker": "Pun",
-		"text": "\"Do you like slime molds?\"",
+		"text": "[serious] [suspicious] \"Do you like slime molds?\"",
 		"next": "dinner_7"
 	},
 
@@ -4660,25 +4660,25 @@
 
 	"dinner_8": {
 		"speaker": "Kay",
-		"text": "\"I'm learning.\"",
+		"text": "[honest] [warm] \"I'm learning.\"",
 		"next": "dinner_9"
 	},
 
 	"dinner_9": {
 		"speaker": "Pun",
-		"text": "\"What's the best one?\"",
+		"text": "[testing] [serious] \"What's the best one?\"",
 		"next": "dinner_10"
 	},
 
 	"dinner_10": {
 		"speaker": "Kay",
-		"text": "\"...The yellow one. Physarum. It's your sister's favorite.\"",
+		"text": "\"[thinking] ...[warm] The yellow one. Physarum. It's your sister's favorite.\"",
 		"next": "dinner_11"
 	},
 
 	"dinner_11": {
 		"speaker": "Elysia",
-		"text": "He remembered. Of course he remembered.",
+		"text": "[touched] [softly, to herself] He remembered. Of course he remembered.",
 		"next": "dinner_12"
 	},
 
@@ -4690,31 +4690,31 @@
 
 	"dinner_13": {
 		"speaker": "Pun",
-		"text": "\"Elysia had a funeral for one. When she was eight. It dried out and she had a funeral.\"",
+		"text": "[matter-of-fact] [tattling] \"Elysia had a funeral for one. When she was eight. It dried out and she had a funeral.\"",
 		"next": "dinner_14"
 	},
 
 	"dinner_14": {
 		"speaker": "Elysia",
-		"text": "\"Pun.\"",
+		"text": "[warning] [embarrassed] \"Pun.\"",
 		"next": "dinner_15"
 	},
 
 	"dinner_15": {
 		"speaker": "Pun",
-		"text": "\"Mom told me. She sang.\"",
+		"text": "[innocent] [tattling] \"Mom told me. She sang.\"",
 		"next": "dinner_16"
 	},
 
 	"dinner_16": {
 		"speaker": "Elysia",
-		"text": "\"I was EIGHT.\"",
+		"text": "[shouting] [mortified] \"I was EIGHT.\"",
 		"next": "dinner_17"
 	},
 
 	"dinner_17": {
 		"speaker": "Kay",
-		"text": "\"What did she sing?\"",
+		"text": "[amused] [curious] \"What did she sing?\"",
 		"choices": [
 			{"text": "Let Pun answer", "type": "honest", "mask_change": -5, "energy_change": 5, "next": "dinner_sing_1"},
 			{"text": "\"Pun. Eat your rice.\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "dinner_rice_1"}
@@ -4723,7 +4723,7 @@
 
 	"dinner_sing_1": {
 		"speaker": "Pun",
-		"text": "\"The birthday song. But sad.\"",
+		"text": "[serious] [matter-of-fact] \"The birthday song. But sad.\"",
 		"next": "dinner_sing_2"
 	},
 
@@ -4741,13 +4741,13 @@
 
 	"dinner_sing_4": {
 		"speaker": "Kay",
-		"text": "\"Was it a nice funeral?\"",
+		"text": "[gentle] [amused] \"Was it a nice funeral?\"",
 		"next": "dinner_sing_5"
 	},
 
 	"dinner_sing_5": {
 		"speaker": "Elysia",
-		"text": "\"...It was a very nice funeral.\"",
+		"text": "\"[sighs] ...[dignified] [softly] It was a very nice funeral.\"",
 		"next": "dinner_sing_6"
 	},
 
@@ -4759,7 +4759,7 @@
 
 	"dinner_rice_1": {
 		"speaker": "Elysia",
-		"text": "\"Pun. Eat your rice.\"",
+		"text": "[embarrassed] [bossy] \"Pun. Eat your rice.\"",
 		"next": "dinner_rice_2"
 	},
 
@@ -4771,7 +4771,7 @@
 
 	"dinner_rice_3": {
 		"speaker": "Elysia",
-		"text": "He's giving it back.",
+		"text": "[touched] [to herself] He's giving it back.",
 		"next": "dinner_book_1"
 	},
 
@@ -4783,7 +4783,7 @@
 
 	"dinner_book_2": {
 		"speaker": "Pun",
-		"text": "\"Elysia made it. When she was slime girl. Now it's mine.\"",
+		"text": "[proud] [matter-of-fact] \"Elysia made it. When she was slime girl. Now it's mine.\"",
 		"next": "dinner_book_3"
 	},
 
@@ -4807,7 +4807,7 @@
 
 	"dinner_book_6": {
 		"speaker": "Kay",
-		"text": "\"These are really good.\"",
+		"text": "[sincere] [impressed] \"These are really good.\"",
 		"next": "dinner_book_7"
 	},
 
@@ -4825,7 +4825,7 @@
 
 	"dinner_door_2": {
 		"speaker": "Mom",
-		"text": "\"Come again, Kay. She never brings anyone home. This one never asks for anything. She's my easy one.\"",
+		"text": "[warm] [cheerful] \"Come again, Kay. She never brings anyone home. This one never asks for anything. She's my easy one.\"",
 		"next": "dinner_door_3"
 	},
 
@@ -4837,7 +4837,7 @@
 
 	"dinner_door_4": {
 		"speaker": "Kay",
-		"text": "\"She's not the easy one. She just makes it look easy.\"",
+		"text": "[gentle] [firm] \"She's not the easy one. She just makes it look easy.\"",
 		"next": "dinner_door_5"
 	},
 
@@ -4849,13 +4849,13 @@
 
 	"dinner_door_6": {
 		"speaker": "Mom",
-		"text": "\"...Yes. I suppose she does.\"",
+		"text": "\"[pauses] ...[thoughtful] [softly] Yes. I suppose she does.\"",
 		"next": "dinner_door_7"
 	},
 
 	"dinner_door_7": {
 		"speaker": "Elysia",
-		"text": "Why does he say it like he knows?",
+		"text": "[curious] [moved, to herself] Why does he say it like he knows?",
 		"next": "dinner_door_8"
 	},
 
@@ -4873,7 +4873,7 @@
 
 	"dinner_kitchen_2": {
 		"speaker": "Mom",
-		"text": "\"Is that true? What he said?\"",
+		"text": "[gentle] [serious] \"Is that true? What he said?\"",
 		"choices": [
 			{"text": "\"...Yeah. A little. A lot.\"", "type": "honest", "mask_change": -10, "energy_change": 10, "next": "dinner_true_1", "set_flag": "NotEasyOne"},
 			{"text": "\"He's just being nice!\"", "type": "perform", "mask_change": 5, "energy_change": -5, "next": "dinner_nice_1"}
@@ -4882,7 +4882,7 @@
 
 	"dinner_true_1": {
 		"speaker": "Elysia",
-		"text": "\"...Yeah. A little. A lot.\"",
+		"text": "\"[hesitates] ...[quietly] Yeah. A little. [voice breaking] A lot.\"",
 		"next": "dinner_true_2"
 	},
 
@@ -4894,25 +4894,25 @@
 
 	"dinner_true_3": {
 		"speaker": "Mom",
-		"text": "\"Okay. Then you can ask for things. You hear me? Even small things. Especially small things.\"",
+		"text": "[firm] [loving] \"Okay. Then you can ask for things. You hear me? Even small things. Especially small things.\"",
 		"next": "dinner_true_4"
 	},
 
 	"dinner_true_4": {
 		"speaker": "Elysia",
-		"text": "\"...Can I have the last of the leftovers?\"",
+		"text": "[sniffles] [small voice] [playful] \"...Can I have the last of the leftovers?\"",
 		"next": "dinner_true_5"
 	},
 
 	"dinner_true_5": {
 		"speaker": "Mom",
-		"text": "\"I gave them to Kay.\"",
+		"text": "[teasing] [deadpan] \"I gave them to Kay.\"",
 		"next": "dinner_true_6"
 	},
 
 	"dinner_true_6": {
 		"speaker": "Elysia",
-		"text": "\"Mom.\"",
+		"text": "[laughing] [indignant] \"Mom.\"",
 		"next": "dinner_true_7"
 	},
 
@@ -4924,7 +4924,7 @@
 
 	"dinner_nice_1": {
 		"speaker": "Elysia",
-		"text": "\"He's just being nice!\"",
+		"text": "[quickly] [deflecting] \"He's just being nice!\"",
 		"next": "dinner_nice_2"
 	},
 
@@ -4969,7 +4969,7 @@
 
 	"last_all_1": {
 		"speaker": "Elysia",
-		"text": "\"Look at him. Isn't he perfect?\"",
+		"text": "[delighted] [adoring] \"Look at him. Isn't he perfect?\"",
 		"next": "last_all_2"
 	},
 
@@ -4993,31 +4993,31 @@
 
 	"last_all_5": {
 		"speaker": "Kay",
-		"text": "\"He's perfect.\"",
+		"text": "[fond] [amused] \"He's perfect.\"",
 		"next": "last_tongue_1"
 	},
 
 	"last_tongue_1": {
 		"speaker": "Elysia",
-		"text": "\"Pun named him Kay.\"",
+		"text": "[teasing] [delighted] \"Pun named him Kay.\"",
 		"next": "last_tongue_2"
 	},
 
 	"last_tongue_2": {
 		"speaker": "Kay",
-		"text": "\"...Should I be flattered?\"",
+		"text": "[unsure] [amused] \"...Should I be flattered?\"",
 		"next": "last_tongue_3"
 	},
 
 	"last_tongue_3": {
 		"speaker": "Elysia",
-		"text": "\"He's yellow, he's foamy, and he solves mazes.\"",
+		"text": "[teasing] [affectionate] \"He's yellow, he's foamy, and he solves mazes.\"",
 		"next": "last_tongue_4"
 	},
 
 	"last_tongue_4": {
 		"speaker": "Kay",
-		"text": "\"So, yes.\"",
+		"text": "[deadpan] [smiling] \"So, yes.\"",
 		"next": "last_tongue_5"
 	},
 
@@ -5042,13 +5042,13 @@
 
 	"last_kay_2": {
 		"speaker": "Elysia",
-		"text": "\"Pun found him. Isn't he perfect?\"",
+		"text": "[delighted] [proud] \"Pun found him. Isn't he perfect?\"",
 		"next": "last_kay_3"
 	},
 
 	"last_kay_3": {
 		"speaker": "Kay",
-		"text": "\"He's perfect.\"",
+		"text": "[fond] [amused] \"He's perfect.\"",
 		"next": "last_kay_4"
 	},
 
@@ -5075,67 +5075,67 @@
 
 	"mint_2": {
 		"speaker": "Mint",
-		"text": "\"Kay's good for you. I wasn't sure at first.\"",
+		"text": "[thoughtful] [dry] \"Kay's good for you. I wasn't sure at first.\"",
 		"next": "mint_3"
 	},
 
 	"mint_3": {
 		"speaker": "Elysia",
-		"text": "\"Why not?\"",
+		"text": "[curious] \"Why not?\"",
 		"next": "mint_4"
 	},
 
 	"mint_4": {
 		"speaker": "Mint",
-		"text": "\"He looked like someone who'd say 'it's fine' about a broken leg. Guess you're the same, though.\"",
+		"text": "[dry] [teasing] \"He looked like someone who'd say 'it's fine' about a broken leg. Guess you're the same, though.\"",
 		"next": "mint_5"
 	},
 
 	"mint_5": {
 		"speaker": "Elysia",
-		"text": "\"Hey!\"",
+		"text": "[indignant] [laughing] \"Hey!\"",
 		"next": "mint_6"
 	},
 
 	"mint_6": {
 		"speaker": "Mint",
-		"text": "\"Was I wrong?\"",
+		"text": "[deadpan] \"Was I wrong?\"",
 		"next": "ending_1"
 	},
 
 	"mint_confess_1": {
 		"speaker": "Mint",
-		"text": "\"So. In the second week, I sort of talked to Kay.\"",
+		"text": "[sheepish] [casual] \"So. In the second week, I sort of talked to Kay.\"",
 		"next": "mint_confess_2"
 	},
 
 	"mint_confess_2": {
 		"speaker": "Elysia",
-		"text": "\"You what.\"",
+		"text": "[flat] [shocked] \"You what.\"",
 		"next": "mint_confess_3"
 	},
 
 	"mint_confess_3": {
 		"speaker": "Mint",
-		"text": "\"Outside the library. I told him you'd been tired lately, and you'd rather explode than be a bother to anyone. And to look out for you.\"",
+		"text": "[matter-of-fact] [unapologetic] \"Outside the library. I told him you'd been tired lately, and you'd rather explode than be a bother to anyone. And to look out for you.\"",
 		"next": "mint_confess_4"
 	},
 
 	"mint_confess_4": {
 		"speaker": "Mint",
-		"text": "\"I also told him you two were the same kind of idiot.\"",
+		"text": "[deadpan] \"I also told him you two were the same kind of idiot.\"",
 		"next": "mint_confess_5"
 	},
 
 	"mint_confess_5": {
 		"speaker": "Elysia",
-		"text": "\"Mint.\"",
+		"text": "[exasperated] [warning] \"Mint.\"",
 		"next": "mint_confess_6"
 	},
 
 	"mint_confess_6": {
 		"speaker": "Mint",
-		"text": "\"Was I wrong?\"",
+		"text": "[deadpan] \"Was I wrong?\"",
 		"next": "mint_confess_7"
 	},
 
@@ -5147,7 +5147,7 @@
 
 	"mint_confess_8": {
 		"speaker": "Elysia",
-		"text": "\"...No. You weren't wrong.\"",
+		"text": "\"[hesitates] ...[softly] [smiling] No. You weren't wrong.\"",
 		"next": "ending_1"
 	},
 
@@ -5192,13 +5192,13 @@
 
 	"endA_3": {
 		"speaker": "Pun",
-		"text": "\"Physarum. Elysia. ELYSIA. That's the one from your notebook!\"",
+		"text": "[excited] [shouting] \"Physarum. Elysia. ELYSIA. That's the one from your notebook!\"",
 		"next": "endA_4"
 	},
 
 	"endA_4": {
 		"speaker": "Elysia",
-		"text": "\"It is.\"",
+		"text": "[warm] [proud] \"It is.\"",
 		"next": "endA_ploy_1",
 		"secret": {"condition": "flag_true", "flag": "DroppedVersion", "next": "endA_kay_1"}
 	},
@@ -5218,19 +5218,19 @@
 
 	"endA_fuligo_2": {
 		"speaker": "Kay",
-		"text": "\"Fuligo septica. Dog vomit slime mold.\"",
+		"text": "[deadpan] [knowing] \"Fuligo septica. Dog vomit slime mold.\"",
 		"next": "endA_fuligo_3"
 	},
 
 	"endA_fuligo_3": {
 		"speaker": "Pun",
-		"text": "\"That's KAY!\"",
+		"text": "[shouting] [delighted] \"That's KAY!\"",
 		"next": "endA_fuligo_4"
 	},
 
 	"endA_fuligo_4": {
 		"speaker": "Kay",
-		"text": "\"I've been told.\"",
+		"text": "[resigned] [amused] \"I've been told.\"",
 		"next": "endA_fuligo_5"
 	},
 
@@ -5256,7 +5256,7 @@
 
 	"endA_pics_1": {
 		"speaker": "Ploy",
-		"text": "send me a pic of the slime. i want to see what the big deal is",
+		"text": "[curious] [skeptical] send me a pic of the slime. i want to see what the big deal is",
 		"next": "endA_pics_2",
 		"sfx": "Notification"
 	},
@@ -5269,7 +5269,7 @@
 
 	"endA_pics_3": {
 		"speaker": "Ploy",
-		"text": "ok that one is actually kind of cool",
+		"text": "[grudging] [impressed] ok that one is actually kind of cool",
 		"next": "endA_end_1",
 		"sfx": "Notification"
 	},
@@ -5296,7 +5296,7 @@
 
 	"endA_end_4": {
 		"speaker": "Elysia",
-		"text": "I'm weird.",
+		"text": "[content] [proud, softly] I'm weird.",
 		"next": "endA_end_5"
 	},
 
@@ -5337,13 +5337,13 @@
 
 	"endB_4": {
 		"speaker": "Elysia",
-		"text": "\"Hey. Can I call you back tomorrow? I'm really tired.\"",
+		"text": "[tired] [hesitant] \"Hey. Can I call you back tomorrow? I'm really tired.\"",
 		"next": "endB_5"
 	},
 
 	"endB_5": {
 		"speaker": "Ploy",
-		"text": "\"...Yeah. Okay. Sure.\"",
+		"text": "[hurt] [hesitant] \"...Yeah. Okay. Sure.\"",
 		"next": "endB_6"
 	},
 
@@ -5355,39 +5355,39 @@
 
 	"endB_7": {
 		"speaker": "Elysia",
-		"text": "are u up",
+		"text": "[quietly] [tired] are u up",
 		"next": "endB_8"
 	},
 
 	"endB_8": {
 		"speaker": "Kay",
-		"text": "yeah",
+		"text": "[gentle] yeah",
 		"next": "endB_9",
 		"sfx": "Notification"
 	},
 
 	"endB_9": {
 		"speaker": "Elysia",
-		"text": "i said no to ploy. kind of.",
+		"text": "[nervous] [proud] i said no to ploy. kind of.",
 		"next": "endB_10"
 	},
 
 	"endB_10": {
 		"speaker": "Kay",
-		"text": "proud of u",
+		"text": "[warm] proud of u",
 		"next": "endB_11",
 		"sfx": "Notification"
 	},
 
 	"endB_11": {
 		"speaker": "Elysia",
-		"text": "it was so scary",
+		"text": "[shaky] [relieved] it was so scary",
 		"next": "endB_12"
 	},
 
 	"endB_12": {
 		"speaker": "Kay",
-		"text": "i know",
+		"text": "[gentle] i know",
 		"next": "endB_13",
 		"sfx": "Notification"
 	},
@@ -5400,19 +5400,19 @@
 
 	"endB_kind_1": {
 		"speaker": "Kay",
-		"text": "also. \"kind of\"",
+		"text": "[teasing] also. \"kind of\"",
 		"next": "endB_kind_2"
 	},
 
 	"endB_kind_2": {
 		"speaker": "Elysia",
-		"text": "SHUT UP 😤",
+		"text": "[shouting] [flustered] SHUT UP 😤",
 		"next": "endB_kind_3"
 	},
 
 	"endB_kind_3": {
 		"speaker": "Kay",
-		"text": "proud of u. kind of",
+		"text": "[teasing] [warm] proud of u. kind of",
 		"next": "endB_kind_4"
 	},
 
@@ -5466,13 +5466,13 @@
 
 	"endC_5": {
 		"speaker": "Kay",
-		"text": "u ok? you seemed tired today",
+		"text": "[gentle] [concerned] u ok? you seemed tired today",
 		"next": "endC_msg_1"
 	},
 
 	"endC_deal_1": {
 		"speaker": "Kay",
-		"text": "you don't have to be fine with me. remember?",
+		"text": "[gentle] [soft] you don't have to be fine with me. remember?",
 		"next": "endC_msg_1"
 	},
 
