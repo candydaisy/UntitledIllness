@@ -2,7 +2,6 @@
 	"start": {
 		"speaker": "",
 		"text": "*Tan's alarm goes off at six. It's a song Tan hates, so that he has to get up to turn it off.*",
-		"expression": {"Ulyn": "neutral"},
 		"next": "wake_2",
 		"background": "Tan's couch",
 		"show_characters": ["Ulyn"],
@@ -98,7 +97,6 @@
 	"gate_1": {
 		"speaker": "",
 		"text": "*At the gate, Kay is standing very still, staring at Elysia and her friends like they're a TV he forgot to turn off.*",
-		"expression": {"Kay": "neutral"},
 		"next": "gate_2",
 		"background": "Gate",
 		"show_characters": ["Kay"],
@@ -478,6 +476,7 @@
 	"lunch_1": {
 		"speaker": "",
 		"text": "*Lunch.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "lunch_2",
 		"background": "Cafeteria",
 		"hide_characters": ["Bank", "Fern"]
@@ -1508,7 +1507,6 @@
 	"busy_honest_3": {
 		"speaker": "Ulyn",
 		"text": "[tired] [honest] \"My mom keeps calling. I keep not answering. Long story.\"",
-		"expression": {"Ulyn": "tired"},
 		"next": "busy_honest_4"
 	},
 
@@ -1549,10 +1547,15 @@
 		"speaker": "",
 		"text": "*He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.*",
 		"quiet": true,
-		"next": "sports_1",
 		"background": "Tan's balcony",
 		"sfx": "Sigh",
-		"amb": "stop"
+		"amb": "stop",
+		"minigame": "res://Scenes/Minigames/type_delete.tscn",
+		"settings": {"seconds": 15, "message": "hi mom. sorry. i'm eating."},
+		"results": {
+			"sent": {"text": "Texted Mom", "unsaid_change": -5, "next": "sports_1"},
+			"deleted": {"text": "Deleted it", "unsaid_change": 5, "next": "sports_1"}
+		}
 	},
 
 	"seven_answer_1": {
@@ -1621,7 +1624,6 @@
 	"sports_6": {
 		"speaker": "",
 		"text": "*Elysia runs up to the station, pushes a cold drink into Kay's hands, and sprints away before her friends can catch her. Kay holds it like it's made of glass.*",
-		"expression": {"Elysia": "neutral"},
 		"next": "sports_7",
 		"show_characters": ["Elysia"]
 	},
@@ -2827,7 +2829,7 @@
 	"gate2_1": {
 		"speaker": "",
 		"text": "*The next Monday, from the top of the stairs, Ulyn watches Kay walk straight across the front of the school to Elysia and her friends. In front of everybody.*",
-		"expression": {"Kay": "neutral", "Elysia": "neutral"},
+		"expression": {"Elysia": "neutral", "Kay": "neutral"},
 		"next": "gate2_2",
 		"background": "Gate",
 		"show_characters": ["Kay", "Elysia"],
@@ -3441,6 +3443,7 @@
 	"endA_1": {
 		"speaker": "",
 		"text": "*Saturday.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "endA_2",
 		"background": "Ulyn's room day",
 		"show_characters": ["Ulyn"],
@@ -3546,6 +3549,7 @@
 	"endA_dad_1": {
 		"speaker": "",
 		"text": "*That night, the house is quiet.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "endA_night_1",
 		"background": "Ulyn's room",
 		"hide_characters": ["Kay"],
@@ -3580,6 +3584,7 @@
 	"endB_1": {
 		"speaker": "",
 		"text": "*He doesn't go home every night. Most nights, though.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "endB_2",
 		"background": "Tan's couch",
 		"show_characters": ["Ulyn", "Tan"],
@@ -3609,6 +3614,7 @@
 	"endB_garden_1": {
 		"speaker": "",
 		"text": "*After school, he and Kay sit by the garden while Kay waters it. Almost exactly the right amount.*",
+		"expression": {"Kay": "neutral"},
 		"next": "endB_garden_2",
 		"background": "Garden",
 		"show_characters": ["Kay"],
@@ -3689,6 +3695,7 @@
 	"endC_1": {
 		"speaker": "",
 		"text": "*Next semester, Pim wants him on student council, sports day, the welcome committee, and the yearbook. He says yes to all of it.*",
+		"expression": {"Ulyn": "neutral"},
 		"next": "endC_2",
 		"background": "Council room",
 		"show_characters": ["Ulyn", "Pim"]

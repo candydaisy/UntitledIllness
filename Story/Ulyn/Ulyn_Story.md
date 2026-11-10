@@ -618,6 +618,8 @@ At 7 p.m. the phone rings again. **Mom.**
 **▸ A.**
 ◌ He declines it. Then he sits on Tan's balcony with the phone in his hand for an hour, which is somehow worse than answering.
 
+**🎮 Minigame: Type & Delete** (`type_delete.tscn`). He types `hi mom. sorry. i'm eating.`; the letters delete themselves, faster the higher his Unsaid. **Sent**: Unsaid −5. **Deleted**: Unsaid +5. Both go on.
+
 **▸ B.**
 "Hello?"
 

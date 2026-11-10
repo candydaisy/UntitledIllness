@@ -364,6 +364,8 @@ Delete. Delete. Delete.
 
 Like yesterday never happened. She's very good at that.
 
+**🎮 Minigame: The Version** (`the_version.tscn`). Match Smile and Eyes to the "perfect" outline before the photo; it drifts more the higher her Mask. **Perfect**: Mask +5. **Real**: Mask −5. Both go on.
+
 His reply comes at 6:41.
 
 `morning! not yet lol`

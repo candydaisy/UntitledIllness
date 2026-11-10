@@ -394,7 +394,11 @@ Kay writes it down in his notebook, word for word.
 
 For two weeks, Kay comes to the garden every morning before homeroom and every afternoon after the last bell.
 
-He pushes his finger into the soil the way she showed him. It's always a little damp. He waters anyway. Doing nothing feels wrong. Doing nothing feels like not caring.
+He pushes his finger into the soil the way she showed him. It's always a little damp.
+
+**🎮 Minigame: Overwatering** (`overwater.tscn`). Hold to pour, let go at the line; Weight shakes his hand. **Left it** (Weight −5) skips straight to *Doing nothing feels wrong*. **Right** / **Drowned** (Weight +5) go on to *He waters anyway.*
+
+He waters anyway. Doing nothing feels wrong. Doing nothing feels like not caring.
 
 Ulyn comes when he can, which isn't often. Sports day is coming, and the student council has put him in charge of half of it. He's also tutoring on Saturdays, and he's been sleeping at his cousin's place again. Kay knows that last part the way he knows most things about Ulyn now: from the edges, without asking.
 
