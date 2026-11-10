@@ -484,7 +484,7 @@ offset_right = 1600.0
 offset_bottom = 900.0
 texture = ExtResource("3_42qhq")
 expand_mode = 1
-stretch_mode = 2
+stretch_mode = 3
 flip_h = true
 
 [node name="SIDEART2" type="TextureRect" parent="Sideart" unique_id=243250085]
@@ -495,7 +495,7 @@ offset_right = 243.0
 offset_bottom = 900.0
 texture = ExtResource("3_42qhq")
 expand_mode = 1
-stretch_mode = 2
+stretch_mode = 3
 
 [node name="Bgs" type="Node" parent="." unique_id=962250625]
 

@@ -4,5 +4,14 @@
 		"Elysia": "4f553d53658c4908b5f244345486d80d",
 		"Kay": "57c0c11acb8149ea93074362b310929d",
 		"Ulyn": "9d5a161892df48139feb780f3cf51972"
+	},
+	"provider": "elevenlabs",
+	"elevenlabs": {
+		"model": "eleven_v3",
+		"voices": {
+			"Elysia": "XlDdozLmuTofIxK4BjPD",
+			"Kay": "Cx1u6YPIa1SPiAbYj3gJ",
+			"Ulyn": "2t3wubVNRseKNVjtlWx1"
+		}
 	}
 }
