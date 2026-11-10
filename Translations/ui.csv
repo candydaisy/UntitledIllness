@@ -31,45 +31,6 @@ Name,Name,ชื่อ
 Characters' Relation,Characters' Relation,ความสัมพันธ์ตัวละคร
 Thai,Thai,ไทย
 English,English,English
-"Quiet and dependable.
-
-Always seems to know what to do.
-
-The kind of person people rely on.","Quiet and dependable.
-
-Always seems to know what to do.
-
-The kind of person people rely on.","เงียบ ๆ แต่พึ่งพาได้
-
-ดูเหมือนจะรู้เสมอว่าต้องทำอะไร
-
-เป็นคนที่ใคร ๆ ก็ฝากเรื่องไว้"
-"Bright, friendly, and easy to talk to.
-
-Always ready to listen.
-
-Brings warmth into any group.","Bright, friendly, and easy to talk to.
-
-Always ready to listen.
-
-Brings warmth into any group.","สดใส เป็นมิตร คุยด้วยง่าย
-
-พร้อมรับฟังเสมอ
-
-อยู่กลุ่มไหนกลุ่มนั้นก็อบอุ่น"
-"Honest.
-
-Unfiltered.
-
-Not afraid to say what he thinks.","Honest.
-
-Unfiltered.
-
-Not afraid to say what he thinks.","ตรง ๆ
-
-ไม่กรองคำพูด
-
-คิดอะไรก็พูดอย่างนั้น"
 "Calm and self-sufficient.
 
 Rarely overreacts.
@@ -84,9 +45,6 @@ Handles problems without a fuss.","ใจเย็น พึ่งตัวเ�
 
 จัดการปัญหาได้แบบไม่วุ่นวาย"
 You don’t have to carry everything.,You don’t have to carry everything.,ไม่ต้องแบกทุกอย่างไว้คนเดียวก็ได้
-"mind feels like a bird in a cage, quietly waiting for the day it can finally stretch its wings.","mind feels like a bird in a cage, quietly waiting for the day it can finally stretch its wings.",ใจเหมือนนกในกรง ที่รออย่างเงียบ ๆ ให้ถึงวันที่ได้กางปีกเสียที
-His thoughts feel like carrying everyone else’s books while pretending his own bag is empty.,His thoughts feel like carrying everyone else’s books while pretending his own bag is empty.,ความคิดของเขาเหมือนการถือหนังสือของทุกคนไว้ แล้วทำเป็นว่ากระเป๋าตัวเองว่างเปล่า
-"His mind feels like a quiet room where emotional storms happen silently, hidden so that no one else has to feel them.","His mind feels like a quiet room where emotional storms happen silently, hidden so that no one else has to feel them.",ใจของเขาเหมือนห้องเงียบ ๆ ที่พายุอารมณ์เกิดขึ้นอย่างไร้เสียง ซ่อนไว้เพื่อไม่ให้ใครต้องรู้สึกตาม
 "Her mind feels like a mirror with a thin layer of fog. They can see their reflection, but never clearly enough to confront it.","Her mind feels like a mirror with a thin layer of fog. They can see their reflection, but never clearly enough to confront it.",ใจของเธอเหมือนกระจกที่มีฝ้าบาง ๆ มองเห็นเงาตัวเอง แต่ไม่เคยชัดพอจะกล้าเผชิญหน้า
 %s volume,%s volume,ระดับ%s
 Left and right arrows change it.,Left and right arrows change it.,กดลูกศรซ้าย-ขวาเพื่อปรับ
@@ -247,3 +205,90 @@ son,son,ลูกชาย
 student,student,นักเรียน
 teacher,teacher,ครู
 Relationship web. %d characters. Use the arrow keys to move between them.,Relationship web. %d characters. Use the arrow keys to move between them.,ผังความสัมพันธ์ มีตัวละคร %d ตัว ใช้ลูกศรเพื่อเลื่อนไปมา
+%s to water. Stop at the line.,%s to water. Stop at the line.,%s เพื่อรดน้ำ แล้วหยุดที่เส้น
+"The soil is already damp. %s to water and let go at the line, or press Escape to leave it.","The soil is already damp. %s to water and let go at the line, or press Escape to leave it.",ดินยังชื้นอยู่ %s เพื่อรดน้ำแล้วปล่อยตรงเส้น หรือกด Escape เพื่อปล่อยไว้
+Leave it,Leave it,ปล่อยไว้
+Smile,Smile,ยิ้ม
+Eyes,Eyes,ตา
+Take it,Take it,ถ่ายเลย
+Perfect.,Perfect.,เป๊ะแล้ว
+Match the outline. Then take it.,Match the outline. Then take it.,ปรับให้ตรงเส้นก่อน แล้วค่อยถ่าย
+"Fix your face before the photo. Move Smile and Eyes until it says perfect, then press Take it.","Fix your face before the photo. Move Smile and Eyes until it says perfect, then press Take it.",จัดหน้าก่อนถ่าย เลื่อนยิ้มกับตาจนขึ้นว่าเป๊ะแล้ว แล้วกดถ่ายเลย
+Send,Send,ส่ง
+hi mom. sorry. i'm eating.,hi mom. sorry. i'm eating.,แม่ ขอโทษนะ กินข้าวอยู่
+Type to Mom. Press Enter to send.,Type to Mom. Press Enter to send.,พิมพ์หาแม่ กด Enter เพื่อส่ง
+Type a message to Mom. Any key types. It keeps deleting itself. Press Enter to send or Escape to give up.,Type a message to Mom. Any key types. It keeps deleting itself. Press Enter to send or Escape to give up.,พิมพ์ข้อความหาแม่ กดปุ่มไหนก็ได้เพื่อพิมพ์ ข้อความจะลบตัวเองไปเรื่อย ๆ กด Enter เพื่อส่ง หรือ Escape เพื่อยอมแพ้
+"He waters the garden twice a day.
+The soil is always a little damp.
+He waters it anyway.
+
+Ask him how he's doing.
+He'll say ""fine,""
+and offer to do your part.","He waters the garden twice a day.
+The soil is always a little damp.
+He waters it anyway.
+
+Ask him how he's doing.
+He'll say ""fine,""
+and offer to do your part.","เขารดน้ำแปลงผักวันละสองรอบ
+ดินชื้นอยู่แล้วทุกครั้ง
+เขาก็ยังรดอยู่ดี
+
+ถามว่าเป็นยังไงบ้าง
+เขาจะตอบว่า ""ไม่เป็นไร""
+แล้วอาสาทำส่วนของคุณให้"
+"""good morning!!"" sent.
+The other drafts, deleted.
+
+There's a version of her
+everyone likes.
+She keeps it pressed and ready.
+
+Some mornings she checks the mirror
+to see which one woke up.","""good morning!!"" sent.
+The other drafts, deleted.
+
+There's a version of her
+everyone likes.
+She keeps it pressed and ready.
+
+Some mornings she checks the mirror
+to see which one woke up.","""อรุณสวัสดิ์!!"" ส่งแล้ว
+ร่างอื่น ๆ ลบทิ้ง
+
+มีเธออยู่เวอร์ชันหนึ่ง
+ที่ใคร ๆ ก็ชอบ
+เธอรีดมันไว้เรียบ พร้อมใช้เสมอ
+
+บางเช้าเธอต้องส่องกระจก
+ดูว่าวันนี้คนไหนตื่นขึ้นมา"
+"Ninety unread.
+Council at four. Tutoring on Saturday.
+His cousin's couch again tonight.
+
+At seven, Mom calls.
+His thumb knows where Decline is.
+
+He isn't running.
+He's just busy.","Ninety unread.
+Council at four. Tutoring on Saturday.
+His cousin's couch again tonight.
+
+At seven, Mom calls.
+His thumb knows where Decline is.
+
+He isn't running.
+He's just busy.","ข้อความค้างอ่านเก้าสิบ
+ประชุมสภาสี่โมง ติวเด็กวันเสาร์
+คืนนี้ก็นอนโซฟาบ้านลูกพี่ลูกน้องอีก
+
+หนึ่งทุ่ม แม่โทรมา
+นิ้วโป้งเขารู้ดีว่าปุ่มตัดสายอยู่ตรงไหน
+
+เขาไม่ได้หนี
+เขาแค่ยุ่ง"
+The one everyone hands their part to.,The one everyone hands their part to.,คนที่ใคร ๆ ก็ส่งงานส่วนของตัวเองมาให้
+Everyone's favourite. Never off.,Everyone's favourite. Never off.,ขวัญใจทุกคน ไม่เคยพัก
+Always somewhere. Never home.,Always somewhere. Never home.,อยู่ทุกที่ ยกเว้นบ้าน
+You don’t have to be the version.,You don’t have to be the version.,ไม่ต้องเป็นเวอร์ชันนั้นก็ได้
+You’re allowed to go home.,You’re allowed to go home.,กลับบ้านได้นะ
