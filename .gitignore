@@ -13,3 +13,6 @@
 
 # Editor backup copies (e.g. Vine.png~)
 *~
+
+# Export output
+/build/

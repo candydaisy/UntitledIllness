@@ -8,10 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://b3sdplwwkjlef" path="res://Assets/Photos/UI/placeholder.jpg" id="4_8rxpg"]
 [ext_resource type="PackedScene" uid="uid://xfvufrw0ho83" path="res://Scenes/Menus/Setting.tscn" id="5_v7bwh"]
 [ext_resource type="PackedScene" path="res://Scenes/Menus/RelationshipWeb.tscn" id="20_web"]
-[ext_resource type="Texture2D" path="res://Assets/Photos/UI/TitleBackground.jpg" id="31_titlebg"]
-[ext_resource type="Texture2D" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_neutral.png" id="30_card1"]
-[ext_resource type="Texture2D" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_neutral.png" id="30_card2"]
-[ext_resource type="Texture2D" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_neutral.png" id="30_card3"]
+[ext_resource type="Texture2D" uid="uid://dtbq4mdgv5v6h" path="res://Assets/Sprites/Kay_sprite/Uniform/Kay_neutral.png" id="30_card1"]
+[ext_resource type="Texture2D" uid="uid://cpq13n825gdfk" path="res://Assets/Sprites/Elysia_sprite/Uniform/Elysia_neutral.png" id="30_card2"]
+[ext_resource type="Texture2D" uid="uid://sx1mj88vtw64" path="res://Assets/Sprites/Ulyn_sprite/Ulyn_neutral.png" id="30_card3"]
+[ext_resource type="Texture2D" uid="uid://c46kmf2vujitt" path="res://Assets/Photos/UI/TitledBackground.jpg" id="31_titlebg"]
 
 [node name="TitleMenu" type="Node2D" unique_id=1087269847]
 
@@ -25,7 +25,7 @@ grow_vertical = 2
 theme = ExtResource("1_1c0ri")
 script = ExtResource("1_y6n0q")
 
-[node name="Background" type="TextureRect" parent="UI"]
+[node name="Background" type="TextureRect" parent="UI" unique_id=1592105419]
 layout_mode = 0
 offset_right = 1600.0
 offset_bottom = 900.0
