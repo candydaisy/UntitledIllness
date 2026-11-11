@@ -1,6 +1,7 @@
 # Untitled Illness
 
 [![Itch Pages](https://img.shields.io/badge/Live%20Demo-Itch%20Pages-red?style=for-the-badge&logo=itch)](https://candyest.itch.io/untitled-illness)
+[![Vercel Pages](https://img.shields.io/badge/Live%20Demo-Vercel%20Pages-black?style=for-the-badge&logo=vercel)](https://untitled-relased.vercel.app/)
 [![Story Editor](https://img.shields.io/badge/Story%20Editor-TTFUI-blue?style=for-the-badge&logo=github)](https://candydaisy.github.io/TTFUI/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
